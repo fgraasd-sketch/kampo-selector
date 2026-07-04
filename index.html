@@ -1,0 +1,373 @@
+﻿<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>漢方六證與五臟臨床診斷處方選擇器</title>
+    <meta name="description" content="專業級漢方臨床診斷工具，基於漢方六證（氣虛、氣逆、氣郁、血虛、瘀血、水滯）評分系統與五臟辨證，自動提供量化分數、診斷提示與精準方劑推薦。">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Mobile Header -->
+    <header class="mobile-header no-print">
+        <div class="mobile-brand">
+            <i class="fa-solid fa-mortar-pestle mobile-brand-icon"></i>
+            <span class="mobile-brand-text">漢方臨床選擇器</span>
+        </div>
+        <div class="mobile-actions">
+            <button class="mobile-action-btn" id="btn-reset-mobile" title="重設所有資料">
+                <i class="fa-solid fa-rotate-left"></i> 重設
+            </button>
+            <button class="mobile-action-btn btn-primary-mobile" id="btn-print-mobile" title="列印臨床報告">
+                <i class="fa-solid fa-print"></i> 列印
+            </button>
+        </div>
+    </header>
+
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar no-print">
+            <div class="sidebar-brand">
+                <i class="fa-solid fa-mortar-pestle brand-icon"></i>
+                <div class="brand-text">
+                    <h1>漢方臨床選擇器</h1>
+                    <span>Kampo Clinical Selector</span>
+                </div>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <button class="nav-item active" data-target="patient-section" id="nav-btn-patient">
+                    <i class="fa-solid fa-user-doctor"></i> 患者資料與六證自評
+                </button>
+                <button class="nav-item" data-target="organ-section" id="nav-btn-organ">
+                    <i class="fa-solid fa-heart-pulse"></i> 五臟辨證與特異性
+                </button>
+                <button class="nav-item" data-target="rx-section" id="nav-btn-rx">
+                    <i class="fa-solid fa-scroll"></i> 臨床處方推薦
+                    <span class="badge" id="rx-count-badge">0</span>
+                </button>
+            </nav>
+
+            <div class="sidebar-footer">
+                <button class="btn btn-secondary btn-full" id="btn-reset">
+                    <i class="fa-solid fa-rotate-left"></i> 重設所有資料
+                </button>
+                <button class="btn btn-primary btn-full mt-2" id="btn-print">
+                    <i class="fa-solid fa-print"></i> 列印臨床報告
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            
+            <!-- Patient Profile & Info Section -->
+            <section id="patient-section" class="content-section active">
+                <header class="section-header">
+                    <h2><i class="fa-solid fa-circle-info header-icon"></i> 患者基本資料</h2>
+                    <p class="subtitle">設定基本生理參數以利精準評估（部分分數受性別因子影響）</p>
+                </header>
+
+                <div class="card patient-card mb-4">
+                    <div class="patient-grid">
+                        <div class="form-group">
+                            <label for="patient-name">患者姓名</label>
+                            <input type="text" id="patient-name" placeholder="請輸入姓名/病歷號" value="臨床案例">
+                        </div>
+                        <div class="form-group">
+                            <label>患者性別 <span class="required-star">*</span></label>
+                            <div class="gender-toggle-group">
+                                <label class="gender-btn active" id="gender-male-label">
+                                    <input type="radio" name="gender" value="male" checked id="gender-male">
+                                    <i class="fa-solid fa-mars"></i> 男性
+                                </label>
+                                <label class="gender-btn" id="gender-female-label">
+                                    <input type="radio" name="gender" value="female" id="gender-female">
+                                    <i class="fa-solid fa-venus"></i> 女性
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="patient-age">患者年齡</label>
+                            <input type="number" id="patient-age" min="0" max="150" placeholder="請輸入年齡">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-header mt-4">
+                    <h2><i class="fa-solid fa-stethoscope header-icon"></i> 漢方六證自評與症狀勾選</h2>
+                    <p class="subtitle">請勾選患者符合的症狀，系統將即時計算六證評分</p>
+                </div>
+
+                <!-- Dual Column Layout for Questionnaires & Diagnostic Gauges -->
+                <div class="diagnostic-layout">
+                    <!-- Symptoms Column -->
+                    <div class="symptoms-column">
+                        <div class="tab-container">
+                            <div class="tab-scroll-wrapper">
+                                <button class="tab-btn active" data-syndrome="qi_xu">氣虛</button>
+                                <button class="tab-btn" data-syndrome="qi_ni">氣逆</button>
+                                <button class="tab-btn" data-syndrome="qi_yu">氣郁</button>
+                                <button class="tab-btn" data-syndrome="xue_xu">血虛</button>
+                                <button class="tab-btn" data-syndrome="yu_xue">瘀血</button>
+                                <button class="tab-btn" data-syndrome="shui_zhi">水滯</button>
+                            </div>
+                        </div>
+
+                        <!-- Syndrome Panels -->
+                        <div class="syndrome-panels mt-3">
+                            <!-- Qi Xu (氣虛) -->
+                            <div class="syndrome-panel active" id="panel-qi_xu">
+                                <div class="panel-info-banner border-qi_xu">
+                                    <span class="banner-title"><i class="fa-solid fa-wind text-qi_xu"></i> 氣虛證候群</span>
+                                    <span>閾值：30 分</span>
+                                </div>
+                                <div class="symptom-checklist" id="list-qi_xu">
+                                    <!-- Dynamic items insert here -->
+                                </div>
+                            </div>
+
+                            <!-- Qi Ni (氣逆) -->
+                            <div class="syndrome-panel" id="panel-qi_ni">
+                                <div class="panel-info-banner border-qi_ni">
+                                    <span class="banner-title"><i class="fa-solid fa-circle-up text-qi_ni"></i> 氣逆證候群</span>
+                                    <span>閾值：30 分</span>
+                                </div>
+                                <div class="symptom-checklist" id="list-qi_ni">
+                                    <!-- Dynamic items insert here -->
+                                </div>
+                            </div>
+
+                            <!-- Qi Yu (氣郁) -->
+                            <div class="syndrome-panel" id="panel-qi_yu">
+                                <div class="panel-info-banner border-qi_yu">
+                                    <span class="banner-title"><i class="fa-solid fa-smog text-qi_yu"></i> 氣郁證候群</span>
+                                    <span>閾值：30 分</span>
+                                </div>
+                                <div class="symptom-checklist" id="list-qi_yu">
+                                    <!-- Dynamic items insert here -->
+                                </div>
+                            </div>
+
+                            <!-- Xue Xu (血虛) -->
+                            <div class="syndrome-panel" id="panel-xue_xu">
+                                <div class="panel-info-banner border-xue_xu">
+                                    <span class="banner-title"><i class="fa-solid fa-droplet text-xue_xu"></i> 血虛證候群</span>
+                                    <span>閾值：30 分</span>
+                                </div>
+                                <div class="symptom-checklist" id="list-xue_xu">
+                                    <!-- Dynamic items insert here -->
+                                </div>
+                            </div>
+
+                            <!-- Yu Xue (瘀血) -->
+                            <div class="syndrome-panel" id="panel-yu_xue">
+                                <div class="panel-info-banner border-yu_xue">
+                                    <span class="banner-title"><i class="fa-solid fa-circle text-yu_xue"></i> 瘀血證候群</span>
+                                    <span>閾值：20 分</span>
+                                </div>
+                                <div class="symptom-checklist" id="list-yu_xue">
+                                    <!-- Dynamic items insert here -->
+                                </div>
+                            </div>
+
+                            <!-- Shui Zhi (水滯) -->
+                            <div class="syndrome-panel" id="panel-shui_zhi">
+                                <div class="panel-info-banner border-shui_zhi">
+                                    <span class="banner-title"><i class="fa-solid fa-water text-shui_zhi"></i> 水滯證候群</span>
+                                    <span>閾值：13 分</span>
+                                </div>
+                                <div class="symptom-checklist" id="list-shui_zhi">
+                                    <!-- Dynamic items insert here -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Live Diagnosis Dashboard Column -->
+                    <div class="dashboard-column">
+                        <div class="sticky-card">
+                            <div class="card-header-accent">
+                                <h3><i class="fa-solid fa-chart-simple"></i> 六證即時評估狀態</h3>
+                            </div>
+                            <div class="gauge-grid" id="dashboard-gauge-grid">
+                                <!-- Dynamic gauges inserted here -->
+                            </div>
+                            <div class="summary-box mt-3" id="dx-summary-box">
+                                <p class="text-muted text-center py-3">請在左側勾選症狀以啟動評估...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Organ Dysfunction (五臟辨證) Section -->
+            <section id="organ-section" class="content-section">
+                <header class="section-header">
+                    <h2><i class="fa-solid fa-heart-pulse header-icon"></i> 五臟辨證與特異性</h2>
+                    <p class="subtitle">根據臟腑的氣血陰陽失調狀態，勾選相應特異症候來輔助臨床定位</p>
+                </header>
+
+                <div class="organ-layout">
+                    <!-- Organ Tabs -->
+                    <div class="organ-tabs">
+                        <button class="organ-tab-btn active" data-organ="liver"><i class="fa-solid fa-seedling"></i> 肝臟異常</button>
+                        <button class="organ-tab-btn" data-organ="heart"><i class="fa-solid fa-fire-flame-curved"></i> 心臟異常</button>
+                        <button class="organ-tab-btn" data-organ="spleen"><i class="fa-solid fa-cubes"></i> 脾臟異常</button>
+                        <button class="organ-tab-btn" data-organ="lung"><i class="fa-solid fa-feather-pointed"></i> 肺臟異常</button>
+                        <button class="organ-tab-btn" data-organ="kidney"><i class="fa-solid fa-dna"></i> 腎臟異常</button>
+                    </div>
+
+                    <div class="organ-panels mt-3">
+                        <!-- Dynamic content filled by JavaScript for each organ -->
+                        <div class="card p-4">
+                            <div class="organ-panel-header" id="active-organ-header">
+                                <!-- Header info -->
+                            </div>
+                            
+                            <div class="organ-symptom-section mt-3">
+                                <h4><i class="fa-solid fa-list-check text-primary"></i> 特異性臨床證候勾選</h4>
+                                <div class="symptom-checklist organ-checklist" id="organ-symptom-list">
+                                    <!-- Dynamic Checkboxes -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Clinical Prescription Recommendation (處方推薦) Section -->
+            <section id="rx-section" class="content-section">
+                <header class="section-header">
+                    <h2><i class="fa-solid fa-scroll header-icon"></i> 臨床處方推薦</h2>
+                    <p class="subtitle">基於六證評分與五臟辨證結果，結合病患勾選的特異性表現，系統會篩選並推薦最合適的臨床方劑。</p>
+                </header>
+
+                <!-- Filters for Rx -->
+                <div class="card filter-card mb-4 no-print">
+                    <div class="case-input-panel">
+                        <div class="form-group">
+                            <label for="case-input">病例輸入</label>
+                            <textarea id="case-input" rows="4" placeholder="例如：45歲女性，壓力大，胸悶，常嘆氣，睡不好，經前乳房脹痛，容易煩躁。"></textarea>
+                        </div>
+                        <div class="case-actions">
+                            <button class="btn btn-primary" id="btn-parse-case" type="button"><i class="fa-solid fa-wand-magic-sparkles"></i> 解析病例</button>
+                            <div class="case-add-keyword">
+                                <input type="text" id="case-keyword-input" placeholder="新增關鍵字">
+                                <button class="btn btn-secondary" id="btn-add-keyword" type="button"><i class="fa-solid fa-plus"></i> 新增</button>
+                            </div>
+                        </div>
+                        <div class="case-keyword-panel" id="case-keyword-panel">
+                            <p class="text-muted case-empty">尚未解析病例。輸入病例後按「解析病例」，系統會列出可確認的標準化關鍵字。</p>
+                        </div>
+                    </div>
+                    <div class="filter-grid">
+                        <div class="form-group">
+                            <label for="rx-constitution-filter">虛實體質篩選</label>
+                            <select id="rx-constitution-filter">
+                                <option value="all">-- 顯示所有體質方劑 --</option>
+                                <option value="實證">實證方（偏實熱體質）</option>
+                                <option value="虛實夾雜">虛實夾雜方（氣血水錯雜）</option>
+                                <option value="虛證">虛證方（偏虛寒體質）</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="rx-search-input">搜尋方劑或症狀</label>
+                            <div class="search-wrapper">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <input type="text" id="rx-search-input" placeholder="請輸入方劑名稱、證型或關鍵症狀...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rx-layout">
+                    <!-- Recommendations List -->
+                    <div class="rx-list" id="recommendations-container">
+                        <!-- Dynamic Rx cards insert here -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Clinical Printable Report Layout (Hidden by default, displayed via CSS @media print) -->
+            <section id="printable-report" class="print-only">
+                <div class="print-header">
+                    <div class="print-title">漢方六證與五臟臨床診斷處方報告</div>
+                    <div class="print-meta" id="print-meta-info"></div>
+                </div>
+                
+                <div class="print-section">
+                    <h3 class="print-section-title">一、六證診斷量化狀態</h3>
+                    <table class="print-table" id="print-six-syndromes-table">
+                        <thead>
+                            <tr>
+                                <th>證型</th>
+                                <th>累計得分</th>
+                                <th>診斷閾值</th>
+                                <th>診斷狀態</th>
+                                <th>已出現症狀</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Dynamic rows -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="print-section" id="print-organ-section">
+                    <h3 class="print-section-title">二、五臟辨證定位</h3>
+                    <div id="print-organ-content">
+                        <!-- Dynamic organ details -->
+                    </div>
+                </div>
+
+                <div class="print-section">
+                    <h3 class="print-section-title">三、擬定臨床處方推薦</h3>
+                    <div id="print-prescription-content">
+                        <!-- Dynamic prescription list -->
+                    </div>
+                </div>
+
+                <div class="print-section print-signature-section">
+                    <div class="signature-line">臨床中醫師簽章：__________________</div>
+                    <div class="date-line">日期：<span id="print-date"></span></div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="mobile-bottom-nav no-print">
+        <button class="mobile-nav-item active" data-target="patient-section" id="nav-btn-patient-mobile">
+            <i class="fa-solid fa-user-doctor"></i>
+            <span>患者與自評</span>
+        </button>
+        <button class="mobile-nav-item" data-target="organ-section" id="nav-btn-organ-mobile">
+            <i class="fa-solid fa-heart-pulse"></i>
+            <span>五臟辨證</span>
+        </button>
+        <button class="mobile-nav-item" data-target="rx-section" id="nav-btn-rx-mobile">
+            <div class="mobile-icon-wrapper">
+                <i class="fa-solid fa-scroll"></i>
+                <span class="badge" id="rx-count-badge-mobile">0</span>
+            </div>
+            <span>處方推薦</span>
+        </button>
+    </nav>
+
+    <!-- JavaScript code logic -->
+    <script src="engine.js"></script>
+    <script src="formula-kb.js"></script>
+    <script src="x4-kb-data.js"></script>
+    <script src="x4-matcher.bundle.js"></script>
+    <script src="x4-adapter.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
