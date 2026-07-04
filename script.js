@@ -480,7 +480,8 @@ let appState = {
     organScores: {}, // Count of checked symptoms for each organ
     activeOrganPathology: {}, // Identified organ pathology (e.g. kidney -> "腎陽虛")
     caseKeywords: [],
-    parsedCaseItems: []
+    parsedCaseItems: [],
+    autoCheckedSymptoms: new Set(), // symptom-checkbox ids turned on by case parsing (vs. clicked manually)
 };
 
 // ==========================================
@@ -653,6 +654,7 @@ function setupEventListeners() {
     const handleReset = () => {
         if (confirm('確定要清空所有勾選的症狀與患者資料嗎？')) {
             appState.checkedSymptoms.clear();
+            appState.autoCheckedSymptoms.clear();
             document.querySelectorAll('.symptom-item').forEach(item => {
                 item.classList.remove('checked');
                 const checkbox = item.querySelector('input[type="checkbox"]');
@@ -708,8 +710,8 @@ function setupEventListeners() {
     // coarse canonical buckets: the X4 matcher's ontology resolves raw terms like
     // \u5614\u5410/\u80f8\u8107\u82e6\u6eff directly, while bucket names like \u6c23\u9006 mean nothing to it.
     // Negated hits (e.g. \u672a\u767c\u73fe\u660e\u986f\u7684\u80f8\u8105\u82e6\u6eff) start unchecked.
-    if (parseCaseBtn) { parseCaseBtn.addEventListener('click', () => { const caseText = document.getElementById('case-input')?.value || ''; appState.parsedCaseItems = KampoParser.parseCaseText(caseText); appState.caseKeywords = [...new Set(appState.parsedCaseItems.filter(item => !item.negated).map(item => item.source))]; renderCaseKeywordPanel(); renderPrescriptions(); }); }
-    if (addKeywordBtn && caseKeywordInput) { addKeywordBtn.addEventListener('click', () => { const keyword = (caseKeywordInput.value || '').trim(); if (keyword && !appState.caseKeywords.includes(keyword)) { appState.caseKeywords.push(keyword); appState.parsedCaseItems.push({ keyword: KampoNormalizer.normalizeKeyword(keyword), source: keyword, weight: 1, negated: false }); caseKeywordInput.value = ''; renderCaseKeywordPanel(); renderPrescriptions(); } }); }
+    if (parseCaseBtn) { parseCaseBtn.addEventListener('click', () => { const caseText = document.getElementById('case-input')?.value || ''; appState.parsedCaseItems = KampoParser.parseCaseText(caseText); appState.caseKeywords = [...new Set(appState.parsedCaseItems.filter(item => !item.negated).map(item => item.source))]; renderCaseKeywordPanel(); syncCaseSymptomsToCheckboxes(); }); }
+    if (addKeywordBtn && caseKeywordInput) { addKeywordBtn.addEventListener('click', () => { const keyword = (caseKeywordInput.value || '').trim(); if (keyword && !appState.caseKeywords.includes(keyword)) { appState.caseKeywords.push(keyword); appState.parsedCaseItems.push({ keyword: KampoNormalizer.normalizeKeyword(keyword), source: keyword, weight: 1, negated: false }); caseKeywordInput.value = ''; renderCaseKeywordPanel(); syncCaseSymptomsToCheckboxes(); } }); }
 }
 
 // Render Organ Panel dynamically based on current selected organ
@@ -888,6 +890,73 @@ function escapeHtml(value) {
     return String(value ?? '').replace(/[&<>\"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '\"': '&quot;', "'": '&#39;' }[char]));
 }
 
+let symptomTermIndexCache = null;
+// Maps an exact symptom term (e.g. "頭痛") to every checkbox id whose label is
+// made up of that term (SYNDROME_DB/ORGAN_DB reuse the same term across
+// several checkboxes and databases, e.g. 頭痛 appears under both 氣逆 and
+// 水滯). Only whole comma/、-separated parts count as a match, so a single
+// word doesn't light up an unrelated multi-symptom checkbox like
+// 頭痛，眩暈感，眼痛，健忘，高血壓 just because it shares one term.
+function getSymptomTermIndex() {
+    if (symptomTermIndexCache) return symptomTermIndexCache;
+    const index = new Map();
+    const addDb = (db) => {
+        for (const group of Object.values(db)) {
+            for (const sym of group.symptoms) {
+                // Skip compound cluster labels (e.g. 頭痛，眩暈感，眼痛，健忘，高血壓):
+                // they represent several symptoms occurring together, so a single
+                // shared word must not auto-check the whole cluster. Only a label
+                // that IS just one term (no separator at all) is indexed.
+                const parts = sym.label.split(/[，,、\/]/).map(part => part.trim()).filter(Boolean);
+                if (parts.length !== 1) continue;
+                const term = parts[0];
+                if (!index.has(term)) index.set(term, []);
+                index.get(term).push(sym.id);
+            }
+        }
+    };
+    addDb(SYNDROME_DB);
+    addDb(ORGAN_DB);
+    symptomTermIndexCache = index;
+    return index;
+}
+
+// Auto-checks (and auto-unchecks) the 六證/五臟 checkboxes that exactly match
+// the case's currently-active keyword chips, so typing/confirming e.g. 頭痛
+// in the case box reflects onto the 頭痛 checkbox instead of only feeding the
+// X4 query text. Only touches checkboxes it previously auto-checked itself,
+// so a user's own manual clicks are never overridden.
+function syncCaseSymptomsToCheckboxes() {
+    const index = getSymptomTermIndex();
+    const matchedIds = new Set();
+    appState.caseKeywords.forEach(term => {
+        (index.get(term) || []).forEach(id => matchedIds.add(id));
+    });
+
+    const toUncheck = [...appState.autoCheckedSymptoms].filter(id => !matchedIds.has(id));
+    const toCheck = [...matchedIds].filter(id => !appState.checkedSymptoms.has(id));
+
+    toUncheck.forEach(id => appState.checkedSymptoms.delete(id));
+    toCheck.forEach(id => appState.checkedSymptoms.add(id));
+    appState.autoCheckedSymptoms = matchedIds;
+
+    // Syndrome checkboxes are all rendered up front (six tabs, always in the
+    // DOM); reflect the new state directly. Organ checkboxes are rendered
+    // per active tab from appState.checkedSymptoms, so renderOrganPanel()
+    // below already picks the change up.
+    [...toUncheck, ...toCheck].forEach(id => {
+        const item = document.querySelector(`.symptom-item[data-id="${id}"]`);
+        if (!item) return;
+        const checkbox = item.querySelector('input[type="checkbox"]');
+        const isChecked = appState.checkedSymptoms.has(id);
+        if (checkbox) checkbox.checked = isChecked;
+        item.classList.toggle('checked', isChecked);
+    });
+
+    calculateAndRender();
+    renderOrganPanel();
+}
+
 function getCheckedSymptomLabels() {
     const labels = [];
     appState.checkedSymptoms.forEach(id => {
@@ -925,7 +994,7 @@ function renderCaseKeywordPanel() {
         input.addEventListener('change', () => {
             const active = Array.from(panel.querySelectorAll('input[type="checkbox"]:checked')).map(item => item.value);
             appState.caseKeywords = active;
-            renderPrescriptions();
+            syncCaseSymptomsToCheckboxes();
         });
     });
 }
@@ -947,6 +1016,79 @@ function getRecommendedFormulas(limit = 5) {
     return engine.recommend(args).slice(0, limit);
 }
 
+const RADAR_AXES = [
+    { id: 'QI_XU', label: '氣虛' },
+    { id: 'QI_NI', label: '氣逆' },
+    { id: 'QI_YU', label: '氣鬱' },
+    { id: 'XUE_XU', label: '血虛' },
+    { id: 'YU_XUE', label: '瘀血' },
+    { id: 'SUI_ZHI', label: '水滯' },
+];
+
+// Six-axis 六證 radar comparing the patient's pattern vector against a formula's,
+// so the overlap of the two shapes reads as "fit". Colors are hue-preserving,
+// checked variants of the app's own sage-green/gold theme (validated with the
+// dataviz skill's palette checker against this card's cream surface).
+function buildRadarChartSvg(patientVector, formulaVector, formulaName) {
+    const size = 220;
+    const center = size / 2;
+    const maxR = 78;
+    const n = RADAR_AXES.length;
+    const angleFor = (i) => (Math.PI * 2 * i) / n - Math.PI / 2;
+    const pointFor = (i, value) => {
+        const r = maxR * Math.max(0, Math.min(1, value));
+        const a = angleFor(i);
+        return [center + r * Math.cos(a), center + r * Math.sin(a)];
+    };
+
+    const gridRings = [0.25, 0.5, 0.75, 1].map(frac => {
+        const pts = RADAR_AXES.map((_, i) => pointFor(i, frac).join(',')).join(' ');
+        return '<polygon points="' + pts + '" fill="none" stroke="var(--radar-grid)" stroke-width="1"></polygon>';
+    }).join('');
+    const axisLines = RADAR_AXES.map((axis, i) => {
+        const [x, y] = pointFor(i, 1);
+        return '<line x1="' + center + '" y1="' + center + '" x2="' + x.toFixed(1) + '" y2="' + y.toFixed(1) + '" stroke="var(--radar-grid)" stroke-width="1"></line>';
+    }).join('');
+    const axisLabels = RADAR_AXES.map((axis, i) => {
+        const [x, y] = pointFor(i, 1.28);
+        return '<text x="' + x.toFixed(1) + '" y="' + y.toFixed(1) + '" text-anchor="middle" dominant-baseline="middle" class="radar-axis-label">' + escapeHtml(axis.label) + '</text>';
+    }).join('');
+
+    function seriesMarkup(vector, colorVar) {
+        const points = RADAR_AXES.map((axis, i) => pointFor(i, vector?.[axis.id] || 0));
+        const polygon = '<polygon points="' + points.map(p => p[0].toFixed(1) + ',' + p[1].toFixed(1)).join(' ') + '" fill="' + colorVar + '" fill-opacity="0.12" stroke="' + colorVar + '" stroke-width="2" stroke-linejoin="round"></polygon>';
+        const dots = points.map((p, i) => {
+            const value = vector?.[RADAR_AXES[i].id] || 0;
+            return '<circle cx="' + p[0].toFixed(1) + '" cy="' + p[1].toFixed(1) + '" r="4" fill="' + colorVar + '" stroke="var(--radar-surface)" stroke-width="2"><title>' + escapeHtml(RADAR_AXES[i].label) + '：' + Math.round(value * 100) + '%</title></circle>';
+        }).join('');
+        return polygon + dots;
+    }
+
+    const tableRows = RADAR_AXES.map(axis => {
+        const pv = Math.round((patientVector?.[axis.id] || 0) * 100);
+        const fv = Math.round((formulaVector?.[axis.id] || 0) * 100);
+        return '<tr><td>' + escapeHtml(axis.label) + '</td><td>' + pv + '%</td><td>' + fv + '%</td></tr>';
+    }).join('');
+
+    return [
+        '<div class="radar-chart">',
+        '<svg viewBox="0 0 ' + size + ' ' + size + '" width="' + size + '" height="' + size + '" role="img" aria-label="病人與' + escapeHtml(formulaName) + '的六證契合度雷達圖">',
+        gridRings, axisLines,
+        seriesMarkup(formulaVector, 'var(--radar-formula)'),
+        seriesMarkup(patientVector, 'var(--radar-patient)'),
+        axisLabels,
+        '</svg>',
+        '<div class="radar-legend">',
+        '<span class="radar-legend-item"><i style="background:var(--radar-patient)"></i>病人</span>',
+        '<span class="radar-legend-item"><i style="background:var(--radar-formula)"></i>' + escapeHtml(formulaName) + '</span>',
+        '</div>',
+        '<details class="radar-table-toggle"><summary>查看六證數值表</summary>',
+        '<table><thead><tr><th>六證</th><th>病人</th><th>' + escapeHtml(formulaName) + '</th></tr></thead><tbody>' + tableRows + '</tbody></table>',
+        '</details>',
+        '</div>',
+    ].join('');
+}
+
 // Render Prescriptions based on active syndromes, organ abnormalities, and matching symptoms
 function renderCaseSummary(recommendedFormulas) {
     const panel = document.getElementById('case-summary');
@@ -963,13 +1105,17 @@ function renderCaseSummary(recommendedFormulas) {
     const top = recommendedFormulas[0];
     const xuShiText = (top.explanation?.xuShi || [])[0] || '未定';
     const alts = recommendedFormulas.slice(1, 3).map(item => item.name + '（' + item.totalScore + ' 分）').join('、');
+    const radar = top.patternVectors ? buildRadarChartSvg(top.patternVectors.patient, top.patternVectors.formula, top.name) : '';
     panel.innerHTML = [
         '<div class="case-summary-card">',
+        '<div class="case-summary-text">',
         '<span class="case-summary-title">病例總摘要</span>',
         '本例呈現 <strong>' + escapeHtml(symptomLabels.join('、')) + '</strong>，虛實傾向：<strong>' + escapeHtml(xuShiText) + '</strong>。',
         '首選建議：<strong>' + escapeHtml(top.name) + '</strong>（' + top.totalScore + ' 分，' + escapeHtml(top.type) + '）。',
         escapeHtml(top.explanation?.reason || ''),
         alts ? '<div class="case-summary-alt">其他可考慮：' + escapeHtml(alts) + '</div>' : '',
+        '</div>',
+        radar,
         '</div>',
     ].join('');
 }

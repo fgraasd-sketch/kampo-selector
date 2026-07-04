@@ -76,6 +76,12 @@ const X4Adapter = (function () {
           matchedCount: matchedCanonical.length,
           matchedSymptoms: matchedCanonical,
           matchRate: matchedCanonical.length / Math.max(1, matchedCanonical.length + unmatchedCount),
+          // Same 6 pattern IDs (QI_XU/QI_NI/QI_YU/XUE_XU/YU_XUE/SUI_ZHI) on both
+          // sides, straight from the matcher, for the 六證 radar chart.
+          patternVectors: {
+            patient: result.explanation.patientPatternVector,
+            formula: result.formula.patternVector,
+          },
           scoreParts: {
             patternSimilarity: result.score.pattern,
             // X4 treats xu/shi as a hard gate (incompatible formulas are already
