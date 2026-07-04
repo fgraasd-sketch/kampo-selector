@@ -1,4 +1,4 @@
-﻿const KampoParser = window.KampoEngine.Parser;
+const KampoParser = window.KampoEngine.Parser;
 const KampoNormalizer = window.KampoEngine.Normalizer;
 const KampoRecommendationEngine = window.KampoEngine.RecommendationEngine;
 const KampoExcelFormulaKb = window.EXCEL_FORMULA_KB || [];
@@ -1001,6 +1001,34 @@ function renderCaseKeywordPanel() {
 
 function formatVectorEntries(entries) { return entries && entries.length ? entries.join('\u3001') : '\u7121\u660e\u986f\u547d\u4e2d'; }
 
+function getPrimarySymptoms(symptomLabels, limit = 3) {
+    const primary = symptomLabels.slice(0, limit);
+    return primary.length ? primary.join('、') : '未列出';
+}
+
+function percentFromScore(value) {
+    return Math.round(Math.max(0, Math.min(1, Number(value) || 0)) * 100);
+}
+
+function buildFitBars(scoreParts = {}) {
+    const rows = [
+        { label: '關鍵症狀', value: percentFromScore(scoreParts.symptomMatch), className: 'symptom' },
+        { label: '六證', value: percentFromScore(scoreParts.patternSimilarity), className: 'pattern' },
+        { label: '五臟', value: percentFromScore(scoreParts.zangFuSimilarity), className: 'zangfu' },
+    ];
+    return [
+        '<div class="case-fit-bars" aria-label="方劑契合分數拆解">',
+        rows.map(row => [
+            '<div class="case-fit-row case-fit-' + row.className + '">',
+            '<span class="case-fit-label">' + escapeHtml(row.label) + '</span>',
+            '<span class="case-fit-track"><i style="width:' + row.value + '%"></i></span>',
+            '<strong>' + row.value + '%</strong>',
+            '</div>',
+        ].join('')).join(''),
+        '</div>',
+    ].join('');
+}
+
 function getFormulaKnowledgeBase() {
     // KampoExcelFormulaKb is generated from kb/formulas.json (scripts/generate_frontend_kb.mjs),
     // the validated X4 knowledge base. FORMULA_DB is the older hand-embedded list, kept only
@@ -1072,6 +1100,7 @@ function buildRadarChartSvg(patientVector, formulaVector, formulaName) {
 
     return [
         '<div class="radar-chart">',
+        '<div class="radar-title">六證重疊圖</div>',
         '<svg viewBox="0 0 ' + size + ' ' + size + '" width="' + size + '" height="' + size + '" role="img" aria-label="病人與' + escapeHtml(formulaName) + '的六證契合度雷達圖">',
         gridRings, axisLines,
         seriesMarkup(formulaVector, 'var(--radar-formula)'),
@@ -1099,21 +1128,23 @@ function renderCaseSummary(recommendedFormulas) {
         return;
     }
     if (!recommendedFormulas.length) {
-        panel.innerHTML = '<div class="case-summary-card">目前症狀（' + escapeHtml(symptomLabels.join('、')) + '）尚無符合條件的方劑，請調整病例關鍵字或篩選條件。</div>';
+        panel.innerHTML = '<div class="case-summary-card compact">目前症狀：<strong>' + escapeHtml(getPrimarySymptoms(symptomLabels, 3)) + '</strong>。尚無符合條件的方劑，請調整病例關鍵字或篩選條件。</div>';
         return;
     }
     const top = recommendedFormulas[0];
     const xuShiText = (top.explanation?.xuShi || [])[0] || '未定';
-    const alts = recommendedFormulas.slice(1, 3).map(item => item.name + '（' + item.totalScore + ' 分）').join('、');
+    const primarySymptoms = getPrimarySymptoms(symptomLabels, 3);
+    const moreCount = Math.max(0, symptomLabels.length - 3);
     const radar = top.patternVectors ? buildRadarChartSvg(top.patternVectors.patient, top.patternVectors.formula, top.name) : '';
+    const fitBars = buildFitBars(top.scoreParts);
     panel.innerHTML = [
-        '<div class="case-summary-card">',
+        '<div class="case-summary-card case-summary-fit-card">',
         '<div class="case-summary-text">',
         '<span class="case-summary-title">病例總摘要</span>',
-        '本例呈現 <strong>' + escapeHtml(symptomLabels.join('、')) + '</strong>，虛實傾向：<strong>' + escapeHtml(xuShiText) + '</strong>。',
-        '首選建議：<strong>' + escapeHtml(top.name) + '</strong>（' + top.totalScore + ' 分，' + escapeHtml(top.type) + '）。',
-        escapeHtml(top.explanation?.reason || ''),
-        alts ? '<div class="case-summary-alt">其他可考慮：' + escapeHtml(alts) + '</div>' : '',
+        '<div class="case-summary-line">主要症狀：<strong>' + escapeHtml(primarySymptoms) + '</strong>' + (moreCount ? '<span class="case-summary-more">另 ' + moreCount + ' 項</span>' : '') + '</div>',
+        '<div class="case-summary-line">首選方劑：<strong>' + escapeHtml(top.name) + '</strong><span class="case-score-pill">' + top.totalScore + ' 分</span></div>',
+        '<div class="case-summary-line">虛實傾向：<strong>' + escapeHtml(xuShiText) + '</strong><span class="case-summary-type">' + escapeHtml(top.type || '') + '</span></div>',
+        fitBars,
         '</div>',
         radar,
         '</div>',
@@ -1340,10 +1371,3 @@ function preparePrintReport() {
         });
     }
 }
-
-
-
-
-
-
-
