@@ -948,11 +948,38 @@ function getRecommendedFormulas(limit = 5) {
 }
 
 // Render Prescriptions based on active syndromes, organ abnormalities, and matching symptoms
+function renderCaseSummary(recommendedFormulas) {
+    const panel = document.getElementById('case-summary');
+    if (!panel) return;
+    const symptomLabels = [...new Set([...appState.caseKeywords, ...getCheckedSymptomLabels()])];
+    if (!symptomLabels.length) {
+        panel.innerHTML = '';
+        return;
+    }
+    if (!recommendedFormulas.length) {
+        panel.innerHTML = '<div class="case-summary-card">目前症狀（' + escapeHtml(symptomLabels.join('、')) + '）尚無符合條件的方劑，請調整病例關鍵字或篩選條件。</div>';
+        return;
+    }
+    const top = recommendedFormulas[0];
+    const xuShiText = (top.explanation?.xuShi || [])[0] || '未定';
+    const alts = recommendedFormulas.slice(1, 3).map(item => item.name + '（' + item.totalScore + ' 分）').join('、');
+    panel.innerHTML = [
+        '<div class="case-summary-card">',
+        '<span class="case-summary-title">病例總摘要</span>',
+        '本例呈現 <strong>' + escapeHtml(symptomLabels.join('、')) + '</strong>，虛實傾向：<strong>' + escapeHtml(xuShiText) + '</strong>。',
+        '首選建議：<strong>' + escapeHtml(top.name) + '</strong>（' + top.totalScore + ' 分，' + escapeHtml(top.type) + '）。',
+        escapeHtml(top.explanation?.reason || ''),
+        alts ? '<div class="case-summary-alt">其他可考慮：' + escapeHtml(alts) + '</div>' : '',
+        '</div>',
+    ].join('');
+}
+
 function renderPrescriptions() {
     const container = document.getElementById('recommendations-container');
     if (!container) return;
     container.innerHTML = '';
     const recommendedFormulas = getRecommendedFormulas(5);
+    renderCaseSummary(recommendedFormulas);
     if (recommendedFormulas.length === 0) {
         container.innerHTML = '<div class="card text-center py-5" style="grid-column: span 2;"><p class="text-muted"><i class="fa-solid fa-folder-open" style="font-size:2rem; margin-bottom:1rem; display:block;"></i> \u6c92\u6709\u7b26\u5408\u76ee\u524d\u75c5\u4f8b\u5411\u91cf\u6216\u641c\u5c0b\u689d\u4ef6\u7684\u65b9\u5291\u3002\u8acb\u8abf\u6574\u75c7\u72c0\u3001\u75c5\u4f8b\u95dc\u9375\u5b57\u6216\u7be9\u9078\u689d\u4ef6\u3002</p></div>';
         const badgeDesktop = document.getElementById('rx-count-badge');
