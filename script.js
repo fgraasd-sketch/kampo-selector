@@ -467,6 +467,50 @@ const FORMULA_DB = [
 ];
 
 // ==========================================
+// 1.5 CHECKBOX NORMALIZATION HELPERS
+// ==========================================
+
+const COMPOUND_SYMPTOM_SEPARATOR = /[，,、\/]/;
+
+function splitSymptomLabel(label) {
+    return String(label || '').split(COMPOUND_SYMPTOM_SEPARATOR).map(part => part.trim()).filter(Boolean);
+}
+
+function makeSplitSymptomId(sym, term) {
+    return sym.id + '__' + term.replace(/[\s()（）]+/g, '').replace(/[\/，,、]+/g, '_');
+}
+
+function expandSymptom(sym) {
+    const parts = splitSymptomLabel(sym.label);
+    if (parts.length <= 1) return [{ ...sym, scoreGroupId: sym.id, sourceLabel: sym.label, isSplitChild: false }];
+    return parts.map(part => ({
+        ...sym,
+        id: makeSplitSymptomId(sym, part),
+        label: part,
+        scoreGroupId: sym.id,
+        sourceLabel: sym.label,
+        isSplitChild: true,
+    }));
+}
+
+function getRenderableSymptoms(symptoms) {
+    return symptoms.flatMap(expandSymptom);
+}
+
+function isSymptomGroupChecked(sym) {
+    if (appState.checkedSymptoms.has(sym.id)) return true;
+    return expandSymptom(sym).some(item => appState.checkedSymptoms.has(item.id));
+}
+
+function getSymptomScore(sym) {
+    if (sym.scoreFemale !== undefined && appState.gender === 'female') return sym.scoreFemale;
+    return sym.score;
+}
+
+function getCheckedRenderableSymptoms(symptoms) {
+    return getRenderableSymptoms(symptoms).filter(sym => appState.checkedSymptoms.has(sym.id));
+}
+// ==========================================
 // 2. STATE MANAGEMENT (應用程式狀態管理)
 // ==========================================
 
@@ -501,10 +545,11 @@ function initApp() {
         const container = document.getElementById(`list-${syndromeKey}`);
         if (container) {
             container.innerHTML = '';
-            db.symptoms.forEach(sym => {
+            getRenderableSymptoms(db.symptoms).forEach(sym => {
                 const itemDiv = document.createElement('div');
                 itemDiv.className = 'symptom-item';
                 itemDiv.dataset.id = sym.id;
+                if (sym.scoreGroupId !== sym.id) itemDiv.dataset.scoreGroup = sym.scoreGroupId;
                 
                 // Gender dependent scores label
                 let scoreText = sym.score;
@@ -726,7 +771,7 @@ function renderOrganPanel() {
     // Calculate active symptoms in this organ
     let checkedInOrgan = 0;
     db.symptoms.forEach(sym => {
-        if (appState.checkedSymptoms.has(sym.id)) checkedInOrgan++;
+        if (isSymptomGroupChecked(sym)) checkedInOrgan++;
     });
     
     let statusClass = 'status-inactive badge-qi_xu';
@@ -754,11 +799,12 @@ function renderOrganPanel() {
     const listContainer = document.getElementById('organ-symptom-list');
     listContainer.innerHTML = '';
     
-    db.symptoms.forEach(sym => {
+    getRenderableSymptoms(db.symptoms).forEach(sym => {
         const isChecked = appState.checkedSymptoms.has(sym.id);
         const itemDiv = document.createElement('div');
         itemDiv.className = `symptom-item ${isChecked ? 'checked' : ''}`;
         itemDiv.dataset.id = sym.id;
+        if (sym.scoreGroupId !== sym.id) itemDiv.dataset.scoreGroup = sym.scoreGroupId;
         
         itemDiv.innerHTML = `
             <input type="checkbox" id="${sym.id}" value="${sym.id}" ${isChecked ? 'checked' : ''}>
@@ -780,13 +826,8 @@ function calculateAndRender() {
     for (const [syndromeKey, db] of Object.entries(SYNDROME_DB)) {
         let score = 0;
         db.symptoms.forEach(sym => {
-            if (appState.checkedSymptoms.has(sym.id)) {
-                // Handle gender weight differences for Yu Xue (瘀血)
-                if (syndromeKey === 'yu_xue' && appState.gender === 'female') {
-                    score += sym.scoreFemale;
-                } else {
-                    score += sym.score;
-                }
+            if (isSymptomGroupChecked(sym)) {
+                score += getSymptomScore(sym);
             }
         });
         
@@ -800,7 +841,7 @@ function calculateAndRender() {
     for (const [organKey, db] of Object.entries(ORGAN_DB)) {
         let checkedCount = 0;
         db.symptoms.forEach(sym => {
-            if (appState.checkedSymptoms.has(sym.id)) {
+            if (isSymptomGroupChecked(sym)) {
                 checkedCount++;
             }
         });
@@ -897,19 +938,22 @@ let symptomTermIndexCache = null;
 // 水滯). Only whole comma/、-separated parts count as a match, so a single
 // word doesn't light up an unrelated multi-symptom checkbox like
 // 頭痛，眩暈感，眼痛，健忘，高血壓 just because it shares one term.
+// Case terms that don't literally match any single-symptom checkbox label,
+// but clinically indicate the same checkbox (e.g. 經痛/痛經 are forms of
+// 月經不調), so they should auto-check it too. Keyed by the checkbox's own
+// canonical label.
+const SYMPTOM_TERM_ALIASES = {
+    '月經不調': ['經痛', '痛經', '月經痛', '月經疼痛', '月事不調', '月經失調', '月經不順', '經期不順', '月經紊亂', '經期紊亂', '月經延遲', '月經遲延', '經期延後'],
+};
+
 function getSymptomTermIndex() {
     if (symptomTermIndexCache) return symptomTermIndexCache;
     const index = new Map();
     const addDb = (db) => {
         for (const group of Object.values(db)) {
-            for (const sym of group.symptoms) {
-                // Skip compound cluster labels (e.g. 頭痛，眩暈感，眼痛，健忘，高血壓):
-                // they represent several symptoms occurring together, so a single
-                // shared word must not auto-check the whole cluster. Only a label
-                // that IS just one term (no separator at all) is indexed.
-                const parts = sym.label.split(/[，,、\/]/).map(part => part.trim()).filter(Boolean);
-                if (parts.length !== 1) continue;
-                const term = parts[0];
+            for (const sym of getRenderableSymptoms(group.symptoms)) {
+                const term = sym.label.trim();
+                if (!term) continue;
                 if (!index.has(term)) index.set(term, []);
                 index.get(term).push(sym.id);
             }
@@ -917,6 +961,15 @@ function getSymptomTermIndex() {
     };
     addDb(SYNDROME_DB);
     addDb(ORGAN_DB);
+    Object.entries(SYMPTOM_TERM_ALIASES).forEach(([canonicalTerm, aliases]) => {
+        const ids = index.get(canonicalTerm);
+        if (!ids || !ids.length) return;
+        aliases.forEach(alias => {
+            if (!index.has(alias)) index.set(alias, []);
+            const bucket = index.get(alias);
+            ids.forEach(id => { if (!bucket.includes(id)) bucket.push(id); });
+        });
+    });
     symptomTermIndexCache = index;
     return index;
 }
@@ -959,16 +1012,12 @@ function syncCaseSymptomsToCheckboxes() {
 
 function getCheckedSymptomLabels() {
     const labels = [];
-    appState.checkedSymptoms.forEach(id => {
-        for (const syndrome of Object.values(SYNDROME_DB)) {
-            const sym = syndrome.symptoms.find(s => s.id === id);
-            if (sym) labels.push(sym.label);
-        }
-        for (const organ of Object.values(ORGAN_DB)) {
-            const sym = organ.symptoms.find(s => s.id === id);
-            if (sym) labels.push(sym.label);
-        }
-    });
+    for (const syndrome of Object.values(SYNDROME_DB)) {
+        getCheckedRenderableSymptoms(syndrome.symptoms).forEach(sym => labels.push(sym.label));
+    }
+    for (const organ of Object.values(ORGAN_DB)) {
+        getCheckedRenderableSymptoms(organ.symptoms).forEach(sym => labels.push(sym.label));
+    }
     return labels;
 }
 
@@ -1025,6 +1074,32 @@ function buildFitBars(scoreParts = {}) {
             '<strong>' + row.value + '%</strong>',
             '</div>',
         ].join('')).join(''),
+        '</div>',
+    ].join('');
+}
+
+// Draft single-herb "add/strengthen" suggestions for whichever key symptoms
+// the formula doesn't cover (see x4-adapter.js getHerbSuggestions()). This
+// KB layer is explicitly draft/non-clinical (kb/kb_metadata.json), so the
+// disclaimer line is always rendered, never hidden behind a tooltip.
+function buildHerbSuggestionsHtml(herbSuggestions) {
+    if (!herbSuggestions || !herbSuggestions.length) return '';
+    const rows = herbSuggestions.map(herb => {
+        const directionClass = herb.alreadyInFormula ? 'rx-herb-tag-strengthen' : 'rx-herb-tag-add';
+        const directionLabel = herb.alreadyInFormula ? '可加重方向' : '可加入方向';
+        return [
+            '<div class="rx-herb-row">',
+            '<span class="rx-herb-tag ' + directionClass + '">' + escapeHtml(directionLabel) + '</span>',
+            '<strong>' + escapeHtml(herb.name) + '</strong>',
+            '<span class="rx-herb-covers">覆蓋：' + escapeHtml(herb.coveredSymptoms.join('、')) + '</span>',
+            '</div>',
+        ].join('');
+    }).join('');
+    return [
+        '<div class="rx-herb-suggestions">',
+        '<strong><i class="fa-solid fa-leaf"></i> 可補足單味藥方向：</strong>',
+        rows,
+        '<p class="rx-herb-disclaimer">草稿方向建議，非劑量／安全性建議，須由醫師覆核。</p>',
         '</div>',
     ].join('');
 }
@@ -1182,7 +1257,8 @@ function renderPrescriptions() {
         const scoreParts = item.scoreParts || {};
         const explanation = item.explanation || {};
         const matchedSymptomsHtml = hasMatches ? '<div class="rx-matched-symptoms"><strong><i class="fa-solid fa-circle-check"></i> \u75c7\u72c0\u547d\u4e2d\uff1a</strong><span>' + escapeHtml(item.matchedSymptoms.join('\u3001')) + '</span></div>' : '<div class="rx-matched-symptoms muted"><strong><i class="fa-solid fa-circle-info"></i> \u75c7\u72c0\u547d\u4e2d\uff1a</strong><span>\u672a\u547d\u4e2d\u6587\u5b57\u75c7\u72c0\uff0c\u4f9d\u8fa8\u8b49\u5411\u91cf\u6392\u5e8f</span></div>';
-        card.innerHTML = ['<span class="rx-score-badge">Top ' + (index + 1) + ' ? ' + item.totalScore + ' \u5206</span>','<div>','<div class="rx-card-header"><span class="rx-name">' + escapeHtml(item.name) + '</span><span class="rx-tag ' + tagClass + '">' + escapeHtml(item.type) + '</span></div>','<div class="rx-source">' + iconHtml + ' ' + sourceName + '</div>','<div class="rx-indications"><strong>\u81e8\u5e8a\u6307\u5fb5\uff1a</strong> ' + escapeHtml(item.indications) + '</div>','</div>','<div class="rx-score-grid">','<div><strong>\u516d\u8b49</strong><span>' + Math.round((scoreParts.patternSimilarity || 0) * 100) + '%</span></div>','<div><strong>\u865b\u5be6</strong><span>' + (scoreParts.xuShiLabel ? escapeHtml(scoreParts.xuShiLabel) : Math.round((scoreParts.xuShiSimilarity || 0) * 100) + '%') + '</span></div>','<div><strong>\u4e94\u81df</strong><span>' + Math.round((scoreParts.zangFuSimilarity || 0) * 100) + '%</span></div>','<div><strong>\u75c7\u72c0</strong><span>' + Math.round((scoreParts.symptomMatch || 0) * 100) + '%</span></div>','</div>', matchedSymptomsHtml, '<div class="rx-explainability">','<div><strong>\u516d\u8b49\u547d\u4e2d\uff1a</strong>' + escapeHtml(formatVectorEntries(explanation.patterns)) + '</div>','<div><strong>\u865b\u5be6\u5224\u65b7\uff1a</strong>' + escapeHtml(formatVectorEntries(explanation.xuShi)) + '</div>','<div><strong>\u4e94\u81df\u547d\u4e2d\uff1a</strong>' + escapeHtml(formatVectorEntries(explanation.zangFu)) + '</div>','<div><strong>\u7279\u6b8a\u6307\u5fb5\uff1a</strong>' + escapeHtml(formatVectorEntries(explanation.specialHits)) + '</div>','<div><strong>\u7981\u5fcc / \u6392\u9664\u8b66\u793a\uff1a</strong>' + escapeHtml(formatVectorEntries(explanation.contraindicationHits)) + '</div>','<div><strong>\u70ba\u4ec0\u9ebc\u63a8\u85a6\uff1a</strong>' + escapeHtml(explanation.reason || '') + '</div>','</div>'].join('');
+        const herbSuggestionsHtml = buildHerbSuggestionsHtml(item.herbSuggestions);
+        card.innerHTML = ['<span class="rx-score-badge">Top ' + (index + 1) + ' \u00b7 ' + item.totalScore + ' \u5206</span>','<div>','<div class="rx-card-header"><span class="rx-name">' + escapeHtml(item.name) + '</span><span class="rx-tag ' + tagClass + '">' + escapeHtml(item.type) + '</span></div>','<div class="rx-source">' + iconHtml + ' ' + sourceName + '</div>','<div class="rx-indications"><strong>\u81e8\u5e8a\u6307\u5fb5\uff1a</strong> ' + escapeHtml(item.indications) + '</div>','</div>','<div class="rx-score-grid">','<div><strong>\u516d\u8b49</strong><span>' + Math.round((scoreParts.patternSimilarity || 0) * 100) + '%</span></div>','<div><strong>\u865b\u5be6</strong><span>' + (scoreParts.xuShiLabel ? escapeHtml(scoreParts.xuShiLabel) : Math.round((scoreParts.xuShiSimilarity || 0) * 100) + '%') + '</span></div>','<div><strong>\u4e94\u81df</strong><span>' + Math.round((scoreParts.zangFuSimilarity || 0) * 100) + '%</span></div>','<div><strong>\u75c7\u72c0</strong><span>' + Math.round((scoreParts.symptomMatch || 0) * 100) + '%</span></div>','</div>', matchedSymptomsHtml, herbSuggestionsHtml, '<div class="rx-explainability">','<div><strong>\u516d\u8b49\u547d\u4e2d\uff1a</strong>' + escapeHtml(formatVectorEntries(explanation.patterns)) + '</div>','<div><strong>\u865b\u5be6\u5224\u65b7\uff1a</strong>' + escapeHtml(formatVectorEntries(explanation.xuShi)) + '</div>','<div><strong>\u4e94\u81df\u547d\u4e2d\uff1a</strong>' + escapeHtml(formatVectorEntries(explanation.zangFu)) + '</div>','<div><strong>\u7279\u6b8a\u6307\u5fb5\uff1a</strong>' + escapeHtml(formatVectorEntries(explanation.specialHits)) + '</div>','<div><strong>\u7981\u5fcc / \u6392\u9664\u8b66\u793a\uff1a</strong>' + escapeHtml(formatVectorEntries(explanation.contraindicationHits)) + '</div>','<div><strong>\u70ba\u4ec0\u9ebc\u63a8\u85a6\uff1a</strong>' + escapeHtml(explanation.reason || '') + '</div>','</div>'].join('');
         container.appendChild(card);
     });
 }

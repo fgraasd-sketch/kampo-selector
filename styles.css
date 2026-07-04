@@ -49,6 +49,47 @@ body {
     overflow-x: hidden;
 }
 
+
+.clinical-disclaimer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.55rem;
+    padding: 0.55rem 1rem;
+    background: #fff8dc;
+    color: #503b12;
+    border-top: 1px solid rgba(194, 157, 83, 0.65);
+    box-shadow: 0 -3px 14px rgba(26, 77, 56, 0.12);
+    font-size: 0.86rem;
+    line-height: 1.45;
+    text-align: center;
+}
+
+.clinical-disclaimer i,
+.rx-disclaimer i {
+    color: var(--accent-gold);
+    flex: 0 0 auto;
+}
+
+.rx-disclaimer {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.55rem;
+    margin-bottom: 1rem;
+    padding: 0.7rem 0.85rem;
+    border: 1px solid rgba(194, 157, 83, 0.45);
+    border-radius: var(--radius-md);
+    background: var(--accent-gold-light);
+    color: #503b12;
+    font-size: 0.88rem;
+    line-height: 1.5;
+}
+
 /* App Layout */
 .app-container {
     display: grid;
@@ -840,6 +881,56 @@ body {
     color: var(--accent-gold);
 }
 
+.rx-herb-suggestions {
+    font-size: 0.8rem;
+    background-color: white;
+    border: 1px solid rgba(194, 157, 83, 0.3);
+    padding: 0.5rem 0.75rem;
+    border-radius: var(--radius-md);
+    margin-top: 0.6rem;
+    display: grid;
+    gap: 0.4rem;
+}
+
+.rx-herb-suggestions > strong {
+    color: var(--accent-gold);
+}
+
+.rx-herb-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.rx-herb-tag {
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 0.1rem 0.5rem;
+    border-radius: 999px;
+    white-space: nowrap;
+}
+
+.rx-herb-tag-add {
+    background: rgba(79, 127, 153, 0.15);
+    color: #2f5b73;
+}
+
+.rx-herb-tag-strengthen {
+    background: rgba(194, 157, 83, 0.2);
+    color: #7a5a1e;
+}
+
+.rx-herb-covers {
+    color: var(--text-muted);
+}
+
+.rx-herb-disclaimer {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 0.74rem;
+}
+
 .rx-score-badge {
     position: absolute;
     top: -12px;
@@ -927,6 +1018,13 @@ body {
 }
 
 @media (max-width: 900px) {
+    .clinical-disclaimer {
+        bottom: calc(65px + env(safe-area-inset-bottom, 0px));
+        padding: 0.45rem 0.75rem;
+        font-size: 0.76rem;
+        line-height: 1.4;
+    }
+
     .app-container {
         grid-template-columns: 1fr;
     }
@@ -1072,7 +1170,7 @@ body {
     }
     
     .main-content {
-        padding: 5.5rem 1.5rem 6.5rem 1.5rem;
+        padding: 5.5rem 1.5rem 9rem 1.5rem;
     }
     
     .organ-layout {
@@ -1321,4 +1419,47 @@ body {
 .rx-score-grid span { font-weight: 700; color: var(--primary-color); }
 .rx-explainability { border-top: 1px solid var(--border-color); padding-top: 0.75rem; margin-top: 0.75rem; display: grid; gap: 0.45rem; font-size: 0.9rem; line-height: 1.55; }
 .rx-matched-symptoms.muted span { color: var(--text-muted); }
-@media (max-width: 720px) { .case-actions, .case-add-keyword { flex-direction: column; align-items: stretch; } .case-fit-row { grid-template-columns: 4.2rem minmax(70px, 1fr) 2.8rem; } .radar-chart { width: 100%; } .rx-score-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 720px) { .case-actions, .case-add-keyword { flex-direction: column; align-items: stretch; } .case-fit-row { grid-template-columns: 4.2rem minmax(70px, 1fr) 2.8rem; } .radar-chart { width: 100%; } .rx-score-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .rx-disclaimer { font-size: 0.82rem; } }
+
+@media (max-width: 600px) {
+    .main-content {
+        width: 100%;
+        max-width: 100%;
+        padding: 5rem 1rem 9.5rem 1rem;
+        overflow-x: hidden;
+    }
+
+    .content-section,
+    .section-header,
+    .card,
+    .patient-grid,
+    .form-group,
+    .gender-toggle-group,
+    .filter-grid,
+    .case-input-panel,
+    .rx-layout,
+    .rx-list {
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="number"],
+    .form-group select,
+    .case-input-panel textarea,
+    .case-add-keyword input,
+    .search-wrapper input {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .gender-toggle-group {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    }
+
+    .gender-btn {
+        min-width: 0;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+}
