@@ -776,7 +776,7 @@ function setupEventListeners() {
     // coarse canonical buckets: the X4 matcher's ontology resolves raw terms like
     // \u5614\u5410/\u80f8\u8107\u82e6\u6eff directly, while bucket names like \u6c23\u9006 mean nothing to it.
     // Negated hits (e.g. \u672a\u767c\u73fe\u660e\u986f\u7684\u80f8\u8105\u82e6\u6eff) start unchecked.
-    if (parseCaseBtn) { parseCaseBtn.addEventListener('click', () => { const caseText = document.getElementById('case-input')?.value || ''; appState.parsedCaseItems = KampoParser.parseCaseText(caseText); appState.caseKeywords = [...new Set(appState.parsedCaseItems.filter(item => !item.negated).map(item => item.source))]; renderCaseKeywordPanel(); syncCaseSymptomsToCheckboxes(); }); }
+    if (parseCaseBtn) { parseCaseBtn.addEventListener('click', () => { const caseText = document.getElementById('case-input')?.value || ''; appState.parsedCaseItems = mergeParsedCaseItems(KampoParser.parseCaseText(caseText), parseCaseTextWithOntology(caseText)); appState.caseKeywords = [...new Set(appState.parsedCaseItems.filter(item => !item.negated).map(item => item.source))]; renderCaseKeywordPanel(); syncCaseSymptomsToCheckboxes(); }); }
     if (addKeywordBtn && caseKeywordInput) { addKeywordBtn.addEventListener('click', () => { const keyword = (caseKeywordInput.value || '').trim(); if (keyword && !appState.caseKeywords.includes(keyword)) { appState.caseKeywords.push(keyword); appState.parsedCaseItems.push({ keyword: KampoNormalizer.normalizeKeyword(keyword), source: keyword, weight: 1, negated: false }); caseKeywordInput.value = ''; renderCaseKeywordPanel(); syncCaseSymptomsToCheckboxes(); } }); }
 }
 
@@ -950,6 +950,41 @@ function renderDashboardGauges() {
 
 function escapeHtml(value) {
     return String(value ?? '').replace(/[&<>\"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '\"': '&quot;', "'": '&#39;' }[char]));
+}
+
+function parseCaseTextWithOntology(text = '') {
+    const ontology = window.X4KbData?.ontology;
+    if (!Array.isArray(ontology) || !ontology.length) return [];
+    const source = String(text || '');
+    const matchesByCanonical = new Map();
+    ontology.forEach(entry => {
+        [entry.canonical, ...(Array.isArray(entry.aliases) ? entry.aliases : [])].forEach(term => {
+            const label = String(term || '').trim();
+            if (!label) return;
+            const index = source.indexOf(label);
+            if (index < 0) return;
+            const canonical = entry.canonical || label;
+            const current = matchesByCanonical.get(canonical);
+            if (!current || index < current.index || (index === current.index && label.length > current.term.length)) {
+                matchesByCanonical.set(canonical, { term: label, canonical, index });
+            }
+        });
+    });
+    return [...matchesByCanonical.values()]
+        .sort((a, b) => a.index - b.index || b.term.length - a.term.length)
+        .map(({ canonical }) => ({ source: canonical, keyword: canonical, weight: 1, negated: false }));
+}
+
+function mergeParsedCaseItems(...groups) {
+    const merged = [];
+    const seen = new Set();
+    groups.flat().forEach(item => {
+        const key = item.source + '|' + item.negated;
+        if (seen.has(key)) return;
+        seen.add(key);
+        merged.push(item);
+    });
+    return merged;
 }
 
 let symptomTermIndexCache = null;

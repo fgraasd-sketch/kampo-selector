@@ -66,6 +66,29 @@ const X4Adapter = (function () {
     return Boolean(getMatcher());
   }
 
+  function compactList(items, limit = 4) {
+    const labels = (items || []).filter(Boolean);
+    if (!labels.length) return "\u7121";
+    const head = labels.slice(0, limit).join("\u3001");
+    return labels.length > limit ? head + "\u7b49 " + labels.length + " \u9805" : head;
+  }
+
+  function buildRecommendationReason(result, matchedCanonical, unmatchedCanonical) {
+    const totalKeySymptoms = matchedCanonical.length + unmatchedCanonical.length;
+    const keyDenominator = Math.max(1, totalKeySymptoms);
+    const keyPct = Math.round(result.score.key * 100);
+    const patternPct = Math.round(result.score.pattern * 100);
+    const zangFuPct = Math.round(result.score.zangFu * 100);
+    const parts = [
+      "\u95dc\u9375\u75c7\u72c0\u547d\u4e2d " + matchedCanonical.length + "/" + keyDenominator + "\uff08" + keyPct + "%\uff09",
+    ];
+    if (matchedCanonical.length) parts.push("\u5df2\u547d\u4e2d\uff1a" + compactList(matchedCanonical));
+    if (unmatchedCanonical.length) parts.push("\u5c1a\u7f3a\uff1a" + compactList(unmatchedCanonical));
+    parts.push("\u516d\u8b49\u5951\u5408 " + patternPct + "%\uff1b\u4e94\u81df\u5951\u5408 " + zangFuPct + "%");
+    parts.push("\u6392\u5e8f\u6703\u7d9c\u5408\u95dc\u9375\u75c7\u72c0\u3001\u516d\u8b49\u3001\u4e94\u81df\uff1b\u55ae\u4e00\u5171\u6709\u75c7\u72c0\u4e0d\u6703\u55ae\u7368\u6c7a\u5b9a\u540d\u6b21");
+    return parts.join("\u3002") + "\u3002";
+  }
+
   function recommend({
     formulas = [],
     checkedSymptomLabels = [],
@@ -94,11 +117,11 @@ const X4Adapter = (function () {
       organScores,
       checkedSymptomLabels,
     });
-    const xuShi = deriveXuShi(patientVector.xuShi);
+    const inferredXuShi = deriveXuShi(patientVector.xuShi);
 
     if (!rawTerms.length) return [];
 
-    const x4Results = matcher.recommend({ symptoms: rawTerms, xuShi }, { limit: formulas.length || 50 });
+    const x4Results = matcher.recommend({ symptoms: rawTerms, xuShi: "unknown" }, { limit: formulas.length || 50 });
     const displayByName = new Map(formulas.map((formula) => [formula.name, formula]));
 
     return x4Results
@@ -106,7 +129,8 @@ const X4Adapter = (function () {
       .map((result) => {
         const display = displayByName.get(result.formula.name) || {};
         const matchedCanonical = result.explanation.matchedSymptoms.map((item) => item.canonical);
-        const unmatchedCount = result.explanation.unmatchedKeySymptoms.length;
+        const unmatchedCanonical = result.explanation.unmatchedKeySymptoms.map((item) => item.canonical);
+        const unmatchedCount = unmatchedCanonical.length;
         const herbSuggestions = getHerbSuggestions(result.formula.id, result.explanation.patientResidualSymptoms);
         return {
           ...display,
@@ -129,7 +153,7 @@ const X4Adapter = (function () {
             // filtered out), not a similarity score; expose a label instead of a
             // fake percentage.
             xuShiLabel:
-              xuShi === "unknown"
+              inferredXuShi === "unknown"
                 ? "未定"
                 : result.formula.xushiClass === "虛實夾雜" || result.formula.xushiClass === "未分類"
                   ? "可用"
@@ -139,21 +163,12 @@ const X4Adapter = (function () {
           },
           explanation: {
             patterns: [],
-            xuShi: [xuShi === "unknown" ? "未定" : xuShi === "xu" ? "虛" : "實"],
+            xuShi: [inferredXuShi === "unknown" ? "未定" : inferredXuShi === "xu" ? "虛" : "實"],
             zangFu: [],
             matchedSymptoms: matchedCanonical,
             specialHits: [],
             contraindicationHits: [],
-            reason:
-              "X4 matcher：關鍵症狀 " +
-              Math.round(result.score.key * 100) +
-              "% / 六證 " +
-              Math.round(result.score.pattern * 100) +
-              "% / 五臟 " +
-              Math.round(result.score.zangFu * 100) +
-              "%，命中 " +
-              matchedCanonical.length +
-              " 項關鍵症狀。",
+            reason: buildRecommendationReason(result, matchedCanonical, unmatchedCanonical),
           },
         };
       })

@@ -40,39 +40,48 @@ function createSymptomNormalizer(ontology, { parentFallbackWeight = PARENT_FALLB
 
   terms.sort((a, b) => b.term.length - a.term.length);
 
-  function normalizeTerm(term) {
-    const trimmed = String(term || "").trim();
-    if (!trimmed) return [];
-    const exact = terms.find((item) => item.term === trimmed);
-    if (!exact) return [];
+  function normalizeEntry(entry, raw, matchType = "direct") {
     const direct = {
-      id: exact.entry.id,
-      canonical: exact.entry.canonical,
-      raw: trimmed,
-      matchType: "direct",
+      id: entry.id,
+      canonical: entry.canonical,
+      raw,
+      matchType,
       weight: 1,
-      parent: exact.entry.parent ?? null,
-      tags: exact.entry.tags || [],
+      parent: entry.parent ?? null,
+      tags: entry.tags || [],
     };
     const matches = [direct];
-    if (exact.entry.parent && byId.has(exact.entry.parent)) {
-      const parent = byId.get(exact.entry.parent);
+    if (entry.parent && byId.has(entry.parent)) {
+      const parent = byId.get(entry.parent);
       matches.push({
         id: parent.id,
         canonical: parent.canonical,
-        raw: trimmed,
+        raw,
         matchType: "parent",
         weight: parentFallbackWeight,
         parent: parent.parent ?? null,
         tags: parent.tags || [],
-        childId: exact.entry.id,
+        childId: entry.id,
       });
     }
     return matches;
   }
 
+  function normalizeTerm(term) {
+    const trimmed = String(term || "").trim();
+    if (!trimmed) return [];
+    if (/^S-[A-Z0-9]+(?:-[A-Z0-9]+)*$/.test(trimmed) && byId.has(trimmed)) {
+      return normalizeEntry(byId.get(trimmed), trimmed);
+    }
+    const exact = terms.find((item) => item.term === trimmed);
+    if (!exact) return [];
+    return normalizeEntry(exact.entry, trimmed);
+  }
+
   function normalizeText(text) {
-    const source = String(text || "");
+    const source = String(text || "").trim();
+    const idMatches = normalizeTerm(source);
+    if (idMatches.length && /^S-[A-Z0-9]+(?:-[A-Z0-9]+)*$/.test(source)) return idMatches;
     const matches = [];
     for (const item of terms) {
       if (!item.term || !source.includes(item.term)) continue;
