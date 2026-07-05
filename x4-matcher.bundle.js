@@ -278,7 +278,14 @@ function createPhase1Engine(kb) {
           : `${herb.name} 覆蓋殘留症狀；Phase 1 僅作方向建議，無劑量與安全宣稱。`,
       });
     }
-    suggestions.sort((a, b) => b.coveredSymptoms.length - a.coveredSymptoms.length);
+    // Primary rank: cover the most residual symptoms. Tie-break: cover the
+    // patient's earliest-listed (chief) complaint first — residualSymptomIds is
+    // passed chief-first, so a smaller earliest index wins when coverage ties.
+    const earliestResidualIndex = (suggestion) =>
+      Math.min(...suggestion.coveredSymptoms.map((item) => residualSymptomIds.indexOf(item.id)));
+    suggestions.sort((a, b) =>
+      b.coveredSymptoms.length - a.coveredSymptoms.length ||
+      earliestResidualIndex(a) - earliestResidualIndex(b));
     return suggestions.slice(0, 3);
   }
 
@@ -544,6 +551,41 @@ function scoreKeySymptoms(formula, patientMatches, normalizer) {
   };
 }
 
+// Patient-side residuals: the symptoms the PATIENT actually reported that this
+// formula's key symptoms do NOT cover — i.e. the "most-lacking" keywords a 加減
+// single-herb suggestion should target. This is the mirror image of
+// unmatchedKeySymptoms (which are the FORMULA's key symptoms the patient never
+// reported) and is what the frontend adapter now feeds to modifierDirection.
+//
+// Source set: DIRECT patient matches only (symptoms literally reported, already
+// normalized to ontology ids). Parent-fallback matches are synthetic broader
+// ancestors inferred from a child term, not something the patient stated, so
+// they never seed a residual.
+//
+// Exclusion set: every patient id that already earned this formula key-symptom
+// credit — both a direct hit (matched.id, which equals the patient's direct id)
+// and a parent-fallback hit (matched.childId, the patient's reported child term
+// that satisfied a broader formula key symptom). A child that gave the formula
+// parent-fallback credit is therefore treated as covered and drops out.
+//
+// Order: patient input order (bestPatientMatchesById preserves first-seen /
+// Map insertion order, which follows symptoms -> tongue -> pulse input order),
+// so chief complaints come first. Direct matches all carry weight 1, so no
+// weight re-sort is needed.
+function computePatientResidualSymptoms(patientMatches, matchedSymptoms) {
+  const covered = new Set();
+  for (const matched of matchedSymptoms) {
+    covered.add(matched.id);
+    if (matched.childId) covered.add(matched.childId);
+  }
+  const residuals = [];
+  for (const match of bestPatientMatchesById(patientMatches).values()) {
+    if (match.matchType !== "direct" || covered.has(match.id)) continue;
+    residuals.push({ id: match.id, canonical: match.canonical, weight: match.weight });
+  }
+  return residuals;
+}
+
 function scoreFormula(formula, patientContext, normalizer) {
   const key = scoreKeySymptoms(formula, patientContext.matches, normalizer);
   const patternScore = cosine(patientContext.patternVector, formula.patternVector || {});
@@ -564,6 +606,7 @@ function scoreFormula(formula, patientContext, normalizer) {
     explanation: {
       matchedSymptoms: key.matchedSymptoms,
       unmatchedKeySymptoms: key.unmatchedKeySymptoms,
+      patientResidualSymptoms: computePatientResidualSymptoms(patientContext.matches, key.matchedSymptoms),
       patientPatternVector: patientContext.patternVector,
       patientZangFuVector: patientContext.zangFuVector,
       xushiClass: formulaXushiClass(formula),

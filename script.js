@@ -493,8 +493,28 @@ function expandSymptom(sym) {
     }));
 }
 
+// Dedup by trimmed term label ACROSS the whole array passed in (one call = one
+// panel: SYNDROME_DB.xxx.symptoms or ORGAN_DB.xxx.symptoms). The same single
+// term (e.g. 頭痛) legitimately appears in several compound-label groups within
+// one panel (see ORGAN_DB.liver); rendering/scoring all of them would let one
+// checked symptom inflate that panel's score by +N instead of +1. Groups are
+// walked in array order and only the FIRST occurrence of each label is kept;
+// the kept child retains the scoreGroupId of the group it first occurred in,
+// so isSymptomGroupChecked's per-group +1 behavior is unaffected. Cross-panel
+// duplicates (different symptoms/organ arrays) are untouched by design, since
+// every call site here passes a single panel's symptoms array.
 function getRenderableSymptoms(symptoms) {
-    return symptoms.flatMap(expandSymptom);
+    const seenLabels = new Set();
+    const result = [];
+    symptoms.forEach(sym => {
+        expandSymptom(sym).forEach(item => {
+            const label = String(item.label || '').trim();
+            if (seenLabels.has(label)) return;
+            seenLabels.add(label);
+            result.push(item);
+        });
+    });
+    return result;
 }
 
 function isSymptomGroupChecked(sym) {
@@ -526,6 +546,7 @@ let appState = {
     caseKeywords: [],
     parsedCaseItems: [],
     autoCheckedSymptoms: new Set(), // symptom-checkbox ids turned on by case parsing (vs. clicked manually)
+    lastRecommendations: [], // final on-screen X4 recommendation list (rx cards); print report reuses this verbatim
 };
 
 // ==========================================
@@ -1231,6 +1252,10 @@ function renderPrescriptions() {
     if (!container) return;
     container.innerHTML = '';
     const recommendedFormulas = getRecommendedFormulas(5);
+    // Stash the exact on-screen ranking (name/totalScore/matchedSymptoms/herbSuggestions/
+    // explanation) so the print report can reuse it verbatim instead of recomputing its
+    // own (potentially disagreeing) list from the legacy FORMULA_DB keyword heuristic.
+    appState.lastRecommendations = recommendedFormulas;
     renderCaseSummary(recommendedFormulas);
     if (recommendedFormulas.length === 0) {
         container.innerHTML = '<div class="card text-center py-5" style="grid-column: span 2;"><p class="text-muted"><i class="fa-solid fa-folder-open" style="font-size:2rem; margin-bottom:1rem; display:block;"></i> \u6c92\u6709\u7b26\u5408\u76ee\u524d\u75c5\u4f8b\u5411\u91cf\u6216\u641c\u5c0b\u689d\u4ef6\u7684\u65b9\u5291\u3002\u8acb\u8abf\u6574\u75c7\u72c0\u3001\u75c5\u4f8b\u95dc\u9375\u5b57\u6216\u7be9\u9078\u689d\u4ef6\u3002</p></div>';
@@ -1357,11 +1382,71 @@ function preparePrintReport() {
         organContent.innerHTML = '<p style="font-size:10pt; color:#666;">未發現明顯臟腑異常體質指徵。</p>';
     }
 
-    // 4. Prescriptions recommendations in print layout
+    // 4. Prescriptions recommendations in print layout.
+    // Prefer the exact on-screen X4 recommendation list (appState.lastRecommendations,
+    // stashed by renderPrescriptions()) so the printed ranking can never disagree with
+    // what the clinician just reviewed on screen. Only fall back to recomputing from
+    // the legacy FORMULA_DB keyword heuristic when that list is unavailable/empty
+    // (e.g. print triggered before any recommendation has ever been rendered).
     const rxContent = document.getElementById('print-prescription-content');
     rxContent.innerHTML = '';
 
-    // Recompute recommended list for print layout (same logic but clean layout)
+    if (appState.lastRecommendations && appState.lastRecommendations.length > 0) {
+        renderPrintPrescriptionsFromRecommendations(rxContent, appState.lastRecommendations.slice(0, 3));
+    } else {
+        renderPrintPrescriptionsLegacyFallback(rxContent);
+    }
+}
+
+// Renders the print report's prescription section straight from the same final
+// array rendered on screen by renderPrescriptions() (see also buildHerbSuggestionsHtml
+// for the on-screen equivalent). Each item carries
+// name/totalScore/matchedSymptoms/herbSuggestions/explanation.
+function renderPrintPrescriptionsFromRecommendations(rxContent, topList) {
+    topList.forEach(item => {
+        const printCard = document.createElement('div');
+        printCard.className = 'print-prescription-card';
+
+        let sourceName = '';
+        if (SYNDROME_DB[item.syndrome]) {
+            sourceName = SYNDROME_DB[item.syndrome].name + '證方';
+        } else if (ORGAN_DB[item.syndrome]) {
+            sourceName = ORGAN_DB[item.syndrome].name + '方';
+        }
+
+        const matchedText = (item.matchedSymptoms && item.matchedSymptoms.length)
+            ? item.matchedSymptoms.join('、')
+            : '未命中文字症狀，依辨證向量排序';
+
+        let herbHtml = '';
+        if (item.herbSuggestions && item.herbSuggestions.length) {
+            const herbLines = item.herbSuggestions.map(herb => {
+                const covered = (herb.coveredSymptoms || []).join('、');
+                return `<div>可補足單味藥方向：${herb.name}（覆蓋：${covered}）</div>`;
+            }).join('');
+            herbHtml = `
+                <div style="margin-top:6px; font-size:9pt; color:#333;">
+                    ${herbLines}
+                    <div style="color:#666;">草稿方向建議，非劑量／安全性建議，須由醫師覆核。</div>
+                </div>
+            `;
+        }
+
+        printCard.innerHTML = `
+            <div class="print-prescription-name">【${item.name}】 <span style="font-size:9pt; font-weight:normal; color:#444;">(${item.totalScore} 分${item.type ? ' / ' + item.type : ''}${sourceName ? ' / ' + sourceName : ''})</span></div>
+            <div class="print-prescription-details">
+                <strong>症狀命中：</strong> ${matchedText}
+                ${herbHtml}
+            </div>
+        `;
+        rxContent.appendChild(printCard);
+    });
+}
+
+// Legacy FORMULA_DB keyword heuristic — retained ONLY as a fallback for when
+// appState.lastRecommendations hasn't been populated yet (e.g. print called
+// before renderPrescriptions() has ever run once).
+function renderPrintPrescriptionsLegacyFallback(rxContent) {
     const activeSymptomsText = getCheckedSymptomLabels();
 
     const recommendedFormulas = [];
@@ -1409,11 +1494,11 @@ function preparePrintReport() {
         printLimitList.forEach(item => {
             const printCard = document.createElement('div');
             printCard.className = 'print-prescription-card';
-            
-            const matchedText = item.matchedCount > 0 
-                ? ` (與症狀吻合：${item.matchedSymptoms.join('、')})` 
+
+            const matchedText = item.matchedCount > 0
+                ? ` (與症狀吻合：${item.matchedSymptoms.join('、')})`
                 : '';
-                
+
             let sourceName = '';
             if (SYNDROME_DB[item.syndrome]) {
                 sourceName = SYNDROME_DB[item.syndrome].name + '證方';

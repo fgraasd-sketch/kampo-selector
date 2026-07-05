@@ -28,18 +28,22 @@ const X4Adapter = (function () {
     return phase1EngineInstance;
   }
 
-  // formulas.json key symptoms can be negated (e.g. 無口渴 -> S-THIRST negated:true,
-  // meaning the formula wants that symptom ABSENT). If such a key symptom is
-  // "unmatched", that only means the case never confirmed/denied it - not that
-  // the patient has it - so it must never be fed to modifierDirection, which
-  // would otherwise suggest an herb that treats the very symptom the formula
-  // wants the patient to not have.
-  function getHerbSuggestions(formulaId, unmatchedKeySymptoms) {
+  // Draft 加減 single-herb suggestions cover the patient's MOST-LACKING keywords:
+  // the symptoms the PATIENT reported that the chosen formula's key symptoms do
+  // NOT cover (result.explanation.patientResidualSymptoms from the matcher), not
+  // the formula's own unmatched key symptoms (which the patient may never have
+  // had). See computePatientResidualSymptoms() in x4-matcher.mjs.
+  //
+  // These residuals are always positive, patient-reported, ontology-normalized
+  // symptoms: negated case items (e.g. 無口渴) are dropped upstream in script.js
+  // (parseCaseText -> caseKeywords keeps only !item.negated) before they ever
+  // reach the matcher, so there is nothing to negation-filter here. They arrive
+  // chief-complaint-first, and are passed to modifierDirection in that order so
+  // its tie-break favors herbs covering the patient's earlier (chief) complaints.
+  function getHerbSuggestions(formulaId, patientResidualSymptoms) {
     const engine = getPhase1Engine();
     if (!engine) return [];
-    const residualSymptomIds = unmatchedKeySymptoms
-      .filter((symptom) => !symptom.negated)
-      .map((symptom) => symptom.id);
+    const residualSymptomIds = (patientResidualSymptoms || []).map((symptom) => symptom.id);
     if (!residualSymptomIds.length) return [];
     return engine.modifierDirection(formulaId, residualSymptomIds)
       .slice(0, 2)
@@ -103,7 +107,7 @@ const X4Adapter = (function () {
         const display = displayByName.get(result.formula.name) || {};
         const matchedCanonical = result.explanation.matchedSymptoms.map((item) => item.canonical);
         const unmatchedCount = result.explanation.unmatchedKeySymptoms.length;
-        const herbSuggestions = getHerbSuggestions(result.formula.id, result.explanation.unmatchedKeySymptoms);
+        const herbSuggestions = getHerbSuggestions(result.formula.id, result.explanation.patientResidualSymptoms);
         return {
           ...display,
           name: result.formula.name,
