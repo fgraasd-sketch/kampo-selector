@@ -89,6 +89,24 @@ const X4Adapter = (function () {
     return parts.join("\u3002") + "\u3002";
   }
 
+
+  function formulaXushiDisplay(xushiClass) {
+    return xushiClass || "\u672a\u5206\u985e";
+  }
+
+  function buildXushiLabel(inferredXuShi, formulaClass) {
+    const display = formulaXushiDisplay(formulaClass);
+    if (inferredXuShi === "unknown") return "\u65b9\uff1a" + display;
+    if (formulaClass === "\u865b\u5be6\u593e\u96dc" || formulaClass === "\u672a\u5206\u985e") return "\u53ef\u7528";
+    return "\u76f8\u7b26";
+  }
+
+  function buildXushiExplanation(inferredXuShi, formulaClass) {
+    const display = formulaXushiDisplay(formulaClass);
+    if (inferredXuShi === "unknown") return "\u672a\u5b9a\uff08\u65b9\uff1a" + display + "\uff09";
+    return inferredXuShi === "xu" ? "\u865b" : "\u5be6";
+  }
+
   function recommend({
     formulas = [],
     checkedSymptomLabels = [],
@@ -152,18 +170,13 @@ const X4Adapter = (function () {
             // X4 treats xu/shi as a hard gate (incompatible formulas are already
             // filtered out), not a similarity score; expose a label instead of a
             // fake percentage.
-            xuShiLabel:
-              inferredXuShi === "unknown"
-                ? "未定"
-                : result.formula.xushiClass === "虛實夾雜" || result.formula.xushiClass === "未分類"
-                  ? "可用"
-                  : "相符",
+            xuShiLabel: buildXushiLabel(inferredXuShi, result.formula.xushiClass),
             zangFuSimilarity: result.score.zangFu,
             symptomMatch: result.score.key,
           },
           explanation: {
             patterns: [],
-            xuShi: [inferredXuShi === "unknown" ? "未定" : inferredXuShi === "xu" ? "虛" : "實"],
+            xuShi: [buildXushiExplanation(inferredXuShi, result.formula.xushiClass)],
             zangFu: [],
             matchedSymptoms: matchedCanonical,
             specialHits: [],
