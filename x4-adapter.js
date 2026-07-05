@@ -6,6 +6,7 @@
 // kept as a fallback if the X4 bundle failed to load for any reason.
 const X4Adapter = (function () {
   let matcherInstance = null;
+  let phase1EngineInstance = null;
 
   function getMatcher() {
     if (!matcherInstance) {
@@ -13,6 +14,40 @@ const X4Adapter = (function () {
       matcherInstance = window.X4Kampo.createX4Matcher(window.X4KbData);
     }
     return matcherInstance;
+  }
+
+  // modifierDirection() (draft single-herb "add/strengthen" suggestions) needs
+  // herbTargetSymptoms/formulaCompositionsDraft on top of the base X4KbData;
+  // an unrefreshed cached bundle may not have them yet, so this stays null
+  // (feature silently absent) instead of throwing.
+  function getPhase1Engine() {
+    if (!phase1EngineInstance) {
+      if (!window.Phase1Kampo || !window.X4KbData?.herbTargetSymptoms) return null;
+      phase1EngineInstance = window.Phase1Kampo.createPhase1Engine(window.X4KbData);
+    }
+    return phase1EngineInstance;
+  }
+
+  // formulas.json key symptoms can be negated (e.g. 無口渴 -> S-THIRST negated:true,
+  // meaning the formula wants that symptom ABSENT). If such a key symptom is
+  // "unmatched", that only means the case never confirmed/denied it - not that
+  // the patient has it - so it must never be fed to modifierDirection, which
+  // would otherwise suggest an herb that treats the very symptom the formula
+  // wants the patient to not have.
+  function getHerbSuggestions(formulaId, unmatchedKeySymptoms) {
+    const engine = getPhase1Engine();
+    if (!engine) return [];
+    const residualSymptomIds = unmatchedKeySymptoms
+      .filter((symptom) => !symptom.negated)
+      .map((symptom) => symptom.id);
+    if (!residualSymptomIds.length) return [];
+    return engine.modifierDirection(formulaId, residualSymptomIds)
+      .slice(0, 2)
+      .map((suggestion) => ({
+        name: suggestion.name,
+        coveredSymptoms: suggestion.coveredSymptoms.map((item) => item.canonical),
+        alreadyInFormula: suggestion.alreadyInFormula,
+      }));
   }
 
   function deriveXuShi(patientVectorXuShi) {
@@ -68,6 +103,7 @@ const X4Adapter = (function () {
         const display = displayByName.get(result.formula.name) || {};
         const matchedCanonical = result.explanation.matchedSymptoms.map((item) => item.canonical);
         const unmatchedCount = result.explanation.unmatchedKeySymptoms.length;
+        const herbSuggestions = getHerbSuggestions(result.formula.id, result.explanation.unmatchedKeySymptoms);
         return {
           ...display,
           name: result.formula.name,
@@ -76,6 +112,7 @@ const X4Adapter = (function () {
           matchedCount: matchedCanonical.length,
           matchedSymptoms: matchedCanonical,
           matchRate: matchedCanonical.length / Math.max(1, matchedCanonical.length + unmatchedCount),
+          herbSuggestions,
           // Same 6 pattern IDs (QI_XU/QI_NI/QI_YU/XUE_XU/YU_XUE/SUI_ZHI) on both
           // sides, straight from the matcher, for the 六證 radar chart.
           patternVectors: {

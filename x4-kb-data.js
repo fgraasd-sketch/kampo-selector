@@ -13087,5 +13087,6514 @@ window.X4KbData = {
         "S-EYE-FATIGUE"
       ]
     }
+  ],
+  "herbTargetSymptoms": [
+    {
+      "herbId": "H-BAIZHU",
+      "name": "白朮",
+      "functionsOriginal": [
+        "補脾",
+        "益氣",
+        "去除過剩的津液",
+        "調節水液"
+      ],
+      "targetSymptoms": [
+        "S-APPETITE-LOW",
+        "S-EDEMA",
+        "S-FATIGUE",
+        "S-GASTRIC-SPLASH",
+        "S-OLIGURIA"
+      ],
+      "unmapped": [],
+      "source": [
+        "「氣虛 藥」",
+        "「水滯 藥物」方"
+      ],
+      "note": "去除過剩的津液 → 展開為浮腫/尿量減少/胃部振水音等水液停滯相關症狀。",
+      "expandedFunctions": [
+        {
+          "function": "補脾",
+          "targetSymptoms": [
+            "S-APPETITE-LOW",
+            "S-EDEMA",
+            "S-FATIGUE",
+            "S-GASTRIC-SPLASH",
+            "S-OLIGURIA"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "益氣",
+          "targetSymptoms": [
+            "S-APPETITE-LOW",
+            "S-EDEMA",
+            "S-FATIGUE",
+            "S-GASTRIC-SPLASH",
+            "S-OLIGURIA"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "調節水液",
+          "targetSymptoms": [
+            "S-APPETITE-LOW",
+            "S-EDEMA",
+            "S-FATIGUE",
+            "S-GASTRIC-SPLASH",
+            "S-OLIGURIA"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "去除過剩的津液",
+          "targetSymptoms": [
+            "S-APPETITE-LOW",
+            "S-EDEMA",
+            "S-FATIGUE",
+            "S-GASTRIC-SPLASH",
+            "S-OLIGURIA"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        }
+      ]
+    },
+    {
+      "herbId": "H-CANGZHU",
+      "name": "蒼朮",
+      "functionsOriginal": [
+        "祛風濕",
+        "提高脾功能",
+        "除剩餘水液"
+      ],
+      "targetSymptoms": [
+        "S-APPETITE-LOW",
+        "S-DIARRHEA-LOOSE",
+        "S-EDEMA",
+        "S-FATIGUE",
+        "S-GASTRIC-SPLASH",
+        "S-JOINT-PAIN",
+        "S-MORNING-STIFFNESS",
+        "S-OLIGURIA"
+      ],
+      "unmapped": [],
+      "source": [
+        "「水滯 藥物」方"
+      ],
+      "note": "除剩餘水液 → 展開為浮腫/尿量減少/胃部振水音等水液停滯相關症狀。",
+      "expandedFunctions": [
+        {
+          "function": "祛風濕",
+          "targetSymptoms": [
+            "S-APPETITE-LOW",
+            "S-DIARRHEA-LOOSE",
+            "S-EDEMA",
+            "S-FATIGUE",
+            "S-GASTRIC-SPLASH",
+            "S-JOINT-PAIN",
+            "S-MORNING-STIFFNESS",
+            "S-OLIGURIA"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "提高脾功能",
+          "targetSymptoms": [
+            "S-APPETITE-LOW",
+            "S-DIARRHEA-LOOSE",
+            "S-EDEMA",
+            "S-FATIGUE",
+            "S-GASTRIC-SPLASH",
+            "S-JOINT-PAIN",
+            "S-MORNING-STIFFNESS",
+            "S-OLIGURIA"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "除剩餘水液",
+          "targetSymptoms": [
+            "S-APPETITE-LOW",
+            "S-DIARRHEA-LOOSE",
+            "S-EDEMA",
+            "S-FATIGUE",
+            "S-GASTRIC-SPLASH",
+            "S-JOINT-PAIN",
+            "S-MORNING-STIFFNESS",
+            "S-OLIGURIA"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        }
+      ]
+    },
+    {
+      "herbId": "H-FULING",
+      "name": "茯苓",
+      "functionsOriginal": [
+        "調節修正過剩的津液",
+        "增強脾臟機能",
+        "安神",
+        "提高脾功能",
+        "除剩餘水液",
+        "安定精神"
+      ],
+      "targetSymptoms": [
+        "S-ANXIETY",
+        "S-APPETITE-LOW",
+        "S-DIARRHEA-LOOSE",
+        "S-EDEMA",
+        "S-FATIGUE",
+        "S-GASTRIC-SPLASH",
+        "S-INSOMNIA",
+        "S-OLIGURIA"
+      ],
+      "unmapped": [],
+      "source": [
+        "「氣虛 藥」",
+        "「水滯 藥物」方"
+      ],
+      "note": "調節修正過剩的津液 → 展開為浮腫/尿量減少/胃部振水音等水液停滯相關症狀。",
+      "expandedFunctions": [
+        {
+          "function": "提高脾功能",
+          "targetSymptoms": [
+            "S-ANXIETY",
+            "S-APPETITE-LOW",
+            "S-DIARRHEA-LOOSE",
+            "S-EDEMA",
+            "S-FATIGUE",
+            "S-GASTRIC-SPLASH",
+            "S-INSOMNIA",
+            "S-OLIGURIA"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "除剩餘水液",
+          "targetSymptoms": [
+            "S-ANXIETY",
+            "S-APPETITE-LOW",
+            "S-DIARRHEA-LOOSE",
+            "S-EDEMA",
+            "S-FATIGUE",
+            "S-GASTRIC-SPLASH",
+            "S-INSOMNIA",
+            "S-OLIGURIA"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "安定精神",
+          "targetSymptoms": [
+            "S-ANXIETY",
+            "S-APPETITE-LOW",
+            "S-DIARRHEA-LOOSE",
+            "S-EDEMA",
+            "S-FATIGUE",
+            "S-GASTRIC-SPLASH",
+            "S-INSOMNIA",
+            "S-OLIGURIA"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "調節修正過剩的津液",
+          "targetSymptoms": [
+            "S-ANXIETY",
+            "S-APPETITE-LOW",
+            "S-DIARRHEA-LOOSE",
+            "S-EDEMA",
+            "S-FATIGUE",
+            "S-GASTRIC-SPLASH",
+            "S-INSOMNIA",
+            "S-OLIGURIA"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "增強脾臟機能",
+          "targetSymptoms": [
+            "S-ANXIETY",
+            "S-APPETITE-LOW",
+            "S-DIARRHEA-LOOSE",
+            "S-EDEMA",
+            "S-FATIGUE",
+            "S-GASTRIC-SPLASH",
+            "S-INSOMNIA",
+            "S-OLIGURIA"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "安神",
+          "targetSymptoms": [
+            "S-ANXIETY",
+            "S-APPETITE-LOW",
+            "S-DIARRHEA-LOOSE",
+            "S-EDEMA",
+            "S-FATIGUE",
+            "S-GASTRIC-SPLASH",
+            "S-INSOMNIA",
+            "S-OLIGURIA"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        }
+      ]
+    },
+    {
+      "herbId": "H-ZHULING",
+      "name": "豬苓",
+      "functionsOriginal": [
+        "除剩餘水液",
+        "清熱",
+        "止眩暈",
+        "嘔吐"
+      ],
+      "targetSymptoms": [
+        "S-DIZZINESS",
+        "S-EDEMA",
+        "S-FEVER",
+        "S-GASTRIC-SPLASH",
+        "S-HEAT-SENSATION",
+        "S-OLIGURIA",
+        "S-THIRST",
+        "S-VOMITING"
+      ],
+      "unmapped": [],
+      "source": [
+        "「水滯 藥物」方"
+      ],
+      "note": "除剩餘水液 → 展開為浮腫/尿量減少/胃部振水音等水液停滯相關症狀。",
+      "expandedFunctions": [
+        {
+          "function": "除剩餘水液",
+          "targetSymptoms": [
+            "S-DIZZINESS",
+            "S-EDEMA",
+            "S-FEVER",
+            "S-GASTRIC-SPLASH",
+            "S-HEAT-SENSATION",
+            "S-OLIGURIA",
+            "S-THIRST",
+            "S-VOMITING"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "清熱",
+          "targetSymptoms": [
+            "S-DIZZINESS",
+            "S-EDEMA",
+            "S-FEVER",
+            "S-GASTRIC-SPLASH",
+            "S-HEAT-SENSATION",
+            "S-OLIGURIA",
+            "S-THIRST",
+            "S-VOMITING"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "止眩暈",
+          "targetSymptoms": [
+            "S-DIZZINESS"
+          ],
+          "matchType": "contains"
+        },
+        {
+          "function": "嘔吐",
+          "targetSymptoms": [
+            "S-VOMITING"
+          ],
+          "matchType": "exact"
+        }
+      ]
+    },
+    {
+      "herbId": "H-ZEXIE",
+      "name": "澤瀉",
+      "functionsOriginal": [
+        "除剩餘水液",
+        "清熱",
+        "止眩暈",
+        "嘔吐"
+      ],
+      "targetSymptoms": [
+        "S-DIZZINESS",
+        "S-EDEMA",
+        "S-FEVER",
+        "S-GASTRIC-SPLASH",
+        "S-HEAT-SENSATION",
+        "S-OLIGURIA",
+        "S-THIRST",
+        "S-VOMITING"
+      ],
+      "unmapped": [],
+      "source": [
+        "「水滯 藥物」方"
+      ],
+      "note": "除剩餘水液 → 展開為浮腫/尿量減少/胃部振水音等水液停滯相關症狀。",
+      "expandedFunctions": [
+        {
+          "function": "除剩餘水液",
+          "targetSymptoms": [
+            "S-DIZZINESS",
+            "S-EDEMA",
+            "S-FEVER",
+            "S-GASTRIC-SPLASH",
+            "S-HEAT-SENSATION",
+            "S-OLIGURIA",
+            "S-THIRST",
+            "S-VOMITING"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "清熱",
+          "targetSymptoms": [
+            "S-DIZZINESS",
+            "S-EDEMA",
+            "S-FEVER",
+            "S-GASTRIC-SPLASH",
+            "S-HEAT-SENSATION",
+            "S-OLIGURIA",
+            "S-THIRST",
+            "S-VOMITING"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "止眩暈",
+          "targetSymptoms": [
+            "S-DIZZINESS"
+          ],
+          "matchType": "contains"
+        },
+        {
+          "function": "嘔吐",
+          "targetSymptoms": [
+            "S-VOMITING"
+          ],
+          "matchType": "exact"
+        }
+      ]
+    },
+    {
+      "herbId": "H-BANXIA",
+      "name": "半夏",
+      "functionsOriginal": [
+        "降氣逆",
+        "促進氣的循行",
+        "調胃止嘔",
+        "除濕",
+        "除心下水滯",
+        "治氣逆",
+        "止嘔吐"
+      ],
+      "targetSymptoms": [
+        "S-ABDOMINAL-DISTENSION",
+        "S-ASTHMA-WHEEZE",
+        "S-BELCHING",
+        "S-CHEST-OPPRESSION",
+        "S-EDEMA",
+        "S-GASTRIC-SPLASH",
+        "S-NAUSEA",
+        "S-VOMITING"
+      ],
+      "unmapped": [],
+      "source": [
+        "「氣郁 藥」",
+        "「水滯 藥物」方",
+        "「氣逆 藥」的副本"
+      ],
+      "note": "",
+      "expandedFunctions": [
+        {
+          "function": "除心下水滯",
+          "targetSymptoms": [
+            "S-ABDOMINAL-DISTENSION",
+            "S-ASTHMA-WHEEZE",
+            "S-BELCHING",
+            "S-CHEST-OPPRESSION",
+            "S-EDEMA",
+            "S-GASTRIC-SPLASH",
+            "S-NAUSEA",
+            "S-VOMITING"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "治氣逆",
+          "targetSymptoms": [
+            "S-ABDOMINAL-DISTENSION",
+            "S-ASTHMA-WHEEZE",
+            "S-BELCHING",
+            "S-CHEST-OPPRESSION",
+            "S-EDEMA",
+            "S-GASTRIC-SPLASH",
+            "S-NAUSEA",
+            "S-VOMITING"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "止嘔吐",
+          "targetSymptoms": [
+            "S-VOMITING"
+          ],
+          "matchType": "contains"
+        },
+        {
+          "function": "降氣逆",
+          "targetSymptoms": [
+            "S-ABDOMINAL-DISTENSION",
+            "S-ASTHMA-WHEEZE",
+            "S-BELCHING",
+            "S-CHEST-OPPRESSION",
+            "S-EDEMA",
+            "S-GASTRIC-SPLASH",
+            "S-NAUSEA",
+            "S-VOMITING"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "促進氣的循行",
+          "targetSymptoms": [
+            "S-ABDOMINAL-DISTENSION",
+            "S-ASTHMA-WHEEZE",
+            "S-BELCHING",
+            "S-CHEST-OPPRESSION",
+            "S-EDEMA",
+            "S-GASTRIC-SPLASH",
+            "S-NAUSEA",
+            "S-VOMITING"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "調胃止嘔",
+          "targetSymptoms": [
+            "S-ABDOMINAL-DISTENSION",
+            "S-ASTHMA-WHEEZE",
+            "S-BELCHING",
+            "S-CHEST-OPPRESSION",
+            "S-EDEMA",
+            "S-GASTRIC-SPLASH",
+            "S-NAUSEA",
+            "S-VOMITING"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "除濕",
+          "targetSymptoms": [
+            "S-ABDOMINAL-DISTENSION",
+            "S-ASTHMA-WHEEZE",
+            "S-BELCHING",
+            "S-CHEST-OPPRESSION",
+            "S-EDEMA",
+            "S-GASTRIC-SPLASH",
+            "S-NAUSEA",
+            "S-VOMITING"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        }
+      ]
+    },
+    {
+      "herbId": "H-HUANGQI",
+      "name": "黃芪",
+      "functionsOriginal": [
+        "益氣",
+        "增強五臟機能及體表防禦能力",
+        "止汗",
+        "消腫",
+        "治浮腫",
+        "提高五臟功能"
+      ],
+      "targetSymptoms": [
+        "S-EDEMA",
+        "S-FATIGUE",
+        "S-NIGHT-SWEAT",
+        "S-SPONTANEOUS-SWEAT"
+      ],
+      "unmapped": [],
+      "source": [
+        "「氣虛 藥」",
+        "「水滯 藥物」方"
+      ],
+      "note": "",
+      "expandedFunctions": [
+        {
+          "function": "治浮腫",
+          "targetSymptoms": [
+            "S-EDEMA"
+          ],
+          "matchType": "contains"
+        },
+        {
+          "function": "止汗",
+          "targetSymptoms": [
+            "S-SPONTANEOUS-SWEAT"
+          ],
+          "matchType": "exact"
+        },
+        {
+          "function": "提高五臟功能",
+          "targetSymptoms": [
+            "S-EDEMA",
+            "S-FATIGUE",
+            "S-NIGHT-SWEAT",
+            "S-SPONTANEOUS-SWEAT"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "益氣",
+          "targetSymptoms": [
+            "S-EDEMA",
+            "S-FATIGUE",
+            "S-NIGHT-SWEAT",
+            "S-SPONTANEOUS-SWEAT"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "增強五臟機能及體表防禦能力",
+          "targetSymptoms": [
+            "S-EDEMA",
+            "S-FATIGUE",
+            "S-NIGHT-SWEAT",
+            "S-SPONTANEOUS-SWEAT"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "消腫",
+          "targetSymptoms": [
+            "S-EDEMA"
+          ],
+          "matchType": "exact"
+        }
+      ]
+    },
+    {
+      "herbId": "H-WUZHUYU",
+      "name": "吳茱萸",
+      "functionsOriginal": [
+        "溫脾胃之寒",
+        "治氣逆",
+        "止頭痛",
+        "增加尿量"
+      ],
+      "targetSymptoms": [
+        "S-ASTHMA-WHEEZE",
+        "S-PALPITATION",
+        "S-VOMITING",
+        "S-HEADACHE"
+      ],
+      "unmapped": [],
+      "source": [
+        "「氣逆 藥」的副本",
+        "「水滯 藥物」方"
+      ],
+      "note": "",
+      "expandedFunctions": [
+        {
+          "function": "溫脾胃之寒",
+          "targetSymptoms": [
+            "S-ASTHMA-WHEEZE",
+            "S-PALPITATION",
+            "S-VOMITING"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "治氣逆",
+          "targetSymptoms": [
+            "S-ASTHMA-WHEEZE",
+            "S-PALPITATION",
+            "S-VOMITING"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "止頭痛",
+          "targetSymptoms": [
+            "S-HEADACHE"
+          ],
+          "matchType": "contains"
+        },
+        {
+          "function": "增加尿量",
+          "targetSymptoms": [
+            "S-ASTHMA-WHEEZE",
+            "S-PALPITATION",
+            "S-VOMITING",
+            "S-HEADACHE"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "溫脾胃之寒",
+          "targetSymptoms": [
+            "S-ASTHMA-WHEEZE",
+            "S-PALPITATION",
+            "S-VOMITING",
+            "S-HEADACHE"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "治氣逆",
+          "targetSymptoms": [
+            "S-ASTHMA-WHEEZE",
+            "S-PALPITATION",
+            "S-VOMITING",
+            "S-HEADACHE"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        }
+      ]
+    },
+    {
+      "herbId": "H-YIYIREN",
+      "name": "薏苡仁",
+      "functionsOriginal": [
+        "除剩餘水液",
+        "清熱",
+        "排膿",
+        "提高脾功能"
+      ],
+      "targetSymptoms": [
+        "S-APPETITE-LOW",
+        "S-DIARRHEA-LOOSE",
+        "S-EDEMA",
+        "S-FATIGUE",
+        "S-FEVER",
+        "S-GASTRIC-SPLASH",
+        "S-HEAT-SENSATION",
+        "S-OLIGURIA",
+        "S-PUS",
+        "S-THIRST"
+      ],
+      "unmapped": [],
+      "source": [
+        "「水滯 藥物」方"
+      ],
+      "note": "除剩餘水液 → 展開為浮腫/尿量減少/胃部振水音等水液停滯相關症狀。",
+      "expandedFunctions": [
+        {
+          "function": "除剩餘水液",
+          "targetSymptoms": [
+            "S-APPETITE-LOW",
+            "S-DIARRHEA-LOOSE",
+            "S-EDEMA",
+            "S-FATIGUE",
+            "S-FEVER",
+            "S-GASTRIC-SPLASH",
+            "S-HEAT-SENSATION",
+            "S-OLIGURIA",
+            "S-PUS",
+            "S-THIRST"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "清熱",
+          "targetSymptoms": [
+            "S-APPETITE-LOW",
+            "S-DIARRHEA-LOOSE",
+            "S-EDEMA",
+            "S-FATIGUE",
+            "S-FEVER",
+            "S-GASTRIC-SPLASH",
+            "S-HEAT-SENSATION",
+            "S-OLIGURIA",
+            "S-PUS",
+            "S-THIRST"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "排膿",
+          "targetSymptoms": [
+            "S-PUS"
+          ],
+          "matchType": "exact"
+        },
+        {
+          "function": "提高脾功能",
+          "targetSymptoms": [
+            "S-APPETITE-LOW",
+            "S-DIARRHEA-LOOSE",
+            "S-EDEMA",
+            "S-FATIGUE",
+            "S-FEVER",
+            "S-GASTRIC-SPLASH",
+            "S-HEAT-SENSATION",
+            "S-OLIGURIA",
+            "S-PUS",
+            "S-THIRST"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        }
+      ]
+    },
+    {
+      "herbId": "H-FANGJI",
+      "name": "防己",
+      "functionsOriginal": [
+        "祛風濕",
+        "清熱",
+        "祛風",
+        "調節水液",
+        "解除肌肉痙攣"
+      ],
+      "targetSymptoms": [
+        "S-EDEMA",
+        "S-FEVER",
+        "S-GASTRIC-SPLASH",
+        "S-HEAT-SENSATION",
+        "S-JOINT-PAIN",
+        "S-MORNING-STIFFNESS",
+        "S-MUSCLE-SPASM",
+        "S-OLIGURIA",
+        "S-THIRST"
+      ],
+      "unmapped": [],
+      "source": [
+        "「水滯 藥物」方"
+      ],
+      "note": "調節水液 → 展開為浮腫/尿量減少/胃部振水音等水液停滯相關症狀。",
+      "expandedFunctions": [
+        {
+          "function": "祛風濕",
+          "targetSymptoms": [
+            "S-EDEMA",
+            "S-FEVER",
+            "S-GASTRIC-SPLASH",
+            "S-HEAT-SENSATION",
+            "S-JOINT-PAIN",
+            "S-MORNING-STIFFNESS",
+            "S-MUSCLE-SPASM",
+            "S-OLIGURIA",
+            "S-THIRST"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "清熱",
+          "targetSymptoms": [
+            "S-EDEMA",
+            "S-FEVER",
+            "S-GASTRIC-SPLASH",
+            "S-HEAT-SENSATION",
+            "S-JOINT-PAIN",
+            "S-MORNING-STIFFNESS",
+            "S-MUSCLE-SPASM",
+            "S-OLIGURIA",
+            "S-THIRST"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "祛風",
+          "targetSymptoms": [
+            "S-EDEMA",
+            "S-FEVER",
+            "S-GASTRIC-SPLASH",
+            "S-HEAT-SENSATION",
+            "S-JOINT-PAIN",
+            "S-MORNING-STIFFNESS",
+            "S-MUSCLE-SPASM",
+            "S-OLIGURIA",
+            "S-THIRST"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "調節水液",
+          "targetSymptoms": [
+            "S-EDEMA",
+            "S-FEVER",
+            "S-GASTRIC-SPLASH",
+            "S-HEAT-SENSATION",
+            "S-JOINT-PAIN",
+            "S-MORNING-STIFFNESS",
+            "S-MUSCLE-SPASM",
+            "S-OLIGURIA",
+            "S-THIRST"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "解除肌肉痙攣",
+          "targetSymptoms": [
+            "S-MUSCLE-SPASM"
+          ],
+          "matchType": "contains"
+        }
+      ]
+    },
+    {
+      "herbId": "H-FANGFENG",
+      "name": "防風",
+      "functionsOriginal": [
+        "祛風濕",
+        "清熱",
+        "祛風",
+        "調節水液",
+        "解除肌肉痙攣"
+      ],
+      "targetSymptoms": [
+        "S-EDEMA",
+        "S-FEVER",
+        "S-GASTRIC-SPLASH",
+        "S-HEAT-SENSATION",
+        "S-JOINT-PAIN",
+        "S-MORNING-STIFFNESS",
+        "S-MUSCLE-SPASM",
+        "S-OLIGURIA",
+        "S-THIRST"
+      ],
+      "unmapped": [],
+      "source": [
+        "「水滯 藥物」方"
+      ],
+      "note": "調節水液 → 展開為浮腫/尿量減少/胃部振水音等水液停滯相關症狀。",
+      "expandedFunctions": [
+        {
+          "function": "祛風濕",
+          "targetSymptoms": [
+            "S-EDEMA",
+            "S-FEVER",
+            "S-GASTRIC-SPLASH",
+            "S-HEAT-SENSATION",
+            "S-JOINT-PAIN",
+            "S-MORNING-STIFFNESS",
+            "S-MUSCLE-SPASM",
+            "S-OLIGURIA",
+            "S-THIRST"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "清熱",
+          "targetSymptoms": [
+            "S-EDEMA",
+            "S-FEVER",
+            "S-GASTRIC-SPLASH",
+            "S-HEAT-SENSATION",
+            "S-JOINT-PAIN",
+            "S-MORNING-STIFFNESS",
+            "S-MUSCLE-SPASM",
+            "S-OLIGURIA",
+            "S-THIRST"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "祛風",
+          "targetSymptoms": [
+            "S-EDEMA",
+            "S-FEVER",
+            "S-GASTRIC-SPLASH",
+            "S-HEAT-SENSATION",
+            "S-JOINT-PAIN",
+            "S-MORNING-STIFFNESS",
+            "S-MUSCLE-SPASM",
+            "S-OLIGURIA",
+            "S-THIRST"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "調節水液",
+          "targetSymptoms": [
+            "S-EDEMA",
+            "S-FEVER",
+            "S-GASTRIC-SPLASH",
+            "S-HEAT-SENSATION",
+            "S-JOINT-PAIN",
+            "S-MORNING-STIFFNESS",
+            "S-MUSCLE-SPASM",
+            "S-OLIGURIA",
+            "S-THIRST"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "解除肌肉痙攣",
+          "targetSymptoms": [
+            "S-MUSCLE-SPASM"
+          ],
+          "matchType": "contains"
+        }
+      ]
+    },
+    {
+      "herbId": "H-MAHUANG",
+      "name": "麻黃",
+      "functionsOriginal": [
+        "祛風寒",
+        "消除浮腫",
+        "治療喘息",
+        "關節痛",
+        "除寒",
+        "除剩餘水液",
+        "止痛"
+      ],
+      "targetSymptoms": [
+        "S-ABDOMINAL-PAIN",
+        "S-ASTHMA-WHEEZE",
+        "S-COLD",
+        "S-EDEMA",
+        "S-GASTRIC-SPLASH",
+        "S-HEADACHE",
+        "S-JOINT-PAIN",
+        "S-OLIGURIA"
+      ],
+      "unmapped": [],
+      "source": [
+        "「水滯 藥物」方"
+      ],
+      "note": "除剩餘水液 → 展開為浮腫/尿量減少/胃部振水音等水液停滯相關症狀。",
+      "expandedFunctions": [
+        {
+          "function": "祛風寒",
+          "targetSymptoms": [
+            "S-ABDOMINAL-PAIN",
+            "S-ASTHMA-WHEEZE",
+            "S-COLD",
+            "S-EDEMA",
+            "S-GASTRIC-SPLASH",
+            "S-HEADACHE",
+            "S-JOINT-PAIN",
+            "S-OLIGURIA"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "消除浮腫",
+          "targetSymptoms": [
+            "S-EDEMA"
+          ],
+          "matchType": "contains"
+        },
+        {
+          "function": "治療喘息",
+          "targetSymptoms": [
+            "S-ASTHMA-WHEEZE"
+          ],
+          "matchType": "contains"
+        },
+        {
+          "function": "關節痛",
+          "targetSymptoms": [
+            "S-JOINT-PAIN"
+          ],
+          "matchType": "exact"
+        },
+        {
+          "function": "除寒",
+          "targetSymptoms": [
+            "S-ABDOMINAL-PAIN",
+            "S-ASTHMA-WHEEZE",
+            "S-COLD",
+            "S-EDEMA",
+            "S-GASTRIC-SPLASH",
+            "S-HEADACHE",
+            "S-JOINT-PAIN",
+            "S-OLIGURIA"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "除剩餘水液",
+          "targetSymptoms": [
+            "S-ABDOMINAL-PAIN",
+            "S-ASTHMA-WHEEZE",
+            "S-COLD",
+            "S-EDEMA",
+            "S-GASTRIC-SPLASH",
+            "S-HEADACHE",
+            "S-JOINT-PAIN",
+            "S-OLIGURIA"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "止痛",
+          "targetSymptoms": [
+            "S-ABDOMINAL-PAIN",
+            "S-ASTHMA-WHEEZE",
+            "S-COLD",
+            "S-EDEMA",
+            "S-GASTRIC-SPLASH",
+            "S-HEADACHE",
+            "S-JOINT-PAIN",
+            "S-OLIGURIA"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        }
+      ]
+    },
+    {
+      "herbId": "H-FUZI",
+      "name": "附子",
+      "functionsOriginal": [
+        "祛風寒",
+        "消除浮腫",
+        "治療喘息",
+        "關節痛",
+        "除寒",
+        "除剩餘水液",
+        "止痛"
+      ],
+      "targetSymptoms": [
+        "S-ABDOMINAL-PAIN",
+        "S-ASTHMA-WHEEZE",
+        "S-COLD",
+        "S-EDEMA",
+        "S-GASTRIC-SPLASH",
+        "S-HEADACHE",
+        "S-JOINT-PAIN",
+        "S-OLIGURIA"
+      ],
+      "unmapped": [],
+      "source": [
+        "「水滯 藥物」方"
+      ],
+      "note": "除剩餘水液 → 展開為浮腫/尿量減少/胃部振水音等水液停滯相關症狀。",
+      "expandedFunctions": [
+        {
+          "function": "祛風寒",
+          "targetSymptoms": [
+            "S-ABDOMINAL-PAIN",
+            "S-ASTHMA-WHEEZE",
+            "S-COLD",
+            "S-EDEMA",
+            "S-GASTRIC-SPLASH",
+            "S-HEADACHE",
+            "S-JOINT-PAIN",
+            "S-OLIGURIA"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "消除浮腫",
+          "targetSymptoms": [
+            "S-EDEMA"
+          ],
+          "matchType": "contains"
+        },
+        {
+          "function": "治療喘息",
+          "targetSymptoms": [
+            "S-ASTHMA-WHEEZE"
+          ],
+          "matchType": "contains"
+        },
+        {
+          "function": "關節痛",
+          "targetSymptoms": [
+            "S-JOINT-PAIN"
+          ],
+          "matchType": "exact"
+        },
+        {
+          "function": "除寒",
+          "targetSymptoms": [
+            "S-ABDOMINAL-PAIN",
+            "S-ASTHMA-WHEEZE",
+            "S-COLD",
+            "S-EDEMA",
+            "S-GASTRIC-SPLASH",
+            "S-HEADACHE",
+            "S-JOINT-PAIN",
+            "S-OLIGURIA"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "除剩餘水液",
+          "targetSymptoms": [
+            "S-ABDOMINAL-PAIN",
+            "S-ASTHMA-WHEEZE",
+            "S-COLD",
+            "S-EDEMA",
+            "S-GASTRIC-SPLASH",
+            "S-HEADACHE",
+            "S-JOINT-PAIN",
+            "S-OLIGURIA"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "止痛",
+          "targetSymptoms": [
+            "S-ABDOMINAL-PAIN",
+            "S-ASTHMA-WHEEZE",
+            "S-COLD",
+            "S-EDEMA",
+            "S-GASTRIC-SPLASH",
+            "S-HEADACHE",
+            "S-JOINT-PAIN",
+            "S-OLIGURIA"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        }
+      ]
+    },
+    {
+      "herbId": "H-CHEQIANZI",
+      "name": "車前子",
+      "functionsOriginal": [
+        "調節水液",
+        "治療排尿障礙",
+        "止瀉"
+      ],
+      "targetSymptoms": [
+        "S-DIARRHEA",
+        "S-DYSURIA",
+        "S-EDEMA",
+        "S-OLIGURIA"
+      ],
+      "unmapped": [],
+      "source": [
+        "「水滯 藥物」方"
+      ],
+      "note": "調節水液 → 展開為浮腫/尿量減少/胃部振水音等水液停滯相關症狀。",
+      "expandedFunctions": [
+        {
+          "function": "調節水液",
+          "targetSymptoms": [
+            "S-DIARRHEA",
+            "S-DYSURIA",
+            "S-EDEMA",
+            "S-OLIGURIA"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "治療排尿障礙",
+          "targetSymptoms": [
+            "S-DYSURIA"
+          ],
+          "matchType": "contains"
+        },
+        {
+          "function": "止瀉",
+          "targetSymptoms": [
+            "S-DIARRHEA",
+            "S-DYSURIA",
+            "S-EDEMA",
+            "S-OLIGURIA"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        }
+      ]
+    },
+    {
+      "herbId": "H-YINCHENHAO",
+      "name": "茵陳蒿",
+      "functionsOriginal": [
+        "清熱",
+        "祛濕",
+        "治療黃疸",
+        "調節水液"
+      ],
+      "targetSymptoms": [
+        "S-EDEMA",
+        "S-FEVER",
+        "S-GASTRIC-SPLASH",
+        "S-HEAT-SENSATION",
+        "S-JAUNDICE",
+        "S-OLIGURIA",
+        "S-THIRST"
+      ],
+      "unmapped": [],
+      "source": [
+        "「水滯 藥物」方"
+      ],
+      "note": "調節水液 → 展開為浮腫/尿量減少/胃部振水音等水液停滯相關症狀。",
+      "expandedFunctions": [
+        {
+          "function": "清熱",
+          "targetSymptoms": [
+            "S-EDEMA",
+            "S-FEVER",
+            "S-GASTRIC-SPLASH",
+            "S-HEAT-SENSATION",
+            "S-JAUNDICE",
+            "S-OLIGURIA",
+            "S-THIRST"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "祛濕",
+          "targetSymptoms": [
+            "S-EDEMA",
+            "S-FEVER",
+            "S-GASTRIC-SPLASH",
+            "S-HEAT-SENSATION",
+            "S-JAUNDICE",
+            "S-OLIGURIA",
+            "S-THIRST"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "治療黃疸",
+          "targetSymptoms": [
+            "S-JAUNDICE"
+          ],
+          "matchType": "contains"
+        },
+        {
+          "function": "調節水液",
+          "targetSymptoms": [
+            "S-EDEMA",
+            "S-FEVER",
+            "S-GASTRIC-SPLASH",
+            "S-HEAT-SENSATION",
+            "S-JAUNDICE",
+            "S-OLIGURIA",
+            "S-THIRST"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        }
+      ]
+    },
+    {
+      "herbId": "H-HUASHI",
+      "name": "滑石",
+      "functionsOriginal": [
+        "清熱",
+        "祛濕",
+        "治療黃疸",
+        "調節水液"
+      ],
+      "targetSymptoms": [
+        "S-EDEMA",
+        "S-FEVER",
+        "S-GASTRIC-SPLASH",
+        "S-HEAT-SENSATION",
+        "S-JAUNDICE",
+        "S-OLIGURIA",
+        "S-THIRST"
+      ],
+      "unmapped": [],
+      "source": [
+        "「水滯 藥物」方"
+      ],
+      "note": "調節水液 → 展開為浮腫/尿量減少/胃部振水音等水液停滯相關症狀。",
+      "expandedFunctions": [
+        {
+          "function": "清熱",
+          "targetSymptoms": [
+            "S-EDEMA",
+            "S-FEVER",
+            "S-GASTRIC-SPLASH",
+            "S-HEAT-SENSATION",
+            "S-JAUNDICE",
+            "S-OLIGURIA",
+            "S-THIRST"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "祛濕",
+          "targetSymptoms": [
+            "S-EDEMA",
+            "S-FEVER",
+            "S-GASTRIC-SPLASH",
+            "S-HEAT-SENSATION",
+            "S-JAUNDICE",
+            "S-OLIGURIA",
+            "S-THIRST"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "治療黃疸",
+          "targetSymptoms": [
+            "S-JAUNDICE"
+          ],
+          "matchType": "contains"
+        },
+        {
+          "function": "調節水液",
+          "targetSymptoms": [
+            "S-EDEMA",
+            "S-FEVER",
+            "S-GASTRIC-SPLASH",
+            "S-HEAT-SENSATION",
+            "S-JAUNDICE",
+            "S-OLIGURIA",
+            "S-THIRST"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        }
+      ]
+    },
+    {
+      "herbId": "H-SHEGAN",
+      "name": "射干",
+      "functionsOriginal": [
+        "清肺熱",
+        "治療咽喉閉塞感",
+        "除剩餘水液"
+      ],
+      "targetSymptoms": [
+        "S-EDEMA",
+        "S-GASTRIC-SPLASH",
+        "S-OLIGURIA",
+        "S-SORE-THROAT",
+        "S-THROAT-BLOCK"
+      ],
+      "unmapped": [],
+      "source": [
+        "「水滯 藥物」方"
+      ],
+      "note": "除剩餘水液 → 展開為浮腫/尿量減少/胃部振水音等水液停滯相關症狀。",
+      "expandedFunctions": [
+        {
+          "function": "清肺熱",
+          "targetSymptoms": [
+            "S-EDEMA",
+            "S-GASTRIC-SPLASH",
+            "S-OLIGURIA",
+            "S-SORE-THROAT",
+            "S-THROAT-BLOCK"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "治療咽喉閉塞感",
+          "targetSymptoms": [
+            "S-SORE-THROAT"
+          ],
+          "matchType": "contains"
+        },
+        {
+          "function": "除剩餘水液",
+          "targetSymptoms": [
+            "S-EDEMA",
+            "S-GASTRIC-SPLASH",
+            "S-OLIGURIA",
+            "S-SORE-THROAT",
+            "S-THROAT-BLOCK"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        }
+      ]
+    },
+    {
+      "herbId": "H-BINGLANGZI",
+      "name": "檳榔子",
+      "functionsOriginal": [
+        "促進氣血循環",
+        "增加尿量"
+      ],
+      "targetSymptoms": [
+        "S-ABDOMINAL-DISTENSION",
+        "S-BELCHING",
+        "S-CHEST-OPPRESSION",
+        "S-OLIGURIA"
+      ],
+      "unmapped": [],
+      "source": [
+        "「水滯 藥物」方"
+      ],
+      "note": "",
+      "expandedFunctions": [
+        {
+          "function": "促進氣血循環",
+          "targetSymptoms": [
+            "S-ABDOMINAL-DISTENSION",
+            "S-BELCHING",
+            "S-CHEST-OPPRESSION",
+            "S-OLIGURIA"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "增加尿量",
+          "targetSymptoms": [
+            "S-ABDOMINAL-DISTENSION",
+            "S-BELCHING",
+            "S-CHEST-OPPRESSION",
+            "S-OLIGURIA"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        }
+      ]
+    },
+    {
+      "herbId": "H-SUZI",
+      "name": "蘇子",
+      "functionsOriginal": [
+        "改善氣逆",
+        "治喘息",
+        "除剩餘水液"
+      ],
+      "targetSymptoms": [
+        "S-ASTHMA-WHEEZE",
+        "S-EDEMA",
+        "S-GASTRIC-SPLASH",
+        "S-OLIGURIA"
+      ],
+      "unmapped": [],
+      "source": [
+        "「水滯 藥物」方"
+      ],
+      "note": "除剩餘水液 → 展開為浮腫/尿量減少/胃部振水音等水液停滯相關症狀。",
+      "expandedFunctions": [
+        {
+          "function": "改善氣逆",
+          "targetSymptoms": [
+            "S-ASTHMA-WHEEZE",
+            "S-EDEMA",
+            "S-GASTRIC-SPLASH",
+            "S-OLIGURIA"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "治喘息",
+          "targetSymptoms": [
+            "S-ASTHMA-WHEEZE"
+          ],
+          "matchType": "contains"
+        },
+        {
+          "function": "除剩餘水液",
+          "targetSymptoms": [
+            "S-ASTHMA-WHEEZE",
+            "S-EDEMA",
+            "S-GASTRIC-SPLASH",
+            "S-OLIGURIA"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        }
+      ]
+    },
+    {
+      "herbId": "H-MUDANPI",
+      "name": "牡丹皮",
+      "functionsOriginal": [
+        "祛除瘀血",
+        "改善血行",
+        "清熱"
+      ],
+      "targetSymptoms": [
+        "S-ABDOMINAL-TENDERNESS",
+        "S-BLOOD-DEF",
+        "S-DYSMENORRHEA",
+        "S-FEVER",
+        "S-HEAT-SENSATION",
+        "S-MENSTRUAL-IRREGULAR",
+        "S-THIRST"
+      ],
+      "unmapped": [],
+      "source": [
+        "「瘀血 藥」"
+      ],
+      "note": "",
+      "expandedFunctions": [
+        {
+          "function": "祛除瘀血",
+          "targetSymptoms": [
+            "S-ABDOMINAL-TENDERNESS",
+            "S-BLOOD-DEF",
+            "S-DYSMENORRHEA",
+            "S-FEVER",
+            "S-HEAT-SENSATION",
+            "S-MENSTRUAL-IRREGULAR",
+            "S-THIRST"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "改善血行",
+          "targetSymptoms": [
+            "S-ABDOMINAL-TENDERNESS",
+            "S-BLOOD-DEF",
+            "S-DYSMENORRHEA",
+            "S-FEVER",
+            "S-HEAT-SENSATION",
+            "S-MENSTRUAL-IRREGULAR",
+            "S-THIRST"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "清熱",
+          "targetSymptoms": [
+            "S-ABDOMINAL-TENDERNESS",
+            "S-BLOOD-DEF",
+            "S-DYSMENORRHEA",
+            "S-FEVER",
+            "S-HEAT-SENSATION",
+            "S-MENSTRUAL-IRREGULAR",
+            "S-THIRST"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        }
+      ]
+    },
+    {
+      "herbId": "H-TAOREN",
+      "name": "桃仁",
+      "functionsOriginal": [
+        "祛除瘀血",
+        "消解血栓",
+        "潤腸燥"
+      ],
+      "targetSymptoms": [
+        "S-ABDOMINAL-TENDERNESS",
+        "S-CONSTIPATION",
+        "S-DYSMENORRHEA",
+        "S-MENSTRUAL-IRREGULAR",
+        "S-SUBCUTANEOUS-BLEEDING"
+      ],
+      "unmapped": [],
+      "source": [
+        "「瘀血 藥」"
+      ],
+      "note": "",
+      "expandedFunctions": [
+        {
+          "function": "祛除瘀血",
+          "targetSymptoms": [
+            "S-ABDOMINAL-TENDERNESS",
+            "S-CONSTIPATION",
+            "S-DYSMENORRHEA",
+            "S-MENSTRUAL-IRREGULAR",
+            "S-SUBCUTANEOUS-BLEEDING"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "消解血栓",
+          "targetSymptoms": [
+            "S-ABDOMINAL-TENDERNESS",
+            "S-CONSTIPATION",
+            "S-DYSMENORRHEA",
+            "S-MENSTRUAL-IRREGULAR",
+            "S-SUBCUTANEOUS-BLEEDING"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "潤腸燥",
+          "targetSymptoms": [
+            "S-ABDOMINAL-TENDERNESS",
+            "S-CONSTIPATION",
+            "S-DYSMENORRHEA",
+            "S-MENSTRUAL-IRREGULAR",
+            "S-SUBCUTANEOUS-BLEEDING"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        }
+      ]
+    },
+    {
+      "herbId": "H-SHAOYAO",
+      "name": "芍藥",
+      "functionsOriginal": [
+        "補血",
+        "緩解骨骼肌",
+        "平滑肌痙攣",
+        "止痛",
+        "改善血行",
+        "祛除瘀血",
+        "清熱"
+      ],
+      "targetSymptoms": [
+        "S-ABDOMINAL-PAIN",
+        "S-BLOOD-DEF",
+        "S-HEADACHE",
+        "S-JOINT-PAIN",
+        "S-MENSTRUAL-SCANTY",
+        "S-MUSCLE-SPASM",
+        "S-SKIN-DRY"
+      ],
+      "unmapped": [],
+      "source": [
+        "「血虛 藥」",
+        "「瘀血 藥」"
+      ],
+      "note": "",
+      "expandedFunctions": [
+        {
+          "function": "改善血行",
+          "targetSymptoms": [
+            "S-ABDOMINAL-PAIN",
+            "S-BLOOD-DEF",
+            "S-HEADACHE",
+            "S-JOINT-PAIN",
+            "S-MENSTRUAL-SCANTY",
+            "S-MUSCLE-SPASM",
+            "S-SKIN-DRY"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "祛除瘀血",
+          "targetSymptoms": [
+            "S-ABDOMINAL-PAIN",
+            "S-BLOOD-DEF",
+            "S-HEADACHE",
+            "S-JOINT-PAIN",
+            "S-MENSTRUAL-SCANTY",
+            "S-MUSCLE-SPASM",
+            "S-SKIN-DRY"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "清熱",
+          "targetSymptoms": [
+            "S-ABDOMINAL-PAIN",
+            "S-BLOOD-DEF",
+            "S-HEADACHE",
+            "S-JOINT-PAIN",
+            "S-MENSTRUAL-SCANTY",
+            "S-MUSCLE-SPASM",
+            "S-SKIN-DRY"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "補血",
+          "targetSymptoms": [
+            "S-ABDOMINAL-PAIN",
+            "S-BLOOD-DEF",
+            "S-HEADACHE",
+            "S-JOINT-PAIN",
+            "S-MENSTRUAL-SCANTY",
+            "S-MUSCLE-SPASM",
+            "S-SKIN-DRY"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "緩解骨骼肌",
+          "targetSymptoms": [
+            "S-MUSCLE-SPASM"
+          ],
+          "matchType": "contains"
+        },
+        {
+          "function": "平滑肌痙攣",
+          "targetSymptoms": [
+            "S-MUSCLE-SPASM"
+          ],
+          "matchType": "exact"
+        },
+        {
+          "function": "止痛",
+          "targetSymptoms": [
+            "S-ABDOMINAL-PAIN",
+            "S-BLOOD-DEF",
+            "S-HEADACHE",
+            "S-JOINT-PAIN",
+            "S-MENSTRUAL-SCANTY",
+            "S-MUSCLE-SPASM",
+            "S-SKIN-DRY"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        }
+      ]
+    },
+    {
+      "herbId": "H-DANGGUI",
+      "name": "當歸",
+      "functionsOriginal": [
+        "補血",
+        "促進血循",
+        "潤腸",
+        "調經",
+        "改善血行",
+        "調整月經"
+      ],
+      "targetSymptoms": [
+        "S-BLOOD-DEF",
+        "S-CONSTIPATION",
+        "S-MENSTRUAL-IRREGULAR",
+        "S-MENSTRUAL-SCANTY",
+        "S-SKIN-DRY"
+      ],
+      "unmapped": [],
+      "source": [
+        "「血虛 藥」",
+        "「瘀血 藥」"
+      ],
+      "note": "",
+      "expandedFunctions": [
+        {
+          "function": "補血",
+          "targetSymptoms": [
+            "S-BLOOD-DEF",
+            "S-CONSTIPATION",
+            "S-MENSTRUAL-IRREGULAR",
+            "S-MENSTRUAL-SCANTY",
+            "S-SKIN-DRY"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "改善血行",
+          "targetSymptoms": [
+            "S-BLOOD-DEF",
+            "S-CONSTIPATION",
+            "S-MENSTRUAL-IRREGULAR",
+            "S-MENSTRUAL-SCANTY",
+            "S-SKIN-DRY"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "潤腸",
+          "targetSymptoms": [
+            "S-BLOOD-DEF",
+            "S-CONSTIPATION",
+            "S-MENSTRUAL-IRREGULAR",
+            "S-MENSTRUAL-SCANTY",
+            "S-SKIN-DRY"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "調整月經",
+          "targetSymptoms": [
+            "S-BLOOD-DEF",
+            "S-CONSTIPATION",
+            "S-MENSTRUAL-IRREGULAR",
+            "S-MENSTRUAL-SCANTY",
+            "S-SKIN-DRY"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "促進血循",
+          "targetSymptoms": [
+            "S-BLOOD-DEF",
+            "S-CONSTIPATION",
+            "S-MENSTRUAL-IRREGULAR",
+            "S-MENSTRUAL-SCANTY",
+            "S-SKIN-DRY"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "調經",
+          "targetSymptoms": [
+            "S-BLOOD-DEF",
+            "S-CONSTIPATION",
+            "S-MENSTRUAL-IRREGULAR",
+            "S-MENSTRUAL-SCANTY",
+            "S-SKIN-DRY"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        }
+      ]
+    },
+    {
+      "herbId": "H-CHUANXIONG",
+      "name": "川芎",
+      "functionsOriginal": [
+        "促進氣的循行",
+        "祛瘀血",
+        "除風",
+        "止痛",
+        "改善血行",
+        "促進氣機循行",
+        "祛風止痛",
+        "促進氣血循行",
+        "治氣逆",
+        "祛風"
+      ],
+      "targetSymptoms": [
+        "S-ABDOMINAL-DISTENSION",
+        "S-ABDOMINAL-PAIN",
+        "S-ABDOMINAL-TENDERNESS",
+        "S-BELCHING",
+        "S-CHEST-OPPRESSION",
+        "S-DYSMENORRHEA",
+        "S-HEADACHE",
+        "S-JOINT-PAIN",
+        "S-MENSTRUAL-IRREGULAR"
+      ],
+      "unmapped": [],
+      "source": [
+        "「氣郁 藥」",
+        "「瘀血 藥」",
+        "「氣逆 藥」的副本"
+      ],
+      "note": "",
+      "expandedFunctions": [
+        {
+          "function": "改善血行",
+          "targetSymptoms": [
+            "S-ABDOMINAL-DISTENSION",
+            "S-ABDOMINAL-PAIN",
+            "S-ABDOMINAL-TENDERNESS",
+            "S-BELCHING",
+            "S-CHEST-OPPRESSION",
+            "S-DYSMENORRHEA",
+            "S-HEADACHE",
+            "S-JOINT-PAIN",
+            "S-MENSTRUAL-IRREGULAR"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "促進氣機循行",
+          "targetSymptoms": [
+            "S-ABDOMINAL-DISTENSION",
+            "S-ABDOMINAL-PAIN",
+            "S-ABDOMINAL-TENDERNESS",
+            "S-BELCHING",
+            "S-CHEST-OPPRESSION",
+            "S-DYSMENORRHEA",
+            "S-HEADACHE",
+            "S-JOINT-PAIN",
+            "S-MENSTRUAL-IRREGULAR"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "祛風止痛",
+          "targetSymptoms": [
+            "S-ABDOMINAL-DISTENSION",
+            "S-ABDOMINAL-PAIN",
+            "S-ABDOMINAL-TENDERNESS",
+            "S-BELCHING",
+            "S-CHEST-OPPRESSION",
+            "S-DYSMENORRHEA",
+            "S-HEADACHE",
+            "S-JOINT-PAIN",
+            "S-MENSTRUAL-IRREGULAR"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "促進氣血循行",
+          "targetSymptoms": [
+            "S-ABDOMINAL-DISTENSION",
+            "S-ABDOMINAL-PAIN",
+            "S-ABDOMINAL-TENDERNESS",
+            "S-BELCHING",
+            "S-CHEST-OPPRESSION",
+            "S-DYSMENORRHEA",
+            "S-HEADACHE",
+            "S-JOINT-PAIN",
+            "S-MENSTRUAL-IRREGULAR"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "治氣逆",
+          "targetSymptoms": [
+            "S-ABDOMINAL-DISTENSION",
+            "S-ABDOMINAL-PAIN",
+            "S-ABDOMINAL-TENDERNESS",
+            "S-BELCHING",
+            "S-CHEST-OPPRESSION",
+            "S-DYSMENORRHEA",
+            "S-HEADACHE",
+            "S-JOINT-PAIN",
+            "S-MENSTRUAL-IRREGULAR"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "祛風",
+          "targetSymptoms": [
+            "S-ABDOMINAL-DISTENSION",
+            "S-ABDOMINAL-PAIN",
+            "S-ABDOMINAL-TENDERNESS",
+            "S-BELCHING",
+            "S-CHEST-OPPRESSION",
+            "S-DYSMENORRHEA",
+            "S-HEADACHE",
+            "S-JOINT-PAIN",
+            "S-MENSTRUAL-IRREGULAR"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "止痛",
+          "targetSymptoms": [
+            "S-ABDOMINAL-DISTENSION",
+            "S-ABDOMINAL-PAIN",
+            "S-ABDOMINAL-TENDERNESS",
+            "S-BELCHING",
+            "S-CHEST-OPPRESSION",
+            "S-DYSMENORRHEA",
+            "S-HEADACHE",
+            "S-JOINT-PAIN",
+            "S-MENSTRUAL-IRREGULAR"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "促進氣的循行",
+          "targetSymptoms": [
+            "S-ABDOMINAL-DISTENSION",
+            "S-ABDOMINAL-PAIN",
+            "S-ABDOMINAL-TENDERNESS",
+            "S-BELCHING",
+            "S-CHEST-OPPRESSION",
+            "S-DYSMENORRHEA",
+            "S-HEADACHE",
+            "S-JOINT-PAIN",
+            "S-MENSTRUAL-IRREGULAR"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "祛瘀血",
+          "targetSymptoms": [
+            "S-ABDOMINAL-DISTENSION",
+            "S-ABDOMINAL-PAIN",
+            "S-ABDOMINAL-TENDERNESS",
+            "S-BELCHING",
+            "S-CHEST-OPPRESSION",
+            "S-DYSMENORRHEA",
+            "S-HEADACHE",
+            "S-JOINT-PAIN",
+            "S-MENSTRUAL-IRREGULAR"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "除風",
+          "targetSymptoms": [
+            "S-ABDOMINAL-DISTENSION",
+            "S-ABDOMINAL-PAIN",
+            "S-ABDOMINAL-TENDERNESS",
+            "S-BELCHING",
+            "S-CHEST-OPPRESSION",
+            "S-DYSMENORRHEA",
+            "S-HEADACHE",
+            "S-JOINT-PAIN",
+            "S-MENSTRUAL-IRREGULAR"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        }
+      ]
+    },
+    {
+      "herbId": "H-NIUXI",
+      "name": "牛膝",
+      "functionsOriginal": [
+        "祛除瘀血",
+        "止痛",
+        "改善血行",
+        "補肝腎"
+      ],
+      "targetSymptoms": [
+        "S-ABDOMINAL-PAIN",
+        "S-ABDOMINAL-TENDERNESS",
+        "S-BLOOD-DEF",
+        "S-DYSMENORRHEA",
+        "S-HEADACHE",
+        "S-JOINT-PAIN",
+        "S-LOW-BACK-PAIN",
+        "S-MENSTRUAL-IRREGULAR",
+        "S-WEAK-LOWER-LIMB"
+      ],
+      "unmapped": [],
+      "source": [
+        "「瘀血 藥」"
+      ],
+      "note": "",
+      "expandedFunctions": [
+        {
+          "function": "祛除瘀血",
+          "targetSymptoms": [
+            "S-ABDOMINAL-PAIN",
+            "S-ABDOMINAL-TENDERNESS",
+            "S-BLOOD-DEF",
+            "S-DYSMENORRHEA",
+            "S-HEADACHE",
+            "S-JOINT-PAIN",
+            "S-LOW-BACK-PAIN",
+            "S-MENSTRUAL-IRREGULAR",
+            "S-WEAK-LOWER-LIMB"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "止痛",
+          "targetSymptoms": [
+            "S-ABDOMINAL-PAIN",
+            "S-ABDOMINAL-TENDERNESS",
+            "S-BLOOD-DEF",
+            "S-DYSMENORRHEA",
+            "S-HEADACHE",
+            "S-JOINT-PAIN",
+            "S-LOW-BACK-PAIN",
+            "S-MENSTRUAL-IRREGULAR",
+            "S-WEAK-LOWER-LIMB"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "改善血行",
+          "targetSymptoms": [
+            "S-ABDOMINAL-PAIN",
+            "S-ABDOMINAL-TENDERNESS",
+            "S-BLOOD-DEF",
+            "S-DYSMENORRHEA",
+            "S-HEADACHE",
+            "S-JOINT-PAIN",
+            "S-LOW-BACK-PAIN",
+            "S-MENSTRUAL-IRREGULAR",
+            "S-WEAK-LOWER-LIMB"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "補肝腎",
+          "targetSymptoms": [
+            "S-ABDOMINAL-PAIN",
+            "S-ABDOMINAL-TENDERNESS",
+            "S-BLOOD-DEF",
+            "S-DYSMENORRHEA",
+            "S-HEADACHE",
+            "S-JOINT-PAIN",
+            "S-LOW-BACK-PAIN",
+            "S-MENSTRUAL-IRREGULAR",
+            "S-WEAK-LOWER-LIMB"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        }
+      ]
+    },
+    {
+      "herbId": "H-DAHUANG",
+      "name": "大黃",
+      "functionsOriginal": [
+        "祛除瘀血",
+        "促進血行",
+        "清熱",
+        "除宿便"
+      ],
+      "targetSymptoms": [
+        "S-ABDOMINAL-TENDERNESS",
+        "S-CONSTIPATION",
+        "S-DYSMENORRHEA",
+        "S-FEVER",
+        "S-HEAT-SENSATION",
+        "S-MENSTRUAL-IRREGULAR",
+        "S-THIRST"
+      ],
+      "unmapped": [],
+      "source": [
+        "「瘀血 藥」"
+      ],
+      "note": "",
+      "expandedFunctions": [
+        {
+          "function": "祛除瘀血",
+          "targetSymptoms": [
+            "S-ABDOMINAL-TENDERNESS",
+            "S-CONSTIPATION",
+            "S-DYSMENORRHEA",
+            "S-FEVER",
+            "S-HEAT-SENSATION",
+            "S-MENSTRUAL-IRREGULAR",
+            "S-THIRST"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "促進血行",
+          "targetSymptoms": [
+            "S-ABDOMINAL-TENDERNESS",
+            "S-CONSTIPATION",
+            "S-DYSMENORRHEA",
+            "S-FEVER",
+            "S-HEAT-SENSATION",
+            "S-MENSTRUAL-IRREGULAR",
+            "S-THIRST"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "清熱",
+          "targetSymptoms": [
+            "S-ABDOMINAL-TENDERNESS",
+            "S-CONSTIPATION",
+            "S-DYSMENORRHEA",
+            "S-FEVER",
+            "S-HEAT-SENSATION",
+            "S-MENSTRUAL-IRREGULAR",
+            "S-THIRST"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "除宿便",
+          "targetSymptoms": [
+            "S-CONSTIPATION"
+          ],
+          "matchType": "exact"
+        }
+      ]
+    },
+    {
+      "herbId": "H-HONGHUA",
+      "name": "紅花",
+      "functionsOriginal": [
+        "消解血栓",
+        "改善血行",
+        "通經"
+      ],
+      "targetSymptoms": [
+        "S-ABDOMINAL-TENDERNESS",
+        "S-BLOOD-DEF",
+        "S-DYSMENORRHEA",
+        "S-MENSTRUAL-IRREGULAR",
+        "S-SUBCUTANEOUS-BLEEDING"
+      ],
+      "unmapped": [],
+      "source": [
+        "「瘀血 藥」"
+      ],
+      "note": "",
+      "expandedFunctions": [
+        {
+          "function": "消解血栓",
+          "targetSymptoms": [
+            "S-ABDOMINAL-TENDERNESS",
+            "S-BLOOD-DEF",
+            "S-DYSMENORRHEA",
+            "S-MENSTRUAL-IRREGULAR",
+            "S-SUBCUTANEOUS-BLEEDING"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "改善血行",
+          "targetSymptoms": [
+            "S-ABDOMINAL-TENDERNESS",
+            "S-BLOOD-DEF",
+            "S-DYSMENORRHEA",
+            "S-MENSTRUAL-IRREGULAR",
+            "S-SUBCUTANEOUS-BLEEDING"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "通經",
+          "targetSymptoms": [
+            "S-ABDOMINAL-TENDERNESS",
+            "S-BLOOD-DEF",
+            "S-DYSMENORRHEA",
+            "S-MENSTRUAL-IRREGULAR",
+            "S-SUBCUTANEOUS-BLEEDING"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        }
+      ]
+    },
+    {
+      "herbId": "H-XUANSHEN",
+      "name": "玄參",
+      "functionsOriginal": [
+        "補陰液",
+        "清熱",
+        "改善血行"
+      ],
+      "targetSymptoms": [
+        "S-ABDOMINAL-TENDERNESS",
+        "S-BLOOD-DEF",
+        "S-DRY-MOUTH",
+        "S-FEVER",
+        "S-HEAT-SENSATION",
+        "S-MENSTRUAL-IRREGULAR",
+        "S-SKIN-DRY",
+        "S-THIRST"
+      ],
+      "unmapped": [],
+      "source": [
+        "「瘀血 藥」"
+      ],
+      "note": "",
+      "expandedFunctions": [
+        {
+          "function": "補陰液",
+          "targetSymptoms": [
+            "S-ABDOMINAL-TENDERNESS",
+            "S-BLOOD-DEF",
+            "S-DRY-MOUTH",
+            "S-FEVER",
+            "S-HEAT-SENSATION",
+            "S-MENSTRUAL-IRREGULAR",
+            "S-SKIN-DRY",
+            "S-THIRST"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "清熱",
+          "targetSymptoms": [
+            "S-ABDOMINAL-TENDERNESS",
+            "S-BLOOD-DEF",
+            "S-DRY-MOUTH",
+            "S-FEVER",
+            "S-HEAT-SENSATION",
+            "S-MENSTRUAL-IRREGULAR",
+            "S-SKIN-DRY",
+            "S-THIRST"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "改善血行",
+          "targetSymptoms": [
+            "S-ABDOMINAL-TENDERNESS",
+            "S-BLOOD-DEF",
+            "S-DRY-MOUTH",
+            "S-FEVER",
+            "S-HEAT-SENSATION",
+            "S-MENSTRUAL-IRREGULAR",
+            "S-SKIN-DRY",
+            "S-THIRST"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        }
+      ]
+    },
+    {
+      "herbId": "H-BAIJIANG",
+      "name": "敗醬",
+      "functionsOriginal": [
+        "祛除瘀血",
+        "改善血行",
+        "去熱",
+        "排膿"
+      ],
+      "targetSymptoms": [
+        "S-ABDOMINAL-TENDERNESS",
+        "S-BLOOD-DEF",
+        "S-DYSMENORRHEA",
+        "S-MENSTRUAL-IRREGULAR",
+        "S-PUS"
+      ],
+      "unmapped": [],
+      "source": [
+        "「瘀血 藥」"
+      ],
+      "note": "",
+      "expandedFunctions": [
+        {
+          "function": "祛除瘀血",
+          "targetSymptoms": [
+            "S-ABDOMINAL-TENDERNESS",
+            "S-BLOOD-DEF",
+            "S-DYSMENORRHEA",
+            "S-MENSTRUAL-IRREGULAR",
+            "S-PUS"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "改善血行",
+          "targetSymptoms": [
+            "S-ABDOMINAL-TENDERNESS",
+            "S-BLOOD-DEF",
+            "S-DYSMENORRHEA",
+            "S-MENSTRUAL-IRREGULAR",
+            "S-PUS"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "去熱",
+          "targetSymptoms": [
+            "S-ABDOMINAL-TENDERNESS",
+            "S-BLOOD-DEF",
+            "S-DYSMENORRHEA",
+            "S-MENSTRUAL-IRREGULAR",
+            "S-PUS"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "排膿",
+          "targetSymptoms": [
+            "S-PUS"
+          ],
+          "matchType": "exact"
+        }
+      ]
+    },
+    {
+      "herbId": "H-ZHECHONG",
+      "name": "蟅蟲",
+      "functionsOriginal": [
+        "消解血栓",
+        "祛除瘀血"
+      ],
+      "targetSymptoms": [
+        "S-ABDOMINAL-TENDERNESS",
+        "S-DYSMENORRHEA",
+        "S-MENSTRUAL-IRREGULAR",
+        "S-SUBCUTANEOUS-BLEEDING"
+      ],
+      "unmapped": [],
+      "source": [
+        "「瘀血 藥」"
+      ],
+      "note": "",
+      "expandedFunctions": [
+        {
+          "function": "消解血栓",
+          "targetSymptoms": [
+            "S-ABDOMINAL-TENDERNESS",
+            "S-DYSMENORRHEA",
+            "S-MENSTRUAL-IRREGULAR",
+            "S-SUBCUTANEOUS-BLEEDING"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "祛除瘀血",
+          "targetSymptoms": [
+            "S-ABDOMINAL-TENDERNESS",
+            "S-DYSMENORRHEA",
+            "S-MENSTRUAL-IRREGULAR",
+            "S-SUBCUTANEOUS-BLEEDING"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        }
+      ]
+    },
+    {
+      "herbId": "H-SHUIZHI",
+      "name": "水蛭",
+      "functionsOriginal": [
+        "消解血栓",
+        "祛除瘀血"
+      ],
+      "targetSymptoms": [
+        "S-ABDOMINAL-TENDERNESS",
+        "S-DYSMENORRHEA",
+        "S-MENSTRUAL-IRREGULAR",
+        "S-SUBCUTANEOUS-BLEEDING"
+      ],
+      "unmapped": [],
+      "source": [
+        "「瘀血 藥」"
+      ],
+      "note": "",
+      "expandedFunctions": [
+        {
+          "function": "消解血栓",
+          "targetSymptoms": [
+            "S-ABDOMINAL-TENDERNESS",
+            "S-DYSMENORRHEA",
+            "S-MENSTRUAL-IRREGULAR",
+            "S-SUBCUTANEOUS-BLEEDING"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "祛除瘀血",
+          "targetSymptoms": [
+            "S-ABDOMINAL-TENDERNESS",
+            "S-DYSMENORRHEA",
+            "S-MENSTRUAL-IRREGULAR",
+            "S-SUBCUTANEOUS-BLEEDING"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        }
+      ]
+    },
+    {
+      "herbId": "H-GUIPI",
+      "name": "桂皮",
+      "functionsOriginal": [
+        "改善氣血循行",
+        "治氣逆",
+        "解表"
+      ],
+      "targetSymptoms": [
+        "S-ASTHMA-WHEEZE",
+        "S-COLD",
+        "S-EASY-COLD",
+        "S-FEVER",
+        "S-PALPITATION",
+        "S-VOMITING"
+      ],
+      "unmapped": [],
+      "source": [
+        "「氣逆 藥」的副本"
+      ],
+      "note": "",
+      "expandedFunctions": [
+        {
+          "function": "改善氣血循行",
+          "targetSymptoms": [
+            "S-ASTHMA-WHEEZE",
+            "S-COLD",
+            "S-EASY-COLD",
+            "S-FEVER",
+            "S-PALPITATION",
+            "S-VOMITING"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "治氣逆",
+          "targetSymptoms": [
+            "S-ASTHMA-WHEEZE",
+            "S-COLD",
+            "S-EASY-COLD",
+            "S-FEVER",
+            "S-PALPITATION",
+            "S-VOMITING"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "解表",
+          "targetSymptoms": [
+            "S-ASTHMA-WHEEZE",
+            "S-COLD",
+            "S-EASY-COLD",
+            "S-FEVER",
+            "S-PALPITATION",
+            "S-VOMITING"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        }
+      ]
+    },
+    {
+      "herbId": "H-ZISUYE",
+      "name": "紫蘇葉",
+      "functionsOriginal": [
+        "促進氣的循行",
+        "調整胃腸",
+        "發汗",
+        "解表",
+        "治氣逆"
+      ],
+      "targetSymptoms": [
+        "S-ABDOMINAL-DISTENSION",
+        "S-BELCHING",
+        "S-CHEST-OPPRESSION",
+        "S-COLD",
+        "S-EASY-COLD",
+        "S-FEVER",
+        "S-SPONTANEOUS-SWEAT"
+      ],
+      "unmapped": [],
+      "source": [
+        "「氣郁 藥」",
+        "「氣逆 藥」的副本"
+      ],
+      "note": "",
+      "expandedFunctions": [
+        {
+          "function": "促進氣的循行",
+          "targetSymptoms": [
+            "S-ABDOMINAL-DISTENSION",
+            "S-BELCHING",
+            "S-CHEST-OPPRESSION",
+            "S-COLD",
+            "S-EASY-COLD",
+            "S-FEVER",
+            "S-SPONTANEOUS-SWEAT"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "調整胃腸",
+          "targetSymptoms": [
+            "S-ABDOMINAL-DISTENSION",
+            "S-BELCHING",
+            "S-CHEST-OPPRESSION",
+            "S-COLD",
+            "S-EASY-COLD",
+            "S-FEVER",
+            "S-SPONTANEOUS-SWEAT"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "治氣逆",
+          "targetSymptoms": [
+            "S-ABDOMINAL-DISTENSION",
+            "S-BELCHING",
+            "S-CHEST-OPPRESSION",
+            "S-COLD",
+            "S-EASY-COLD",
+            "S-FEVER",
+            "S-SPONTANEOUS-SWEAT"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "發汗",
+          "targetSymptoms": [
+            "S-ABDOMINAL-DISTENSION",
+            "S-BELCHING",
+            "S-CHEST-OPPRESSION",
+            "S-COLD",
+            "S-EASY-COLD",
+            "S-FEVER",
+            "S-SPONTANEOUS-SWEAT"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "解表",
+          "targetSymptoms": [
+            "S-ABDOMINAL-DISTENSION",
+            "S-BELCHING",
+            "S-CHEST-OPPRESSION",
+            "S-COLD",
+            "S-EASY-COLD",
+            "S-FEVER",
+            "S-SPONTANEOUS-SWEAT"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        }
+      ]
+    },
+    {
+      "herbId": "H-WUWEIZI",
+      "name": "五味子",
+      "functionsOriginal": [
+        "調整肺機能",
+        "鎮咳",
+        "治氣逆"
+      ],
+      "targetSymptoms": [
+        "S-ASTHMA-WHEEZE",
+        "S-COUGH",
+        "S-PALPITATION",
+        "S-VOMITING",
+        "S-WATERY-SPUTUM"
+      ],
+      "unmapped": [],
+      "source": [
+        "「氣逆 藥」的副本"
+      ],
+      "note": "",
+      "expandedFunctions": [
+        {
+          "function": "調整肺機能",
+          "targetSymptoms": [
+            "S-ASTHMA-WHEEZE",
+            "S-COUGH",
+            "S-PALPITATION",
+            "S-VOMITING",
+            "S-WATERY-SPUTUM"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "鎮咳",
+          "targetSymptoms": [
+            "S-COUGH"
+          ],
+          "matchType": "exact"
+        },
+        {
+          "function": "治氣逆",
+          "targetSymptoms": [
+            "S-ASTHMA-WHEEZE",
+            "S-COUGH",
+            "S-PALPITATION",
+            "S-VOMITING",
+            "S-WATERY-SPUTUM"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        }
+      ]
+    },
+    {
+      "herbId": "H-HUANGLIAN",
+      "name": "黃連",
+      "functionsOriginal": [
+        "祛心與脾胃之熱",
+        "治氣逆"
+      ],
+      "targetSymptoms": [
+        "S-ANXIETY",
+        "S-ASTHMA-WHEEZE",
+        "S-EPIGASTRIC-RESISTANCE",
+        "S-HEAT-SENSATION",
+        "S-PALPITATION",
+        "S-VOMITING"
+      ],
+      "unmapped": [],
+      "source": [
+        "「氣逆 藥」的副本"
+      ],
+      "note": "",
+      "expandedFunctions": [
+        {
+          "function": "祛心與脾胃之熱",
+          "targetSymptoms": [
+            "S-ANXIETY",
+            "S-ASTHMA-WHEEZE",
+            "S-EPIGASTRIC-RESISTANCE",
+            "S-HEAT-SENSATION",
+            "S-PALPITATION",
+            "S-VOMITING"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "治氣逆",
+          "targetSymptoms": [
+            "S-ANXIETY",
+            "S-ASTHMA-WHEEZE",
+            "S-EPIGASTRIC-RESISTANCE",
+            "S-HEAT-SENSATION",
+            "S-PALPITATION",
+            "S-VOMITING"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        }
+      ]
+    },
+    {
+      "herbId": "H-ZHISHI",
+      "name": "枳實",
+      "functionsOriginal": [
+        "促進胸脇部氣的循行"
+      ],
+      "targetSymptoms": [],
+      "unmapped": [
+        "促進胸脇部氣的循行"
+      ],
+      "source": [
+        "「氣郁 藥」"
+      ],
+      "note": "",
+      "expandedFunctions": []
+    },
+    {
+      "herbId": "H-MUXIANG",
+      "name": "木香",
+      "functionsOriginal": [
+        "促進氣的循行",
+        "止痛"
+      ],
+      "targetSymptoms": [
+        "S-ABDOMINAL-DISTENSION",
+        "S-ABDOMINAL-PAIN",
+        "S-BELCHING",
+        "S-CHEST-OPPRESSION",
+        "S-HEADACHE",
+        "S-JOINT-PAIN"
+      ],
+      "unmapped": [],
+      "source": [
+        "「氣郁 藥」"
+      ],
+      "note": "",
+      "expandedFunctions": [
+        {
+          "function": "促進氣的循行",
+          "targetSymptoms": [
+            "S-ABDOMINAL-DISTENSION",
+            "S-ABDOMINAL-PAIN",
+            "S-BELCHING",
+            "S-CHEST-OPPRESSION",
+            "S-HEADACHE",
+            "S-JOINT-PAIN"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "止痛",
+          "targetSymptoms": [
+            "S-ABDOMINAL-DISTENSION",
+            "S-ABDOMINAL-PAIN",
+            "S-BELCHING",
+            "S-CHEST-OPPRESSION",
+            "S-HEADACHE",
+            "S-JOINT-PAIN"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        }
+      ]
+    },
+    {
+      "herbId": "H-HOUPU",
+      "name": "厚朴",
+      "functionsOriginal": [
+        "促進氣的循行",
+        "治氣逆",
+        "治胸滿",
+        "腹滿",
+        "除濕"
+      ],
+      "targetSymptoms": [
+        "S-ABDOMINAL-DISTENSION",
+        "S-ASTHMA-WHEEZE",
+        "S-BELCHING",
+        "S-CHEST-OPPRESSION",
+        "S-EDEMA",
+        "S-GASTRIC-SPLASH",
+        "S-PALPITATION",
+        "S-VOMITING"
+      ],
+      "unmapped": [],
+      "source": [
+        "「氣郁 藥」"
+      ],
+      "note": "",
+      "expandedFunctions": [
+        {
+          "function": "促進氣的循行",
+          "targetSymptoms": [
+            "S-ABDOMINAL-DISTENSION",
+            "S-ASTHMA-WHEEZE",
+            "S-BELCHING",
+            "S-CHEST-OPPRESSION",
+            "S-EDEMA",
+            "S-GASTRIC-SPLASH",
+            "S-PALPITATION",
+            "S-VOMITING"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "治氣逆",
+          "targetSymptoms": [
+            "S-ABDOMINAL-DISTENSION",
+            "S-ASTHMA-WHEEZE",
+            "S-BELCHING",
+            "S-CHEST-OPPRESSION",
+            "S-EDEMA",
+            "S-GASTRIC-SPLASH",
+            "S-PALPITATION",
+            "S-VOMITING"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "治胸滿",
+          "targetSymptoms": [
+            "S-ABDOMINAL-DISTENSION",
+            "S-ASTHMA-WHEEZE",
+            "S-BELCHING",
+            "S-CHEST-OPPRESSION",
+            "S-EDEMA",
+            "S-GASTRIC-SPLASH",
+            "S-PALPITATION",
+            "S-VOMITING"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "腹滿",
+          "targetSymptoms": [
+            "S-ABDOMINAL-DISTENSION"
+          ],
+          "matchType": "exact"
+        },
+        {
+          "function": "除濕",
+          "targetSymptoms": [
+            "S-ABDOMINAL-DISTENSION",
+            "S-ASTHMA-WHEEZE",
+            "S-BELCHING",
+            "S-CHEST-OPPRESSION",
+            "S-EDEMA",
+            "S-GASTRIC-SPLASH",
+            "S-PALPITATION",
+            "S-VOMITING"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        }
+      ]
+    },
+    {
+      "herbId": "H-CHENPI",
+      "name": "陳皮",
+      "functionsOriginal": [
+        "調氣",
+        "提高脾臟作用",
+        "除濕"
+      ],
+      "targetSymptoms": [
+        "S-ABDOMINAL-DISTENSION",
+        "S-APPETITE-LOW",
+        "S-BELCHING",
+        "S-CHEST-OPPRESSION",
+        "S-DIARRHEA-LOOSE",
+        "S-EDEMA",
+        "S-FATIGUE",
+        "S-GASTRIC-SPLASH"
+      ],
+      "unmapped": [],
+      "source": [
+        "「氣郁 藥」"
+      ],
+      "note": "",
+      "expandedFunctions": [
+        {
+          "function": "調氣",
+          "targetSymptoms": [
+            "S-ABDOMINAL-DISTENSION",
+            "S-APPETITE-LOW",
+            "S-BELCHING",
+            "S-CHEST-OPPRESSION",
+            "S-DIARRHEA-LOOSE",
+            "S-EDEMA",
+            "S-FATIGUE",
+            "S-GASTRIC-SPLASH"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "提高脾臟作用",
+          "targetSymptoms": [
+            "S-ABDOMINAL-DISTENSION",
+            "S-APPETITE-LOW",
+            "S-BELCHING",
+            "S-CHEST-OPPRESSION",
+            "S-DIARRHEA-LOOSE",
+            "S-EDEMA",
+            "S-FATIGUE",
+            "S-GASTRIC-SPLASH"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "除濕",
+          "targetSymptoms": [
+            "S-ABDOMINAL-DISTENSION",
+            "S-APPETITE-LOW",
+            "S-BELCHING",
+            "S-CHEST-OPPRESSION",
+            "S-DIARRHEA-LOOSE",
+            "S-EDEMA",
+            "S-FATIGUE",
+            "S-GASTRIC-SPLASH"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        }
+      ]
+    },
+    {
+      "herbId": "H-SHAREN",
+      "name": "縮砂",
+      "functionsOriginal": [
+        "調氣",
+        "除胸內氣滯"
+      ],
+      "targetSymptoms": [
+        "S-ABDOMINAL-DISTENSION",
+        "S-BELCHING",
+        "S-CHEST-OPPRESSION"
+      ],
+      "unmapped": [],
+      "source": [
+        "「氣郁 藥」"
+      ],
+      "note": "",
+      "expandedFunctions": [
+        {
+          "function": "調氣",
+          "targetSymptoms": [
+            "S-ABDOMINAL-DISTENSION",
+            "S-BELCHING",
+            "S-CHEST-OPPRESSION"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "除胸內氣滯",
+          "targetSymptoms": [
+            "S-ABDOMINAL-DISTENSION",
+            "S-BELCHING",
+            "S-CHEST-OPPRESSION"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        }
+      ]
+    },
+    {
+      "herbId": "H-XIANGFUZI",
+      "name": "香附子",
+      "functionsOriginal": [
+        "祛肝氣郁滯",
+        "促進氣的循行",
+        "調經",
+        "止痛"
+      ],
+      "targetSymptoms": [
+        "S-ABDOMINAL-DISTENSION",
+        "S-ABDOMINAL-PAIN",
+        "S-ANXIETY",
+        "S-BELCHING",
+        "S-CHEST-OPPRESSION",
+        "S-DEPRESSION",
+        "S-HEADACHE",
+        "S-JOINT-PAIN",
+        "S-MENSTRUAL-IRREGULAR"
+      ],
+      "unmapped": [],
+      "source": [
+        "「氣郁 藥」"
+      ],
+      "note": "",
+      "expandedFunctions": [
+        {
+          "function": "祛肝氣郁滯",
+          "targetSymptoms": [
+            "S-ABDOMINAL-DISTENSION",
+            "S-ABDOMINAL-PAIN",
+            "S-ANXIETY",
+            "S-BELCHING",
+            "S-CHEST-OPPRESSION",
+            "S-DEPRESSION",
+            "S-HEADACHE",
+            "S-JOINT-PAIN",
+            "S-MENSTRUAL-IRREGULAR"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "促進氣的循行",
+          "targetSymptoms": [
+            "S-ABDOMINAL-DISTENSION",
+            "S-ABDOMINAL-PAIN",
+            "S-ANXIETY",
+            "S-BELCHING",
+            "S-CHEST-OPPRESSION",
+            "S-DEPRESSION",
+            "S-HEADACHE",
+            "S-JOINT-PAIN",
+            "S-MENSTRUAL-IRREGULAR"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "調經",
+          "targetSymptoms": [
+            "S-ABDOMINAL-DISTENSION",
+            "S-ABDOMINAL-PAIN",
+            "S-ANXIETY",
+            "S-BELCHING",
+            "S-CHEST-OPPRESSION",
+            "S-DEPRESSION",
+            "S-HEADACHE",
+            "S-JOINT-PAIN",
+            "S-MENSTRUAL-IRREGULAR"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "止痛",
+          "targetSymptoms": [
+            "S-ABDOMINAL-DISTENSION",
+            "S-ABDOMINAL-PAIN",
+            "S-ANXIETY",
+            "S-BELCHING",
+            "S-CHEST-OPPRESSION",
+            "S-DEPRESSION",
+            "S-HEADACHE",
+            "S-JOINT-PAIN",
+            "S-MENSTRUAL-IRREGULAR"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        }
+      ]
+    },
+    {
+      "herbId": "H-CHAIHU",
+      "name": "柴胡",
+      "functionsOriginal": [
+        "祛肝氣郁滯",
+        "解熱",
+        "提高五臟作用",
+        "解表"
+      ],
+      "targetSymptoms": [
+        "S-ANXIETY",
+        "S-CHEST-OPPRESSION",
+        "S-COLD",
+        "S-DEPRESSION",
+        "S-EASY-COLD",
+        "S-FEVER",
+        "S-HEAT-SENSATION"
+      ],
+      "unmapped": [],
+      "source": [
+        "「氣郁 藥」"
+      ],
+      "note": "",
+      "expandedFunctions": [
+        {
+          "function": "祛肝氣郁滯",
+          "targetSymptoms": [
+            "S-ANXIETY",
+            "S-CHEST-OPPRESSION",
+            "S-COLD",
+            "S-DEPRESSION",
+            "S-EASY-COLD",
+            "S-FEVER",
+            "S-HEAT-SENSATION"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "解熱",
+          "targetSymptoms": [
+            "S-ANXIETY",
+            "S-CHEST-OPPRESSION",
+            "S-COLD",
+            "S-DEPRESSION",
+            "S-EASY-COLD",
+            "S-FEVER",
+            "S-HEAT-SENSATION"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "提高五臟作用",
+          "targetSymptoms": [
+            "S-ANXIETY",
+            "S-CHEST-OPPRESSION",
+            "S-COLD",
+            "S-DEPRESSION",
+            "S-EASY-COLD",
+            "S-FEVER",
+            "S-HEAT-SENSATION"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "解表",
+          "targetSymptoms": [
+            "S-ANXIETY",
+            "S-CHEST-OPPRESSION",
+            "S-COLD",
+            "S-DEPRESSION",
+            "S-EASY-COLD",
+            "S-FEVER",
+            "S-HEAT-SENSATION"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        }
+      ]
+    },
+    {
+      "herbId": "H-ZHIZI",
+      "name": "梔子",
+      "functionsOriginal": [
+        "祛胸內熱",
+        "除苦悶感"
+      ],
+      "targetSymptoms": [
+        "S-ANXIETY",
+        "S-CHEST-OPPRESSION",
+        "S-HEAT-IN-CHEST"
+      ],
+      "unmapped": [],
+      "source": [
+        "「氣郁 藥」"
+      ],
+      "note": "",
+      "expandedFunctions": [
+        {
+          "function": "祛胸內熱",
+          "targetSymptoms": [
+            "S-HEAT-IN-CHEST"
+          ],
+          "matchType": "contains"
+        },
+        {
+          "function": "除苦悶感",
+          "targetSymptoms": [
+            "S-ANXIETY",
+            "S-CHEST-OPPRESSION",
+            "S-HEAT-IN-CHEST"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        }
+      ]
+    },
+    {
+      "herbId": "H-SHUDIHUANG",
+      "name": "熟地黃",
+      "functionsOriginal": [
+        "補血",
+        "增陰液"
+      ],
+      "targetSymptoms": [
+        "S-BLOOD-DEF",
+        "S-DROOLING",
+        "S-DRY-MOUTH",
+        "S-MENSTRUAL-SCANTY",
+        "S-SKIN-DRY",
+        "S-THIRST"
+      ],
+      "unmapped": [],
+      "source": [
+        "「血虛 藥」"
+      ],
+      "note": "",
+      "expandedFunctions": [
+        {
+          "function": "補血",
+          "targetSymptoms": [
+            "S-BLOOD-DEF",
+            "S-DROOLING",
+            "S-DRY-MOUTH",
+            "S-MENSTRUAL-SCANTY",
+            "S-SKIN-DRY",
+            "S-THIRST"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "增陰液",
+          "targetSymptoms": [
+            "S-DROOLING"
+          ],
+          "matchType": "exact"
+        }
+      ]
+    },
+    {
+      "herbId": "H-EJIAO",
+      "name": "阿膠",
+      "functionsOriginal": [
+        "補血",
+        "止血",
+        "滋潤作用"
+      ],
+      "targetSymptoms": [
+        "S-BLEEDING",
+        "S-BLOOD-DEF",
+        "S-DRY-MOUTH",
+        "S-MENSTRUAL-SCANTY",
+        "S-SKIN-DRY"
+      ],
+      "unmapped": [],
+      "source": [
+        "「血虛 藥」"
+      ],
+      "note": "",
+      "expandedFunctions": [
+        {
+          "function": "補血",
+          "targetSymptoms": [
+            "S-BLEEDING",
+            "S-BLOOD-DEF",
+            "S-DRY-MOUTH",
+            "S-MENSTRUAL-SCANTY",
+            "S-SKIN-DRY"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "止血",
+          "targetSymptoms": [
+            "S-BLEEDING",
+            "S-BLOOD-DEF",
+            "S-DRY-MOUTH",
+            "S-MENSTRUAL-SCANTY",
+            "S-SKIN-DRY"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "滋潤作用",
+          "targetSymptoms": [
+            "S-BLEEDING",
+            "S-BLOOD-DEF",
+            "S-DRY-MOUTH",
+            "S-MENSTRUAL-SCANTY",
+            "S-SKIN-DRY"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        }
+      ]
+    },
+    {
+      "herbId": "H-HESHOUWU",
+      "name": "何首烏",
+      "functionsOriginal": [
+        "增陰液",
+        "補血",
+        "益腎氣"
+      ],
+      "targetSymptoms": [
+        "S-BLOOD-DEF",
+        "S-DROOLING",
+        "S-DRY-MOUTH",
+        "S-LOW-BACK-PAIN",
+        "S-MENSTRUAL-SCANTY",
+        "S-NOCTURIA",
+        "S-SKIN-DRY",
+        "S-THIRST",
+        "S-WEAK-LOWER-LIMB"
+      ],
+      "unmapped": [],
+      "source": [
+        "「血虛 藥」"
+      ],
+      "note": "",
+      "expandedFunctions": [
+        {
+          "function": "增陰液",
+          "targetSymptoms": [
+            "S-DROOLING"
+          ],
+          "matchType": "exact"
+        },
+        {
+          "function": "補血",
+          "targetSymptoms": [
+            "S-BLOOD-DEF",
+            "S-DROOLING",
+            "S-DRY-MOUTH",
+            "S-LOW-BACK-PAIN",
+            "S-MENSTRUAL-SCANTY",
+            "S-NOCTURIA",
+            "S-SKIN-DRY",
+            "S-THIRST",
+            "S-WEAK-LOWER-LIMB"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "益腎氣",
+          "targetSymptoms": [
+            "S-BLOOD-DEF",
+            "S-DROOLING",
+            "S-DRY-MOUTH",
+            "S-LOW-BACK-PAIN",
+            "S-MENSTRUAL-SCANTY",
+            "S-NOCTURIA",
+            "S-SKIN-DRY",
+            "S-THIRST",
+            "S-WEAK-LOWER-LIMB"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        }
+      ]
+    },
+    {
+      "herbId": "H-SUANZAOREN",
+      "name": "酸棗仁",
+      "functionsOriginal": [
+        "補氣血",
+        "安定精神"
+      ],
+      "targetSymptoms": [
+        "S-ANXIETY",
+        "S-INSOMNIA"
+      ],
+      "unmapped": [],
+      "source": [
+        "「血虛 藥」"
+      ],
+      "note": "",
+      "expandedFunctions": [
+        {
+          "function": "補氣血",
+          "targetSymptoms": [
+            "S-ANXIETY",
+            "S-INSOMNIA"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "安定精神",
+          "targetSymptoms": [
+            "S-ANXIETY",
+            "S-INSOMNIA"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        }
+      ]
+    },
+    {
+      "herbId": "H-XIAOMAI",
+      "name": "小麥",
+      "functionsOriginal": [
+        "補氣血",
+        "安定精神"
+      ],
+      "targetSymptoms": [
+        "S-ANXIETY",
+        "S-INSOMNIA"
+      ],
+      "unmapped": [],
+      "source": [
+        "「血虛 藥」"
+      ],
+      "note": "",
+      "expandedFunctions": [
+        {
+          "function": "補氣血",
+          "targetSymptoms": [
+            "S-ANXIETY",
+            "S-INSOMNIA"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "安定精神",
+          "targetSymptoms": [
+            "S-ANXIETY",
+            "S-INSOMNIA"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        }
+      ]
+    },
+    {
+      "herbId": "H-RENSONG",
+      "name": "人參",
+      "functionsOriginal": [
+        "補脾",
+        "益氣",
+        "生津"
+      ],
+      "targetSymptoms": [
+        "S-APPETITE-LOW",
+        "S-DRY-MOUTH",
+        "S-FATIGUE",
+        "S-THIRST"
+      ],
+      "unmapped": [],
+      "source": [
+        "「氣虛 藥」"
+      ],
+      "note": "",
+      "expandedFunctions": [
+        {
+          "function": "補脾",
+          "targetSymptoms": [
+            "S-APPETITE-LOW",
+            "S-DRY-MOUTH",
+            "S-FATIGUE",
+            "S-THIRST"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "益氣",
+          "targetSymptoms": [
+            "S-APPETITE-LOW",
+            "S-DRY-MOUTH",
+            "S-FATIGUE",
+            "S-THIRST"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "生津",
+          "targetSymptoms": [
+            "S-APPETITE-LOW",
+            "S-DRY-MOUTH",
+            "S-FATIGUE",
+            "S-THIRST"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        }
+      ]
+    },
+    {
+      "herbId": "H-GANCAO",
+      "name": "甘草",
+      "functionsOriginal": [
+        "補脾益氣",
+        "解熱",
+        "解毒",
+        "潤肺",
+        "鎮咳"
+      ],
+      "targetSymptoms": [
+        "S-APPETITE-LOW",
+        "S-COUGH",
+        "S-DRY-MOUTH",
+        "S-FATIGUE",
+        "S-FEVER",
+        "S-HEAT-SENSATION",
+        "S-HEAT-TOXIN",
+        "S-SORE-THROAT"
+      ],
+      "unmapped": [],
+      "source": [
+        "「氣虛 藥」"
+      ],
+      "note": "",
+      "expandedFunctions": [
+        {
+          "function": "補脾益氣",
+          "targetSymptoms": [
+            "S-APPETITE-LOW",
+            "S-COUGH",
+            "S-DRY-MOUTH",
+            "S-FATIGUE",
+            "S-FEVER",
+            "S-HEAT-SENSATION",
+            "S-HEAT-TOXIN",
+            "S-SORE-THROAT"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "解熱",
+          "targetSymptoms": [
+            "S-APPETITE-LOW",
+            "S-COUGH",
+            "S-DRY-MOUTH",
+            "S-FATIGUE",
+            "S-FEVER",
+            "S-HEAT-SENSATION",
+            "S-HEAT-TOXIN",
+            "S-SORE-THROAT"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "解毒",
+          "targetSymptoms": [
+            "S-APPETITE-LOW",
+            "S-COUGH",
+            "S-DRY-MOUTH",
+            "S-FATIGUE",
+            "S-FEVER",
+            "S-HEAT-SENSATION",
+            "S-HEAT-TOXIN",
+            "S-SORE-THROAT"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "潤肺",
+          "targetSymptoms": [
+            "S-APPETITE-LOW",
+            "S-COUGH",
+            "S-DRY-MOUTH",
+            "S-FATIGUE",
+            "S-FEVER",
+            "S-HEAT-SENSATION",
+            "S-HEAT-TOXIN",
+            "S-SORE-THROAT"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "鎮咳",
+          "targetSymptoms": [
+            "S-COUGH"
+          ],
+          "matchType": "exact"
+        }
+      ]
+    },
+    {
+      "herbId": "H-DAZAO",
+      "name": "大棗",
+      "functionsOriginal": [
+        "補脾",
+        "安神"
+      ],
+      "targetSymptoms": [
+        "S-ANXIETY",
+        "S-APPETITE-LOW",
+        "S-FATIGUE",
+        "S-INSOMNIA"
+      ],
+      "unmapped": [],
+      "source": [
+        "「氣虛 藥」"
+      ],
+      "note": "",
+      "expandedFunctions": [
+        {
+          "function": "補脾",
+          "targetSymptoms": [
+            "S-ANXIETY",
+            "S-APPETITE-LOW",
+            "S-FATIGUE",
+            "S-INSOMNIA"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "安神",
+          "targetSymptoms": [
+            "S-ANXIETY",
+            "S-APPETITE-LOW",
+            "S-FATIGUE",
+            "S-INSOMNIA"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        }
+      ]
+    },
+    {
+      "herbId": "H-JINGMI",
+      "name": "粳米",
+      "functionsOriginal": [
+        "補脾",
+        "生津"
+      ],
+      "targetSymptoms": [
+        "S-APPETITE-LOW",
+        "S-DRY-MOUTH",
+        "S-FATIGUE",
+        "S-THIRST"
+      ],
+      "unmapped": [],
+      "source": [
+        "「氣虛 藥」"
+      ],
+      "note": "",
+      "expandedFunctions": [
+        {
+          "function": "補脾",
+          "targetSymptoms": [
+            "S-APPETITE-LOW",
+            "S-DRY-MOUTH",
+            "S-FATIGUE",
+            "S-THIRST"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "生津",
+          "targetSymptoms": [
+            "S-APPETITE-LOW",
+            "S-DRY-MOUTH",
+            "S-FATIGUE",
+            "S-THIRST"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        }
+      ]
+    },
+    {
+      "herbId": "H-JIAOYI",
+      "name": "膠飴",
+      "functionsOriginal": [
+        "補脾健胃",
+        "緩解腹痛",
+        "潤肺",
+        "鎮咳"
+      ],
+      "targetSymptoms": [
+        "S-ABDOMINAL-PAIN",
+        "S-APPETITE-LOW",
+        "S-COUGH",
+        "S-DRY-MOUTH",
+        "S-FATIGUE",
+        "S-SORE-THROAT"
+      ],
+      "unmapped": [],
+      "source": [
+        "「氣虛 藥」"
+      ],
+      "note": "",
+      "expandedFunctions": [
+        {
+          "function": "補脾健胃",
+          "targetSymptoms": [
+            "S-ABDOMINAL-PAIN",
+            "S-APPETITE-LOW",
+            "S-COUGH",
+            "S-DRY-MOUTH",
+            "S-FATIGUE",
+            "S-SORE-THROAT"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "緩解腹痛",
+          "targetSymptoms": [
+            "S-ABDOMINAL-PAIN"
+          ],
+          "matchType": "contains"
+        },
+        {
+          "function": "潤肺",
+          "targetSymptoms": [
+            "S-ABDOMINAL-PAIN",
+            "S-APPETITE-LOW",
+            "S-COUGH",
+            "S-DRY-MOUTH",
+            "S-FATIGUE",
+            "S-SORE-THROAT"
+          ],
+          "matchType": "semantic_seed_or_existing_targets"
+        },
+        {
+          "function": "鎮咳",
+          "targetSymptoms": [
+            "S-COUGH"
+          ],
+          "matchType": "exact"
+        }
+      ]
+    }
+  ],
+  "formulaCompositionsDraft": [
+    {
+      "formulaId": "F-0001",
+      "name": "七物降下湯",
+      "herbs": [
+        "釣藤鉤",
+        "黃芪",
+        "黃柏"
+      ],
+      "indications": [
+        "S-DIZZINESS",
+        "S-HEAVY-HEAD",
+        "S-HYPERTENSION",
+        "S-SHOULDER-STIFF"
+      ],
+      "patternTags": [
+        "補血理氣"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。",
+      "composedOfFormulas": [
+        "四物湯"
+      ]
+    },
+    {
+      "formulaId": "F-0002",
+      "name": "三黃瀉心湯",
+      "herbs": [
+        "大黃",
+        "黃連",
+        "黃芩"
+      ],
+      "indications": [
+        "S-ANXIETY",
+        "S-BLEEDING",
+        "S-CONSTIPATION",
+        "S-EPIGASTRIC-RESISTANCE",
+        "S-FACIAL-FLUSH",
+        "S-HEAT-SENSATION"
+      ],
+      "patternTags": [
+        "陽氣實 / 陰液實(實證/熱證)"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0003",
+      "name": "九味檳榔湯",
+      "herbs": [],
+      "indications": [
+        "S-ASTHMA-WHEEZE",
+        "S-CHEST-OPPRESSION",
+        "S-EDEMA",
+        "S-OLIGURIA"
+      ],
+      "patternTags": [
+        "虛實夾雜"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "低",
+      "notes": "Excel 有此方名，但本次草稿未補足可靠標準組成；請人工補方。"
+    },
+    {
+      "formulaId": "F-0004",
+      "name": "二陳湯",
+      "herbs": [
+        "半夏",
+        "陳皮",
+        "茯苓",
+        "甘草",
+        "生薑",
+        "烏梅"
+      ],
+      "indications": [
+        "S-GASTRIC-SPLASH",
+        "S-HEADACHE",
+        "S-NAUSEA",
+        "S-PALPITATION",
+        "S-VOMITING"
+      ],
+      "patternTags": [
+        "虛證"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0005",
+      "name": "五苓散",
+      "herbs": [
+        "澤瀉",
+        "豬苓",
+        "茯苓",
+        "白朮",
+        "桂枝"
+      ],
+      "indications": [
+        "S-DIARRHEA",
+        "S-GASTRIC-SPLASH",
+        "S-HEADACHE",
+        "S-OLIGURIA",
+        "S-SPONTANEOUS-SWEAT",
+        "S-THIRST",
+        "S-VOMITING"
+      ],
+      "patternTags": [
+        "虛實夾雜"
+      ],
+      "source": "《傷寒論》/《金匱要略》系統（待覆核具體條文與版本）",
+      "confidence": "中",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0006",
+      "name": "人參湯",
+      "herbs": [
+        "人參",
+        "乾薑",
+        "白朮",
+        "甘草"
+      ],
+      "indications": [
+        "S-ABDOMINAL-TENDERNESS",
+        "S-CHEST-OPPRESSION",
+        "S-COLD",
+        "S-DIARRHEA",
+        "S-EPIGASTRIC-PAIN",
+        "S-EPIGASTRIC-RESISTANCE",
+        "S-FATIGUE"
+      ],
+      "patternTags": [
+        "人參湯類",
+        "虛證",
+        "陽氣虛 / 陰液實"
+      ],
+      "source": "《傷寒論》/《金匱要略》系統（待覆核具體條文與版本）",
+      "confidence": "中",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0007",
+      "name": "人參湯合當歸芍藥散",
+      "herbs": [],
+      "indications": [
+        "S-APPETITE-LOW",
+        "S-BLOOD-DEF",
+        "S-COLD",
+        "S-FATIGUE",
+        "S-MENSTRUAL-IRREGULAR"
+      ],
+      "patternTags": [
+        "陽氣 ↓ / 陰液 "
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "低",
+      "notes": "Excel 有此方名，但本次草稿未補足可靠標準組成；請人工補方。"
+    },
+    {
+      "formulaId": "F-0008",
+      "name": "人參養榮湯",
+      "herbs": [],
+      "indications": [
+        "S-COLD",
+        "S-FATIGUE",
+        "S-NIGHT-SWEAT",
+        "S-PERIUMBILICAL-PAIN",
+        "S-SKIN-DRY"
+      ],
+      "patternTags": [
+        "陽氣虛 / 陰液虛(氣血兩虛)"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "低",
+      "notes": "Excel 有此方名，但本次草稿未補足可靠標準組成；請人工補方。"
+    },
+    {
+      "formulaId": "F-0009",
+      "name": "八味腎氣丸",
+      "herbs": [
+        "熟地黃",
+        "山茱萸",
+        "山藥",
+        "澤瀉",
+        "茯苓",
+        "牡丹皮",
+        "桂枝",
+        "附子"
+      ],
+      "indications": [
+        "S-COLD",
+        "S-EDEMA",
+        "S-FATIGUE",
+        "S-FORGETFULNESS",
+        "S-IMPOTENCE",
+        "S-LOW-BACK-PAIN",
+        "S-LOWER-ABDOMEN-NUMB",
+        "S-LOWER-LIMB-PAIN",
+        "S-NOCTURIA",
+        "S-THIRST",
+        "S-URINATION-ABNORMAL"
+      ],
+      "patternTags": [
+        "虛證",
+        "陽氣虛 / 陰液虛 (陰陽兩虛)"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0010",
+      "name": "六君子湯",
+      "herbs": [
+        "人參",
+        "白朮",
+        "茯苓",
+        "甘草",
+        "半夏",
+        "陳皮",
+        "生薑",
+        "大棗"
+      ],
+      "indications": [
+        "S-APPETITE-LOW",
+        "S-EPIGASTRIC-RESISTANCE",
+        "S-FATIGUE",
+        "S-GASTRIC-SPLASH",
+        "S-NAUSEA",
+        "S-VOMITING"
+      ],
+      "patternTags": [
+        "人參湯類",
+        "陽氣虛 / 陰液實"
+      ],
+      "source": "後世方書/日本漢方常用資料（待逐方覆核）",
+      "confidence": "中",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0011",
+      "name": "六味地黃丸",
+      "herbs": [
+        "熟地黃",
+        "山茱萸",
+        "山藥",
+        "澤瀉",
+        "茯苓",
+        "牡丹皮"
+      ],
+      "indications": [
+        "S-DIZZINESS",
+        "S-HEAT-SENSATION",
+        "S-SORE-THROAT",
+        "S-SPERMATORRHEA",
+        "S-THIRST",
+        "S-TINNITUS",
+        "S-WEAK-LOWER-LIMB"
+      ],
+      "patternTags": [
+        "陽氣實 / 陰液虛 (腎陰虛)"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0012",
+      "name": "加味逍遙散",
+      "herbs": [
+        "柴胡",
+        "芍藥",
+        "當歸",
+        "白朮",
+        "茯苓",
+        "甘草",
+        "牡丹皮",
+        "梔子",
+        "生薑",
+        "薄荷"
+      ],
+      "indications": [
+        "S-ABDOMINAL-MASS",
+        "S-ABDOMINAL-TENDERNESS",
+        "S-ANXIETY",
+        "S-FEVER",
+        "S-HOT-FLUSH",
+        "S-MENSTRUAL-IRREGULAR"
+      ],
+      "patternTags": [
+        "(陽氣 ↑↑ / 陰液 )",
+        "其他類",
+        "虛實夾雜"
+      ],
+      "source": "後世方書/日本漢方常用資料（待逐方覆核）",
+      "confidence": "中",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0013",
+      "name": "十全大補湯",
+      "herbs": [
+        "人參",
+        "白朮",
+        "茯苓",
+        "甘草",
+        "當歸",
+        "芍藥",
+        "川芎",
+        "熟地黃",
+        "黃芪",
+        "肉桂"
+      ],
+      "indications": [
+        "S-BLOOD-DEF",
+        "S-COLD",
+        "S-FATIGUE",
+        "S-NIGHT-SWEAT",
+        "S-SKIN-DRY"
+      ],
+      "patternTags": [
+        "氣血雙補",
+        "陽氣虛 / 陰液虛"
+      ],
+      "source": "後世方書/日本漢方常用資料（待逐方覆核）",
+      "confidence": "中",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0014",
+      "name": "半夏厚朴湯",
+      "herbs": [
+        "半夏",
+        "厚朴",
+        "茯苓",
+        "生薑",
+        "紫蘇葉"
+      ],
+      "indications": [
+        "S-ABDOMINAL-DISTENSION",
+        "S-FATIGUE",
+        "S-THROAT-BLOCK"
+      ],
+      "patternTags": [
+        "半夏厚朴湯類"
+      ],
+      "source": "後世方書/日本漢方常用資料（待逐方覆核）",
+      "confidence": "中",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0015",
+      "name": "半夏瀉心湯",
+      "herbs": [
+        "半夏",
+        "黃芩",
+        "乾薑",
+        "人參",
+        "黃連",
+        "大棗",
+        "甘草"
+      ],
+      "indications": [
+        "S-ACID-REFLUX",
+        "S-ANXIETY",
+        "S-BORBORIGMUS",
+        "S-EPIGASTRIC-RESISTANCE",
+        "S-NAUSEA",
+        "S-VOMITING"
+      ],
+      "patternTags": [
+        "陽氣實 / 陰液實"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0016",
+      "name": "半夏白朮天麻湯",
+      "herbs": [
+        "半夏",
+        "白朮",
+        "天麻",
+        "茯苓",
+        "陳皮",
+        "麥芽",
+        "神麴",
+        "黃芪",
+        "人參",
+        "澤瀉",
+        "蒼朮",
+        "乾薑",
+        "黃柏"
+      ],
+      "indications": [
+        "S-ABDOMINAL-DISTENSION",
+        "S-COLD",
+        "S-DEPRESSION",
+        "S-DIZZINESS",
+        "S-FATIGUE",
+        "S-GASTRIC-SPLASH",
+        "S-HEADACHE",
+        "S-HEAVY-HEAD"
+      ],
+      "patternTags": [
+        "人參湯類",
+        "半夏厚朴湯類",
+        "虛證",
+        "陽氣虛 / 陰液實"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0017",
+      "name": "右歸飲",
+      "herbs": [
+        "熟地黃",
+        "山藥",
+        "山茱萸",
+        "枸杞子",
+        "甘草",
+        "杜仲",
+        "肉桂",
+        "附子"
+      ],
+      "indications": [
+        "S-ABDOMINAL-PAIN",
+        "S-COLD",
+        "S-FATIGUE",
+        "S-IMPOTENCE",
+        "S-LOW-BACK-PAIN"
+      ],
+      "patternTags": [
+        "陽氣虛 / 陰液實 (腎陽虛)"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0018",
+      "name": "吳茱萸湯",
+      "herbs": [
+        "吳茱萸",
+        "人參",
+        "生薑",
+        "大棗"
+      ],
+      "indications": [
+        "S-ABDOMINAL-PAIN",
+        "S-ABDOMINAL-TENDERNESS",
+        "S-COLD",
+        "S-DIARRHEA",
+        "S-EPIGASTRIC-PAIN",
+        "S-EPIGASTRIC-RESISTANCE",
+        "S-GASTRIC-SPLASH",
+        "S-HEADACHE",
+        "S-VOMITING"
+      ],
+      "patternTags": [
+        "人參湯類",
+        "其他類",
+        "虛證",
+        "陽氣虛 / 陰液實"
+      ],
+      "source": "《傷寒論》/《金匱要略》系統（待覆核具體條文與版本）",
+      "confidence": "中",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0019",
+      "name": "啟脾湯",
+      "herbs": [],
+      "indications": [
+        "!S-TENESMUS",
+        "S-DIARRHEA",
+        "S-DIARRHEA-FOAMY",
+        "S-DIARRHEA-LOOSE",
+        "S-NO-HEAT-SIGN"
+      ],
+      "patternTags": [
+        "虛證",
+        "陽氣虛 / 陰液實"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "低",
+      "notes": "Excel 有此方名，但本次草稿未補足可靠標準組成；請人工補方。"
+    },
+    {
+      "formulaId": "F-0020",
+      "name": "四君子湯",
+      "herbs": [
+        "人參",
+        "白朮",
+        "茯苓",
+        "甘草"
+      ],
+      "indications": [
+        "S-ABDOMINAL-DISTENSION",
+        "S-APPETITE-LOW",
+        "S-COLD",
+        "S-DIARRHEA",
+        "S-FATIGUE",
+        "S-NAUSEA",
+        "S-VOMITING"
+      ],
+      "patternTags": [
+        "人參湯類",
+        "陽氣虛 / 陰液實(主要是氣虛證)"
+      ],
+      "source": "後世方書/日本漢方常用資料（待逐方覆核）",
+      "confidence": "中",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0021",
+      "name": "四物湯",
+      "herbs": [
+        "熟地黃",
+        "當歸",
+        "芍藥",
+        "川芎"
+      ],
+      "indications": [
+        "S-FATIGUE",
+        "S-PALPITATION"
+      ],
+      "patternTags": [
+        "補血"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0022",
+      "name": "大防風湯",
+      "herbs": [
+        "防風",
+        "黃芪",
+        "人參",
+        "白朮",
+        "甘草",
+        "當歸",
+        "川芎",
+        "芍藥",
+        "熟地黃",
+        "杜仲",
+        "牛膝",
+        "附子",
+        "羌活",
+        "生薑",
+        "大棗"
+      ],
+      "indications": [
+        "S-BLOOD-DEF",
+        "S-EDEMA",
+        "S-FATIGUE",
+        "S-JOINT-PAIN",
+        "S-WEAK-LOWER-LIMB"
+      ],
+      "patternTags": [
+        "虛證"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0023",
+      "name": "大黃牡丹皮湯",
+      "herbs": [
+        "大黃",
+        "牡丹皮",
+        "桃仁",
+        "冬瓜子",
+        "芒硝"
+      ],
+      "indications": [
+        "S-ABDOMINAL-MASS",
+        "S-ABDOMINAL-TENDERNESS"
+      ],
+      "patternTags": [
+        "實證"
+      ],
+      "source": "《傷寒論》/《金匱要略》系統（待覆核具體條文與版本）",
+      "confidence": "中",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0024",
+      "name": "大黃蟅蟲丸",
+      "herbs": [
+        "大黃",
+        "黃芩",
+        "甘草",
+        "桃仁",
+        "杏仁",
+        "芍藥",
+        "乾地黃",
+        "乾漆",
+        "虻蟲",
+        "水蛭",
+        "蠐螬",
+        "蟅蟲"
+      ],
+      "indications": [
+        "S-ABDOMINAL-TENDERNESS",
+        "S-FATIGUE"
+      ],
+      "patternTags": [
+        "虛證"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0025",
+      "name": "奔豚湯（肘後方）",
+      "herbs": [],
+      "indications": [
+        "S-ANXIETY",
+        "S-PALPITATION"
+      ],
+      "patternTags": [
+        "其他類"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "低",
+      "notes": "Excel 有此方名，但本次草稿未補足可靠標準組成；請人工補方。"
+    },
+    {
+      "formulaId": "F-0026",
+      "name": "女神散",
+      "herbs": [
+        "香附子",
+        "川芎",
+        "蒼朮",
+        "白朮",
+        "當歸",
+        "黃芩",
+        "黃連",
+        "桂枝",
+        "檳榔子",
+        "丁香",
+        "木香",
+        "甘草"
+      ],
+      "indications": [
+        "S-ABDOMINAL-TENDERNESS",
+        "S-COLD",
+        "S-HEAVY-HEAD",
+        "S-HOT-FLUSH",
+        "S-INSOMNIA",
+        "S-LOW-BACK-PAIN"
+      ],
+      "patternTags": [
+        "香蘇散類"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0027",
+      "name": "射干麻黃湯",
+      "herbs": [
+        "射干",
+        "麻黃",
+        "生薑",
+        "細辛",
+        "紫菀",
+        "款冬花",
+        "五味子",
+        "大棗",
+        "半夏"
+      ],
+      "indications": [
+        "S-ASTHMA-WHEEZE",
+        "S-COUGH",
+        "S-EDEMA",
+        "S-HEADACHE",
+        "S-HEAVY-HEAD",
+        "S-WATERY-SPUTUM"
+      ],
+      "patternTags": [
+        "實證"
+      ],
+      "source": "《傷寒論》/《金匱要略》系統（待覆核具體條文與版本）",
+      "confidence": "中",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0028",
+      "name": "小半夏加茯苓湯",
+      "herbs": [
+        "半夏",
+        "生薑",
+        "茯苓"
+      ],
+      "indications": [
+        "S-GASTRIC-SPLASH",
+        "S-NAUSEA",
+        "S-OLIGURIA",
+        "S-VOMITING"
+      ],
+      "patternTags": [
+        "虛證"
+      ],
+      "source": "《傷寒論》/《金匱要略》系統（待覆核具體條文與版本）",
+      "confidence": "中",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0029",
+      "name": "小建中湯",
+      "herbs": [
+        "桂枝",
+        "芍藥",
+        "甘草",
+        "生薑",
+        "大棗",
+        "膠飴"
+      ],
+      "indications": [
+        "S-HEAT-SENSATION",
+        "S-MUSCLE-SPASM",
+        "S-PALE-COMPLEXION",
+        "S-PERIUMBILICAL-PAIN"
+      ],
+      "patternTags": [
+        "桂枝湯類",
+        "陽氣實 / 陰液虛"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0030",
+      "name": "小青龍湯",
+      "herbs": [
+        "麻黃",
+        "芍藥",
+        "乾薑",
+        "甘草",
+        "桂枝",
+        "細辛",
+        "五味子",
+        "半夏"
+      ],
+      "indications": [
+        "S-ASTHMA-WHEEZE",
+        "S-COLD",
+        "S-COUGH",
+        "S-FEVER",
+        "S-GASTRIC-SPLASH",
+        "S-RUNNY-NOSE-WATERY",
+        "S-SPONTANEOUS-SWEAT",
+        "S-WATERY-SPUTUM"
+      ],
+      "patternTags": [
+        "虛證",
+        "陽氣虛 / 陰液實(肺氣虛)"
+      ],
+      "source": "《傷寒論》/《金匱要略》系統（待覆核具體條文與版本）",
+      "confidence": "中",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0031",
+      "name": "左歸飲",
+      "herbs": [
+        "熟地黃",
+        "山藥",
+        "山茱萸",
+        "枸杞子",
+        "茯苓",
+        "甘草"
+      ],
+      "indications": [
+        "S-DRY-MOUTH",
+        "S-NIGHT-SWEAT",
+        "S-SKIN-DRY",
+        "S-THIRST",
+        "S-WEAK-LOWER-LIMB"
+      ],
+      "patternTags": [
+        "陽氣實 / 陰液虛 (腎陰虛)"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0032",
+      "name": "抑肝散",
+      "herbs": [
+        "柴胡",
+        "甘草",
+        "川芎",
+        "當歸",
+        "白朮",
+        "茯苓",
+        "釣藤鉤"
+      ],
+      "indications": [
+        "S-ANXIETY",
+        "S-IRRITABILITY",
+        "S-MUSCLE-SPASM"
+      ],
+      "patternTags": [
+        "肝陽病態性亢進狀態"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0033",
+      "name": "抑肝散加陳皮半夏",
+      "herbs": [
+        "柴胡",
+        "甘草",
+        "川芎",
+        "當歸",
+        "白朮",
+        "茯苓",
+        "釣藤鉤",
+        "陳皮",
+        "半夏"
+      ],
+      "indications": [
+        "S-FATIGUE",
+        "S-GASTRIC-SPLASH"
+      ],
+      "patternTags": [
+        "(陽氣 ↑↑ / 陰液 )"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0034",
+      "name": "抵當湯",
+      "herbs": [
+        "水蛭",
+        "虻蟲",
+        "桃仁",
+        "大黃"
+      ],
+      "indications": [
+        "S-ABDOMINAL-TENDERNESS",
+        "S-MENTAL-SYMPTOMS"
+      ],
+      "patternTags": [
+        "實證"
+      ],
+      "source": "《傷寒論》/《金匱要略》系統（待覆核具體條文與版本）",
+      "confidence": "中",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0035",
+      "name": "木防己湯",
+      "herbs": [
+        "木防己",
+        "石膏",
+        "桂枝",
+        "人參"
+      ],
+      "indications": [
+        "S-ASTHMA-WHEEZE",
+        "S-COUGH",
+        "S-EDEMA",
+        "S-EPIGASTRIC-RESISTANCE",
+        "S-OLIGURIA",
+        "S-THIRST"
+      ],
+      "patternTags": [
+        "實證"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0036",
+      "name": "朱砂安神丸",
+      "herbs": [],
+      "indications": [
+        "S-INSOMNIA"
+      ],
+      "patternTags": [
+        "陽氣虛 / 陰液虛"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "低",
+      "notes": "Excel 有此方名，但本次草稿未補足可靠標準組成；請人工補方。"
+    },
+    {
+      "formulaId": "F-0037",
+      "name": "杞菊地黃丸",
+      "herbs": [
+        "熟地黃",
+        "山茱萸",
+        "山藥",
+        "澤瀉",
+        "茯苓",
+        "牡丹皮",
+        "枸杞子",
+        "菊花"
+      ],
+      "indications": [
+        "S-DIZZINESS",
+        "S-EYE-FATIGUE",
+        "S-WEAK-LOWER-LIMB"
+      ],
+      "patternTags": [
+        "陽氣實 / 陰液虛 (腎陰虛)"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0038",
+      "name": "枳術湯",
+      "herbs": [],
+      "indications": [
+        "S-CHEST-OPPRESSION",
+        "S-EPIGASTRIC-PAIN",
+        "S-EPIGASTRIC-RESISTANCE",
+        "S-NAUSEA",
+        "S-VOMITING"
+      ],
+      "patternTags": [
+        "虛實夾雜"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "低",
+      "notes": "Excel 有此方名，但本次草稿未補足可靠標準組成；請人工補方。"
+    },
+    {
+      "formulaId": "F-0039",
+      "name": "柴朴湯",
+      "herbs": [],
+      "indications": [
+        "S-BITTER-TASTE",
+        "S-CHEST-OPPRESSION",
+        "S-FEVER"
+      ],
+      "patternTags": [
+        "半夏厚朴湯類"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。",
+      "composedOfFormulas": [
+        "小柴胡湯",
+        "半夏厚朴湯"
+      ]
+    },
+    {
+      "formulaId": "F-0040",
+      "name": "柴胡加龍骨牡蠣湯",
+      "herbs": [
+        "柴胡",
+        "半夏",
+        "桂枝",
+        "茯苓",
+        "黃芩",
+        "大棗",
+        "人參",
+        "龍骨",
+        "牡蠣",
+        "生薑",
+        "大黃"
+      ],
+      "indications": [
+        "S-ANXIETY",
+        "S-CHEST-OPPRESSION",
+        "S-DEPRESSION",
+        "S-INSOMNIA",
+        "S-PALPITATION"
+      ],
+      "patternTags": [
+        "其他"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0041",
+      "name": "柴胡桂枝湯等柴胡劑",
+      "herbs": [],
+      "indications": [
+        "S-ANXIETY",
+        "S-CHEST-OPPRESSION",
+        "S-HEADACHE",
+        "S-IRRITABILITY",
+        "S-MUSCLE-SPASM",
+        "S-SHOULDER-STIFF"
+      ],
+      "patternTags": [
+        "(陽氣 ↑↑ / 陰液 )"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "低",
+      "notes": "Excel 有此方名，但本次草稿未補足可靠標準組成；請人工補方。"
+    },
+    {
+      "formulaId": "F-0042",
+      "name": "柴胡清肝湯",
+      "herbs": [],
+      "indications": [
+        "S-CHEST-OPPRESSION",
+        "S-FACIAL-FLUSH",
+        "S-HEADACHE",
+        "S-HEAT-TOXIN",
+        "S-SORE-THROAT"
+      ],
+      "patternTags": [
+        "(陽氣 ↑↑ / 陰液 )"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "低",
+      "notes": "Excel 有此方名，但本次草稿未補足可靠標準組成；請人工補方。"
+    },
+    {
+      "formulaId": "F-0043",
+      "name": "柴胡疏肝湯",
+      "herbs": [
+        "柴胡",
+        "芍藥",
+        "枳殼",
+        "甘草",
+        "香附子",
+        "川芎",
+        "陳皮"
+      ],
+      "indications": [
+        "S-ANXIETY",
+        "S-BORBORIGMUS",
+        "S-CHEST-OPPRESSION",
+        "S-SHOULDER-STIFF"
+      ],
+      "patternTags": [
+        "香蘇散類"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0044",
+      "name": "柴苓湯",
+      "herbs": [],
+      "indications": [
+        "S-APPETITE-LOW",
+        "S-CHEST-OPPRESSION",
+        "S-EDEMA",
+        "S-OLIGURIA",
+        "S-THIRST"
+      ],
+      "patternTags": [
+        "虛實夾雜"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。",
+      "composedOfFormulas": [
+        "小柴胡湯",
+        "五苓散"
+      ]
+    },
+    {
+      "formulaId": "F-0045",
+      "name": "桂枝二越婢一湯",
+      "herbs": [],
+      "indications": [
+        "S-FACIAL-FLUSH",
+        "S-JOINT-PAIN",
+        "S-OLIGURIA",
+        "S-SPONTANEOUS-SWEAT",
+        "S-THIRST"
+      ],
+      "patternTags": [
+        "虛實夾雜"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "低",
+      "notes": "Excel 有此方名，但本次草稿未補足可靠標準組成；請人工補方。"
+    },
+    {
+      "formulaId": "F-0046",
+      "name": "桂枝人參湯",
+      "herbs": [
+        "桂枝",
+        "人參",
+        "乾薑",
+        "白朮",
+        "甘草"
+      ],
+      "indications": [
+        "S-DIARRHEA",
+        "S-EPIGASTRIC-PAIN",
+        "S-HEADACHE"
+      ],
+      "patternTags": [
+        "其他類"
+      ],
+      "source": "《傷寒論》/《金匱要略》系統（待覆核具體條文與版本）",
+      "confidence": "中",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0047",
+      "name": "桂枝加桂湯",
+      "herbs": [],
+      "indications": [
+        "S-HEADACHE",
+        "S-HOT-FLUSH"
+      ],
+      "patternTags": [
+        "桂枝和甘草配伍"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "低",
+      "notes": "Excel 有此方名，但本次草稿未補足可靠標準組成；請人工補方。"
+    },
+    {
+      "formulaId": "F-0048",
+      "name": "桂枝加術附湯",
+      "herbs": [
+        "桂枝",
+        "芍藥",
+        "甘草",
+        "生薑",
+        "大棗",
+        "白朮",
+        "附子"
+      ],
+      "indications": [
+        "S-COLD",
+        "S-JOINT-PAIN",
+        "S-MORNING-STIFFNESS",
+        "S-MUSCLE-SPASM",
+        "S-OLIGURIA",
+        "S-SPONTANEOUS-SWEAT"
+      ],
+      "patternTags": [
+        "虛證"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0049",
+      "name": "桂枝加黃芪湯",
+      "herbs": [
+        "桂枝",
+        "芍藥",
+        "甘草",
+        "生薑",
+        "大棗",
+        "黃芪"
+      ],
+      "indications": [
+        "S-DERMATITIS",
+        "S-MUSCLE-SPASM",
+        "S-NECK-STIFF",
+        "S-NIGHT-SWEAT"
+      ],
+      "patternTags": [
+        "桂枝湯類"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0050",
+      "name": "桂枝加龍骨牡蠣湯",
+      "herbs": [
+        "桂枝",
+        "芍藥",
+        "甘草",
+        "生薑",
+        "大棗",
+        "龍骨",
+        "牡蠣"
+      ],
+      "indications": [
+        "S-ANXIETY",
+        "S-INSOMNIA",
+        "S-PALPITATION"
+      ],
+      "patternTags": [
+        "桂枝和甘草配伍"
+      ],
+      "source": "《傷寒論》/《金匱要略》系統（待覆核具體條文與版本）",
+      "confidence": "中",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0051",
+      "name": "桂枝去桂加茯苓白朮湯",
+      "herbs": [
+        "芍藥",
+        "甘草",
+        "生薑",
+        "大棗",
+        "茯苓",
+        "白朮"
+      ],
+      "indications": [
+        "S-EPIGASTRIC-RESISTANCE",
+        "S-HEADACHE",
+        "S-NECK-STIFF"
+      ],
+      "patternTags": [
+        "虛證"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0052",
+      "name": "桂枝去芍藥加麻黃附子細辛湯",
+      "herbs": [],
+      "indications": [
+        "S-COLD",
+        "S-COUGH",
+        "S-EPIGASTRIC-RESISTANCE",
+        "S-THROAT-BLOCK"
+      ],
+      "patternTags": [
+        "陽氣虛 / 陰液實(肺氣虛)"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "低",
+      "notes": "Excel 有此方名，但本次草稿未補足可靠標準組成；請人工補方。"
+    },
+    {
+      "formulaId": "F-0053",
+      "name": "桂枝茯苓丸",
+      "herbs": [
+        "桂枝",
+        "茯苓",
+        "牡丹皮",
+        "桃仁",
+        "芍藥"
+      ],
+      "indications": [
+        "S-ABDOMINAL-MASS",
+        "S-ABDOMINAL-TENDERNESS"
+      ],
+      "patternTags": [
+        "虛實夾雜"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0054",
+      "name": "桃核承氣湯",
+      "herbs": [
+        "桃仁",
+        "桂枝",
+        "大黃",
+        "芒硝",
+        "甘草"
+      ],
+      "indications": [
+        "S-ABDOMINAL-TENDERNESS",
+        "S-ANXIETY",
+        "S-CONSTIPATION",
+        "S-HOT-FLUSH"
+      ],
+      "patternTags": [
+        "其他類",
+        "實證"
+      ],
+      "source": "《傷寒論》/《金匱要略》系統（待覆核具體條文與版本）",
+      "confidence": "中",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0055",
+      "name": "梔子豉湯",
+      "herbs": [
+        "梔子",
+        "淡豆豉"
+      ],
+      "indications": [
+        "S-ANXIETY",
+        "S-HEAT-IN-CHEST",
+        "S-HEAT-SENSATION",
+        "S-INSOMNIA"
+      ],
+      "patternTags": [
+        "陽氣實 / 陰液實"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0056",
+      "name": "歸脾湯",
+      "herbs": [
+        "人參",
+        "黃芪",
+        "白朮",
+        "茯苓",
+        "甘草",
+        "當歸",
+        "龍眼肉",
+        "酸棗仁",
+        "遠志",
+        "木香",
+        "生薑",
+        "大棗"
+      ],
+      "indications": [
+        "S-ABDOMINAL-DISTENSION",
+        "S-ANXIETY",
+        "S-BLEEDING",
+        "S-BLOOD-DEF",
+        "S-DEPRESSION",
+        "S-FORGETFULNESS",
+        "S-INSOMNIA",
+        "S-PALE-COMPLEXION",
+        "S-SUBCUTANEOUS-BLEEDING"
+      ],
+      "patternTags": [
+        "人參湯類",
+        "氣血雙補",
+        "陽氣虛 / 陰液實"
+      ],
+      "source": "後世方書/日本漢方常用資料（待逐方覆核）",
+      "confidence": "中",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0057",
+      "name": "治打撲一方",
+      "herbs": [],
+      "indications": [
+        "S-INJURY-SWELL-PAIN"
+      ],
+      "patternTags": [
+        "實證"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "低",
+      "notes": "Excel 有此方名，但本次草稿未補足可靠標準組成；請人工補方。"
+    },
+    {
+      "formulaId": "F-0058",
+      "name": "清心蓮子飲",
+      "herbs": [],
+      "indications": [
+        "S-ANXIETY",
+        "S-DEPRESSION",
+        "S-FATIGUE",
+        "S-LOWER-URINARY-NEUROSIS"
+      ],
+      "patternTags": [
+        "陽氣實 / 陰液虛"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "低",
+      "notes": "Excel 有此方名，但本次草稿未補足可靠標準組成；請人工補方。"
+    },
+    {
+      "formulaId": "F-0059",
+      "name": "清暑益氣湯",
+      "herbs": [
+        "人參",
+        "黃芪",
+        "白朮",
+        "麥門冬",
+        "五味子",
+        "黃柏",
+        "葛根",
+        "蒼朮",
+        "澤瀉",
+        "青皮",
+        "陳皮",
+        "甘草",
+        "當歸",
+        "升麻",
+        "神麴"
+      ],
+      "indications": [
+        "S-APPETITE-LOW",
+        "S-DIARRHEA",
+        "S-FEVER",
+        "S-SUMMER-HEAT"
+      ],
+      "patternTags": [
+        "人參湯類"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0060",
+      "name": "清熱補氣湯",
+      "herbs": [],
+      "indications": [
+        "S-ABDOMINAL-DISTENSION",
+        "S-HEAT-TOXIN",
+        "S-THIRST",
+        "S-TONGUE-PAIN"
+      ],
+      "patternTags": [
+        "陽氣實 / 陰液虛(主要是血虛/津虧)"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "低",
+      "notes": "Excel 有此方名，但本次草稿未補足可靠標準組成；請人工補方。"
+    },
+    {
+      "formulaId": "F-0061",
+      "name": "溫清飲",
+      "herbs": [
+        "當歸",
+        "芍藥",
+        "川芎",
+        "地黃",
+        "黃連",
+        "黃芩",
+        "黃柏",
+        "梔子"
+      ],
+      "indications": [
+        "S-DERMATITIS",
+        "S-ECZEMA",
+        "S-MENSTRUAL-IRREGULAR"
+      ],
+      "patternTags": [
+        "補血"
+      ],
+      "source": "後世方書/日本漢方常用資料（待逐方覆核）",
+      "confidence": "中",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0062",
+      "name": "滋陰至寶湯",
+      "herbs": [],
+      "indications": [
+        "S-FATIGUE",
+        "S-SKIN-DRY"
+      ],
+      "patternTags": [
+        "陽氣實 / 陰液虛(肺陰液虛)"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "低",
+      "notes": "Excel 有此方名，但本次草稿未補足可靠標準組成；請人工補方。"
+    },
+    {
+      "formulaId": "F-0063",
+      "name": "滋陰降火湯",
+      "herbs": [],
+      "indications": [
+        "S-COUGH",
+        "S-UPPER-AIRWAY-DRY"
+      ],
+      "patternTags": [
+        "陽氣實 / 陰液虛(肺陰液虛)"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "低",
+      "notes": "Excel 有此方名，但本次草稿未補足可靠標準組成；請人工補方。"
+    },
+    {
+      "formulaId": "F-0064",
+      "name": "潤腸湯",
+      "herbs": [
+        "當歸",
+        "地黃",
+        "桃仁",
+        "杏仁",
+        "枳實",
+        "厚朴",
+        "大黃",
+        "麻子仁",
+        "甘草"
+      ],
+      "indications": [
+        "S-CONSTIPATION",
+        "S-DEHYDRATION"
+      ],
+      "patternTags": [
+        "補血理氣"
+      ],
+      "source": "後世方書/日本漢方常用資料（待逐方覆核）",
+      "confidence": "中",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0065",
+      "name": "澤瀉湯",
+      "herbs": [
+        "澤瀉",
+        "白朮"
+      ],
+      "indications": [
+        "S-DIZZINESS",
+        "S-GASTRIC-SPLASH",
+        "S-HEAVY-HEAD",
+        "S-OLIGURIA"
+      ],
+      "patternTags": [
+        "虛實夾雜"
+      ],
+      "source": "《傷寒論》/《金匱要略》系統（待覆核具體條文與版本）",
+      "confidence": "中",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0066",
+      "name": "濟生腎氣丸",
+      "herbs": [
+        "熟地黃",
+        "山茱萸",
+        "山藥",
+        "澤瀉",
+        "茯苓",
+        "牡丹皮",
+        "桂枝",
+        "附子",
+        "牛膝",
+        "車前子"
+      ],
+      "indications": [
+        "S-COLD",
+        "S-EDEMA",
+        "S-FATIGUE",
+        "S-IMPOTENCE",
+        "S-JOINT-PAIN",
+        "S-LOW-BACK-PAIN",
+        "S-LOWER-ABDOMEN-NUMB",
+        "S-LOWER-LIMB-PAIN",
+        "S-NOCTURIA",
+        "S-URINATION-ABNORMAL"
+      ],
+      "patternTags": [
+        "虛證",
+        "陽氣虛 / 陰液實 (腎陽虛)"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0067",
+      "name": "炙甘草湯",
+      "herbs": [
+        "炙甘草",
+        "生薑",
+        "桂枝",
+        "人參",
+        "生地黃",
+        "阿膠",
+        "麥門冬",
+        "麻仁",
+        "大棗"
+      ],
+      "indications": [
+        "S-ASTHMA-WHEEZE",
+        "S-DRY-MOUTH",
+        "S-FATIGUE",
+        "S-PALPITATION",
+        "S-PULSE-IRREGULAR",
+        "S-SKIN-DRY"
+      ],
+      "patternTags": [
+        "陽氣虛 / 陰液虛"
+      ],
+      "source": "《傷寒論》/《金匱要略》系統（待覆核具體條文與版本）",
+      "confidence": "中",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0068",
+      "name": "甘草乾姜湯",
+      "herbs": [
+        "甘草",
+        "乾薑"
+      ],
+      "indications": [
+        "S-ASTHMA-WHEEZE",
+        "S-CHEST-OPPRESSION",
+        "S-COLD",
+        "S-POLYURIA",
+        "S-WATERY-SPUTUM"
+      ],
+      "patternTags": [
+        "陽氣虛 / 陰液實(肺氣虛)"
+      ],
+      "source": "《傷寒論》/《金匱要略》系統（待覆核具體條文與版本）",
+      "confidence": "中",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0069",
+      "name": "甘草瀉心湯",
+      "herbs": [
+        "半夏",
+        "黃芩",
+        "乾薑",
+        "人參",
+        "黃連",
+        "大棗",
+        "甘草",
+        "炙甘草"
+      ],
+      "indications": [
+        "S-ANXIETY",
+        "S-DIARRHEA",
+        "S-EPIGASTRIC-RESISTANCE",
+        "S-NAUSEA",
+        "S-VOMITING"
+      ],
+      "patternTags": [
+        "陽氣實 / 陰液實"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0070",
+      "name": "生脈飲",
+      "herbs": [
+        "人參",
+        "麥門冬",
+        "五味子"
+      ],
+      "indications": [
+        "S-HEART-FAILURE",
+        "S-HYPOTENSION",
+        "S-PULSE-IRREGULAR",
+        "S-THIRST"
+      ],
+      "patternTags": [
+        "陽氣大虛 / 陰液大虛(極虛/衰竭)"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0071",
+      "name": "當歸建中湯",
+      "herbs": [
+        "桂枝",
+        "芍藥",
+        "甘草",
+        "生薑",
+        "大棗",
+        "膠飴",
+        "當歸"
+      ],
+      "indications": [
+        "S-ABDOMINAL-PAIN",
+        "S-BLEEDING",
+        "S-COLD"
+      ],
+      "patternTags": [
+        "桂枝湯類"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0072",
+      "name": "當歸芍藥散",
+      "herbs": [
+        "當歸",
+        "芍藥",
+        "川芎",
+        "茯苓",
+        "白朮",
+        "澤瀉"
+      ],
+      "indications": [
+        "S-ABDOMINAL-PAIN",
+        "S-ABDOMINAL-TENDERNESS",
+        "S-BLOOD-DEF",
+        "S-COLD",
+        "S-DYSMENORRHEA",
+        "S-EDEMA",
+        "S-FATIGUE",
+        "S-GASTRIC-SPLASH",
+        "S-MENSTRUAL-IRREGULAR",
+        "S-PALPITATION"
+      ],
+      "patternTags": [
+        "虛證",
+        "補血"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0073",
+      "name": "當歸飲子",
+      "herbs": [
+        "當歸",
+        "芍藥",
+        "川芎",
+        "生地黃",
+        "白蒺藜",
+        "防風",
+        "荊芥",
+        "何首烏",
+        "黃芪",
+        "甘草"
+      ],
+      "indications": [
+        "S-ECZEMA",
+        "S-SKIN-DRY"
+      ],
+      "patternTags": [
+        "補血"
+      ],
+      "source": "後世方書/日本漢方常用資料（待逐方覆核）",
+      "confidence": "中",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0074",
+      "name": "疏經活血湯",
+      "herbs": [],
+      "indications": [
+        "S-ANXIETY",
+        "S-CHEST-OPPRESSION",
+        "S-JOINT-PAIN",
+        "S-NEURALGIA",
+        "S-NUMBNESS"
+      ],
+      "patternTags": [
+        "虛實夾雜"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "低",
+      "notes": "Excel 有此方名，但本次草稿未補足可靠標準組成；請人工補方。"
+    },
+    {
+      "formulaId": "F-0075",
+      "name": "真武湯",
+      "herbs": [
+        "茯苓",
+        "芍藥",
+        "白朮",
+        "生薑",
+        "附子"
+      ],
+      "indications": [
+        "S-COLD",
+        "S-DIARRHEA",
+        "S-DIZZINESS",
+        "S-EDEMA",
+        "S-FATIGUE",
+        "S-OLIGURIA"
+      ],
+      "patternTags": [
+        "虛證"
+      ],
+      "source": "《傷寒論》/《金匱要略》系統（待覆核具體條文與版本）",
+      "confidence": "中",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0076",
+      "name": "神秘湯",
+      "herbs": [],
+      "indications": [
+        "S-ASTHMA-WHEEZE",
+        "S-BITTER-TASTE",
+        "S-CHEST-OPPRESSION",
+        "S-COUGH",
+        "S-FEVER",
+        "S-NAUSEA"
+      ],
+      "patternTags": [
+        "虛實夾雜"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "低",
+      "notes": "Excel 有此方名，但本次草稿未補足可靠標準組成；請人工補方。"
+    },
+    {
+      "formulaId": "F-0077",
+      "name": "竹葉石膏湯",
+      "herbs": [
+        "竹葉",
+        "石膏",
+        "半夏",
+        "麥門冬",
+        "人參",
+        "甘草",
+        "粳米"
+      ],
+      "indications": [
+        "S-DRY-MOUTH",
+        "S-EPIGASTRIC-RESISTANCE",
+        "S-FEVER",
+        "S-THIRST"
+      ],
+      "patternTags": [
+        "陽氣實 / 陰液虛(肺陰液虛)"
+      ],
+      "source": "《傷寒論》/《金匱要略》系統（待覆核具體條文與版本）",
+      "confidence": "中",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0078",
+      "name": "胃苓湯",
+      "herbs": [],
+      "indications": [
+        "S-DIARRHEA",
+        "S-FOOD-POISONING",
+        "S-OLIGURIA"
+      ],
+      "patternTags": [
+        "虛實夾雜"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "低",
+      "notes": "Excel 有此方名，但本次草稿未補足可靠標準組成；請人工補方。"
+    },
+    {
+      "formulaId": "F-0079",
+      "name": "腸癰湯",
+      "herbs": [],
+      "indications": [
+        "S-ABDOMINAL-DISTENSION",
+        "S-ABDOMINAL-MASS",
+        "S-ABDOMINAL-TENDERNESS",
+        "S-APPETITE-LOW"
+      ],
+      "patternTags": [
+        "實證"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "低",
+      "notes": "Excel 有此方名，但本次草稿未補足可靠標準組成；請人工補方。"
+    },
+    {
+      "formulaId": "F-0080",
+      "name": "良枳湯",
+      "herbs": [],
+      "indications": [
+        "S-ANXIETY",
+        "S-EPIGASTRIC-PAIN",
+        "S-EPIGASTRIC-RESISTANCE",
+        "S-GASTRIC-SPLASH",
+        "S-PALPITATION",
+        "S-VOMITING"
+      ],
+      "patternTags": [
+        "桂枝和甘草配伍",
+        "虛證"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "低",
+      "notes": "Excel 有此方名，但本次草稿未補足可靠標準組成；請人工補方。"
+    },
+    {
+      "formulaId": "F-0081",
+      "name": "芍藥甘草湯",
+      "herbs": [
+        "芍藥",
+        "甘草"
+      ],
+      "indications": [
+        "S-MUSCLE-SPASM",
+        "S-NIGHT-CRYING"
+      ],
+      "patternTags": [
+        "陽氣  / 陰液 ↓"
+      ],
+      "source": "《傷寒論》/《金匱要略》系統（待覆核具體條文與版本）",
+      "confidence": "中",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0082",
+      "name": "芎歸膠艾湯",
+      "herbs": [
+        "川芎",
+        "阿膠",
+        "甘草",
+        "艾葉",
+        "當歸",
+        "芍藥",
+        "乾地黃"
+      ],
+      "indications": [
+        "S-ABDOMINAL-TENDERNESS",
+        "S-BLEEDING",
+        "S-BLOOD-DEF",
+        "S-HEMORRHOIDS"
+      ],
+      "patternTags": [
+        "虛證",
+        "補血"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0083",
+      "name": "苓桂味甘湯",
+      "herbs": [],
+      "indications": [
+        "S-COLD",
+        "S-COUGH",
+        "S-FACIAL-FLUSH",
+        "S-OLIGURIA"
+      ],
+      "patternTags": [
+        "桂枝和甘草配伍"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "低",
+      "notes": "Excel 有此方名，但本次草稿未補足可靠標準組成；請人工補方。"
+    },
+    {
+      "formulaId": "F-0084",
+      "name": "苓桂甘棗湯",
+      "herbs": [
+        "茯苓",
+        "桂枝",
+        "甘草",
+        "大棗"
+      ],
+      "indications": [
+        "S-ANXIETY",
+        "S-PALPITATION"
+      ],
+      "patternTags": [
+        "桂枝和甘草配伍"
+      ],
+      "source": "《傷寒論》/《金匱要略》系統（待覆核具體條文與版本）",
+      "confidence": "中",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0085",
+      "name": "苓桂術甘湯",
+      "herbs": [
+        "茯苓",
+        "桂枝",
+        "白朮",
+        "甘草"
+      ],
+      "indications": [
+        "S-DIZZINESS",
+        "S-GASTRIC-SPLASH",
+        "S-HOT-FLUSH",
+        "S-OLIGURIA",
+        "S-PALPITATION",
+        "S-UPPER-HOT-LOWER-COLD"
+      ],
+      "patternTags": [
+        "桂枝和甘草配伍",
+        "虛證"
+      ],
+      "source": "《傷寒論》/《金匱要略》系統（待覆核具體條文與版本）",
+      "confidence": "中",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0086",
+      "name": "苓甘五味加姜辛半夏杏仁湯",
+      "herbs": [
+        "茯苓",
+        "甘草",
+        "五味子",
+        "乾薑",
+        "細辛",
+        "半夏",
+        "杏仁"
+      ],
+      "indications": [
+        "S-ASTHMA-WHEEZE",
+        "S-COUGH",
+        "S-EDEMA",
+        "S-GASTRIC-SPLASH",
+        "S-WATERY-SPUTUM"
+      ],
+      "patternTags": [
+        "陽氣虛 / 陰液實(肺氣虛)"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0087",
+      "name": "苓甘五味加薑辛半夏杏仁湯",
+      "herbs": [
+        "茯苓",
+        "甘草",
+        "五味子",
+        "乾薑",
+        "細辛",
+        "半夏",
+        "杏仁"
+      ],
+      "indications": [
+        "S-ASTHMA-WHEEZE",
+        "S-COLD",
+        "S-COUGH",
+        "S-FATIGUE",
+        "S-PALE-COMPLEXION",
+        "S-WATERY-SPUTUM"
+      ],
+      "patternTags": [
+        "虛證"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0088",
+      "name": "苓薑術甘湯",
+      "herbs": [
+        "茯苓",
+        "乾薑",
+        "白朮",
+        "甘草"
+      ],
+      "indications": [
+        "S-COLD",
+        "S-EDEMA",
+        "S-LOW-BACK-HEAVY",
+        "S-LOW-SPECIFIC-GRAVITY-URINE",
+        "S-POLYURIA"
+      ],
+      "patternTags": [
+        "虛證"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0089",
+      "name": "茯苓杏仁甘草湯",
+      "herbs": [
+        "茯苓",
+        "杏仁",
+        "甘草"
+      ],
+      "indications": [
+        "S-ASTHMA-WHEEZE",
+        "S-CHEST-OPPRESSION",
+        "S-EDEMA",
+        "S-EPIGASTRIC-RESISTANCE"
+      ],
+      "patternTags": [
+        "虛證"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0090",
+      "name": "茯苓澤瀉湯",
+      "herbs": [
+        "茯苓",
+        "澤瀉",
+        "甘草",
+        "桂枝",
+        "白朮",
+        "生薑"
+      ],
+      "indications": [
+        "S-ABDOMINAL-DISTENSION",
+        "S-DIZZINESS",
+        "S-HOT-FLUSH",
+        "S-NAUSEA",
+        "S-PALPITATION",
+        "S-THIRST",
+        "S-VOMITING"
+      ],
+      "patternTags": [
+        "虛證"
+      ],
+      "source": "《傷寒論》/《金匱要略》系統（待覆核具體條文與版本）",
+      "confidence": "中",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0091",
+      "name": "茯苓飲",
+      "herbs": [
+        "茯苓",
+        "白朮",
+        "人參",
+        "橘皮",
+        "枳實",
+        "生薑"
+      ],
+      "indications": [
+        "S-ACID-REFLUX",
+        "S-APPETITE-LOW",
+        "S-EDEMA",
+        "S-EPIGASTRIC-RESISTANCE",
+        "S-GASTRIC-SPLASH",
+        "S-PALPITATION",
+        "S-VOMITING"
+      ],
+      "patternTags": [
+        "人參湯類",
+        "虛證"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0092",
+      "name": "茵陳五苓散",
+      "herbs": [
+        "茵陳蒿",
+        "澤瀉",
+        "豬苓",
+        "茯苓",
+        "白朮",
+        "桂枝"
+      ],
+      "indications": [
+        "S-JAUNDICE",
+        "S-OLIGURIA",
+        "S-THIRST"
+      ],
+      "patternTags": [
+        "虛實夾雜"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0093",
+      "name": "荊芥連翹湯",
+      "herbs": [],
+      "indications": [
+        "S-HAND-FOOT-SWEAT",
+        "S-HEAT-TOXIN"
+      ],
+      "patternTags": [
+        "補血理氣"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "低",
+      "notes": "Excel 有此方名，但本次草稿未補足可靠標準組成；請人工補方。"
+    },
+    {
+      "formulaId": "F-0094",
+      "name": "葛根湯",
+      "herbs": [
+        "葛根",
+        "麻黃",
+        "桂枝",
+        "芍藥",
+        "甘草",
+        "生薑",
+        "大棗"
+      ],
+      "indications": [
+        "S-DEPRESSION",
+        "S-HEAVY-HEAD",
+        "S-SHOULDER-STIFF"
+      ],
+      "patternTags": [
+        "其他"
+      ],
+      "source": "後世方書/日本漢方常用資料（待逐方覆核）",
+      "confidence": "中",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0095",
+      "name": "薏苡仁湯",
+      "herbs": [
+        "薏苡仁",
+        "麻黃",
+        "桂枝",
+        "當歸",
+        "芍藥",
+        "蒼朮",
+        "甘草"
+      ],
+      "indications": [
+        "!S-THIRST",
+        "S-HEAT-SENSATION",
+        "S-JOINT-PAIN",
+        "S-JOINT-SWELLING",
+        "S-MORNING-STIFFNESS"
+      ],
+      "patternTags": [
+        "虛實夾雜"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0096",
+      "name": "薏苡附子敗醬散",
+      "herbs": [
+        "薏苡仁",
+        "附子",
+        "敗醬"
+      ],
+      "indications": [
+        "S-ABDOMINAL-TENDERNESS",
+        "S-LOWER-ABDOMINAL-PAIN"
+      ],
+      "patternTags": [
+        "虛證"
+      ],
+      "source": "《傷寒論》/《金匱要略》系統（待覆核具體條文與版本）",
+      "confidence": "中",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0097",
+      "name": "蘇子降氣湯",
+      "herbs": [
+        "紫蘇子",
+        "半夏",
+        "當歸",
+        "甘草",
+        "前胡",
+        "厚朴",
+        "肉桂",
+        "生薑",
+        "大棗"
+      ],
+      "indications": [
+        "S-ASTHMA-WHEEZE",
+        "S-COUGH",
+        "S-HOT-FLUSH",
+        "S-WEAK-LOWER-LIMB"
+      ],
+      "patternTags": [
+        "其他類",
+        "虛證"
+      ],
+      "source": "後世方書/日本漢方常用資料（待逐方覆核）",
+      "confidence": "中",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0098",
+      "name": "補中益氣湯",
+      "herbs": [
+        "黃芪",
+        "人參",
+        "白朮",
+        "甘草",
+        "當歸",
+        "陳皮",
+        "升麻",
+        "柴胡",
+        "生薑",
+        "大棗"
+      ],
+      "indications": [
+        "S-APPETITE-LOW",
+        "S-CHEST-OPPRESSION",
+        "S-FATIGUE",
+        "S-FEVER"
+      ],
+      "patternTags": [
+        "人參湯類"
+      ],
+      "source": "後世方書/日本漢方常用資料（待逐方覆核）",
+      "confidence": "中",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0099",
+      "name": "變制心氣飲",
+      "herbs": [],
+      "indications": [
+        "S-ASTHMA-WHEEZE",
+        "S-EDEMA",
+        "S-EPIGASTRIC-RESISTANCE",
+        "S-OLIGURIA"
+      ],
+      "patternTags": [
+        "虛實夾雜"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "低",
+      "notes": "Excel 有此方名，但本次草稿未補足可靠標準組成；請人工補方。"
+    },
+    {
+      "formulaId": "F-0100",
+      "name": "豬苓湯",
+      "herbs": [
+        "豬苓",
+        "茯苓",
+        "澤瀉",
+        "阿膠",
+        "滑石"
+      ],
+      "indications": [
+        "!S-SPONTANEOUS-SWEAT",
+        "S-ANXIETY",
+        "S-OLIGURIA",
+        "S-THIRST",
+        "S-URINARY-PAIN"
+      ],
+      "patternTags": [
+        "虛實夾雜"
+      ],
+      "source": "《傷寒論》/《金匱要略》系統（待覆核具體條文與版本）",
+      "confidence": "中",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0101",
+      "name": "越婢加半夏湯",
+      "herbs": [
+        "麻黃",
+        "石膏",
+        "生薑",
+        "大棗",
+        "甘草",
+        "半夏"
+      ],
+      "indications": [
+        "S-COUGH",
+        "S-DIZZINESS",
+        "S-NAUSEA",
+        "S-OLIGURIA",
+        "S-THIRST",
+        "S-VOMITING"
+      ],
+      "patternTags": [
+        "其他類",
+        "實證"
+      ],
+      "source": "《傷寒論》/《金匱要略》系統（待覆核具體條文與版本）",
+      "confidence": "中",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0102",
+      "name": "越婢加術湯",
+      "herbs": [
+        "麻黃",
+        "石膏",
+        "生薑",
+        "大棗",
+        "甘草",
+        "白朮"
+      ],
+      "indications": [
+        "S-EDEMA",
+        "S-JOINT-PAIN",
+        "S-OLIGURIA",
+        "S-THIRST"
+      ],
+      "patternTags": [
+        "虛實夾雜"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0103",
+      "name": "越婢湯",
+      "herbs": [
+        "麻黃",
+        "石膏",
+        "生薑",
+        "大棗",
+        "甘草"
+      ],
+      "indications": [
+        "S-EDEMA",
+        "S-FEVER",
+        "S-JOINT-PAIN",
+        "S-SPONTANEOUS-SWEAT",
+        "S-THIRST"
+      ],
+      "patternTags": [
+        "虛實夾雜"
+      ],
+      "source": "《傷寒論》/《金匱要略》系統（待覆核具體條文與版本）",
+      "confidence": "中",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0104",
+      "name": "通導散",
+      "herbs": [],
+      "indications": [
+        "S-DIZZINESS",
+        "S-HEADACHE",
+        "S-LOWER-ABDOMINAL-PAIN",
+        "S-SHOULDER-STIFF"
+      ],
+      "patternTags": [
+        "實證"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "低",
+      "notes": "Excel 有此方名，但本次草稿未補足可靠標準組成；請人工補方。"
+    },
+    {
+      "formulaId": "F-0105",
+      "name": "酸棗仁湯",
+      "herbs": [
+        "酸棗仁",
+        "茯苓",
+        "知母",
+        "川芎",
+        "甘草"
+      ],
+      "indications": [
+        "S-COUGH",
+        "S-DRY-MOUTH",
+        "S-FATIGUE",
+        "S-FEVER",
+        "S-INSOMNIA",
+        "S-SLEEPINESS"
+      ],
+      "patternTags": [
+        "陽氣虛 / 陰液虛(虛證/虛勞)"
+      ],
+      "source": "後世方書/日本漢方常用資料（待逐方覆核）",
+      "confidence": "中",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0106",
+      "name": "鉤藤散",
+      "herbs": [
+        "釣藤鉤",
+        "陳皮",
+        "半夏",
+        "麥門冬",
+        "茯苓",
+        "人參",
+        "防風",
+        "菊花",
+        "甘草",
+        "石膏",
+        "生薑"
+      ],
+      "indications": [
+        "S-ANXIETY",
+        "S-DIZZINESS",
+        "S-EYE-FATIGUE",
+        "S-FORGETFULNESS",
+        "S-HEADACHE",
+        "S-HYPERTENSION"
+      ],
+      "patternTags": [
+        "(陽氣 ↑↑ / 陰液 )"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0107",
+      "name": "防己茯苓湯",
+      "herbs": [
+        "防己",
+        "黃芪",
+        "桂枝",
+        "茯苓",
+        "甘草"
+      ],
+      "indications": [
+        "S-FACIAL-FLUSH",
+        "S-JOINT-PAIN",
+        "S-MORNING-STIFFNESS",
+        "S-MUSCLE-SOFT",
+        "S-MUSCLE-SPASM"
+      ],
+      "patternTags": [
+        "虛證"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0108",
+      "name": "防己黃芪湯",
+      "herbs": [
+        "防己",
+        "黃芪",
+        "白朮",
+        "甘草",
+        "生薑",
+        "大棗"
+      ],
+      "indications": [
+        "!S-THIRST",
+        "S-BODY-HEAVY",
+        "S-EDEMA",
+        "S-FACIAL-FLUSH",
+        "S-MUSCLE-SOFT",
+        "S-OLIGURIA"
+      ],
+      "patternTags": [
+        "虛證"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0109",
+      "name": "防風通聖散",
+      "herbs": [
+        "防風",
+        "荊芥",
+        "麻黃",
+        "薄荷",
+        "連翹",
+        "梔子",
+        "黃芩",
+        "桔梗",
+        "川芎",
+        "當歸",
+        "芍藥",
+        "白朮",
+        "甘草",
+        "石膏",
+        "滑石",
+        "芒硝",
+        "大黃",
+        "生薑"
+      ],
+      "indications": [
+        "S-ABDOMINAL-STRONG",
+        "S-CONSTIPATION",
+        "S-JOINT-PAIN",
+        "S-MORNING-STIFFNESS"
+      ],
+      "patternTags": [
+        "實證"
+      ],
+      "source": "後世方書/日本漢方常用資料（待逐方覆核）",
+      "confidence": "中",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0110",
+      "name": "附子湯",
+      "herbs": [],
+      "indications": [
+        "S-BACK-COLD",
+        "S-EDEMA",
+        "S-FATIGUE",
+        "S-JOINT-PAIN",
+        "S-MORNING-STIFFNESS",
+        "S-MUSCLE-PAIN",
+        "S-OLIGURIA"
+      ],
+      "patternTags": [
+        "虛證"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "低",
+      "notes": "Excel 有此方名，但本次草稿未補足可靠標準組成；請人工補方。"
+    },
+    {
+      "formulaId": "F-0111",
+      "name": "香蘇散",
+      "herbs": [
+        "香附子",
+        "紫蘇葉",
+        "陳皮",
+        "甘草",
+        "生薑"
+      ],
+      "indications": [
+        "S-ANXIETY",
+        "S-APPETITE-LOW",
+        "S-FATIGUE",
+        "S-HEADACHE",
+        "S-NASAL-CONGESTION"
+      ],
+      "patternTags": [
+        "香蘇散類"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0112",
+      "name": "麥門冬湯",
+      "herbs": [
+        "麥門冬",
+        "半夏",
+        "人參",
+        "甘草",
+        "粳米",
+        "大棗"
+      ],
+      "indications": [
+        "S-COUGH",
+        "S-COUGH-CHOKING",
+        "S-SORE-THROAT"
+      ],
+      "patternTags": [
+        "陽氣實 / 陰液虛(肺陰液虛)"
+      ],
+      "source": "《傷寒論》/《金匱要略》系統（待覆核具體條文與版本）",
+      "confidence": "中",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0113",
+      "name": "麻黃附子細辛湯",
+      "herbs": [
+        "麻黃",
+        "附子",
+        "細辛"
+      ],
+      "indications": [
+        "S-COLD",
+        "S-COUGH",
+        "S-FATIGUE",
+        "S-HEADACHE",
+        "S-JOINT-PAIN",
+        "S-PALE-COMPLEXION",
+        "S-RUNNY-NOSE-WATERY",
+        "S-SORE-THROAT"
+      ],
+      "patternTags": [
+        "虛證",
+        "陽氣虛 / 陰液實(肺氣虛)"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0114",
+      "name": "黃耆建中湯",
+      "herbs": [
+        "桂枝",
+        "芍藥",
+        "甘草",
+        "生薑",
+        "大棗",
+        "膠飴",
+        "黃芪"
+      ],
+      "indications": [
+        "S-APPETITE-LOW",
+        "S-FATIGUE",
+        "S-MUSCLE-SPASM",
+        "S-NIGHT-SWEAT",
+        "S-PERIUMBILICAL-PAIN"
+      ],
+      "patternTags": [
+        "陽氣實 / 陰液虛"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0115",
+      "name": "黃芪建中湯",
+      "herbs": [
+        "桂枝",
+        "芍藥",
+        "甘草",
+        "生薑",
+        "大棗",
+        "膠飴",
+        "黃芪"
+      ],
+      "indications": [
+        "S-DERMATITIS",
+        "S-EXUDATIVE-INFLAMMATION",
+        "S-FATIGUE",
+        "S-NIGHT-SWEAT",
+        "S-PERIUMBILICAL-PAIN"
+      ],
+      "patternTags": [
+        "桂枝湯類"
+      ],
+      "source": "現代常用漢方資料草稿；需人工查典覆核",
+      "confidence": "高",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0116",
+      "name": "黃連湯",
+      "herbs": [
+        "黃連",
+        "甘草",
+        "乾薑",
+        "桂枝",
+        "人參",
+        "半夏",
+        "大棗"
+      ],
+      "indications": [
+        "S-EPIGASTRIC-PAIN",
+        "S-HOT-FLUSH",
+        "S-NAUSEA",
+        "S-VOMITING"
+      ],
+      "patternTags": [
+        "其他類"
+      ],
+      "source": "《傷寒論》/《金匱要略》系統（待覆核具體條文與版本）",
+      "confidence": "中",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0117",
+      "name": "黃連解毒湯",
+      "herbs": [
+        "黃連",
+        "黃芩",
+        "黃柏",
+        "梔子"
+      ],
+      "indications": [
+        "S-ABDOMINAL-TENDERNESS",
+        "S-ANXIETY",
+        "S-DEPRESSION",
+        "S-FACIAL-FLUSH",
+        "S-HEAT-SENSATION",
+        "S-HOT-FLUSH"
+      ],
+      "patternTags": [
+        "其他",
+        "陽氣實 / 陰液實"
+      ],
+      "source": "後世方書/日本漢方常用資料（待逐方覆核）",
+      "confidence": "中",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0118",
+      "name": "黃連阿膠湯",
+      "herbs": [
+        "黃連",
+        "黃芩",
+        "芍藥",
+        "阿膠",
+        "雞子黃"
+      ],
+      "indications": [
+        "S-DRY-MOUTH",
+        "S-HEAT-IN-CHEST",
+        "S-INSOMNIA",
+        "S-PALPITATION",
+        "S-SKIN-DRY"
+      ],
+      "patternTags": [
+        "陽氣虛 / 陰液虛"
+      ],
+      "source": "《傷寒論》/《金匱要略》系統（待覆核具體條文與版本）",
+      "confidence": "中",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    },
+    {
+      "formulaId": "F-0119",
+      "name": "龍膽瀉肝湯",
+      "herbs": [
+        "龍膽草",
+        "黃芩",
+        "梔子",
+        "澤瀉",
+        "木通",
+        "車前子",
+        "當歸",
+        "生地黃",
+        "柴胡",
+        "甘草"
+      ],
+      "indications": [
+        "S-DYSURIA",
+        "S-EYE-FATIGUE",
+        "S-GENITAL-HEAT",
+        "S-HEADACHE",
+        "S-LEUCORRHEA",
+        "S-TINNITUS",
+        "S-URINARY-FREQUENCY",
+        "S-URINARY-INFECTION",
+        "S-URINARY-PAIN"
+      ],
+      "patternTags": [
+        "(陽氣 ↑↑ / 陰液 )",
+        "實證"
+      ],
+      "source": "後世方書/日本漢方常用資料（待逐方覆核）",
+      "confidence": "中",
+      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。"
+    }
   ]
 };

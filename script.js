@@ -1316,10 +1316,7 @@ function preparePrintReport() {
         const isDiagnosed = score >= db.threshold;
         
         // Find checked symptoms in this syndrome
-        const checked = [];
-        db.symptoms.forEach(sym => {
-            if (appState.checkedSymptoms.has(sym.id)) checked.push(sym.label);
-        });
+        const checked = getCheckedRenderableSymptoms(db.symptoms).map(sym => sym.label);
         const checkedText = checked.length > 0 ? checked.join('、') : '無';
         
         const row = document.createElement('tr');
@@ -1342,10 +1339,7 @@ function preparePrintReport() {
         const score = appState.organScores[key] || 0;
         if (score >= 2) {
             hasOrganAnomalies = true;
-            const checked = [];
-            db.symptoms.forEach(sym => {
-                if (appState.checkedSymptoms.has(sym.id)) checked.push(sym.label);
-            });
+            const checked = getCheckedRenderableSymptoms(db.symptoms).map(sym => sym.label);
             
             const level = score >= 4 ? '高度疑似異常' : '中度疑似異常';
             
@@ -1368,17 +1362,7 @@ function preparePrintReport() {
     rxContent.innerHTML = '';
 
     // Recompute recommended list for print layout (same logic but clean layout)
-    const activeSymptomsText = [];
-    appState.checkedSymptoms.forEach(id => {
-        for (const syndrome of Object.values(SYNDROME_DB)) {
-            const sym = syndrome.symptoms.find(s => s.id === id);
-            if (sym) activeSymptomsText.push(sym.label);
-        }
-        for (const organ of Object.values(ORGAN_DB)) {
-            const sym = organ.symptoms.find(s => s.id === id);
-            if (sym) activeSymptomsText.push(sym.label);
-        }
-    });
+    const activeSymptomsText = getCheckedSymptomLabels();
 
     const recommendedFormulas = [];
     FORMULA_DB.forEach(formula => {

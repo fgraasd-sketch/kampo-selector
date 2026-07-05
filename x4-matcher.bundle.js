@@ -278,6 +278,7 @@ function createPhase1Engine(kb) {
           : `${herb.name} 覆蓋殘留症狀；Phase 1 僅作方向建議，無劑量與安全宣稱。`,
       });
     }
+    suggestions.sort((a, b) => b.coveredSymptoms.length - a.coveredSymptoms.length);
     return suggestions.slice(0, 3);
   }
 
