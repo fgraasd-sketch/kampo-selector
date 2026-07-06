@@ -977,11 +977,18 @@ function parseCaseTextWithOntology(text = '') {
 
 function mergeParsedCaseItems(...groups) {
     const merged = [];
-    const seen = new Set();
+    const indexBySource = new Map();
     groups.flat().forEach(item => {
-        const key = item.source + '|' + item.negated;
-        if (seen.has(key)) return;
-        seen.add(key);
+        if (!item || !item.source) return;
+        const source = item.source;
+        const existingIndex = indexBySource.get(source);
+        if (existingIndex !== undefined) {
+            const existing = merged[existingIndex];
+            if (existing.negated || !item.negated) return;
+            merged[existingIndex] = item;
+            return;
+        }
+        indexBySource.set(source, merged.length);
         merged.push(item);
     });
     return merged;
