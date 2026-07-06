@@ -1413,6 +1413,7 @@ body {
 .radar-table-toggle table { width: 100%; margin-top: 0.4rem; border-collapse: collapse; font-size: 0.78rem; }
 .radar-table-toggle th, .radar-table-toggle td { border: 1px solid var(--border-color); padding: 0.25rem 0.4rem; text-align: center; }
 .radar-table-toggle th:first-child, .radar-table-toggle td:first-child { text-align: left; color: var(--text-main); }
+.rx-filter-status { margin-top: 0.65rem; color: var(--text-muted); font-size: 0.86rem; }
 .rx-score-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.5rem; margin-top: 0.75rem; }
 .rx-score-grid div { border: 1px solid var(--border-color); border-radius: 8px; padding: 0.5rem; background: #f8faf9; }
 .rx-score-grid strong { display: block; color: var(--text-muted); font-size: 0.75rem; margin-bottom: 0.2rem; }

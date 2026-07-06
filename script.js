@@ -1257,6 +1257,15 @@ function buildRadarChartSvg(patientVector, formulaVector, formulaName) {
 }
 
 // Render Prescriptions based on active syndromes, organ abnormalities, and matching symptoms
+function buildRecommendationStatus({ visibleCount = 0, totalCandidateCount = 0, constitutionFilter = 'all', hasExplicitSymptoms = false, vectorOnlyCount = 0 } = {}) {
+    const parts = [];
+    if (constitutionFilter && constitutionFilter !== 'all') parts.push('已套用虛實篩選：' + constitutionFilter);
+    parts.push('目前顯示 ' + visibleCount + ' 方');
+    if (totalCandidateCount && totalCandidateCount > visibleCount) parts.push('候選 ' + totalCandidateCount + ' 方');
+    if (hasExplicitSymptoms && vectorOnlyCount > 0) parts.push(vectorOnlyCount + ' 方為辨證補位');
+    return parts.join('；');
+}
+
 function renderCaseSummary(recommendedFormulas) {
     const panel = document.getElementById('case-summary');
     if (!panel) return;
@@ -1294,6 +1303,13 @@ function renderPrescriptions() {
     if (!container) return;
     container.innerHTML = '';
     const recommendedFormulas = getRecommendedFormulas(5);
+    const statusEl = document.getElementById('rx-filter-status');
+    if (statusEl) {
+        const constitutionFilter = document.getElementById('rx-constitution-filter')?.value || 'all';
+        const hasExplicitSymptoms = Boolean(appState.caseKeywords.length || getCheckedSymptomLabels().length || (document.getElementById('rx-search-input')?.value || '').trim());
+        const vectorOnlyCount = recommendedFormulas.filter(item => item.isVectorOnlySupplement).length;
+        statusEl.textContent = buildRecommendationStatus({ visibleCount: recommendedFormulas.length, constitutionFilter, hasExplicitSymptoms, vectorOnlyCount });
+    }
     // Stash the exact on-screen ranking (name/totalScore/matchedSymptoms/herbSuggestions/
     // explanation) so the print report can reuse it verbatim instead of recomputing its
     // own (potentially disagreeing) list from the legacy FORMULA_DB keyword heuristic.

@@ -343,6 +343,23 @@ function symptomRefNegated(ref) {
   return Boolean(ref?.negated) || String(ref?.id || "").startsWith("!") || /^無|^不|^未見/.test(String(ref?.raw || ""));
 }
 
+const PATIENT_NEGATION_PREFIX = /^(未發現明顯|未發現|無明顯|沒有明顯|未見明顯|沒有|未見|未有|否認|排除|無)/;
+const PATIENT_NEGATION_BREAKERS = /[但而卻仍還]|有/;
+
+function patientTermNegated(term) {
+  if (typeof term === "object" && term) {
+    if (term.negated) return true;
+    if (String(term.id || "").startsWith("!")) return true;
+    return patientTermNegated(term.raw || term.canonical || "");
+  }
+  const text = String(term || "").trim();
+  if (!text) return false;
+  const marker = text.match(PATIENT_NEGATION_PREFIX)?.[0] || "";
+  if (!marker) return false;
+  const afterMarker = text.slice(marker.length);
+  return !PATIENT_NEGATION_BREAKERS.test(afterMarker);
+}
+
 function uniqueBy(items, keyFn) {
   const seen = new Set();
   const result = [];
@@ -459,6 +476,7 @@ function buildPatientMatches(patient, normalizer) {
   ];
   const matches = [];
   for (const term of sourceTerms) {
+    if (patientTermNegated(term)) continue;
     matches.push(...normalizer.normalizeText(term));
   }
   return uniqueBy(matches, (item) => `${item.id}:${item.matchType}:${item.childId || ""}`);

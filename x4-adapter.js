@@ -107,6 +107,16 @@ const X4Adapter = (function () {
     return inferredXuShi === "xu" ? "\u865b" : "\u5be6";
   }
 
+  function prioritizeExplicitSymptomMatches(items, hasExplicitSymptoms) {
+    if (!hasExplicitSymptoms) return items;
+    return [...items].sort((a, b) => {
+      const aHas = a.matchedCount > 0 ? 1 : 0;
+      const bHas = b.matchedCount > 0 ? 1 : 0;
+      if (aHas !== bHas) return bHas - aHas;
+      return b.totalScore - a.totalScore;
+    });
+  }
+
   function recommend({
     formulas = [],
     checkedSymptomLabels = [],
@@ -142,7 +152,8 @@ const X4Adapter = (function () {
     const x4Results = matcher.recommend({ symptoms: rawTerms, xuShi: "unknown" }, { limit: formulas.length || 50 });
     const displayByName = new Map(formulas.map((formula) => [formula.name, formula]));
 
-    return x4Results
+    const hasExplicitSymptoms = rawTerms.length > 0;
+    const rankedResults = x4Results
       .filter((result) => constitutionFilter === "all" || result.formula.xushiClass === constitutionFilter)
       .map((result) => {
         const display = displayByName.get(result.formula.name) || {};
@@ -174,6 +185,7 @@ const X4Adapter = (function () {
             zangFuSimilarity: result.score.zangFu,
             symptomMatch: result.score.key,
           },
+          isVectorOnlySupplement: hasExplicitSymptoms && matchedCanonical.length === 0,
           explanation: {
             patterns: [],
             xuShi: [buildXushiExplanation(inferredXuShi, result.formula.xushiClass)],
@@ -184,8 +196,9 @@ const X4Adapter = (function () {
             reason: buildRecommendationReason(result, matchedCanonical, unmatchedCanonical),
           },
         };
-      })
-      .slice(0, 5);
+      });
+
+    return prioritizeExplicitSymptomMatches(rankedResults, hasExplicitSymptoms).slice(0, 5);
   }
 
   return { recommend, isAvailable };
