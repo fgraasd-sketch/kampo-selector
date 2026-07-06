@@ -340,7 +340,13 @@ function symptomRefId(ref) {
 
 function symptomRefNegated(ref) {
   if (typeof ref === "string") return ref.startsWith("!");
-  return Boolean(ref?.negated) || String(ref?.id || "").startsWith("!") || /^無|^不|^未見/.test(String(ref?.raw || ""));
+  if (String(ref?.id || "").startsWith("!")) return true;
+  // When the KB provides an explicit boolean, trust it: the generator
+  // (scripts/xlsx_to_kb.py term_self_negates) already distinguishes negated
+  // phrasings (無口渴) from real symptoms that merely start with a negation
+  // marker (無力, 無熱候). The raw-prefix guess would mislabel the latter.
+  if (typeof ref?.negated === "boolean") return ref.negated;
+  return Boolean(ref?.negated) || /^無|^不|^未見/.test(String(ref?.raw || ""));
 }
 
 const PATIENT_NEGATION_PREFIX = /^(未發現明顯|未發現|無明顯|沒有明顯|未見明顯|沒有|未見|未有|否認|排除|無)/;

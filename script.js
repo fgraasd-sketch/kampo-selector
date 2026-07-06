@@ -958,21 +958,40 @@ function parseCaseTextWithOntology(text = '') {
     const source = String(text || '');
     const matchesByCanonical = new Map();
     ontology.forEach(entry => {
-        [entry.canonical, ...(Array.isArray(entry.aliases) ? entry.aliases : [])].forEach(term => {
-            const label = String(term || '').trim();
-            if (!label) return;
+        const entryTerms = [entry.canonical, ...(Array.isArray(entry.aliases) ? entry.aliases : [])]
+            .map(term => String(term || '').trim()).filter(Boolean);
+        // The auto-extracted ontology contains a few aliases that EMBED the
+        // negation (e.g. 無口渴 as an alias of 口渴, from indications like
+        // 薏苡仁湯's 「無口渴」). For those, the marker sits inside the match,
+        // so the clause scan before the match can't see it. Only aliases whose
+        // remainder after the marker is itself a term of the same entry count
+        // (無口渴 -> 口渴), so real symptoms like 無力 or 無熱候 stay positive.
+        const entryTermSet = new Set(entryTerms);
+        const selfNegates = (label) => (KampoParser.NEGATION_MARKERS || []).some(marker =>
+            label.startsWith(marker) && entryTermSet.has(label.slice(marker.length)));
+        entryTerms.forEach(label => {
             const index = source.indexOf(label);
             if (index < 0) return;
             const canonical = entry.canonical || label;
+            // Same clause-level negation rules as KampoParser.parseCaseText —
+            // a raw full-text scan without this turns 「未發現明顯的胸脅苦滿」
+            // into a positive keyword chip (the bug d109c92 originally fixed).
+            const negated = KampoParser.isTermNegated(source, index) || selfNegates(label);
             const current = matchesByCanonical.get(canonical);
-            if (!current || index < current.index || (index === current.index && label.length > current.term.length)) {
-                matchesByCanonical.set(canonical, { term: label, canonical, index });
+            // A positive (non-negated) occurrence of any alias beats a negated
+            // one (「無胸悶，但胸痛明顯」 is a positive hit via 胸痛); within the
+            // same negation status keep the earliest, then longest, match.
+            const better = !current
+                || (current.negated && !negated)
+                || (current.negated === negated && (index < current.index || (index === current.index && label.length > current.term.length)));
+            if (better) {
+                matchesByCanonical.set(canonical, { term: label, canonical, index, negated });
             }
         });
     });
     return [...matchesByCanonical.values()]
         .sort((a, b) => a.index - b.index || b.term.length - a.term.length)
-        .map(({ canonical }) => ({ source: canonical, keyword: canonical, weight: 1, negated: false }));
+        .map(({ canonical, negated }) => ({ source: canonical, keyword: canonical, weight: 1, negated }));
 }
 
 function mergeParsedCaseItems(...groups) {

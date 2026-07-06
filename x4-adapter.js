@@ -98,7 +98,12 @@ const X4Adapter = (function () {
     const display = formulaXushiDisplay(formulaClass);
     if (inferredXuShi === "unknown") return "\u65b9\uff1a" + display;
     if (formulaClass === "\u865b\u5be6\u593e\u96dc" || formulaClass === "\u672a\u5206\u985e") return "\u53ef\u7528";
-    return "\u76f8\u7b26";
+    // The auto-inferred xu/shi no longer gates the matcher, so a shi-classified
+    // formula CAN be ranked for a xu-leaning patient; the label must say so
+    // instead of claiming a match for every classified formula.
+    const patientClass = inferredXuShi === "xu" ? "\u865b\u8b49" : "\u5be6\u8b49";
+    if (formulaClass === patientClass) return "\u76f8\u7b26";
+    return "\u4e0d\u7b26\uff08\u65b9\uff1a" + display + "\uff09";
   }
 
   function buildXushiExplanation(inferredXuShi, formulaClass) {

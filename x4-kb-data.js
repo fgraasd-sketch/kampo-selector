@@ -2321,13 +2321,13 @@ window.X4KbData = {
         {
           "raw": "口渴",
           "id": "S-THIRST",
-          "negated": true,
+          "negated": false,
           "matchType": "exact"
         },
         {
           "raw": "自然汗出傾向",
           "id": "S-SPONTANEOUS-SWEAT",
-          "negated": true,
+          "negated": false,
           "matchType": "exact"
         },
         {
@@ -2409,7 +2409,7 @@ window.X4KbData = {
         {
           "raw": "口渴",
           "id": "S-THIRST",
-          "negated": true,
+          "negated": false,
           "matchType": "exact"
         },
         {
@@ -2479,13 +2479,13 @@ window.X4KbData = {
         {
           "raw": "輕度口渴",
           "id": "S-THIRST",
-          "negated": true,
+          "negated": false,
           "matchType": "exact"
         },
         {
           "raw": "自然汗出",
           "id": "S-SPONTANEOUS-SWEAT",
-          "negated": true,
+          "negated": false,
           "matchType": "exact"
         },
         {
@@ -2829,7 +2829,7 @@ window.X4KbData = {
         {
           "raw": "自然汗出",
           "id": "S-SPONTANEOUS-SWEAT",
-          "negated": true,
+          "negated": false,
           "matchType": "exact"
         },
         {
@@ -3314,7 +3314,7 @@ window.X4KbData = {
         {
           "raw": "口渴",
           "id": "S-THIRST",
-          "negated": true,
+          "negated": false,
           "matchType": "exact"
         },
         {
@@ -3402,7 +3402,7 @@ window.X4KbData = {
         {
           "raw": "口渴",
           "id": "S-THIRST",
-          "negated": true,
+          "negated": false,
           "matchType": "exact"
         },
         {
@@ -3547,7 +3547,7 @@ window.X4KbData = {
         {
           "raw": "口渴",
           "id": "S-THIRST",
-          "negated": true,
+          "negated": false,
           "matchType": "exact"
         },
         {
@@ -3559,7 +3559,7 @@ window.X4KbData = {
         {
           "raw": "自然汗出傾向",
           "id": "S-SPONTANEOUS-SWEAT",
-          "negated": true,
+          "negated": false,
           "matchType": "exact"
         },
         {
@@ -4513,7 +4513,7 @@ window.X4KbData = {
         {
           "raw": "口渴",
           "id": "S-THIRST",
-          "negated": true,
+          "negated": false,
           "matchType": "exact"
         },
         {
@@ -4693,7 +4693,7 @@ window.X4KbData = {
         {
           "raw": "口渴",
           "id": "S-THIRST",
-          "negated": true,
+          "negated": false,
           "matchType": "exact"
         },
         {
@@ -5521,7 +5521,7 @@ window.X4KbData = {
         {
           "raw": "口渴",
           "id": "S-THIRST",
-          "negated": true,
+          "negated": false,
           "matchType": "exact"
         },
         {
@@ -5690,7 +5690,7 @@ window.X4KbData = {
         {
           "raw": "口渴",
           "id": "S-THIRST",
-          "negated": true,
+          "negated": false,
           "matchType": "exact"
         },
         {
@@ -6108,7 +6108,7 @@ window.X4KbData = {
         {
           "raw": "自然汗出",
           "id": "S-SPONTANEOUS-SWEAT",
-          "negated": true,
+          "negated": false,
           "matchType": "exact"
         },
         {
@@ -10814,7 +10814,7 @@ window.X4KbData = {
         {
           "raw": "口渴",
           "id": "S-THIRST",
-          "negated": true,
+          "negated": false,
           "matchType": "exact"
         },
         {
@@ -10887,7 +10887,7 @@ window.X4KbData = {
         {
           "raw": "口渴",
           "id": "S-THIRST",
-          "negated": true,
+          "negated": false,
           "matchType": "exact"
         },
         {
@@ -11417,7 +11417,7 @@ window.X4KbData = {
         {
           "raw": "加之口渴",
           "id": "S-THIRST",
-          "negated": true,
+          "negated": false,
           "matchType": "exact"
         },
         {
@@ -11707,7 +11707,7 @@ window.X4KbData = {
         {
           "raw": "口渴",
           "id": "S-THIRST",
-          "negated": true,
+          "negated": false,
           "matchType": "exact"
         },
         {
@@ -11804,7 +11804,7 @@ window.X4KbData = {
         {
           "raw": "口渴",
           "id": "S-THIRST",
-          "negated": true,
+          "negated": false,
           "matchType": "exact"
         },
         {

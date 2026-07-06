@@ -232,6 +232,12 @@ function isTermNegated(text, index) {
 }
 
 const Parser = {
+  // Shared with script.js's ontology-based case scan (parseCaseTextWithOntology)
+  // so both parsing paths apply identical clause-level negation rules; two
+  // diverging negation implementations is how negated symptoms leak back in
+  // as positive keywords.
+  isTermNegated,
+  NEGATION_MARKERS,
   parseCaseText(text = "") {
     const hits = [];
     SYNONYM_GROUPS.forEach((group) => {
