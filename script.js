@@ -958,6 +958,13 @@ function parseCaseTextWithOntology(text = '') {
     const source = String(text || '');
     const matchesByCanonical = new Map();
     ontology.forEach(entry => {
+        // S-CAND-* candidates (reviewStatus: needs_human_review) are raw Excel
+        // extraction fragments awaiting physician adjudication (男, 下腹部,
+        // 上述症狀…). Scanning case text against them produces junk keyword
+        // chips — e.g. 「45歲男性」 lights up a 男 chip — so they only join the
+        // scan once a physician promotes them to real ontology entries. See
+        // reports/symptom-ontology-candidate-review-2026-07-06.md.
+        if (entry.reviewStatus === 'needs_human_review') return;
         const entryTerms = [entry.canonical, ...(Array.isArray(entry.aliases) ? entry.aliases : [])]
             .map(term => String(term || '').trim()).filter(Boolean);
         // The auto-extracted ontology contains a few aliases that EMBED the
