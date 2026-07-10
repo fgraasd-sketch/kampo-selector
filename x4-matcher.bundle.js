@@ -359,16 +359,29 @@ function symptomRefNegated(ref) {
 const PATIENT_NEGATION_PREFIX = /^(未發現明顯|未發現|無明顯|沒有明顯|未見明顯|沒有|未見|未有|否認|排除|無)/;
 const PATIENT_NEGATION_BREAKERS = /[但而卻仍還]|有/;
 
-function patientTermNegated(term) {
+// Exact ontology terms whose NAME merely starts with a negation marker
+// (無汗, 無力, 無熱候) are positive symptoms, not negations. Self-negating
+// phrasings stay negated: 無口渴 is excluded because its remainder (口渴)
+// resolves to the same entry — mirrors scripts/xlsx_to_kb.py term_self_negates.
+function exactPositiveMarkerTerm(text, marker, normalizer) {
+  if (!normalizer) return false;
+  const matches = normalizer.normalizeTerm(text);
+  if (!matches.length) return false;
+  const ids = new Set(matches.map((match) => match.id));
+  return !normalizer.normalizeTerm(text.slice(marker.length)).some((match) => ids.has(match.id));
+}
+
+function patientTermNegated(term, normalizer) {
   if (typeof term === "object" && term) {
     if (term.negated) return true;
     if (String(term.id || "").startsWith("!")) return true;
-    return patientTermNegated(term.raw || term.canonical || "");
+    return patientTermNegated(term.raw || term.canonical || "", normalizer);
   }
   const text = String(term || "").trim();
   if (!text) return false;
   const marker = text.match(PATIENT_NEGATION_PREFIX)?.[0] || "";
   if (!marker) return false;
+  if (exactPositiveMarkerTerm(text, marker, normalizer)) return false;
   const afterMarker = text.slice(marker.length);
   return !PATIENT_NEGATION_BREAKERS.test(afterMarker);
 }
@@ -489,7 +502,7 @@ function buildPatientMatches(patient, normalizer) {
   ];
   const matches = [];
   for (const term of sourceTerms) {
-    if (patientTermNegated(term)) continue;
+    if (patientTermNegated(term, normalizer)) continue;
     matches.push(...normalizer.normalizeText(term));
   }
   return uniqueBy(matches, (item) => `${item.id}:${item.matchType}:${item.childId || ""}`);

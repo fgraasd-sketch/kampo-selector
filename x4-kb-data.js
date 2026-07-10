@@ -1701,9 +1701,7 @@ window.X4KbData = {
       "canonical": "皮膚乾燥",
       "aliases": [
         "伴有皮膚枯燥的瘙癢",
-        "皮膚枯燥",
-        "皮膚甲錯",
-        "皮膚甲錯("
+        "皮膚枯燥"
       ],
       "parent": null,
       "negationSensitive": false,
@@ -2038,6 +2036,29 @@ window.X4KbData = {
       "negationSensitive": false,
       "source": [
         "2026-07-07 physician split decision"
+      ]
+    },
+    {
+      "id": "S-SKIN-SCALY",
+      "canonical": "皮膚甲錯",
+      "aliases": [
+        "皮膚甲錯(",
+        "肌膚甲錯"
+      ],
+      "parent": "S-SKIN-DRY",
+      "negationSensitive": false,
+      "source": [
+        "2026-07-10 physician split decision"
+      ]
+    },
+    {
+      "id": "S-NO-SWEAT",
+      "canonical": "無汗",
+      "aliases": [],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
       ]
     }
   ],
@@ -12545,7 +12566,7 @@ window.X4KbData = {
         "S-EYELID-PIGMENT": 10,
         "S-MENSTRUAL-IRREGULAR": 0,
         "S-SUBCUTANEOUS-BLEEDING": 2,
-        "S-SKIN-DRY": 2,
+        "S-SKIN-SCALY": 2,
         "S-PALMAR-ERYTHEMA": 2,
         "S-TELANGIECTASIA": 5,
         "S-ABDOMINAL-TENDERNESS": 1
@@ -12584,7 +12605,7 @@ window.X4KbData = {
         {
           "raw": "皮膚甲錯",
           "score": 2,
-          "id": "S-SKIN-DRY"
+          "id": "S-SKIN-SCALY"
         },
         {
           "raw": "手掌紅斑",

@@ -211,6 +211,33 @@ const Normalizer = {
 const NEGATION_MARKERS = ["未發現明顯", "未發現", "無明顯", "沒有明顯", "未見明顯", "沒有", "未見", "未有", "否認", "排除", "無"];
 const NEGATION_BREAKERS = /[但而卻仍還]|有/;
 
+// Ontology terms that BEGIN with a negation marker but are positive symptoms
+// in their own right (無汗, 無力, 無熱候, 不安…): inside a clause, the marker
+// they start with is part of the symptom name, not a negation of what follows
+// — 「無汗惡寒」 must keep 惡寒 positive. Self-negating phrasings (無口渴)
+// stay out because their remainder (口渴) is itself a term of the same entry.
+// Cached per X4KbData.ontology reference (tests swap in mock ontologies).
+let positiveMarkerTermsCache = { ontology: null, terms: [] };
+function positiveMarkerTerms() {
+  const ontology = (typeof window !== "undefined" && window.X4KbData && Array.isArray(window.X4KbData.ontology))
+    ? window.X4KbData.ontology
+    : null;
+  if (positiveMarkerTermsCache.ontology === ontology) return positiveMarkerTermsCache.terms;
+  const terms = [];
+  (ontology || []).forEach((entry) => {
+    if (entry.reviewStatus === "needs_human_review") return;
+    const entryTerms = [entry.canonical, ...(Array.isArray(entry.aliases) ? entry.aliases : [])]
+      .map((term) => String(term || "").trim()).filter(Boolean);
+    const entryTermSet = new Set(entryTerms);
+    entryTerms.forEach((term) => {
+      const marker = NEGATION_MARKERS.find((item) => term.startsWith(item) && term.length > item.length);
+      if (marker && !entryTermSet.has(term.slice(marker.length))) terms.push(term);
+    });
+  });
+  positiveMarkerTermsCache = { ontology, terms };
+  return terms;
+}
+
 function isTermNegated(text, index) {
   // Look backwards within the current clause (up to the last sentence break)
   // for a negation marker; an adversative/affirmative between the marker and
@@ -223,10 +250,20 @@ function isTermNegated(text, index) {
   ) + 1;
   const clause = text.slice(clauseStart, index);
   for (const marker of NEGATION_MARKERS) {
-    const markerPos = clause.lastIndexOf(marker);
-    if (markerPos === -1) continue;
-    const between = clause.slice(markerPos + marker.length);
-    if (!NEGATION_BREAKERS.test(between)) return true;
+    let markerPos = clause.lastIndexOf(marker);
+    while (markerPos !== -1) {
+      // A marker that just starts a positive symptom name (the 無 of 無汗)
+      // is not a negation of the following term — try earlier occurrences.
+      const absolutePos = clauseStart + markerPos;
+      const partOfPositiveTerm = positiveMarkerTerms().some((term) =>
+        term.startsWith(marker) && text.startsWith(term, absolutePos));
+      if (!partOfPositiveTerm) {
+        const between = clause.slice(markerPos + marker.length);
+        if (!NEGATION_BREAKERS.test(between)) return true;
+        break;
+      }
+      markerPos = markerPos > 0 ? clause.lastIndexOf(marker, markerPos - 1) : -1;
+    }
   }
   return false;
 }
