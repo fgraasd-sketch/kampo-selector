@@ -44,7 +44,8 @@ window.X4KbData = {
       "canonical": "腹痛",
       "aliases": [
         "腹痛(側腹部",
-        "腹部疼痛"
+        "腹部疼痛",
+        "腹部悶痛"
       ],
       "parent": null,
       "negationSensitive": false,
@@ -301,20 +302,11 @@ window.X4KbData = {
       "id": "S-CHEST-OPPRESSION",
       "canonical": "胸悶",
       "aliases": [
-        "側腹部脹滿感",
-        "加之胸脇苦滿",
         "胸內滿悶",
         "胸內苦悶",
         "胸內苦悶感",
         "胸悶感",
-        "胸痛",
-        "胸脇苦滿",
-        "胸脇部氣滯",
-        "脇脹",
-        "輕度胸脇苦滿",
-        "胸脅苦滿",
-        "脅脹",
-        "胸脅部氣滯"
+        "胸痛"
       ],
       "parent": null,
       "negationSensitive": false,
@@ -399,7 +391,8 @@ window.X4KbData = {
         "晨起",
         "晨起、傍晚咳嗽頻繁",
         "痙攣性咳嗽",
-        "鎮咳"
+        "鎮咳",
+        "嗆咳"
       ],
       "parent": null,
       "negationSensitive": false,
@@ -798,7 +791,8 @@ window.X4KbData = {
         "還有胃腸虛弱",
         "食後倦怠感顯著",
         "飯後倦怠感加重",
-        "體力低下"
+        "體力低下",
+        "疲倦"
       ],
       "parent": null,
       "negationSensitive": false,
@@ -2028,261 +2022,23 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "S-CAND-4794ADD4",
-      "canonical": "10)",
-      "aliases": [],
+      "id": "S-CHEST-RIB-FULLNESS",
+      "canonical": "胸脇苦滿",
+      "aliases": [
+        "胸脅苦滿",
+        "輕度胸脇苦滿",
+        "加之胸脇苦滿",
+        "胸脇部氣滯",
+        "胸脅部氣滯",
+        "脇脹",
+        "脅脹",
+        "側腹部脹滿感"
+      ],
       "parent": null,
       "negationSensitive": false,
       "source": [
-        "漢方六證診斷計算器",
-        "漢方六證診斷計算器"
-      ],
-      "reviewStatus": "needs_human_review",
-      "note": "自動抽取但未能對應既有 ontology；需醫師裁決是否合併或新建。"
-    },
-    {
-      "id": "S-CAND-54AAB2B2",
-      "canonical": "5)",
-      "aliases": [],
-      "parent": null,
-      "negationSensitive": false,
-      "source": [
-        "漢方六證診斷計算器",
-        "漢方六證診斷計算器",
-        "漢方六證診斷計算器",
-        "漢方六證診斷計算器"
-      ],
-      "reviewStatus": "needs_human_review",
-      "note": "自動抽取但未能對應既有 ontology；需醫師裁決是否合併或新建。"
-    },
-    {
-      "id": "S-CAND-2E5D938D",
-      "canonical": "上述之外",
-      "aliases": [],
-      "parent": null,
-      "negationSensitive": false,
-      "source": [
-        "「氣郁 方劑」"
-      ],
-      "reviewStatus": "needs_human_review",
-      "note": "自動抽取但未能對應既有 ontology；需醫師裁決是否合併或新建。"
-    },
-    {
-      "id": "S-CAND-552A11CD",
-      "canonical": "上述症狀",
-      "aliases": [],
-      "parent": null,
-      "negationSensitive": false,
-      "source": [
-        "「肺異常治療方劑彙整」的副本",
-        "「肺異常治療方劑彙整」的副本"
-      ],
-      "reviewStatus": "needs_human_review",
-      "note": "自動抽取但未能對應既有 ontology；需醫師裁決是否合併或新建。"
-    },
-    {
-      "id": "S-CAND-F5077060",
-      "canonical": "下腹部",
-      "aliases": [],
-      "parent": null,
-      "negationSensitive": false,
-      "source": [
-        "「瘀血 」方"
-      ],
-      "reviewStatus": "needs_human_review",
-      "note": "自動抽取但未能對應既有 ontology；需醫師裁決是否合併或新建。"
-    },
-    {
-      "id": "S-CAND-AAE70CB4",
-      "canonical": "下腹部）",
-      "aliases": [],
-      "parent": null,
-      "negationSensitive": false,
-      "source": [
-        "「氣虛 方劑」"
-      ],
-      "reviewStatus": "needs_human_review",
-      "note": "自動抽取但未能對應既有 ontology；需醫師裁決是否合併或新建。"
-    },
-    {
-      "id": "S-CAND-7F319E7B",
-      "canonical": "伴熱證",
-      "aliases": [],
-      "parent": null,
-      "negationSensitive": false,
-      "source": [
-        "「血虛 方劑」"
-      ],
-      "reviewStatus": "needs_human_review",
-      "note": "自動抽取但未能對應既有 ontology；需醫師裁決是否合併或新建。"
-    },
-    {
-      "id": "S-CAND-A9314ABF",
-      "canonical": "劇烈嗆咳）",
-      "aliases": [],
-      "parent": null,
-      "negationSensitive": false,
-      "source": [
-        "「水滯 胸內型」"
-      ],
-      "reviewStatus": "needs_human_review",
-      "note": "自動抽取但未能對應既有 ontology；需醫師裁決是否合併或新建。"
-    },
-    {
-      "id": "S-CAND-4D1E0F28",
-      "canonical": "咳嗽（痙攣性咳嗽",
-      "aliases": [],
-      "parent": null,
-      "negationSensitive": false,
-      "source": [
-        "「水滯 胸內型」"
-      ],
-      "reviewStatus": "needs_human_review",
-      "note": "自動抽取但未能對應既有 ontology；需醫師裁決是否合併或新建。"
-    },
-    {
-      "id": "S-CAND-33C377B0",
-      "canonical": "手掌紅斑(2",
-      "aliases": [],
-      "parent": null,
-      "negationSensitive": false,
-      "source": [
-        "漢方六證診斷計算器"
-      ],
-      "reviewStatus": "needs_human_review",
-      "note": "自動抽取但未能對應既有 ontology；需醫師裁決是否合併或新建。"
-    },
-    {
-      "id": "S-CAND-2706C2C5",
-      "canonical": "月經不調(0",
-      "aliases": [],
-      "parent": null,
-      "negationSensitive": false,
-      "source": [
-        "漢方六證診斷計算器"
-      ],
-      "reviewStatus": "needs_human_review",
-      "note": "自動抽取但未能對應既有 ontology；需醫師裁決是否合併或新建。"
-    },
-    {
-      "id": "S-CAND-665C3C99",
-      "canonical": "月經不調（伴熱證）",
-      "aliases": [],
-      "parent": null,
-      "negationSensitive": false,
-      "source": [
-        "「血虛 方劑」"
-      ],
-      "reviewStatus": "needs_human_review",
-      "note": "自動抽取但未能對應既有 ontology；需醫師裁決是否合併或新建。"
-    },
-    {
-      "id": "S-CAND-51625D90",
-      "canonical": "男",
-      "aliases": [],
-      "parent": null,
-      "negationSensitive": false,
-      "source": [
-        "漢方六證診斷計算器"
-      ],
-      "reviewStatus": "needs_human_review",
-      "note": "自動抽取但未能對應既有 ontology；需醫師裁決是否合併或新建。"
-    },
-    {
-      "id": "S-CAND-13398F60",
-      "canonical": "痔瘡(10",
-      "aliases": [],
-      "parent": null,
-      "negationSensitive": false,
-      "source": [
-        "漢方六證診斷計算器"
-      ],
-      "reviewStatus": "needs_human_review",
-      "note": "自動抽取但未能對應既有 ontology；需醫師裁決是否合併或新建。"
-    },
-    {
-      "id": "S-CAND-852804E1",
-      "canonical": "皮下出血(2",
-      "aliases": [],
-      "parent": null,
-      "negationSensitive": false,
-      "source": [
-        "漢方六證診斷計算器"
-      ],
-      "reviewStatus": "needs_human_review",
-      "note": "自動抽取但未能對應既有 ontology；需醫師裁決是否合併或新建。"
-    },
-    {
-      "id": "S-CAND-87467BD4",
-      "canonical": "皮膚甲錯(2",
-      "aliases": [],
-      "parent": null,
-      "negationSensitive": false,
-      "source": [
-        "漢方六證診斷計算器"
-      ],
-      "reviewStatus": "needs_human_review",
-      "note": "自動抽取但未能對應既有 ontology；需醫師裁決是否合併或新建。"
-    },
-    {
-      "id": "S-CAND-6263DF1D",
-      "canonical": "腹痛（側腹部",
-      "aliases": [],
-      "parent": null,
-      "negationSensitive": false,
-      "source": [
-        "「氣虛 方劑」"
-      ],
-      "reviewStatus": "needs_human_review",
-      "note": "自動抽取但未能對應既有 ontology；需醫師裁決是否合併或新建。"
-    },
-    {
-      "id": "S-CAND-11736765",
-      "canonical": "腹部",
-      "aliases": [],
-      "parent": null,
-      "negationSensitive": false,
-      "source": [
-        "「瘀血 」方"
-      ],
-      "reviewStatus": "needs_human_review",
-      "note": "自動抽取但未能對應既有 ontology；需醫師裁決是否合併或新建。"
-    },
-    {
-      "id": "S-CAND-4E5E5B3C",
-      "canonical": "腹部壓痛抵抗(根據部位 5-10)",
-      "aliases": [],
-      "parent": null,
-      "negationSensitive": false,
-      "source": [
-        "漢方六證診斷計算器"
-      ],
-      "reviewStatus": "needs_human_review",
-      "note": "自動抽取但未能對應既有 ontology；需醫師裁決是否合併或新建。"
-    },
-    {
-      "id": "S-CAND-E9CEBD2F",
-      "canonical": "除上述症狀外",
-      "aliases": [],
-      "parent": null,
-      "negationSensitive": false,
-      "source": [
-        "「肝異常」的副本"
-      ],
-      "reviewStatus": "needs_human_review",
-      "note": "自動抽取但未能對應既有 ontology；需醫師裁決是否合併或新建。"
-    },
-    {
-      "id": "S-CAND-F2CD6732",
-      "canonical": "齒齦暗紅(10",
-      "aliases": [],
-      "parent": null,
-      "negationSensitive": false,
-      "source": [
-        "漢方六證診斷計算器"
-      ],
-      "reviewStatus": "needs_human_review",
-      "note": "自動抽取但未能對應既有 ontology；需醫師裁決是否合併或新建。"
+        "2026-07-07 physician split decision"
+      ]
     }
   ],
   "formulas": [
@@ -2985,7 +2741,7 @@ window.X4KbData = {
         "SUI_ZHI": 1
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1667,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0.5,
         "XIN-XUEXU": 0,
@@ -3176,7 +2932,7 @@ window.X4KbData = {
         "SUI_ZHI": 1
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1667,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0.4,
         "XIN-YANGXU": 0,
         "XIN-XUEXU": 0,
@@ -3293,7 +3049,7 @@ window.X4KbData = {
         "SUI_ZHI": 1
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1667,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0,
         "XIN-XUEXU": 0.2,
@@ -3381,7 +3137,7 @@ window.X4KbData = {
         "SUI_ZHI": 1
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1667,
+        "GAN-QIYU": 0.2857,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0.25,
         "XIN-XUEXU": 0,
@@ -3395,7 +3151,7 @@ window.X4KbData = {
       "keySymptoms": [
         {
           "raw": "胸脇苦滿",
-          "id": "S-CHEST-OPPRESSION",
+          "id": "S-CHEST-RIB-FULLNESS",
           "negated": false,
           "matchType": "exact"
         },
@@ -3422,6 +3178,12 @@ window.X4KbData = {
           "id": "S-EDEMA",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "S-CHEST-OPPRESSION",
+          "id": "S-CHEST-OPPRESSION",
+          "negated": false,
+          "fromIndications": true
         }
       ],
       "herbs": [],
@@ -3460,7 +3222,7 @@ window.X4KbData = {
         "SUI_ZHI": 1
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1667,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0.2,
         "XIN-YANGXU": 0,
         "XIN-XUEXU": 0,
@@ -3532,7 +3294,7 @@ window.X4KbData = {
         "SUI_ZHI": 1
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1667,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0,
         "XIN-XUEXU": 0,
@@ -3628,7 +3390,7 @@ window.X4KbData = {
         "SUI_ZHI": 1
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1667,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0.2,
         "XIN-YANGXU": 0.25,
         "XIN-XUEXU": 0.2,
@@ -3799,7 +3561,7 @@ window.X4KbData = {
         "SUI_ZHI": 1
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1667,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 1,
         "XIN-XUEXU": 0.2,
@@ -4265,7 +4027,7 @@ window.X4KbData = {
         "SUI_ZHI": 1
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1667,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0.2,
         "XIN-YANGXU": 0.75,
         "XIN-XUEXU": 0,
@@ -4354,7 +4116,7 @@ window.X4KbData = {
         "SUI_ZHI": 1
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1667,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0,
         "XIN-XUEXU": 0,
@@ -4660,7 +4422,7 @@ window.X4KbData = {
         "SUI_ZHI": 1
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1667,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0.2,
         "XIN-YANGXU": 0.25,
         "XIN-XUEXU": 0.2,
@@ -4757,7 +4519,7 @@ window.X4KbData = {
         "SUI_ZHI": 1
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1667,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0.25,
         "XIN-XUEXU": 0.4,
@@ -4842,7 +4604,7 @@ window.X4KbData = {
         "SUI_ZHI": 1
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1667,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0.25,
         "XIN-XUEXU": 0.2,
@@ -5082,7 +4844,7 @@ window.X4KbData = {
         "SUI_ZHI": 1
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1667,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0.25,
         "XIN-XUEXU": 0,
@@ -5197,7 +4959,7 @@ window.X4KbData = {
         "SUI_ZHI": 1
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1667,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0.5,
         "XIN-XUEXU": 0,
@@ -5296,7 +5058,7 @@ window.X4KbData = {
         "SUI_ZHI": 1
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.3333,
+        "GAN-QIYU": 0.2857,
         "GAN-YINXU": 0.2,
         "XIN-YANGXU": 0.5,
         "XIN-XUEXU": 0,
@@ -5413,7 +5175,7 @@ window.X4KbData = {
         "SUI_ZHI": 1
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1667,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0,
         "XIN-XUEXU": 0,
@@ -5570,7 +5332,7 @@ window.X4KbData = {
         "SUI_ZHI": 1
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1667,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0.25,
         "XIN-XUEXU": 0,
@@ -5663,7 +5425,7 @@ window.X4KbData = {
         "SUI_ZHI": 1
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1667,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0.2,
         "XIN-YANGXU": 0,
         "XIN-XUEXU": 0,
@@ -5677,15 +5439,9 @@ window.X4KbData = {
       "keySymptoms": [
         {
           "raw": "咳嗽（痙攣性咳嗽",
-          "id": "S-CAND-4D1E0F28",
-          "negated": false,
-          "matchType": "exact"
-        },
-        {
-          "raw": "劇烈嗆咳",
           "id": "S-COUGH",
           "negated": false,
-          "matchType": "exact"
+          "matchType": "contains"
         },
         {
           "raw": "口渴",
@@ -5761,7 +5517,7 @@ window.X4KbData = {
         "SUI_ZHI": 1
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1667,
+        "GAN-QIYU": 0.2857,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0,
         "XIN-XUEXU": 0,
@@ -5800,6 +5556,12 @@ window.X4KbData = {
         {
           "raw": "噁心",
           "id": "S-NAUSEA",
+          "negated": false,
+          "matchType": "exact"
+        },
+        {
+          "raw": "胸脇苦滿",
+          "id": "S-CHEST-RIB-FULLNESS",
           "negated": false,
           "matchType": "exact"
         },
@@ -5844,7 +5606,7 @@ window.X4KbData = {
         "SUI_ZHI": 1
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1667,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0.25,
         "XIN-XUEXU": 0,
@@ -6171,7 +5933,7 @@ window.X4KbData = {
         "SUI_ZHI": 1
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1667,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0.25,
         "XIN-XUEXU": 0,
@@ -6348,12 +6110,6 @@ window.X4KbData = {
       },
       "keySymptoms": [
         {
-          "raw": "下腹部",
-          "id": "S-CAND-F5077060",
-          "negated": false,
-          "matchType": "exact"
-        },
-        {
           "raw": "深部壓痛",
           "id": "S-ABDOMINAL-TENDERNESS",
           "negated": false,
@@ -6401,7 +6157,7 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.3333,
+        "GAN-QIYU": 0.2857,
         "GAN-YINXU": 0.2,
         "XIN-YANGXU": 0,
         "XIN-XUEXU": 0,
@@ -6470,7 +6226,7 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1667,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0,
         "XIN-XUEXU": 0.2,
@@ -6788,7 +6544,7 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.3333,
+        "GAN-QIYU": 0.2857,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0,
         "XIN-XUEXU": 0.2,
@@ -6888,7 +6644,7 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.3333,
+        "GAN-QIYU": 0.4286,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0,
         "XIN-XUEXU": 0.2,
@@ -6908,9 +6664,15 @@ window.X4KbData = {
         },
         {
           "raw": "輕度胸脇苦滿",
-          "id": "S-CHEST-OPPRESSION",
+          "id": "S-CHEST-RIB-FULLNESS",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "S-CHEST-OPPRESSION",
+          "id": "S-CHEST-OPPRESSION",
+          "negated": false,
+          "fromIndications": true
         },
         {
           "raw": "S-JOINT-PAIN",
@@ -7060,12 +6822,6 @@ window.X4KbData = {
       },
       "keySymptoms": [
         {
-          "raw": "腹部",
-          "id": "S-CAND-11736765",
-          "negated": false,
-          "matchType": "exact"
-        },
-        {
           "raw": "下腹冷痛",
           "id": "S-LOWER-ABDOMINAL-PAIN",
           "negated": false,
@@ -7180,7 +6936,7 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1667,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0.25,
         "XIN-XUEXU": 0.4,
@@ -7309,7 +7065,7 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1667,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0,
         "XIN-XUEXU": 0,
@@ -7364,7 +7120,7 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1667,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0.25,
         "XIN-XUEXU": 0.6,
@@ -7434,7 +7190,7 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1667,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0.25,
         "XIN-XUEXU": 0.4,
@@ -7489,7 +7245,7 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1667,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0,
         "XIN-XUEXU": 0,
@@ -7634,7 +7390,7 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.3333,
+        "GAN-QIYU": 0.2857,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0.25,
         "XIN-XUEXU": 0.2,
@@ -7716,7 +7472,7 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.3333,
+        "GAN-QIYU": 0.4286,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0,
         "XIN-XUEXU": 0.2,
@@ -7730,7 +7486,7 @@ window.X4KbData = {
       "keySymptoms": [
         {
           "raw": "側腹部脹滿感",
-          "id": "S-CHEST-OPPRESSION",
+          "id": "S-CHEST-RIB-FULLNESS",
           "negated": false,
           "matchType": "exact"
         },
@@ -7751,6 +7507,12 @@ window.X4KbData = {
           "id": "S-ANXIETY",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "S-CHEST-OPPRESSION",
+          "id": "S-CHEST-OPPRESSION",
+          "negated": false,
+          "fromIndications": true
         }
       ],
       "herbs": [
@@ -7957,7 +7719,7 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1667,
+        "GAN-QIYU": 0.2857,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0,
         "XIN-XUEXU": 0,
@@ -7971,7 +7733,7 @@ window.X4KbData = {
       "keySymptoms": [
         {
           "raw": "加之胸脇苦滿",
-          "id": "S-CHEST-OPPRESSION",
+          "id": "S-CHEST-RIB-FULLNESS",
           "negated": false,
           "matchType": "exact"
         },
@@ -7986,6 +7748,12 @@ window.X4KbData = {
           "id": "S-FEVER",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "S-CHEST-OPPRESSION",
+          "id": "S-CHEST-OPPRESSION",
+          "negated": false,
+          "fromIndications": true
         }
       ],
       "herbs": [],
@@ -8022,7 +7790,7 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.3333,
+        "GAN-QIYU": 0.4286,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0.25,
         "XIN-XUEXU": 0.6,
@@ -8054,7 +7822,7 @@ window.X4KbData = {
         },
         {
           "raw": "胸脇苦滿",
-          "id": "S-CHEST-OPPRESSION",
+          "id": "S-CHEST-RIB-FULLNESS",
           "negated": false,
           "matchType": "exact"
         },
@@ -8063,6 +7831,12 @@ window.X4KbData = {
           "id": "S-PALPITATION",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "S-CHEST-OPPRESSION",
+          "id": "S-CHEST-OPPRESSION",
+          "negated": false,
+          "fromIndications": true
         }
       ],
       "herbs": [
@@ -8110,7 +7884,7 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1667,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0.2,
         "XIN-YANGXU": 0,
         "XIN-XUEXU": 0.4,
@@ -8396,7 +8170,7 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1667,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0,
         "XIN-XUEXU": 0,
@@ -8467,7 +8241,7 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1667,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0.2,
         "XIN-YANGXU": 0,
         "XIN-XUEXU": 0,
@@ -8751,7 +8525,7 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1667,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0,
         "XIN-XUEXU": 0.4,
@@ -9063,7 +8837,7 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1667,
+        "GAN-QIYU": 0.2857,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0.25,
         "XIN-XUEXU": 0,
@@ -9095,9 +8869,15 @@ window.X4KbData = {
         },
         {
           "raw": "輕度胸脇苦滿",
-          "id": "S-CHEST-OPPRESSION",
+          "id": "S-CHEST-RIB-FULLNESS",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "S-CHEST-OPPRESSION",
+          "id": "S-CHEST-OPPRESSION",
+          "negated": false,
+          "fromIndications": true
         }
       ],
       "herbs": [
@@ -9480,15 +9260,9 @@ window.X4KbData = {
       "keySymptoms": [
         {
           "raw": "腹痛（側腹部",
-          "id": "S-CAND-6263DF1D",
+          "id": "S-ABDOMINAL-PAIN",
           "negated": false,
-          "matchType": "exact"
-        },
-        {
-          "raw": "下腹部",
-          "id": "S-CAND-F5077060",
-          "negated": false,
-          "matchType": "exact"
+          "matchType": "contains"
         },
         {
           "raw": "發冷",
@@ -9501,12 +9275,6 @@ window.X4KbData = {
           "id": "S-BLEEDING",
           "negated": false,
           "matchType": "exact"
-        },
-        {
-          "raw": "S-ABDOMINAL-PAIN",
-          "id": "S-ABDOMINAL-PAIN",
-          "negated": false,
-          "fromIndications": true
         }
       ],
       "herbs": [
@@ -9548,7 +9316,7 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.3333,
+        "GAN-QIYU": 0.2857,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0,
         "XIN-XUEXU": 0.2,
@@ -9683,7 +9451,7 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.5,
+        "GAN-QIYU": 0.4286,
         "GAN-YINXU": 0.4,
         "XIN-YANGXU": 0,
         "XIN-XUEXU": 0.2,
@@ -9778,7 +9546,7 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.3333,
+        "GAN-QIYU": 0.4286,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0,
         "XIN-XUEXU": 0,
@@ -9816,9 +9584,15 @@ window.X4KbData = {
         },
         {
           "raw": "胸脇苦滿",
-          "id": "S-CHEST-OPPRESSION",
+          "id": "S-CHEST-RIB-FULLNESS",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "S-CHEST-OPPRESSION",
+          "id": "S-CHEST-OPPRESSION",
+          "negated": false,
+          "fromIndications": true
         }
       ],
       "herbs": [],
@@ -9854,7 +9628,7 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.6667,
+        "GAN-QIYU": 0.7143,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0,
         "XIN-XUEXU": 0.2,
@@ -9898,9 +9672,15 @@ window.X4KbData = {
         },
         {
           "raw": "胸脇苦滿",
-          "id": "S-CHEST-OPPRESSION",
+          "id": "S-CHEST-RIB-FULLNESS",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "S-CHEST-OPPRESSION",
+          "id": "S-CHEST-OPPRESSION",
+          "negated": false,
+          "fromIndications": true
         }
       ],
       "herbs": [],
@@ -9937,7 +9717,7 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1667,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0.5,
         "XIN-XUEXU": 0,
@@ -10071,7 +9851,7 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1667,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0.2,
         "XIN-YANGXU": 0,
         "XIN-XUEXU": 0.4,
@@ -10158,7 +9938,7 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.3333,
+        "GAN-QIYU": 0.2857,
         "GAN-YINXU": 0.2,
         "XIN-YANGXU": 0,
         "XIN-XUEXU": 0.6,
@@ -10236,7 +10016,7 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1667,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0,
         "XIN-XUEXU": 0.2,
@@ -10327,7 +10107,7 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1667,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0,
         "XIN-XUEXU": 0.2,
@@ -10412,7 +10192,7 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1667,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0.25,
         "XIN-XUEXU": 0.2,
@@ -10618,7 +10398,7 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1667,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0.2,
         "XIN-YANGXU": 0.25,
         "XIN-XUEXU": 0.4,
@@ -11254,7 +11034,7 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1667,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0.25,
         "XIN-XUEXU": 0,
@@ -11674,7 +11454,7 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1667,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0.6,
         "XIN-YANGXU": 0,
         "XIN-XUEXU": 0.2,
@@ -11854,7 +11634,7 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1667,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0.4,
         "XIN-YANGXU": 0,
         "XIN-XUEXU": 0,
@@ -12163,7 +11943,7 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.3333,
+        "GAN-QIYU": 0.2857,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0,
         "XIN-XUEXU": 0.2,
@@ -12239,7 +12019,7 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1667,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0.2,
         "XIN-YANGXU": 0.25,
         "XIN-XUEXU": 0,
@@ -12597,6 +12377,7 @@ window.X4KbData = {
         "S-SYMPTOM-VARIABLE": 8,
         "S-MORNING-DIFFICULTY": 8,
         "S-CHEST-OPPRESSION": 8,
+        "S-CHEST-RIB-FULLNESS": 8,
         "S-ABDOMINAL-DISTENSION": 8,
         "S-BORBORIGMUS": 8,
         "S-FLATULENCE": 6,
@@ -12637,7 +12418,7 @@ window.X4KbData = {
         {
           "raw": "脇脹",
           "score": 8,
-          "id": "S-CHEST-OPPRESSION"
+          "id": "S-CHEST-RIB-FULLNESS"
         },
         {
           "raw": "腹脹",
@@ -12933,6 +12714,7 @@ window.X4KbData = {
         "QI_YU": 0.9
       },
       "indicators": [
+        "S-CHEST-RIB-FULLNESS",
         "S-CHEST-OPPRESSION",
         "S-IRRITABILITY",
         "S-ANXIETY",

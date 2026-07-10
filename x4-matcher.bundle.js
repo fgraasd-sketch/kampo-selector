@@ -323,6 +323,13 @@ const W_KEY = 0.50;
 const W_PATTERN = 0.40;
 const W_ZANGFU = 0.10;
 const PARENT_FALLBACK_WEIGHT = 0.7;
+// Evidence damping (physician decision 2026-07-10, option A of
+// HANDOFF-2026-07-08): pattern/zangfu cosine similarity only earns its full
+// weight when backed by at least this many positive key-symptom hits.
+// Sparse patients (2-3 symptoms) produce inflated cosines (~0.707) on
+// near-empty pattern vectors, which let one-hit generic formulas outrank
+// formulas matching most of their key symptoms (人參湯 case, 2026-07-08).
+const EVIDENCE_DAMPING_K = 2;
 
 const XUSHI_CLASSES = new Set(["虛證", "實證", "虛實夾雜", "未分類"]);
 
@@ -623,7 +630,10 @@ function scoreFormula(formula, patientContext, normalizer) {
   const key = scoreKeySymptoms(formula, patientContext.matches, normalizer);
   const patternScore = cosine(patientContext.patternVector, formula.patternVector || {});
   const zangFuScore = cosine(patientContext.zangFuVector, formula.zangFuVector || {});
-  const total = (W_KEY * key.keySymptomScore) + (W_PATTERN * patternScore) + (W_ZANGFU * zangFuScore);
+  const positiveKeyHits = key.matchedSymptoms.filter((item) => item.weight > 0).length;
+  const evidenceFactor = Math.min(1, positiveKeyHits / EVIDENCE_DAMPING_K);
+  const total = (W_KEY * key.keySymptomScore)
+    + ((W_PATTERN * patternScore) + (W_ZANGFU * zangFuScore)) * evidenceFactor;
 
   return {
     formula: {
@@ -635,6 +645,7 @@ function scoreFormula(formula, patientContext, normalizer) {
       key: key.keySymptomScore,
       pattern: patternScore,
       zangFu: zangFuScore,
+      evidenceFactor,
     },
     explanation: {
       matchedSymptoms: key.matchedSymptoms,
@@ -704,5 +715,5 @@ function createX4Matcher(kb) {
 
 
 
-  return { normalizeXushiClass, createX4Matcher, W_KEY, W_PATTERN, W_ZANGFU, PARENT_FALLBACK_WEIGHT };
+  return { normalizeXushiClass, createX4Matcher, W_KEY, W_PATTERN, W_ZANGFU, PARENT_FALLBACK_WEIGHT, EVIDENCE_DAMPING_K };
 })();
