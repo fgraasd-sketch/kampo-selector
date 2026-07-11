@@ -330,6 +330,14 @@ const PARENT_FALLBACK_WEIGHT = 0.7;
 // near-empty pattern vectors, which let one-hit generic formulas outrank
 // formulas matching most of their key symptoms (人參湯 case, 2026-07-08).
 const EVIDENCE_DAMPING_K = 2;
+// Book-evidence bonus (physician decision 2026-07-11): 書源補充症狀
+// (formula.bookSymptoms — symptoms《漢方臨床診療學》attests for an Excel
+// formula that its curated keySymptoms don't cover) join scoring as SECONDARY
+// evidence: a small capped bonus per patient hit, never touching the
+// key-symptom denominator. Hits that already earned key-symptom credit are
+// excluded so nothing double-counts.
+const W_BOOK_SECONDARY = 0.10;
+const BOOK_SECONDARY_K = 2;
 
 const XUSHI_CLASSES = new Set(["虛證", "實證", "虛實夾雜", "未分類"]);
 
@@ -639,14 +647,38 @@ function computePatientResidualSymptoms(patientMatches, matchedSymptoms) {
   return residuals;
 }
 
+// Secondary book evidence: patient DIRECT matches that hit the formula's
+// bookSymptoms but earned no key-symptom credit (neither a direct key hit nor
+// the child term behind a parent-fallback hit).
+function matchBookSymptoms(formula, patientMatches, matchedSymptoms) {
+  const bookSymptoms = toArray(formula.bookSymptoms);
+  if (!bookSymptoms.length) return [];
+  const credited = new Set();
+  for (const matched of matchedSymptoms) {
+    credited.add(matched.id);
+    if (matched.childId) credited.add(matched.childId);
+  }
+  const bookById = new Map(bookSymptoms.map((item) => [item.id, item]));
+  const hits = [];
+  for (const match of bestPatientMatchesById(patientMatches).values()) {
+    if (match.matchType !== "direct" || credited.has(match.id)) continue;
+    const book = bookById.get(match.id);
+    if (book) hits.push({ id: book.id, canonical: book.canonical || match.canonical, page: book.page ?? null });
+  }
+  return hits;
+}
+
 function scoreFormula(formula, patientContext, normalizer) {
   const key = scoreKeySymptoms(formula, patientContext.matches, normalizer);
   const patternScore = cosine(patientContext.patternVector, formula.patternVector || {});
   const zangFuScore = cosine(patientContext.zangFuVector, formula.zangFuVector || {});
   const positiveKeyHits = key.matchedSymptoms.filter((item) => item.weight > 0).length;
   const evidenceFactor = Math.min(1, positiveKeyHits / EVIDENCE_DAMPING_K);
+  const matchedBookSymptoms = matchBookSymptoms(formula, patientContext.matches, key.matchedSymptoms);
+  const bookBonus = W_BOOK_SECONDARY * Math.min(1, matchedBookSymptoms.length / BOOK_SECONDARY_K);
   const total = (W_KEY * key.keySymptomScore)
-    + ((W_PATTERN * patternScore) + (W_ZANGFU * zangFuScore)) * evidenceFactor;
+    + ((W_PATTERN * patternScore) + (W_ZANGFU * zangFuScore)) * evidenceFactor
+    + bookBonus;
 
   return {
     formula: {
@@ -659,10 +691,12 @@ function scoreFormula(formula, patientContext, normalizer) {
       pattern: patternScore,
       zangFu: zangFuScore,
       evidenceFactor,
+      bookBonus,
     },
     explanation: {
       matchedSymptoms: key.matchedSymptoms,
       unmatchedKeySymptoms: key.unmatchedKeySymptoms,
+      matchedBookSymptoms,
       patientResidualSymptoms: computePatientResidualSymptoms(patientContext.matches, key.matchedSymptoms),
       patientPatternVector: patientContext.patternVector,
       patientZangFuVector: patientContext.zangFuVector,
@@ -728,5 +762,5 @@ function createX4Matcher(kb) {
 
 
 
-  return { normalizeXushiClass, createX4Matcher, W_KEY, W_PATTERN, W_ZANGFU, PARENT_FALLBACK_WEIGHT, EVIDENCE_DAMPING_K };
+  return { normalizeXushiClass, createX4Matcher, W_KEY, W_PATTERN, W_ZANGFU, PARENT_FALLBACK_WEIGHT, EVIDENCE_DAMPING_K, W_BOOK_SECONDARY, BOOK_SECONDARY_K };
 })();

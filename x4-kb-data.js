@@ -1733,8 +1733,7 @@ window.X4KbData = {
       "aliases": [
         "咽喉乾燥感",
         "咽喉炎症",
-        "咽喉狹窄感",
-        "咽喉閉塞感"
+        "咽喉狹窄感"
       ],
       "parent": null,
       "negationSensitive": false,
@@ -1862,7 +1861,8 @@ window.X4KbData = {
       "aliases": [
         "咽喉部堵塞感",
         "異物感",
-        "胸部塞窒感"
+        "胸部塞窒感",
+        "咽喉閉塞感"
       ],
       "parent": null,
       "negationSensitive": false,
@@ -24458,7 +24458,7 @@ window.X4KbData = {
         {
           "function": "治療咽喉閉塞感",
           "targetSymptoms": [
-            "S-SORE-THROAT"
+            "S-THROAT-BLOCK"
           ],
           "matchType": "contains"
         },
