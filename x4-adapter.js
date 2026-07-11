@@ -154,7 +154,10 @@ const X4Adapter = (function () {
 
     if (!rawTerms.length) return [];
 
-    const x4Results = matcher.recommend({ symptoms: rawTerms, xuShi: "unknown" }, { limit: formulas.length || 50 });
+    // Rank the FULL X4 KB (181 formulas incl. the 2026-07-11 book expansion),
+    // not just the UI display list's length — the final output slices to 5
+    // anyway, and a short pool silently hides valid mid-rank formulas.
+    const x4Results = matcher.recommend({ symptoms: rawTerms, xuShi: "unknown" }, { limit: 500 });
     const displayByName = new Map(formulas.map((formula) => [formula.name, formula]));
 
     const hasExplicitSymptoms = rawTerms.length > 0;

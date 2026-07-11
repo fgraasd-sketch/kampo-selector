@@ -6110,6 +6110,2752 @@ const EXCEL_FORMULA_KB = [
         "腎": 0.5
       }
     }
+  },
+  {
+    "name": "乙字湯",
+    "type": "虛實夾雜",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "yu_xue",
+    "patterns": [
+      "瘀血"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "出血",
+      "便秘",
+      "疼痛",
+      "痔",
+      "充血"
+    ],
+    "keySymptoms": [
+      "出血",
+      "便秘",
+      "疼痛",
+      "痔",
+      "充血"
+    ],
+    "indications": "出血，便秘，疼痛，痔，充血",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：乙字湯（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.342",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 0,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 1,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0,
+        "心": 0,
+        "脾": 0,
+        "肺": 0,
+        "腎": 0
+      }
+    }
+  },
+  {
+    "name": "二朮湯",
+    "type": "虛證",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "liver",
+    "patterns": [],
+    "zangFuTags": [],
+    "symptoms": [
+      "疼痛",
+      "神經痛",
+      "肩凝",
+      "熱感"
+    ],
+    "keySymptoms": [
+      "疼痛",
+      "神經痛",
+      "肩凝",
+      "熱感"
+    ],
+    "indications": "疼痛，神經痛，肩凝，熱感",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：二術湯（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.259",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 0,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0.2,
+        "心": 0.2,
+        "脾": 0,
+        "肺": 0,
+        "腎": 0.1111
+      }
+    }
+  },
+  {
+    "name": "三物黃芩湯",
+    "type": "虛實夾雜",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "qi_ni",
+    "patterns": [
+      "氣逆",
+      "水滯"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "頭痛",
+      "熱感",
+      "失眠",
+      "瘙癢",
+      "口渴",
+      "皮疹",
+      "發熱"
+    ],
+    "keySymptoms": [
+      "頭痛",
+      "熱感",
+      "失眠",
+      "瘙癢",
+      "口渴",
+      "皮疹",
+      "發熱"
+    ],
+    "indications": "頭痛，熱感，失眠，瘙癢，口渴，皮疹，發熱",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：三物黃聳湯（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.312",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 1,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 1
+      },
+      "zangFu": {
+        "肝": 0.2,
+        "心": 0.4,
+        "脾": 0,
+        "肺": 0.2,
+        "腎": 0.2222
+      }
+    }
+  },
+  {
+    "name": "大承氣湯",
+    "type": "實證",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "qi_yu",
+    "patterns": [
+      "氣鬱"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "腹滿",
+      "便秘",
+      "失眠",
+      "口渴"
+    ],
+    "keySymptoms": [
+      "腹滿",
+      "便秘",
+      "失眠",
+      "口渴"
+    ],
+    "indications": "腹滿，便秘，失眠，口渴",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：大承氣湯（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.253",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 0,
+        "氣鬱": 1,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0,
+        "心": 0.2,
+        "脾": 0.2,
+        "肺": 0,
+        "腎": 0.1111
+      }
+    }
+  },
+  {
+    "name": "大建中湯",
+    "type": "虛證",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "qi_xu",
+    "patterns": [
+      "氣虛",
+      "氣逆"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "體力低下",
+      "腹痛",
+      "發冷"
+    ],
+    "keySymptoms": [
+      "體力低下",
+      "腹痛",
+      "發冷"
+    ],
+    "indications": "體力低下，腹痛，發冷",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：大建中湯（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.251",
+    "vector": {
+      "patterns": {
+        "氣虛": 1,
+        "氣逆": 1,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0,
+        "心": 0.5,
+        "脾": 0.3333,
+        "肺": 0.2,
+        "腎": 0.1
+      }
+    }
+  },
+  {
+    "name": "大柴胡湯",
+    "type": "實證",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "qi_ni",
+    "patterns": [
+      "氣逆"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "胸脅苦滿",
+      "便秘",
+      "眩暈",
+      "頭痛",
+      "頭重",
+      "噁心",
+      "肩凝",
+      "耳鳴",
+      "嘔吐",
+      "神經過敏",
+      "烘熱感",
+      "熱感"
+    ],
+    "keySymptoms": [
+      "胸脅苦滿",
+      "便秘",
+      "眩暈",
+      "頭痛",
+      "頭重",
+      "噁心",
+      "肩凝",
+      "耳鳴",
+      "嘔吐",
+      "神經過敏",
+      "烘熱感",
+      "熱感"
+    ],
+    "indications": "胸脅苦滿，便秘，眩暈，頭痛，頭重，噁心，肩凝，耳鳴，嘔吐，神經過敏，烘熱感，熱感",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：大柴胡湯（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.251",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 1,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0.6,
+        "心": 0.4,
+        "脾": 0,
+        "肺": 0,
+        "腎": 0.3333
+      }
+    }
+  },
+  {
+    "name": "大黃甘草湯",
+    "type": "虛實夾雜",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "",
+    "patterns": [],
+    "zangFuTags": [],
+    "symptoms": [
+      "便秘"
+    ],
+    "keySymptoms": [
+      "便秘"
+    ],
+    "indications": "便秘",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：大黃甘草湯（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.249",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 0,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0,
+        "心": 0,
+        "脾": 0,
+        "肺": 0,
+        "腎": 0
+      }
+    }
+  },
+  {
+    "name": "大黃附子湯",
+    "type": "實證",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "qi_ni",
+    "patterns": [
+      "氣逆"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "發冷",
+      "疼痛",
+      "腰痛"
+    ],
+    "keySymptoms": [
+      "發冷",
+      "疼痛",
+      "腰痛"
+    ],
+    "indications": "發冷，疼痛，腰痛",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：大黃附子湯（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.249",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 1,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0,
+        "心": 0.25,
+        "脾": 0.1667,
+        "肺": 0,
+        "腎": 0.2
+      }
+    }
+  },
+  {
+    "name": "小柴胡湯",
+    "type": "虛實夾雜",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "qi_xu",
+    "patterns": [
+      "氣虛",
+      "氣鬱"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "腹部膨滿感",
+      "精神不安",
+      "食慾不振",
+      "精神症狀",
+      "便秘",
+      "虛弱",
+      "發熱",
+      "胸脅苦滿"
+    ],
+    "keySymptoms": [
+      "腹部膨滿感",
+      "精神不安",
+      "食慾不振",
+      "精神症狀",
+      "便秘",
+      "虛弱",
+      "發熱",
+      "胸脅苦滿"
+    ],
+    "indications": "腹部膨滿感，精神不安，食慾不振，精神症狀，便秘，虛弱，發熱，胸脅苦滿",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：小柴胡湯、小柴劉湯（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.246",
+    "vector": {
+      "patterns": {
+        "氣虛": 1,
+        "氣逆": 0,
+        "氣鬱": 1,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0.2857,
+        "心": 0.25,
+        "脾": 0.6,
+        "肺": 0.2,
+        "腎": 0
+      }
+    }
+  },
+  {
+    "name": "川芎茶調散",
+    "type": "虛實夾雜",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "qi_ni",
+    "patterns": [
+      "氣逆"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "關節痛",
+      "肌肉痛",
+      "發冷",
+      "頭痛",
+      "鼻塞"
+    ],
+    "keySymptoms": [
+      "關節痛",
+      "肌肉痛",
+      "發冷",
+      "頭痛",
+      "鼻塞"
+    ],
+    "indications": "關節痛，肌肉痛，發冷，頭痛，鼻塞",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：川攻人茶調散（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.248",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 1,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0.1429,
+        "心": 0.25,
+        "脾": 0.1667,
+        "肺": 0,
+        "腎": 0.1
+      }
+    }
+  },
+  {
+    "name": "五虎湯",
+    "type": "實證",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "qi_ni",
+    "patterns": [
+      "氣逆"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "呼吸困難",
+      "自然汗出",
+      "咳嗽",
+      "口渴",
+      "顏面潮紅",
+      "發熱",
+      "熱感"
+    ],
+    "keySymptoms": [
+      "呼吸困難",
+      "自然汗出",
+      "咳嗽",
+      "口渴",
+      "顏面潮紅",
+      "發熱",
+      "熱感"
+    ],
+    "indications": "呼吸困難，自然汗出，咳嗽，口渴，顏面潮紅，發熱，熱感",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：五虎湯（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.326",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 1,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0.2,
+        "心": 0.2,
+        "脾": 0,
+        "肺": 0.6,
+        "腎": 0.2222
+      }
+    }
+  },
+  {
+    "name": "五淋散",
+    "type": "虛實夾雜",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "qi_ni",
+    "patterns": [
+      "氣逆"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "排尿痛",
+      "發冷",
+      "尿頻",
+      "炎症"
+    ],
+    "keySymptoms": [
+      "排尿痛",
+      "發冷",
+      "尿頻",
+      "炎症"
+    ],
+    "indications": "排尿痛，發冷，尿頻，炎症",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：五淋散（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.328",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 1,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0,
+        "心": 0.25,
+        "脾": 0.1667,
+        "肺": 0,
+        "腎": 0.1
+      }
+    }
+  },
+  {
+    "name": "五積散",
+    "type": "虛實夾雜",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "qi_ni",
+    "patterns": [
+      "氣逆",
+      "水滯"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "月經不調",
+      "關節痛",
+      "發冷",
+      "痛經",
+      "頭痛",
+      "噁心",
+      "嘔吐",
+      "上熱下寒"
+    ],
+    "keySymptoms": [
+      "月經不調",
+      "關節痛",
+      "發冷",
+      "痛經",
+      "頭痛",
+      "噁心",
+      "嘔吐",
+      "上熱下寒"
+    ],
+    "indications": "月經不調，關節痛，發冷，痛經，頭痛，噁心，嘔吐，上熱下寒",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：五積散（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.327",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 1,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 1
+      },
+      "zangFu": {
+        "肝": 0.2857,
+        "心": 0.25,
+        "脾": 0.1667,
+        "肺": 0,
+        "腎": 0.1
+      }
+    }
+  },
+  {
+    "name": "分心氣飲",
+    "type": "未分類",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "qi_yu",
+    "patterns": [
+      "氣鬱"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "腹部膨滿感",
+      "食慾不振",
+      "抑鬱傾向",
+      "頭重",
+      "腰痛"
+    ],
+    "keySymptoms": [
+      "腹部膨滿感",
+      "食慾不振",
+      "抑鬱傾向",
+      "頭重",
+      "腰痛"
+    ],
+    "indications": "腹部膨滿感，食慾不振，抑鬱傾向，頭重，腰痛",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：分心氣飲（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.262",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 0,
+        "氣鬱": 1,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0,
+        "心": 0,
+        "脾": 0.4,
+        "肺": 0,
+        "腎": 0.1
+      }
+    }
+  },
+  {
+    "name": "升麻葛根湯",
+    "type": "虛實夾雜",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "qi_ni",
+    "patterns": [
+      "氣逆",
+      "水滯"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "發熱",
+      "頭痛",
+      "疼痛"
+    ],
+    "keySymptoms": [
+      "發熱",
+      "頭痛",
+      "疼痛"
+    ],
+    "indications": "發熱，頭痛，疼痛",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：升麻葛根湯（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.314",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 1,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 1
+      },
+      "zangFu": {
+        "肝": 0.1429,
+        "心": 0,
+        "脾": 0,
+        "肺": 0.2,
+        "腎": 0
+      }
+    }
+  },
+  {
+    "name": "加味歸脾湯",
+    "type": "虛實夾雜",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "qi_ni",
+    "patterns": [
+      "氣逆"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "精神不安",
+      "貧血",
+      "失眠"
+    ],
+    "keySymptoms": [
+      "精神不安",
+      "貧血",
+      "失眠"
+    ],
+    "indications": "精神不安，貧血，失眠",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：加味歸妥湯（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.287",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 1,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0.1429,
+        "心": 0.4,
+        "脾": 0,
+        "肺": 0,
+        "腎": 0
+      }
+    }
+  },
+  {
+    "name": "甘草湯",
+    "type": "虛實夾雜",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "lung",
+    "patterns": [],
+    "zangFuTags": [],
+    "symptoms": [
+      "咳嗽",
+      "炎症"
+    ],
+    "keySymptoms": [
+      "咳嗽",
+      "炎症"
+    ],
+    "indications": "咳嗽，炎症",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：甘草湯（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.266",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 0,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0,
+        "心": 0,
+        "脾": 0,
+        "肺": 0.2,
+        "腎": 0
+      }
+    }
+  },
+  {
+    "name": "甘麥大棗湯",
+    "type": "虛證",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "qi_ni",
+    "patterns": [
+      "氣逆"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "神經過敏",
+      "劇烈噁心",
+      "腹瀉",
+      "發熱",
+      "頭痛",
+      "頭重",
+      "失眠",
+      "鼻塞",
+      "嘔吐"
+    ],
+    "keySymptoms": [
+      "神經過敏",
+      "劇烈噁心",
+      "腹瀉",
+      "發熱",
+      "頭痛",
+      "頭重",
+      "失眠",
+      "鼻塞",
+      "嘔吐"
+    ],
+    "indications": "神經過敏，劇烈噁心，腹瀉，發熱，頭痛，頭重，失眠，鼻塞，嘔吐",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：甘去大囊湯（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.267",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 1,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0.2857,
+        "心": 0.4,
+        "脾": 0.2,
+        "肺": 0.2,
+        "腎": 0.1
+      }
+    }
+  },
+  {
+    "name": "白虎加人參湯",
+    "type": "實證",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "xue_xu",
+    "patterns": [
+      "血虛"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "膚色淺黑",
+      "腹瀉",
+      "熱感",
+      "疼痛",
+      "口渴",
+      "尿頻"
+    ],
+    "keySymptoms": [
+      "膚色淺黑",
+      "腹瀉",
+      "熱感",
+      "疼痛",
+      "口渴",
+      "尿頻"
+    ],
+    "indications": "膚色淺黑，腹瀉，熱感，疼痛，口渴，尿頻",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：白虎加人參湯（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.236",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 0,
+        "氣鬱": 0,
+        "血虛": 1,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0.2,
+        "心": 0.2,
+        "脾": 0.2,
+        "肺": 0,
+        "腎": 0.2222
+      }
+    }
+  },
+  {
+    "name": "竹茹溫膽湯",
+    "type": "虛實夾雜",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "qi_ni",
+    "patterns": [
+      "氣逆"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "精神不安",
+      "胸脅苦滿",
+      "壓痛",
+      "咳嗽",
+      "病後",
+      "微熱",
+      "失眠",
+      "腹部膨滿感",
+      "烘熱感",
+      "熱感"
+    ],
+    "keySymptoms": [
+      "精神不安",
+      "胸脅苦滿",
+      "壓痛",
+      "咳嗽",
+      "病後",
+      "微熱",
+      "失眠",
+      "腹部膨滿感",
+      "烘熱感",
+      "熱感"
+    ],
+    "indications": "精神不安，胸脅苦滿，壓痛，咳嗽，病後，微熱，失眠，腹部膨滿感，烘熱感，熱感",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：人竹熙溫膽湯（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.350",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 1,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0.2857,
+        "心": 0.6,
+        "脾": 0.4,
+        "肺": 0.4,
+        "腎": 0.1111
+      }
+    }
+  },
+  {
+    "name": "芎歸調血飲",
+    "type": "虛實夾雜",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "qi_ni",
+    "patterns": [
+      "氣逆",
+      "血虛"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "心窩部疼痛",
+      "煩躁不安",
+      "貧血傾向",
+      "下肢發冷",
+      "月經不調",
+      "面色欠佳",
+      "虛弱",
+      "頭痛",
+      "疼痛",
+      "失眠",
+      "痙攣",
+      "肩凝",
+      "耳鳴",
+      "胸脅苦滿"
+    ],
+    "keySymptoms": [
+      "心窩部疼痛",
+      "煩躁不安",
+      "貧血傾向",
+      "下肢發冷",
+      "月經不調",
+      "面色欠佳",
+      "虛弱",
+      "頭痛",
+      "疼痛",
+      "失眠",
+      "痙攣",
+      "肩凝",
+      "耳鳴",
+      "胸脅苦滿"
+    ],
+    "indications": "心窩部疼痛，煩躁不安，貧血傾向，下肢發冷，月經不調，面色欠佳，虛弱，頭痛，疼痛，失眠，痙攣，肩凝，耳鳴，胸脅苦滿",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：若歸調血飲（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.338",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 1,
+        "氣鬱": 0,
+        "血虛": 1,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0.5714,
+        "心": 0.5,
+        "脾": 0.2,
+        "肺": 0.2,
+        "腎": 0.1111
+      }
+    }
+  },
+  {
+    "name": "辛夷清肺湯",
+    "type": "虛實夾雜",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "kidney",
+    "patterns": [],
+    "zangFuTags": [],
+    "symptoms": [
+      "熱感",
+      "疼痛",
+      "鼻塞",
+      "充血",
+      "炎症",
+      "口渴"
+    ],
+    "keySymptoms": [
+      "熱感",
+      "疼痛",
+      "鼻塞",
+      "充血",
+      "炎症",
+      "口渴"
+    ],
+    "indications": "熱感，疼痛，鼻塞，充血，炎症，口渴",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：辛夷清肺湯（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.337",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 0,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0.2,
+        "心": 0.2,
+        "脾": 0,
+        "肺": 0,
+        "腎": 0.2222
+      }
+    }
+  },
+  {
+    "name": "延年半夏湯",
+    "type": "虛實夾雜",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "qi_ni",
+    "patterns": [
+      "氣逆"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "心窩部疼痛",
+      "煩躁不安",
+      "下肢發冷",
+      "體力低下",
+      "壓痛",
+      "疼痛",
+      "失眠",
+      "易怒",
+      "痙攣",
+      "搏動",
+      "肩凝",
+      "胸脅苦滿"
+    ],
+    "keySymptoms": [
+      "心窩部疼痛",
+      "煩躁不安",
+      "下肢發冷",
+      "體力低下",
+      "壓痛",
+      "疼痛",
+      "失眠",
+      "易怒",
+      "痙攣",
+      "搏動",
+      "肩凝",
+      "胸脅苦滿"
+    ],
+    "indications": "心窩部疼痛，煩躁不安，下肢發冷，體力低下，壓痛，疼痛，失眠，易怒，痙攣，搏動，肩凝，胸脅苦滿",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：延年半夏湯（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.339",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 1,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0.4286,
+        "心": 0.75,
+        "脾": 0.2,
+        "肺": 0.2,
+        "腎": 0.1
+      }
+    }
+  },
+  {
+    "name": "附子理中湯",
+    "type": "虛證",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "qi_xu",
+    "patterns": [
+      "氣虛"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "胃腸虛弱",
+      "腹瀉",
+      "胃痛",
+      "炎症",
+      "頭重",
+      "噁心",
+      "發冷"
+    ],
+    "keySymptoms": [
+      "胃腸虛弱",
+      "腹瀉",
+      "胃痛",
+      "炎症",
+      "頭重",
+      "噁心",
+      "發冷"
+    ],
+    "indications": "胃腸虛弱，腹瀉，胃痛，炎症，頭重，噁心，發冷",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：附子理中湯（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.265",
+    "vector": {
+      "patterns": {
+        "氣虛": 1,
+        "氣逆": 0,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0,
+        "心": 0.5,
+        "脾": 0.4,
+        "肺": 0.2,
+        "腎": 0.2
+      }
+    }
+  },
+  {
+    "name": "附子粳米湯",
+    "type": "虛實夾雜",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "qi_ni",
+    "patterns": [
+      "氣逆"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "背部惡寒",
+      "四肢發冷",
+      "關節痛",
+      "浮腫"
+    ],
+    "keySymptoms": [
+      "背部惡寒",
+      "四肢發冷",
+      "關節痛",
+      "浮腫"
+    ],
+    "indications": "背部惡寒，四肢發冷，關節痛，浮腫",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：附子粳米湯（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.265",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 1,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0,
+        "心": 0.5,
+        "脾": 0.3333,
+        "肺": 0,
+        "腎": 0.2
+      }
+    }
+  },
+  {
+    "name": "附子瀉心湯",
+    "type": "未分類",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "qi_ni",
+    "patterns": [
+      "氣逆"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "精神不安",
+      "顏面潮紅",
+      "頭痛"
+    ],
+    "keySymptoms": [
+      "精神不安",
+      "顏面潮紅",
+      "頭痛"
+    ],
+    "indications": "精神不安，顏面潮紅，頭痛",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：附子瀉心湯（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.266",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 1,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0.2857,
+        "心": 0.2,
+        "脾": 0,
+        "肺": 0,
+        "腎": 0
+      }
+    }
+  },
+  {
+    "name": "柴胡桂枝乾薑湯",
+    "type": "虛證",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "qi_ni",
+    "patterns": [
+      "氣逆"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "面色欠佳",
+      "胸脅苦滿",
+      "惡寒",
+      "發熱",
+      "津液不足",
+      "顏面潮紅"
+    ],
+    "keySymptoms": [
+      "面色欠佳",
+      "胸脅苦滿",
+      "惡寒",
+      "發熱",
+      "津液不足",
+      "顏面潮紅"
+    ],
+    "indications": "面色欠佳，胸脅苦滿，惡寒，發熱，津液不足，顏面潮紅",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：緊胡桂枝幹羨湯（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.242",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 1,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0.1429,
+        "心": 0.25,
+        "脾": 0.1667,
+        "肺": 0.2,
+        "腎": 0.1
+      }
+    }
+  },
+  {
+    "name": "桂枝加大黃湯",
+    "type": "虛實夾雜",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "qi_yu",
+    "patterns": [
+      "氣鬱"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "腹部膨滿",
+      "腹痛",
+      "便秘",
+      "腹瀉",
+      "痙攣"
+    ],
+    "keySymptoms": [
+      "腹部膨滿",
+      "腹痛",
+      "便秘",
+      "腹瀉",
+      "痙攣"
+    ],
+    "indications": "腹部膨滿，腹痛，便秘，腹瀉，痙攣",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：桂枝加大黃湯（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.276",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 0,
+        "氣鬱": 1,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0,
+        "心": 0,
+        "脾": 0.4,
+        "肺": 0,
+        "腎": 0.1
+      }
+    }
+  },
+  {
+    "name": "桂枝加芍藥湯",
+    "type": "虛證",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "shui_zhi",
+    "patterns": [
+      "水滯"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "腹部膨滿感",
+      "胃部振水音",
+      "胃腸虛弱",
+      "尿量減少",
+      "裡急後重",
+      "水樣便",
+      "頭重感",
+      "關節痛",
+      "肌肉痛",
+      "腹痛",
+      "喘鳴",
+      "惡寒",
+      "咳嗽",
+      "抑鬱",
+      "腹瀉",
+      "軟便",
+      "微熱",
+      "頭痛",
+      "疼痛",
+      "腰痛",
+      "盜汗",
+      "腹直肌拘攣"
+    ],
+    "keySymptoms": [
+      "腹部膨滿感",
+      "胃部振水音",
+      "胃腸虛弱",
+      "尿量減少",
+      "裡急後重",
+      "水樣便",
+      "頭重感",
+      "關節痛",
+      "肌肉痛",
+      "腹痛",
+      "喘鳴",
+      "惡寒",
+      "咳嗽",
+      "抑鬱",
+      "腹瀉",
+      "軟便",
+      "微熱",
+      "頭痛",
+      "疼痛",
+      "腰痛",
+      "盜汗",
+      "腹直肌拘攣"
+    ],
+    "indications": "腹部膨滿感，胃部振水音，胃腸虛弱，尿量減少，裡急後重，水樣便，頭重感，關節痛，肌肉痛，腹痛，喘鳴，惡寒，咳嗽，抑鬱，腹瀉，軟便，微熱，頭痛，疼痛，腰痛，盜汗，腹直肌拘攣",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：桂枝加芍藥湯（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.277",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 0,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 1
+      },
+      "zangFu": {
+        "肝": 0.1429,
+        "心": 0.5,
+        "脾": 0.8333,
+        "肺": 0.6,
+        "腎": 0.4
+      }
+    }
+  },
+  {
+    "name": "桂枝加附子湯",
+    "type": "虛證",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "yu_xue",
+    "patterns": [
+      "瘀血"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "肌肉痙攣",
+      "惡寒",
+      "痔瘡"
+    ],
+    "keySymptoms": [
+      "肌肉痙攣",
+      "惡寒",
+      "痔瘡"
+    ],
+    "indications": "肌肉痙攣，惡寒，痔瘡",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：桂枝加附子湯（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.274",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 0,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 1,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0,
+        "心": 0.25,
+        "脾": 0.1667,
+        "肺": 0,
+        "腎": 0.1
+      }
+    }
+  },
+  {
+    "name": "桂枝加厚朴杏仁湯",
+    "type": "虛證",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "qi_xu",
+    "patterns": [
+      "氣虛",
+      "氣逆"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "體力低下",
+      "咳喘",
+      "發熱",
+      "疼痛",
+      "炎症"
+    ],
+    "keySymptoms": [
+      "體力低下",
+      "咳喘",
+      "發熱",
+      "疼痛",
+      "炎症"
+    ],
+    "indications": "體力低下，咳喘，發熱，疼痛，炎症",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：桂枝加厚朴查仁湯（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.274",
+    "vector": {
+      "patterns": {
+        "氣虛": 1,
+        "氣逆": 1,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0,
+        "心": 0.25,
+        "脾": 0.2,
+        "肺": 0.4,
+        "腎": 0
+      }
+    }
+  },
+  {
+    "name": "桂枝加葛根湯",
+    "type": "虛證",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "xue_xu",
+    "patterns": [
+      "血虛"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "肌肉痙攣",
+      "惡寒",
+      "發熱",
+      "疼痛"
+    ],
+    "keySymptoms": [
+      "肌肉痙攣",
+      "惡寒",
+      "發熱",
+      "疼痛"
+    ],
+    "indications": "肌肉痙攣，惡寒，發熱，疼痛",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：桂枝加葛根湯（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.274",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 0,
+        "氣鬱": 0,
+        "血虛": 1,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0,
+        "心": 0.25,
+        "脾": 0.1667,
+        "肺": 0.2,
+        "腎": 0.1
+      }
+    }
+  },
+  {
+    "name": "桂枝芍藥知母湯",
+    "type": "虛證",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "qi_ni",
+    "patterns": [
+      "氣逆"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "關節痛",
+      "神經痛",
+      "發冷"
+    ],
+    "keySymptoms": [
+      "關節痛",
+      "神經痛",
+      "發冷"
+    ],
+    "indications": "關節痛，神經痛，發冷",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：桂枝為藥知母湯（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.280",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 1,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0,
+        "心": 0.25,
+        "脾": 0.1667,
+        "肺": 0,
+        "腎": 0.1
+      }
+    }
+  },
+  {
+    "name": "桂枝麻黃各半湯",
+    "type": "虛實夾雜",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "qi_ni",
+    "patterns": [
+      "氣逆"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "惡寒",
+      "咳嗽",
+      "發熱",
+      "頭痛",
+      "熱感",
+      "瘙癢",
+      "咽痛"
+    ],
+    "keySymptoms": [
+      "惡寒",
+      "咳嗽",
+      "發熱",
+      "頭痛",
+      "熱感",
+      "瘙癢",
+      "咽痛"
+    ],
+    "indications": "惡寒，咳嗽，發熱，頭痛，熱感，瘙癢，咽痛",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：桂枝麻黃各半湯（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.279",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 1,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0.2,
+        "心": 0.25,
+        "脾": 0.1667,
+        "肺": 0.6,
+        "腎": 0.1111
+      }
+    }
+  },
+  {
+    "name": "桂枝湯",
+    "type": "虛證",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "qi_ni",
+    "patterns": [
+      "氣逆"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "惡寒",
+      "發熱",
+      "頭痛",
+      "疼痛",
+      "汗出",
+      "頭重感",
+      "烘熱感",
+      "熱感"
+    ],
+    "keySymptoms": [
+      "惡寒",
+      "發熱",
+      "頭痛",
+      "疼痛",
+      "汗出",
+      "頭重感",
+      "烘熱感",
+      "熱感"
+    ],
+    "indications": "惡寒，發熱，頭痛，疼痛，汗出，頭重感，烘熱感，熱感",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：桂枝湯（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.280",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 1,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0.2,
+        "心": 0.25,
+        "脾": 0.1667,
+        "肺": 0.2,
+        "腎": 0.1111
+      }
+    }
+  },
+  {
+    "name": "桔梗湯",
+    "type": "虛實夾雜",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "lung",
+    "patterns": [],
+    "zangFuTags": [],
+    "symptoms": [
+      "咳嗽",
+      "發熱",
+      "疼痛",
+      "肩凝"
+    ],
+    "keySymptoms": [
+      "咳嗽",
+      "發熱",
+      "疼痛",
+      "肩凝"
+    ],
+    "indications": "咳嗽，發熱，疼痛，肩凝",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：桔梗湯（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.289",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 0,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0,
+        "心": 0,
+        "脾": 0,
+        "肺": 0.4,
+        "腎": 0
+      }
+    }
+  },
+  {
+    "name": "消風散",
+    "type": "虛實夾雜",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "kidney",
+    "patterns": [],
+    "zangFuTags": [],
+    "symptoms": [
+      "皮疹",
+      "熱感",
+      "口渴"
+    ],
+    "keySymptoms": [
+      "皮疹",
+      "熱感",
+      "口渴"
+    ],
+    "indications": "皮疹，熱感，口渴",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：消風散（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.334",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 0,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0.2,
+        "心": 0.2,
+        "脾": 0,
+        "肺": 0,
+        "腎": 0.2222
+      }
+    }
+  },
+  {
+    "name": "烏頭桂枝湯",
+    "type": "虛實夾雜",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "qi_ni",
+    "patterns": [
+      "氣逆"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "腹直肌拘攣",
+      "四肢發冷",
+      "關節痛",
+      "腹痛",
+      "胸痛",
+      "頭痛",
+      "汗出"
+    ],
+    "keySymptoms": [
+      "腹直肌拘攣",
+      "四肢發冷",
+      "關節痛",
+      "腹痛",
+      "胸痛",
+      "頭痛",
+      "汗出"
+    ],
+    "indications": "腹直肌拘攣，四肢發冷，關節痛，腹痛，胸痛，頭痛，汗出",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：烏頭桂枝湯（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.324",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 1,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0.2857,
+        "心": 0.25,
+        "脾": 0.3333,
+        "肺": 0.2,
+        "腎": 0.1
+      }
+    }
+  },
+  {
+    "name": "烏藥順氣散",
+    "type": "虛實夾雜",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "qi_yu",
+    "patterns": [
+      "氣鬱"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "頭痛",
+      "抑鬱傾向",
+      "知覺"
+    ],
+    "keySymptoms": [
+      "頭痛",
+      "抑鬱傾向",
+      "知覺"
+    ],
+    "indications": "頭痛，抑鬱傾向，知覺",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：烏藥順氣散（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.324",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 0,
+        "氣鬱": 1,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0.1429,
+        "心": 0,
+        "脾": 0,
+        "肺": 0,
+        "腎": 0
+      }
+    }
+  },
+  {
+    "name": "茯苓四逆湯",
+    "type": "虛證",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "qi_ni",
+    "patterns": [
+      "氣逆"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "心窩部不適感",
+      "精神不安",
+      "呼吸困難",
+      "四肢發冷",
+      "尿量減少",
+      "胸痛"
+    ],
+    "keySymptoms": [
+      "心窩部不適感",
+      "精神不安",
+      "呼吸困難",
+      "四肢發冷",
+      "尿量減少",
+      "胸痛"
+    ],
+    "indications": "心窩部不適感，精神不安，呼吸困難，四肢發冷，尿量減少，胸痛",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：茯苓四逆湯（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.262",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 1,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0.2857,
+        "心": 0.25,
+        "脾": 0.3333,
+        "肺": 0.2,
+        "腎": 0.2
+      }
+    }
+  },
+  {
+    "name": "茵陳蒿湯",
+    "type": "實證",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "shui_zhi",
+    "patterns": [
+      "水滯"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "便秘",
+      "噁心",
+      "瘙癢",
+      "口渴"
+    ],
+    "keySymptoms": [
+      "便秘",
+      "噁心",
+      "瘙癢",
+      "口渴"
+    ],
+    "indications": "便秘，噁心，瘙癢，口渴",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：英陳蘿湯（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.342",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 0,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 1
+      },
+      "zangFu": {
+        "肝": 0,
+        "心": 0,
+        "脾": 0,
+        "肺": 0,
+        "腎": 0.1111
+      }
+    }
+  },
+  {
+    "name": "參蘇飲",
+    "type": "虛證",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "qi_ni",
+    "patterns": [
+      "氣逆",
+      "水滯"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "心窩部膨滿感",
+      "咳嗽",
+      "虛弱",
+      "微熱",
+      "頭痛",
+      "噁心",
+      "嘔吐"
+    ],
+    "keySymptoms": [
+      "心窩部膨滿感",
+      "咳嗽",
+      "虛弱",
+      "微熱",
+      "頭痛",
+      "噁心",
+      "嘔吐"
+    ],
+    "indications": "心窩部膨滿感，咳嗽，虛弱，微熱，頭痛，噁心，嘔吐",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：參蘇飲（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.315",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 1,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 1
+      },
+      "zangFu": {
+        "肝": 0.1429,
+        "心": 0.25,
+        "脾": 0.2,
+        "肺": 0.4,
+        "腎": 0
+      }
+    }
+  },
+  {
+    "name": "梔子柏皮湯",
+    "type": "虛實夾雜",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "qi_ni",
+    "patterns": [
+      "氣逆"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "充血",
+      "炎症",
+      "瘙癢",
+      "煩躁不安",
+      "皮疹"
+    ],
+    "keySymptoms": [
+      "充血",
+      "炎症",
+      "瘙癢",
+      "煩躁不安",
+      "皮疹"
+    ],
+    "indications": "充血，炎症，瘙癢，煩躁不安，皮疹",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：板子柏皮湯（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.348",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 1,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0.1429,
+        "心": 0.2,
+        "脾": 0,
+        "肺": 0,
+        "腎": 0
+      }
+    }
+  },
+  {
+    "name": "清上防風湯",
+    "type": "實證",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "qi_ni",
+    "patterns": [
+      "氣逆"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "皮疹",
+      "充血",
+      "頭痛",
+      "烘熱",
+      "顏面潮紅",
+      "炎症"
+    ],
+    "keySymptoms": [
+      "皮疹",
+      "充血",
+      "頭痛",
+      "烘熱",
+      "顏面潮紅",
+      "炎症"
+    ],
+    "indications": "皮疹，充血，頭痛，烘熱，顏面潮紅，炎症",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：清上防風湯（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.308",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 1,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0.1429,
+        "心": 0,
+        "脾": 0,
+        "肺": 0,
+        "腎": 0
+      }
+    }
+  },
+  {
+    "name": "清肺湯",
+    "type": "虛實夾雜",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "lung",
+    "patterns": [],
+    "zangFuTags": [],
+    "symptoms": [
+      "咳嗽",
+      "疼痛"
+    ],
+    "keySymptoms": [
+      "咳嗽",
+      "疼痛"
+    ],
+    "indications": "咳嗽，疼痛",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：清肺湯（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.307",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 0,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0,
+        "心": 0,
+        "脾": 0,
+        "肺": 0.2,
+        "腎": 0
+      }
+    }
+  },
+  {
+    "name": "麻杏甘石湯",
+    "type": "實證",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "qi_ni",
+    "patterns": [
+      "氣逆"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "呼吸困難",
+      "自然汗出",
+      "咳嗽",
+      "發熱",
+      "口渴",
+      "熱感"
+    ],
+    "keySymptoms": [
+      "呼吸困難",
+      "自然汗出",
+      "咳嗽",
+      "發熱",
+      "口渴",
+      "熱感"
+    ],
+    "indications": "呼吸困難，自然汗出，咳嗽，發熱，口渴，熱感",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：麻查石甘湯（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.299",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 1,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0.2,
+        "心": 0.2,
+        "脾": 0,
+        "肺": 0.6,
+        "腎": 0.2222
+      }
+    }
+  },
+  {
+    "name": "麻杏薏甘湯",
+    "type": "虛實夾雜",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "shui_zhi",
+    "patterns": [
+      "水滯"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "關節腫脹",
+      "肌膚甲錯",
+      "肌肉痛",
+      "浮腫",
+      "疼痛",
+      "汗出",
+      "尿量減少",
+      "熱感"
+    ],
+    "keySymptoms": [
+      "關節腫脹",
+      "肌膚甲錯",
+      "肌肉痛",
+      "浮腫",
+      "疼痛",
+      "汗出",
+      "尿量減少",
+      "熱感"
+    ],
+    "indications": "關節腫脹，肌膚甲錯，肌肉痛，浮腫，疼痛，汗出，尿量減少，熱感",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：麻查芒甘湯（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.300",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 0,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 1
+      },
+      "zangFu": {
+        "肝": 0.2,
+        "心": 0.25,
+        "脾": 0.3333,
+        "肺": 0.2,
+        "腎": 0.2
+      }
+    }
+  },
+  {
+    "name": "麻黃附子甘草湯",
+    "type": "虛實夾雜",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "qi_ni",
+    "patterns": [
+      "氣逆"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "惡寒",
+      "咳嗽",
+      "疼痛"
+    ],
+    "keySymptoms": [
+      "惡寒",
+      "咳嗽",
+      "疼痛"
+    ],
+    "indications": "惡寒，咳嗽，疼痛",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：麻黃附子甘草湯（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.298",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 1,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0,
+        "心": 0.25,
+        "脾": 0.1667,
+        "肺": 0.2,
+        "腎": 0.1
+      }
+    }
+  },
+  {
+    "name": "麻黃湯",
+    "type": "實證",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "qi_ni",
+    "patterns": [
+      "氣逆"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "無自然汗出",
+      "關節痛",
+      "喘鳴",
+      "惡寒",
+      "咳嗽",
+      "發熱",
+      "頭重",
+      "腰痛",
+      "鼻塞",
+      "出血"
+    ],
+    "keySymptoms": [
+      "無自然汗出",
+      "關節痛",
+      "喘鳴",
+      "惡寒",
+      "咳嗽",
+      "發熱",
+      "頭重",
+      "腰痛",
+      "鼻塞",
+      "出血"
+    ],
+    "indications": "無自然汗出，關節痛，喘鳴，惡寒，咳嗽，發熱，頭重，腰痛，鼻塞，出血",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：麻黃湯（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.298",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 1,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0,
+        "心": 0.25,
+        "脾": 0.1667,
+        "肺": 0.6,
+        "腎": 0.2
+      }
+    }
+  },
+  {
+    "name": "黃芩湯",
+    "type": "虛證",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "qi_ni",
+    "patterns": [
+      "氣逆",
+      "水滯"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "腹直肌拘攣",
+      "四肢發冷",
+      "尿量減少",
+      "腹瀉",
+      "浮腫",
+      "無力",
+      "發熱",
+      "頭痛",
+      "疼痛",
+      "腰痛",
+      "夜尿",
+      "口渴",
+      "嘔吐",
+      "小腹不仁",
+      "裡急後重",
+      "關節痛",
+      "腹痛",
+      "口苦"
+    ],
+    "keySymptoms": [
+      "腹直肌拘攣",
+      "四肢發冷",
+      "尿量減少",
+      "腹瀉",
+      "浮腫",
+      "無力",
+      "發熱",
+      "頭痛",
+      "疼痛",
+      "腰痛",
+      "夜尿",
+      "口渴",
+      "嘔吐",
+      "小腹不仁",
+      "裡急後重",
+      "關節痛",
+      "腹痛",
+      "口苦"
+    ],
+    "indications": "腹直肌拘攣，四肢發冷，尿量減少，腹瀉，浮腫，無力，發熱，頭痛，疼痛，腰痛，夜尿，口渴，嘔吐，小腹不仁，裡急後重，關節痛，腹痛，口苦",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：黃芬湯（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.286",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 1,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 1
+      },
+      "zangFu": {
+        "肝": 0.1429,
+        "心": 0.75,
+        "脾": 0.8333,
+        "肺": 0.2,
+        "腎": 0.7
+      }
+    }
+  },
+  {
+    "name": "黃耆桂枝五物湯",
+    "type": "虛證",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "xue_xu",
+    "patterns": [
+      "血虛"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "知覺障礙"
+    ],
+    "keySymptoms": [
+      "知覺障礙"
+    ],
+    "indications": "知覺障礙",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：黃莽桂枝五物湯（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.285",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 0,
+        "氣鬱": 0,
+        "血虛": 1,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0,
+        "心": 0,
+        "脾": 0,
+        "肺": 0,
+        "腎": 0
+      }
+    }
+  },
+  {
+    "name": "當歸四逆加吳茱萸生薑湯",
+    "type": "虛證",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "qi_ni",
+    "patterns": [
+      "氣逆"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "腹部疼痛",
+      "手足發冷",
+      "虛弱",
+      "頭痛",
+      "疼痛",
+      "腰痛",
+      "噁心",
+      "嘔吐",
+      "腹直肌拘攣"
+    ],
+    "keySymptoms": [
+      "腹部疼痛",
+      "手足發冷",
+      "虛弱",
+      "頭痛",
+      "疼痛",
+      "腰痛",
+      "噁心",
+      "嘔吐",
+      "腹直肌拘攣"
+    ],
+    "indications": "腹部疼痛，手足發冷，虛弱，頭痛，疼痛，腰痛，噁心，嘔吐，腹直肌拘攣",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：當歸四逆加吳菜英生美湯（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.256",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 1,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0.1429,
+        "心": 0.5,
+        "脾": 0.3333,
+        "肺": 0.2,
+        "腎": 0.2
+      }
+    }
+  },
+  {
+    "name": "當歸湯",
+    "type": "虛證",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "qi_ni",
+    "patterns": [
+      "氣逆",
+      "氣鬱"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "腹部膨滿感",
+      "腹痛",
+      "發冷",
+      "疼痛"
+    ],
+    "keySymptoms": [
+      "腹部膨滿感",
+      "腹痛",
+      "發冷",
+      "疼痛"
+    ],
+    "indications": "腹部膨滿感，腹痛，發冷，疼痛",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：當歸湯（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.257",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 1,
+        "氣鬱": 1,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0,
+        "心": 0.25,
+        "脾": 0.3333,
+        "肺": 0,
+        "腎": 0.1
+      }
+    }
+  },
+  {
+    "name": "葛根加朮附湯",
+    "type": "實證",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "qi_ni",
+    "patterns": [
+      "氣逆"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "烘熱感",
+      "神經痛",
+      "惡寒",
+      "發熱",
+      "頭痛",
+      "熱感",
+      "無自然汗出",
+      "關節腫脹",
+      "疼痛"
+    ],
+    "keySymptoms": [
+      "烘熱感",
+      "神經痛",
+      "惡寒",
+      "發熱",
+      "頭痛",
+      "熱感",
+      "無自然汗出",
+      "關節腫脹",
+      "疼痛"
+    ],
+    "indications": "烘熱感，神經痛，惡寒，發熱，頭痛，熱感，無自然汗出，關節腫脹，疼痛",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：葛根加術附湯（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.269",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 1,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0.2,
+        "心": 0.25,
+        "脾": 0.1667,
+        "肺": 0.2,
+        "腎": 0.1111
+      }
+    }
+  },
+  {
+    "name": "解急蜀椒湯",
+    "type": "實證",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "qi_ni",
+    "patterns": [
+      "氣逆"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "腹痛",
+      "嘔吐"
+    ],
+    "keySymptoms": [
+      "腹痛",
+      "嘔吐"
+    ],
+    "indications": "腹痛，嘔吐",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：解急罰椒湯（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.290",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 1,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0,
+        "心": 0,
+        "脾": 0.1667,
+        "肺": 0,
+        "腎": 0
+      }
+    }
+  },
+  {
+    "name": "調胃承氣湯",
+    "type": "實證",
+    "category": "書籍補充（漢方臨床診療學）",
+    "syndrome": "qi_yu",
+    "patterns": [
+      "氣鬱"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "腹部膨滿感",
+      "腹痛",
+      "便秘",
+      "口內乾燥感"
+    ],
+    "keySymptoms": [
+      "腹部膨滿感",
+      "腹痛",
+      "便秘",
+      "口內乾燥感"
+    ],
+    "indications": "腹部膨滿感，腹痛，便秘，口內乾燥感",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：調胃承氣湯（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.323",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 0,
+        "氣鬱": 1,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0.2,
+        "心": 0,
+        "脾": 0.2,
+        "肺": 0.2,
+        "腎": 0.1111
+      }
+    }
   }
 ];
 if (typeof window !== "undefined") window.EXCEL_FORMULA_KB = EXCEL_FORMULA_KB;
