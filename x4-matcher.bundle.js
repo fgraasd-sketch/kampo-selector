@@ -930,9 +930,11 @@ function createX4Matcher(kb) {
 
   function recommend(patient, { limit = 5 } = {}) {
     const patientContext = buildPatientContext(patient || {});
-    return formulas
+    const scored = formulas
       .filter((formula) => passesXushiGate(formula, patientContext.xuShi))
-      .map((formula) => scoreFormulaWithContext(formula, patientContext))
+      .map((formula) => scoreFormulaWithContext(formula, patientContext));
+    applyCombinationRule(scored);
+    return scored
       .sort((a, b) => {
         const diff = b.score.total - a.score.total;
         if (Math.abs(diff) > 1e-12) return diff;
@@ -941,6 +943,47 @@ function createX4Matcher(kb) {
       })
       .slice(0, limit)
       .map(({ _keySymptomCount, ...result }) => result);
+  }
+
+  // 合方守則 (2026-07-12): a combination formula may not outrank its own
+  // component unless the OTHER component contributes key evidence — the kampo
+  // combination principle (use 柴朴湯 over 半夏厚朴湯 only when there is a 柴胡證).
+  //
+  // Discovered when the physician-named orphan blocks gave 柴朴湯 its book
+  // monograph (p.245): the equalised book bonus unmasked a zangfu-cosine gap
+  // (the workbook files 柴朴湯 under 肝氣鬱 but 半夏厚朴湯 under 脾/肺/心), and
+  // 柴朴湯 overtook 半夏厚朴湯 on the pure globus triad with ZERO 小柴胡湯-part
+  // evidence — flipping the physician's 2026-07-11 梅核氣 ruling. The KB records
+  // composedOfFormulas from the workbook, so the rule is data-driven, tiny in
+  // scope (three combination formulas), and clinically the right general fix.
+  //
+  // Mechanics: a component is "evidenced" when its own scoring shows at least
+  // one positive key hit. With two or more evidenced components the combination
+  // stands on its full score; otherwise it is capped just below its best
+  // evidenced component (or best component overall when none is evidenced).
+  function applyCombinationRule(scored) {
+    const byName = new Map(scored.map((result) => [result.formula.name, result]));
+    const hasKeyEvidence = (result) =>
+      result.explanation.matchedSymptoms.some((item) => item.weight > 0);
+    for (const result of scored) {
+      const componentNames = toArray(result.formula.composedOfFormulas);
+      if (componentNames.length < 1) continue;
+      const components = componentNames.map((name) => byName.get(name)).filter(Boolean);
+      if (!components.length) continue;
+      const evidenced = components.filter(hasKeyEvidence);
+      if (evidenced.length >= 2) continue;
+      const base = (evidenced[0] || components.reduce((best, item) =>
+        (item.score.total > best.score.total ? item : best)));
+      if (result.score.total > base.score.total - 1e-9) {
+        result.score.total = base.score.total - 1e-6;
+        result.score.combinationCappedBelow = base.formula.name;
+        result.explanation.combinationCap = {
+          base: base.formula.name,
+          evidencedComponents: evidenced.map((item) => item.formula.name),
+          reason: "合方的另一組成方無主症證據，不得高於被證實的組成方",
+        };
+      }
+    }
   }
 
   function scoreFormulaByName(name, patient) {

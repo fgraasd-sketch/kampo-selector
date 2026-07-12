@@ -2513,6 +2513,13 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book-physician",
           "page": 272
+        },
+        {
+          "raw": "脈浮",
+          "id": "S-PULSE-FLOATING",
+          "negated": false,
+          "matchType": "book-physician",
+          "page": 272
         }
       ],
       "herbs": [],
@@ -2527,7 +2534,8 @@ window.X4KbData = {
         "S-OLIGURIA",
         "S-SPONTANEOUS-SWEAT",
         "S-THIRST",
-        "S-MUSCLE-PAIN"
+        "S-MUSCLE-PAIN",
+        "S-PULSE-FLOATING"
       ],
       "formulaPattern": [
         "虛實夾雜"
@@ -2763,6 +2771,13 @@ window.X4KbData = {
           "id": "!S-THIRST",
           "negated": false,
           "fromIndications": true
+        },
+        {
+          "raw": "惡風",
+          "id": "S-COLD",
+          "negated": false,
+          "matchType": "book-physician",
+          "page": 261
         }
       ],
       "herbs": [
@@ -2775,7 +2790,8 @@ window.X4KbData = {
       ],
       "composedOfFormulas": [],
       "sourceSheets": [
-        "水滯 皮膚關節型"
+        "水滯 皮膚關節型",
+        "《漢方臨床診療學》p.261"
       ],
       "indications": [
         "!S-THIRST",
@@ -2783,7 +2799,8 @@ window.X4KbData = {
         "S-EDEMA",
         "S-FACIAL-FLUSH",
         "S-MUSCLE-SOFT",
-        "S-OLIGURIA"
+        "S-OLIGURIA",
+        "S-COLD"
       ],
       "formulaPattern": [
         "虛證"
@@ -4129,7 +4146,26 @@ window.X4KbData = {
       ],
       "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。",
       "confidence": "中",
-      "draft": true
+      "draft": true,
+      "bookPages": [
+        345
+      ],
+      "bookSymptoms": [],
+      "bookCorroborated": [
+        {
+          "id": "S-OLIGURIA",
+          "canonical": "尿量減少",
+          "page": 345
+        },
+        {
+          "id": "S-DIZZINESS",
+          "canonical": "眩暈",
+          "page": 345
+        }
+      ],
+      "channelStages": [
+        "少陽"
+      ]
     },
     {
       "id": "F-0005",
@@ -4580,7 +4616,74 @@ window.X4KbData = {
       ],
       "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。",
       "confidence": "高",
-      "draft": true
+      "draft": true,
+      "bookPages": [
+        294
+      ],
+      "bookSymptoms": [
+        {
+          "id": "S-PALPITATION",
+          "canonical": "心悸",
+          "term": "搏動",
+          "page": 294,
+          "section": "證候特徵",
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-URINARY-FREQUENCY",
+          "canonical": "尿頻",
+          "term": "尿頻",
+          "page": 294,
+          "section": "證候特徵",
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-NEURALGIA",
+          "canonical": "神經痛",
+          "term": "神經痛",
+          "page": 294,
+          "section": "適應病症",
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-LOW-BACK-PAIN",
+          "canonical": "腰痛",
+          "term": "腰痛",
+          "page": 294,
+          "section": "適應病症",
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-NOCTURIA",
+          "canonical": "夜尿頻",
+          "term": "夜尿",
+          "page": 294,
+          "section": "適應病症",
+          "physicianDecision": "accept-secondary"
+        }
+      ],
+      "bookCorroborated": [
+        {
+          "id": "S-LOW-BACK-HEAVY",
+          "canonical": "腰部沉重感",
+          "page": 294
+        },
+        {
+          "id": "S-COLD",
+          "canonical": "發冷",
+          "page": 294
+        }
+      ],
+      "channelStages": [
+        "太陰"
+      ],
+      "bookNegated": [
+        {
+          "id": "S-THIRST",
+          "canonical": "口渴",
+          "page": 294
+        }
+      ]
     },
     {
       "id": "F-0072",
@@ -6028,7 +6131,56 @@ window.X4KbData = {
       ],
       "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。",
       "confidence": "中",
-      "draft": true
+      "draft": true,
+      "bookPages": [
+        263
+      ],
+      "bookSymptoms": [
+        {
+          "id": "S-HEADACHE",
+          "canonical": "頭痛",
+          "term": "頭痛",
+          "page": 263,
+          "section": "證候特徵",
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-HEAT-SENSATION",
+          "canonical": "熱感",
+          "term": "熱感",
+          "page": 263,
+          "section": "證候特徵",
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-FATIGUE",
+          "canonical": "易疲勞",
+          "term": "胃腸虛弱",
+          "page": 263,
+          "section": "適應病症",
+          "physicianDecision": "accept-secondary"
+        }
+      ],
+      "bookCorroborated": [
+        {
+          "id": "S-HOT-FLUSH",
+          "canonical": "烘熱",
+          "page": 263
+        },
+        {
+          "id": "S-PALPITATION",
+          "canonical": "心悸",
+          "page": 263
+        },
+        {
+          "id": "S-THIRST",
+          "canonical": "口渴",
+          "page": 263
+        }
+      ],
+      "channelStages": [
+        "少陽"
+      ]
     },
     {
       "id": "F-0080",
@@ -6769,7 +6921,82 @@ window.X4KbData = {
       ],
       "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。",
       "confidence": "中",
-      "draft": true
+      "draft": true,
+      "bookPages": [
+        310
+      ],
+      "bookSymptoms": [
+        {
+          "id": "S-APPETITE-LOW",
+          "canonical": "食欲不振",
+          "term": "食慾不振",
+          "page": 310,
+          "section": "證候特徵",
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-GASTRIC-SPLASH",
+          "canonical": "胃部振水音",
+          "term": "振水音",
+          "page": 310,
+          "section": "證候特徵",
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-HEAT-TOXIN",
+          "canonical": "炎症",
+          "term": "炎症",
+          "page": 310,
+          "section": "適應病症",
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-VOMITING",
+          "canonical": "嘔吐",
+          "term": "嘔吐",
+          "page": 310,
+          "section": "適應病症",
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-ABDOMINAL-WEAKNESS",
+          "canonical": "腹力弱",
+          "term": "腹力軟弱",
+          "page": 310,
+          "section": "病期病態",
+          "physicianDecision": "accept-secondary"
+        }
+      ],
+      "bookCorroborated": [
+        {
+          "id": "S-FATIGUE",
+          "canonical": "易疲勞",
+          "page": 310
+        },
+        {
+          "id": "S-COLD",
+          "canonical": "發冷",
+          "page": 310
+        },
+        {
+          "id": "S-DIARRHEA",
+          "canonical": "腹瀉",
+          "page": 310
+        },
+        {
+          "id": "S-EPIGASTRIC-PAIN",
+          "canonical": "胃痛",
+          "page": 310
+        },
+        {
+          "id": "S-CHEST-OPPRESSION",
+          "canonical": "胸悶",
+          "page": 310
+        }
+      ],
+      "channelStages": [
+        "太陰"
+      ]
     },
     {
       "id": "F-0016",
@@ -9341,7 +9568,38 @@ window.X4KbData = {
       ],
       "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。",
       "confidence": "中",
-      "draft": true
+      "draft": true,
+      "bookPages": [
+        340
+      ],
+      "bookSymptoms": [
+        {
+          "id": "S-COLD",
+          "canonical": "發冷",
+          "term": "下肢發冷",
+          "page": 340,
+          "section": "證候特徵",
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-MENSTRUAL-IRREGULAR",
+          "canonical": "月經不調",
+          "term": "月經不調",
+          "page": 340,
+          "section": "適應病症",
+          "physicianDecision": "accept-secondary"
+        }
+      ],
+      "bookCorroborated": [
+        {
+          "id": "S-ABDOMINAL-TENDERNESS",
+          "canonical": "腹部壓痛",
+          "page": 340
+        }
+      ],
+      "channelStages": [
+        "太陰"
+      ]
     },
     {
       "id": "F-0024",
@@ -10759,7 +11017,87 @@ window.X4KbData = {
       ],
       "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。",
       "confidence": "高",
-      "draft": true
+      "draft": true,
+      "bookPages": [
+        245
+      ],
+      "bookSymptoms": [
+        {
+          "id": "S-ANXIETY",
+          "canonical": "精神不安",
+          "term": "精神不安",
+          "page": 245,
+          "section": "證候特徵",
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-APPETITE-LOW",
+          "canonical": "食欲不振",
+          "term": "食慾不振",
+          "page": 245,
+          "section": "證候特徵",
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-DEPRESSION",
+          "canonical": "抑鬱",
+          "term": "抑鬱傾向",
+          "page": 245,
+          "section": "證候特徵",
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-THROAT-BLOCK",
+          "canonical": "喉部堵塞感",
+          "term": "異物感",
+          "page": 245,
+          "section": "證候特徵",
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-ABDOMINAL-TENDERNESS",
+          "canonical": "腹部壓痛",
+          "term": "壓痛",
+          "page": 245,
+          "section": "證候特徵",
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-COUGH",
+          "canonical": "咳嗽",
+          "term": "咳嗽",
+          "page": 245,
+          "section": "證候特徵",
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-ASTHMA-WHEEZE",
+          "canonical": "喘息",
+          "term": "哮喘",
+          "page": 245,
+          "section": "適應病症",
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-FATIGUE",
+          "canonical": "易疲勞",
+          "term": "虛弱",
+          "page": 245,
+          "section": "適應病症",
+          "physicianDecision": "accept-secondary"
+        }
+      ],
+      "bookCorroborated": [
+        {
+          "id": "S-CHEST-RIB-FULLNESS",
+          "canonical": "胸脇苦滿",
+          "page": 245
+        }
+      ],
+      "channelStages": [
+        "少陽"
+      ],
+      "bookCautions": "偶見聞質性肺炎，如果出現則停藥，進行相應治療。"
     },
     {
       "id": "F-0040",
@@ -12952,6 +13290,13 @@ window.X4KbData = {
           "matchType": "exact"
         },
         {
+          "raw": "身體疼痛",
+          "id": "S-MUSCLE-PAIN",
+          "negated": false,
+          "matchType": "book-physician",
+          "page": 275
+        },
+        {
           "raw": "惡寒",
           "id": "S-COLD",
           "negated": false,
@@ -12975,6 +13320,13 @@ window.X4KbData = {
         {
           "raw": "汗出",
           "id": "S-SPONTANEOUS-SWEAT",
+          "negated": false,
+          "matchType": "book-physician",
+          "page": 275
+        },
+        {
+          "raw": "脈浮",
+          "id": "S-PULSE-FLOATING",
           "negated": false,
           "matchType": "book-physician",
           "page": 275
@@ -13005,10 +13357,12 @@ window.X4KbData = {
         "S-MUSCLE-SPASM",
         "S-NECK-STIFF",
         "S-NIGHT-SWEAT",
+        "S-MUSCLE-PAIN",
         "S-COLD",
         "S-FEVER",
         "S-HEADACHE",
         "S-SPONTANEOUS-SWEAT",
+        "S-PULSE-FLOATING",
         "S-JOINT-PAIN"
       ],
       "formulaPattern": [
@@ -15923,7 +16277,83 @@ window.X4KbData = {
       ],
       "notes": "Excel 有此方名，但本次草稿未補足可靠標準組成；請人工補方。",
       "confidence": "低",
-      "draft": true
+      "draft": true,
+      "bookPages": [
+        278
+      ],
+      "bookSymptoms": [
+        {
+          "id": "S-JOINT-PAIN",
+          "canonical": "關節痛",
+          "term": "關節痛",
+          "page": 278,
+          "section": "證候特徵",
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-ASTHMA-WHEEZE",
+          "canonical": "喘息",
+          "term": "喘鳴",
+          "page": 278,
+          "section": "證候特徵",
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-DEPRESSION",
+          "canonical": "抑鬱",
+          "term": "抑鬱",
+          "page": 278,
+          "section": "證候特徵",
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-HEADACHE",
+          "canonical": "頭痛",
+          "term": "頭痛",
+          "page": 278,
+          "section": "證候特徵",
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-LOW-BACK-PAIN",
+          "canonical": "腰痛",
+          "term": "腰痛",
+          "page": 278,
+          "section": "證候特徵",
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-NEURALGIA",
+          "canonical": "神經痛",
+          "term": "神經痛",
+          "page": 278,
+          "section": "適應病症",
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-FATIGUE",
+          "canonical": "易疲勞",
+          "term": "虛弱",
+          "page": 278,
+          "section": "適應病症",
+          "physicianDecision": "accept-secondary"
+        }
+      ],
+      "bookCorroborated": [
+        {
+          "id": "S-COLD",
+          "canonical": "發冷",
+          "page": 278
+        },
+        {
+          "id": "S-COUGH",
+          "canonical": "咳嗽",
+          "page": 278
+        }
+      ],
+      "channelStages": [
+        "少陰"
+      ]
     },
     {
       "id": "F-0068",
@@ -16984,6 +17414,14 @@ window.X4KbData = {
           "page": 352,
           "section": "適應病症",
           "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-PULSE-FLOATING",
+          "canonical": "脈浮",
+          "term": "脈浮",
+          "page": 352,
+          "section": "適應病症",
+          "physicianDecision": "accept-secondary"
         }
       ],
       "bookCorroborated": [
@@ -17761,7 +18199,94 @@ window.X4KbData = {
       ],
       "notes": "Excel 藥物表有車前子代表方；需與濟生腎氣丸/牛車腎氣丸版本差異人工確認。",
       "confidence": "低",
-      "draft": true
+      "draft": true,
+      "bookPages": [
+        287
+      ],
+      "bookSymptoms": [
+        {
+          "id": "S-COLD",
+          "canonical": "發冷",
+          "term": "四肢發冷",
+          "page": 287,
+          "section": "證候特徵",
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-FATIGUE",
+          "canonical": "易疲勞",
+          "term": "無力",
+          "page": 287,
+          "section": "證候特徵",
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-THIRST",
+          "canonical": "口渴",
+          "term": "口渴",
+          "page": 287,
+          "section": "證候特徵",
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-HYPERTENSION",
+          "canonical": "高血壓",
+          "term": "高血壓",
+          "page": 287,
+          "section": "適應病症",
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-NEURALGIA",
+          "canonical": "神經痛",
+          "term": "神經痛",
+          "page": 287,
+          "section": "適應病症",
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-LOWER-ABDOMEN-NUMB",
+          "canonical": "小腹不仁",
+          "term": "小腹不仁",
+          "page": 287,
+          "section": "病期病態",
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-JOINT-PAIN",
+          "canonical": "關節痛",
+          "term": "關節痛",
+          "page": 287,
+          "section": "病期病態",
+          "physicianDecision": "accept-secondary"
+        }
+      ],
+      "bookCorroborated": [
+        {
+          "id": "S-OLIGURIA",
+          "canonical": "尿量減少",
+          "page": 287
+        },
+        {
+          "id": "S-EDEMA",
+          "canonical": "浮腫",
+          "page": 287
+        },
+        {
+          "id": "S-LOW-BACK-PAIN",
+          "canonical": "腰痛",
+          "page": 287
+        },
+        {
+          "id": "S-NOCTURIA",
+          "canonical": "夜尿頻",
+          "page": 287
+        }
+      ],
+      "channelStages": [
+        "太陰"
+      ],
+      "bookCautions": "易出現烘熱感者，胃腸虛弱者。"
     },
     {
       "id": "F-BOOK-001",
@@ -17908,6 +18433,74 @@ window.X4KbData = {
     },
     {
       "id": "F-BOOK-003",
+      "name": "十棗湯",
+      "category": "書籍補充（漢方臨床診療學）",
+      "xushiClass": "實證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 1,
+        "QI_YU": 1,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0.1429,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0.2,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "book-derived",
+      "keySymptoms": [
+        {
+          "raw": "心窩部疼痛",
+          "id": "S-EPIGASTRIC-PAIN",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "呼吸困難",
+          "id": "S-ASTHMA-WHEEZE",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "胸痛",
+          "id": "S-CHEST-OPPRESSION",
+          "negated": false,
+          "matchType": "book"
+        }
+      ],
+      "herbs": [],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《漢方臨床診療學》p.317"
+      ],
+      "indications": [
+        "S-EPIGASTRIC-PAIN",
+        "S-ASTHMA-WHEEZE",
+        "S-CHEST-OPPRESSION"
+      ],
+      "formulaPattern": "",
+      "notes": "書籍補充：十棗湯（OCR 標題，已人工校名）",
+      "confidence": "book_ocr_draft",
+      "draft": true,
+      "bookPages": [
+        317
+      ],
+      "bookCautions": "",
+      "channelStages": [
+        "少陽"
+      ]
+    },
+    {
+      "id": "F-BOOK-004",
       "name": "三物黃芩湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛實夾雜",
@@ -18003,7 +18596,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-004",
+      "id": "F-BOOK-005",
       "name": "大承氣湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "實證",
@@ -18083,7 +18676,89 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-005",
+      "id": "F-BOOK-006",
+      "name": "大青龍湯",
+      "category": "書籍補充（漢方臨床診療學）",
+      "xushiClass": "實證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 1,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0.1429,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0.2,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0.2,
+        "FEI-YINXU": 0.2,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0.1111
+      },
+      "vectorSource": "book-derived",
+      "keySymptoms": [
+        {
+          "raw": "精神不安",
+          "id": "S-ANXIETY",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "關節痛",
+          "id": "S-JOINT-PAIN",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "肌肉痛",
+          "id": "S-MUSCLE-PAIN",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "咳嗽",
+          "id": "S-COUGH",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "口渴",
+          "id": "S-THIRST",
+          "negated": false,
+          "matchType": "book"
+        }
+      ],
+      "herbs": [],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《漢方臨床診療學》p.254"
+      ],
+      "indications": [
+        "S-ANXIETY",
+        "S-JOINT-PAIN",
+        "S-MUSCLE-PAIN",
+        "S-COUGH",
+        "S-THIRST"
+      ],
+      "formulaPattern": "",
+      "notes": "書籍補充：大青龍湯（OCR 標題，已人工校名）",
+      "confidence": "book_ocr_draft",
+      "draft": true,
+      "bookPages": [
+        254
+      ],
+      "bookCautions": "",
+      "channelStages": [
+        "太陽"
+      ]
+    },
+    {
+      "id": "F-BOOK-007",
       "name": "大建中湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛證",
@@ -18170,7 +18845,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-006",
+      "id": "F-BOOK-008",
       "name": "大柴胡湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "實證",
@@ -18310,7 +18985,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-007",
+      "id": "F-BOOK-009",
       "name": "大黃甘草湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛實夾雜",
@@ -18364,7 +19039,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-008",
+      "id": "F-BOOK-010",
       "name": "大黃附子湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "實證",
@@ -18418,7 +19093,8 @@ window.X4KbData = {
       "herbs": [],
       "composedOfFormulas": [],
       "sourceSheets": [
-        "《漢方臨床診療學》p.249"
+        "《漢方臨床診療學》p.249",
+        "《漢方臨床診療學》p.254"
       ],
       "indications": [
         "S-COLD",
@@ -18431,32 +19107,34 @@ window.X4KbData = {
       "confidence": "book_ocr_draft",
       "draft": true,
       "bookPages": [
-        249
+        249,
+        254
       ],
       "bookCautions": "",
       "channelStages": [
-        "太陰"
+        "太陰",
+        "少陰"
       ]
     },
     {
-      "id": "F-BOOK-009",
+      "id": "F-BOOK-011",
       "name": "小柴胡湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛實夾雜",
       "patternVector": {
         "QI_XU": 1,
         "QI_NI": 0,
-        "QI_YU": 1,
+        "QI_YU": 0,
         "XUE_XU": 0,
         "YU_XUE": 0,
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.2857,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0.25,
-        "XIN-XUEXU": 0.2,
-        "PI-QIXU": 0.6,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0.4,
         "PI-YANGXU": 0,
         "FEI-QIXU": 0.2,
         "FEI-YINXU": 0.2,
@@ -18466,32 +19144,8 @@ window.X4KbData = {
       "vectorSource": "book-derived",
       "keySymptoms": [
         {
-          "raw": "腹部膨滿感",
-          "id": "S-ABDOMINAL-DISTENSION",
-          "negated": false,
-          "matchType": "book"
-        },
-        {
-          "raw": "精神不安",
-          "id": "S-ANXIETY",
-          "negated": false,
-          "matchType": "book"
-        },
-        {
           "raw": "食慾不振",
           "id": "S-APPETITE-LOW",
-          "negated": false,
-          "matchType": "book"
-        },
-        {
-          "raw": "精神症狀",
-          "id": "S-MENTAL-SYMPTOMS",
-          "negated": false,
-          "matchType": "book"
-        },
-        {
-          "raw": "便秘",
-          "id": "S-CONSTIPATION",
           "negated": false,
           "matchType": "book"
         },
@@ -18528,11 +19182,7 @@ window.X4KbData = {
         "《漢方臨床診療學》p.333"
       ],
       "indications": [
-        "S-ABDOMINAL-DISTENSION",
-        "S-ANXIETY",
         "S-APPETITE-LOW",
-        "S-MENTAL-SYMPTOMS",
-        "S-CONSTIPATION",
         "S-FATIGUE",
         "S-FEVER",
         "S-CHEST-RIB-FULLNESS"
@@ -18544,13 +19194,13 @@ window.X4KbData = {
       "bookPages": [
         333
       ],
-      "bookCautions": "體力明顯衰弱者。",
+      "bookCautions": "體力明顯衰弱者。；偶見過敏性間質性肺炎，肝功能障礙。發生肌病《〈低鉀血證導致 ) ( 脫力感，肌力低下，肌肉痛，四肢疙攣、麻將等橫紋肌溶解症 )，可出現 CK 上升、血中及尿中肌紅蛋白上升，停止用藥，進行相應處置。[ 並用 ]1 ) 支氣管炎等伴有咽喉不適感的場合，並用半夏厚朴湯。2 ) 肝功能障礙伴有黃痊者，並用黃陳功湯。；體力明顯衰弱者。",
       "channelStages": [
         "少陽"
       ]
     },
     {
-      "id": "F-BOOK-010",
+      "id": "F-BOOK-012",
       "name": "川芎茶調散",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛實夾雜",
@@ -18625,7 +19275,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-011",
+      "id": "F-BOOK-013",
       "name": "五虎湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "實證",
@@ -18721,7 +19371,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-012",
+      "id": "F-BOOK-014",
       "name": "五淋散",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛實夾雜",
@@ -18803,7 +19453,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-013",
+      "id": "F-BOOK-015",
       "name": "五積散",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛實夾雜",
@@ -18838,6 +19488,12 @@ window.X4KbData = {
         {
           "raw": "月經不調",
           "id": "S-MENSTRUAL-IRREGULAR",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "項背強凝",
+          "id": "S-SHOULDER-STIFF",
           "negated": false,
           "matchType": "book"
         },
@@ -18898,6 +19554,7 @@ window.X4KbData = {
       "indications": [
         "S-LOWER-ABDOMINAL-PAIN",
         "S-MENSTRUAL-IRREGULAR",
+        "S-SHOULDER-STIFF",
         "S-JOINT-PAIN",
         "S-COLD",
         "S-DYSMENORRHEA",
@@ -18920,7 +19577,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-014",
+      "id": "F-BOOK-016",
       "name": "分心氣飲",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "未分類",
@@ -18999,7 +19656,86 @@ window.X4KbData = {
       "bookCautions": ""
     },
     {
-      "id": "F-BOOK-015",
+      "id": "F-BOOK-017",
+      "name": "分消湯",
+      "category": "書籍補充（漢方臨床診療學）",
+      "xushiClass": "實證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 1
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0.25,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0.2,
+        "PI-YANGXU": 0.3333,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0.2,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "book-derived",
+      "keySymptoms": [
+        {
+          "raw": "腹部膨滿感",
+          "id": "S-ABDOMINAL-DISTENSION",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "尿量減少",
+          "id": "S-OLIGURIA",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "腹水",
+          "id": "S-ASCITES-PLEURAL-EFFUSION",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "便秘",
+          "id": "S-CONSTIPATION",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "浮腫",
+          "id": "S-EDEMA",
+          "negated": false,
+          "matchType": "book"
+        }
+      ],
+      "herbs": [],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《漢方臨床診療學》p.261"
+      ],
+      "indications": [
+        "S-ABDOMINAL-DISTENSION",
+        "S-OLIGURIA",
+        "S-ASCITES-PLEURAL-EFFUSION",
+        "S-CONSTIPATION",
+        "S-EDEMA"
+      ],
+      "formulaPattern": "",
+      "notes": "書籍補充：分消湯（OCR 標題，已人工校名）",
+      "confidence": "book_ocr_draft",
+      "draft": true,
+      "bookPages": [
+        261
+      ],
+      "bookCautions": ""
+    },
+    {
+      "id": "F-BOOK-018",
       "name": "升麻葛根湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛實夾雜",
@@ -19026,6 +19762,12 @@ window.X4KbData = {
       "vectorSource": "book-derived",
       "keySymptoms": [
         {
+          "raw": "身體疼痛",
+          "id": "S-MUSCLE-PAIN",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
           "raw": "發熱",
           "id": "S-FEVER",
           "negated": false,
@@ -19044,6 +19786,7 @@ window.X4KbData = {
         "《漢方臨床診療學》p.314"
       ],
       "indications": [
+        "S-MUSCLE-PAIN",
         "S-FEVER",
         "S-HEADACHE"
       ],
@@ -19060,7 +19803,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-016",
+      "id": "F-BOOK-019",
       "name": "加味歸脾湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛實夾雜",
@@ -19128,7 +19871,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-017",
+      "id": "F-BOOK-020",
       "name": "甘草湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛實夾雜",
@@ -19191,7 +19934,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-018",
+      "id": "F-BOOK-021",
       "name": "甘麥大棗湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛證",
@@ -19259,7 +20002,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-019",
+      "id": "F-BOOK-022",
       "name": "白虎加人參湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "實證",
@@ -19327,7 +20070,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-020",
+      "id": "F-BOOK-023",
       "name": "白虎加桂枝湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "實證",
@@ -19388,7 +20131,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-021",
+      "id": "F-BOOK-024",
       "name": "白虎湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "實證",
@@ -19449,7 +20192,68 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-022",
+      "id": "F-BOOK-025",
+      "name": "立效散",
+      "category": "書籍補充（漢方臨床診療學）",
+      "xushiClass": "虛實夾雜",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "book-derived",
+      "keySymptoms": [
+        {
+          "raw": "口腔",
+          "id": "S-HEAT-TOXIN",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "神經痛",
+          "id": "S-NEURALGIA",
+          "negated": false,
+          "matchType": "book"
+        }
+      ],
+      "herbs": [],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《漢方臨床診療學》p.292"
+      ],
+      "indications": [
+        "S-HEAT-TOXIN",
+        "S-NEURALGIA"
+      ],
+      "formulaPattern": "",
+      "notes": "書籍補充：立效散（OCR 標題，已人工校名）",
+      "confidence": "book_ocr_draft",
+      "draft": true,
+      "bookPages": [
+        292
+      ],
+      "bookCautions": "",
+      "channelStages": [
+        "少陽"
+      ]
+    },
+    {
+      "id": "F-BOOK-026",
       "name": "竹茹溫膽湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛實夾雜",
@@ -19573,7 +20377,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-023",
+      "id": "F-BOOK-027",
       "name": "芎歸調血飲",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛證",
@@ -19669,7 +20473,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-024",
+      "id": "F-BOOK-028",
       "name": "辛夷清肺湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛實夾雜",
@@ -19751,7 +20555,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-025",
+      "id": "F-BOOK-029",
       "name": "延年半夏湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛實夾雜",
@@ -19819,7 +20623,103 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-026",
+      "id": "F-BOOK-030",
+      "name": "附子理中湯",
+      "category": "書籍補充（漢方臨床診療學）",
+      "xushiClass": "虛證",
+      "patternVector": {
+        "QI_XU": 1,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0.5,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0.4,
+        "PI-YANGXU": 0.3333,
+        "FEI-QIXU": 0.2,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0.2,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "book-derived",
+      "keySymptoms": [
+        {
+          "raw": "腹瀉傾向",
+          "id": "S-DIARRHEA",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "胃腸虛弱",
+          "id": "S-FATIGUE",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "胃痛",
+          "id": "S-EPIGASTRIC-PAIN",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "炎症",
+          "id": "S-HEAT-TOXIN",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "頭重",
+          "id": "S-HEAVY-HEAD",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "噁心",
+          "id": "S-NAUSEA",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "發冷",
+          "id": "S-COLD",
+          "negated": false,
+          "matchType": "book"
+        }
+      ],
+      "herbs": [],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《漢方臨床診療學》p.265"
+      ],
+      "indications": [
+        "S-DIARRHEA",
+        "S-FATIGUE",
+        "S-EPIGASTRIC-PAIN",
+        "S-HEAT-TOXIN",
+        "S-HEAVY-HEAD",
+        "S-NAUSEA",
+        "S-COLD"
+      ],
+      "formulaPattern": "",
+      "notes": "書籍補充：附子理中湯（OCR 標題，已人工校名）",
+      "confidence": "book_ocr_draft",
+      "draft": true,
+      "bookPages": [
+        265
+      ],
+      "bookCautions": "妊娠或可能為妊娠者。；1 ) 電解質紊亂 (長期連續使用可能引起假性醛固酮增多症 )，若發生則應停藥。低鉀血癥者可能引起肌病。2 ) 皮疹，皮膚髮紅，烘熱感，心慌孝動。[ 相互作用 ] 與吶塞米、利尿酸、吵嗪類利尿劑等同用，可能引起低鉀血癥。",
+      "channelStages": [
+        "太陰"
+      ]
+    },
+    {
+      "id": "F-BOOK-031",
       "name": "附子粳米湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛實夾雜",
@@ -19873,7 +20773,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-027",
+      "id": "F-BOOK-032",
       "name": "附子瀉心湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "未分類",
@@ -19938,7 +20838,255 @@ window.X4KbData = {
       "bookCautions": ""
     },
     {
-      "id": "F-BOOK-028",
+      "id": "F-BOOK-033",
+      "name": "厚朴生薑半夏甘草人參湯",
+      "category": "書籍補充（漢方臨床診療學）",
+      "xushiClass": "虛證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 1,
+        "QI_YU": 1,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 1
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0.2,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "book-derived",
+      "keySymptoms": [
+        {
+          "raw": "腹部膨滿",
+          "id": "S-ABDOMINAL-DISTENSION",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "便秘",
+          "id": "S-CONSTIPATION",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "噁心",
+          "id": "S-NAUSEA",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "嘔吐",
+          "id": "S-VOMITING",
+          "negated": false,
+          "matchType": "book"
+        }
+      ],
+      "herbs": [],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《漢方臨床診療學》p.283"
+      ],
+      "indications": [
+        "S-ABDOMINAL-DISTENSION",
+        "S-CONSTIPATION",
+        "S-NAUSEA",
+        "S-VOMITING"
+      ],
+      "formulaPattern": "",
+      "notes": "書籍補充：厚朴生薑半夏甘草人參湯（OCR 標題，已人工校名）",
+      "confidence": "book_ocr_draft",
+      "draft": true,
+      "bookPages": [
+        283
+      ],
+      "bookCautions": "",
+      "channelStages": [
+        "太陰"
+      ]
+    },
+    {
+      "id": "F-BOOK-034",
+      "name": "枳實薤白桂枝湯",
+      "category": "書籍補充（漢方臨床診療學）",
+      "xushiClass": "虛實夾雜",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 1,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0.1429,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0.2,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0.2,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "book-derived",
+      "keySymptoms": [
+        {
+          "raw": "腹部膨滿感",
+          "id": "S-ABDOMINAL-DISTENSION",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "胸內苦悶感",
+          "id": "S-CHEST-OPPRESSION",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "神經痛",
+          "id": "S-NEURALGIA",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "哮喘",
+          "id": "S-ASTHMA-WHEEZE",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "抑鬱",
+          "id": "S-DEPRESSION",
+          "negated": false,
+          "matchType": "book"
+        }
+      ],
+      "herbs": [],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《漢方臨床診療學》p.291"
+      ],
+      "indications": [
+        "S-ABDOMINAL-DISTENSION",
+        "S-CHEST-OPPRESSION",
+        "S-NEURALGIA",
+        "S-ASTHMA-WHEEZE",
+        "S-DEPRESSION"
+      ],
+      "formulaPattern": "",
+      "notes": "書籍補充：枳實薤白桂枝湯（OCR 標題，已人工校名）",
+      "confidence": "book_ocr_draft",
+      "draft": true,
+      "bookPages": [
+        291
+      ],
+      "bookCautions": "",
+      "channelStages": [
+        "少陽",
+        "太陰"
+      ]
+    },
+    {
+      "id": "F-BOOK-035",
+      "name": "枳縮二陳湯",
+      "category": "書籍補充（漢方臨床診療學）",
+      "xushiClass": "虛實夾雜",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 1
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0.1429,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "book-derived",
+      "keySymptoms": [
+        {
+          "raw": "振水音",
+          "id": "S-GASTRIC-SPLASH",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "抑鬱",
+          "id": "S-DEPRESSION",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "頭痛",
+          "id": "S-HEADACHE",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "頭重",
+          "id": "S-HEAVY-HEAD",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "噁心",
+          "id": "S-NAUSEA",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "嘔吐",
+          "id": "S-VOMITING",
+          "negated": false,
+          "matchType": "book"
+        }
+      ],
+      "herbs": [],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《漢方臨床診療學》p.345"
+      ],
+      "indications": [
+        "S-GASTRIC-SPLASH",
+        "S-DEPRESSION",
+        "S-HEADACHE",
+        "S-HEAVY-HEAD",
+        "S-NAUSEA",
+        "S-VOMITING"
+      ],
+      "formulaPattern": "",
+      "notes": "書籍補充：枳縮二陳湯（OCR 標題，已人工校名）",
+      "confidence": "book_ocr_draft",
+      "draft": true,
+      "bookPages": [
+        345
+      ],
+      "bookCautions": "",
+      "channelStages": [
+        "少陽",
+        "太陰"
+      ]
+    },
+    {
+      "id": "F-BOOK-036",
       "name": "柴胡桂枝乾薑湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛證",
@@ -20028,7 +21176,146 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-029",
+      "id": "F-BOOK-037",
+      "name": "柴胡桂枝湯",
+      "category": "書籍補充（漢方臨床診療學）",
+      "xushiClass": "虛證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 1,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0.4286,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0.25,
+        "XIN-XUEXU": 0.4,
+        "PI-QIXU": 0.2,
+        "PI-YANGXU": 0.3333,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0.2,
+        "SHEN-YANGXU": 0.1,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "book-derived",
+      "keySymptoms": [
+        {
+          "raw": "腹直肌拘攣",
+          "id": "S-MUSCLE-SPASM",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "精神不安",
+          "id": "S-ANXIETY",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "食慾不振",
+          "id": "S-APPETITE-LOW",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "胸脅苦滿",
+          "id": "S-CHEST-RIB-FULLNESS",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "關節痛",
+          "id": "S-JOINT-PAIN",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "腹痛",
+          "id": "S-ABDOMINAL-PAIN",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "壓痛",
+          "id": "S-ABDOMINAL-TENDERNESS",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "惡寒",
+          "id": "S-COLD",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "發熱",
+          "id": "S-FEVER",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "頭痛",
+          "id": "S-HEADACHE",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "失眠",
+          "id": "S-INSOMNIA",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "口苦",
+          "id": "S-BITTER-TASTE",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "噁心",
+          "id": "S-NAUSEA",
+          "negated": false,
+          "matchType": "book"
+        }
+      ],
+      "herbs": [],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《漢方臨床診療學》p.243"
+      ],
+      "indications": [
+        "S-MUSCLE-SPASM",
+        "S-ANXIETY",
+        "S-APPETITE-LOW",
+        "S-CHEST-RIB-FULLNESS",
+        "S-JOINT-PAIN",
+        "S-ABDOMINAL-PAIN",
+        "S-ABDOMINAL-TENDERNESS",
+        "S-COLD",
+        "S-FEVER",
+        "S-HEADACHE",
+        "S-INSOMNIA",
+        "S-BITTER-TASTE",
+        "S-NAUSEA"
+      ],
+      "formulaPattern": "",
+      "notes": "書籍補充：柴胡桂枝湯（OCR 標題，已人工校名）",
+      "confidence": "book_ocr_draft",
+      "draft": true,
+      "bookPages": [
+        243
+      ],
+      "bookCautions": "",
+      "channelStages": [
+        "少陽",
+        "太陽"
+      ]
+    },
+    {
+      "id": "F-BOOK-038",
       "name": "桂枝加大黃湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛實夾雜",
@@ -20117,7 +21404,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-030",
+      "id": "F-BOOK-039",
       "name": "桂枝加芍藥湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛證",
@@ -20233,7 +21520,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-031",
+      "id": "F-BOOK-040",
       "name": "桂枝加附子湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛證",
@@ -20301,7 +21588,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-032",
+      "id": "F-BOOK-041",
       "name": "桂枝加厚朴杏仁湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛證",
@@ -20316,13 +21603,13 @@ window.X4KbData = {
       "zangFuVector": {
         "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0,
-        "XIN-YANGXU": 0.25,
+        "XIN-YANGXU": 0.5,
         "XIN-XUEXU": 0,
         "PI-QIXU": 0.2,
-        "PI-YANGXU": 0,
-        "FEI-QIXU": 0.4,
+        "PI-YANGXU": 0.1667,
+        "FEI-QIXU": 0.6,
         "FEI-YINXU": 0.2,
-        "SHEN-YANGXU": 0,
+        "SHEN-YANGXU": 0.1,
         "SHEN-YINXU": 0
       },
       "vectorSource": "book-derived",
@@ -20334,83 +21621,19 @@ window.X4KbData = {
           "matchType": "book"
         },
         {
+          "raw": "身體疼痛",
+          "id": "S-MUSCLE-PAIN",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
           "raw": "咳喘",
           "id": "S-ASTHMA-WHEEZE",
           "negated": false,
           "matchType": "book"
         },
         {
-          "raw": "發熱",
-          "id": "S-FEVER",
-          "negated": false,
-          "matchType": "book"
-        },
-        {
-          "raw": "頭痛",
-          "id": "S-HEADACHE",
-          "negated": false,
-          "matchType": "book"
-        },
-        {
-          "raw": "炎症",
-          "id": "S-HEAT-TOXIN",
-          "negated": false,
-          "matchType": "book"
-        }
-      ],
-      "herbs": [],
-      "composedOfFormulas": [],
-      "sourceSheets": [
-        "《漢方臨床診療學》p.274"
-      ],
-      "indications": [
-        "S-FATIGUE",
-        "S-ASTHMA-WHEEZE",
-        "S-FEVER",
-        "S-HEADACHE",
-        "S-HEAT-TOXIN"
-      ],
-      "formulaPattern": "",
-      "notes": "書籍補充：桂枝加厚朴查仁湯（OCR 標題，已人工校名）",
-      "confidence": "book_ocr_draft",
-      "draft": true,
-      "bookPages": [
-        274
-      ],
-      "bookCautions": "",
-      "channelStages": [
-        "太陽"
-      ]
-    },
-    {
-      "id": "F-BOOK-033",
-      "name": "桂枝加葛根湯",
-      "category": "書籍補充（漢方臨床診療學）",
-      "xushiClass": "虛證",
-      "patternVector": {
-        "QI_XU": 1,
-        "QI_NI": 1,
-        "QI_YU": 0,
-        "XUE_XU": 0,
-        "YU_XUE": 0,
-        "SUI_ZHI": 0
-      },
-      "zangFuVector": {
-        "GAN-QIYU": 0.1429,
-        "GAN-YINXU": 0,
-        "XIN-YANGXU": 0.5,
-        "XIN-XUEXU": 0,
-        "PI-QIXU": 0.2,
-        "PI-YANGXU": 0.1667,
-        "FEI-QIXU": 0.4,
-        "FEI-YINXU": 0.2,
-        "SHEN-YANGXU": 0.1,
-        "SHEN-YINXU": 0
-      },
-      "vectorSource": "book-derived",
-      "keySymptoms": [
-        {
-          "raw": "惡寒",
+          "raw": "惡風",
           "id": "S-COLD",
           "negated": false,
           "matchType": "book"
@@ -20422,20 +21645,20 @@ window.X4KbData = {
           "matchType": "book"
         },
         {
-          "raw": "虛弱",
-          "id": "S-FATIGUE",
-          "negated": false,
-          "matchType": "book"
-        },
-        {
           "raw": "頭痛",
           "id": "S-HEADACHE",
           "negated": false,
           "matchType": "book"
         },
         {
-          "raw": "肩凝",
-          "id": "S-SHOULDER-STIFF",
+          "raw": "脈浮",
+          "id": "S-PULSE-FLOATING",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "炎症",
+          "id": "S-HEAT-TOXIN",
           "negated": false,
           "matchType": "book"
         },
@@ -20452,11 +21675,96 @@ window.X4KbData = {
         "《漢方臨床診療學》p.274"
       ],
       "indications": [
+        "S-FATIGUE",
+        "S-MUSCLE-PAIN",
+        "S-ASTHMA-WHEEZE",
         "S-COLD",
         "S-FEVER",
-        "S-FATIGUE",
         "S-HEADACHE",
-        "S-SHOULDER-STIFF",
+        "S-PULSE-FLOATING",
+        "S-HEAT-TOXIN",
+        "S-SPONTANEOUS-SWEAT"
+      ],
+      "formulaPattern": "",
+      "notes": "書籍補充：桂枝加厚朴查仁湯（OCR 標題，已人工校名）",
+      "confidence": "book_ocr_draft",
+      "draft": true,
+      "bookPages": [
+        274
+      ],
+      "bookCautions": "",
+      "channelStages": [
+        "太陽"
+      ]
+    },
+    {
+      "id": "F-BOOK-042",
+      "name": "桂枝加葛根湯",
+      "category": "書籍補充（漢方臨床診療學）",
+      "xushiClass": "虛證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 1,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0.25,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0.1667,
+        "FEI-QIXU": 0.2,
+        "FEI-YINXU": 0.2,
+        "SHEN-YANGXU": 0.1,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "book-derived",
+      "keySymptoms": [
+        {
+          "raw": "身體疼痛",
+          "id": "S-MUSCLE-PAIN",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "惡寒",
+          "id": "S-COLD",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "發熱",
+          "id": "S-FEVER",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "脈浮",
+          "id": "S-PULSE-FLOATING",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "自然汗出",
+          "id": "S-SPONTANEOUS-SWEAT",
+          "negated": false,
+          "matchType": "physician-patch"
+        }
+      ],
+      "herbs": [],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《漢方臨床診療學》p.274"
+      ],
+      "indications": [
+        "S-MUSCLE-PAIN",
+        "S-COLD",
+        "S-FEVER",
+        "S-PULSE-FLOATING",
         "S-SPONTANEOUS-SWEAT"
       ],
       "formulaPattern": "",
@@ -20472,7 +21780,172 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-034",
+      "id": "F-BOOK-043",
+      "name": "桂枝芍藥知母湯",
+      "category": "書籍補充（漢方臨床診療學）",
+      "xushiClass": "虛證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 1,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0.25,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0.1667,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0.1,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "book-derived",
+      "keySymptoms": [
+        {
+          "raw": "關節痛",
+          "id": "S-JOINT-PAIN",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "神經痛",
+          "id": "S-NEURALGIA",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "發冷",
+          "id": "S-COLD",
+          "negated": false,
+          "matchType": "book"
+        }
+      ],
+      "herbs": [],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《漢方臨床診療學》p.280"
+      ],
+      "indications": [
+        "S-JOINT-PAIN",
+        "S-NEURALGIA",
+        "S-COLD"
+      ],
+      "formulaPattern": "",
+      "notes": "書籍補充：桂枝芍藥知母湯（OCR 標題，已人工校名）",
+      "confidence": "book_ocr_draft",
+      "draft": true,
+      "bookPages": [
+        280
+      ],
+      "bookCautions": "1 ) 胃腸虛弱者。2 ) 妊娠或可疑妊娠者。；1 ) 若出現電解質泰亂〈長期使用可能引起假性醛固酮增多症 )，便中止使用。2) 引起低鉀血癥可能導致肌病。3 ) 食慾不振。[ 相互作用 ]1 ) 與交感神經興奮藥物並用可能引起心坪、心動過速。2 ) 與解熱鎮痛藥並用可能引起過度汗出，有時會出現休克。",
+      "channelStages": [
+        "太陽",
+        "少陰"
+      ]
+    },
+    {
+      "id": "F-BOOK-044",
+      "name": "桂枝麻黃各半湯",
+      "category": "書籍補充（漢方臨床診療學）",
+      "xushiClass": "虛實夾雜",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 1,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0.1429,
+        "GAN-YINXU": 0.2,
+        "XIN-YANGXU": 0.25,
+        "XIN-XUEXU": 0.2,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0.1667,
+        "FEI-QIXU": 0.2,
+        "FEI-YINXU": 0.6,
+        "SHEN-YANGXU": 0.1,
+        "SHEN-YINXU": 0.1111
+      },
+      "vectorSource": "book-derived",
+      "keySymptoms": [
+        {
+          "raw": "惡寒",
+          "id": "S-COLD",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "咳嗽",
+          "id": "S-COUGH",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "發熱",
+          "id": "S-FEVER",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "頭痛",
+          "id": "S-HEADACHE",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "熱感",
+          "id": "S-HEAT-SENSATION",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "瘙癢",
+          "id": "S-PRURITUS",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "咽痛",
+          "id": "S-SORE-THROAT",
+          "negated": false,
+          "matchType": "book"
+        }
+      ],
+      "herbs": [],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《漢方臨床診療學》p.279"
+      ],
+      "indications": [
+        "S-COLD",
+        "S-COUGH",
+        "S-FEVER",
+        "S-HEADACHE",
+        "S-HEAT-SENSATION",
+        "S-PRURITUS",
+        "S-SORE-THROAT"
+      ],
+      "formulaPattern": "",
+      "notes": "書籍補充：桂枝麻黃各半湯（OCR 標題，已人工校名）",
+      "confidence": "book_ocr_draft",
+      "draft": true,
+      "bookPages": [
+        279
+      ],
+      "bookCautions": "1 ) 若出現電解質紊亂〈長期使用可能引起假性醛固酮增多症 )，便中止使用。2 ) 引起低鉀血癥可能導致肌病。[ 相互作用 ]1 ) 與交感神經興奮藥物並用可能引起心情、心動過速。2 ) 與解熱鎮痛藥並用可能引起過度汗出，有時會出現休克。",
+      "channelStages": [
+        "太陽"
+      ]
+    },
+    {
+      "id": "F-BOOK-045",
       "name": "桂枝湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛證",
@@ -20498,6 +21971,12 @@ window.X4KbData = {
       },
       "vectorSource": "book-derived",
       "keySymptoms": [
+        {
+          "raw": "身體疼痛",
+          "id": "S-MUSCLE-PAIN",
+          "negated": false,
+          "matchType": "book"
+        },
         {
           "raw": "惡寒",
           "id": "S-COLD",
@@ -20553,6 +22032,7 @@ window.X4KbData = {
         "《漢方臨床診療學》p.280"
       ],
       "indications": [
+        "S-MUSCLE-PAIN",
         "S-COLD",
         "S-FEVER",
         "S-HEADACHE",
@@ -20574,7 +22054,157 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-035",
+      "id": "F-BOOK-046",
+      "name": "桃花湯",
+      "category": "書籍補充（漢方臨床診療學）",
+      "xushiClass": "虛實夾雜",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 1
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0.2,
+        "PI-YANGXU": 0.5,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0.2,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "book-derived",
+      "keySymptoms": [
+        {
+          "raw": "尿量減少",
+          "id": "S-OLIGURIA",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "腹痛",
+          "id": "S-ABDOMINAL-PAIN",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "腹瀉",
+          "id": "S-DIARRHEA",
+          "negated": false,
+          "matchType": "book"
+        }
+      ],
+      "herbs": [],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《漢方臨床診療學》p.322"
+      ],
+      "indications": [
+        "S-OLIGURIA",
+        "S-ABDOMINAL-PAIN",
+        "S-DIARRHEA"
+      ],
+      "formulaPattern": "",
+      "notes": "書籍補充：桃花湯（OCR 標題，已人工校名）",
+      "confidence": "book_ocr_draft",
+      "draft": true,
+      "bookPages": [
+        322
+      ],
+      "bookCautions": "",
+      "channelStages": [
+        "少陰"
+      ]
+    },
+    {
+      "id": "F-BOOK-047",
+      "name": "桔梗石膏",
+      "category": "書籍補充（漢方臨床診療學）",
+      "xushiClass": "虛實夾雜",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0.2,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0.2,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0.2,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0.2222
+      },
+      "vectorSource": "book-derived",
+      "keySymptoms": [
+        {
+          "raw": "皮炎",
+          "id": "S-DERMATITIS",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "發熱",
+          "id": "S-FEVER",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "熱感",
+          "id": "S-HEAT-SENSATION",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "炎症",
+          "id": "S-HEAT-TOXIN",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "口渴",
+          "id": "S-THIRST",
+          "negated": false,
+          "matchType": "book"
+        }
+      ],
+      "herbs": [],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《漢方臨床診療學》p.289"
+      ],
+      "indications": [
+        "S-DERMATITIS",
+        "S-FEVER",
+        "S-HEAT-SENSATION",
+        "S-HEAT-TOXIN",
+        "S-THIRST"
+      ],
+      "formulaPattern": "",
+      "notes": "書籍補充：桔梗石膏（OCR 標題，已人工校名）",
+      "confidence": "book_ocr_draft",
+      "draft": true,
+      "bookPages": [
+        289
+      ],
+      "bookCautions": "1 ) 身體虛弱者。2 ) 自覺發冷甚者。",
+      "channelStages": [
+        "少陽"
+      ]
+    },
+    {
+      "id": "F-BOOK-048",
       "name": "桔梗湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛實夾雜",
@@ -20650,7 +22280,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-036",
+      "id": "F-BOOK-049",
       "name": "消風散",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛實夾雜",
@@ -20718,7 +22348,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-037",
+      "id": "F-BOOK-050",
       "name": "烏頭桂枝湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "實證",
@@ -20800,7 +22430,82 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-038",
+      "id": "F-BOOK-051",
+      "name": "烏頭湯",
+      "category": "書籍補充（漢方臨床診療學）",
+      "xushiClass": "實證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 1,
+        "QI_YU": 1,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0.1429,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0.25,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0.3333,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0.1,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "book-derived",
+      "keySymptoms": [
+        {
+          "raw": "四肢發冷",
+          "id": "S-COLD",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "關節痛",
+          "id": "S-JOINT-PAIN",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "腹痛",
+          "id": "S-ABDOMINAL-PAIN",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "胸痛",
+          "id": "S-CHEST-OPPRESSION",
+          "negated": false,
+          "matchType": "book"
+        }
+      ],
+      "herbs": [],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《漢方臨床診療學》p.324"
+      ],
+      "indications": [
+        "S-COLD",
+        "S-JOINT-PAIN",
+        "S-ABDOMINAL-PAIN",
+        "S-CHEST-OPPRESSION"
+      ],
+      "formulaPattern": "",
+      "notes": "書籍補充：烏頭湯（OCR 標題，已人工校名）",
+      "confidence": "book_ocr_draft",
+      "draft": true,
+      "bookPages": [
+        324
+      ],
+      "bookCautions": "",
+      "channelStages": [
+        "少陰"
+      ]
+    },
+    {
+      "id": "F-BOOK-052",
       "name": "烏藥順氣散",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛實夾雜",
@@ -20869,7 +22574,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-039",
+      "id": "F-BOOK-053",
       "name": "茯苓四逆湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛證",
@@ -20944,7 +22649,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-040",
+      "id": "F-BOOK-054",
       "name": "茵陳蒿湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "實證",
@@ -21019,7 +22724,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-041",
+      "id": "F-BOOK-055",
       "name": "參蘇飲",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛證",
@@ -21115,7 +22820,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-042",
+      "id": "F-BOOK-056",
       "name": "梔子柏皮湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛實夾雜",
@@ -21197,7 +22902,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-043",
+      "id": "F-BOOK-057",
       "name": "清上防風湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "實證",
@@ -21286,7 +22991,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-044",
+      "id": "F-BOOK-058",
       "name": "清肺湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛實夾雜",
@@ -21347,7 +23052,75 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-045",
+      "id": "F-BOOK-059",
+      "name": "麻子仁丸",
+      "category": "書籍補充（漢方臨床診療學）",
+      "xushiClass": "虛實夾雜",
+      "patternVector": {
+        "QI_XU": 1,
+        "QI_NI": 0,
+        "QI_YU": 1,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0.25,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0.4,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0.2,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "book-derived",
+      "keySymptoms": [
+        {
+          "raw": "便秘",
+          "id": "S-CONSTIPATION",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "病後",
+          "id": "S-FATIGUE",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "腹部膨滿感",
+          "id": "S-ABDOMINAL-DISTENSION",
+          "negated": false,
+          "matchType": "book"
+        }
+      ],
+      "herbs": [],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《漢方臨床診療學》p.301"
+      ],
+      "indications": [
+        "S-CONSTIPATION",
+        "S-FATIGUE",
+        "S-ABDOMINAL-DISTENSION"
+      ],
+      "formulaPattern": "",
+      "notes": "書籍補充：麻子仁丸（OCR 標題，已人工校名）",
+      "confidence": "book_ocr_draft",
+      "draft": true,
+      "bookPages": [
+        301
+      ],
+      "bookCautions": "",
+      "channelStages": [
+        "太陰"
+      ]
+    },
+    {
+      "id": "F-BOOK-060",
       "name": "麻杏甘石湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "實證",
@@ -21436,7 +23209,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-046",
+      "id": "F-BOOK-061",
       "name": "麻杏薏甘湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛實夾雜",
@@ -21533,7 +23306,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-047",
+      "id": "F-BOOK-062",
       "name": "麻黃附子甘草湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛實夾雜",
@@ -21608,7 +23381,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-048",
+      "id": "F-BOOK-063",
       "name": "麻黃湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "實證",
@@ -21695,6 +23468,12 @@ window.X4KbData = {
           "matchType": "book"
         },
         {
+          "raw": "脈浮",
+          "id": "S-PULSE-FLOATING",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
           "raw": "無汗",
           "id": "S-NO-SWEAT",
           "negated": false,
@@ -21734,6 +23513,7 @@ window.X4KbData = {
         "S-LOW-BACK-PAIN",
         "S-NASAL-CONGESTION",
         "S-BLEEDING",
+        "S-PULSE-FLOATING",
         "S-NO-SWEAT",
         "S-MUSCLE-PAIN",
         "S-HEADACHE"
@@ -21751,7 +23531,65 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-049",
+      "id": "F-BOOK-064",
+      "name": "紫雲膏",
+      "category": "書籍補充（漢方臨床診療學）",
+      "xushiClass": "未分類",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 1,
+        "YU_XUE": 1,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "book-derived",
+      "keySymptoms": [
+        {
+          "raw": "皮膚乾燥",
+          "id": "S-SKIN-DRY",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "痔",
+          "id": "S-HEMORRHOIDS",
+          "negated": false,
+          "matchType": "book"
+        }
+      ],
+      "herbs": [],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《漢方臨床診療學》p.352"
+      ],
+      "indications": [
+        "S-SKIN-DRY",
+        "S-HEMORRHOIDS"
+      ],
+      "formulaPattern": "",
+      "notes": "書籍補充：紫雲膏（OCR 標題，已人工校名）",
+      "confidence": "book_ocr_draft",
+      "draft": true,
+      "bookPages": [
+        352
+      ],
+      "bookCautions": ""
+    },
+    {
+      "id": "F-BOOK-065",
       "name": "黃芩湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "實證",
@@ -21830,6 +23668,12 @@ window.X4KbData = {
           "id": "S-BITTER-TASTE",
           "negated": false,
           "matchType": "book"
+        },
+        {
+          "raw": "脈浮",
+          "id": "S-PULSE-FLOATING",
+          "negated": false,
+          "matchType": "book"
         }
       ],
       "herbs": [],
@@ -21846,7 +23690,8 @@ window.X4KbData = {
         "S-VOMITING",
         "S-TENESMUS",
         "S-ABDOMINAL-PAIN",
-        "S-BITTER-TASTE"
+        "S-BITTER-TASTE",
+        "S-PULSE-FLOATING"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：黃芬湯（OCR 標題，已人工校名）",
@@ -21862,7 +23707,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-050",
+      "id": "F-BOOK-066",
       "name": "黃耆桂枝五物湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛證",
@@ -21916,7 +23761,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-051",
+      "id": "F-BOOK-067",
       "name": "當歸四逆加吳茱萸生薑湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛證",
@@ -22019,7 +23864,107 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-052",
+      "id": "F-BOOK-068",
+      "name": "當歸芍藥散加附子",
+      "category": "書籍補充（漢方臨床診療學）",
+      "xushiClass": "未分類",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 1,
+        "QI_YU": 0,
+        "XUE_XU": 1,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0.1429,
+        "GAN-YINXU": 0.2,
+        "XIN-YANGXU": 0.25,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0.1667,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0.1,
+        "SHEN-YINXU": 0.1111
+      },
+      "vectorSource": "book-derived",
+      "keySymptoms": [
+        {
+          "raw": "神經痛",
+          "id": "S-NEURALGIA",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "貧血",
+          "id": "S-BLOOD-DEF",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "發冷",
+          "id": "S-COLD",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "痛經",
+          "id": "S-DYSMENORRHEA",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "頭痛",
+          "id": "S-HEADACHE",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "頭重",
+          "id": "S-HEAVY-HEAD",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "肩凝",
+          "id": "S-SHOULDER-STIFF",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "耳鳴",
+          "id": "S-TINNITUS",
+          "negated": false,
+          "matchType": "book"
+        }
+      ],
+      "herbs": [],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《漢方臨床診療學》p.256"
+      ],
+      "indications": [
+        "S-NEURALGIA",
+        "S-BLOOD-DEF",
+        "S-COLD",
+        "S-DYSMENORRHEA",
+        "S-HEADACHE",
+        "S-HEAVY-HEAD",
+        "S-SHOULDER-STIFF",
+        "S-TINNITUS"
+      ],
+      "formulaPattern": "",
+      "notes": "書籍補充：當歸芍藥散加附子（OCR 標題，已人工校名）",
+      "confidence": "book_ocr_draft",
+      "draft": true,
+      "bookPages": [
+        256
+      ],
+      "bookCautions": "1 ) 骨腸虛弱者。2 ) 妊娠及可能為妊娠中的女性。；1 ) 食慾不振，心窩部不適感，腹瀉。2 ) 皮溢、紅赤、頭面其熱、心休。"
+    },
+    {
+      "id": "F-BOOK-069",
       "name": "當歸湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛證",
@@ -22087,7 +24032,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-053",
+      "id": "F-BOOK-070",
       "name": "葛根加朮附湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "實證",
@@ -22191,7 +24136,76 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-054",
+      "id": "F-BOOK-071",
+      "name": "葛根黃連黃芩湯",
+      "category": "書籍補充（漢方臨床診療學）",
+      "xushiClass": "實證",
+      "patternVector": {
+        "QI_XU": 1,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0.2,
+        "PI-YANGXU": 0.1667,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0.2,
+        "SHEN-YANGXU": 0.1,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "book-derived",
+      "keySymptoms": [
+        {
+          "raw": "項背強凝",
+          "id": "S-SHOULDER-STIFF",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "腹瀉",
+          "id": "S-DIARRHEA",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "發熱",
+          "id": "S-FEVER",
+          "negated": false,
+          "matchType": "book"
+        }
+      ],
+      "herbs": [],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《漢方臨床診療學》p.268"
+      ],
+      "indications": [
+        "S-SHOULDER-STIFF",
+        "S-DIARRHEA",
+        "S-FEVER"
+      ],
+      "formulaPattern": "",
+      "notes": "書籍補充：葛根黃連黃芩湯（OCR 標題，已人工校名）",
+      "confidence": "book_ocr_draft",
+      "draft": true,
+      "bookPages": [
+        268
+      ],
+      "bookCautions": "",
+      "channelStages": [
+        "太陽",
+        "少陽"
+      ]
+    },
+    {
+      "id": "F-BOOK-072",
       "name": "解急蜀椒湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "實證",
@@ -22253,7 +24267,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-055",
+      "id": "F-BOOK-073",
       "name": "調胃承氣湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "實證",
