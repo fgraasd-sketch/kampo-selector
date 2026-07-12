@@ -2226,6 +2226,20 @@ window.X4KbData = {
       "source": [
         "Codex C1 alias patch"
       ]
+    },
+    {
+      "id": "S-WART",
+      "canonical": "疣",
+      "aliases": [
+        "尋常疣",
+        "扁平疣",
+        "疣贅"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
     }
   ],
   "formulas": [
@@ -7911,7 +7925,7 @@ window.X4KbData = {
       "channelStages": [
         "少陽"
       ],
-      "bookCautions": "1 ) 腹瀉、軟便傾向者。2 ) 妊娠或可疑妊娠者。；1 ) 若出現電解質紊亂 〈 與葉塞米、利尿酸、噬嗪類利尿劑並用，可能引起血鉀值低下 )，即中止使用。2 ) 低鉀血癥可能引起肌病。"
+      "bookCautions": "1 ) 腹瀉、軟便傾向者。2 ) 妊娠或可疑妊娠者。；1 ) 若出現電解質紊亂 〈 與葉塞米、利尿酸、噬嗪類利尿劑並用，可能引起血鉀值低下 )，即中止使用。2 ) 低鉀血症可能引起肌病。"
     },
     {
       "id": "F-0099",
@@ -14516,7 +14530,7 @@ window.X4KbData = {
       "channelStages": [
         "太陰"
       ],
-      "bookCautions": "1 ) 假性醛固酮增多證。2 ) 肌病〈低鉀血癥導致 )。 表現為脫力感，肌力降低，肌肉痛，四肢冶攣、麻交等橫紋肌溶解症。CK 升高，血及尿中肌紅蛋白上升。若出現不良反應當停藥，進行相應處理。[ 相互作用 ] 與葉塞米、利尿酸、吵嗪類藥物並用可能引起血鉀低下。；1 ) 假性醛固酮增多證。 2 ) 肌病〈低鉀血癥導致 )。 表現為脫力感，肌力降低，肌肉痛，四肢冶 攣、麻交等橫紋肌溶解症。CK 升高，血及尿中肌紅蛋白上升。若出現不良反 應當停藥，進行相應處理。 [ 相互作用 ] 與葉塞米、利尿酸、吵嗪類藥物並用可能引起血鉀低下。"
+      "bookCautions": "1 ) 假性醛固酮增多證。2 ) 肌病〈低鉀血症導致 )。 表現為脫力感，肌力降低，肌肉痛，四肢冶攣、麻交等橫紋肌溶解症。CK 升高，血及尿中肌紅蛋白上升。若出現不良反應當停藥，進行相應處理。[ 相互作用 ] 與葉塞米、利尿酸、吵嗪類藥物並用可能引起血鉀低下。；1 ) 假性醛固酮增多證。 2 ) 肌病〈低鉀血癥導致 )。 表現為脫力感，肌力降低，肌肉痛，四肢冶 攣、麻交等橫紋肌溶解症。CK 升高，血及尿中肌紅蛋白上升。若出現不良反 應當停藥，進行相應處理。 [ 相互作用 ] 與葉塞米、利尿酸、吵嗪類藥物並用可能引起血鉀低下。"
     },
     {
       "id": "F-0002",
@@ -14972,7 +14986,7 @@ window.X4KbData = {
       "channelStages": [
         "少陽"
       ],
-      "bookCautions": "偶見間質性肺炎，若發生則停藥，進行相應治療。[ 相互作用 ] 與葉塞米、利尿酸、吹嗪類利尿劑等同用，可能引起低鉀血癥。"
+      "bookCautions": "偶見間質性肺炎，若發生則停藥，進行相應治療。[ 相互作用 ] 與葉塞米、利尿酸、吹嗪類利尿劑等同用，可能引起低鉀血症。"
     },
     {
       "id": "F-0069",
@@ -19187,7 +19201,7 @@ window.X4KbData = {
       "bookPages": [
         248
       ],
-      "bookCautions": "1 ) 浮腫。若出現浮腫，應停止使用。2 ) 電解質率亂〈長期連續使用可能出現假性醛固酮增多症 )，若出現應停藥。低鉀血癥可導致肌病。3 ) 過敏症〈皮次、痿癢等 )。",
+      "bookCautions": "1 ) 浮腫。若出現浮腫，應停止使用。2 ) 電解質率亂〈長期連續使用可能出現假性醛固酮增多症 )，若出現應停藥。低鉀血症可導致肌病。3 ) 過敏症〈皮次、痿癢等 )。",
       "channelStages": [
         "太陽"
       ]
@@ -19844,7 +19858,7 @@ window.X4KbData = {
       "bookPages": [
         266
       ],
-      "bookCautions": "1 ) 原發性醛固酮增多症患者。2 ) 有肌病的患者。3 ) 有低鉀血癥患者。；1 ) 若出現電解質率亂 (長期連續使用可能引起假性醛固酮增多症 )，則中止使用。2 ) 出現低鉀血癥則可能引起肌病。[ 相互作用 ]與吶塞米、利尿酸、呆嗪類利尿劑並用，可能引起血鉀值低下。甘草附子湯",
+      "bookCautions": "1 ) 原發性醛固酮增多症患者。2 ) 有肌病的患者。3 ) 有低鉀血症患者。；1 ) 若出現電解質率亂 (長期連續使用可能引起假性醛固酮增多症 )，則中止使用。2 ) 出現低鉀血症則可能引起肌病。[ 相互作用 ]與吶塞米、利尿酸、呆嗪類利尿劑並用，可能引起血鉀值低下。甘草附子湯",
       "channelStages": [
         "少陽",
         "太陽",
@@ -20386,7 +20400,7 @@ window.X4KbData = {
       "bookPages": [
         338
       ],
-      "bookCautions": "1 ) 若出現電解質紊亂 ( 與葉塞米、利尿酸、哮嗪類利尿劑並用，可能引起血鉀值低下 )，即中止使用。@ 夸克掃描王家速掃描，就是高效 品下名-aa內果二方劑-響 312 ) 低鉀血癥可能引起肌病。",
+      "bookCautions": "1 ) 若出現電解質紊亂 ( 與葉塞米、利尿酸、哮嗪類利尿劑並用，可能引起血鉀值低下 )，即中止使用。@ 夸克掃描王家速掃描，就是高效 品下名-aa內果二方劑-響 312 ) 低鉀血症可能引起肌病。",
       "channelStages": [
         "少陽"
       ]
@@ -20543,6 +20557,110 @@ window.X4KbData = {
     },
     {
       "id": "F-BOOK-030",
+      "name": "附子末",
+      "category": "單味藥製劑（漢方臨床診療學）",
+      "xushiClass": "未分類",
+      "patternVector": {
+        "QI_XU": 1,
+        "QI_NI": 1,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 1
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0.75,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0.2,
+        "PI-YANGXU": 0.5,
+        "FEI-QIXU": 0.4,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0.3,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "book-derived",
+      "keySymptoms": [
+        {
+          "raw": "腰膝發冷",
+          "id": "S-COLD",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "體力低下",
+          "id": "S-FATIGUE",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "尿量減少",
+          "id": "S-OLIGURIA",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "關節痛",
+          "id": "S-JOINT-PAIN",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "身體痛",
+          "id": "S-MUSCLE-PAIN",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "氣短",
+          "id": "S-ASTHMA-WHEEZE",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "浮腫",
+          "id": "S-EDEMA",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "嗜睡",
+          "id": "S-SLEEPINESS",
+          "negated": false,
+          "matchType": "book"
+        }
+      ],
+      "herbs": [],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《漢方臨床診療學》p.264",
+        "《漢方臨床診療學》p.265",
+        "《漢方臨床診療學》p.304"
+      ],
+      "indications": [
+        "S-COLD",
+        "S-FATIGUE",
+        "S-OLIGURIA",
+        "S-JOINT-PAIN",
+        "S-MUSCLE-PAIN",
+        "S-ASTHMA-WHEEZE",
+        "S-EDEMA",
+        "S-SLEEPINESS"
+      ],
+      "formulaPattern": "",
+      "notes": "書籍補充：附子末（OCR 標題，已人工校名）",
+      "confidence": "book_ocr_draft",
+      "draft": true,
+      "bookPages": [
+        264,
+        265,
+        304
+      ],
+      "bookCautions": "1 ) 過敏證。2 ) 胃腸虛弱者 (偶有腹海 )。3 ) 妊娠及可能是妊娠者的女性。；1 ) 偶見發疹、發紅、了眩暈、心刁、腹海。2 ) 出現附子中烏頭鹼系生物鹼引起的中毒症狀〈口導、舌的麻痺遲鈍及膝木感，心人，烘熱，顏面潮紅，手足麻交遲鈍及麻木感，噁心嘔吐，胸中昔閩，面色蒼白 ) 時，宣將患者置於陰涼處臥床，飲冷水，或甘草、黑豆等量煎服。建議使用烏頭鹼的解毒藥物阿托品、普魯卡因、腎上腺素等。[ 相互作用 ] 與強心苷並用則作用增強。[ 並用]1 ) 為增強附子的效果而廣泛並用配伍附子的方劑，如真武湯、桂枝加術附湯等。2 ) 對於未配伍附子的方劑，並用附子以增強鎮痛效果或新陳代謝，如區藥甘草湯加加工附子末，越婢加術湯加加工附子未，人參湯加加工附子末。；偶見皮疙，烘熱感，心慌導動，腹瀉。[ 相互作用 ] 與強心藥物並用作用增強。[ 並用 ] 與加工附子末相同。"
+    },
+    {
+      "id": "F-BOOK-031",
       "name": "附子理中湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛證",
@@ -20632,13 +20750,13 @@ window.X4KbData = {
       "bookPages": [
         265
       ],
-      "bookCautions": "妊娠或可能為妊娠者。；1 ) 電解質紊亂 (長期連續使用可能引起假性醛固酮增多症 )，若發生則應停藥。低鉀血癥者可能引起肌病。2 ) 皮疹，皮膚髮紅，烘熱感，心慌孝動。[ 相互作用 ] 與吶塞米、利尿酸、吵嗪類利尿劑等同用，可能引起低鉀血癥。",
+      "bookCautions": "妊娠或可能為妊娠者。；1 ) 電解質紊亂 (長期連續使用可能引起假性醛固酮增多症 )，若發生則應停藥。低鉀血症者可能引起肌病。2 ) 皮疹，皮膚髮紅，烘熱感，心慌孝動。[ 相互作用 ] 與吶塞米、利尿酸、吵嗪類利尿劑等同用，可能引起低鉀血症。",
       "channelStages": [
         "太陰"
       ]
     },
     {
-      "id": "F-BOOK-031",
+      "id": "F-BOOK-032",
       "name": "附子粳米湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛實夾雜",
@@ -20692,7 +20810,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-032",
+      "id": "F-BOOK-033",
       "name": "附子瀉心湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "未分類",
@@ -20757,7 +20875,7 @@ window.X4KbData = {
       "bookCautions": ""
     },
     {
-      "id": "F-BOOK-033",
+      "id": "F-BOOK-034",
       "name": "厚朴生薑半夏甘草人參湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛證",
@@ -20832,7 +20950,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-034",
+      "id": "F-BOOK-035",
       "name": "枳實薤白桂枝湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛實夾雜",
@@ -20915,7 +21033,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-035",
+      "id": "F-BOOK-036",
       "name": "枳縮二陳湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛實夾雜",
@@ -21005,7 +21123,49 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-036",
+      "id": "F-BOOK-037",
+      "name": "紅參末",
+      "category": "單味藥製劑（漢方臨床診療學）",
+      "xushiClass": "未分類",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "book-derived",
+      "keySymptoms": [],
+      "herbs": [],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《漢方臨床診療學》p.282"
+      ],
+      "indications": [],
+      "formulaPattern": "",
+      "notes": "書籍補充：紅參末（OCR 標題，已人工校名）",
+      "confidence": "book_ocr_draft",
+      "draft": true,
+      "bookPages": [
+        282
+      ],
+      "bookCautions": "1 ) 高血壓患者。2 ) 有肥胖傾向而有失眠或煩躁患者。3 ) 浮腫或因腎功能不全尿量減少患者。；1 ) 過敏症〈皮疹 )。2 ) 消化系統(〈軟便、腹海 )。厚朴七物湯“"
+    },
+    {
+      "id": "F-BOOK-038",
       "name": "柴胡桂枝乾薑湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛證",
@@ -21094,7 +21254,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-037",
+      "id": "F-BOOK-039",
       "name": "柴胡桂枝湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛證",
@@ -21233,7 +21393,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-038",
+      "id": "F-BOOK-040",
       "name": "桂枝加大黃湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛實夾雜",
@@ -21322,7 +21482,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-039",
+      "id": "F-BOOK-041",
       "name": "桂枝加芍藥湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛證",
@@ -21438,7 +21598,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-040",
+      "id": "F-BOOK-042",
       "name": "桂枝加附子湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛證",
@@ -21506,7 +21666,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-041",
+      "id": "F-BOOK-043",
       "name": "桂枝加厚朴杏仁湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛證",
@@ -21616,7 +21776,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-042",
+      "id": "F-BOOK-044",
       "name": "桂枝加葛根湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛證",
@@ -21698,7 +21858,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-043",
+      "id": "F-BOOK-045",
       "name": "桂枝芍藥知母湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛證",
@@ -21760,14 +21920,14 @@ window.X4KbData = {
       "bookPages": [
         280
       ],
-      "bookCautions": "1 ) 胃腸虛弱者。2 ) 妊娠或可疑妊娠者。；1 ) 若出現電解質泰亂〈長期使用可能引起假性醛固酮增多症 )，便中止使用。2) 引起低鉀血癥可能導致肌病。3 ) 食慾不振。[ 相互作用 ]1 ) 與交感神經興奮藥物並用可能引起心坪、心動過速。2 ) 與解熱鎮痛藥並用可能引起過度汗出，有時會出現休克。",
+      "bookCautions": "1 ) 胃腸虛弱者。2 ) 妊娠或可疑妊娠者。；1 ) 若出現電解質泰亂〈長期使用可能引起假性醛固酮增多症 )，便中止使用。2) 引起低鉀血症可能導致肌病。3 ) 食慾不振。[ 相互作用 ]1 ) 與交感神經興奮藥物並用可能引起心坪、心動過速。2 ) 與解熱鎮痛藥並用可能引起過度汗出，有時會出現休克。",
       "channelStages": [
         "太陽",
         "少陰"
       ]
     },
     {
-      "id": "F-BOOK-044",
+      "id": "F-BOOK-046",
       "name": "桂枝麻黃各半湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛實夾雜",
@@ -21857,13 +22017,13 @@ window.X4KbData = {
       "bookPages": [
         279
       ],
-      "bookCautions": "1 ) 若出現電解質紊亂〈長期使用可能引起假性醛固酮增多症 )，便中止使用。2 ) 引起低鉀血癥可能導致肌病。[ 相互作用 ]1 ) 與交感神經興奮藥物並用可能引起心情、心動過速。2 ) 與解熱鎮痛藥並用可能引起過度汗出，有時會出現休克。",
+      "bookCautions": "1 ) 若出現電解質紊亂〈長期使用可能引起假性醛固酮增多症 )，便中止使用。2 ) 引起低鉀血症可能導致肌病。[ 相互作用 ]1 ) 與交感神經興奮藥物並用可能引起心情、心動過速。2 ) 與解熱鎮痛藥並用可能引起過度汗出，有時會出現休克。",
       "channelStages": [
         "太陽"
       ]
     },
     {
-      "id": "F-BOOK-045",
+      "id": "F-BOOK-047",
       "name": "桂枝湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛證",
@@ -21972,7 +22132,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-046",
+      "id": "F-BOOK-048",
       "name": "桃花湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛實夾雜",
@@ -22040,7 +22200,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-047",
+      "id": "F-BOOK-049",
       "name": "桔梗石膏",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛實夾雜",
@@ -22122,7 +22282,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-048",
+      "id": "F-BOOK-050",
       "name": "桔梗湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛實夾雜",
@@ -22198,7 +22358,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-049",
+      "id": "F-BOOK-051",
       "name": "消風散",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛實夾雜",
@@ -22266,7 +22426,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-050",
+      "id": "F-BOOK-052",
       "name": "烏頭桂枝湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "實證",
@@ -22348,7 +22508,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-051",
+      "id": "F-BOOK-053",
       "name": "烏頭湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "實證",
@@ -22423,7 +22583,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-052",
+      "id": "F-BOOK-054",
       "name": "烏藥順氣散",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛實夾雜",
@@ -22492,7 +22652,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-053",
+      "id": "F-BOOK-055",
       "name": "茯苓四逆湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛證",
@@ -22567,7 +22727,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-054",
+      "id": "F-BOOK-056",
       "name": "茵陳蒿湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "實證",
@@ -22642,7 +22802,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-055",
+      "id": "F-BOOK-057",
       "name": "參蘇飲",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛證",
@@ -22738,7 +22898,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-056",
+      "id": "F-BOOK-058",
       "name": "梔子柏皮湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛實夾雜",
@@ -22820,7 +22980,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-057",
+      "id": "F-BOOK-059",
       "name": "清上防風湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "實證",
@@ -22909,7 +23069,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-058",
+      "id": "F-BOOK-060",
       "name": "清肺湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛實夾雜",
@@ -22970,7 +23130,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-059",
+      "id": "F-BOOK-061",
       "name": "麻子仁丸",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛實夾雜",
@@ -23038,7 +23198,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-060",
+      "id": "F-BOOK-062",
       "name": "麻杏甘石湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "實證",
@@ -23127,7 +23287,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-061",
+      "id": "F-BOOK-063",
       "name": "麻杏薏甘湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛實夾雜",
@@ -23224,7 +23384,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-062",
+      "id": "F-BOOK-064",
       "name": "麻黃附子甘草湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛實夾雜",
@@ -23299,7 +23459,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-063",
+      "id": "F-BOOK-065",
       "name": "麻黃湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "實證",
@@ -23443,13 +23603,13 @@ window.X4KbData = {
       "bookPages": [
         298
       ],
-      "bookCautions": "1 ) 汗出傾向明顯，或已強力發汗塵出而脈弱者。2 ) 體力明顯誤弱的場合。3 ) 明顯胃腸虛弱。4) 冠心病心絞痛、心肌梗死等迴圈系統疾患，或有既往史者。@ 夸克掃描王家速掃描，就是高效 品下名[ 相互作用 ]1 ) 與交感神經興奮藥並用，可能引起心慌層動、心動過速等。2 ) 與解熱鎮痛藥並用，可能引起過度汗出。；1 ) 汗出傾嚮明顯，或已強力發汗塵出而脈弱者。 2 ) 體力明顯誤弱的場合。 3 ) 明顯胃腸虛弱。 4) 冠心病心絞痛、心肌梗死等循環系統疾患，或有既往史者。 9 [ 相互作用 ] 1 ) 與交感神經興奮藥並用，可能引起心慌層動、心動過速等。 2 ) 與解熱鎮痛藥並用，可能引起過度汗出。",
+      "bookCautions": "1 ) 汗出傾向明顯，或已強力發汗塵出而脈弱者。2 ) 體力明顯誤弱的場合。3 ) 明顯胃腸虛弱。4) 冠心病心絞痛、心肌梗塞等迴圈系統疾患，或有既往史者。@ 夸克掃描王家速掃描，就是高效 品下名[ 相互作用 ]1 ) 與交感神經興奮藥並用，可能引起心慌層動、心動過速等。2 ) 與解熱鎮痛藥並用，可能引起過度汗出。；1 ) 汗出傾嚮明顯，或已強力發汗塵出而脈弱者。 2 ) 體力明顯誤弱的場合。 3 ) 明顯胃腸虛弱。 4) 冠心病心絞痛、心肌梗死等循環系統疾患，或有既往史者。 9 [ 相互作用 ] 1 ) 與交感神經興奮藥並用，可能引起心慌層動、心動過速等。 2 ) 與解熱鎮痛藥並用，可能引起過度汗出。",
       "channelStages": [
         "太陽"
       ]
     },
     {
-      "id": "F-BOOK-064",
+      "id": "F-BOOK-066",
       "name": "紫雲膏",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "未分類",
@@ -23507,7 +23667,7 @@ window.X4KbData = {
       "bookCautions": ""
     },
     {
-      "id": "F-BOOK-065",
+      "id": "F-BOOK-067",
       "name": "黃芩湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "實證",
@@ -23618,14 +23778,14 @@ window.X4KbData = {
       "bookPages": [
         286
       ],
-      "bookCautions": "1 ) 原發性醛固酮增多症患者。2 ) 肌病患者。3 ) 低鉀血癥患者。；1 ) 對電解質代謝的影響〈長期連續使用可能引起假性醛固酮增多症，若出現則中止使用 )。2 ) 因低鉀血癥可能引起肌病，若出現則中止使用。[ 相互作用 ] 與葉塞米、利尿酸、哮嗪類利尿劑並用可能導致血鉀值低下5",
+      "bookCautions": "1 ) 原發性醛固酮增多症患者。2 ) 肌病患者。3 ) 低鉀血症患者。；1 ) 對電解質代謝的影響〈長期連續使用可能引起假性醛固酮增多症，若出現則中止使用 )。2 ) 因低鉀血症可能引起肌病，若出現則中止使用。[ 相互作用 ] 與葉塞米、利尿酸、哮嗪類利尿劑並用可能導致血鉀值低下5",
       "channelStages": [
         "少陽",
         "太陽"
       ]
     },
     {
-      "id": "F-BOOK-066",
+      "id": "F-BOOK-068",
       "name": "黃耆桂枝五物湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛證",
@@ -23679,7 +23839,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-067",
+      "id": "F-BOOK-069",
       "name": "當歸四逆加吳茱萸生薑湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛證",
@@ -23782,7 +23942,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-068",
+      "id": "F-BOOK-070",
       "name": "當歸芍藥散加附子",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "未分類",
@@ -23882,7 +24042,7 @@ window.X4KbData = {
       "bookCautions": "1 ) 骨腸虛弱者。2 ) 妊娠及可能為妊娠中的女性。；1 ) 食慾不振，心窩部不適感，腹瀉。2 ) 皮溢、紅赤、頭面其熱、心休。"
     },
     {
-      "id": "F-BOOK-069",
+      "id": "F-BOOK-071",
       "name": "當歸湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛證",
@@ -23950,7 +24110,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-070",
+      "id": "F-BOOK-072",
       "name": "葛根加朮附湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "實證",
@@ -24047,14 +24207,14 @@ window.X4KbData = {
       "bookPages": [
         269
       ],
-      "bookCautions": "1 ) 電解質代謝京亂 (長期連續使用可能引起假性醛固酮增多症 )，若發生則中止使用。2 ) 低鉀血癥，可能引起肌病。3 ) 過敏症〈皮疹 )。4) 烘熱感，心導。[ 相互作用 ]1 ) 與交感神經興奮藥物並用，可能引起心必、心動過速等。2 ) 與解熱鎮痛藥並用，可能引起過度汗出，有時甚至出現休克。",
+      "bookCautions": "1 ) 電解質代謝京亂 (長期連續使用可能引起假性醛固酮增多症 )，若發生則中止使用。2 ) 低鉀血症，可能引起肌病。3 ) 過敏症〈皮疹 )。4) 烘熱感，心導。[ 相互作用 ]1 ) 與交感神經興奮藥物並用，可能引起心必、心動過速等。2 ) 與解熱鎮痛藥並用，可能引起過度汗出，有時甚至出現休克。",
       "channelStages": [
         "太陽",
         "少陰"
       ]
     },
     {
-      "id": "F-BOOK-071",
+      "id": "F-BOOK-073",
       "name": "葛根黃連黃芩湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "實證",
@@ -24123,7 +24283,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-072",
+      "id": "F-BOOK-074",
       "name": "解急蜀椒湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "實證",
@@ -24185,7 +24345,7 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-BOOK-073",
+      "id": "F-BOOK-075",
       "name": "調胃承氣湯",
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "實證",
@@ -24258,6 +24418,71 @@ window.X4KbData = {
       "channelStages": [
         "陽明"
       ]
+    },
+    {
+      "id": "F-BOOK-076",
+      "name": "薏苡仁末",
+      "category": "單味藥製劑（漢方臨床診療學）",
+      "xushiClass": "未分類",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "book-derived",
+      "keySymptoms": [
+        {
+          "raw": "皮疹",
+          "id": "S-DERMATITIS",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "瘙癢",
+          "id": "S-PRURITUS",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "疣",
+          "id": "S-WART",
+          "negated": false,
+          "matchType": "book"
+        }
+      ],
+      "herbs": [],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《漢方臨床診療學》p.341"
+      ],
+      "indications": [
+        "S-DERMATITIS",
+        "S-PRURITUS",
+        "S-WART"
+      ],
+      "formulaPattern": "",
+      "notes": "書籍補充：薏苡仁末（OCR 標題，已人工校名）",
+      "confidence": "book_ocr_draft",
+      "draft": true,
+      "bookPages": [
+        341
+      ],
+      "bookCautions": ""
     },
     {
       "id": "F-PHYS-001",

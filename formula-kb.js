@@ -7744,6 +7744,61 @@ const EXCEL_FORMULA_KB = [
     }
   },
   {
+    "name": "附子末",
+    "type": "未分類",
+    "category": "單味藥製劑（漢方臨床診療學）",
+    "syndrome": "qi_xu",
+    "patterns": [
+      "氣虛",
+      "氣逆",
+      "水滯"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "腰膝發冷",
+      "體力低下",
+      "尿量減少",
+      "關節痛",
+      "身體痛",
+      "氣短",
+      "浮腫",
+      "嗜睡"
+    ],
+    "keySymptoms": [
+      "腰膝發冷",
+      "體力低下",
+      "尿量減少",
+      "關節痛",
+      "身體痛",
+      "氣短",
+      "浮腫",
+      "嗜睡"
+    ],
+    "indications": "腰膝發冷，體力低下，尿量減少，關節痛，身體痛，氣短，浮腫，嗜睡",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：附子末（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.264",
+    "vector": {
+      "patterns": {
+        "氣虛": 1,
+        "氣逆": 1,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 1
+      },
+      "zangFu": {
+        "肝": 0,
+        "心": 0.75,
+        "脾": 0.5,
+        "肺": 0.4,
+        "腎": 0.3
+      }
+    }
+  },
+  {
     "name": "附子理中湯",
     "type": "虛證",
     "category": "書籍補充（漢方臨床診療學）",
@@ -8012,6 +8067,39 @@ const EXCEL_FORMULA_KB = [
       },
       "zangFu": {
         "肝": 0.1429,
+        "心": 0,
+        "脾": 0,
+        "肺": 0,
+        "腎": 0
+      }
+    }
+  },
+  {
+    "name": "紅參末",
+    "type": "未分類",
+    "category": "單味藥製劑（漢方臨床診療學）",
+    "syndrome": "",
+    "patterns": [],
+    "zangFuTags": [],
+    "symptoms": [],
+    "keySymptoms": [],
+    "indications": "",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：紅參末（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.282",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 0,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0,
         "心": 0,
         "脾": 0,
         "肺": 0,
@@ -9839,6 +9927,47 @@ const EXCEL_FORMULA_KB = [
         "脾": 0.2,
         "肺": 0.2,
         "腎": 0.1111
+      }
+    }
+  },
+  {
+    "name": "薏苡仁末",
+    "type": "未分類",
+    "category": "單味藥製劑（漢方臨床診療學）",
+    "syndrome": "",
+    "patterns": [],
+    "zangFuTags": [],
+    "symptoms": [
+      "皮疹",
+      "瘙癢",
+      "疣"
+    ],
+    "keySymptoms": [
+      "皮疹",
+      "瘙癢",
+      "疣"
+    ],
+    "indications": "皮疹，瘙癢，疣",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "書籍補充：薏苡仁末（OCR 標題，已人工校名）",
+    "sourceSheet": "《漢方臨床診療學》p.341",
+    "vector": {
+      "patterns": {
+        "氣虛": 0,
+        "氣逆": 0,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0,
+        "心": 0,
+        "脾": 0,
+        "肺": 0,
+        "腎": 0
       }
     }
   },
