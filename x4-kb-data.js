@@ -359,6 +359,7 @@ window.X4KbData = {
         "手足冷",
         "全身冷",
         "畏寒",
+        "惡風",
         "手腳冰冷",
         "手腳冷",
         "四肢冰冷",
@@ -1413,7 +1414,12 @@ window.X4KbData = {
     {
       "id": "S-MUSCLE-PAIN",
       "canonical": "肌肉痛",
-      "aliases": [],
+      "aliases": [
+        "身體痛",
+        "身痛",
+        "身體疼痛",
+        "全身痠痛"
+      ],
       "parent": null,
       "negationSensitive": false,
       "source": [
@@ -1767,6 +1773,10 @@ window.X4KbData = {
         "肩酸痛",
         "頸酸痛",
         "肩背酸痛",
+        "項背強",
+        "項背強凝",
+        "項強",
+        "項背拘急",
         "肩膀僵硬",
         "脖子僵硬",
         "項背僵硬",
@@ -1830,7 +1840,6 @@ window.X4KbData = {
       "aliases": [
         "咽喉乾燥感",
         "咽喉炎症",
-        "咽喉狹窄感",
         "咽喉乾燥",
         "咽乾"
       ],
@@ -1967,6 +1976,8 @@ window.X4KbData = {
         "異物感",
         "胸部塞窒感",
         "咽喉閉塞感",
+        "咽喉狹窄感",
+        "咽喉阻塞感",
         "喉嚨有異物感",
         "喉嚨卡卡",
         "喉嚨堵塞",
@@ -2180,6 +2191,33 @@ window.X4KbData = {
         "臍旁抵抗壓痛"
       ],
       "parent": "S-ABDOMINAL-TENDERNESS",
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-PULSE-FLOATING",
+      "canonical": "脈浮",
+      "aliases": [
+        "浮脈",
+        "脈浮數",
+        "脈浮緊",
+        "脈浮緩"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-ALTERNATING-CHILL-FEVER",
+      "canonical": "往來寒熱",
+      "aliases": [
+        "寒熱往來"
+      ],
+      "parent": null,
       "negationSensitive": false,
       "source": [
         "Codex C1 alias patch"
@@ -2407,6 +2445,10 @@ window.X4KbData = {
           "page": 344
         }
       ],
+      "channelStages": [
+        "太陽",
+        "少陽"
+      ],
       "bookCautions": "1 ) 體力明顯衰弱。2 ) 胃腸明顯虛弱。3 ) 患心絞痛、心肌醒死等迴圈系統疾病或有既往史。[ 相互作用 ] 與交感神經興奮藥並用，可引起心慌慘動、心動過速等。"
     },
     {
@@ -2513,6 +2555,9 @@ window.X4KbData = {
           "canonical": "口渴",
           "page": 272
         }
+      ],
+      "channelStages": [
+        "太陽"
       ]
     },
     {
@@ -2645,6 +2690,10 @@ window.X4KbData = {
           "canonical": "關節痛",
           "page": 341
         }
+      ],
+      "channelStages": [
+        "少陽",
+        "太陽"
       ]
     },
     {
@@ -2795,6 +2844,9 @@ window.X4KbData = {
           "canonical": "浮腫",
           "page": 261
         }
+      ],
+      "channelStages": [
+        "太陰"
       ]
     },
     {
@@ -2899,7 +2951,11 @@ window.X4KbData = {
           "physicianDecision": "accept-secondary"
         }
       ],
-      "bookCorroborated": []
+      "bookCorroborated": [],
+      "channelStages": [
+        "少陽",
+        "太陰"
+      ]
     },
     {
       "id": "F-0048",
@@ -3071,6 +3127,9 @@ window.X4KbData = {
           "canonical": "關節痛",
           "page": 277
         }
+      ],
+      "channelStages": [
+        "太陰"
       ]
     },
     {
@@ -3199,6 +3258,9 @@ window.X4KbData = {
           "canonical": "關節痛",
           "page": 253
         }
+      ],
+      "channelStages": [
+        "太陰"
       ]
     },
     {
@@ -3350,6 +3412,9 @@ window.X4KbData = {
           "canonical": "水樣鼻涕",
           "page": 297
         }
+      ],
+      "channelStages": [
+        "少陰"
       ],
       "bookCautions": "體力充實而有發熱感者。；過敏症，自主神經系統 (不眠、汗出、心慌性動、全身無力感、精神興奮 )，肝功能損害(AST、ALT、y-GTP 升高 )，消化系統 〈口渴、食慾不振、胃部不適感、亞心、嘔吐 )，刻尿系統 (排尿障礙 )，烘熱感，麻木感。[ 相互作用 ]1 ) 交感神經興奮藥並用，可能引起心慌茜動、心動過速等。@ 奪克掃描王.270 漢方臨床診療學92 ) 與解熱鎮痛藥並用，可能引起過度汗出《有時甚至發生休克 )；體力充實而有發熱感者。"
     },
@@ -3524,6 +3589,9 @@ window.X4KbData = {
           "canonical": "便秘",
           "page": 260
         }
+      ],
+      "channelStages": [
+        "陽明"
       ],
       "bookNegated": [
         {
@@ -3732,6 +3800,9 @@ window.X4KbData = {
           "page": 296
         }
       ],
+      "channelStages": [
+        "陽明"
+      ],
       "bookCautions": "體力低下，胃腸虛弱。"
     },
     {
@@ -3898,6 +3969,9 @@ window.X4KbData = {
           "canonical": "口渴",
           "page": 348
         }
+      ],
+      "channelStages": [
+        "陽明"
       ]
     },
     {
@@ -4221,6 +4295,11 @@ window.X4KbData = {
           "page": 329
         },
         {
+          "id": "S-GASTRIC-SPLASH",
+          "canonical": "胃部振水音",
+          "page": 329
+        },
+        {
           "id": "S-HEADACHE",
           "canonical": "頭痛",
           "page": 329
@@ -4240,6 +4319,9 @@ window.X4KbData = {
           "canonical": "腹瀉",
           "page": 329
         }
+      ],
+      "channelStages": [
+        "少陽"
       ],
       "bookCautions": "如果出現過敏證〈皮背、閣癢等 ) 應中止用藥。[ 並用 ]1 ) 用於浮腫，療效不佳時，可適當增加藥量( 大約 2 倍量 )，或合用吶塞米。2 ) 用於紅病綜合徵時，可並用小柴胡湯等柴胡劑，或並用腎上腺皮質激素藥物。；如果出現過敏證〈皮背、閣癢等 ) 應中止用藥。",
       "bookNegated": [
@@ -4383,6 +4465,11 @@ window.X4KbData = {
           "page": 293
         },
         {
+          "id": "S-GASTRIC-SPLASH",
+          "canonical": "胃部振水音",
+          "page": 293
+        },
+        {
           "id": "S-HOT-FLUSH",
           "canonical": "烘熱",
           "page": 293
@@ -4398,15 +4485,13 @@ window.X4KbData = {
           "page": 293
         },
         {
-          "id": "S-GASTRIC-SPLASH",
-          "canonical": "胃部振水音",
-          "page": 293
-        },
-        {
           "id": "S-UPPER-HOT-LOWER-COLD",
           "canonical": "上熱下寒",
           "page": 293
         }
+      ],
+      "channelStages": [
+        "少陽"
       ],
       "bookNegated": [
         {
@@ -4717,6 +4802,9 @@ window.X4KbData = {
           "canonical": "易疲勞",
           "page": 255
         }
+      ],
+      "channelStages": [
+        "太陰"
       ],
       "bookCautions": "1 ) 腹診觸得腹部充實，腹部有力的患者。2 ) 胃腸虛弱患者。；過敏證〈 皮疹等 )，者出現則應停藥。[ 並用 ] 具有貧血、全身倦念感、骨腸功能障礙者，有時宜並用人參湯。"
     },
@@ -5104,6 +5192,9 @@ window.X4KbData = {
           "canonical": "易疲勞",
           "page": 265
         }
+      ],
+      "channelStages": [
+        "少陰"
       ]
     },
     {
@@ -5256,6 +5347,9 @@ window.X4KbData = {
           "page": 345
         }
       ],
+      "channelStages": [
+        "少陰"
+      ],
       "bookCautions": "自覺有熱感的患者，肥滿體質。",
       "bookNegated": [
         {
@@ -5393,6 +5487,10 @@ window.X4KbData = {
           "canonical": "嘔吐",
           "page": 347
         }
+      ],
+      "channelStages": [
+        "少陽",
+        "太陰"
       ]
     },
     {
@@ -5469,6 +5567,14 @@ window.X4KbData = {
           "physicianDecision": "accept-secondary"
         },
         {
+          "id": "S-GASTRIC-SPLASH",
+          "canonical": "胃部振水音",
+          "term": "心下振水音",
+          "page": 324,
+          "section": "證候特徵",
+          "physicianDecision": "accept-secondary"
+        },
+        {
           "id": "S-APPETITE-LOW",
           "canonical": "食欲不振",
           "term": "食慾不振",
@@ -5536,6 +5642,9 @@ window.X4KbData = {
           "canonical": "腹瀉",
           "page": 324
         }
+      ],
+      "channelStages": [
+        "少陽"
       ]
     },
     {
@@ -5590,6 +5699,13 @@ window.X4KbData = {
           "page": 343
         },
         {
+          "raw": "振水音",
+          "id": "S-GASTRIC-SPLASH",
+          "negated": false,
+          "matchType": "book-physician",
+          "page": 343
+        },
+        {
           "raw": "腹水",
           "id": "S-ASCITES-PLEURAL-EFFUSION",
           "negated": false,
@@ -5629,6 +5745,7 @@ window.X4KbData = {
         "S-OLIGURIA",
         "S-THIRST",
         "S-APPETITE-LOW",
+        "S-GASTRIC-SPLASH",
         "S-ASCITES-PLEURAL-EFFUSION",
         "S-EDEMA",
         "S-HEADACHE"
@@ -5663,6 +5780,9 @@ window.X4KbData = {
           "canonical": "口渴",
           "page": 343
         }
+      ],
+      "channelStages": [
+        "少陽"
       ]
     },
     {
@@ -5799,10 +5919,18 @@ window.X4KbData = {
           "page": 262
         },
         {
+          "id": "S-GASTRIC-SPLASH",
+          "canonical": "胃部振水音",
+          "page": 262
+        },
+        {
           "id": "S-ACID-REFLUX",
           "canonical": "胃酸逆流",
           "page": 262
         }
+      ],
+      "channelStages": [
+        "少陽"
       ]
     },
     {
@@ -6084,6 +6212,11 @@ window.X4KbData = {
       ],
       "bookCorroborated": [
         {
+          "id": "S-GASTRIC-SPLASH",
+          "canonical": "胃部振水音",
+          "page": 258
+        },
+        {
           "id": "S-HEADACHE",
           "canonical": "頭痛",
           "page": 258
@@ -6097,12 +6230,11 @@ window.X4KbData = {
           "id": "S-VOMITING",
           "canonical": "嘔吐",
           "page": 258
-        },
-        {
-          "id": "S-GASTRIC-SPLASH",
-          "canonical": "胃部振水音",
-          "page": 258
         }
+      ],
+      "channelStages": [
+        "太陰",
+        "少陽"
       ]
     },
     {
@@ -6188,12 +6320,25 @@ window.X4KbData = {
           "page": 331,
           "section": "證候特徵",
           "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-EDEMA",
+          "canonical": "浮腫",
+          "term": "水腫",
+          "page": 331,
+          "section": "適應病症",
+          "physicianDecision": "accept-secondary"
         }
       ],
       "bookCorroborated": [
         {
           "id": "S-OLIGURIA",
           "canonical": "尿量減少",
+          "page": 331
+        },
+        {
+          "id": "S-GASTRIC-SPLASH",
+          "canonical": "胃部振水音",
           "page": 331
         },
         {
@@ -6206,6 +6351,9 @@ window.X4KbData = {
           "canonical": "嘔吐",
           "page": 331
         }
+      ],
+      "channelStages": [
+        "少陽"
       ]
     },
     {
@@ -6364,6 +6512,9 @@ window.X4KbData = {
           "page": 305
         }
       ],
+      "channelStages": [
+        "太陰"
+      ],
       "bookNegated": [
         {
           "id": "S-TENESMUS",
@@ -6497,6 +6648,11 @@ window.X4KbData = {
           "page": 330
         },
         {
+          "id": "S-GASTRIC-SPLASH",
+          "canonical": "胃部振水音",
+          "page": 330
+        },
+        {
           "id": "S-COLD",
           "canonical": "發冷",
           "page": 330
@@ -6511,6 +6667,9 @@ window.X4KbData = {
           "canonical": "嘔吐",
           "page": 330
         }
+      ],
+      "channelStages": [
+        "太陰"
       ]
     },
     {
@@ -6734,6 +6893,11 @@ window.X4KbData = {
       "bookSymptoms": [],
       "bookCorroborated": [
         {
+          "id": "S-GASTRIC-SPLASH",
+          "canonical": "胃部振水音",
+          "page": 237
+        },
+        {
           "id": "S-HEADACHE",
           "canonical": "頭痛",
           "page": 237
@@ -6944,6 +7108,9 @@ window.X4KbData = {
           "page": 301
         }
       ],
+      "channelStages": [
+        "少陽"
+      ],
       "bookCautions": "脈弱，體力明顯衰弱的場合。"
     },
     {
@@ -7063,6 +7230,9 @@ window.X4KbData = {
           "canonical": "頭重",
           "page": 314
         }
+      ],
+      "channelStages": [
+        "少陽"
       ]
     },
     {
@@ -7217,6 +7387,9 @@ window.X4KbData = {
           "canonical": "嘔吐",
           "page": 343
         }
+      ],
+      "channelStages": [
+        "太陽"
       ]
     },
     {
@@ -7368,6 +7541,9 @@ window.X4KbData = {
           "canonical": "胸悶",
           "page": 314
         }
+      ],
+      "channelStages": [
+        "少陽"
       ]
     },
     {
@@ -7486,6 +7662,9 @@ window.X4KbData = {
           "canonical": "浮腫",
           "page": 291
         }
+      ],
+      "channelStages": [
+        "少陽"
       ],
       "bookCautions": "1 ) 腹瀉、軟便傾向者。2 ) 妊娠或可疑妊娠者。；1 ) 若出現電解質紊亂 〈 與葉塞米、利尿酸、噬嗪類利尿劑並用，可能引起血鉀值低下 )，即中止使用。2 ) 低鉀血癥可能引起肌病。"
     },
@@ -7665,6 +7844,9 @@ window.X4KbData = {
           "canonical": "喘息",
           "page": 321
         }
+      ],
+      "channelStages": [
+        "少陽"
       ]
     },
     {
@@ -7799,6 +7981,11 @@ window.X4KbData = {
           "page": 336
         },
         {
+          "id": "S-GASTRIC-SPLASH",
+          "canonical": "胃部振水音",
+          "page": 336
+        },
+        {
           "id": "S-WATERY-SPUTUM",
           "canonical": "水樣痰",
           "page": 336
@@ -7814,15 +8001,13 @@ window.X4KbData = {
           "page": 336
         },
         {
-          "id": "S-GASTRIC-SPLASH",
-          "canonical": "胃部振水音",
-          "page": 336
-        },
-        {
           "id": "S-FEVER",
           "canonical": "發熱",
           "page": 336
         }
+      ],
+      "channelStages": [
+        "太陽"
       ]
     },
     {
@@ -8085,7 +8270,10 @@ window.X4KbData = {
           "physicianDecision": "accept-secondary"
         }
       ],
-      "bookCorroborated": []
+      "bookCorroborated": [],
+      "channelStages": [
+        "陽明"
+      ]
     },
     {
       "id": "F-0104",
@@ -8219,6 +8407,9 @@ window.X4KbData = {
           "canonical": "肩凝",
           "page": 322
         }
+      ],
+      "channelStages": [
+        "陽明"
       ]
     },
     {
@@ -8458,6 +8649,10 @@ window.X4KbData = {
       ],
       "bookSymptoms": [],
       "bookCorroborated": [],
+      "channelStages": [
+        "少陽",
+        "陽明"
+      ],
       "bookNegated": [
         {
           "id": "S-CONSTIPATION",
@@ -8540,7 +8735,10 @@ window.X4KbData = {
           "physicianDecision": "accept-secondary"
         }
       ],
-      "bookCorroborated": []
+      "bookCorroborated": [],
+      "channelStages": [
+        "少陽"
+      ]
     },
     {
       "id": "F-0053",
@@ -8814,6 +9012,9 @@ window.X4KbData = {
           "page": 288
         }
       ],
+      "channelStages": [
+        "少陽"
+      ],
       "bookCautions": "胃腸虛弱者。"
     },
     {
@@ -8936,6 +9137,9 @@ window.X4KbData = {
           "canonical": "神經痛",
           "page": 318
         }
+      ],
+      "channelStages": [
+        "少陽"
       ]
     },
     {
@@ -9075,6 +9279,9 @@ window.X4KbData = {
           "canonical": "痔瘡",
           "page": 337
         }
+      ],
+      "channelStages": [
+        "太陰"
       ]
     },
     {
@@ -9537,6 +9744,9 @@ window.X4KbData = {
           "canonical": "失眠",
           "page": 275
         }
+      ],
+      "channelStages": [
+        "少陽"
       ]
     },
     {
@@ -9598,6 +9808,14 @@ window.X4KbData = {
       ],
       "bookSymptoms": [
         {
+          "id": "S-GASTRIC-SPLASH",
+          "canonical": "胃部振水音",
+          "term": "振水音",
+          "page": 240,
+          "section": "證候特徵",
+          "physicianDecision": "accept-secondary"
+        },
+        {
           "id": "S-HEADACHE",
           "canonical": "頭痛",
           "term": "頭痛",
@@ -9606,7 +9824,11 @@ window.X4KbData = {
           "physicianDecision": "accept-secondary"
         }
       ],
-      "bookCorroborated": []
+      "bookCorroborated": [],
+      "channelStages": [
+        "少陽",
+        "太陰"
+      ]
     },
     {
       "id": "F-0046",
@@ -9667,6 +9889,13 @@ window.X4KbData = {
           "page": 279
         },
         {
+          "raw": "振水音",
+          "id": "S-GASTRIC-SPLASH",
+          "negated": false,
+          "matchType": "book-physician",
+          "page": 279
+        },
+        {
           "raw": "怕冷",
           "id": "S-COLD",
           "negated": false,
@@ -9676,13 +9905,6 @@ window.X4KbData = {
         {
           "raw": "發熱",
           "id": "S-FEVER",
-          "negated": false,
-          "matchType": "book-physician",
-          "page": 279
-        },
-        {
-          "raw": "胃部振水音",
-          "id": "S-GASTRIC-SPLASH",
           "negated": false,
           "matchType": "book-physician",
           "page": 279
@@ -9734,9 +9956,9 @@ window.X4KbData = {
         "S-HEADACHE",
         "S-APPETITE-LOW",
         "S-FATIGUE",
+        "S-GASTRIC-SPLASH",
         "S-COLD",
         "S-FEVER",
-        "S-GASTRIC-SPLASH",
         "S-UPPER-HOT-LOWER-COLD",
         "S-HOT-FLUSH",
         "S-DIARRHEA-LOOSE",
@@ -9768,6 +9990,9 @@ window.X4KbData = {
           "canonical": "頭痛",
           "page": 279
         }
+      ],
+      "channelStages": [
+        "太陰"
       ]
     },
     {
@@ -9919,6 +10144,9 @@ window.X4KbData = {
           "canonical": "嘔吐",
           "page": 284
         }
+      ],
+      "channelStages": [
+        "少陽"
       ]
     },
     {
@@ -10071,6 +10299,9 @@ window.X4KbData = {
           "canonical": "鼻塞",
           "page": 331
         }
+      ],
+      "channelStages": [
+        "太陽"
       ]
     },
     {
@@ -10307,6 +10538,9 @@ window.X4KbData = {
           "page": 303
         }
       ],
+      "channelStages": [
+        "少陽"
+      ],
       "bookCautions": "偶見皮疙，烘熱感，心慌導動，腹瀉。 [ 相互作用 ] 與強心藥物並用作用增強。"
     },
     {
@@ -10397,9 +10631,25 @@ window.X4KbData = {
           "physicianDecision": "accept-secondary"
         },
         {
+          "id": "S-GASTRIC-SPLASH",
+          "canonical": "胃部振水音",
+          "term": "振水音",
+          "page": 238,
+          "section": "證候特徵",
+          "physicianDecision": "accept-secondary"
+        },
+        {
           "id": "S-CHEST-OPPRESSION",
           "canonical": "胸悶",
           "term": "胸痛",
+          "page": 238,
+          "section": "證候特徵",
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-DEPRESSION",
+          "canonical": "抑鬱",
+          "term": "鬱悶",
           "page": 238,
           "section": "證候特徵",
           "physicianDecision": "accept-secondary"
@@ -10421,14 +10671,6 @@ window.X4KbData = {
           "physicianDecision": "accept-secondary"
         },
         {
-          "id": "S-DEPRESSION",
-          "canonical": "抑鬱",
-          "term": "抑鬱傾向",
-          "page": 238,
-          "section": "病期病態",
-          "physicianDecision": "accept-secondary"
-        },
-        {
           "id": "S-VOMITING",
           "canonical": "嘔吐",
           "term": "嘔吐",
@@ -10443,6 +10685,9 @@ window.X4KbData = {
           "canonical": "喉部堵塞感",
           "page": 238
         }
+      ],
+      "channelStages": [
+        "少陽"
       ]
     },
     {
@@ -10809,6 +11054,9 @@ window.X4KbData = {
           "page": 283
         }
       ],
+      "channelStages": [
+        "少陽"
+      ],
       "bookCautions": "體力明顯衰弱患者。；罕見出現間質性肺炎，若出現則中止投藥並進行相應治療。[ 並用 ] 伴有皮膚枯燥、皮膚色素沉著的溼次、皮炎的場合，並用四.256 漢方臨床診療學9物湯。；體力明顯衰弱患者。"
     },
     {
@@ -10962,6 +11210,9 @@ window.X4KbData = {
           "page": 270
         }
       ],
+      "channelStages": [
+        "太陽"
+      ],
       "bookCautions": "1 )食慾減退，噁心、哎吐。2 ) 明顯汗出傾向。3 )顯著胃腸虛弱。4 )病後衰弱期，明顯體力衰弱者。5 ) 玩心病心絞痛、心肌醒死等迴圈系統障礙，或者有既往史者。[ 相互作用 ]1 ) 與交感神經興奮藥並用，可能引起心、心動過速等。2 ) 與解熱劑並用，可能引起過度發汗、精神不安定、心怪。"
     },
     {
@@ -11058,6 +11309,9 @@ window.X4KbData = {
           "canonical": "心悸",
           "page": 320
         }
+      ],
+      "channelStages": [
+        "太陰"
       ]
     },
     {
@@ -11163,6 +11417,9 @@ window.X4KbData = {
         }
       ],
       "bookCorroborated": [],
+      "channelStages": [
+        "太陰"
+      ],
       "bookCautions": "胃腸虛弱者。"
     },
     {
@@ -11340,6 +11597,9 @@ window.X4KbData = {
           "canonical": "皮炎",
           "page": 326
         }
+      ],
+      "channelStages": [
+        "少陽"
       ]
     },
     {
@@ -11494,6 +11754,9 @@ window.X4KbData = {
           "page": 306
         }
       ],
+      "channelStages": [
+        "少陽"
+      ],
       "bookCautions": "胃腸虛弱明顯者。"
     },
     {
@@ -11569,6 +11832,9 @@ window.X4KbData = {
           "canonical": "炎症",
           "page": 290
         }
+      ],
+      "channelStages": [
+        "少陽"
       ],
       "bookNegated": [
         {
@@ -11661,6 +11927,9 @@ window.X4KbData = {
           "canonical": "便秘",
           "page": 311
         }
+      ],
+      "channelStages": [
+        "太陰"
       ]
     },
     {
@@ -11801,6 +12070,9 @@ window.X4KbData = {
           "canonical": "發冷",
           "page": 316
         }
+      ],
+      "channelStages": [
+        "太陰"
       ],
       "bookCautions": "無體力，虛弱者。"
     },
@@ -11997,6 +12269,9 @@ window.X4KbData = {
           "canonical": "抑鬱",
           "page": 271
         }
+      ],
+      "channelStages": [
+        "太陰"
       ]
     },
     {
@@ -12108,6 +12383,14 @@ window.X4KbData = {
           "physicianDecision": "accept-secondary"
         },
         {
+          "id": "S-GASTRIC-SPLASH",
+          "canonical": "胃部振水音",
+          "term": "振水音",
+          "page": 318,
+          "section": "證候特徵",
+          "physicianDecision": "accept-secondary"
+        },
+        {
           "id": "S-MENTAL-SYMPTOMS",
           "canonical": "精神症狀",
           "term": "精神症狀",
@@ -12137,6 +12420,9 @@ window.X4KbData = {
           "canonical": "嘔吐",
           "page": 318
         }
+      ],
+      "channelStages": [
+        "太陰"
       ]
     },
     {
@@ -12276,10 +12562,18 @@ window.X4KbData = {
           "page": 295
         },
         {
+          "id": "S-GASTRIC-SPLASH",
+          "canonical": "胃部振水音",
+          "page": 295
+        },
+        {
           "id": "S-FATIGUE",
           "canonical": "易疲勞",
           "page": 295
         }
+      ],
+      "channelStages": [
+        "太陰"
       ]
     },
     {
@@ -12444,6 +12738,9 @@ window.X4KbData = {
           "canonical": "發熱",
           "page": 240
         }
+      ],
+      "channelStages": [
+        "少陽"
       ]
     },
     {
@@ -12599,6 +12896,9 @@ window.X4KbData = {
           "canonical": "腹瀉",
           "page": 308
         }
+      ],
+      "channelStages": [
+        "少陽"
       ]
     },
     {
@@ -12727,6 +13027,9 @@ window.X4KbData = {
           "canonical": "盜汗",
           "page": 275
         }
+      ],
+      "channelStages": [
+        "太陽"
       ]
     },
     {
@@ -12911,6 +13214,9 @@ window.X4KbData = {
           "canonical": "熱感",
           "page": 335
         }
+      ],
+      "channelStages": [
+        "太陰"
       ]
     },
     {
@@ -13128,6 +13434,9 @@ window.X4KbData = {
           "canonical": "腹痛",
           "page": 254
         }
+      ],
+      "channelStages": [
+        "太陰"
       ]
     },
     {
@@ -13467,6 +13776,9 @@ window.X4KbData = {
           "canonical": "高血壓",
           "page": 281
         }
+      ],
+      "channelStages": [
+        "少陽"
       ],
       "bookCautions": "明顯胃腸虛弱者。"
     },
@@ -13810,6 +14122,9 @@ window.X4KbData = {
           "page": 313
         }
       ],
+      "channelStages": [
+        "太陰"
+      ],
       "bookCautions": "1 ) 假性醛固酮增多證。2 ) 肌病〈低鉀血癥導致 )。 表現為脫力感，肌力降低，肌肉痛，四肢冶攣、麻交等橫紋肌溶解症。CK 升高，血及尿中肌紅蛋白上升。若出現不良反應當停藥，進行相應處理。[ 相互作用 ] 與葉塞米、利尿酸、吵嗪類藥物並用可能引起血鉀低下。；1 ) 假性醛固酮增多證。 2 ) 肌病〈低鉀血癥導致 )。 表現為脫力感，肌力降低，肌肉痛，四肢冶 攣、麻交等橫紋肌溶解症。CK 升高，血及尿中肌紅蛋白上升。若出現不良反 應當停藥，進行相應處理。 [ 相互作用 ] 與葉塞米、利尿酸、吵嗪類藥物並用可能引起血鉀低下。"
     },
     {
@@ -13976,6 +14291,9 @@ window.X4KbData = {
           "page": 312
         }
       ],
+      "channelStages": [
+        "少陽"
+      ],
       "bookCautions": "惡宣，腹瀉傾向，體力明顯衰弱者。"
     },
     {
@@ -14084,6 +14402,9 @@ window.X4KbData = {
           "canonical": "失眠",
           "page": 348
         }
+      ],
+      "channelStages": [
+        "少陽"
       ]
     },
     {
@@ -14156,6 +14477,13 @@ window.X4KbData = {
           "page": 239
         },
         {
+          "raw": "上腹痛",
+          "id": "S-EPIGASTRIC-PAIN",
+          "negated": false,
+          "matchType": "book-physician",
+          "page": 239
+        },
+        {
           "raw": "腹痛",
           "id": "S-ABDOMINAL-PAIN",
           "negated": false,
@@ -14185,6 +14513,7 @@ window.X4KbData = {
         "S-NAUSEA",
         "S-VOMITING",
         "S-APPETITE-LOW",
+        "S-EPIGASTRIC-PAIN",
         "S-ABDOMINAL-PAIN"
       ],
       "formulaPattern": [
@@ -14229,6 +14558,11 @@ window.X4KbData = {
           "page": 239
         },
         {
+          "id": "S-BORBORIGMUS",
+          "canonical": "腹鳴",
+          "page": 239
+        },
+        {
           "id": "S-NAUSEA",
           "canonical": "噁心",
           "page": 239
@@ -14239,15 +14573,13 @@ window.X4KbData = {
           "page": 239
         },
         {
-          "id": "S-BORBORIGMUS",
-          "canonical": "腹鳴",
-          "page": 239
-        },
-        {
           "id": "S-VOMITING",
           "canonical": "嘔吐",
           "page": 239
         }
+      ],
+      "channelStages": [
+        "少陽"
       ],
       "bookCautions": "偶見間質性肺炎，若發生則停藥，進行相應治療。[ 相互作用 ] 與葉塞米、利尿酸、吹嗪類利尿劑等同用，可能引起低鉀血癥。"
     },
@@ -14364,6 +14696,9 @@ window.X4KbData = {
           "canonical": "嘔吐",
           "page": 267
         }
+      ],
+      "channelStages": [
+        "少陽"
       ]
     },
     {
@@ -14490,6 +14825,9 @@ window.X4KbData = {
           "canonical": "抑鬱",
           "page": 309
         }
+      ],
+      "channelStages": [
+        "少陽"
       ]
     },
     {
@@ -14633,6 +14971,9 @@ window.X4KbData = {
           "canonical": "失眠",
           "page": 321
         }
+      ],
+      "channelStages": [
+        "少陽"
       ],
       "bookCautions": "胃腸虛弱者〈 偶爾腹瀉 )。"
     },
@@ -14821,6 +15162,9 @@ window.X4KbData = {
           "canonical": "心悸",
           "page": 283
         }
+      ],
+      "channelStages": [
+        "少陰"
       ]
     },
     {
@@ -14934,6 +15278,10 @@ window.X4KbData = {
           "canonical": "喘息",
           "page": 347
         }
+      ],
+      "channelStages": [
+        "少陽",
+        "太陽"
       ]
     },
     {
@@ -15087,6 +15435,9 @@ window.X4KbData = {
           "canonical": "炎症",
           "page": 308
         }
+      ],
+      "channelStages": [
+        "少陽"
       ]
     },
     {
@@ -15210,6 +15561,9 @@ window.X4KbData = {
           "canonical": "盜汗",
           "page": 285
         }
+      ],
+      "channelStages": [
+        "太陰"
       ]
     },
     {
@@ -15351,6 +15705,9 @@ window.X4KbData = {
           "canonical": "盜汗",
           "page": 310
         }
+      ],
+      "channelStages": [
+        "太陰"
       ]
     },
     {
@@ -15475,6 +15832,11 @@ window.X4KbData = {
       ],
       "bookCorroborated": [
         {
+          "id": "S-GASTRIC-SPLASH",
+          "canonical": "胃部振水音",
+          "page": 292
+        },
+        {
           "id": "S-ASTHMA-WHEEZE",
           "canonical": "喘息",
           "page": 292
@@ -15488,12 +15850,10 @@ window.X4KbData = {
           "id": "S-EDEMA",
           "canonical": "浮腫",
           "page": 292
-        },
-        {
-          "id": "S-GASTRIC-SPLASH",
-          "canonical": "胃部振水音",
-          "page": 292
         }
+      ],
+      "channelStages": [
+        "少陽"
       ]
     },
     {
@@ -15680,6 +16040,9 @@ window.X4KbData = {
           "canonical": "喘息",
           "page": 267
         }
+      ],
+      "channelStages": [
+        "太陰"
       ]
     },
     {
@@ -15717,6 +16080,12 @@ window.X4KbData = {
         {
           "raw": "痙攣性咳嗽",
           "id": "S-COUGH",
+          "negated": false,
+          "matchType": "exact"
+        },
+        {
+          "raw": "咽喉狹窄感",
+          "id": "S-THROAT-BLOCK",
           "negated": false,
           "matchType": "exact"
         },
@@ -15799,6 +16168,9 @@ window.X4KbData = {
           "canonical": "咽痛",
           "page": 302
         }
+      ],
+      "channelStages": [
+        "少陽"
       ]
     },
     {
@@ -15984,6 +16356,9 @@ window.X4KbData = {
           "page": 350
         }
       ],
+      "channelStages": [
+        "少陽"
+      ],
       "bookCautions": "皮膚蒼日，汗出，咳痰多，胃腸虛弱易腹海者。"
     },
     {
@@ -16100,6 +16475,9 @@ window.X4KbData = {
           "canonical": "易疲勞",
           "page": 351
         }
+      ],
+      "channelStages": [
+        "少陽"
       ]
     },
     {
@@ -16395,6 +16773,9 @@ window.X4KbData = {
           "canonical": "遺精",
           "page": 295
         }
+      ],
+      "channelStages": [
+        "太陰"
       ],
       "bookCautions": "胃腸虛弱者。"
     },
@@ -16877,10 +17258,18 @@ window.X4KbData = {
           "page": 304
         },
         {
+          "id": "S-GASTRIC-SPLASH",
+          "canonical": "胃部振水音",
+          "page": 304
+        },
+        {
           "id": "S-BORBORIGMUS",
           "canonical": "腹鳴",
           "page": 304
         }
+      ],
+      "channelStages": [
+        "少陽"
       ]
     },
     {
@@ -17108,6 +17497,9 @@ window.X4KbData = {
           "page": 319
         }
       ],
+      "channelStages": [
+        "少陽"
+      ],
       "bookCautions": "明顯體力衰弱者。"
     },
     {
@@ -17277,6 +17669,9 @@ window.X4KbData = {
           "canonical": "痛經",
           "page": 325
         }
+      ],
+      "channelStages": [
+        "少陽"
       ]
     },
     {
@@ -17438,7 +17833,10 @@ window.X4KbData = {
       "bookPages": [
         342
       ],
-      "bookCautions": "偶發間質性肺炎。"
+      "bookCautions": "偶發間質性肺炎。",
+      "channelStages": [
+        "少陽"
+      ]
     },
     {
       "id": "F-BOOK-002",
@@ -17503,7 +17901,10 @@ window.X4KbData = {
       "bookPages": [
         259
       ],
-      "bookCautions": ""
+      "bookCautions": "",
+      "channelStages": [
+        "少陽"
+      ]
     },
     {
       "id": "F-BOOK-003",
@@ -17596,7 +17997,10 @@ window.X4KbData = {
       "bookPages": [
         312
       ],
-      "bookCautions": "骨腸虛弱者。"
+      "bookCautions": "骨腸虛弱者。",
+      "channelStages": [
+        "少陽"
+      ]
     },
     {
       "id": "F-BOOK-004",
@@ -17673,7 +18077,10 @@ window.X4KbData = {
       "bookPages": [
         253
       ],
-      "bookCautions": "體力衰弱者，骨腸虛弱者。"
+      "bookCautions": "體力衰弱者，骨腸虛弱者。",
+      "channelStages": [
+        "陽明"
+      ]
     },
     {
       "id": "F-BOOK-005",
@@ -17757,7 +18164,10 @@ window.X4KbData = {
       "bookPages": [
         251
       ],
-      "bookCautions": ""
+      "bookCautions": "",
+      "channelStages": [
+        "太陰"
+      ]
     },
     {
       "id": "F-BOOK-006",
@@ -17894,7 +18304,10 @@ window.X4KbData = {
       "bookPages": [
         251
       ],
-      "bookCautions": "1 ) 偶見間質性肺炎 ，震出現則停藥，進行相應治療。2 ) 消化系統症狀〈 腹瀉、腹痛、食慾不振等 )，者出現則宣減量或停藥。[ 並用 ]1 ) 便秘嚴重者可並用大黃甘草湯或大黃末。2 ) 黃癌明顯者可並用茵陳項湯。；1 ) 偶見間質性肺炎 ，震出現則停藥，進行相應治療。 2 ) 消化系統症狀〈 腹瀉、腹痛、食慾不振等 )，者出現則宣減量或停藥。"
+      "bookCautions": "1 ) 偶見間質性肺炎 ，震出現則停藥，進行相應治療。2 ) 消化系統症狀〈 腹瀉、腹痛、食慾不振等 )，者出現則宣減量或停藥。[ 並用 ]1 ) 便秘嚴重者可並用大黃甘草湯或大黃末。2 ) 黃癌明顯者可並用茵陳項湯。；1 ) 偶見間質性肺炎 ，震出現則停藥，進行相應治療。 2 ) 消化系統症狀〈 腹瀉、腹痛、食慾不振等 )，者出現則宣減量或停藥。",
+      "channelStages": [
+        "少陽"
+      ]
     },
     {
       "id": "F-BOOK-007",
@@ -17945,7 +18358,10 @@ window.X4KbData = {
       "bookPages": [
         249
       ],
-      "bookCautions": ""
+      "bookCautions": "",
+      "channelStages": [
+        "陽明"
+      ]
     },
     {
       "id": "F-BOOK-008",
@@ -18017,7 +18433,10 @@ window.X4KbData = {
       "bookPages": [
         249
       ],
-      "bookCautions": ""
+      "bookCautions": "",
+      "channelStages": [
+        "太陰"
+      ]
     },
     {
       "id": "F-BOOK-009",
@@ -18125,7 +18544,10 @@ window.X4KbData = {
       "bookPages": [
         333
       ],
-      "bookCautions": "體力明顯衰弱者。"
+      "bookCautions": "體力明顯衰弱者。",
+      "channelStages": [
+        "少陽"
+      ]
     },
     {
       "id": "F-BOOK-010",
@@ -18197,7 +18619,10 @@ window.X4KbData = {
       "bookPages": [
         248
       ],
-      "bookCautions": "1 ) 浮腫。若出現浮腫，應停止使用。2 ) 電解質率亂〈長期連續使用可能出現假性醛固酮增多症 )，若出現應停藥。低鉀血癥可導致肌病。3 ) 過敏症〈皮次、痿癢等 )。"
+      "bookCautions": "1 ) 浮腫。若出現浮腫，應停止使用。2 ) 電解質率亂〈長期連續使用可能出現假性醛固酮增多症 )，若出現應停藥。低鉀血癥可導致肌病。3 ) 過敏症〈皮次、痿癢等 )。",
+      "channelStages": [
+        "太陽"
+      ]
     },
     {
       "id": "F-BOOK-011",
@@ -18290,7 +18715,10 @@ window.X4KbData = {
       "bookPages": [
         326
       ],
-      "bookCautions": ""
+      "bookCautions": "",
+      "channelStages": [
+        "少陽"
+      ]
     },
     {
       "id": "F-BOOK-012",
@@ -18369,7 +18797,10 @@ window.X4KbData = {
       "bookPages": [
         328
       ],
-      "bookCautions": ""
+      "bookCautions": "",
+      "channelStages": [
+        "陽明"
+      ]
     },
     {
       "id": "F-BOOK-013",
@@ -18483,7 +18914,10 @@ window.X4KbData = {
       "bookPages": [
         327
       ],
-      "bookCautions": ""
+      "bookCautions": "",
+      "channelStages": [
+        "太陰"
+      ]
     },
     {
       "id": "F-BOOK-014",
@@ -18620,7 +19054,10 @@ window.X4KbData = {
       "bookPages": [
         314
       ],
-      "bookCautions": ""
+      "bookCautions": "",
+      "channelStages": [
+        "太陽"
+      ]
     },
     {
       "id": "F-BOOK-016",
@@ -18685,7 +19122,10 @@ window.X4KbData = {
       "bookPages": [
         287
       ],
-      "bookCautions": ""
+      "bookCautions": "",
+      "channelStages": [
+        "少陽"
+      ]
     },
     {
       "id": "F-BOOK-017",
@@ -18743,7 +19183,12 @@ window.X4KbData = {
       "bookPages": [
         266
       ],
-      "bookCautions": "1 ) 原發性醛固酮增多症患者。2 ) 有肌病的患者。3 ) 有低鉀血癥患者。；1 ) 若出現電解質率亂 (長期連續使用可能引起假性醛固酮增多症 )，則中止使用。2 ) 出現低鉀血癥則可能引起肌病。[ 相互作用 ]與吶塞米、利尿酸、呆嗪類利尿劑並用，可能引起血鉀值低下。甘草附子湯"
+      "bookCautions": "1 ) 原發性醛固酮增多症患者。2 ) 有肌病的患者。3 ) 有低鉀血癥患者。；1 ) 若出現電解質率亂 (長期連續使用可能引起假性醛固酮增多症 )，則中止使用。2 ) 出現低鉀血癥則可能引起肌病。[ 相互作用 ]與吶塞米、利尿酸、呆嗪類利尿劑並用，可能引起血鉀值低下。甘草附子湯",
+      "channelStages": [
+        "少陽",
+        "太陽",
+        "少陰"
+      ]
     },
     {
       "id": "F-BOOK-018",
@@ -18808,7 +19253,10 @@ window.X4KbData = {
       "bookPages": [
         267
       ],
-      "bookCautions": ""
+      "bookCautions": "",
+      "channelStages": [
+        "少陽"
+      ]
     },
     {
       "id": "F-BOOK-019",
@@ -18873,7 +19321,10 @@ window.X4KbData = {
       "bookPages": [
         236
       ],
-      "bookCautions": ""
+      "bookCautions": "",
+      "channelStages": [
+        "陽明"
+      ]
     },
     {
       "id": "F-BOOK-020",
@@ -18931,7 +19382,10 @@ window.X4KbData = {
       "bookPages": [
         236
       ],
-      "bookCautions": ""
+      "bookCautions": "",
+      "channelStages": [
+        "陽明"
+      ]
     },
     {
       "id": "F-BOOK-021",
@@ -18989,7 +19443,10 @@ window.X4KbData = {
       "bookPages": [
         236
       ],
-      "bookCautions": ""
+      "bookCautions": "",
+      "channelStages": [
+        "陽明"
+      ]
     },
     {
       "id": "F-BOOK-022",
@@ -19110,7 +19567,10 @@ window.X4KbData = {
       "bookPages": [
         350
       ],
-      "bookCautions": ""
+      "bookCautions": "",
+      "channelStages": [
+        "少陽"
+      ]
     },
     {
       "id": "F-BOOK-023",
@@ -19203,7 +19663,10 @@ window.X4KbData = {
       "bookPages": [
         338
       ],
-      "bookCautions": "1 ) 若出現電解質紊亂 ( 與葉塞米、利尿酸、哮嗪類利尿劑並用，可能引起血鉀值低下 )，即中止使用。@ 夸克掃描王家速掃描，就是高效 品下名-aa內果二方劑-響 312 ) 低鉀血癥可能引起肌病。"
+      "bookCautions": "1 ) 若出現電解質紊亂 ( 與葉塞米、利尿酸、哮嗪類利尿劑並用，可能引起血鉀值低下 )，即中止使用。@ 夸克掃描王家速掃描，就是高效 品下名-aa內果二方劑-響 312 ) 低鉀血癥可能引起肌病。",
+      "channelStages": [
+        "少陽"
+      ]
     },
     {
       "id": "F-BOOK-024",
@@ -19282,7 +19745,10 @@ window.X4KbData = {
       "bookPages": [
         337
       ],
-      "bookCautions": "偶見間質性肺炎，若出現則停止投藥，進行相應治療。"
+      "bookCautions": "偶見間質性肺炎，若出現則停止投藥，進行相應治療。",
+      "channelStages": [
+        "少陽"
+      ]
     },
     {
       "id": "F-BOOK-025",
@@ -19347,7 +19813,10 @@ window.X4KbData = {
       "bookPages": [
         339
       ],
-      "bookCautions": ""
+      "bookCautions": "",
+      "channelStages": [
+        "少陽"
+      ]
     },
     {
       "id": "F-BOOK-026",
@@ -19398,7 +19867,10 @@ window.X4KbData = {
       "bookPages": [
         265
       ],
-      "bookCautions": ""
+      "bookCautions": "",
+      "channelStages": [
+        "少陰"
+      ]
     },
     {
       "id": "F-BOOK-027",
@@ -19549,7 +20021,11 @@ window.X4KbData = {
       "bookPages": [
         242
       ],
-      "bookCautions": "偶見間質性肺炎 ，及時停藥，進行相應治療。[ 並用 ] 伴有咽喉部不適感的場合，並用半夏厚朴瘍。"
+      "bookCautions": "偶見間質性肺炎 ，及時停藥，進行相應治療。[ 並用 ] 伴有咽喉部不適感的場合，並用半夏厚朴瘍。",
+      "channelStages": [
+        "少陽",
+        "太陽"
+      ]
     },
     {
       "id": "F-BOOK-029",
@@ -19635,7 +20111,10 @@ window.X4KbData = {
       "bookPages": [
         276
       ],
-      "bookCautions": ""
+      "bookCautions": "",
+      "channelStages": [
+        "太陰"
+      ]
     },
     {
       "id": "F-BOOK-030",
@@ -19643,7 +20122,7 @@ window.X4KbData = {
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛證",
       "patternVector": {
-        "QI_XU": 1,
+        "QI_XU": 0,
         "QI_NI": 0,
         "QI_YU": 0,
         "XUE_XU": 0,
@@ -19689,6 +20168,12 @@ window.X4KbData = {
           "matchType": "book"
         },
         {
+          "raw": "振水音",
+          "id": "S-GASTRIC-SPLASH",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
           "raw": "腹痛",
           "id": "S-ABDOMINAL-PAIN",
           "negated": false,
@@ -19729,6 +20214,7 @@ window.X4KbData = {
         "S-FATIGUE",
         "S-TENESMUS",
         "S-DIARRHEA-WATERY",
+        "S-GASTRIC-SPLASH",
         "S-ABDOMINAL-PAIN",
         "S-DIARRHEA",
         "S-DIARRHEA-LOOSE",
@@ -19741,7 +20227,10 @@ window.X4KbData = {
       "bookPages": [
         277
       ],
-      "bookCautions": ""
+      "bookCautions": "",
+      "channelStages": [
+        "太陰"
+      ]
     },
     {
       "id": "F-BOOK-031",
@@ -19806,7 +20295,10 @@ window.X4KbData = {
       "bookPages": [
         274
       ],
-      "bookCautions": ""
+      "bookCautions": "",
+      "channelStages": [
+        "太陰"
+      ]
     },
     {
       "id": "F-BOOK-032",
@@ -19885,7 +20377,10 @@ window.X4KbData = {
       "bookPages": [
         274
       ],
-      "bookCautions": ""
+      "bookCautions": "",
+      "channelStages": [
+        "太陽"
+      ]
     },
     {
       "id": "F-BOOK-033",
@@ -19971,7 +20466,10 @@ window.X4KbData = {
       "bookPages": [
         274
       ],
-      "bookCautions": ""
+      "bookCautions": "",
+      "channelStages": [
+        "太陽"
+      ]
     },
     {
       "id": "F-BOOK-034",
@@ -20070,7 +20568,10 @@ window.X4KbData = {
       "bookPages": [
         280
       ],
-      "bookCautions": ""
+      "bookCautions": "",
+      "channelStages": [
+        "太陽"
+      ]
     },
     {
       "id": "F-BOOK-035",
@@ -20142,7 +20643,11 @@ window.X4KbData = {
       "bookPages": [
         289
       ],
-      "bookCautions": ""
+      "bookCautions": "",
+      "channelStages": [
+        "少陽",
+        "太陽"
+      ]
     },
     {
       "id": "F-BOOK-036",
@@ -20207,7 +20712,10 @@ window.X4KbData = {
       "bookPages": [
         334
       ],
-      "bookCautions": "1 ) 患部無分沁物、乾燥的場合。@〇 夸克掃描王家速掃描，就是高效 品下名-二2 ) 明顯體力衰弱患者。3 ) 明顯胃腸虛弱患者。"
+      "bookCautions": "1 ) 患部無分沁物、乾燥的場合。@〇 夸克掃描王家速掃描，就是高效 品下名-二2 ) 明顯體力衰弱患者。3 ) 明顯胃腸虛弱患者。",
+      "channelStages": [
+        "少陽"
+      ]
     },
     {
       "id": "F-BOOK-037",
@@ -20286,7 +20794,10 @@ window.X4KbData = {
       "bookPages": [
         324
       ],
-      "bookCautions": ""
+      "bookCautions": "",
+      "channelStages": [
+        "少陰"
+      ]
     },
     {
       "id": "F-BOOK-038",
@@ -20351,7 +20862,11 @@ window.X4KbData = {
       "bookPages": [
         324
       ],
-      "bookCautions": ""
+      "bookCautions": "",
+      "channelStages": [
+        "太陽",
+        "少陽"
+      ]
     },
     {
       "id": "F-BOOK-039",
@@ -20423,7 +20938,10 @@ window.X4KbData = {
       "bookPages": [
         262
       ],
-      "bookCautions": ""
+      "bookCautions": "",
+      "channelStages": [
+        "厥陰"
+      ]
     },
     {
       "id": "F-BOOK-040",
@@ -20495,7 +21013,10 @@ window.X4KbData = {
       "bookPages": [
         342
       ],
-      "bookCautions": "1 ) 體力明顯衰弱者。2 ) 有腹海傾向者。@ 夸克掃描王區”="
+      "bookCautions": "1 ) 體力明顯衰弱者。2 ) 有腹海傾向者。@ 夸克掃描王區”=",
+      "channelStages": [
+        "陽明"
+      ]
     },
     {
       "id": "F-BOOK-041",
@@ -20588,7 +21109,10 @@ window.X4KbData = {
       "bookPages": [
         315
       ],
-      "bookCautions": ""
+      "bookCautions": "",
+      "channelStages": [
+        "太陽"
+      ]
     },
     {
       "id": "F-BOOK-042",
@@ -20667,7 +21191,10 @@ window.X4KbData = {
       "bookPages": [
         348
       ],
-      "bookCautions": "體力明顯低下者。"
+      "bookCautions": "體力明顯低下者。",
+      "channelStages": [
+        "少陽"
+      ]
     },
     {
       "id": "F-BOOK-043",
@@ -20753,7 +21280,10 @@ window.X4KbData = {
       "bookPages": [
         308
       ],
-      "bookCautions": ""
+      "bookCautions": "",
+      "channelStages": [
+        "少陽"
+      ]
     },
     {
       "id": "F-BOOK-044",
@@ -20811,7 +21341,10 @@ window.X4KbData = {
       "bookPages": [
         307
       ],
-      "bookCautions": "偶見間質性肺炎 ，知出現則停藥，進行相應治療。"
+      "bookCautions": "偶見間質性肺炎 ，知出現則停藥，進行相應治療。",
+      "channelStages": [
+        "少陽"
+      ]
     },
     {
       "id": "F-BOOK-045",
@@ -20897,7 +21430,10 @@ window.X4KbData = {
       "bookPages": [
         299
       ],
-      "bookCautions": ""
+      "bookCautions": "",
+      "channelStages": [
+        "少陽"
+      ]
     },
     {
       "id": "F-BOOK-046",
@@ -20990,7 +21526,11 @@ window.X4KbData = {
       "bookPages": [
         300
       ],
-      "bookCautions": ""
+      "bookCautions": "",
+      "channelStages": [
+        "少陽",
+        "太陽"
+      ]
     },
     {
       "id": "F-BOOK-047",
@@ -21062,7 +21602,10 @@ window.X4KbData = {
       "bookPages": [
         298
       ],
-      "bookCautions": ""
+      "bookCautions": "",
+      "channelStages": [
+        "少陰"
+      ]
     },
     {
       "id": "F-BOOK-048",
@@ -21078,7 +21621,7 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0.25,
         "XIN-XUEXU": 0,
@@ -21150,6 +21693,24 @@ window.X4KbData = {
           "id": "S-BLEEDING",
           "negated": false,
           "matchType": "book"
+        },
+        {
+          "raw": "無汗",
+          "id": "S-NO-SWEAT",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "身體痛",
+          "id": "S-MUSCLE-PAIN",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "頭痛",
+          "id": "S-HEADACHE",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -21172,7 +21733,10 @@ window.X4KbData = {
         "S-HEAVY-HEAD",
         "S-LOW-BACK-PAIN",
         "S-NASAL-CONGESTION",
-        "S-BLEEDING"
+        "S-BLEEDING",
+        "S-NO-SWEAT",
+        "S-MUSCLE-PAIN",
+        "S-HEADACHE"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：麻黃湯（OCR 標題，已人工校名）",
@@ -21181,7 +21745,10 @@ window.X4KbData = {
       "bookPages": [
         298
       ],
-      "bookCautions": "1 ) 汗出傾向明顯，或已強力發汗塵出而脈弱者。2 ) 體力明顯誤弱的場合。3 ) 明顯胃腸虛弱。4) 冠心病心絞痛、心肌梗死等迴圈系統疾患，或有既往史者。@ 夸克掃描王家速掃描，就是高效 品下名[ 相互作用 ]1 ) 與交感神經興奮藥並用，可能引起心慌層動、心動過速等。2 ) 與解熱鎮痛藥並用，可能引起過度汗出。；1 ) 汗出傾嚮明顯，或已強力發汗塵出而脈弱者。 2 ) 體力明顯誤弱的場合。 3 ) 明顯胃腸虛弱。 4) 冠心病心絞痛、心肌梗死等循環系統疾患，或有既往史者。 9 [ 相互作用 ] 1 ) 與交感神經興奮藥並用，可能引起心慌層動、心動過速等。 2 ) 與解熱鎮痛藥並用，可能引起過度汗出。"
+      "bookCautions": "1 ) 汗出傾向明顯，或已強力發汗塵出而脈弱者。2 ) 體力明顯誤弱的場合。3 ) 明顯胃腸虛弱。4) 冠心病心絞痛、心肌梗死等迴圈系統疾患，或有既往史者。@ 夸克掃描王家速掃描，就是高效 品下名[ 相互作用 ]1 ) 與交感神經興奮藥並用，可能引起心慌層動、心動過速等。2 ) 與解熱鎮痛藥並用，可能引起過度汗出。；1 ) 汗出傾嚮明顯，或已強力發汗塵出而脈弱者。 2 ) 體力明顯誤弱的場合。 3 ) 明顯胃腸虛弱。 4) 冠心病心絞痛、心肌梗死等循環系統疾患，或有既往史者。 9 [ 相互作用 ] 1 ) 與交感神經興奮藥並用，可能引起心慌層動、心動過速等。 2 ) 與解熱鎮痛藥並用，可能引起過度汗出。",
+      "channelStages": [
+        "太陽"
+      ]
     },
     {
       "id": "F-BOOK-049",
@@ -21288,7 +21855,11 @@ window.X4KbData = {
       "bookPages": [
         286
       ],
-      "bookCautions": "1 ) 原發性醛固酮增多症患者。2 ) 肌病患者。3 ) 低鉀血癥患者。；1 ) 對電解質代謝的影響〈長期連續使用可能引起假性醛固酮增多症，若出現則中止使用 )。2 ) 因低鉀血癥可能引起肌病，若出現則中止使用。[ 相互作用 ] 與葉塞米、利尿酸、哮嗪類利尿劑並用可能導致血鉀值低下5"
+      "bookCautions": "1 ) 原發性醛固酮增多症患者。2 ) 肌病患者。3 ) 低鉀血癥患者。；1 ) 對電解質代謝的影響〈長期連續使用可能引起假性醛固酮增多症，若出現則中止使用 )。2 ) 因低鉀血癥可能引起肌病，若出現則中止使用。[ 相互作用 ] 與葉塞米、利尿酸、哮嗪類利尿劑並用可能導致血鉀值低下5",
+      "channelStages": [
+        "少陽",
+        "太陽"
+      ]
     },
     {
       "id": "F-BOOK-050",
@@ -21339,7 +21910,10 @@ window.X4KbData = {
       "bookPages": [
         285
       ],
-      "bookCautions": ""
+      "bookCautions": "",
+      "channelStages": [
+        "太陰"
+      ]
     },
     {
       "id": "F-BOOK-051",
@@ -21439,7 +22013,10 @@ window.X4KbData = {
       "bookPages": [
         256
       ],
-      "bookCautions": ""
+      "bookCautions": "",
+      "channelStages": [
+        "太陰"
+      ]
     },
     {
       "id": "F-BOOK-052",
@@ -21504,7 +22081,10 @@ window.X4KbData = {
       "bookPages": [
         257
       ],
-      "bookCautions": ""
+      "bookCautions": "",
+      "channelStages": [
+        "太陰"
+      ]
     },
     {
       "id": "F-BOOK-053",
@@ -21604,7 +22184,11 @@ window.X4KbData = {
       "bookPages": [
         269
       ],
-      "bookCautions": "1 ) 電解質代謝京亂 (長期連續使用可能引起假性醛固酮增多症 )，若發生則中止使用。2 ) 低鉀血癥，可能引起肌病。3 ) 過敏症〈皮疹 )。4) 烘熱感，心導。[ 相互作用 ]1 ) 與交感神經興奮藥物並用，可能引起心必、心動過速等。2 ) 與解熱鎮痛藥並用，可能引起過度汗出，有時甚至出現休克。"
+      "bookCautions": "1 ) 電解質代謝京亂 (長期連續使用可能引起假性醛固酮增多症 )，若發生則中止使用。2 ) 低鉀血癥，可能引起肌病。3 ) 過敏症〈皮疹 )。4) 烘熱感，心導。[ 相互作用 ]1 ) 與交感神經興奮藥物並用，可能引起心必、心動過速等。2 ) 與解熱鎮痛藥並用，可能引起過度汗出，有時甚至出現休克。",
+      "channelStages": [
+        "太陽",
+        "少陰"
+      ]
     },
     {
       "id": "F-BOOK-054",
@@ -21662,7 +22246,11 @@ window.X4KbData = {
       "bookPages": [
         290
       ],
-      "bookCautions": ""
+      "bookCautions": "",
+      "channelStages": [
+        "太陰",
+        "少陰"
+      ]
     },
     {
       "id": "F-BOOK-055",
@@ -21734,7 +22322,10 @@ window.X4KbData = {
       "bookPages": [
         323
       ],
-      "bookCautions": ""
+      "bookCautions": "",
+      "channelStages": [
+        "陽明"
+      ]
     },
     {
       "id": "F-PHYS-001",

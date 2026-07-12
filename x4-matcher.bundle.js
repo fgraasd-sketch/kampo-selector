@@ -463,6 +463,92 @@ function uniqueBy(items, keyFn) {
 // patterns beyond the current presentation.
 const PATTERN_RECALL_BETA = 2;
 
+// 六經 channel term (2026-07-12, physician direction): 六經辨證 and 氣血水 are
+// TWO SYSTEMS that can point at the same formula. The workbook's six-pattern
+// framework has no 表證 axis at all, so a pure 太陽 presentation (無汗・惡寒・
+// 發熱・項背強) computes only checklist noise (氣逆 0.40 / 水滯 0.31 — below
+// every threshold) and 0.40 of the score is handed to whichever formula is
+// filed under 氣逆 (measured 2026-07-11; the drop-uninformative-terms fix was
+// measured too and rejected — see reports/scoring-model-findings-2026-07-11.md).
+//
+// The channel system is a SECOND ROUTE to the recommendation, not a term in
+// the six-pattern weighted average: the final score is the MAX of the 氣血水
+// route (unchanged) and the 六經 route. The 六經 route only exists when the
+// patient shows channel-determinable evidence AND the formula carries a
+// book-declared 病期 (channelStages, from the head of 《漢方臨床診療學》's
+// 病期病態 sections); in every other case it is exactly zero and the ranking
+// is byte-identical to the pre-channel model — no canary can move through
+// renormalisation. Within a matched channel the route orders formulas by key
+// evidence (CHANNEL_W_KEY), which is precisely the 傷寒論 way: among the 太陽
+// formulas, 無汗 vs 汗出 decides 葛根湯 vs 桂枝加葛根湯, and the six-pattern
+// residue (the noise the checklist itself scores below every threshold) is
+// not allowed to overrule it.
+//
+// Patient-side inference is deliberately conservative (v1):
+//   太陽 — gate: 惡寒/發冷 AND 發熱 together (the acute exterior pair), or 脈浮.
+//        Chronic cold-intolerance alone (當歸芍藥散-type patients) never opens it.
+//   少陽 — gate: any pathognomonic sign (胸脇苦滿 / 口苦 / 往來寒熱).
+// The other four stages are stored on formulas but never inferred for patients
+// yet — inferring 太陰/少陰 from checklists is a clinical call not taken here.
+const CHANNEL_W_KEY = 0.55;   // 六經路線裡主症證據的權重
+const CHANNEL_W_STAGE = 0.45; // 病期相符本身的權重
+
+const CHANNEL_SIGNS = {
+  "太陽": {
+    gatePairs: [["S-COLD", "S-FEVER"]],
+    gateAny: ["S-PULSE-FLOATING"],
+    supporting: [
+      "S-COLD", "S-FEVER", "S-HEADACHE", "S-SHOULDER-STIFF", "S-NO-SWEAT",
+      "S-SPONTANEOUS-SWEAT", "S-MUSCLE-PAIN", "S-PULSE-FLOATING",
+      "S-NASAL-CONGESTION", "S-RUNNY-NOSE-WATERY",
+    ],
+    saturation: 4,
+  },
+  "少陽": {
+    gatePairs: [],
+    gateAny: ["S-CHEST-RIB-FULLNESS", "S-BITTER-TASTE", "S-ALTERNATING-CHILL-FEVER"],
+    supporting: ["S-CHEST-RIB-FULLNESS", "S-BITTER-TASTE", "S-ALTERNATING-CHILL-FEVER"],
+    saturation: 2,
+  },
+};
+
+// Positive, directly-reported symptom ids only: negated findings and synthetic
+// parent-fallback ancestors must not open a channel gate.
+function positiveDirectIds(patientMatches) {
+  const ids = new Set();
+  for (const match of bestPatientMatchesById(patientMatches).values()) {
+    if (match.matchType === "direct" && match.weight > 0) ids.add(match.id);
+  }
+  return ids;
+}
+
+function buildChannelEvidence(patientMatches) {
+  const ids = positiveDirectIds(patientMatches);
+  const evidence = {};
+  for (const [channel, signs] of Object.entries(CHANNEL_SIGNS)) {
+    const gateOpen = signs.gatePairs.some((pair) => pair.every((id) => ids.has(id)))
+      || signs.gateAny.some((id) => ids.has(id));
+    if (!gateOpen) continue;
+    const hits = signs.supporting.filter((id) => ids.has(id));
+    const strength = Math.min(1, hits.length / signs.saturation);
+    if (strength > 0) evidence[channel] = { strength, signs: hits };
+  }
+  return evidence;
+}
+
+function channelAlignment(channelEvidence, formulaStages) {
+  const stages = toArray(formulaStages);
+  if (!stages.length) return { bonusFactor: 0, matchedChannels: [] };
+  const matchedChannels = [];
+  let best = 0;
+  for (const [channel, { strength }] of Object.entries(channelEvidence || {})) {
+    if (!stages.includes(channel)) continue;
+    matchedChannels.push({ channel, strength });
+    if (strength > best) best = strength;
+  }
+  return { bonusFactor: best, matchedChannels };
+}
+
 function patternCoverage(patientVector, formulaVector) {
   let patientBurden = 0;
   let formulaBreadth = 0;
@@ -779,9 +865,14 @@ function scoreFormula(formula, patientContext, normalizer) {
   const matchedBookSymptoms = matchBookSymptoms(formula, patientContext.matches, key.matchedSymptoms);
   const bookBonus = W_BOOK_SECONDARY * Math.min(1, matchedBookSymptoms.length / BOOK_SECONDARY_K);
   const vectorWeight = formula.vectorSource ? Math.min(1, positiveKeyHits / DERIVED_VECTOR_K) : 1;
-  const total = (W_KEY * key.keySymptomScore)
+  const channel = channelAlignment(patientContext.channelEvidence, formula.channelStages);
+  const baseTotal = (W_KEY * key.keySymptomScore)
     + ((W_PATTERN * patternScore) + (W_ZANGFU * zangFuScore)) * evidenceFactor * vectorWeight
     + bookBonus;
+  const channelRoute = channel.bonusFactor > 0
+    ? channel.bonusFactor * ((CHANNEL_W_KEY * key.keySymptomScore) + CHANNEL_W_STAGE)
+    : 0;
+  const total = Math.max(baseTotal, channelRoute);
 
   return {
     formula: {
@@ -795,11 +886,15 @@ function scoreFormula(formula, patientContext, normalizer) {
       zangFu: zangFuScore,
       evidenceFactor,
       bookBonus,
+      channelRoute,
+      routeTaken: channelRoute > baseTotal ? "六經" : "氣血水",
     },
     explanation: {
       matchedSymptoms: key.matchedSymptoms,
       unmatchedKeySymptoms: key.unmatchedKeySymptoms,
       matchedBookSymptoms,
+      matchedChannels: channel.matchedChannels,
+      patientChannelEvidence: patientContext.channelEvidence,
       patientResidualSymptoms: computePatientResidualSymptoms(patientContext.matches, key.matchedSymptoms),
       patientPatternVector: patientContext.patternVector,
       patientZangFuVector: patientContext.zangFuVector,
@@ -824,6 +919,7 @@ function createX4Matcher(kb) {
       matches,
       patternVector: buildPatternVector(matches, patterns),
       zangFuVector: buildZangFuVector(matches, kb.zangFuStates),
+      channelEvidence: buildChannelEvidence(matches),
       xuShi: patient?.xuShi || "unknown",
     };
   }
@@ -868,5 +964,5 @@ function createX4Matcher(kb) {
 
 
 
-  return { normalizeXushiClass, createX4Matcher, W_KEY, W_PATTERN, W_ZANGFU, PARENT_FALLBACK_WEIGHT, EVIDENCE_DAMPING_K, W_BOOK_SECONDARY, BOOK_SECONDARY_K, DERIVED_VECTOR_K, KEY_EVIDENCE_K, PATTERN_RECALL_BETA };
+  return { buildChannelEvidence, normalizeXushiClass, createX4Matcher, W_KEY, W_PATTERN, W_ZANGFU, PARENT_FALLBACK_WEIGHT, EVIDENCE_DAMPING_K, W_BOOK_SECONDARY, BOOK_SECONDARY_K, DERIVED_VECTOR_K, KEY_EVIDENCE_K, PATTERN_RECALL_BETA, CHANNEL_W_KEY, CHANNEL_W_STAGE };
 })();

@@ -342,6 +342,14 @@ body {
     align-items: start;
 }
 
+/* Grid items default to min-width:auto, so the six no-wrap tab buttons set the
+   whole column's minimum width (~520px). On phones that pushed 瘀血/水滯 off
+   screen and dragged every symptom card past the right edge — the tab strip's
+   own overflow-x:auto never engaged because the column simply grew instead. */
+.diagnostic-layout > * {
+    min-width: 0;
+}
+
 /* Tab Container */
 .tab-container {
     border-bottom: 2px solid var(--border-color);
