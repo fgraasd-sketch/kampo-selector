@@ -169,6 +169,11 @@ const X4Adapter = (function () {
         const unmatchedCanonical = result.explanation.unmatchedKeySymptoms.map((item) => item.canonical);
         const unmatchedCount = unmatchedCanonical.length;
         const herbSuggestions = getHerbSuggestions(result.formula.id, result.explanation.patientResidualSymptoms);
+        // 書證另證 (2026-07-11): patient symptoms the book attests for this
+        // formula beyond its curated key symptoms — they earned score.bookBonus,
+        // so the card must show the page-cited evidence behind that bonus.
+        const bookHits = (result.explanation.matchedBookSymptoms || [])
+          .map((hit) => hit.canonical + (hit.page ? "（p." + hit.page + "）" : ""));
         return {
           ...display,
           name: result.formula.name,
@@ -201,6 +206,7 @@ const X4Adapter = (function () {
             matchedSymptoms: matchedCanonical,
             specialHits: [],
             contraindicationHits: [],
+            bookHits,
             reason: buildRecommendationReason(result, matchedCanonical, unmatchedCanonical),
           },
         };

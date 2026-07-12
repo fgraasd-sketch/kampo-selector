@@ -998,7 +998,7 @@ function parseCaseTextWithOntology(text = '') {
     });
     return [...matchesByCanonical.values()]
         .sort((a, b) => a.index - b.index || b.term.length - a.term.length)
-        .map(({ canonical, negated }) => ({ source: canonical, keyword: canonical, weight: 1, negated }));
+        .map(({ canonical, negated }) => ({ source: canonical, keyword: canonical, weight: 1, negated, ontology: true }));
 }
 
 function mergeParsedCaseItems(...groups) {
@@ -1010,6 +1010,18 @@ function mergeParsedCaseItems(...groups) {
         const existingIndex = indexBySource.get(source);
         if (existingIndex !== undefined) {
             const existing = merged[existingIndex];
+            // When both parsers found the same text, the ONTOLOGY one names it
+            // properly. The legacy engine's synonym groups map several symptoms
+            // straight onto a 六證 bucket — 浮腫's group is named 水滯, 貧血's is
+            // 血虛 — so keeping the legacy item labelled the chip with a pattern
+            // name instead of the symptom: type 「下肢浮腫」 into the case box and
+            // the chip came back 「水滯」. Scoring was unaffected (the matcher reads
+            // the source text), but the screen was telling the physician something
+            // they did not write.
+            if (item.ontology && !existing.ontology && (!item.negated || existing.negated)) {
+                merged[existingIndex] = item;
+                return;
+            }
             if (existing.negated || !item.negated) return;
             merged[existingIndex] = item;
             return;
@@ -1110,28 +1122,72 @@ function getCheckedSymptomLabels() {
     return labels;
 }
 
+// One chip per STANDARDIZED symptom, not per matched span. The parser hits the
+// same finding through several aliases (\u300c\u6708\u7d93\u958b\u59cb\u300d\u300c\u6708\u7d93\u958b\u59cb\u7b2c5\u5929\u300d\u300c\u75bc\u75db\u81ea\u6708\u7d93\u300d
+// are all \u75db\u7d93; \u300c\u6d41\u7522\u300d\u300c\u6d41\u75222\u6b21\u300d\u300c\u4eba\u5de5\u522e\u5bae\u300d\u300c\u522e\u5bae\u300d are all \u6d41\u7522\u53f2), and showing
+// each raw span as its own chip buried the real findings under lookalike
+// fragments (2026-07-11 \u859b\u6848 postmortem). The spans become the chip's evidence
+// line instead \u2014 the physician still sees exactly what text was matched.
+//
+// Two item shapes come out of the parser:
+//   weight 1    \u75c7\u72c0\u547d\u4e2d\uff1asource = \u75c5\u4f8b\u539f\u6587\u7247\u6bb5, keyword = \u6a19\u6e96\u75c7\u72c0\u540d
+//   weight 0.8  \u63a8\u5c0e\u547d\u4e2d\uff1asource = \u6a19\u6e96\u75c7\u72c0\u540d,   keyword = \u8b49\u578b\u6876\uff08\u7600\u8840/\u6c34\u6eef/\u5be6\uff09
+// so the standardized symptom is item.keyword for the former and item.source
+// for the latter, and the \u8b49\u578b\u6876 becomes a hint on the chip.
+//
+// The strings handed to the matcher are UNCHANGED: a checked chip contributes
+// every source string it grouped, so grouping is a display change only and
+// cannot move a score.
+function groupParsedCaseItems(items) {
+    const groups = new Map();
+    const ensure = (canonical) => {
+        if (!groups.has(canonical)) {
+            groups.set(canonical, { canonical, sources: [], spans: [], buckets: [], negated: true });
+        }
+        return groups.get(canonical);
+    };
+    items.forEach(item => {
+        if (!item || !item.source) return;
+        const derived = item.weight < 1;
+        const canonical = derived ? item.source : (item.keyword || item.source);
+        const group = ensure(canonical);
+        if (!group.sources.includes(item.source)) group.sources.push(item.source);
+        if (!derived) {
+            if (!item.negated) group.negated = false;
+            if (item.source !== canonical && !group.spans.includes(item.source)) group.spans.push(item.source);
+        } else if (item.keyword && !group.buckets.includes(item.keyword)) {
+            group.buckets.push(item.keyword);
+        }
+    });
+    // A group built only out of derived items (its parent symptom chip lives
+    // elsewhere) is still positive \u2014 derived hits never come from negated ones.
+    groups.forEach(group => { if (!group.spans.length && group.buckets.length && group.sources.length === 1) group.negated = false; });
+    return [...groups.values()];
+}
+
 function renderCaseKeywordPanel() {
     const panel = document.getElementById('case-keyword-panel');
     if (!panel) return;
-    const seen = new Set();
-    const chipItems = appState.parsedCaseItems.filter(item => {
-        if (seen.has(item.source)) return false;
-        seen.add(item.source);
-        return true;
-    });
-    if (!chipItems.length) {
+    const chipGroups = groupParsedCaseItems(appState.parsedCaseItems);
+    appState.caseChipGroups = chipGroups;
+    if (!chipGroups.length) {
         panel.innerHTML = '<p class="text-muted case-empty">\u5c1a\u672a\u89e3\u6790\u75c5\u4f8b\u3002\u8f38\u5165\u75c5\u4f8b\u5f8c\u6309\u300c\u89e3\u6790\u75c5\u4f8b\u300d\uff0c\u7cfb\u7d71\u6703\u5217\u51fa\u53ef\u78ba\u8a8d\u7684\u6a19\u6e96\u5316\u95dc\u9375\u5b57\u3002</p>';
         return;
     }
-    panel.innerHTML = chipItems.map(item => {
-        const checked = appState.caseKeywords.includes(item.source) ? ' checked' : '';
-        const negatedHint = item.negated ? '\uff08\u75c5\u4f8b\u63cf\u8ff0\u70ba\u9670\u6027\uff09' : '';
-        return ['<label class="case-keyword-chip">','<input type="checkbox" value="' + escapeHtml(item.source) + '"' + checked + '>','<span>' + escapeHtml(item.source) + '</span>','<small>' + escapeHtml(item.keyword + negatedHint) + '</small>','</label>'].join('');
+    panel.innerHTML = chipGroups.map(group => {
+        const checked = group.sources.some(source => appState.caseKeywords.includes(source)) ? ' checked' : '';
+        const hints = [];
+        if (group.spans.length) hints.push('\u539f\u6587\uff1a' + group.spans.join('\u3001'));
+        if (group.buckets.length) hints.push(group.buckets.join('\u3001'));
+        if (group.negated) hints.push('\uff08\u75c5\u4f8b\u63cf\u8ff0\u70ba\u9670\u6027\uff09');
+        return ['<label class="case-keyword-chip">','<input type="checkbox" value="' + escapeHtml(group.canonical) + '"' + checked + '>','<span>' + escapeHtml(group.canonical) + '</span>','<small>' + escapeHtml(hints.join('\uff5c')) + '</small>','</label>'].join('');
     }).join('');
     panel.querySelectorAll('input[type="checkbox"]').forEach(input => {
         input.addEventListener('change', () => {
-            const active = Array.from(panel.querySelectorAll('input[type="checkbox"]:checked')).map(item => item.value);
-            appState.caseKeywords = active;
+            const activeCanonicals = new Set(Array.from(panel.querySelectorAll('input[type="checkbox"]:checked')).map(item => item.value));
+            appState.caseKeywords = chipGroups
+                .filter(group => activeCanonicals.has(group.canonical))
+                .flatMap(group => group.sources);
             syncCaseSymptomsToCheckboxes();
         });
     });
@@ -1367,7 +1423,14 @@ function renderPrescriptions() {
         const explanation = item.explanation || {};
         const matchedSymptomsHtml = hasMatches ? '<div class="rx-matched-symptoms"><strong><i class="fa-solid fa-circle-check"></i> \u75c7\u72c0\u547d\u4e2d\uff1a</strong><span>' + escapeHtml(item.matchedSymptoms.join('\u3001')) + '</span></div>' : '<div class="rx-matched-symptoms muted"><strong><i class="fa-solid fa-circle-info"></i> \u75c7\u72c0\u547d\u4e2d\uff1a</strong><span>\u672a\u547d\u4e2d\u6587\u5b57\u75c7\u72c0\uff0c\u4f9d\u8fa8\u8b49\u5411\u91cf\u6392\u5e8f</span></div>';
         const herbSuggestionsHtml = buildHerbSuggestionsHtml(item.herbSuggestions);
-        card.innerHTML = ['<span class="rx-score-badge">Top ' + (index + 1) + ' \u00b7 ' + item.totalScore + ' \u5206</span>','<div>','<div class="rx-card-header"><span class="rx-name">' + escapeHtml(item.name) + '</span><span class="rx-tag ' + tagClass + '">' + escapeHtml(item.type) + '</span></div>','<div class="rx-source">' + iconHtml + ' ' + sourceName + '</div>','<div class="rx-indications"><strong>\u81e8\u5e8a\u6307\u5fb5\uff1a</strong> ' + escapeHtml(item.indications) + '</div>','</div>','<div class="rx-score-grid">','<div><strong>\u516d\u8b49</strong><span>' + Math.round((scoreParts.patternSimilarity || 0) * 100) + '%</span></div>','<div><strong>\u865b\u5be6</strong><span>' + (scoreParts.xuShiLabel ? escapeHtml(scoreParts.xuShiLabel) : Math.round((scoreParts.xuShiSimilarity || 0) * 100) + '%') + '</span></div>','<div><strong>\u4e94\u81df</strong><span>' + Math.round((scoreParts.zangFuSimilarity || 0) * 100) + '%</span></div>','<div><strong>\u75c7\u72c0</strong><span>' + Math.round((scoreParts.symptomMatch || 0) * 100) + '%</span></div>','</div>', matchedSymptomsHtml, herbSuggestionsHtml, '<div class="rx-explainability">','<div><strong>\u516d\u8b49\u547d\u4e2d\uff1a</strong>' + escapeHtml(formatVectorEntries(explanation.patterns)) + '</div>','<div><strong>\u865b\u5be6\u5224\u65b7\uff1a</strong>' + escapeHtml(formatVectorEntries(explanation.xuShi)) + '</div>','<div><strong>\u4e94\u81df\u547d\u4e2d\uff1a</strong>' + escapeHtml(formatVectorEntries(explanation.zangFu)) + '</div>','<div><strong>\u7279\u6b8a\u6307\u5fb5\uff1a</strong>' + escapeHtml(formatVectorEntries(explanation.specialHits)) + '</div>','<div><strong>\u7981\u5fcc / \u6392\u9664\u8b66\u793a\uff1a</strong>' + escapeHtml(formatVectorEntries(explanation.contraindicationHits)) + '</div>','<div><strong>\u70ba\u4ec0\u9ebc\u63a8\u85a6\uff1a</strong>' + escapeHtml(explanation.reason || '') + '</div>','</div>'].join('');
+        // 書證另證 (2026-07-11): page-cited symptoms from《漢方臨床診療學》that
+        // back this formula beyond its curated key symptoms (they drive the
+        // matcher's bookBonus, so the evidence must be visible). Only rendered
+        // when present — most formulas have no book record.
+        const bookHitsHtml = (explanation.bookHits && explanation.bookHits.length)
+            ? '<div><strong>書證另證：</strong>' + escapeHtml(explanation.bookHits.join('、')) + '（《漢方臨床診療學》）</div>'
+            : '';
+        card.innerHTML = ['<span class="rx-score-badge">Top ' + (index + 1) + ' \u00b7 ' + item.totalScore + ' \u5206</span>','<div>','<div class="rx-card-header"><span class="rx-name">' + escapeHtml(item.name) + '</span><span class="rx-tag ' + tagClass + '">' + escapeHtml(item.type) + '</span></div>','<div class="rx-source">' + iconHtml + ' ' + sourceName + '</div>','<div class="rx-indications"><strong>\u81e8\u5e8a\u6307\u5fb5\uff1a</strong> ' + escapeHtml(item.indications) + '</div>','</div>','<div class="rx-score-grid">','<div><strong>\u516d\u8b49</strong><span>' + Math.round((scoreParts.patternSimilarity || 0) * 100) + '%</span></div>','<div><strong>\u865b\u5be6</strong><span>' + (scoreParts.xuShiLabel ? escapeHtml(scoreParts.xuShiLabel) : Math.round((scoreParts.xuShiSimilarity || 0) * 100) + '%') + '</span></div>','<div><strong>\u4e94\u81df</strong><span>' + Math.round((scoreParts.zangFuSimilarity || 0) * 100) + '%</span></div>','<div><strong>\u75c7\u72c0</strong><span>' + Math.round((scoreParts.symptomMatch || 0) * 100) + '%</span></div>','</div>', matchedSymptomsHtml, herbSuggestionsHtml, '<div class="rx-explainability">','<div><strong>\u516d\u8b49\u547d\u4e2d\uff1a</strong>' + escapeHtml(formatVectorEntries(explanation.patterns)) + '</div>','<div><strong>\u865b\u5be6\u5224\u65b7\uff1a</strong>' + escapeHtml(formatVectorEntries(explanation.xuShi)) + '</div>','<div><strong>\u4e94\u81df\u547d\u4e2d\uff1a</strong>' + escapeHtml(formatVectorEntries(explanation.zangFu)) + '</div>','<div><strong>\u7279\u6b8a\u6307\u5fb5\uff1a</strong>' + escapeHtml(formatVectorEntries(explanation.specialHits)) + '</div>','<div><strong>\u7981\u5fcc / \u6392\u9664\u8b66\u793a\uff1a</strong>' + escapeHtml(formatVectorEntries(explanation.contraindicationHits)) + '</div>', bookHitsHtml, '<div><strong>\u70ba\u4ec0\u9ebc\u63a8\u85a6\uff1a</strong>' + escapeHtml(explanation.reason || '') + '</div>','</div>'].join('');
         container.appendChild(card);
     });
 }

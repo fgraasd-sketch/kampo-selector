@@ -338,6 +338,37 @@ const EVIDENCE_DAMPING_K = 2;
 // excluded so nothing double-counts.
 const W_BOOK_SECONDARY = 0.10;
 const BOOK_SECONDARY_K = 2;
+// Derived-vector trust ramp (2026-07-11 薛案 postmortem): book/physician
+// formulas get their pattern/zangfu vectors DERIVED from their own key
+// symptoms (option B), so their cosine partially double-counts the same
+// evidence the key score already measured — a single generic key hit plus an
+// aligned one-hot vector let 清上蠲痛湯 outrank 半夏厚朴湯 on a globus triad.
+// Excel formulas' vectors are independent information (sheet membership) and
+// keep full weight; a derived vector earns weight positiveKeyHits/K, so it
+// only speaks once real key evidence accumulates (a flat 0.5 discount was
+// tried first and knocked 4-hit 桂枝湯 out of its own classic presentation).
+const DERIVED_VECTOR_K = 4;
+// Key-symptom score = geometric mean of COVERAGE and EVIDENCE VOLUME.
+//
+// Coverage alone (matched key weight ÷ the formula's own key count) has two
+// failure modes pulling opposite ways:
+//
+//   - it PUNISHES a well-documented formula. Giving 當歸芍藥散 the 眩暈/頭痛/肩凝/
+//     耳鳴 the handbook attests for it (clinically correct) takes it from 10 keys
+//     to 14, so a patient presenting its ten CLASSIC keys scores 10/14 = 0.71
+//     instead of 1.00 — the formula gets worse at its own textbook case by being
+//     described better. That is what blocked the book's key symptoms from ever
+//     landing.
+//   - it REWARDS a sparse formula. 四物湯 has two key symptoms; hit both and it
+//     scores a perfect 1.00 on a ten-symptom patient it barely addresses.
+//
+// Volume is what the formula actually confirmed, and it does not care how many
+// keys the formula has. It saturates at KEY_EVIDENCE_K hits OR at however many
+// symptoms the patient reported, whichever is smaller — without that second
+// clause a sparse patient is unscorable (someone reporting three symptoms can
+// never produce five key hits, so the term stops discriminating and 半夏厚朴湯,
+// three keys and one hit but the 梅核氣 answer, falls out of first place).
+const KEY_EVIDENCE_K = 5;
 
 const XUSHI_CLASSES = new Set(["虛證", "實證", "虛實夾雜", "未分類"]);
 
@@ -404,6 +435,51 @@ function uniqueBy(items, keyFn) {
     result.push(item);
   }
   return result;
+}
+
+// 六證 term (2026-07-11 redesign, physician chose this route).
+//
+// It used to be cosine(patientPatternVector, formulaPatternVector), and that was
+// a category error. The patient vector is the physician's DIAGNOSTIC checklist —
+// score ÷ threshold, answering "does this patient MEET 水滯?" — while the formula
+// vector is one-hot membership answering "does this formula TREAT 水滯?". A
+// cosine between them measures neither question:
+//
+//   - the patient side is unbounded, so one over-threshold pattern owns the
+//     direction. 胃部振水音 alone scores 15 against 水滯's threshold of 13, so any
+//     patient with it is pinned to the 水滯 axis at 1.15+.
+//   - the formula side punishes breadth. 當歸芍藥散 treats 血虛+瘀血+水滯, so its
+//     vector has norm √3 and it needs the patient lit up on all three; 大防風湯
+//     treats 水滯 alone, norm 1, and rides the patient's biggest axis. Result:
+//     0.871 to 0.519, and 大防風湯 (five key symptoms, three hit) beat 當歸芍藥散
+//     matching TEN of its key symptoms.
+//
+// The right question is coverage: of the patterns this patient HAS, how many does
+// this formula treat? Burden is capped at 1 per pattern — past the threshold the
+// pattern is simply confirmed, not "1.54 times confirmed" — and precision keeps
+// a formula from winning by targeting patterns the patient doesn't have. The
+// harmonic mean is tilted toward recall (PATTERN_RECALL_BETA): treating more of
+// what the patient actually has is the point, and a formula is allowed to carry
+// patterns beyond the current presentation.
+const PATTERN_RECALL_BETA = 2;
+
+function patternCoverage(patientVector, formulaVector) {
+  let patientBurden = 0;
+  let formulaBreadth = 0;
+  let covered = 0;
+  for (const key of new Set([...Object.keys(patientVector || {}), ...Object.keys(formulaVector || {})])) {
+    const burden = Math.min(1, Math.max(0, Number(patientVector?.[key] || 0)));
+    const treats = Number(formulaVector?.[key] || 0) > 0 ? 1 : 0;
+    patientBurden += burden;
+    formulaBreadth += treats;
+    covered += burden * treats;
+  }
+  if (!patientBurden || !formulaBreadth) return 0;
+  const recall = covered / patientBurden;
+  const precision = covered / formulaBreadth;
+  if (!recall || !precision) return 0;
+  const beta2 = PATTERN_RECALL_BETA * PATTERN_RECALL_BETA;
+  return ((1 + beta2) * precision * recall) / ((beta2 * precision) + recall);
 }
 
 function cosine(left, right) {
@@ -555,7 +631,7 @@ function buildZangFuVector(patientMatches, zangFuStates) {
   return vector;
 }
 
-function scoreKeySymptoms(formula, patientMatches, normalizer) {
+function scoreKeySymptoms(formula, patientMatches, normalizer, reportedSymptomCount) {
   const keySymptoms = normalizeFormulaKeySymptoms(formula.keySymptoms || [], normalizer);
   const patientById = bestPatientMatchesById(patientMatches);
   const matchedSymptoms = [];
@@ -603,10 +679,15 @@ function scoreKeySymptoms(formula, patientMatches, normalizer) {
     });
   }
 
-  const denominator = Math.max(1, keySymptoms.length);
+  const matchedWeight = matchedSymptoms.reduce((sum, item) => sum + item.weight, 0);
+  const coverage = matchedWeight / Math.max(1, keySymptoms.length);
+  const achievable = Math.max(1, Math.min(KEY_EVIDENCE_K, reportedSymptomCount || KEY_EVIDENCE_K));
+  const volume = Math.min(1, Math.max(0, matchedWeight) / achievable);
+  // A net-negative match (the patient contradicts the formula's key symptoms)
+  // stays negative — the geometric mean is only meaningful above zero.
   return {
     keySymptoms,
-    keySymptomScore: matchedSymptoms.reduce((sum, item) => sum + item.weight, 0) / denominator,
+    keySymptomScore: coverage <= 0 ? coverage : Math.sqrt(coverage * volume),
     matchedSymptoms,
     unmatchedKeySymptoms,
   };
@@ -668,16 +749,38 @@ function matchBookSymptoms(formula, patientMatches, matchedSymptoms) {
   return hits;
 }
 
+// 表證 formulas cannot be ranked on the 六證 axis, and no scoring change fixes it
+// (2026-07-11, measured — see reports/clinical-battery-2026-07-11.md).
+//
+// 葛根湯 does not rank for its own 傷寒論 presentation (無汗・惡寒・發熱・項背強) even
+// with its missing 無汗 key restored: its key score (0.745) BEATS 桂枝加葛根湯's
+// (0.730), hitting all five of the patient's symptoms, and it still loses. The
+// patient's six-pattern vector is noise — nothing reaches its threshold (氣逆 0.40,
+// 水滯 0.31, the residue of 頭痛/惡寒 appearing on those checklists), so the
+// checklist itself says this patient has NONE of these patterns — yet that noise
+// still carries weight 0.40 and hands the case to whichever formula happens to be
+// filed under 氣逆. The workbook has no 表證 sheet at all; the framework is 氣血水,
+// and 葛根湯 appears in it only in its 氣鬱 role (肩凝/頭重).
+//
+// Dropping uninformative terms from the weighted average was built and measured:
+// 葛根湯 goes to first, and 當歸芍藥散 falls from first to fourth (renormalising
+// inflates formulas that carry few informative terms). Top-three across eighteen
+// textbook presentations: 12/18 → 9/18. Rejected. This needs the 六證 framework to
+// gain a 表裡 axis, which is the physician's call, not a scorer tweak.
 function scoreFormula(formula, patientContext, normalizer) {
-  const key = scoreKeySymptoms(formula, patientContext.matches, normalizer);
-  const patternScore = cosine(patientContext.patternVector, formula.patternVector || {});
+  // Distinct symptoms the patient reported — the ceiling on how much key evidence
+  // any formula could possibly confirm for this patient.
+  const reportedSymptomCount = bestPatientMatchesById(patientContext.matches).size;
+  const key = scoreKeySymptoms(formula, patientContext.matches, normalizer, reportedSymptomCount);
+  const patternScore = patternCoverage(patientContext.patternVector, formula.patternVector || {});
   const zangFuScore = cosine(patientContext.zangFuVector, formula.zangFuVector || {});
   const positiveKeyHits = key.matchedSymptoms.filter((item) => item.weight > 0).length;
   const evidenceFactor = Math.min(1, positiveKeyHits / EVIDENCE_DAMPING_K);
   const matchedBookSymptoms = matchBookSymptoms(formula, patientContext.matches, key.matchedSymptoms);
   const bookBonus = W_BOOK_SECONDARY * Math.min(1, matchedBookSymptoms.length / BOOK_SECONDARY_K);
+  const vectorWeight = formula.vectorSource ? Math.min(1, positiveKeyHits / DERIVED_VECTOR_K) : 1;
   const total = (W_KEY * key.keySymptomScore)
-    + ((W_PATTERN * patternScore) + (W_ZANGFU * zangFuScore)) * evidenceFactor
+    + ((W_PATTERN * patternScore) + (W_ZANGFU * zangFuScore)) * evidenceFactor * vectorWeight
     + bookBonus;
 
   return {
@@ -756,11 +859,14 @@ function createX4Matcher(kb) {
     recommend,
     scoreFormulaByName,
     buildPatientContext,
+    // Exposed so the 六證 term can be tested on its own semantics rather than
+    // only through whole-KB rankings.
+    scorePatternVectors: patternCoverage,
     normalizer,
   };
 }
 
 
 
-  return { normalizeXushiClass, createX4Matcher, W_KEY, W_PATTERN, W_ZANGFU, PARENT_FALLBACK_WEIGHT, EVIDENCE_DAMPING_K, W_BOOK_SECONDARY, BOOK_SECONDARY_K };
+  return { normalizeXushiClass, createX4Matcher, W_KEY, W_PATTERN, W_ZANGFU, PARENT_FALLBACK_WEIGHT, EVIDENCE_DAMPING_K, W_BOOK_SECONDARY, BOOK_SECONDARY_K, DERIVED_VECTOR_K, KEY_EVIDENCE_K, PATTERN_RECALL_BETA };
 })();
