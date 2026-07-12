@@ -54,6 +54,43 @@ const X4Adapter = (function () {
       }));
   }
 
+  // 六經路線理由行 (2026-07-12): when a formula's final score came from the
+  // channel route (score.routeTaken === "六經"), the card must say so — the
+  // 氣血水 percentages shown alongside did NOT decide its rank, and without
+  // this line the recommendation looks unexplained (e.g. 葛根湯 first with
+  // 六證 0%). The patient-side evidence ids that opened the channel gate
+  // (explanation.patientChannelEvidence[channel].signs) are resolved to
+  // canonical names via the ontology so the line cites what the patient
+  // actually reported.
+  let canonicalByIdCache = null;
+  function canonicalById(id) {
+    if (!canonicalByIdCache) {
+      canonicalByIdCache = new Map(
+        (window.X4KbData?.ontology || []).map((entry) => [entry.id, entry.canonical]),
+      );
+    }
+    return canonicalByIdCache.get(id) || null;
+  }
+
+  function buildChannelRouteText(result) {
+    if (result.score.routeTaken !== "六經") return null;
+    const matched = result.explanation.matchedChannels || [];
+    if (!matched.length) return null;
+    const evidence = result.explanation.patientChannelEvidence || {};
+    const channelNames = matched.map((item) => item.channel);
+    const signLabels = [...new Set(
+      channelNames
+        .flatMap((channel) => evidence[channel]?.signs || [])
+        .map(canonicalById)
+        .filter(Boolean),
+    )];
+    // 「太陽病期相符（病人證據：惡寒、發熱）」
+    const evidencePart = signLabels.length
+      ? "（病人證據：" + signLabels.join("、") + "）"
+      : "";
+    return channelNames.join("、") + "病期相符" + evidencePart;
+  }
+
   function deriveXuShi(patientVectorXuShi) {
     const xu = patientVectorXuShi?.虛 || 0;
     const shi = patientVectorXuShi?.實 || 0;
@@ -73,7 +110,7 @@ const X4Adapter = (function () {
     return labels.length > limit ? head + "\u7b49 " + labels.length + " \u9805" : head;
   }
 
-  function buildRecommendationReason(result, matchedCanonical, unmatchedCanonical) {
+  function buildRecommendationReason(result, matchedCanonical, unmatchedCanonical, channelRouteText) {
     const totalKeySymptoms = matchedCanonical.length + unmatchedCanonical.length;
     const keyDenominator = Math.max(1, totalKeySymptoms);
     const keyPct = Math.round(result.score.key * 100);
@@ -85,7 +122,14 @@ const X4Adapter = (function () {
     if (matchedCanonical.length) parts.push("\u5df2\u547d\u4e2d\uff1a" + compactList(matchedCanonical));
     if (unmatchedCanonical.length) parts.push("\u5c1a\u7f3a\uff1a" + compactList(unmatchedCanonical));
     parts.push("\u516d\u8b49\u5951\u5408 " + patternPct + "%\uff1b\u4e94\u81df\u5951\u5408 " + zangFuPct + "%");
-    parts.push("\u6392\u5e8f\u6703\u7d9c\u5408\u95dc\u9375\u75c7\u72c0\u3001\u516d\u8b49\u3001\u4e94\u81df\uff1b\u55ae\u4e00\u5171\u6709\u75c7\u72c0\u4e0d\u6703\u55ae\u7368\u6c7a\u5b9a\u540d\u6b21");
+    if (channelRouteText) {
+      // The channel route won the max(): the \u516d\u8b49/\u4e94\u81df percentages above did
+      // not decide this rank, and the generic composite-ranking sentence
+      // would misattribute it.
+      parts.push("\u672c\u65b9\u7531\u516d\u7d93\u8fa8\u8b49\u8def\u7dda\u63a8\u85a6\uff1a" + channelRouteText + "\uff0c\u4e26\u4f9d\u4e3b\u75c7\u8b49\u64da\u5728\u540c\u75c5\u671f\u65b9\u5291\u9593\u6392\u5e8f");
+    } else {
+      parts.push("\u6392\u5e8f\u6703\u7d9c\u5408\u95dc\u9375\u75c7\u72c0\u3001\u516d\u8b49\u3001\u4e94\u81df\uff1b\u55ae\u4e00\u5171\u6709\u75c7\u72c0\u4e0d\u6703\u55ae\u7368\u6c7a\u5b9a\u540d\u6b21");
+    }
     return parts.join("\u3002") + "\u3002";
   }
 
@@ -174,6 +218,7 @@ const X4Adapter = (function () {
         // so the card must show the page-cited evidence behind that bonus.
         const bookHits = (result.explanation.matchedBookSymptoms || [])
           .map((hit) => hit.canonical + (hit.page ? "（p." + hit.page + "）" : ""));
+        const channelRouteText = buildChannelRouteText(result);
         return {
           ...display,
           name: result.formula.name,
@@ -207,7 +252,8 @@ const X4Adapter = (function () {
             specialHits: [],
             contraindicationHits: [],
             bookHits,
-            reason: buildRecommendationReason(result, matchedCanonical, unmatchedCanonical),
+            channelRoute: channelRouteText,
+            reason: buildRecommendationReason(result, matchedCanonical, unmatchedCanonical, channelRouteText),
           },
         };
       });
