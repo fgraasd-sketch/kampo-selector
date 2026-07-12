@@ -3490,15 +3490,22 @@ window.X4KbData = {
           "matchType": "exact"
         },
         {
-          "raw": "臍旁壓痛",
-          "id": "S-ABDOMINAL-TENDERNESS",
+          "raw": "顏面潮紅",
+          "id": "S-FACIAL-FLUSH",
           "negated": false,
           "matchType": "book-physician",
           "page": 260
         },
         {
-          "raw": "顏面潮紅",
-          "id": "S-FACIAL-FLUSH",
+          "raw": "臍旁壓痛",
+          "id": "S-PERIUMBILICAL-TENDERNESS",
+          "negated": false,
+          "matchType": "book-physician",
+          "page": 260
+        },
+        {
+          "raw": "壓痛",
+          "id": "S-ABDOMINAL-TENDERNESS",
           "negated": false,
           "matchType": "book-physician",
           "page": 260
@@ -3541,8 +3548,9 @@ window.X4KbData = {
         "S-CONSTIPATION",
         "S-JOINT-PAIN",
         "S-MORNING-STIFFNESS",
-        "S-ABDOMINAL-TENDERNESS",
         "S-FACIAL-FLUSH",
+        "S-PERIUMBILICAL-TENDERNESS",
+        "S-ABDOMINAL-TENDERNESS",
         "S-HEAT-TOXIN"
       ],
       "formulaPattern": [
@@ -12295,7 +12303,8 @@ window.X4KbData = {
         }
       ],
       "channelStages": [
-        "太陰"
+        "太陰",
+        "陽明"
       ]
     },
     {
@@ -15662,8 +15671,7 @@ window.X4KbData = {
         }
       ],
       "channelStages": [
-        "少陽",
-        "太陽"
+        "少陽"
       ]
     },
     {
@@ -16235,7 +16243,8 @@ window.X4KbData = {
         }
       ],
       "channelStages": [
-        "少陽"
+        "少陽",
+        "太陰"
       ]
     },
     {
@@ -17324,129 +17333,9 @@ window.X4KbData = {
       ],
       "bookSymptoms": [
         {
-          "id": "S-APPETITE-LOW",
-          "canonical": "食欲不振",
-          "term": "食慾不振",
-          "page": 352,
-          "section": "適應病症",
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-BACK-COLD",
-          "canonical": "背部惡寒",
-          "term": "背部惡寒",
-          "page": 352,
-          "section": "適應病症",
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-FACIAL-FLUSH",
-          "canonical": "顏面潮紅",
-          "term": "顏面潮紅",
-          "page": 352,
-          "section": "適應病症",
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-CHEST-RIB-FULLNESS",
-          "canonical": "胸脇苦滿",
-          "term": "胸脅苦滿",
-          "page": 352,
-          "section": "適應病症",
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-HOT-FLUSH",
-          "canonical": "烘熱",
-          "term": "烘熱感",
-          "page": 352,
-          "section": "適應病症",
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-BITTER-TASTE",
-          "canonical": "口苦",
-          "term": "口苦",
-          "page": 352,
-          "section": "適應病症",
-          "physicianDecision": "accept-secondary"
-        },
-        {
           "id": "S-BLEEDING",
           "canonical": "出血",
           "term": "陰道",
-          "page": 352,
-          "section": "適應病症",
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-COLD",
-          "canonical": "發冷",
-          "term": "發冷",
-          "page": 352,
-          "section": "適應病症",
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-CONSTIPATION",
-          "canonical": "便秘",
-          "term": "便秘",
-          "page": 352,
-          "section": "適應病症",
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-DIARRHEA",
-          "canonical": "腹瀉",
-          "term": "腹瀉",
-          "page": 352,
-          "section": "適應病症",
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-FATIGUE",
-          "canonical": "易疲勞",
-          "term": "虛弱",
-          "page": 352,
-          "section": "適應病症",
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-FEVER",
-          "canonical": "發熱",
-          "term": "發熱",
-          "page": 352,
-          "section": "適應病症",
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-HEADACHE",
-          "canonical": "頭痛",
-          "term": "頭痛",
-          "page": 352,
-          "section": "適應病症",
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-HEAT-SENSATION",
-          "canonical": "熱感",
-          "term": "熱感",
-          "page": 352,
-          "section": "適應病症",
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-HEAT-TOXIN",
-          "canonical": "炎症",
-          "term": "熱證",
-          "page": 352,
-          "section": "適應病症",
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-PULSE-FLOATING",
-          "canonical": "脈浮",
-          "term": "脈浮",
           "page": 352,
           "section": "適應病症",
           "physicianDecision": "accept-secondary"
@@ -17735,7 +17624,8 @@ window.X4KbData = {
         }
       ],
       "channelStages": [
-        "少陽"
+        "少陽",
+        "太陰"
       ]
     },
     {
@@ -20277,7 +20167,8 @@ window.X4KbData = {
       ],
       "bookCautions": "",
       "channelStages": [
-        "少陽"
+        "少陽",
+        "太陽"
       ]
     },
     {
@@ -21199,8 +21090,7 @@ window.X4KbData = {
       ],
       "bookCautions": "偶見間質性肺炎 ，及時停藥，進行相應治療。[ 並用 ] 伴有咽喉部不適感的場合，並用半夏厚朴瘍。",
       "channelStages": [
-        "少陽",
-        "太陽"
+        "少陽"
       ]
     },
     {
