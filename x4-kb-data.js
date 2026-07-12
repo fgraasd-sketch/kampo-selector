@@ -1733,7 +1733,12 @@ window.X4KbData = {
     {
       "id": "S-PULSE-WEAK",
       "canonical": "脈弱",
-      "aliases": [],
+      "aliases": [
+        "脈微弱",
+        "脈微",
+        "脈沉微",
+        "脈沉弱"
+      ],
       "parent": null,
       "negationSensitive": false,
       "source": [

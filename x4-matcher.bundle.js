@@ -484,12 +484,26 @@ const PATTERN_RECALL_BETA = 2;
 // residue (the noise the checklist itself scores below every threshold) is
 // not allowed to overrule it.
 //
-// Patient-side inference is deliberately conservative (v1):
+// Patient-side inference is deliberately conservative:
 //   太陽 — gate: 惡寒/發冷 AND 發熱 together (the acute exterior pair), or 脈浮.
 //        Chronic cold-intolerance alone (當歸芍藥散-type patients) never opens it.
 //   少陽 — gate: any pathognomonic sign (胸脇苦滿 / 口苦 / 往來寒熱).
-// The other four stages are stored on formulas but never inferred for patients
-// yet — inferring 太陰/少陰 from checklists is a clinical call not taken here.
+// v2 (2026-07-12, criteria taken from《漢方臨床診療學》第五章 六病位, the
+// user's direction that the book carries the full 六經辨證 rulebook; printed
+// pages cited, scan page = printed + 28):
+//   陽明 (p.124) — 陽證第三階段, 主病位在裡, 全身熱象, 一般伴口渴和便秘;
+//        腸型=便秘＋腹滿感＋裡熱. Gate: 發熱＋口渴 together (裡熱型 proxy),
+//        or the 腸型 triad 便秘＋腹脹＋(發熱 or 口渴). Constipation alone
+//        never opens it.
+//   太陰 (p.134-135) — 共通證候＝氣虛/血虛基礎上加消化系統症狀 (心窩部
+//        不適感、腹滿感、噁心、嘔吐、腹瀉、便秘). Gate (gateCross): one
+//        deficiency sign (易疲勞/發冷) AND one digestive sign from the book's
+//        list. Digestive complaints alone (陽證 dyspepsia) never open it.
+//   少陰 (p.149) — 共通症狀＝全身倦怠感、四肢末梢發冷、脈微弱. Gate:
+//        易疲勞＋發冷 together, or 脈微弱 (pathognomonic, physician-typed).
+//   厥陰 (p.156) — 休克前/休克狀態 (意識低下、體溫調節失調); a checklist
+//        patient is never in this state, so no patient-side gate — the stage
+//        exists on formulas only (茯苓四逆湯) and the route stays silent.
 const CHANNEL_W_KEY = 0.55;   // 六經路線裡主症證據的權重
 const CHANNEL_W_STAGE = 0.45; // 病期相符本身的權重
 
@@ -510,6 +524,40 @@ const CHANNEL_SIGNS = {
     supporting: ["S-CHEST-RIB-FULLNESS", "S-BITTER-TASTE", "S-ALTERNATING-CHILL-FEVER"],
     saturation: 2,
   },
+  "陽明": {
+    gatePairs: [
+      ["S-FEVER", "S-THIRST"],
+      ["S-CONSTIPATION", "S-ABDOMINAL-DISTENSION", "S-FEVER"],
+      ["S-CONSTIPATION", "S-ABDOMINAL-DISTENSION", "S-THIRST"],
+    ],
+    gateAny: [],
+    supporting: ["S-FEVER", "S-THIRST", "S-CONSTIPATION", "S-ABDOMINAL-DISTENSION"],
+    saturation: 3,
+  },
+  "太陰": {
+    gatePairs: [],
+    gateAny: [],
+    // any deficiency sign AND any digestive sign (the book's 共通證候 shape)
+    gateCross: [
+      ["S-FATIGUE", "S-COLD"],
+      [
+        "S-EPIGASTRIC-RESISTANCE", "S-EPIGASTRIC-PAIN", "S-ABDOMINAL-DISTENSION",
+        "S-NAUSEA", "S-VOMITING", "S-DIARRHEA", "S-CONSTIPATION",
+      ],
+    ],
+    supporting: [
+      "S-FATIGUE", "S-COLD", "S-EPIGASTRIC-RESISTANCE", "S-EPIGASTRIC-PAIN",
+      "S-ABDOMINAL-DISTENSION", "S-NAUSEA", "S-VOMITING", "S-DIARRHEA",
+      "S-CONSTIPATION",
+    ],
+    saturation: 4,
+  },
+  "少陰": {
+    gatePairs: [["S-FATIGUE", "S-COLD"]],
+    gateAny: ["S-PULSE-WEAK"],
+    supporting: ["S-FATIGUE", "S-COLD", "S-PULSE-WEAK", "S-DIARRHEA"],
+    saturation: 3,
+  },
 };
 
 // Positive, directly-reported symptom ids only: negated findings and synthetic
@@ -527,7 +575,9 @@ function buildChannelEvidence(patientMatches) {
   const evidence = {};
   for (const [channel, signs] of Object.entries(CHANNEL_SIGNS)) {
     const gateOpen = signs.gatePairs.some((pair) => pair.every((id) => ids.has(id)))
-      || signs.gateAny.some((id) => ids.has(id));
+      || signs.gateAny.some((id) => ids.has(id))
+      || (signs.gateCross || []).length > 0
+        && (signs.gateCross || []).every((group) => group.some((id) => ids.has(id)));
     if (!gateOpen) continue;
     const hits = signs.supporting.filter((id) => ids.has(id));
     const strength = Math.min(1, hits.length / signs.saturation);
