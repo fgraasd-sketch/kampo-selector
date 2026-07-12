@@ -82,8 +82,7 @@ window.X4KbData = {
         "心窩部抵抗、壓痛",
         "深部壓痛",
         "腹部壓痛抵抗",
-        "臍旁和右下腹壓痛",
-        "臍旁壓痛"
+        "臍旁和右下腹壓痛"
       ],
       "parent": null,
       "negationSensitive": false,
@@ -4748,7 +4747,7 @@ window.X4KbData = {
         },
         {
           "raw": "臍旁壓痛",
-          "id": "S-ABDOMINAL-TENDERNESS",
+          "id": "S-PERIUMBILICAL-TENDERNESS",
           "negated": false,
           "matchType": "exact"
         },
@@ -4757,6 +4756,12 @@ window.X4KbData = {
           "id": "S-GASTRIC-SPLASH",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "S-ABDOMINAL-TENDERNESS",
+          "id": "S-ABDOMINAL-TENDERNESS",
+          "negated": false,
+          "fromIndications": true
         },
         {
           "raw": "S-DYSMENORRHEA",
@@ -8672,6 +8677,12 @@ window.X4KbData = {
       "keySymptoms": [
         {
           "raw": "臍旁壓痛",
+          "id": "S-PERIUMBILICAL-TENDERNESS",
+          "negated": false,
+          "matchType": "exact"
+        },
+        {
+          "raw": "左下腹按搓壓痛",
           "id": "S-ABDOMINAL-TENDERNESS",
           "negated": false,
           "matchType": "exact"
@@ -9000,7 +9011,7 @@ window.X4KbData = {
       "keySymptoms": [
         {
           "raw": "臍旁壓痛",
-          "id": "S-ABDOMINAL-TENDERNESS",
+          "id": "S-PERIUMBILICAL-TENDERNESS",
           "negated": false,
           "matchType": "exact"
         },
@@ -9009,6 +9020,12 @@ window.X4KbData = {
           "id": "S-ABDOMINAL-MASS",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "S-ABDOMINAL-TENDERNESS",
+          "id": "S-ABDOMINAL-TENDERNESS",
+          "negated": false,
+          "fromIndications": true
         }
       ],
       "herbs": [
@@ -9062,7 +9079,7 @@ window.X4KbData = {
       "keySymptoms": [
         {
           "raw": "臍旁壓痛",
-          "id": "S-ABDOMINAL-TENDERNESS",
+          "id": "S-PERIUMBILICAL-TENDERNESS",
           "negated": false,
           "matchType": "exact"
         },
@@ -9071,6 +9088,12 @@ window.X4KbData = {
           "id": "S-ABDOMINAL-MASS",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "S-ABDOMINAL-TENDERNESS",
+          "id": "S-ABDOMINAL-TENDERNESS",
+          "negated": false,
+          "fromIndications": true
         },
         {
           "raw": "S-ANXIETY",

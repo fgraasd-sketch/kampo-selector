@@ -817,7 +817,30 @@ function scoreKeySymptoms(formula, patientMatches, normalizer, reportedSymptomCo
   }
 
   const matchedWeight = matchedSymptoms.reduce((sum, item) => sum + item.weight, 0);
-  const coverage = matchedWeight / Math.max(1, keySymptoms.length);
+  // Finding D (2026-07-12): a patient reporting N symptoms can confirm at most
+  // N of a formula's keys, so an uncapped denominator punishes large formulas
+  // for evidence the patient never had a chance to give (黃連解毒湯 explains
+  // ALL four of its own textbook presentation's symptoms yet scored 4/12).
+  //
+  // FULL-RECALL FORGIVENESS, chosen after two measured rejections:
+  //   - unconditional hard cap min(keys, max(reported, K)): flattens 5-7-key
+  //     formulas onto one denominator and lets 加味逍遙散-size nets leapfrog
+  //     specific formulas on sparse cases (前3 16→15).
+  //   - unconditional soft cap (λ·(keys−capBase) beyond the base): broke the
+  //     physician's 梅核氣 ruling — 柴胡清肝湯 (2 of the patient's 3 symptoms)
+  //     overtook 半夏厚朴湯 on a 0.002 margin. Any unconditional boost to
+  //     partially-matching large formulas does.
+  // The cap therefore engages ONLY when the formula explains the patient's
+  // ENTIRE presentation (positive key hits >= distinct reported symptoms):
+  // such a formula is judged on what was presented, not on how much more its
+  // own monograph documents. Partial matchers keep the uncapped denominator
+  // byte-for-byte, so no adjudicated partial-match ranking can move.
+  const positiveHitCount = matchedSymptoms.filter((item) => item.weight > 0).length;
+  const fullRecall = reportedSymptomCount > 0 && positiveHitCount >= reportedSymptomCount;
+  const effectiveKeyCount = fullRecall
+    ? Math.min(keySymptoms.length, Math.max(reportedSymptomCount, KEY_EVIDENCE_K))
+    : keySymptoms.length;
+  const coverage = matchedWeight / Math.max(1, effectiveKeyCount);
   const achievable = Math.max(1, Math.min(KEY_EVIDENCE_K, reportedSymptomCount || KEY_EVIDENCE_K));
   const volume = Math.min(1, Math.max(0, matchedWeight) / achievable);
   // A net-negative match (the patient contradicts the formula's key symptoms)
