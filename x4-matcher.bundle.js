@@ -497,8 +497,9 @@ const PATTERN_RECALL_BETA = 2;
 //        never opens it.
 //   太陰 (p.134-135) — 共通證候＝氣虛/血虛基礎上加消化系統症狀 (心窩部
 //        不適感、腹滿感、噁心、嘔吐、腹瀉、便秘). Gate (gateCross): one
-//        deficiency sign (易疲勞/發冷) AND one digestive sign from the book's
-//        list. Digestive complaints alone (陽證 dyspepsia) never open it.
+//        deficiency sign (易疲勞/發冷/貧血 — the physician ruled 2026-07-12
+//        that 血虛 joins the deficiency group) AND one digestive sign from
+//        the book's list. Digestive complaints alone never open it.
 //   少陰 (p.149) — 共通症狀＝全身倦怠感、四肢末梢發冷、脈微弱. Gate:
 //        易疲勞＋發冷 together, or 脈微弱 (pathognomonic, physician-typed).
 //   厥陰 (p.156) — 休克前/休克狀態 (意識低下、體溫調節失調); a checklist
@@ -539,16 +540,16 @@ const CHANNEL_SIGNS = {
     gateAny: [],
     // any deficiency sign AND any digestive sign (the book's 共通證候 shape)
     gateCross: [
-      ["S-FATIGUE", "S-COLD"],
+      ["S-FATIGUE", "S-COLD", "S-BLOOD-DEF"],
       [
         "S-EPIGASTRIC-RESISTANCE", "S-EPIGASTRIC-PAIN", "S-ABDOMINAL-DISTENSION",
         "S-NAUSEA", "S-VOMITING", "S-DIARRHEA", "S-CONSTIPATION",
       ],
     ],
     supporting: [
-      "S-FATIGUE", "S-COLD", "S-EPIGASTRIC-RESISTANCE", "S-EPIGASTRIC-PAIN",
-      "S-ABDOMINAL-DISTENSION", "S-NAUSEA", "S-VOMITING", "S-DIARRHEA",
-      "S-CONSTIPATION",
+      "S-FATIGUE", "S-COLD", "S-BLOOD-DEF", "S-EPIGASTRIC-RESISTANCE",
+      "S-EPIGASTRIC-PAIN", "S-ABDOMINAL-DISTENSION", "S-NAUSEA", "S-VOMITING",
+      "S-DIARRHEA", "S-CONSTIPATION",
     ],
     saturation: 4,
   },
