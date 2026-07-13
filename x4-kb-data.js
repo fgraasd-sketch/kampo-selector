@@ -2287,6 +2287,33 @@ window.X4KbData = {
       "source": [
         "Codex C1 alias patch"
       ]
+    },
+    {
+      "id": "S-SKIN-SCALE",
+      "canonical": "脫屑",
+      "aliases": [
+        "落屑",
+        "鱗屑",
+        "皮屑",
+        "脫皮"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-PULSE-WIRY",
+      "canonical": "脈弦",
+      "aliases": [
+        "弦脈"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
     }
   ],
   "formulas": [
@@ -11993,6 +12020,13 @@ window.X4KbData = {
           "page": 326
         },
         {
+          "raw": "脫屑",
+          "id": "S-SKIN-SCALE",
+          "negated": false,
+          "matchType": "book-physician",
+          "page": 326
+        },
+        {
           "raw": "下腹部壓痛",
           "id": "S-ABDOMINAL-TENDERNESS",
           "negated": false,
@@ -12032,6 +12066,7 @@ window.X4KbData = {
         "S-HOT-FLUSH",
         "S-FEVER",
         "S-PRURITUS",
+        "S-SKIN-SCALE",
         "S-ABDOMINAL-TENDERNESS",
         "S-SKIN-DRY"
       ],
@@ -15663,13 +15698,13 @@ window.X4KbData = {
       ],
       "bookCorroborated": [
         {
-          "id": "S-SKIN-DRY",
-          "canonical": "皮膚乾燥",
+          "id": "S-CHEST-OPPRESSION",
+          "canonical": "胸悶",
           "page": 283
         },
         {
-          "id": "S-CHEST-OPPRESSION",
-          "canonical": "胸悶",
+          "id": "S-SKIN-DRY",
+          "canonical": "皮膚乾燥",
           "page": 283
         },
         {

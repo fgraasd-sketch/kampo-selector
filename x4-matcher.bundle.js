@@ -534,6 +534,15 @@ const EXAM_FINDING_IDS = new Set([
 function isExamFinding(id) {
   return EXAM_FINDING_ID_RE.test(id) || EXAM_FINDING_IDS.has(id);
 }
+// 稀有 ≠ 特異。主訴資格用「KB 裡以它為主症的方 ≤5 個」當特異度的代理，這對大多數
+// 徵象成立，但有一類例外：某些症狀在 KB 裡只有一兩個擁有者，是因為**書只在那裡
+// 順手寫了一筆**，不是因為它指向那個方。
+//   脫屑 — 全書只有溫清飲 p.326「有時伴有脫屑、痂皮、血痂等」提到。可是乾癬/濕疹
+//   本來就會脫屑，它根本不指向溫清飲。放它進主訴加分，等於讓一個病名描述把每個
+//   脫屑的病人劫持給唯一被書寫到的那個方——與 2026-07-13 量測後否決的疾病名軸
+//   （「過敏性鼻炎」全書只在甘草乾薑湯出現）是同一個陷阱。
+// 它仍然是正常症狀（會解析、會上晶片、會計入主症覆蓋），只是不當主訴證據。
+const CHIEF_INELIGIBLE_IDS = new Set(["S-SKIN-SCALE"]);
 
 const CHANNEL_SIGNS = {
   "太陽": {
@@ -549,7 +558,11 @@ const CHANNEL_SIGNS = {
   "少陽": {
     gatePairs: [],
     gateAny: ["S-CHEST-RIB-FULLNESS", "S-BITTER-TASTE", "S-ALTERNATING-CHILL-FEVER"],
-    supporting: ["S-CHEST-RIB-FULLNESS", "S-BITTER-TASTE", "S-ALTERNATING-CHILL-FEVER"],
+    // 脈弦 支持但永不開門（2026-07-13，比照舌紅在熱證路線）。書的六病位附表 1
+    // （印刷 p.326／掃描 p.354）把脈弦列為少陽主要證候之一——太陽脈浮／陽明脈實／
+    // 太陰脈弱／少陰脈沉細弱都已收，少陽的脈獨缺。但脈弦單獨出現不足以斷少陽
+    // （它也見於肝鬱、疼痛），開門權維持在 胸脇苦滿／口苦／往來寒熱。
+    supporting: ["S-CHEST-RIB-FULLNESS", "S-BITTER-TASTE", "S-ALTERNATING-CHILL-FEVER", "S-PULSE-WIRY"],
     saturation: 2,
   },
   "陽明": {
@@ -1124,6 +1137,8 @@ function createX4Matcher(kb) {
       // signs as keys: 脈弱 is keyed by 1 formula), which is exactly why raw
       // rarity must not admit them.
       if (isExamFinding(match.id)) continue;
+      // 稀有度是書寫得少、不是臨床特異的徵象（見 CHIEF_INELIGIBLE_IDS）。
+      if (CHIEF_INELIGIBLE_IDS.has(match.id)) continue;
       const keyedBy = keyFormulaCount.get(match.id) || 0;
       // keyedBy 0 = no formula can explain it; including it would only damp
       // every candidate's coverage equally. Skip.
