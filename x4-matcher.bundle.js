@@ -507,6 +507,33 @@ const PATTERN_RECALL_BETA = 2;
 //        exists on formulas only (茯苓四逆湯) and the route stays silent.
 const CHANNEL_W_KEY = 0.55;   // 六經路線裡主症證據的權重
 const CHANNEL_W_STAGE = 0.45; // 病期相符本身的權重
+// 主訴加分: a patient symptom keyed by at most this many formulas counts as
+// "specific" (chief-complaint grade). Swept K ∈ {3,5,8,12} against the
+// battery and every locked ruling (2026-07-13): K=8 lets the 瘙癢 family
+// (6 formulas) jump en masse and buries 當歸飲子; K=12 admits 貧血 (10) and
+// breaks the 當芍散 flagship. K=5 fixes the rhinitis case with zero damage.
+const CHIEF_SPECIFICITY_MAX_FORMULAS = 5;
+// Bonus weight: must clear the constitutional-cluster gap (十全大補湯 led
+// 麻黃附子細辛湯 by 0.123 on the rhinitis case) without letting a single
+// specific symptom catapult its keyers over unrelated strong answers.
+// Swept {0.15, 0.2, 0.25}: battery identical across the range (第1 10→11,
+// zero regressions) — 0.2 sits mid-plateau.
+const W_CHIEF = 0.2;
+// Only the first N reported symptoms are chief-complaint candidates — the
+// clinical convention that the presenting problem is stated first.
+const CHIEF_WINDOW = 3;
+// Examination findings can never be chief complaints (they differentiate):
+// pulse, tongue, abdominal palpation, complexion. Id prefixes plus the exam
+// ids that don't follow a prefix convention.
+const EXAM_FINDING_ID_RE = /^S-(PULSE|TONGUE)-/;
+const EXAM_FINDING_IDS = new Set([
+  "S-PALE-COMPLEXION", "S-ABDOMINAL-WEAKNESS", "S-GASTRIC-SPLASH",
+  "S-CHEST-RIB-FULLNESS", "S-ABDOMINAL-TENDERNESS", "S-PERIUMBILICAL-TENDERNESS",
+  "S-RECTUS-TENSION", "S-ABDOMINAL-MASS", "S-PULSATION-ABOVE-NAVEL",
+]);
+function isExamFinding(id) {
+  return EXAM_FINDING_ID_RE.test(id) || EXAM_FINDING_IDS.has(id);
+}
 
 const CHANNEL_SIGNS = {
   "太陽": {
@@ -975,7 +1002,49 @@ function scoreFormula(formula, patientContext, normalizer) {
   const heatRoute = (formula.heatNature === "熱" && patientContext.heatEvidence)
     ? patientContext.heatEvidence.strength * ((CHANNEL_W_KEY * key.keySymptomScore) + CHANNEL_W_STAGE)
     : 0;
-  const total = Math.max(baseTotal, channelRoute, heatRoute);
+  // 主訴路線 (2026-07-13, physician: the model should reason the way the
+  // clinician does — 「改成用你推理的」). Two measured cases (少陰鼻炎,
+  // 血虛乾癬) failed the same way: the chief complaint (水樣鼻涕, 1 piece of
+  // evidence) can never outvote the constitutional cluster (蒼白+貧血+發冷+
+  // 腹力軟弱, 4 pieces), so a tonic tops every frail patient regardless of
+  // what they came in FOR. The clinician's reasoning is two-step: specific
+  // symptoms select the candidates, constitution differentiates among them.
+  // Specificity is computed from the KB itself (how many formulas key on the
+  // symptom — patientContext.chiefEvidence), nothing is invented. Route shape
+  // and weights identical to the 六經/熱證 routes; a patient with no specific
+  // symptom, or a formula explaining none of them, scores exactly 0 here and
+  // rankings are byte-identical.
+  // Shape (measured, two failed forms first): a max() ROUTE ranked the
+  // shortlist by formula-side key coverage — tiny formulas won on denominator
+  // size (桂枝麻黃各半湯 over 麥門冬湯 on its own case); patient-side coverage
+  // dropped the constitution — 半夏厚朴湯's 精神不安 lives in the pattern
+  // vector, not its keys, and it sank on its own case. The clinician's actual
+  // shape is: specific symptoms SHORTLIST the candidates, the full model
+  // (keys + patterns + zangfu) still orders everyone. That is an additive
+  // bonus: within the shortlist base order is preserved, outside it nothing
+  // moves at all.
+  let chiefBonus = 0;
+  let matchedChief = null;
+  const chief = patientContext.chiefEvidence;
+  if (chief && chief.length) {
+    const explainedIds = new Set();
+    for (const item of key.matchedSymptoms) {
+      if (item.weight > 0) {
+        explainedIds.add(item.id);
+        if (item.childId) explainedIds.add(item.childId);
+      }
+    }
+    const explained = chief.filter((item) => explainedIds.has(item.id));
+    if (explained.length) {
+      const strength = explained.length / chief.length;
+      chiefBonus = W_CHIEF * strength;
+      matchedChief = { signs: explained.map((item) => item.canonical), coverage: strength };
+    }
+  }
+  const total = Math.max(baseTotal, channelRoute, heatRoute) + chiefBonus;
+  const routeLabel = total - chiefBonus === baseTotal
+    ? "氣血水"
+    : (channelRoute >= heatRoute ? "六經" : "熱證");
 
   return {
     formula: {
@@ -991,7 +1060,8 @@ function scoreFormula(formula, patientContext, normalizer) {
       bookBonus,
       channelRoute,
       heatRoute,
-      routeTaken: total === baseTotal ? "氣血水" : (channelRoute >= heatRoute ? "六經" : "熱證"),
+      chiefBonus,
+      routeTaken: routeLabel,
     },
     explanation: {
       matchedSymptoms: key.matchedSymptoms,
@@ -1000,6 +1070,7 @@ function scoreFormula(formula, patientContext, normalizer) {
       matchedChannels: channel.matchedChannels,
       patientChannelEvidence: patientContext.channelEvidence,
       matchedHeat: heatRoute > 0 ? patientContext.heatEvidence : null,
+      matchedChief,
       patientResidualSymptoms: computePatientResidualSymptoms(patientContext.matches, key.matchedSymptoms),
       patientPatternVector: patientContext.patternVector,
       patientZangFuVector: patientContext.zangFuVector,
@@ -1018,6 +1089,51 @@ function createX4Matcher(kb) {
   const patterns = toArray(kb.patterns);
   thresholdMap(patterns);
 
+  // 主訴路線 patient side: a symptom is "specific" when few formulas key on
+  // it — 水樣鼻涕 nearly names its formula, 發冷 is constitutional background
+  // that every tonic keys. Counted from the KB itself; the threshold was swept
+  // against the clinical battery before being fixed (see the route comment in
+  // scoreFormula and tests).
+  const keyFormulaCount = new Map();
+  for (const formula of formulas) {
+    for (const id of new Set(toArray(formula.keySymptoms).map((item) => item.id))) {
+      keyFormulaCount.set(id, (keyFormulaCount.get(id) || 0) + 1);
+    }
+  }
+  function buildChiefEvidence(patient, matches) {
+    // Chief complaints present FIRST: clinical notes open with the 主訴 and
+    // the case parser preserves text order, so only the first CHIEF_WINDOW
+    // reported symptoms are chief candidates — 健忘 listed seventh is
+    // constitutional context, 健忘 listed first is the complaint. (Measured:
+    // without the window, 健忘 hijacked the psoriasis case toward the 歸脾湯
+    // family; with it, the 當芍散 10-symptom flagship survives every K.)
+    const windowIds = new Set();
+    for (const term of toArray(patient?.symptoms).slice(0, CHIEF_WINDOW)) {
+      if (patientTermNegated(term, normalizer)) continue;
+      for (const match of normalizer.normalizeText(term)) {
+        if (match.matchType === "direct" && match.weight > 0) windowIds.add(match.id);
+      }
+    }
+    const specific = [];
+    for (const match of bestPatientMatchesById(matches).values()) {
+      if (match.matchType !== "direct" || match.weight <= 0) continue;
+      if (!windowIds.has(match.id)) continue;
+      // Examination findings (pulse, tongue, abdominal palpation, complexion)
+      // are never chief complaints — they differentiate, they don't present.
+      // They are also spuriously rare in the KB (few monographs list exam
+      // signs as keys: 脈弱 is keyed by 1 formula), which is exactly why raw
+      // rarity must not admit them.
+      if (isExamFinding(match.id)) continue;
+      const keyedBy = keyFormulaCount.get(match.id) || 0;
+      // keyedBy 0 = no formula can explain it; including it would only damp
+      // every candidate's coverage equally. Skip.
+      if (keyedBy > 0 && keyedBy <= CHIEF_SPECIFICITY_MAX_FORMULAS) {
+        specific.push({ id: match.id, canonical: match.canonical, keyedBy });
+      }
+    }
+    return specific.length ? specific : null;
+  }
+
   function buildPatientContext(patient) {
     const matches = buildPatientMatches(patient || {}, normalizer);
     return {
@@ -1026,6 +1142,7 @@ function createX4Matcher(kb) {
       zangFuVector: buildZangFuVector(matches, kb.zangFuStates),
       channelEvidence: buildChannelEvidence(matches),
       heatEvidence: buildHeatEvidence(matches),
+      chiefEvidence: buildChiefEvidence(patient, matches),
       xuShi: patient?.xuShi || "unknown",
     };
   }
@@ -1162,5 +1279,5 @@ function createX4Matcher(kb) {
 
 
 
-  return { buildHeatEvidence, buildChannelEvidence, normalizeXushiClass, createX4Matcher, W_KEY, W_PATTERN, W_ZANGFU, PARENT_FALLBACK_WEIGHT, EVIDENCE_DAMPING_K, W_BOOK_SECONDARY, BOOK_SECONDARY_K, DERIVED_VECTOR_K, KEY_EVIDENCE_K, PATTERN_RECALL_BETA, CHANNEL_W_KEY, CHANNEL_W_STAGE };
+  return { isExamFinding, buildHeatEvidence, buildChannelEvidence, normalizeXushiClass, createX4Matcher, W_KEY, W_PATTERN, W_ZANGFU, PARENT_FALLBACK_WEIGHT, EVIDENCE_DAMPING_K, W_BOOK_SECONDARY, BOOK_SECONDARY_K, DERIVED_VECTOR_K, KEY_EVIDENCE_K, PATTERN_RECALL_BETA, CHANNEL_W_KEY, CHANNEL_W_STAGE, CHIEF_SPECIFICITY_MAX_FORMULAS, W_CHIEF, CHIEF_WINDOW };
 })();

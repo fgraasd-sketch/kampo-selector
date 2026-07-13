@@ -105,6 +105,14 @@ const X4Adapter = (function () {
     return "熱證相符" + evidencePart;
   }
 
+  // 主訴加分 (2026-07-13): when the chief bonus lifted this card, say which
+  // of the patient's specific chief symptoms this formula covers.
+  function buildChiefMatchText(result) {
+    if (!result.score.chiefBonus || !result.explanation.matchedChief) return null;
+    const signs = result.explanation.matchedChief.signs || [];
+    return signs.length ? "本方涵蓋病人的特異主訴（" + signs.join("、") + "）" : null;
+  }
+
   // 加味建議 (2026-07-13): the matcher's explanation.addonSuggestions lists
   // single-herb preparations whose book indications cover this card's residual
   // (unexplained) patient symptoms. Pure annotation — never affects ranking.
@@ -281,6 +289,7 @@ const X4Adapter = (function () {
             bookHits,
             channelRoute: channelRouteText,
             heatRoute: heatRouteText,
+            chiefMatch: buildChiefMatchText(result),
             addonSuggestions: buildAddonSuggestionTexts(result),
             reason: buildRecommendationReason(result, matchedCanonical, unmatchedCanonical, channelRouteText, heatRouteText),
           },
