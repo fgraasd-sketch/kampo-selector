@@ -1827,7 +1827,6 @@ window.X4KbData = {
       "id": "S-SKIN-DRY",
       "canonical": "皮膚乾燥",
       "aliases": [
-        "伴有皮膚枯燥的瘙癢",
         "皮膚枯燥"
       ],
       "parent": null,
@@ -7997,7 +7996,7 @@ window.X4KbData = {
       "channelStages": [
         "少陽"
       ],
-      "bookCautions": "1 ) 腹瀉、軟便傾向者。2 ) 妊娠或可疑妊娠者。；1 ) 若出現電解質紊亂 〈 與葉塞米、利尿酸、噬嗪類利尿劑並用，可能引起血鉀值低下 )，即中止使用。2 ) 低鉀血症可能引起肌病。"
+      "bookCautions": "1 ) 腹瀉、軟便傾向者。2 ) 妊娠或可疑妊娠者。；1 ) 若出現電解質紊亂 〈 與葉塞米、利尿酸、噬嗪類利尿劑並用，可能引起血鉀值低下 )，即中止使用。2 ) 低鉀血癥可能引起肌病。"
     },
     {
       "id": "F-0099",
@@ -11828,13 +11827,34 @@ window.X4KbData = {
           "raw": "伴有皮膚枯燥的瘙癢",
           "id": "S-SKIN-DRY",
           "negated": false,
-          "matchType": "exact"
+          "matchType": "contains"
         },
         {
           "raw": "濕疹",
           "id": "S-ECZEMA",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "貧血",
+          "id": "S-BLOOD-DEF",
+          "negated": false,
+          "matchType": "book-physician",
+          "page": 258
+        },
+        {
+          "raw": "瘙癢",
+          "id": "S-PRURITUS",
+          "negated": false,
+          "matchType": "book-physician",
+          "page": 258
+        },
+        {
+          "raw": "手足發冷",
+          "id": "S-COLD",
+          "negated": false,
+          "matchType": "book-physician",
+          "page": 258
         }
       ],
       "herbs": [
@@ -11851,11 +11871,15 @@ window.X4KbData = {
       ],
       "composedOfFormulas": [],
       "sourceSheets": [
-        "「血虛 方劑」"
+        "「血虛 方劑」",
+        "《漢方臨床診療學》p.258"
       ],
       "indications": [
         "S-ECZEMA",
-        "S-SKIN-DRY"
+        "S-SKIN-DRY",
+        "S-BLOOD-DEF",
+        "S-PRURITUS",
+        "S-COLD"
       ],
       "formulaPattern": [
         "補血"
@@ -11868,35 +11892,11 @@ window.X4KbData = {
       ],
       "bookSymptoms": [
         {
-          "id": "S-BLOOD-DEF",
-          "canonical": "貧血",
-          "term": "貧血",
-          "page": 258,
-          "section": "證候特徵",
-          "physicianDecision": "accept-secondary"
-        },
-        {
           "id": "S-DERMATITIS",
           "canonical": "皮炎",
           "term": "皮炎",
           "page": 258,
           "section": "適應病症",
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-PRURITUS",
-          "canonical": "瘙癢",
-          "term": "瘙癢",
-          "page": 258,
-          "section": "適應病症",
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-COLD",
-          "canonical": "發冷",
-          "term": "手足發冷",
-          "page": 258,
-          "section": "病期病態",
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -11986,6 +11986,13 @@ window.X4KbData = {
           "page": 326
         },
         {
+          "raw": "瘙癢",
+          "id": "S-PRURITUS",
+          "negated": false,
+          "matchType": "book-physician",
+          "page": 326
+        },
+        {
           "raw": "下腹部壓痛",
           "id": "S-ABDOMINAL-TENDERNESS",
           "negated": false,
@@ -12024,6 +12031,7 @@ window.X4KbData = {
         "S-HEAT-SENSATION",
         "S-HOT-FLUSH",
         "S-FEVER",
+        "S-PRURITUS",
         "S-ABDOMINAL-TENDERNESS",
         "S-SKIN-DRY"
       ],
@@ -14627,7 +14635,7 @@ window.X4KbData = {
       "channelStages": [
         "太陰"
       ],
-      "bookCautions": "1 ) 假性醛固酮增多證。2 ) 肌病〈低鉀血症導致 )。 表現為脫力感，肌力降低，肌肉痛，四肢冶攣、麻交等橫紋肌溶解症。CK 升高，血及尿中肌紅蛋白上升。若出現不良反應當停藥，進行相應處理。[ 相互作用 ] 與葉塞米、利尿酸、吵嗪類藥物並用可能引起血鉀低下。；1 ) 假性醛固酮增多證。 2 ) 肌病〈低鉀血癥導致 )。 表現為脫力感，肌力降低，肌肉痛，四肢冶 攣、麻交等橫紋肌溶解症。CK 升高，血及尿中肌紅蛋白上升。若出現不良反 應當停藥，進行相應處理。 [ 相互作用 ] 與葉塞米、利尿酸、吵嗪類藥物並用可能引起血鉀低下。"
+      "bookCautions": "1 ) 假性醛固酮增多證。2 ) 肌病〈低鉀血癥導致 )。 表現為脫力感，肌力降低，肌肉痛，四肢冶攣、麻交等橫紋肌溶解症。CK 升高，血及尿中肌紅蛋白上升。若出現不良反應當停藥，進行相應處理。[ 相互作用 ] 與葉塞米、利尿酸、吵嗪類藥物並用可能引起血鉀低下。；1 ) 假性醛固酮增多證。 2 ) 肌病〈低鉀血癥導致 )。 表現為脫力感，肌力降低，肌肉痛，四肢冶 攣、麻交等橫紋肌溶解症。CK 升高，血及尿中肌紅蛋白上升。若出現不良反 應當停藥，進行相應處理。 [ 相互作用 ] 與葉塞米、利尿酸、吵嗪類藥物並用可能引起血鉀低下。"
     },
     {
       "id": "F-0002",
@@ -15084,7 +15092,7 @@ window.X4KbData = {
       "channelStages": [
         "少陽"
       ],
-      "bookCautions": "偶見間質性肺炎，若發生則停藥，進行相應治療。[ 相互作用 ] 與葉塞米、利尿酸、吹嗪類利尿劑等同用，可能引起低鉀血症。"
+      "bookCautions": "偶見間質性肺炎，若發生則停藥，進行相應治療。[ 相互作用 ] 與葉塞米、利尿酸、吹嗪類利尿劑等同用，可能引起低鉀血癥。"
     },
     {
       "id": "F-0069",
@@ -15597,6 +15605,13 @@ window.X4KbData = {
           "id": "S-HEAT-IN-CHEST",
           "negated": false,
           "fromIndications": true
+        },
+        {
+          "raw": "瘙癢",
+          "id": "S-PRURITUS",
+          "negated": false,
+          "matchType": "book-physician",
+          "page": 283
         }
       ],
       "herbs": [
@@ -15608,14 +15623,16 @@ window.X4KbData = {
       ],
       "composedOfFormulas": [],
       "sourceSheets": [
-        "「漢方心異常」的副本"
+        "「漢方心異常」的副本",
+        "《漢方臨床診療學》p.283"
       ],
       "indications": [
         "S-DRY-MOUTH",
         "S-HEAT-IN-CHEST",
         "S-INSOMNIA",
         "S-PALPITATION",
-        "S-SKIN-DRY"
+        "S-SKIN-DRY",
+        "S-PRURITUS"
       ],
       "formulaPattern": [
         "陽氣虛 / 陰液虛"
@@ -15642,25 +15659,17 @@ window.X4KbData = {
           "page": 283,
           "section": "適應病症",
           "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-PRURITUS",
-          "canonical": "瘙癢",
-          "term": "瘙癢",
-          "page": 283,
-          "section": "適應病症",
-          "physicianDecision": "accept-secondary"
         }
       ],
       "bookCorroborated": [
         {
-          "id": "S-CHEST-OPPRESSION",
-          "canonical": "胸悶",
+          "id": "S-SKIN-DRY",
+          "canonical": "皮膚乾燥",
           "page": 283
         },
         {
-          "id": "S-SKIN-DRY",
-          "canonical": "皮膚乾燥",
+          "id": "S-CHEST-OPPRESSION",
+          "canonical": "胸悶",
           "page": 283
         },
         {
@@ -17347,6 +17356,14 @@ window.X4KbData = {
           "physicianDecision": "accept-secondary"
         },
         {
+          "id": "S-PRURITUS",
+          "canonical": "瘙癢",
+          "term": "瘙癢",
+          "page": 295,
+          "section": "適應病症",
+          "physicianDecision": "accept-secondary"
+        },
+        {
           "id": "S-LOWER-ABDOMEN-NUMB",
           "canonical": "小腹不仁",
           "term": "小腹不仁",
@@ -18284,6 +18301,14 @@ window.X4KbData = {
           "physicianDecision": "accept-secondary"
         },
         {
+          "id": "S-PRURITUS",
+          "canonical": "瘙癢",
+          "term": "瘙癢",
+          "page": 287,
+          "section": "適應病症",
+          "physicianDecision": "accept-secondary"
+        },
+        {
           "id": "S-LOWER-ABDOMEN-NUMB",
           "canonical": "小腹不仁",
           "term": "小腹不仁",
@@ -18367,6 +18392,12 @@ window.X4KbData = {
           "matchType": "book"
         },
         {
+          "raw": "瘙癢",
+          "id": "S-PRURITUS",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
           "raw": "痔",
           "id": "S-HEMORRHOIDS",
           "negated": false,
@@ -18387,6 +18418,7 @@ window.X4KbData = {
       "indications": [
         "S-BLEEDING",
         "S-CONSTIPATION",
+        "S-PRURITUS",
         "S-HEMORRHOIDS",
         "S-GENITAL-HEAT"
       ],
@@ -19312,7 +19344,7 @@ window.X4KbData = {
       "bookPages": [
         248
       ],
-      "bookCautions": "1 ) 浮腫。若出現浮腫，應停止使用。2 ) 電解質率亂〈長期連續使用可能出現假性醛固酮增多症 )，若出現應停藥。低鉀血症可導致肌病。3 ) 過敏症〈皮次、痿癢等 )。",
+      "bookCautions": "1 ) 浮腫。若出現浮腫，應停止使用。2 ) 電解質率亂〈長期連續使用可能出現假性醛固酮增多症 )，若出現應停藥。低鉀血癥可導致肌病。3 ) 過敏症〈皮次、痿癢等 )。",
       "channelStages": [
         "太陽"
       ]
@@ -19971,7 +20003,7 @@ window.X4KbData = {
       "bookPages": [
         266
       ],
-      "bookCautions": "1 ) 原發性醛固酮增多症患者。2 ) 有肌病的患者。3 ) 有低鉀血症患者。；1 ) 若出現電解質率亂 (長期連續使用可能引起假性醛固酮增多症 )，則中止使用。2 ) 出現低鉀血症則可能引起肌病。[ 相互作用 ]與吶塞米、利尿酸、呆嗪類利尿劑並用，可能引起血鉀值低下。甘草附子湯",
+      "bookCautions": "1 ) 原發性醛固酮增多症患者。2 ) 有肌病的患者。3 ) 有低鉀血癥患者。；1 ) 若出現電解質率亂 (長期連續使用可能引起假性醛固酮增多症 )，則中止使用。2 ) 出現低鉀血癥則可能引起肌病。[ 相互作用 ]與吶塞米、利尿酸、呆嗪類利尿劑並用，可能引起血鉀值低下。甘草附子湯",
       "channelStages": [
         "少陽",
         "太陽",
@@ -20518,7 +20550,7 @@ window.X4KbData = {
       "bookPages": [
         338
       ],
-      "bookCautions": "1 ) 若出現電解質紊亂 ( 與葉塞米、利尿酸、哮嗪類利尿劑並用，可能引起血鉀值低下 )，即中止使用。@ 夸克掃描王家速掃描，就是高效 品下名-aa內果二方劑-響 312 ) 低鉀血症可能引起肌病。",
+      "bookCautions": "1 ) 若出現電解質紊亂 ( 與葉塞米、利尿酸、哮嗪類利尿劑並用，可能引起血鉀值低下 )，即中止使用。@ 夸克掃描王家速掃描，就是高效 品下名-aa內果二方劑-響 312 ) 低鉀血癥可能引起肌病。",
       "channelStages": [
         "少陽"
       ]
@@ -20869,7 +20901,7 @@ window.X4KbData = {
       "bookPages": [
         265
       ],
-      "bookCautions": "妊娠或可能為妊娠者。；1 ) 電解質紊亂 (長期連續使用可能引起假性醛固酮增多症 )，若發生則應停藥。低鉀血症者可能引起肌病。2 ) 皮疹，皮膚髮紅，烘熱感，心慌孝動。[ 相互作用 ] 與吶塞米、利尿酸、吵嗪類利尿劑等同用，可能引起低鉀血症。",
+      "bookCautions": "妊娠或可能為妊娠者。；1 ) 電解質紊亂 (長期連續使用可能引起假性醛固酮增多症 )，若發生則應停藥。低鉀血癥者可能引起肌病。2 ) 皮疹，皮膚髮紅，烘熱感，心慌孝動。[ 相互作用 ] 與吶塞米、利尿酸、吵嗪類利尿劑等同用，可能引起低鉀血癥。",
       "channelStages": [
         "太陰"
       ]
@@ -22046,7 +22078,7 @@ window.X4KbData = {
       "bookPages": [
         280
       ],
-      "bookCautions": "1 ) 胃腸虛弱者。2 ) 妊娠或可疑妊娠者。；1 ) 若出現電解質泰亂〈長期使用可能引起假性醛固酮增多症 )，便中止使用。2) 引起低鉀血症可能導致肌病。3 ) 食慾不振。[ 相互作用 ]1 ) 與交感神經興奮藥物並用可能引起心坪、心動過速。2 ) 與解熱鎮痛藥並用可能引起過度汗出，有時會出現休克。",
+      "bookCautions": "1 ) 胃腸虛弱者。2 ) 妊娠或可疑妊娠者。；1 ) 若出現電解質泰亂〈長期使用可能引起假性醛固酮增多症 )，便中止使用。2) 引起低鉀血癥可能導致肌病。3 ) 食慾不振。[ 相互作用 ]1 ) 與交感神經興奮藥物並用可能引起心坪、心動過速。2 ) 與解熱鎮痛藥並用可能引起過度汗出，有時會出現休克。",
       "channelStages": [
         "太陽",
         "少陰"
@@ -22143,7 +22175,7 @@ window.X4KbData = {
       "bookPages": [
         279
       ],
-      "bookCautions": "1 ) 若出現電解質紊亂〈長期使用可能引起假性醛固酮增多症 )，便中止使用。2 ) 引起低鉀血症可能導致肌病。[ 相互作用 ]1 ) 與交感神經興奮藥物並用可能引起心情、心動過速。2 ) 與解熱鎮痛藥並用可能引起過度汗出，有時會出現休克。",
+      "bookCautions": "1 ) 若出現電解質紊亂〈長期使用可能引起假性醛固酮增多症 )，便中止使用。2 ) 引起低鉀血癥可能導致肌病。[ 相互作用 ]1 ) 與交感神經興奮藥物並用可能引起心情、心動過速。2 ) 與解熱鎮痛藥並用可能引起過度汗出，有時會出現休克。",
       "channelStages": [
         "太陽"
       ]
@@ -22523,6 +22555,12 @@ window.X4KbData = {
           "matchType": "book"
         },
         {
+          "raw": "瘙癢",
+          "id": "S-PRURITUS",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
           "raw": "口渴",
           "id": "S-THIRST",
           "negated": false,
@@ -22537,6 +22575,7 @@ window.X4KbData = {
       "indications": [
         "S-DERMATITIS",
         "S-HEAT-SENSATION",
+        "S-PRURITUS",
         "S-THIRST"
       ],
       "formulaPattern": "",
@@ -23734,7 +23773,7 @@ window.X4KbData = {
       "bookPages": [
         298
       ],
-      "bookCautions": "1 ) 汗出傾向明顯，或已強力發汗塵出而脈弱者。2 ) 體力明顯誤弱的場合。3 ) 明顯胃腸虛弱。4) 冠心病心絞痛、心肌梗塞等迴圈系統疾患，或有既往史者。@ 夸克掃描王家速掃描，就是高效 品下名[ 相互作用 ]1 ) 與交感神經興奮藥並用，可能引起心慌層動、心動過速等。2 ) 與解熱鎮痛藥並用，可能引起過度汗出。；1 ) 汗出傾嚮明顯，或已強力發汗塵出而脈弱者。 2 ) 體力明顯誤弱的場合。 3 ) 明顯胃腸虛弱。 4) 冠心病心絞痛、心肌梗死等循環系統疾患，或有既往史者。 9 [ 相互作用 ] 1 ) 與交感神經興奮藥並用，可能引起心慌層動、心動過速等。 2 ) 與解熱鎮痛藥並用，可能引起過度汗出。",
+      "bookCautions": "1 ) 汗出傾向明顯，或已強力發汗塵出而脈弱者。2 ) 體力明顯誤弱的場合。3 ) 明顯胃腸虛弱。4) 冠心病心絞痛、心肌梗死等迴圈系統疾患，或有既往史者。@ 夸克掃描王家速掃描，就是高效 品下名[ 相互作用 ]1 ) 與交感神經興奮藥並用，可能引起心慌層動、心動過速等。2 ) 與解熱鎮痛藥並用，可能引起過度汗出。；1 ) 汗出傾嚮明顯，或已強力發汗塵出而脈弱者。 2 ) 體力明顯誤弱的場合。 3 ) 明顯胃腸虛弱。 4) 冠心病心絞痛、心肌梗死等循環系統疾患，或有既往史者。 9 [ 相互作用 ] 1 ) 與交感神經興奮藥並用，可能引起心慌層動、心動過速等。 2 ) 與解熱鎮痛藥並用，可能引起過度汗出。",
       "channelStages": [
         "太陽"
       ]
@@ -23909,7 +23948,7 @@ window.X4KbData = {
       "bookPages": [
         286
       ],
-      "bookCautions": "1 ) 原發性醛固酮增多症患者。2 ) 肌病患者。3 ) 低鉀血症患者。；1 ) 對電解質代謝的影響〈長期連續使用可能引起假性醛固酮增多症，若出現則中止使用 )。2 ) 因低鉀血症可能引起肌病，若出現則中止使用。[ 相互作用 ] 與葉塞米、利尿酸、哮嗪類利尿劑並用可能導致血鉀值低下5",
+      "bookCautions": "1 ) 原發性醛固酮增多症患者。2 ) 肌病患者。3 ) 低鉀血癥患者。；1 ) 對電解質代謝的影響〈長期連續使用可能引起假性醛固酮增多症，若出現則中止使用 )。2 ) 因低鉀血癥可能引起肌病，若出現則中止使用。[ 相互作用 ] 與葉塞米、利尿酸、哮嗪類利尿劑並用可能導致血鉀值低下5",
       "channelStages": [
         "少陽",
         "太陽"
@@ -24352,7 +24391,7 @@ window.X4KbData = {
       "bookPages": [
         269
       ],
-      "bookCautions": "1 ) 電解質代謝京亂 (長期連續使用可能引起假性醛固酮增多症 )，若發生則中止使用。2 ) 低鉀血症，可能引起肌病。3 ) 過敏症〈皮疹 )。4) 烘熱感，心導。[ 相互作用 ]1 ) 與交感神經興奮藥物並用，可能引起心必、心動過速等。2 ) 與解熱鎮痛藥並用，可能引起過度汗出，有時甚至出現休克。",
+      "bookCautions": "1 ) 電解質代謝京亂 (長期連續使用可能引起假性醛固酮增多症 )，若發生則中止使用。2 ) 低鉀血癥，可能引起肌病。3 ) 過敏症〈皮疹 )。4) 烘熱感，心導。[ 相互作用 ]1 ) 與交感神經興奮藥物並用，可能引起心必、心動過速等。2 ) 與解熱鎮痛藥並用，可能引起過度汗出，有時甚至出現休克。",
       "channelStages": [
         "太陽",
         "少陰"

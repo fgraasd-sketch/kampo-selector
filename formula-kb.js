@@ -3819,13 +3819,19 @@ const EXCEL_FORMULA_KB = [
     "zangFuTags": [],
     "symptoms": [
       "伴有皮膚枯燥的瘙癢",
-      "濕疹"
+      "濕疹",
+      "貧血",
+      "瘙癢",
+      "手足發冷"
     ],
     "keySymptoms": [
       "伴有皮膚枯燥的瘙癢",
-      "濕疹"
+      "濕疹",
+      "貧血",
+      "瘙癢",
+      "手足發冷"
     ],
-    "indications": "伴有皮膚枯燥的瘙癢，濕疹",
+    "indications": "伴有皮膚枯燥的瘙癢，濕疹，貧血，瘙癢，手足發冷",
     "formulaPattern": [
       "補血"
     ],
@@ -3869,6 +3875,7 @@ const EXCEL_FORMULA_KB = [
       "手足發熱",
       "烘熱感",
       "發熱",
+      "瘙癢",
       "下腹部壓痛",
       "皮膚乾燥"
     ],
@@ -3881,10 +3888,11 @@ const EXCEL_FORMULA_KB = [
       "手足發熱",
       "烘熱感",
       "發熱",
+      "瘙癢",
       "下腹部壓痛",
       "皮膚乾燥"
     ],
-    "indications": "皮炎，濕疹，月經不調（伴熱證，神經過敏，出血傾向，手足發熱，烘熱感，發熱，下腹部壓痛，皮膚乾燥",
+    "indications": "皮炎，濕疹，月經不調（伴熱證，神經過敏，出血傾向，手足發熱，烘熱感，發熱，瘙癢，下腹部壓痛，皮膚乾燥",
     "formulaPattern": [
       "補血"
     ],
@@ -5292,7 +5300,8 @@ const EXCEL_FORMULA_KB = [
       "皮膚枯燥",
       "心悸",
       "胸內苦悶感",
-      "胸內熱"
+      "胸內熱",
+      "瘙癢"
     ],
     "keySymptoms": [
       "失眠",
@@ -5300,9 +5309,10 @@ const EXCEL_FORMULA_KB = [
       "皮膚枯燥",
       "心悸",
       "胸內苦悶感",
-      "胸內熱"
+      "胸內熱",
+      "瘙癢"
     ],
-    "indications": "失眠，口內乾燥，皮膚枯燥，心悸，胸內苦悶感，胸內熱",
+    "indications": "失眠，口內乾燥，皮膚枯燥，心悸，胸內苦悶感，胸內熱，瘙癢",
     "formulaPattern": [
       "陽氣虛 / 陰液虛"
     ],
@@ -6421,16 +6431,18 @@ const EXCEL_FORMULA_KB = [
     "symptoms": [
       "出血",
       "便秘",
+      "瘙癢",
       "痔",
       "充血"
     ],
     "keySymptoms": [
       "出血",
       "便秘",
+      "瘙癢",
       "痔",
       "充血"
     ],
-    "indications": "出血，便秘，痔，充血",
+    "indications": "出血，便秘，瘙癢，痔，充血",
     "formulaPattern": [],
     "specialIndications": [],
     "contraindications": [],
@@ -8767,14 +8779,16 @@ const EXCEL_FORMULA_KB = [
     "symptoms": [
       "皮疹",
       "熱感",
+      "瘙癢",
       "口渴"
     ],
     "keySymptoms": [
       "皮疹",
       "熱感",
+      "瘙癢",
       "口渴"
     ],
-    "indications": "皮疹，熱感，口渴",
+    "indications": "皮疹，熱感，瘙癢，口渴",
     "formulaPattern": [],
     "specialIndications": [],
     "contraindications": [],
