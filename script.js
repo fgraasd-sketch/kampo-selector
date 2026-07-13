@@ -1243,6 +1243,16 @@ function buildChannelRouteHtml(explanation) {
     return '';
 }
 
+// 加味建議行 (2026-07-13): single-herb preparations whose book indications
+// cover this card's 殘餘 (unexplained) patient symptoms. Rendered only when
+// the adapter provides them — most cards have none.
+function buildAddonSuggestionsHtml(explanation) {
+    if (!explanation || !explanation.addonSuggestions || !explanation.addonSuggestions.length) return '';
+    return explanation.addonSuggestions
+        .map(text => '<div><strong><i class="fa-solid fa-plus"></i> 加味建議：</strong>' + escapeHtml(text) + '</div>')
+        .join('');
+}
+
 function buildHerbSuggestionsHtml(herbSuggestions) {
     if (!herbSuggestions || !herbSuggestions.length) return '';
     const rows = herbSuggestions.map(herb => {
@@ -1447,7 +1457,8 @@ function renderPrescriptions() {
             ? '<div><strong>書證另證：</strong>' + escapeHtml(explanation.bookHits.join('、')) + '（《漢方臨床診療學》）</div>'
             : '';
         const channelRouteHtml = buildChannelRouteHtml(explanation);
-        card.innerHTML = ['<span class="rx-score-badge">Top ' + (index + 1) + ' \u00b7 ' + item.totalScore + ' \u5206</span>','<div>','<div class="rx-card-header"><span class="rx-name">' + escapeHtml(item.name) + '</span><span class="rx-tag ' + tagClass + '">' + escapeHtml(item.type) + '</span></div>','<div class="rx-source">' + iconHtml + ' ' + sourceName + '</div>','<div class="rx-indications"><strong>\u81e8\u5e8a\u6307\u5fb5\uff1a</strong> ' + escapeHtml(item.indications) + '</div>','</div>','<div class="rx-score-grid">','<div><strong>\u516d\u8b49</strong><span>' + Math.round((scoreParts.patternSimilarity || 0) * 100) + '%</span></div>','<div><strong>\u865b\u5be6</strong><span>' + (scoreParts.xuShiLabel ? escapeHtml(scoreParts.xuShiLabel) : Math.round((scoreParts.xuShiSimilarity || 0) * 100) + '%') + '</span></div>','<div><strong>\u4e94\u81df</strong><span>' + Math.round((scoreParts.zangFuSimilarity || 0) * 100) + '%</span></div>','<div><strong>\u75c7\u72c0</strong><span>' + Math.round((scoreParts.symptomMatch || 0) * 100) + '%</span></div>','</div>', matchedSymptomsHtml, herbSuggestionsHtml, '<div class="rx-explainability">','<div><strong>\u516d\u8b49\u547d\u4e2d\uff1a</strong>' + escapeHtml(formatVectorEntries(explanation.patterns)) + '</div>','<div><strong>\u865b\u5be6\u5224\u65b7\uff1a</strong>' + escapeHtml(formatVectorEntries(explanation.xuShi)) + '</div>','<div><strong>\u4e94\u81df\u547d\u4e2d\uff1a</strong>' + escapeHtml(formatVectorEntries(explanation.zangFu)) + '</div>','<div><strong>\u7279\u6b8a\u6307\u5fb5\uff1a</strong>' + escapeHtml(formatVectorEntries(explanation.specialHits)) + '</div>','<div><strong>\u7981\u5fcc / \u6392\u9664\u8b66\u793a\uff1a</strong>' + escapeHtml(formatVectorEntries(explanation.contraindicationHits)) + '</div>', bookHitsHtml, channelRouteHtml, '<div><strong>\u70ba\u4ec0\u9ebc\u63a8\u85a6\uff1a</strong>' + escapeHtml(explanation.reason || '') + '</div>','</div>'].join('');
+        const addonSuggestionsHtml = buildAddonSuggestionsHtml(explanation);
+        card.innerHTML = ['<span class="rx-score-badge">Top ' + (index + 1) + ' \u00b7 ' + item.totalScore + ' \u5206</span>','<div>','<div class="rx-card-header"><span class="rx-name">' + escapeHtml(item.name) + '</span><span class="rx-tag ' + tagClass + '">' + escapeHtml(item.type) + '</span></div>','<div class="rx-source">' + iconHtml + ' ' + sourceName + '</div>','<div class="rx-indications"><strong>\u81e8\u5e8a\u6307\u5fb5\uff1a</strong> ' + escapeHtml(item.indications) + '</div>','</div>','<div class="rx-score-grid">','<div><strong>\u516d\u8b49</strong><span>' + Math.round((scoreParts.patternSimilarity || 0) * 100) + '%</span></div>','<div><strong>\u865b\u5be6</strong><span>' + (scoreParts.xuShiLabel ? escapeHtml(scoreParts.xuShiLabel) : Math.round((scoreParts.xuShiSimilarity || 0) * 100) + '%') + '</span></div>','<div><strong>\u4e94\u81df</strong><span>' + Math.round((scoreParts.zangFuSimilarity || 0) * 100) + '%</span></div>','<div><strong>\u75c7\u72c0</strong><span>' + Math.round((scoreParts.symptomMatch || 0) * 100) + '%</span></div>','</div>', matchedSymptomsHtml, herbSuggestionsHtml, '<div class="rx-explainability">','<div><strong>\u516d\u8b49\u547d\u4e2d\uff1a</strong>' + escapeHtml(formatVectorEntries(explanation.patterns)) + '</div>','<div><strong>\u865b\u5be6\u5224\u65b7\uff1a</strong>' + escapeHtml(formatVectorEntries(explanation.xuShi)) + '</div>','<div><strong>\u4e94\u81df\u547d\u4e2d\uff1a</strong>' + escapeHtml(formatVectorEntries(explanation.zangFu)) + '</div>','<div><strong>\u7279\u6b8a\u6307\u5fb5\uff1a</strong>' + escapeHtml(formatVectorEntries(explanation.specialHits)) + '</div>','<div><strong>\u7981\u5fcc / \u6392\u9664\u8b66\u793a\uff1a</strong>' + escapeHtml(formatVectorEntries(explanation.contraindicationHits)) + '</div>', bookHitsHtml, channelRouteHtml, addonSuggestionsHtml, '<div><strong>\u70ba\u4ec0\u9ebc\u63a8\u85a6\uff1a</strong>' + escapeHtml(explanation.reason || '') + '</div>','</div>'].join('');
         container.appendChild(card);
     });
 }

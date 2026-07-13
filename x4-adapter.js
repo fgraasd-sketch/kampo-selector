@@ -105,6 +105,16 @@ const X4Adapter = (function () {
     return "熱證相符" + evidencePart;
   }
 
+  // 加味建議 (2026-07-13): the matcher's explanation.addonSuggestions lists
+  // single-herb preparations whose book indications cover this card's residual
+  // (unexplained) patient symptoms. Pure annotation — never affects ranking.
+  function buildAddonSuggestionTexts(result) {
+    const items = result.explanation.addonSuggestions || [];
+    return items.map((item) =>
+      "可考慮加味：" + item.name + "（書 p." + item.page + "——病人尚有 "
+      + item.matchedResiduals.join("、") + " 未被本方涵蓋）");
+  }
+
   function deriveXuShi(patientVectorXuShi) {
     const xu = patientVectorXuShi?.虛 || 0;
     const shi = patientVectorXuShi?.實 || 0;
@@ -271,6 +281,7 @@ const X4Adapter = (function () {
             bookHits,
             channelRoute: channelRouteText,
             heatRoute: heatRouteText,
+            addonSuggestions: buildAddonSuggestionTexts(result),
             reason: buildRecommendationReason(result, matchedCanonical, unmatchedCanonical, channelRouteText, heatRouteText),
           },
         };

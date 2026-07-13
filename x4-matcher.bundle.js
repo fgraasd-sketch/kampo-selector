@@ -1030,8 +1030,55 @@ function createX4Matcher(kb) {
     };
   }
 
+  // 加味建議 (2026-07-13, physician: 「單味繼續」 — supplement what the ranked
+  // formula leaves unexplained). The book itself files 附子末 as an add-on drug
+  // (p.264/304 「本劑作為加味藥使用」), so when a card's patientResidualSymptoms
+  // intersect a single-herb preparation's own book-sourced keySymptoms, the card
+  // gets an annotation. Annotation ONLY — score.total is never touched, so every
+  // existing ranking and adjudication is byte-identical by construction.
+  //   附子末 guards: the book's 禁忌 (烘熱感明顯、面赤、體力充實者) is exactly
+  //   what the heat detector sees, so any patient heat evidence blocks it; and a
+  //   formula already carrying aconite (herbs list, or 附 in the name — the
+  //   herbs field is incomplete, e.g. 桂枝加朮附湯) never gets the suggestion.
+  //   紅參末 is deliberately absent: its book entry is 純調劑 with zero
+  //   indications, and we do not invent evidence for it.
+  const ADDON_PREPARATIONS = [
+    { name: "附子末", page: 264, blockOnHeat: true, blockHerb: "附子" },
+    { name: "薏苡仁末", page: 341, blockOnHeat: false, blockHerb: null },
+  ];
+  const addonRules = ADDON_PREPARATIONS.map((rule) => {
+    const entry = formulas.find((item) => item.name === rule.name);
+    return { ...rule, ids: new Set(toArray(entry?.keySymptoms).map((item) => item.id)) };
+  }).filter((rule) => rule.ids.size > 0);
+
+  function computeAddonSuggestions(result, patientContext) {
+    const residuals = toArray(result.explanation.patientResidualSymptoms)
+      .filter((item) => item.weight > 0);
+    if (!residuals.length) return [];
+    const suggestions = [];
+    for (const rule of addonRules) {
+      if (rule.name === result.formula.name) continue;
+      if (rule.blockOnHeat && patientContext.heatEvidence) continue;
+      if (rule.blockHerb) {
+        const herbs = toArray(result.formula.herbs);
+        if (herbs.some((herb) => String(herb).includes(rule.blockHerb))) continue;
+        if (result.formula.name.includes("附")) continue;
+      }
+      const hits = residuals.filter((item) => rule.ids.has(item.id));
+      if (!hits.length) continue;
+      suggestions.push({
+        name: rule.name,
+        page: rule.page,
+        matchedResiduals: hits.map((item) => item.canonical),
+      });
+    }
+    return suggestions;
+  }
+
   function scoreFormulaWithContext(formula, patientContext) {
-    return scoreFormula(formula, patientContext, normalizer);
+    const result = scoreFormula(formula, patientContext, normalizer);
+    result.explanation.addonSuggestions = computeAddonSuggestions(result, patientContext);
+    return result;
   }
 
   function recommend(patient, { limit = 5 } = {}) {

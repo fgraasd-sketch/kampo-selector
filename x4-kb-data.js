@@ -1741,7 +1741,13 @@ window.X4KbData = {
         "脈微弱",
         "脈微",
         "脈沉微",
-        "脈沉弱"
+        "脈沉弱",
+        "脈沉細弱",
+        "脈沉而細弱",
+        "脈細弱",
+        "脈沉細",
+        "脈微細",
+        "脈細微"
       ],
       "parent": null,
       "negationSensitive": false,
@@ -3395,6 +3401,13 @@ window.X4KbData = {
           "fromIndications": true
         },
         {
+          "raw": "脈沉細",
+          "id": "S-PULSE-WEAK",
+          "negated": false,
+          "matchType": "book-physician",
+          "page": 297
+        },
+        {
           "raw": "發熱",
           "id": "S-FEVER",
           "negated": false,
@@ -3429,6 +3442,7 @@ window.X4KbData = {
         "S-PALE-COMPLEXION",
         "S-RUNNY-NOSE-WATERY",
         "S-SORE-THROAT",
+        "S-PULSE-WEAK",
         "S-FEVER",
         "S-SLEEPINESS"
       ],
