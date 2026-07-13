@@ -1036,15 +1036,16 @@ function createX4Matcher(kb) {
   // intersect a single-herb preparation's own book-sourced keySymptoms, the card
   // gets an annotation. Annotation ONLY — score.total is never touched, so every
   // existing ranking and adjudication is byte-identical by construction.
-  //   附子末 guards: the book's 禁忌 (烘熱感明顯、面赤、體力充實者) is exactly
-  //   what the heat detector sees, so any patient heat evidence blocks it; and a
-  //   formula already carrying aconite (herbs list, or 附 in the name — the
-  //   herbs field is incomplete, e.g. 桂枝加朮附湯) never gets the suggestion.
-  //   紅參末 is deliberately absent: its book entry is 純調劑 with zero
-  //   indications, and we do not invent evidence for it.
+  //   附子末 guards mirror the book's 禁忌 (烘熱感明顯、面赤、體力充實者):
+  //   any patient heat evidence blocks it (heat detector = 烘熱/面赤), an 實證
+  //   patient blocks it (體力充實; 2026-07-13 physician delegated, decided yes),
+  //   and a formula already carrying aconite (herbs list, or 附 in the name —
+  //   the herbs field is incomplete, e.g. 桂枝加朮附湯) never gets the
+  //   suggestion. 紅參末 is deliberately absent: its book entry is 純調劑 with
+  //   zero indications, and we do not invent evidence for it.
   const ADDON_PREPARATIONS = [
-    { name: "附子末", page: 264, blockOnHeat: true, blockHerb: "附子" },
-    { name: "薏苡仁末", page: 341, blockOnHeat: false, blockHerb: null },
+    { name: "附子末", page: 264, blockOnHeat: true, blockOnShi: true, blockHerb: "附子" },
+    { name: "薏苡仁末", page: 341, blockOnHeat: false, blockOnShi: false, blockHerb: null },
   ];
   const addonRules = ADDON_PREPARATIONS.map((rule) => {
     const entry = formulas.find((item) => item.name === rule.name);
@@ -1059,6 +1060,7 @@ function createX4Matcher(kb) {
     for (const rule of addonRules) {
       if (rule.name === result.formula.name) continue;
       if (rule.blockOnHeat && patientContext.heatEvidence) continue;
+      if (rule.blockOnShi && patientContext.xuShi === "shi") continue;
       if (rule.blockHerb) {
         const herbs = toArray(result.formula.herbs);
         if (herbs.some((herb) => String(herb).includes(rule.blockHerb))) continue;
