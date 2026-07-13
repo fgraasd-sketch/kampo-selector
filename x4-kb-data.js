@@ -2240,6 +2240,21 @@ window.X4KbData = {
       "source": [
         "Codex C1 alias patch"
       ]
+    },
+    {
+      "id": "S-TONGUE-RED",
+      "canonical": "舌紅",
+      "aliases": [
+        "舌質紅",
+        "舌尖紅",
+        "舌紅絳",
+        "舌邊尖紅"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
     }
   ],
   "formulas": [
@@ -2467,6 +2482,7 @@ window.X4KbData = {
         "太陽",
         "少陽"
       ],
+      "heatNature": "熱",
       "bookCautions": "1 ) 體力明顯衰弱。2 ) 胃腸明顯虛弱。3 ) 患心絞痛、心肌醒死等迴圈系統疾病或有既往史。[ 相互作用 ] 與交感神經興奮藥並用，可引起心慌慘動、心動過速等。"
     },
     {
@@ -15089,6 +15105,14 @@ window.X4KbData = {
       ],
       "bookSymptoms": [
         {
+          "id": "S-TONGUE-RED",
+          "canonical": "舌紅",
+          "term": "舌尖紅",
+          "page": 267,
+          "section": "證候特徵",
+          "physicianDecision": "accept-secondary"
+        },
+        {
           "id": "S-HEAT-TOXIN",
           "canonical": "炎症",
           "term": "口內炎",
@@ -19819,8 +19843,7 @@ window.X4KbData = {
       "bookCautions": "",
       "channelStages": [
         "少陽"
-      ],
-      "heatNature": "熱"
+      ]
     },
     {
       "id": "F-BOOK-020",
@@ -21252,6 +21275,12 @@ window.X4KbData = {
           "id": "S-FACIAL-FLUSH",
           "negated": false,
           "matchType": "book"
+        },
+        {
+          "raw": "舌尖紅",
+          "id": "S-TONGUE-RED",
+          "negated": false,
+          "matchType": "book"
         }
       ],
       "herbs": [],
@@ -21265,7 +21294,8 @@ window.X4KbData = {
         "S-COLD",
         "S-FEVER",
         "S-DROOLING",
-        "S-FACIAL-FLUSH"
+        "S-FACIAL-FLUSH",
+        "S-TONGUE-RED"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：緊胡桂枝幹羨湯（OCR 標題，已人工校名）",

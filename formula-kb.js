@@ -8122,7 +8122,8 @@ const EXCEL_FORMULA_KB = [
       "惡寒",
       "發熱",
       "津液不足",
-      "顏面潮紅"
+      "顏面潮紅",
+      "舌尖紅"
     ],
     "keySymptoms": [
       "面色欠佳",
@@ -8130,9 +8131,10 @@ const EXCEL_FORMULA_KB = [
       "惡寒",
       "發熱",
       "津液不足",
-      "顏面潮紅"
+      "顏面潮紅",
+      "舌尖紅"
     ],
-    "indications": "面色欠佳，胸脅苦滿，惡寒，發熱，津液不足，顏面潮紅",
+    "indications": "面色欠佳，胸脅苦滿，惡寒，發熱，津液不足，顏面潮紅，舌尖紅",
     "formulaPattern": [],
     "specialIndications": [],
     "contraindications": [],

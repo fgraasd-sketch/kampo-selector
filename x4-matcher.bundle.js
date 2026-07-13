@@ -580,7 +580,9 @@ function positiveDirectIds(patientMatches) {
 // declaration ⇒ the route is exactly 0 and rankings are byte-identical.
 const HEAT_SIGNS = {
   gateAny: ["S-HOT-FLUSH", "S-FACIAL-FLUSH", "S-HEAT-SENSATION"],
-  supporting: ["S-HOT-FLUSH", "S-FACIAL-FLUSH", "S-HEAT-SENSATION", "S-FEVER", "S-THIRST"],
+  // 舌紅 supports but never gates (2026-07-13 physician: 舌紅 in, 口苦 out —
+  // 口苦 is a 少陽 gate sign and would flood the heat formulas).
+  supporting: ["S-HOT-FLUSH", "S-FACIAL-FLUSH", "S-HEAT-SENSATION", "S-FEVER", "S-THIRST", "S-TONGUE-RED"],
   saturation: 3,
 };
 
