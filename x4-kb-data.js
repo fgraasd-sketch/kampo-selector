@@ -1114,7 +1114,10 @@ window.X4KbData = {
         "上熱下寒烘熱感",
         "中暑感",
         "烘熱感",
-        "陣發性烘熱"
+        "陣發性烘熱",
+        "陣發性熱感",
+        "上半身陣發性熱感",
+        "上半身灼熱感"
       ],
       "parent": null,
       "negationSensitive": false,
@@ -1199,7 +1202,9 @@ window.X4KbData = {
     {
       "id": "S-IRRITABILITY",
       "canonical": "易怒",
-      "aliases": [],
+      "aliases": [
+        "易怒性"
+      ],
       "parent": "S-ANXIETY",
       "negationSensitive": false,
       "source": [
@@ -3823,17 +3828,17 @@ window.X4KbData = {
           "physicianDecision": "accept-secondary"
         },
         {
-          "id": "S-HEAT-SENSATION",
-          "canonical": "熱感",
-          "term": "熱感",
+          "id": "S-IRRITABILITY",
+          "canonical": "易怒",
+          "term": "易怒性",
           "page": 296,
           "section": "病期病態",
           "physicianDecision": "accept-secondary"
         },
         {
-          "id": "S-IRRITABILITY",
-          "canonical": "易怒",
-          "term": "易怒",
+          "id": "S-HEAT-SENSATION",
+          "canonical": "熱感",
+          "term": "熱感",
           "page": 296,
           "section": "病期病態",
           "physicianDecision": "accept-secondary"
@@ -9221,6 +9226,13 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book-physician",
           "page": 288
+        },
+        {
+          "raw": "易怒性",
+          "id": "S-IRRITABILITY",
+          "negated": false,
+          "matchType": "book-physician",
+          "page": 288
         }
       ],
       "herbs": [
@@ -9256,7 +9268,8 @@ window.X4KbData = {
         "S-INSOMNIA",
         "S-SHOULDER-STIFF",
         "S-SPONTANEOUS-SWEAT",
-        "S-GASTRIC-SPLASH"
+        "S-GASTRIC-SPLASH",
+        "S-IRRITABILITY"
       ],
       "formulaPattern": [
         "(陽氣 ↑↑ / 陰液 )",
@@ -9298,6 +9311,11 @@ window.X4KbData = {
         }
       ],
       "bookCorroborated": [
+        {
+          "id": "S-HOT-FLUSH",
+          "canonical": "烘熱",
+          "page": 288
+        },
         {
           "id": "S-ANXIETY",
           "canonical": "精神不安",
