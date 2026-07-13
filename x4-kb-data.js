@@ -800,7 +800,10 @@ window.X4KbData = {
       "canonical": "顏面潮紅",
       "aliases": [
         "上逆感",
-        "面頰潮紅"
+        "面頰潮紅",
+        "面赤",
+        "面色微赤",
+        "面色紅赤"
       ],
       "parent": null,
       "negationSensitive": false,
@@ -1747,7 +1750,9 @@ window.X4KbData = {
         "脈細弱",
         "脈沉細",
         "脈微細",
-        "脈細微"
+        "脈細微",
+        "脈弦細",
+        "脈弦弱"
       ],
       "parent": null,
       "negationSensitive": false,
@@ -1884,7 +1889,10 @@ window.X4KbData = {
         "止汗",
         "汗出",
         "無自然汗出",
-        "自然汗出傾向"
+        "自然汗出傾向",
+        "陣發性汗出",
+        "上半身出汗",
+        "上半身易出汗"
       ],
       "parent": null,
       "negationSensitive": true,
@@ -2231,6 +2239,20 @@ window.X4KbData = {
       "canonical": "往來寒熱",
       "aliases": [
         "寒熱往來"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-FORMICATION",
+      "canonical": "蟻行感",
+      "aliases": [
+        "皮膚蟻行感",
+        "蟻走感",
+        "皮膚如蟻走感"
       ],
       "parent": null,
       "negationSensitive": false,
@@ -6231,6 +6253,14 @@ window.X4KbData = {
           "page": 263,
           "section": "適應病症",
           "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-FACIAL-FLUSH",
+          "canonical": "顏面潮紅",
+          "term": "面赤",
+          "page": 263,
+          "section": "適應病症",
+          "physicianDecision": "accept-secondary"
         }
       ],
       "bookCorroborated": [
@@ -9186,6 +9216,13 @@ window.X4KbData = {
           "fromIndications": true
         },
         {
+          "raw": "陣發性汗出",
+          "id": "S-SPONTANEOUS-SWEAT",
+          "negated": false,
+          "matchType": "book-physician",
+          "page": 288
+        },
+        {
           "raw": "胸脅苦滿",
           "id": "S-CHEST-RIB-FULLNESS",
           "negated": false,
@@ -9228,15 +9265,15 @@ window.X4KbData = {
           "page": 288
         },
         {
-          "raw": "汗出",
-          "id": "S-SPONTANEOUS-SWEAT",
+          "raw": "胃部振水音",
+          "id": "S-GASTRIC-SPLASH",
           "negated": false,
           "matchType": "book-physician",
           "page": 288
         },
         {
-          "raw": "胃部振水音",
-          "id": "S-GASTRIC-SPLASH",
+          "raw": "皮膚蟻行感",
+          "id": "S-FORMICATION",
           "negated": false,
           "matchType": "book-physician",
           "page": 288
@@ -9275,14 +9312,15 @@ window.X4KbData = {
         "S-FEVER",
         "S-HOT-FLUSH",
         "S-MENSTRUAL-IRREGULAR",
+        "S-SPONTANEOUS-SWEAT",
         "S-CHEST-RIB-FULLNESS",
         "S-FATIGUE",
         "S-HEADACHE",
         "S-HEAT-SENSATION",
         "S-INSOMNIA",
         "S-SHOULDER-STIFF",
-        "S-SPONTANEOUS-SWEAT",
         "S-GASTRIC-SPLASH",
+        "S-FORMICATION",
         "S-IRRITABILITY"
       ],
       "formulaPattern": [
@@ -23909,6 +23947,12 @@ window.X4KbData = {
           "id": "S-NUMBNESS",
           "negated": false,
           "matchType": "book"
+        },
+        {
+          "raw": "蟻行感",
+          "id": "S-FORMICATION",
+          "negated": false,
+          "matchType": "book"
         }
       ],
       "herbs": [],
@@ -23917,7 +23961,8 @@ window.X4KbData = {
         "《漢方臨床診療學》p.285"
       ],
       "indications": [
-        "S-NUMBNESS"
+        "S-NUMBNESS",
+        "S-FORMICATION"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：黃莽桂枝五物湯（OCR 標題，已人工校名）",
@@ -24248,6 +24293,12 @@ window.X4KbData = {
           "matchType": "book"
         },
         {
+          "raw": "面赤",
+          "id": "S-FACIAL-FLUSH",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
           "raw": "發熱",
           "id": "S-FEVER",
           "negated": false,
@@ -24287,6 +24338,7 @@ window.X4KbData = {
         "S-HOT-FLUSH",
         "S-NEURALGIA",
         "S-COLD",
+        "S-FACIAL-FLUSH",
         "S-FEVER",
         "S-HEADACHE",
         "S-HEAT-SENSATION",
