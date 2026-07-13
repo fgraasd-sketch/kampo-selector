@@ -2720,7 +2720,8 @@ window.X4KbData = {
       "channelStages": [
         "少陽",
         "太陽"
-      ]
+      ],
+      "heatNature": "熱"
     },
     {
       "id": "F-0108",
@@ -3636,6 +3637,7 @@ window.X4KbData = {
       "channelStages": [
         "陽明"
       ],
+      "heatNature": "熱",
       "bookNegated": [
         {
           "id": "S-CHEST-RIB-FULLNESS",
@@ -3846,6 +3848,7 @@ window.X4KbData = {
       "channelStages": [
         "陽明"
       ],
+      "heatNature": "熱",
       "bookCautions": "體力低下，胃腸虛弱。"
     },
     {
@@ -4015,7 +4018,8 @@ window.X4KbData = {
       ],
       "channelStages": [
         "陽明"
-      ]
+      ],
+      "heatNature": "熱"
     },
     {
       "id": "F-0044",
@@ -4385,6 +4389,7 @@ window.X4KbData = {
       "channelStages": [
         "少陽"
       ],
+      "heatNature": "熱",
       "bookCautions": "如果出現過敏證〈皮背、閣癢等 ) 應中止用藥。[ 並用 ]1 ) 用於浮腫，療效不佳時，可適當增加藥量( 大約 2 倍量 )，或合用吶塞米。2 ) 用於紅病綜合徵時，可並用小柴胡湯等柴胡劑，或並用腎上腺皮質激素藥物。；如果出現過敏證〈皮背、閣癢等 ) 應中止用藥。",
       "bookNegated": [
         {
@@ -7370,6 +7375,7 @@ window.X4KbData = {
       "channelStages": [
         "少陽"
       ],
+      "heatNature": "熱",
       "bookCautions": "脈弱，體力明顯衰弱的場合。"
     },
     {
@@ -7803,7 +7809,8 @@ window.X4KbData = {
       ],
       "channelStages": [
         "少陽"
-      ]
+      ],
+      "heatNature": "熱"
     },
     {
       "id": "F-0003",
@@ -8532,7 +8539,8 @@ window.X4KbData = {
       "bookCorroborated": [],
       "channelStages": [
         "陽明"
-      ]
+      ],
+      "heatNature": "熱"
     },
     {
       "id": "F-0104",
@@ -8669,7 +8677,8 @@ window.X4KbData = {
       ],
       "channelStages": [
         "陽明"
-      ]
+      ],
+      "heatNature": "熱"
     },
     {
       "id": "F-0054",
@@ -11445,6 +11454,7 @@ window.X4KbData = {
       "channelStages": [
         "少陽"
       ],
+      "heatNature": "熱",
       "bookCautions": "體力明顯衰弱患者。；罕見出現間質性肺炎，若出現則中止投藥並進行相應治療。[ 並用 ] 伴有皮膚枯燥、皮膚色素沉著的溼次、皮炎的場合，並用四.256 漢方臨床診療學9物湯。；體力明顯衰弱患者。"
     },
     {
@@ -12224,6 +12234,7 @@ window.X4KbData = {
       "channelStages": [
         "少陽"
       ],
+      "heatNature": "熱",
       "bookNegated": [
         {
           "id": "S-COLD",
@@ -14699,6 +14710,7 @@ window.X4KbData = {
       "channelStages": [
         "少陽"
       ],
+      "heatNature": "熱",
       "bookCautions": "惡宣，腹瀉傾向，體力明顯衰弱者。"
     },
     {
@@ -16652,7 +16664,8 @@ window.X4KbData = {
       ],
       "channelStages": [
         "少陽"
-      ]
+      ],
+      "heatNature": "熱"
     },
     {
       "id": "F-0077",
@@ -18293,7 +18306,8 @@ window.X4KbData = {
       "bookCautions": "偶發間質性肺炎。",
       "channelStages": [
         "少陽"
-      ]
+      ],
+      "heatNature": "熱"
     },
     {
       "id": "F-BOOK-002",
@@ -18525,7 +18539,8 @@ window.X4KbData = {
       "bookCautions": "骨腸虛弱者。",
       "channelStages": [
         "少陽"
-      ]
+      ],
+      "heatNature": "熱"
     },
     {
       "id": "F-BOOK-005",
@@ -18605,7 +18620,8 @@ window.X4KbData = {
       "bookCautions": "體力衰弱者，骨腸虛弱者。",
       "channelStages": [
         "陽明"
-      ]
+      ],
+      "heatNature": "熱"
     },
     {
       "id": "F-BOOK-006",
@@ -18968,7 +18984,8 @@ window.X4KbData = {
       "bookCautions": "",
       "channelStages": [
         "陽明"
-      ]
+      ],
+      "heatNature": "熱"
     },
     {
       "id": "F-BOOK-010",
@@ -19300,7 +19317,8 @@ window.X4KbData = {
       "bookCautions": "",
       "channelStages": [
         "少陽"
-      ]
+      ],
+      "heatNature": "熱"
     },
     {
       "id": "F-BOOK-014",
@@ -19382,7 +19400,8 @@ window.X4KbData = {
       "bookCautions": "",
       "channelStages": [
         "陽明"
-      ]
+      ],
+      "heatNature": "熱"
     },
     {
       "id": "F-BOOK-015",
@@ -19800,7 +19819,8 @@ window.X4KbData = {
       "bookCautions": "",
       "channelStages": [
         "少陽"
-      ]
+      ],
+      "heatNature": "熱"
     },
     {
       "id": "F-BOOK-020",
@@ -19999,7 +20019,8 @@ window.X4KbData = {
       "bookCautions": "",
       "channelStages": [
         "陽明"
-      ]
+      ],
+      "heatNature": "熱"
     },
     {
       "id": "F-BOOK-023",
@@ -20060,7 +20081,8 @@ window.X4KbData = {
       "bookCautions": "",
       "channelStages": [
         "陽明"
-      ]
+      ],
+      "heatNature": "熱"
     },
     {
       "id": "F-BOOK-024",
@@ -20121,7 +20143,8 @@ window.X4KbData = {
       "bookCautions": "",
       "channelStages": [
         "陽明"
-      ]
+      ],
+      "heatNature": "熱"
     },
     {
       "id": "F-BOOK-025",
@@ -20183,7 +20206,8 @@ window.X4KbData = {
       "channelStages": [
         "少陽",
         "太陽"
-      ]
+      ],
+      "heatNature": "熱"
     },
     {
       "id": "F-BOOK-026",
@@ -20307,7 +20331,8 @@ window.X4KbData = {
       "bookCautions": "",
       "channelStages": [
         "少陽"
-      ]
+      ],
+      "heatNature": "熱"
     },
     {
       "id": "F-BOOK-027",
@@ -20485,7 +20510,8 @@ window.X4KbData = {
       "bookCautions": "偶見間質性肺炎，若出現則停止投藥，進行相應治療。",
       "channelStages": [
         "少陽"
-      ]
+      ],
+      "heatNature": "熱"
     },
     {
       "id": "F-BOOK-029",
@@ -22423,7 +22449,8 @@ window.X4KbData = {
       "bookCautions": "1 ) 患部無分沁物、乾燥的場合。@〇 夸克掃描王家速掃描，就是高效 品下名-二2 ) 明顯體力衰弱患者。3 ) 明顯胃腸虛弱患者。",
       "channelStages": [
         "少陽"
-      ]
+      ],
+      "heatNature": "熱"
     },
     {
       "id": "F-BOOK-052",
@@ -22799,7 +22826,8 @@ window.X4KbData = {
       "bookCautions": "1 ) 體力明顯衰弱者。2 ) 有腹海傾向者。@ 夸克掃描王區”=",
       "channelStages": [
         "陽明"
-      ]
+      ],
+      "heatNature": "熱"
     },
     {
       "id": "F-BOOK-057",
@@ -22977,7 +23005,8 @@ window.X4KbData = {
       "bookCautions": "體力明顯低下者。",
       "channelStages": [
         "少陽"
-      ]
+      ],
+      "heatNature": "熱"
     },
     {
       "id": "F-BOOK-059",
@@ -23066,7 +23095,8 @@ window.X4KbData = {
       "bookCautions": "",
       "channelStages": [
         "少陽"
-      ]
+      ],
+      "heatNature": "熱"
     },
     {
       "id": "F-BOOK-060",
@@ -23381,7 +23411,8 @@ window.X4KbData = {
       "channelStages": [
         "少陽",
         "太陽"
-      ]
+      ],
+      "heatNature": "熱"
     },
     {
       "id": "F-BOOK-064",
@@ -24417,7 +24448,8 @@ window.X4KbData = {
       "bookCautions": "",
       "channelStages": [
         "陽明"
-      ]
+      ],
+      "heatNature": "熱"
     },
     {
       "id": "F-BOOK-076",

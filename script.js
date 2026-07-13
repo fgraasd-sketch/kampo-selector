@@ -1232,8 +1232,15 @@ function buildFitBars(scoreParts = {}) {
 // 「太陽病期相符（病人證據：惡寒、發熱）」. Without this line a channel-route
 // recommendation looks unexplained next to its 0% 六證/五臟 percentages.
 function buildChannelRouteHtml(explanation) {
-    if (!explanation || !explanation.channelRoute) return '';
-    return '<div><strong><i class="fa-solid fa-route"></i> 六經路線：</strong>此方由六經辨證路線推薦——' + escapeHtml(explanation.channelRoute) + '</div>';
+    if (!explanation) return '';
+    if (explanation.channelRoute) {
+        return '<div><strong><i class="fa-solid fa-route"></i> 六經路線：</strong>此方由六經辨證路線推薦——' + escapeHtml(explanation.channelRoute) + '</div>';
+    }
+    // 熱證路線 (2026-07-12 direction 2): third route, same card treatment.
+    if (explanation.heatRoute) {
+        return '<div><strong><i class="fa-solid fa-fire"></i> 熱證路線：</strong>此方由熱證路線推薦——' + escapeHtml(explanation.heatRoute) + '</div>';
+    }
+    return '';
 }
 
 function buildHerbSuggestionsHtml(herbSuggestions) {

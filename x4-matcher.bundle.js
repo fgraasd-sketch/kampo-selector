@@ -571,6 +571,27 @@ function positiveDirectIds(patientMatches) {
   return ids;
 }
 
+// 熱證路線 (2026-07-12, physician chose direction 2): the six-pattern workbook
+// has no heat axis, so 清熱方 (黃連解毒湯, 瀉心湯類, 白虎湯類) score zero on
+// 40% of the base model. A THIRD route, built exactly like the 六經 one:
+// formula-side heat comes from the book (handbook_bridge deriveHeatNature —
+// genuine-heat head declarations plus 陽明-stage membership), patient-side
+// evidence gates on objective heat signs. No heat evidence, or no book heat
+// declaration ⇒ the route is exactly 0 and rankings are byte-identical.
+const HEAT_SIGNS = {
+  gateAny: ["S-HOT-FLUSH", "S-FACIAL-FLUSH", "S-HEAT-SENSATION"],
+  supporting: ["S-HOT-FLUSH", "S-FACIAL-FLUSH", "S-HEAT-SENSATION", "S-FEVER", "S-THIRST"],
+  saturation: 3,
+};
+
+function buildHeatEvidence(patientMatches) {
+  const ids = positiveDirectIds(patientMatches);
+  if (!HEAT_SIGNS.gateAny.some((id) => ids.has(id))) return null;
+  const hits = HEAT_SIGNS.supporting.filter((id) => ids.has(id));
+  const strength = Math.min(1, hits.length / HEAT_SIGNS.saturation);
+  return strength > 0 ? { strength, signs: hits } : null;
+}
+
 function buildChannelEvidence(patientMatches) {
   const ids = positiveDirectIds(patientMatches);
   const evidence = {};
@@ -946,7 +967,13 @@ function scoreFormula(formula, patientContext, normalizer) {
   const channelRoute = channel.bonusFactor > 0
     ? channel.bonusFactor * ((CHANNEL_W_KEY * key.keySymptomScore) + CHANNEL_W_STAGE)
     : 0;
-  const total = Math.max(baseTotal, channelRoute);
+  // 熱證路線: same shape and weights as the channel route — the heat match is
+  // itself diagnostic (CHANNEL_W_STAGE), key evidence orders heat formulas
+  // among themselves (CHANNEL_W_KEY).
+  const heatRoute = (formula.heatNature === "熱" && patientContext.heatEvidence)
+    ? patientContext.heatEvidence.strength * ((CHANNEL_W_KEY * key.keySymptomScore) + CHANNEL_W_STAGE)
+    : 0;
+  const total = Math.max(baseTotal, channelRoute, heatRoute);
 
   return {
     formula: {
@@ -961,7 +988,8 @@ function scoreFormula(formula, patientContext, normalizer) {
       evidenceFactor,
       bookBonus,
       channelRoute,
-      routeTaken: channelRoute > baseTotal ? "六經" : "氣血水",
+      heatRoute,
+      routeTaken: total === baseTotal ? "氣血水" : (channelRoute >= heatRoute ? "六經" : "熱證"),
     },
     explanation: {
       matchedSymptoms: key.matchedSymptoms,
@@ -969,6 +997,7 @@ function scoreFormula(formula, patientContext, normalizer) {
       matchedBookSymptoms,
       matchedChannels: channel.matchedChannels,
       patientChannelEvidence: patientContext.channelEvidence,
+      matchedHeat: heatRoute > 0 ? patientContext.heatEvidence : null,
       patientResidualSymptoms: computePatientResidualSymptoms(patientContext.matches, key.matchedSymptoms),
       patientPatternVector: patientContext.patternVector,
       patientZangFuVector: patientContext.zangFuVector,
@@ -994,6 +1023,7 @@ function createX4Matcher(kb) {
       patternVector: buildPatternVector(matches, patterns),
       zangFuVector: buildZangFuVector(matches, kb.zangFuStates),
       channelEvidence: buildChannelEvidence(matches),
+      heatEvidence: buildHeatEvidence(matches),
       xuShi: patient?.xuShi || "unknown",
     };
   }
@@ -1081,5 +1111,5 @@ function createX4Matcher(kb) {
 
 
 
-  return { buildChannelEvidence, normalizeXushiClass, createX4Matcher, W_KEY, W_PATTERN, W_ZANGFU, PARENT_FALLBACK_WEIGHT, EVIDENCE_DAMPING_K, W_BOOK_SECONDARY, BOOK_SECONDARY_K, DERIVED_VECTOR_K, KEY_EVIDENCE_K, PATTERN_RECALL_BETA, CHANNEL_W_KEY, CHANNEL_W_STAGE };
+  return { buildHeatEvidence, buildChannelEvidence, normalizeXushiClass, createX4Matcher, W_KEY, W_PATTERN, W_ZANGFU, PARENT_FALLBACK_WEIGHT, EVIDENCE_DAMPING_K, W_BOOK_SECONDARY, BOOK_SECONDARY_K, DERIVED_VECTOR_K, KEY_EVIDENCE_K, PATTERN_RECALL_BETA, CHANNEL_W_KEY, CHANNEL_W_STAGE };
 })();

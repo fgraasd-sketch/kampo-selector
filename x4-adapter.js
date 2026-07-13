@@ -91,6 +91,20 @@ const X4Adapter = (function () {
     return channelNames.join("、") + "病期相符" + evidencePart;
   }
 
+  // 熱證路線 (2026-07-12, physician direction 2): same card treatment as the
+  // channel route — when the heat route carried the rank, say so and cite the
+  // patient's heat signs (canonical names via the ontology).
+  function buildHeatRouteText(result) {
+    if (result.score.routeTaken !== "熱證") return null;
+    const heat = result.explanation.matchedHeat;
+    if (!heat) return null;
+    const signLabels = [...new Set((heat.signs || []).map(canonicalById).filter(Boolean))];
+    const evidencePart = signLabels.length
+      ? "（病人證據：" + signLabels.join("、") + "）"
+      : "";
+    return "熱證相符" + evidencePart;
+  }
+
   function deriveXuShi(patientVectorXuShi) {
     const xu = patientVectorXuShi?.虛 || 0;
     const shi = patientVectorXuShi?.實 || 0;
@@ -110,7 +124,7 @@ const X4Adapter = (function () {
     return labels.length > limit ? head + "\u7b49 " + labels.length + " \u9805" : head;
   }
 
-  function buildRecommendationReason(result, matchedCanonical, unmatchedCanonical, channelRouteText) {
+  function buildRecommendationReason(result, matchedCanonical, unmatchedCanonical, channelRouteText, heatRouteText) {
     const totalKeySymptoms = matchedCanonical.length + unmatchedCanonical.length;
     const keyDenominator = Math.max(1, totalKeySymptoms);
     const keyPct = Math.round(result.score.key * 100);
@@ -127,6 +141,8 @@ const X4Adapter = (function () {
       // not decide this rank, and the generic composite-ranking sentence
       // would misattribute it.
       parts.push("\u672c\u65b9\u7531\u516d\u7d93\u8fa8\u8b49\u8def\u7dda\u63a8\u85a6\uff1a" + channelRouteText + "\uff0c\u4e26\u4f9d\u4e3b\u75c7\u8b49\u64da\u5728\u540c\u75c5\u671f\u65b9\u5291\u9593\u6392\u5e8f");
+    } else if (heatRouteText) {
+      parts.push("\u672c\u65b9\u7531\u71b1\u8b49\u8def\u7dda\u63a8\u85a6\uff1a" + heatRouteText + "\uff0c\u4e26\u4f9d\u4e3b\u75c7\u8b49\u64da\u5728\u6e05\u71b1\u65b9\u5291\u9593\u6392\u5e8f");
     } else {
       parts.push("\u6392\u5e8f\u6703\u7d9c\u5408\u95dc\u9375\u75c7\u72c0\u3001\u516d\u8b49\u3001\u4e94\u81df\uff1b\u55ae\u4e00\u5171\u6709\u75c7\u72c0\u4e0d\u6703\u55ae\u7368\u6c7a\u5b9a\u540d\u6b21");
     }
@@ -219,6 +235,7 @@ const X4Adapter = (function () {
         const bookHits = (result.explanation.matchedBookSymptoms || [])
           .map((hit) => hit.canonical + (hit.page ? "（p." + hit.page + "）" : ""));
         const channelRouteText = buildChannelRouteText(result);
+        const heatRouteText = buildHeatRouteText(result);
         return {
           ...display,
           name: result.formula.name,
@@ -253,7 +270,8 @@ const X4Adapter = (function () {
             contraindicationHits: [],
             bookHits,
             channelRoute: channelRouteText,
-            reason: buildRecommendationReason(result, matchedCanonical, unmatchedCanonical, channelRouteText),
+            heatRoute: heatRouteText,
+            reason: buildRecommendationReason(result, matchedCanonical, unmatchedCanonical, channelRouteText, heatRouteText),
           },
         };
       });
