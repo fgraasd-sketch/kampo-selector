@@ -997,6 +997,29 @@ function scoreFormula(formula, patientContext, normalizer) {
   const key = scoreKeySymptoms(formula, patientContext.matches, normalizer, reportedSymptomCount);
   const patternScore = patternCoverage(patientContext.patternVector, formula.patternVector || {});
   const zangFuScore = cosine(patientContext.zangFuVector, formula.zangFuVector || {});
+  // 五臟資料缺席 ≠ 五臟完全不合（2026-07-14）。
+  //
+  // 19 個方（KB 的 9%：當歸飲子、葛根湯、桂枝茯苓丸、芍藥甘草湯、大黃甘草湯…）
+  // 的五臟向量是全零——工作簿沒填，不是「這個方不歸任何臟」。可是餘弦對全零向量
+  // 回 0，於是「沒有資料」被當成「最大不合」計分。醫師的乾癬案就是被這個判掉的：
+  //   當歸飲子  主症 0.60  六證 0.76  五臟 0.0000 → 0.6030
+  //   十全大補湯 主症 0.40  六證 0.83  五臟 0.8430 → 0.6676
+  // 當歸飲子 主症贏、六證接近，整個差距來自一個它根本沒有資料的軸。
+  //
+  // 修法：沒有五臟資料的方，該軸不發言——把它的權重併回六證（唯一有資料的向量軸）。
+  // 這不是「丟棄無資訊項」那條 2026-07-11 被否決的規則（那條動的是**六證**軸）：
+  // 我把兩個版本都量了（22 案 battery ＋ 全套金絲雀）——
+  //   只修五臟軸（本函式，權重 0.10、19 個方）：第1 13→14、前3 21、前5 22，
+  //     28 個證型裡只有乾癬案的前五名單有變（當歸飲子 2→1），12 支測試全綠。
+  //   六證＋五臟兩軸都修（權重 0.40、30 個方）：第1 13→12、前3 21→18，測試紅。
+  // 也就是說 07-11 那次否決對**六證軸**是對的（重正規化會讓資料稀疏的方撿便宜），
+  // 但它不延伸到五臟軸——權重只有四分之一，而且 evidenceFactor×vectorWeight 已經
+  // 擋掉沒有主症證據的方，重正規化只幫得到「已經拿到主症命中」的方。**勿把這段
+  // 套回六證軸。**
+  const hasZangFu = formula.zangFuVector && Object.values(formula.zangFuVector).some((value) => value);
+  const vectorPart = hasZangFu
+    ? (W_PATTERN * patternScore) + (W_ZANGFU * zangFuScore)
+    : (W_PATTERN + W_ZANGFU) * patternScore;
   const positiveKeyHits = key.matchedSymptoms.filter((item) => item.weight > 0).length;
   const evidenceFactor = Math.min(1, positiveKeyHits / EVIDENCE_DAMPING_K);
   const matchedBookSymptoms = matchBookSymptoms(formula, patientContext.matches, key.matchedSymptoms);
@@ -1004,7 +1027,7 @@ function scoreFormula(formula, patientContext, normalizer) {
   const vectorWeight = formula.vectorSource ? Math.min(1, positiveKeyHits / DERIVED_VECTOR_K) : 1;
   const channel = channelAlignment(patientContext.channelEvidence, formula.channelStages);
   const baseTotal = (W_KEY * key.keySymptomScore)
-    + ((W_PATTERN * patternScore) + (W_ZANGFU * zangFuScore)) * evidenceFactor * vectorWeight
+    + vectorPart * evidenceFactor * vectorWeight
     + bookBonus;
   const channelRoute = channel.bonusFactor > 0
     ? channel.bonusFactor * ((CHANNEL_W_KEY * key.keySymptomScore) + CHANNEL_W_STAGE)
