@@ -4595,6 +4595,7 @@ const EXCEL_FORMULA_KB = [
       "痔瘡出血",
       "兩側腹直肌緊張",
       "體力低下",
+      "面色差",
       "壓痛"
     ],
     "keySymptoms": [
@@ -4603,9 +4604,10 @@ const EXCEL_FORMULA_KB = [
       "痔瘡出血",
       "兩側腹直肌緊張",
       "體力低下",
+      "面色差",
       "壓痛"
     ],
-    "indications": "腹痛（側腹部，發冷，痔瘡出血，兩側腹直肌緊張，體力低下，壓痛",
+    "indications": "腹痛（側腹部，發冷，痔瘡出血，兩側腹直肌緊張，體力低下，面色差，壓痛",
     "formulaPattern": [
       "桂枝湯類"
     ],
@@ -6354,6 +6356,7 @@ const EXCEL_FORMULA_KB = [
       "手足發熱",
       "上熱下寒",
       "腹痛",
+      "腹瀉",
       "發熱",
       "熱證"
     ],
@@ -6368,10 +6371,11 @@ const EXCEL_FORMULA_KB = [
       "手足發熱",
       "上熱下寒",
       "腹痛",
+      "腹瀉",
       "發熱",
       "熱證"
     ],
-    "indications": "月經不調，痛經，發冷，口乾，貧血，上熱下寒烘熱感，陰道出血，手足發熱，上熱下寒，腹痛，發熱，熱證",
+    "indications": "月經不調，痛經，發冷，口乾，貧血，上熱下寒烘熱感，陰道出血，手足發熱，上熱下寒，腹痛，腹瀉，發熱，熱證",
     "formulaPattern": [
       "血虛",
       "瘀血",
@@ -6393,7 +6397,7 @@ const EXCEL_FORMULA_KB = [
       "zangFu": {
         "肝": 0.4,
         "心": 0.25,
-        "脾": 0.3333,
+        "脾": 0.5,
         "肺": 0.4,
         "腎": 0.2222
       }
@@ -7454,14 +7458,16 @@ const EXCEL_FORMULA_KB = [
     "symptoms": [
       "四肢發冷",
       "尿量減少",
+      "血壓低",
       "腹瀉"
     ],
     "keySymptoms": [
       "四肢發冷",
       "尿量減少",
+      "血壓低",
       "腹瀉"
     ],
-    "indications": "四肢發冷，尿量減少，腹瀉",
+    "indications": "四肢發冷，尿量減少，血壓低，腹瀉",
     "formulaPattern": [],
     "specialIndications": [],
     "contraindications": [],
@@ -7980,10 +7986,8 @@ const EXCEL_FORMULA_KB = [
     "name": "附子末",
     "type": "未分類",
     "category": "單味藥製劑（漢方臨床診療學）",
-    "syndrome": "qi_xu",
+    "syndrome": "shui_zhi",
     "patterns": [
-      "氣虛",
-      "氣逆",
       "水滯"
     ],
     "zangFuTags": [],
@@ -7995,6 +7999,8 @@ const EXCEL_FORMULA_KB = [
       "身體痛",
       "氣短",
       "浮腫",
+      "水樣腹瀉",
+      "腹瀉",
       "嗜睡"
     ],
     "keySymptoms": [
@@ -8005,9 +8011,11 @@ const EXCEL_FORMULA_KB = [
       "身體痛",
       "氣短",
       "浮腫",
+      "水樣腹瀉",
+      "腹瀉",
       "嗜睡"
     ],
-    "indications": "腰膝發冷，體力低下，尿量減少，關節痛，身體痛，氣短，浮腫，嗜睡",
+    "indications": "腰膝發冷，體力低下，尿量減少，關節痛，身體痛，氣短，浮腫，水樣腹瀉，腹瀉，嗜睡",
     "formulaPattern": [],
     "specialIndications": [],
     "contraindications": [],
@@ -8015,8 +8023,8 @@ const EXCEL_FORMULA_KB = [
     "sourceSheet": "《漢方臨床診療學》p.264",
     "vector": {
       "patterns": {
-        "氣虛": 1,
-        "氣逆": 1,
+        "氣虛": 0,
+        "氣逆": 0,
         "氣鬱": 0,
         "血虛": 0,
         "瘀血": 0,
@@ -8025,9 +8033,9 @@ const EXCEL_FORMULA_KB = [
       "zangFu": {
         "肝": 0,
         "心": 0.75,
-        "脾": 0.5,
+        "脾": 0.6667,
         "肺": 0.4,
-        "腎": 0.3
+        "腎": 0.4
       }
     }
   },
@@ -8043,6 +8051,7 @@ const EXCEL_FORMULA_KB = [
     "symptoms": [
       "腹瀉傾向",
       "胃腸虛弱",
+      "面色差",
       "胃痛",
       "炎症",
       "頭重",
@@ -8053,6 +8062,7 @@ const EXCEL_FORMULA_KB = [
     "keySymptoms": [
       "腹瀉傾向",
       "胃腸虛弱",
+      "面色差",
       "胃痛",
       "炎症",
       "頭重",
@@ -8060,7 +8070,7 @@ const EXCEL_FORMULA_KB = [
       "心下痞硬",
       "發冷"
     ],
-    "indications": "腹瀉傾向，胃腸虛弱，胃痛，炎症，頭重，噁心，心下痞硬，發冷",
+    "indications": "腹瀉傾向，胃腸虛弱，面色差，胃痛，炎症，頭重，噁心，心下痞硬，發冷",
     "formulaPattern": [],
     "specialIndications": [],
     "contraindications": [],
@@ -8088,18 +8098,20 @@ const EXCEL_FORMULA_KB = [
     "name": "附子粳米湯",
     "type": "虛實夾雜",
     "category": "書籍補充（漢方臨床診療學）",
-    "syndrome": "qi_ni",
+    "syndrome": "qi_yu",
     "patterns": [
-      "氣逆"
+      "氣鬱"
     ],
     "zangFuTags": [],
     "symptoms": [
+      "腸鳴音亢進",
       "發冷"
     ],
     "keySymptoms": [
+      "腸鳴音亢進",
       "發冷"
     ],
-    "indications": "發冷",
+    "indications": "腸鳴音亢進，發冷",
     "formulaPattern": [],
     "specialIndications": [],
     "contraindications": [],
@@ -8108,8 +8120,8 @@ const EXCEL_FORMULA_KB = [
     "vector": {
       "patterns": {
         "氣虛": 0,
-        "氣逆": 1,
-        "氣鬱": 0,
+        "氣逆": 0,
+        "氣鬱": 1,
         "血虛": 0,
         "瘀血": 0,
         "水滯": 0
@@ -9667,14 +9679,16 @@ const EXCEL_FORMULA_KB = [
     "symptoms": [
       "精神不安",
       "四肢發冷",
+      "血壓低",
       "腹瀉"
     ],
     "keySymptoms": [
       "精神不安",
       "四肢發冷",
+      "血壓低",
       "腹瀉"
     ],
-    "indications": "精神不安，四肢發冷，腹瀉",
+    "indications": "精神不安，四肢發冷，血壓低，腹瀉",
     "formulaPattern": [],
     "specialIndications": [],
     "contraindications": [],
@@ -10149,14 +10163,14 @@ const EXCEL_FORMULA_KB = [
     "name": "當歸芍藥散加附子",
     "type": "未分類",
     "category": "書籍補充（漢方臨床診療學）",
-    "syndrome": "qi_ni",
+    "syndrome": "xue_xu",
     "patterns": [
-      "氣逆",
       "血虛"
     ],
     "zangFuTags": [],
     "symptoms": [
       "神經痛",
+      "面色差",
       "貧血",
       "發冷",
       "痛經",
@@ -10167,6 +10181,7 @@ const EXCEL_FORMULA_KB = [
     ],
     "keySymptoms": [
       "神經痛",
+      "面色差",
       "貧血",
       "發冷",
       "痛經",
@@ -10175,7 +10190,7 @@ const EXCEL_FORMULA_KB = [
       "肩凝",
       "耳鳴"
     ],
-    "indications": "神經痛，貧血，發冷，痛經，頭痛，頭重，肩凝，耳鳴",
+    "indications": "神經痛，面色差，貧血，發冷，痛經，頭痛，頭重，肩凝，耳鳴",
     "formulaPattern": [],
     "specialIndications": [],
     "contraindications": [],
@@ -10184,7 +10199,7 @@ const EXCEL_FORMULA_KB = [
     "vector": {
       "patterns": {
         "氣虛": 0,
-        "氣逆": 1,
+        "氣逆": 0,
         "氣鬱": 0,
         "血虛": 1,
         "瘀血": 0,
@@ -10485,6 +10500,7 @@ const EXCEL_FORMULA_KB = [
     "zangFuTags": [],
     "symptoms": [
       "胸內苦悶",
+      "面色不良",
       "排尿痛",
       "發冷",
       "虛弱",
@@ -10497,6 +10513,7 @@ const EXCEL_FORMULA_KB = [
     ],
     "keySymptoms": [
       "胸內苦悶",
+      "面色不良",
       "排尿痛",
       "發冷",
       "虛弱",
@@ -10507,7 +10524,7 @@ const EXCEL_FORMULA_KB = [
       "發熱",
       "眠淺"
     ],
-    "indications": "胸內苦悶，排尿痛，發冷，虛弱，口渴，尿頻，手足發熱，皮膚枯燥，發熱，眠淺",
+    "indications": "胸內苦悶，面色不良，排尿痛，發冷，虛弱，口渴，尿頻，手足發熱，皮膚枯燥，發熱，眠淺",
     "formulaPattern": [],
     "specialIndications": [],
     "contraindications": [],

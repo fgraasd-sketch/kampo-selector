@@ -299,8 +299,7 @@ window.X4KbData = {
       "canonical": "腹鳴",
       "aliases": [
         "腹部鼓音",
-        "腹中雷鳴",
-        "腸中雷鳴"
+        "腸鳴音亢進"
       ],
       "parent": null,
       "negationSensitive": false,
@@ -1145,7 +1144,9 @@ window.X4KbData = {
     {
       "id": "S-HYPOTENSION",
       "canonical": "低血壓",
-      "aliases": [],
+      "aliases": [
+        "血壓低"
+      ],
       "parent": null,
       "negationSensitive": false,
       "source": [
@@ -1636,7 +1637,9 @@ window.X4KbData = {
         "皮膚淺黑",
         "膚色淺黑",
         "面色不佳",
-        "面色欠佳"
+        "面色欠佳",
+        "面色差",
+        "面色不良"
       ],
       "parent": null,
       "negationSensitive": false,
@@ -3358,6 +3361,14 @@ window.X4KbData = {
           "id": "S-JOINT-SWELLING",
           "canonical": "關節腫脹",
           "term": "關節腫脹",
+          "page": 253,
+          "section": "證候特徵",
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-PALE-COMPLEXION",
+          "canonical": "面色蒼白",
+          "term": "面色差",
           "page": 253,
           "section": "證候特徵",
           "physicianDecision": "accept-secondary"
@@ -8443,6 +8454,13 @@ window.X4KbData = {
       ],
       "channelStages": [
         "太陽"
+      ],
+      "bookNegated": [
+        {
+          "id": "S-PALE-COMPLEXION",
+          "canonical": "面色蒼白",
+          "page": 336
+        }
       ]
     },
     {
@@ -11275,6 +11293,14 @@ window.X4KbData = {
           "physicianDecision": "accept-secondary"
         },
         {
+          "id": "S-PALE-COMPLEXION",
+          "canonical": "面色蒼白",
+          "term": "面色不良",
+          "page": 238,
+          "section": "證候特徵",
+          "physicianDecision": "accept-secondary"
+        },
+        {
           "id": "S-GASTRIC-SPLASH",
           "canonical": "胃部振水音",
           "term": "振水音",
@@ -12016,6 +12042,14 @@ window.X4KbData = {
         320
       ],
       "bookSymptoms": [
+        {
+          "id": "S-PALE-COMPLEXION",
+          "canonical": "面色蒼白",
+          "term": "面色差",
+          "page": 320,
+          "section": "證候特徵",
+          "physicianDecision": "accept-secondary"
+        },
         {
           "id": "S-MENSTRUAL-IRREGULAR",
           "canonical": "月經不調",
@@ -13192,6 +13226,11 @@ window.X4KbData = {
           "page": 318
         },
         {
+          "id": "S-DIARRHEA",
+          "canonical": "腹瀉",
+          "page": 318
+        },
+        {
           "id": "S-NAUSEA",
           "canonical": "噁心",
           "page": 318
@@ -14172,6 +14211,13 @@ window.X4KbData = {
           "page": 254
         },
         {
+          "raw": "面色差",
+          "id": "S-PALE-COMPLEXION",
+          "negated": false,
+          "matchType": "book-physician",
+          "page": 254
+        },
+        {
           "raw": "壓痛",
           "id": "S-ABDOMINAL-TENDERNESS",
           "negated": false,
@@ -14199,6 +14245,7 @@ window.X4KbData = {
         "S-COLD",
         "S-MUSCLE-SPASM",
         "S-FATIGUE",
+        "S-PALE-COMPLEXION",
         "S-ABDOMINAL-TENDERNESS"
       ],
       "formulaPattern": [
@@ -15374,11 +15421,6 @@ window.X4KbData = {
           "page": 239
         },
         {
-          "id": "S-BORBORIGMUS",
-          "canonical": "腹鳴",
-          "page": 239
-        },
-        {
           "id": "S-NAUSEA",
           "canonical": "噁心",
           "page": 239
@@ -15386,6 +15428,11 @@ window.X4KbData = {
         {
           "id": "S-ACID-REFLUX",
           "canonical": "胃酸逆流",
+          "page": 239
+        },
+        {
+          "id": "S-BORBORIGMUS",
+          "canonical": "腹鳴",
           "page": 239
         },
         {
@@ -15487,6 +15534,14 @@ window.X4KbData = {
         267
       ],
       "bookSymptoms": [
+        {
+          "id": "S-BORBORIGMUS",
+          "canonical": "腹鳴",
+          "term": "腸鳴音亢進",
+          "page": 267,
+          "section": "證候特徵",
+          "physicianDecision": "accept-secondary"
+        },
         {
           "id": "S-TONGUE-RED",
           "canonical": "舌紅",
@@ -16654,6 +16709,14 @@ window.X4KbData = {
           "id": "S-RUNNY-NOSE-WATERY",
           "canonical": "水樣鼻涕",
           "term": "水樣鼻涕",
+          "page": 292,
+          "section": "證候特徵",
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-PALE-COMPLEXION",
+          "canonical": "面色蒼白",
+          "term": "面色差",
           "page": 292,
           "section": "證候特徵",
           "physicianDecision": "accept-secondary"
@@ -18348,11 +18411,11 @@ window.X4KbData = {
         "GAN-YINXU": 0.4,
         "XIN-YANGXU": 0.25,
         "XIN-XUEXU": 0.2,
-        "PI-QIXU": 0,
-        "PI-YANGXU": 0.3333,
+        "PI-QIXU": 0.2,
+        "PI-YANGXU": 0.5,
         "FEI-QIXU": 0,
         "FEI-YINXU": 0.4,
-        "SHEN-YANGXU": 0.1,
+        "SHEN-YANGXU": 0.2,
         "SHEN-YINXU": 0.2222
       },
       "keySymptoms": [
@@ -18422,6 +18485,13 @@ window.X4KbData = {
           "page": 325
         },
         {
+          "raw": "腹瀉",
+          "id": "S-DIARRHEA",
+          "negated": false,
+          "matchType": "book-physician",
+          "page": 325
+        },
+        {
           "raw": "發熱",
           "id": "S-FEVER",
           "negated": false,
@@ -18466,6 +18536,7 @@ window.X4KbData = {
         "S-HEAT-SENSATION",
         "S-UPPER-HOT-LOWER-COLD",
         "S-ABDOMINAL-PAIN",
+        "S-DIARRHEA",
         "S-FEVER",
         "S-HEAT-TOXIN"
       ],
@@ -20487,6 +20558,12 @@ window.X4KbData = {
           "matchType": "book"
         },
         {
+          "raw": "血壓低",
+          "id": "S-HYPOTENSION",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
           "raw": "腹瀉",
           "id": "S-DIARRHEA",
           "negated": false,
@@ -20501,6 +20578,7 @@ window.X4KbData = {
       "indications": [
         "S-COLD",
         "S-OLIGURIA",
+        "S-HYPOTENSION",
         "S-DIARRHEA"
       ],
       "formulaPattern": "",
@@ -21363,8 +21441,8 @@ window.X4KbData = {
       "category": "單味藥製劑（漢方臨床診療學）",
       "xushiClass": "未分類",
       "patternVector": {
-        "QI_XU": 1,
-        "QI_NI": 1,
+        "QI_XU": 0,
+        "QI_NI": 0,
         "QI_YU": 0,
         "XUE_XU": 0,
         "YU_XUE": 0,
@@ -21375,11 +21453,11 @@ window.X4KbData = {
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0.75,
         "XIN-XUEXU": 0,
-        "PI-QIXU": 0.2,
-        "PI-YANGXU": 0.5,
+        "PI-QIXU": 0.4,
+        "PI-YANGXU": 0.6667,
         "FEI-QIXU": 0.4,
         "FEI-YINXU": 0,
-        "SHEN-YANGXU": 0.3,
+        "SHEN-YANGXU": 0.4,
         "SHEN-YINXU": 0
       },
       "vectorSource": "book-derived",
@@ -21427,6 +21505,18 @@ window.X4KbData = {
           "matchType": "book"
         },
         {
+          "raw": "水樣腹瀉",
+          "id": "S-DIARRHEA-WATERY",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "腹瀉",
+          "id": "S-DIARRHEA",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
           "raw": "嗜睡",
           "id": "S-SLEEPINESS",
           "negated": false,
@@ -21448,6 +21538,8 @@ window.X4KbData = {
         "S-MUSCLE-PAIN",
         "S-ASTHMA-WHEEZE",
         "S-EDEMA",
+        "S-DIARRHEA-WATERY",
+        "S-DIARRHEA",
         "S-SLEEPINESS"
       ],
       "formulaPattern": "",
@@ -21501,6 +21593,12 @@ window.X4KbData = {
           "matchType": "book"
         },
         {
+          "raw": "面色差",
+          "id": "S-PALE-COMPLEXION",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
           "raw": "胃痛",
           "id": "S-EPIGASTRIC-PAIN",
           "negated": false,
@@ -21545,6 +21643,7 @@ window.X4KbData = {
       "indications": [
         "S-DIARRHEA",
         "S-FATIGUE",
+        "S-PALE-COMPLEXION",
         "S-EPIGASTRIC-PAIN",
         "S-HEAT-TOXIN",
         "S-HEAVY-HEAD",
@@ -21571,8 +21670,8 @@ window.X4KbData = {
       "xushiClass": "虛實夾雜",
       "patternVector": {
         "QI_XU": 0,
-        "QI_NI": 1,
-        "QI_YU": 0,
+        "QI_NI": 0,
+        "QI_YU": 1,
         "XUE_XU": 0,
         "YU_XUE": 0,
         "SUI_ZHI": 0
@@ -21592,6 +21691,12 @@ window.X4KbData = {
       "vectorSource": "book-derived",
       "keySymptoms": [
         {
+          "raw": "腸鳴音亢進",
+          "id": "S-BORBORIGMUS",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
           "raw": "發冷",
           "id": "S-COLD",
           "negated": false,
@@ -21604,6 +21709,7 @@ window.X4KbData = {
         "《漢方臨床診療學》p.265"
       ],
       "indications": [
+        "S-BORBORIGMUS",
         "S-COLD"
       ],
       "formulaPattern": "",
@@ -24404,6 +24510,12 @@ window.X4KbData = {
           "matchType": "book"
         },
         {
+          "raw": "血壓低",
+          "id": "S-HYPOTENSION",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
           "raw": "腹瀉",
           "id": "S-DIARRHEA",
           "negated": false,
@@ -24418,6 +24530,7 @@ window.X4KbData = {
       "indications": [
         "S-ANXIETY",
         "S-COLD",
+        "S-HYPOTENSION",
         "S-DIARRHEA"
       ],
       "formulaPattern": "",
@@ -25256,7 +25369,7 @@ window.X4KbData = {
       "xushiClass": "未分類",
       "patternVector": {
         "QI_XU": 0,
-        "QI_NI": 1,
+        "QI_NI": 0,
         "QI_YU": 0,
         "XUE_XU": 1,
         "YU_XUE": 0,
@@ -25279,6 +25392,12 @@ window.X4KbData = {
         {
           "raw": "神經痛",
           "id": "S-NEURALGIA",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "面色差",
+          "id": "S-PALE-COMPLEXION",
           "negated": false,
           "matchType": "book"
         },
@@ -25332,6 +25451,7 @@ window.X4KbData = {
       ],
       "indications": [
         "S-NEURALGIA",
+        "S-PALE-COMPLEXION",
         "S-BLOOD-DEF",
         "S-COLD",
         "S-DYSMENORRHEA",
@@ -25844,6 +25964,12 @@ window.X4KbData = {
           "matchType": "book"
         },
         {
+          "raw": "面色不良",
+          "id": "S-PALE-COMPLEXION",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
           "raw": "排尿痛",
           "id": "S-URINARY-PAIN",
           "negated": false,
@@ -25908,6 +26034,7 @@ window.X4KbData = {
       ],
       "indications": [
         "S-CHEST-OPPRESSION",
+        "S-PALE-COMPLEXION",
         "S-URINARY-PAIN",
         "S-COLD",
         "S-FATIGUE",
