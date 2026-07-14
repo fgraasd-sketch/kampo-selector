@@ -820,8 +820,28 @@ function buildPatternVector(patientMatches, patterns) {
   return raw;
 }
 
-function buildZangFuVector(patientMatches, zangFuStates) {
+// 太陽的惡寒是「真熱表假寒」，不得餵陽虛（2026-07-14）。
+//
+// S-COLD（發冷）同時是 心陽虛/脾陽虛/腎陽虛 三個狀態的 indicator。可是它的別名裡
+// 有 惡寒——急性表證的惡寒。於是任何「惡寒＋發熱」的感冒病人，五臟向量都會亮起
+// 陽虛（心陽虛 0.25、脾陽虛 0.17、腎陽虛 0.10），純屬雜訊。書自己講得很白：
+// 六病位附表 1 注①「真熱表假寒，本質為熱證，卻僅在表層呈現假寒證」（印刷 p.326／
+// 掃描 p.354）——太陽的寒是**假寒**，本質是熱。拿它當陽虛證據正好講反。
+//
+// 實害：純太陽病人（惡寒／發熱／頭痛）身上，太陰方 桂枝人參湯 靠這個假陽虛對齊
+// 走氣血水路線拿 0.6657，壓過四個太陽方的六經路線 0.6570，變成第 1。
+//
+// 條件刻意收緊到 S-COLD 與 S-FEVER **同見**（＝書定義的表證組合）才排除。若太陽門
+// 是靠脈浮單獨開的、病人沒有發熱，那個發冷可能是真的裡寒，照樣餵陽虛。
+// 只動病人端：方劑端的 S-COLD 仍然是陽虛 indicator（真武湯該有的還是有）。
+function exteriorFalseColdIds(patientMatches) {
   const ids = new Set(patientMatches.map((match) => match.id));
+  return (ids.has("S-COLD") && ids.has("S-FEVER")) ? ["S-COLD"] : [];
+}
+
+function buildZangFuVector(patientMatches, zangFuStates, excludedIds = []) {
+  const ids = new Set(patientMatches.map((match) => match.id));
+  for (const id of excludedIds) ids.delete(id);
   const vector = {};
   for (const state of toArray(zangFuStates)) {
     const indicators = toArray(state.indicators);
@@ -1177,7 +1197,7 @@ function createX4Matcher(kb) {
     return {
       matches,
       patternVector: buildPatternVector(matches, patterns),
-      zangFuVector: buildZangFuVector(matches, kb.zangFuStates),
+      zangFuVector: buildZangFuVector(matches, kb.zangFuStates, exteriorFalseColdIds(matches)),
       channelEvidence: buildChannelEvidence(matches),
       heatEvidence: buildHeatEvidence(matches),
       chiefEvidence: buildChiefEvidence(patient, matches),

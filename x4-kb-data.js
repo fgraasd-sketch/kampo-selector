@@ -2414,15 +2414,15 @@ window.X4KbData = {
       },
       "zangFuVector": {
         "GAN-QIYU": 0,
-        "GAN-YINXU": 0,
+        "GAN-YINXU": 0.2,
         "XIN-YANGXU": 0.25,
-        "XIN-XUEXU": 0,
+        "XIN-XUEXU": 0.2,
         "PI-QIXU": 0,
         "PI-YANGXU": 0.3333,
         "FEI-QIXU": 0,
         "FEI-YINXU": 0,
         "SHEN-YANGXU": 0.2,
-        "SHEN-YINXU": 0.1111
+        "SHEN-YINXU": 0.2222
       },
       "keySymptoms": [
         {
@@ -2814,13 +2814,13 @@ window.X4KbData = {
       "zangFuVector": {
         "GAN-QIYU": 0,
         "GAN-YINXU": 0,
-        "XIN-YANGXU": 0.25,
+        "XIN-YANGXU": 0.5,
         "XIN-XUEXU": 0,
         "PI-QIXU": 0,
-        "PI-YANGXU": 0.3333,
+        "PI-YANGXU": 0.5,
         "FEI-QIXU": 0,
         "FEI-YINXU": 0,
-        "SHEN-YANGXU": 0.2,
+        "SHEN-YANGXU": 0.3,
         "SHEN-YINXU": 0.1111
       },
       "keySymptoms": [
@@ -3395,7 +3395,7 @@ window.X4KbData = {
         "PI-QIXU": 0.2,
         "PI-YANGXU": 0.1667,
         "FEI-QIXU": 0.4,
-        "FEI-YINXU": 0.4,
+        "FEI-YINXU": 0.6,
         "SHEN-YANGXU": 0.1,
         "SHEN-YINXU": 0
       },
@@ -4296,13 +4296,13 @@ window.X4KbData = {
       "zangFuVector": {
         "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0,
-        "XIN-YANGXU": 0,
+        "XIN-YANGXU": 0.25,
         "XIN-XUEXU": 0,
         "PI-QIXU": 0.2,
-        "PI-YANGXU": 0.3333,
+        "PI-YANGXU": 0.5,
         "FEI-QIXU": 0.2,
         "FEI-YINXU": 0,
-        "SHEN-YANGXU": 0.2,
+        "SHEN-YANGXU": 0.3,
         "SHEN-YINXU": 0.1111
       },
       "keySymptoms": [
@@ -4813,8 +4813,8 @@ window.X4KbData = {
         "SUI_ZHI": 1
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1429,
-        "GAN-YINXU": 0,
+        "GAN-QIYU": 0.4286,
+        "GAN-YINXU": 0.4,
         "XIN-YANGXU": 1,
         "XIN-XUEXU": 0.2,
         "PI-QIXU": 0.2,
@@ -4822,7 +4822,7 @@ window.X4KbData = {
         "FEI-QIXU": 0.2,
         "FEI-YINXU": 0,
         "SHEN-YANGXU": 0.2,
-        "SHEN-YINXU": 0
+        "SHEN-YINXU": 0.2222
       },
       "keySymptoms": [
         {
@@ -5884,15 +5884,15 @@ window.X4KbData = {
         "SUI_ZHI": 1
       },
       "zangFuVector": {
-        "GAN-QIYU": 0,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0,
-        "XIN-YANGXU": 0,
+        "XIN-YANGXU": 0.25,
         "XIN-XUEXU": 0,
-        "PI-QIXU": 0,
-        "PI-YANGXU": 0.1667,
+        "PI-QIXU": 0.2,
+        "PI-YANGXU": 0.3333,
         "FEI-QIXU": 0,
         "FEI-YINXU": 0,
-        "SHEN-YANGXU": 0.1,
+        "SHEN-YANGXU": 0.2,
         "SHEN-YINXU": 0.1111
       },
       "keySymptoms": [
@@ -7344,8 +7344,8 @@ window.X4KbData = {
       "zangFuVector": {
         "GAN-QIYU": 0,
         "GAN-YINXU": 0,
-        "XIN-YANGXU": 0.25,
-        "XIN-XUEXU": 0,
+        "XIN-YANGXU": 0.5,
+        "XIN-XUEXU": 0.2,
         "PI-QIXU": 0,
         "PI-YANGXU": 0.3333,
         "FEI-QIXU": 0.4,
@@ -8110,13 +8110,13 @@ window.X4KbData = {
       "zangFuVector": {
         "GAN-QIYU": 0,
         "GAN-YINXU": 0,
-        "XIN-YANGXU": 0,
+        "XIN-YANGXU": 0.5,
         "XIN-XUEXU": 0,
-        "PI-QIXU": 0,
-        "PI-YANGXU": 0,
-        "FEI-QIXU": 0.4,
+        "PI-QIXU": 0.2,
+        "PI-YANGXU": 0.1667,
+        "FEI-QIXU": 0.6,
         "FEI-YINXU": 0.2,
-        "SHEN-YANGXU": 0.1,
+        "SHEN-YANGXU": 0.2,
         "SHEN-YINXU": 0.1111
       },
       "keySymptoms": [
@@ -8935,10 +8935,10 @@ window.X4KbData = {
         "XIN-YANGXU": 0,
         "XIN-XUEXU": 0,
         "PI-QIXU": 0.4,
-        "PI-YANGXU": 0,
+        "PI-YANGXU": 0.1667,
         "FEI-QIXU": 0,
         "FEI-YINXU": 0,
-        "SHEN-YANGXU": 0,
+        "SHEN-YANGXU": 0.1,
         "SHEN-YINXU": 0
       },
       "keySymptoms": [
@@ -9187,16 +9187,16 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.2857,
-        "GAN-YINXU": 0,
-        "XIN-YANGXU": 0,
-        "XIN-XUEXU": 0.2,
-        "PI-QIXU": 0,
+        "GAN-QIYU": 0.7143,
+        "GAN-YINXU": 0.2,
+        "XIN-YANGXU": 0.25,
+        "XIN-XUEXU": 0.6,
+        "PI-QIXU": 0.2,
         "PI-YANGXU": 0,
-        "FEI-QIXU": 0,
+        "FEI-QIXU": 0.4,
         "FEI-YINXU": 0.2,
         "SHEN-YANGXU": 0,
-        "SHEN-YINXU": 0
+        "SHEN-YINXU": 0.1111
       },
       "keySymptoms": [
         {
@@ -9431,13 +9431,13 @@ window.X4KbData = {
       "zangFuVector": {
         "GAN-QIYU": 0.4286,
         "GAN-YINXU": 0,
-        "XIN-YANGXU": 0,
+        "XIN-YANGXU": 0.25,
         "XIN-XUEXU": 0.2,
         "PI-QIXU": 0,
-        "PI-YANGXU": 0,
+        "PI-YANGXU": 0.1667,
         "FEI-QIXU": 0,
         "FEI-YINXU": 0,
-        "SHEN-YANGXU": 0,
+        "SHEN-YANGXU": 0.1,
         "SHEN-YINXU": 0
       },
       "keySymptoms": [
@@ -10274,15 +10274,15 @@ window.X4KbData = {
       },
       "zangFuVector": {
         "GAN-QIYU": 0.1429,
-        "GAN-YINXU": 0,
-        "XIN-YANGXU": 0,
-        "XIN-XUEXU": 0,
-        "PI-QIXU": 0.2,
-        "PI-YANGXU": 0.3333,
-        "FEI-QIXU": 0,
-        "FEI-YINXU": 0,
-        "SHEN-YANGXU": 0.1,
-        "SHEN-YINXU": 0
+        "GAN-YINXU": 0.2,
+        "XIN-YANGXU": 0.5,
+        "XIN-XUEXU": 0.2,
+        "PI-QIXU": 0.6,
+        "PI-YANGXU": 0.6667,
+        "FEI-QIXU": 0.2,
+        "FEI-YINXU": 0.2,
+        "SHEN-YANGXU": 0.2,
+        "SHEN-YINXU": 0.1111
       },
       "keySymptoms": [
         {
@@ -10438,14 +10438,14 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0,
         "XIN-XUEXU": 0,
-        "PI-QIXU": 0,
+        "PI-QIXU": 0.2,
         "PI-YANGXU": 0.1667,
         "FEI-QIXU": 0,
-        "FEI-YINXU": 0,
+        "FEI-YINXU": 0.2,
         "SHEN-YANGXU": 0,
         "SHEN-YINXU": 0
       },
@@ -10594,13 +10594,13 @@ window.X4KbData = {
       "zangFuVector": {
         "GAN-QIYU": 0.2857,
         "GAN-YINXU": 0,
-        "XIN-YANGXU": 0.25,
-        "XIN-XUEXU": 0.2,
-        "PI-QIXU": 0.4,
-        "PI-YANGXU": 0,
+        "XIN-YANGXU": 0.5,
+        "XIN-XUEXU": 0.4,
+        "PI-QIXU": 0.6,
+        "PI-YANGXU": 0.1667,
         "FEI-QIXU": 0.2,
-        "FEI-YINXU": 0,
-        "SHEN-YANGXU": 0,
+        "FEI-YINXU": 0.2,
+        "SHEN-YANGXU": 0.1,
         "SHEN-YINXU": 0
       },
       "keySymptoms": [
@@ -10830,10 +10830,10 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0,
+        "GAN-QIYU": 0.2857,
         "GAN-YINXU": 0,
-        "XIN-YANGXU": 0.25,
-        "XIN-XUEXU": 0.2,
+        "XIN-YANGXU": 0.5,
+        "XIN-XUEXU": 0.4,
         "PI-QIXU": 0,
         "PI-YANGXU": 0.1667,
         "FEI-QIXU": 0,
@@ -11394,10 +11394,10 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1429,
+        "GAN-QIYU": 0.2857,
         "GAN-YINXU": 0.2,
         "XIN-YANGXU": 0,
-        "XIN-XUEXU": 0.4,
+        "XIN-XUEXU": 0.6,
         "PI-QIXU": 0,
         "PI-YANGXU": 0,
         "FEI-QIXU": 0,
@@ -11583,15 +11583,15 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0,
-        "XIN-YANGXU": 0,
+        "XIN-YANGXU": 0.25,
         "XIN-XUEXU": 0,
         "PI-QIXU": 0,
-        "PI-YANGXU": 0,
-        "FEI-QIXU": 0,
-        "FEI-YINXU": 0,
-        "SHEN-YANGXU": 0,
+        "PI-YANGXU": 0.1667,
+        "FEI-QIXU": 0.2,
+        "FEI-YINXU": 0.2,
+        "SHEN-YANGXU": 0.1,
         "SHEN-YINXU": 0
       },
       "keySymptoms": [
@@ -11840,13 +11840,13 @@ window.X4KbData = {
       "zangFuVector": {
         "GAN-QIYU": 0,
         "GAN-YINXU": 0,
-        "XIN-YANGXU": 0,
+        "XIN-YANGXU": 0.25,
         "XIN-XUEXU": 0,
         "PI-QIXU": 0,
-        "PI-YANGXU": 0,
+        "PI-YANGXU": 0.1667,
         "FEI-QIXU": 0,
         "FEI-YINXU": 0,
-        "SHEN-YANGXU": 0,
+        "SHEN-YANGXU": 0.1,
         "SHEN-YINXU": 0
       },
       "keySymptoms": [
@@ -11947,16 +11947,16 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1429,
-        "GAN-YINXU": 0,
+        "GAN-QIYU": 0.2857,
+        "GAN-YINXU": 0.2,
         "XIN-YANGXU": 0,
-        "XIN-XUEXU": 0,
+        "XIN-XUEXU": 0.4,
         "PI-QIXU": 0,
         "PI-YANGXU": 0,
         "FEI-QIXU": 0,
-        "FEI-YINXU": 0,
+        "FEI-YINXU": 0.2,
         "SHEN-YANGXU": 0,
-        "SHEN-YINXU": 0
+        "SHEN-YINXU": 0.1111
       },
       "keySymptoms": [
         {
@@ -12307,7 +12307,7 @@ window.X4KbData = {
         "PI-QIXU": 0,
         "PI-YANGXU": 0,
         "FEI-QIXU": 0,
-        "FEI-YINXU": 0,
+        "FEI-YINXU": 0.2,
         "SHEN-YANGXU": 0,
         "SHEN-YINXU": 0
       },
@@ -12621,14 +12621,14 @@ window.X4KbData = {
       "zangFuVector": {
         "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0,
-        "XIN-YANGXU": 0,
-        "XIN-XUEXU": 0.4,
-        "PI-QIXU": 0.2,
+        "XIN-YANGXU": 0.25,
+        "XIN-XUEXU": 0.6,
+        "PI-QIXU": 0.6,
         "PI-YANGXU": 0,
-        "FEI-QIXU": 0,
-        "FEI-YINXU": 0,
+        "FEI-QIXU": 0.2,
+        "FEI-YINXU": 0.4,
         "SHEN-YANGXU": 0,
-        "SHEN-YINXU": 0
+        "SHEN-YINXU": 0.1111
       },
       "keySymptoms": [
         {
@@ -13444,15 +13444,15 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0,
-        "XIN-YANGXU": 0,
+        "XIN-YANGXU": 0.25,
         "XIN-XUEXU": 0.2,
         "PI-QIXU": 0,
-        "PI-YANGXU": 0,
-        "FEI-QIXU": 0,
-        "FEI-YINXU": 0.2,
-        "SHEN-YANGXU": 0,
+        "PI-YANGXU": 0.1667,
+        "FEI-QIXU": 0.2,
+        "FEI-YINXU": 0.4,
+        "SHEN-YANGXU": 0.1,
         "SHEN-YINXU": 0.1111
       },
       "keySymptoms": [
@@ -13591,16 +13591,16 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0.2,
-        "XIN-YANGXU": 0,
-        "XIN-XUEXU": 0.2,
-        "PI-QIXU": 0,
-        "PI-YANGXU": 0.1667,
-        "FEI-QIXU": 0,
-        "FEI-YINXU": 0,
-        "SHEN-YANGXU": 0,
-        "SHEN-YINXU": 0.1111
+        "XIN-YANGXU": 0.75,
+        "XIN-XUEXU": 0.8,
+        "PI-QIXU": 0.2,
+        "PI-YANGXU": 0.3333,
+        "FEI-QIXU": 0.2,
+        "FEI-YINXU": 0.4,
+        "SHEN-YANGXU": 0.1,
+        "SHEN-YINXU": 0.2222
       },
       "keySymptoms": [
         {
@@ -13864,11 +13864,11 @@ window.X4KbData = {
       "zangFuVector": {
         "GAN-QIYU": 0,
         "GAN-YINXU": 0,
-        "XIN-YANGXU": 0.25,
+        "XIN-YANGXU": 0.5,
         "XIN-XUEXU": 0,
-        "PI-QIXU": 0,
+        "PI-QIXU": 0.2,
         "PI-YANGXU": 0.3333,
-        "FEI-QIXU": 0,
+        "FEI-QIXU": 0.2,
         "FEI-YINXU": 0,
         "SHEN-YANGXU": 0.1,
         "SHEN-YINXU": 0
@@ -14186,15 +14186,15 @@ window.X4KbData = {
       },
       "zangFuVector": {
         "GAN-QIYU": 0.4286,
-        "GAN-YINXU": 0.4,
+        "GAN-YINXU": 0.6,
         "XIN-YANGXU": 0,
-        "XIN-XUEXU": 0.2,
+        "XIN-XUEXU": 0.4,
         "PI-QIXU": 0,
         "PI-YANGXU": 0,
         "FEI-QIXU": 0,
         "FEI-YINXU": 0,
         "SHEN-YANGXU": 0,
-        "SHEN-YINXU": 0.2222
+        "SHEN-YINXU": 0.3333
       },
       "keySymptoms": [
         {
@@ -14971,8 +14971,8 @@ window.X4KbData = {
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0,
         "XIN-XUEXU": 0.2,
-        "PI-QIXU": 0,
-        "PI-YANGXU": 0,
+        "PI-QIXU": 0.2,
+        "PI-YANGXU": 0.1667,
         "FEI-QIXU": 0,
         "FEI-YINXU": 0,
         "SHEN-YANGXU": 0,
@@ -15272,7 +15272,7 @@ window.X4KbData = {
         "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0.25,
-        "XIN-XUEXU": 0.2,
+        "XIN-XUEXU": 0.4,
         "PI-QIXU": 0.2,
         "PI-YANGXU": 0,
         "FEI-QIXU": 0.2,
@@ -15398,11 +15398,11 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0.2,
         "XIN-YANGXU": 0.25,
-        "XIN-XUEXU": 0.2,
-        "PI-QIXU": 0.2,
+        "XIN-XUEXU": 0.4,
+        "PI-QIXU": 0.4,
         "PI-YANGXU": 0,
         "FEI-QIXU": 0.4,
         "FEI-YINXU": 0.6,
@@ -16014,7 +16014,7 @@ window.X4KbData = {
         "XIN-XUEXU": 0.2,
         "PI-QIXU": 0.4,
         "PI-YANGXU": 0.1667,
-        "FEI-QIXU": 0.2,
+        "FEI-QIXU": 0.4,
         "FEI-YINXU": 0.2,
         "SHEN-YANGXU": 0,
         "SHEN-YINXU": 0.1111
@@ -16699,7 +16699,7 @@ window.X4KbData = {
         "FEI-QIXU": 0.2,
         "FEI-YINXU": 0.4,
         "SHEN-YANGXU": 0,
-        "SHEN-YINXU": 0
+        "SHEN-YINXU": 0.1111
       },
       "keySymptoms": [
         {
@@ -17007,16 +17007,16 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0.25,
-        "XIN-XUEXU": 0,
-        "PI-QIXU": 0.2,
+        "XIN-XUEXU": 0.4,
+        "PI-QIXU": 0.4,
         "PI-YANGXU": 0,
-        "FEI-QIXU": 0.2,
-        "FEI-YINXU": 0,
+        "FEI-QIXU": 0.4,
+        "FEI-YINXU": 0.4,
         "SHEN-YANGXU": 0,
-        "SHEN-YINXU": 0
+        "SHEN-YINXU": 0.2222
       },
       "keySymptoms": [
         {
@@ -18046,15 +18046,15 @@ window.X4KbData = {
       },
       "zangFuVector": {
         "GAN-QIYU": 0.1429,
-        "GAN-YINXU": 0.2,
+        "GAN-YINXU": 0.4,
         "XIN-YANGXU": 0.25,
-        "XIN-XUEXU": 0,
+        "XIN-XUEXU": 0.2,
         "PI-QIXU": 0,
-        "PI-YANGXU": 0.1667,
+        "PI-YANGXU": 0.3333,
         "FEI-QIXU": 0,
-        "FEI-YINXU": 0.2,
+        "FEI-YINXU": 0.4,
         "SHEN-YANGXU": 0.1,
-        "SHEN-YINXU": 0.1111
+        "SHEN-YINXU": 0.2222
       },
       "keySymptoms": [
         {
