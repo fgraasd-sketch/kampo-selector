@@ -351,7 +351,17 @@ const EVIDENCE_DAMPING_K = 2;
 // evidence: a small capped bonus per patient hit, never touching the
 // key-symptom denominator. Hits that already earned key-symptom credit are
 // excluded so nothing double-counts.
-const W_BOOK_SECONDARY = 0.10;
+// 0.10 → 0.07（2026-07-14）。**次要證據不該比正式主症值錢。**
+//
+// 書證加分**不吃分母**，於是一個方把某個症狀當「次要書證」拿到的分，可以比把它
+// 當「正式主症」還多——主症會被稀釋在分母裡，次要證據不會。八味腎氣丸案：
+//   牛車腎氣丸  key項 0.220 ＋ 書證加分 0.10（發冷/小腹不仁）→ 第 1
+//   八味腎氣丸  key項 0.297 ＋ 書證加分 0                    → 第 3
+// 而 發冷/小腹不仁 **正是八味腎氣丸的正式主症**——它反而因此吃虧。這是反的。
+//
+// 掃描 {0.10,0.07,0.05,0.03,0}：0.07 是「拿掉這個反向誘因、又不傷既有裁決」的點
+// （第1 19／前3 22／前5 22，金絲雀全綠；≤0.05 第1 掉到 17，≤0.03 測試紅）。
+const W_BOOK_SECONDARY = 0.07;
 const BOOK_SECONDARY_K = 2;
 // Derived-vector trust ramp (2026-07-11 薛案 postmortem): book/physician
 // formulas get their pattern/zangfu vectors DERIVED from their own key

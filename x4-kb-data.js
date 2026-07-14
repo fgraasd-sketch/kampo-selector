@@ -8842,7 +8842,7 @@ window.X4KbData = {
       "category": "虛證",
       "xushiClass": "虛證",
       "patternVector": {
-        "QI_XU": 0,
+        "QI_XU": 0.55,
         "QI_NI": 0,
         "QI_YU": 0,
         "XUE_XU": 0,
@@ -8852,13 +8852,13 @@ window.X4KbData = {
       "zangFuVector": {
         "GAN-QIYU": 0,
         "GAN-YINXU": 0,
-        "XIN-YANGXU": 0.5,
+        "XIN-YANGXU": 0.75,
         "XIN-XUEXU": 0,
         "PI-QIXU": 0.2,
-        "PI-YANGXU": 0.1667,
+        "PI-YANGXU": 0.3333,
         "FEI-QIXU": 0.6,
         "FEI-YINXU": 0.2,
-        "SHEN-YANGXU": 0.1,
+        "SHEN-YANGXU": 0.2,
         "SHEN-YINXU": 0
       },
       "keySymptoms": [
@@ -8897,6 +8897,18 @@ window.X4KbData = {
           "id": "S-COLD",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "浮腫",
+          "id": "S-EDEMA",
+          "negated": false,
+          "matchType": "exact"
+        },
+        {
+          "raw": "胃部振水音",
+          "id": "S-GASTRIC-SPLASH",
+          "negated": false,
+          "matchType": "exact"
         }
       ],
       "herbs": [
@@ -8910,7 +8922,8 @@ window.X4KbData = {
       ],
       "composedOfFormulas": [],
       "sourceSheets": [
-        "「水滯 胸內型」"
+        "「水滯 胸內型」",
+        "「肺異常治療方劑彙整」的副本"
       ],
       "indications": [
         "S-ASTHMA-WHEEZE",
@@ -8925,7 +8938,73 @@ window.X4KbData = {
       ],
       "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。",
       "confidence": "高",
-      "draft": true
+      "draft": true,
+      "bookPages": [
+        292
+      ],
+      "bookSymptoms": [
+        {
+          "id": "S-RUNNY-NOSE-WATERY",
+          "canonical": "水樣鼻涕",
+          "term": "水樣鼻涕",
+          "page": 292,
+          "section": "證候特徵",
+          "primary": true,
+          "mild": false,
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-PALPITATION",
+          "canonical": "心悸",
+          "term": "心慌",
+          "page": 292,
+          "section": "證候特徵",
+          "primary": true,
+          "mild": false,
+          "physicianDecision": "accept-secondary"
+        }
+      ],
+      "bookCorroborated": [
+        {
+          "id": "S-FATIGUE",
+          "canonical": "易疲勞",
+          "page": 292
+        },
+        {
+          "id": "S-GASTRIC-SPLASH",
+          "canonical": "胃部振水音",
+          "page": 292
+        },
+        {
+          "id": "S-PALE-COMPLEXION",
+          "canonical": "面色蒼白",
+          "page": 292
+        },
+        {
+          "id": "S-ASTHMA-WHEEZE",
+          "canonical": "喘息",
+          "page": 292
+        },
+        {
+          "id": "S-COLD",
+          "canonical": "發冷",
+          "page": 292
+        },
+        {
+          "id": "S-COUGH",
+          "canonical": "咳嗽",
+          "page": 292
+        },
+        {
+          "id": "S-EDEMA",
+          "canonical": "浮腫",
+          "page": 292
+        }
+      ],
+      "channelStages": [
+        "少陽",
+        "太陰"
+      ]
     },
     {
       "id": "F-0034",
@@ -11882,14 +11961,14 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0,
+        "GAN-QIYU": 0.2857,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0.25,
-        "XIN-XUEXU": 0,
+        "XIN-XUEXU": 0.2,
         "PI-QIXU": 0.4,
         "PI-YANGXU": 0,
-        "FEI-QIXU": 0.2,
-        "FEI-YINXU": 0,
+        "FEI-QIXU": 0.6,
+        "FEI-YINXU": 0.2,
         "SHEN-YANGXU": 0,
         "SHEN-YINXU": 0
       },
@@ -11911,6 +11990,78 @@ window.X4KbData = {
           "id": "S-ABDOMINAL-DISTENSION",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "精神不安",
+          "id": "S-ANXIETY",
+          "negated": false,
+          "matchType": "book-physician",
+          "primary": true,
+          "mild": false,
+          "page": 238
+        },
+        {
+          "raw": "呼吸困難",
+          "id": "S-ASTHMA-WHEEZE",
+          "negated": false,
+          "matchType": "book-physician",
+          "primary": true,
+          "mild": false,
+          "page": 238
+        },
+        {
+          "raw": "面色不良",
+          "id": "S-PALE-COMPLEXION",
+          "negated": false,
+          "matchType": "book-physician",
+          "primary": true,
+          "mild": false,
+          "page": 238
+        },
+        {
+          "raw": "振水音",
+          "id": "S-GASTRIC-SPLASH",
+          "negated": false,
+          "matchType": "book-physician",
+          "primary": true,
+          "mild": false,
+          "page": 238
+        },
+        {
+          "raw": "胸痛",
+          "id": "S-CHEST-OPPRESSION",
+          "negated": false,
+          "matchType": "book-physician",
+          "primary": true,
+          "mild": false,
+          "page": 238
+        },
+        {
+          "raw": "咳嗽",
+          "id": "S-COUGH",
+          "negated": false,
+          "matchType": "book-physician",
+          "primary": true,
+          "mild": false,
+          "page": 238
+        },
+        {
+          "raw": "鬱悶",
+          "id": "S-DEPRESSION",
+          "negated": false,
+          "matchType": "book-physician",
+          "primary": true,
+          "mild": false,
+          "page": 238
+        },
+        {
+          "raw": "嘔吐",
+          "id": "S-VOMITING",
+          "negated": false,
+          "matchType": "book-physician",
+          "primary": false,
+          "mild": false,
+          "page": 238
         }
       ],
       "herbs": [
@@ -11922,12 +12073,21 @@ window.X4KbData = {
       ],
       "composedOfFormulas": [],
       "sourceSheets": [
-        "「氣郁 方劑」"
+        "「氣郁 方劑」",
+        "《漢方臨床診療學》p.238"
       ],
       "indications": [
         "S-ABDOMINAL-DISTENSION",
         "S-FATIGUE",
-        "S-THROAT-BLOCK"
+        "S-THROAT-BLOCK",
+        "S-ANXIETY",
+        "S-ASTHMA-WHEEZE",
+        "S-PALE-COMPLEXION",
+        "S-GASTRIC-SPLASH",
+        "S-CHEST-OPPRESSION",
+        "S-COUGH",
+        "S-DEPRESSION",
+        "S-VOMITING"
       ],
       "formulaPattern": [
         "半夏厚朴湯類"
@@ -11940,91 +12100,11 @@ window.X4KbData = {
       ],
       "bookSymptoms": [
         {
-          "id": "S-ANXIETY",
-          "canonical": "精神不安",
-          "term": "精神不安",
-          "page": 238,
-          "section": "證候特徵",
-          "primary": true,
-          "mild": false,
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-ASTHMA-WHEEZE",
-          "canonical": "喘息",
-          "term": "呼吸困難",
-          "page": 238,
-          "section": "證候特徵",
-          "primary": true,
-          "mild": false,
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-PALE-COMPLEXION",
-          "canonical": "面色蒼白",
-          "term": "面色不良",
-          "page": 238,
-          "section": "證候特徵",
-          "primary": true,
-          "mild": false,
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-GASTRIC-SPLASH",
-          "canonical": "胃部振水音",
-          "term": "振水音",
-          "page": 238,
-          "section": "證候特徵",
-          "primary": true,
-          "mild": false,
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-CHEST-OPPRESSION",
-          "canonical": "胸悶",
-          "term": "胸痛",
-          "page": 238,
-          "section": "證候特徵",
-          "primary": true,
-          "mild": false,
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-DEPRESSION",
-          "canonical": "抑鬱",
-          "term": "鬱悶",
-          "page": 238,
-          "section": "證候特徵",
-          "primary": true,
-          "mild": false,
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-COUGH",
-          "canonical": "咳嗽",
-          "term": "咳嗽",
-          "page": 238,
-          "section": "適應病症",
-          "primary": false,
-          "mild": false,
-          "physicianDecision": "accept-secondary"
-        },
-        {
           "id": "S-NAUSEA",
           "canonical": "噁心",
           "term": "噁心",
           "page": 238,
           "section": "適應病症",
-          "primary": false,
-          "mild": false,
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-VOMITING",
-          "canonical": "嘔吐",
-          "term": "嘔吐",
-          "page": 238,
-          "section": "病期病態",
           "primary": false,
           "mild": false,
           "physicianDecision": "accept-secondary"
@@ -14954,8 +15034,8 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-0115",
-      "name": "黃芪建中湯",
+      "id": "F-0114",
+      "name": "黃耆建中湯",
       "category": "桂枝湯類",
       "xushiClass": "虛證",
       "patternVector": {
@@ -14971,9 +15051,9 @@ window.X4KbData = {
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0.25,
         "XIN-XUEXU": 0.2,
-        "PI-QIXU": 0.2,
+        "PI-QIXU": 0.4,
         "PI-YANGXU": 0.1667,
-        "FEI-QIXU": 0.2,
+        "FEI-QIXU": 0.4,
         "FEI-YINXU": 0.2,
         "SHEN-YANGXU": 0,
         "SHEN-YINXU": 0.1111
@@ -15008,6 +15088,36 @@ window.X4KbData = {
           "id": "S-DERMATITIS",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "S-APPETITE-LOW",
+          "id": "S-APPETITE-LOW",
+          "negated": false,
+          "fromIndications": true
+        },
+        {
+          "raw": "S-MUSCLE-SPASM",
+          "id": "S-MUSCLE-SPASM",
+          "negated": false,
+          "fromIndications": true
+        },
+        {
+          "raw": "氣短",
+          "id": "S-ASTHMA-WHEEZE",
+          "negated": false,
+          "matchType": "book-physician",
+          "primary": true,
+          "mild": false,
+          "page": 285
+        },
+        {
+          "raw": "化膿",
+          "id": "S-PUS",
+          "negated": false,
+          "matchType": "book-physician",
+          "primary": true,
+          "mild": false,
+          "page": 285
         }
       ],
       "herbs": [
@@ -15021,21 +15131,60 @@ window.X4KbData = {
       ],
       "composedOfFormulas": [],
       "sourceSheets": [
-        "「氣虛 方劑」"
+        "「氣虛 方劑」",
+        "「脾異常治療方劑彙整表」的副本",
+        "《漢方臨床診療學》p.285"
       ],
       "indications": [
-        "S-DERMATITIS",
-        "S-EXUDATIVE-INFLAMMATION",
+        "S-APPETITE-LOW",
         "S-FATIGUE",
+        "S-MUSCLE-SPASM",
         "S-NIGHT-SWEAT",
-        "S-PERIUMBILICAL-PAIN"
+        "S-PERIUMBILICAL-PAIN",
+        "S-ASTHMA-WHEEZE",
+        "S-PUS"
       ],
       "formulaPattern": [
-        "桂枝湯類"
+        "陽氣實 / 陰液虛"
       ],
       "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。",
       "confidence": "高",
-      "draft": true
+      "draft": true,
+      "bookPages": [
+        285
+      ],
+      "bookSymptoms": [
+        {
+          "id": "S-ABDOMINAL-PAIN",
+          "canonical": "腹痛",
+          "term": "腹痛",
+          "page": 285,
+          "section": "適應病症",
+          "primary": false,
+          "mild": false,
+          "physicianDecision": "accept-secondary"
+        }
+      ],
+      "bookCorroborated": [
+        {
+          "id": "S-APPETITE-LOW",
+          "canonical": "食欲不振",
+          "page": 285
+        },
+        {
+          "id": "S-FATIGUE",
+          "canonical": "易疲勞",
+          "page": 285
+        },
+        {
+          "id": "S-NIGHT-SWEAT",
+          "canonical": "盜汗",
+          "page": 285
+        }
+      ],
+      "channelStages": [
+        "太陰"
+      ]
     },
     {
       "id": "F-0071",
@@ -17318,146 +17467,6 @@ window.X4KbData = {
       ]
     },
     {
-      "id": "F-0114",
-      "name": "黃耆建中湯",
-      "category": "陽氣實 / 陰液虛",
-      "xushiClass": "虛證",
-      "patternVector": {
-        "QI_XU": 0,
-        "QI_NI": 0,
-        "QI_YU": 0,
-        "XUE_XU": 0,
-        "YU_XUE": 0,
-        "SUI_ZHI": 0
-      },
-      "zangFuVector": {
-        "GAN-QIYU": 0,
-        "GAN-YINXU": 0,
-        "XIN-YANGXU": 0.25,
-        "XIN-XUEXU": 0.2,
-        "PI-QIXU": 0.4,
-        "PI-YANGXU": 0.1667,
-        "FEI-QIXU": 0.4,
-        "FEI-YINXU": 0.2,
-        "SHEN-YANGXU": 0,
-        "SHEN-YINXU": 0.1111
-      },
-      "keySymptoms": [
-        {
-          "raw": "盜汗",
-          "id": "S-NIGHT-SWEAT",
-          "negated": false,
-          "matchType": "exact"
-        },
-        {
-          "raw": "臍周痛",
-          "id": "S-PERIUMBILICAL-PAIN",
-          "negated": false,
-          "matchType": "exact"
-        },
-        {
-          "raw": "全身倦怠",
-          "id": "S-FATIGUE",
-          "negated": false,
-          "matchType": "exact"
-        },
-        {
-          "raw": "食慾不振",
-          "id": "S-APPETITE-LOW",
-          "negated": false,
-          "matchType": "exact"
-        },
-        {
-          "raw": "兩側腹直肌拘攣",
-          "id": "S-MUSCLE-SPASM",
-          "negated": false,
-          "matchType": "exact"
-        },
-        {
-          "raw": "氣短",
-          "id": "S-ASTHMA-WHEEZE",
-          "negated": false,
-          "matchType": "book-physician",
-          "primary": true,
-          "mild": false,
-          "page": 285
-        },
-        {
-          "raw": "化膿",
-          "id": "S-PUS",
-          "negated": false,
-          "matchType": "book-physician",
-          "primary": true,
-          "mild": false,
-          "page": 285
-        }
-      ],
-      "herbs": [
-        "桂枝",
-        "芍藥",
-        "甘草",
-        "生薑",
-        "大棗",
-        "膠飴",
-        "黃芪"
-      ],
-      "composedOfFormulas": [],
-      "sourceSheets": [
-        "「脾異常治療方劑彙整表」的副本",
-        "《漢方臨床診療學》p.285"
-      ],
-      "indications": [
-        "S-APPETITE-LOW",
-        "S-FATIGUE",
-        "S-MUSCLE-SPASM",
-        "S-NIGHT-SWEAT",
-        "S-PERIUMBILICAL-PAIN",
-        "S-ASTHMA-WHEEZE",
-        "S-PUS"
-      ],
-      "formulaPattern": [
-        "陽氣實 / 陰液虛"
-      ],
-      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。",
-      "confidence": "高",
-      "draft": true,
-      "bookPages": [
-        285
-      ],
-      "bookSymptoms": [
-        {
-          "id": "S-ABDOMINAL-PAIN",
-          "canonical": "腹痛",
-          "term": "腹痛",
-          "page": 285,
-          "section": "適應病症",
-          "primary": false,
-          "mild": false,
-          "physicianDecision": "accept-secondary"
-        }
-      ],
-      "bookCorroborated": [
-        {
-          "id": "S-APPETITE-LOW",
-          "canonical": "食欲不振",
-          "page": 285
-        },
-        {
-          "id": "S-FATIGUE",
-          "canonical": "易疲勞",
-          "page": 285
-        },
-        {
-          "id": "S-NIGHT-SWEAT",
-          "canonical": "盜汗",
-          "page": 285
-        }
-      ],
-      "channelStages": [
-        "太陰"
-      ]
-    },
-    {
       "id": "F-0008",
       "name": "人參養榮湯",
       "category": "陽氣虛 / 陰液虛(氣血兩虛)",
@@ -17610,171 +17619,6 @@ window.X4KbData = {
         }
       ],
       "channelStages": [
-        "太陰"
-      ]
-    },
-    {
-      "id": "F-0086",
-      "name": "苓甘五味加姜辛半夏杏仁湯",
-      "category": "陽氣虛 / 陰液實(肺氣虛)",
-      "xushiClass": "虛證",
-      "patternVector": {
-        "QI_XU": 0.55,
-        "QI_NI": 0,
-        "QI_YU": 0,
-        "XUE_XU": 0,
-        "YU_XUE": 0,
-        "SUI_ZHI": 1
-      },
-      "zangFuVector": {
-        "GAN-QIYU": 0,
-        "GAN-YINXU": 0,
-        "XIN-YANGXU": 0.25,
-        "XIN-XUEXU": 0,
-        "PI-QIXU": 0,
-        "PI-YANGXU": 0.1667,
-        "FEI-QIXU": 0.4,
-        "FEI-YINXU": 0.2,
-        "SHEN-YANGXU": 0.1,
-        "SHEN-YINXU": 0
-      },
-      "keySymptoms": [
-        {
-          "raw": "喘鳴",
-          "id": "S-ASTHMA-WHEEZE",
-          "negated": false,
-          "matchType": "exact"
-        },
-        {
-          "raw": "咳嗽",
-          "id": "S-COUGH",
-          "negated": false,
-          "matchType": "exact"
-        },
-        {
-          "raw": "水樣痰",
-          "id": "S-WATERY-SPUTUM",
-          "negated": false,
-          "matchType": "exact"
-        },
-        {
-          "raw": "浮腫",
-          "id": "S-EDEMA",
-          "negated": false,
-          "matchType": "exact"
-        },
-        {
-          "raw": "胃部振水音",
-          "id": "S-GASTRIC-SPLASH",
-          "negated": false,
-          "matchType": "exact"
-        }
-      ],
-      "herbs": [
-        "茯苓",
-        "甘草",
-        "五味子",
-        "乾薑",
-        "細辛",
-        "半夏",
-        "杏仁"
-      ],
-      "composedOfFormulas": [],
-      "sourceSheets": [
-        "「肺異常治療方劑彙整」的副本"
-      ],
-      "indications": [
-        "S-ASTHMA-WHEEZE",
-        "S-COUGH",
-        "S-EDEMA",
-        "S-GASTRIC-SPLASH",
-        "S-WATERY-SPUTUM"
-      ],
-      "formulaPattern": [
-        "陽氣虛 / 陰液實(肺氣虛)"
-      ],
-      "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。",
-      "confidence": "高",
-      "draft": true,
-      "bookPages": [
-        292
-      ],
-      "bookSymptoms": [
-        {
-          "id": "S-FATIGUE",
-          "canonical": "易疲勞",
-          "term": "體力低下",
-          "page": 292,
-          "section": "證候特徵",
-          "primary": true,
-          "mild": false,
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-RUNNY-NOSE-WATERY",
-          "canonical": "水樣鼻涕",
-          "term": "水樣鼻涕",
-          "page": 292,
-          "section": "證候特徵",
-          "primary": true,
-          "mild": false,
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-PALE-COMPLEXION",
-          "canonical": "面色蒼白",
-          "term": "面色差",
-          "page": 292,
-          "section": "證候特徵",
-          "primary": true,
-          "mild": false,
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-COLD",
-          "canonical": "發冷",
-          "term": "發冷",
-          "page": 292,
-          "section": "證候特徵",
-          "primary": true,
-          "mild": false,
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-PALPITATION",
-          "canonical": "心悸",
-          "term": "心慌",
-          "page": 292,
-          "section": "證候特徵",
-          "primary": true,
-          "mild": false,
-          "physicianDecision": "accept-secondary"
-        }
-      ],
-      "bookCorroborated": [
-        {
-          "id": "S-GASTRIC-SPLASH",
-          "canonical": "胃部振水音",
-          "page": 292
-        },
-        {
-          "id": "S-ASTHMA-WHEEZE",
-          "canonical": "喘息",
-          "page": 292
-        },
-        {
-          "id": "S-COUGH",
-          "canonical": "咳嗽",
-          "page": 292
-        },
-        {
-          "id": "S-EDEMA",
-          "canonical": "浮腫",
-          "page": 292
-        }
-      ],
-      "channelStages": [
-        "少陽",
         "太陰"
       ]
     },
