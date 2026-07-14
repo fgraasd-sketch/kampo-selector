@@ -2304,6 +2304,20 @@ window.X4KbData = {
       ]
     },
     {
+      "id": "S-CRUST",
+      "canonical": "痂皮",
+      "aliases": [
+        "血痂",
+        "結痂",
+        "痂"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
       "id": "S-PULSE-WIRY",
       "canonical": "脈弦",
       "aliases": [
@@ -6150,6 +6164,11 @@ window.X4KbData = {
           "id": "S-ACID-REFLUX",
           "canonical": "胃酸逆流",
           "page": 262
+        },
+        {
+          "id": "S-EPIGASTRIC-RESISTANCE",
+          "canonical": "心下痞硬",
+          "page": 262
         }
       ],
       "channelStages": [
@@ -6256,6 +6275,14 @@ window.X4KbData = {
         263
       ],
       "bookSymptoms": [
+        {
+          "id": "S-EPIGASTRIC-RESISTANCE",
+          "canonical": "心下痞硬",
+          "term": "心下痞硬",
+          "page": 263,
+          "section": "證候特徵",
+          "physicianDecision": "accept-secondary"
+        },
         {
           "id": "S-HEADACHE",
           "canonical": "頭痛",
@@ -6487,6 +6514,14 @@ window.X4KbData = {
           "term": "眩暈",
           "page": 258,
           "section": "證候特徵",
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-EPIGASTRIC-RESISTANCE",
+          "canonical": "心下痞硬",
+          "term": "心下痞硬",
+          "page": 258,
+          "section": "病期病態",
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -7119,6 +7154,11 @@ window.X4KbData = {
         {
           "id": "S-CHEST-OPPRESSION",
           "canonical": "胸悶",
+          "page": 310
+        },
+        {
+          "id": "S-EPIGASTRIC-RESISTANCE",
+          "canonical": "心下痞硬",
           "page": 310
         }
       ],
@@ -9119,16 +9159,16 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0,
-        "GAN-YINXU": 0,
-        "XIN-YANGXU": 0,
-        "XIN-XUEXU": 0,
+        "GAN-QIYU": 0.2857,
+        "GAN-YINXU": 0.2,
+        "XIN-YANGXU": 0.25,
+        "XIN-XUEXU": 0.2,
         "PI-QIXU": 0,
-        "PI-YANGXU": 0,
+        "PI-YANGXU": 0.1667,
         "FEI-QIXU": 0,
         "FEI-YINXU": 0,
-        "SHEN-YANGXU": 0,
-        "SHEN-YINXU": 0
+        "SHEN-YANGXU": 0.1,
+        "SHEN-YINXU": 0.1111
       },
       "keySymptoms": [
         {
@@ -9148,6 +9188,55 @@ window.X4KbData = {
           "id": "S-ABDOMINAL-TENDERNESS",
           "negated": false,
           "fromIndications": true
+        },
+        {
+          "raw": "下肢發冷",
+          "id": "S-COLD",
+          "negated": false,
+          "matchType": "book-physician",
+          "page": 272
+        },
+        {
+          "raw": "月經異常",
+          "id": "S-MENSTRUAL-IRREGULAR",
+          "negated": false,
+          "matchType": "book-physician",
+          "page": 272
+        },
+        {
+          "raw": "烘熱感",
+          "id": "S-HOT-FLUSH",
+          "negated": false,
+          "matchType": "book-physician",
+          "page": 272
+        },
+        {
+          "raw": "痛經",
+          "id": "S-DYSMENORRHEA",
+          "negated": false,
+          "matchType": "book-physician",
+          "page": 272
+        },
+        {
+          "raw": "頭痛",
+          "id": "S-HEADACHE",
+          "negated": false,
+          "matchType": "book-physician",
+          "page": 272
+        },
+        {
+          "raw": "熱感",
+          "id": "S-HEAT-SENSATION",
+          "negated": false,
+          "matchType": "book-physician",
+          "page": 272
+        },
+        {
+          "raw": "肩凝",
+          "id": "S-SHOULDER-STIFF",
+          "negated": false,
+          "matchType": "book-physician",
+          "page": 272
         }
       ],
       "herbs": [
@@ -9159,11 +9248,19 @@ window.X4KbData = {
       ],
       "composedOfFormulas": [],
       "sourceSheets": [
-        "「瘀血 」方"
+        "「瘀血 」方",
+        "《漢方臨床診療學》p.272"
       ],
       "indications": [
         "S-ABDOMINAL-MASS",
-        "S-ABDOMINAL-TENDERNESS"
+        "S-ABDOMINAL-TENDERNESS",
+        "S-COLD",
+        "S-MENSTRUAL-IRREGULAR",
+        "S-HOT-FLUSH",
+        "S-DYSMENORRHEA",
+        "S-HEADACHE",
+        "S-HEAT-SENSATION",
+        "S-SHOULDER-STIFF"
       ],
       "formulaPattern": [
         "虛實夾雜",
@@ -9171,7 +9268,55 @@ window.X4KbData = {
       ],
       "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。",
       "confidence": "高",
-      "draft": true
+      "draft": true,
+      "bookPages": [
+        272
+      ],
+      "bookSymptoms": [
+        {
+          "id": "S-ABDOMINAL-PAIN",
+          "canonical": "腹痛",
+          "term": "腹部疼痛",
+          "page": 272,
+          "section": "適應病症",
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-HEAT-TOXIN",
+          "canonical": "炎症",
+          "term": "炎症",
+          "page": 272,
+          "section": "適應病症",
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-LEUCORRHEA",
+          "canonical": "帶下",
+          "term": "帶下",
+          "page": 272,
+          "section": "適應病症",
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-HEMORRHOIDS",
+          "canonical": "痔瘡",
+          "term": "痔",
+          "page": 272,
+          "section": "適應病症",
+          "physicianDecision": "accept-secondary"
+        }
+      ],
+      "bookCorroborated": [
+        {
+          "id": "S-ABDOMINAL-TENDERNESS",
+          "canonical": "腹部壓痛",
+          "page": 272
+        }
+      ],
+      "channelStages": [
+        "少陽"
+      ],
+      "bookCautions": "明顯體力衰弱者。；過敏症 ( 皮疹、瘙癢等 )。"
     },
     {
       "id": "F-0012",
@@ -10236,6 +10381,14 @@ window.X4KbData = {
         240
       ],
       "bookSymptoms": [
+        {
+          "id": "S-EPIGASTRIC-RESISTANCE",
+          "canonical": "心下痞硬",
+          "term": "心下痞硬",
+          "page": 240,
+          "section": "證候特徵",
+          "physicianDecision": "accept-secondary"
+        },
         {
           "id": "S-GASTRIC-SPLASH",
           "canonical": "胃部振水音",
@@ -12027,6 +12180,13 @@ window.X4KbData = {
           "page": 326
         },
         {
+          "raw": "痂皮",
+          "id": "S-CRUST",
+          "negated": false,
+          "matchType": "book-physician",
+          "page": 326
+        },
+        {
           "raw": "下腹部壓痛",
           "id": "S-ABDOMINAL-TENDERNESS",
           "negated": false,
@@ -12067,6 +12227,7 @@ window.X4KbData = {
         "S-FEVER",
         "S-PRURITUS",
         "S-SKIN-SCALE",
+        "S-CRUST",
         "S-ABDOMINAL-TENDERNESS",
         "S-SKIN-DRY"
       ],
@@ -20843,7 +21004,7 @@ window.X4KbData = {
         265,
         304
       ],
-      "bookCautions": "1 ) 過敏證。2 ) 胃腸虛弱者 (偶有腹海 )。3 ) 妊娠及可能是妊娠者的女性。；1 ) 偶見發疹、發紅、了眩暈、心刁、腹海。2 ) 出現附子中烏頭鹼系生物鹼引起的中毒症狀〈口導、舌的麻痺遲鈍及膝木感，心人，烘熱，顏面潮紅，手足麻交遲鈍及麻木感，噁心嘔吐，胸中昔閩，面色蒼白 ) 時，宣將患者置於陰涼處臥床，飲冷水，或甘草、黑豆等量煎服。建議使用烏頭鹼的解毒藥物阿托品、普魯卡因、腎上腺素等。[ 相互作用 ] 與強心苷並用則作用增強。[ 並用]1 ) 為增強附子的效果而廣泛並用配伍附子的方劑，如真武湯、桂枝加術附湯等。2 ) 對於未配伍附子的方劑，並用附子以增強鎮痛效果或新陳代謝，如區藥甘草湯加加工附子末，越婢加術湯加加工附子未，人參湯加加工附子末。；偶見皮疙，烘熱感，心慌導動，腹瀉。[ 相互作用 ] 與強心藥物並用作用增強。[ 並用 ] 與加工附子末相同。"
+      "bookCautions": "1 ) 過敏證。2 ) 胃腸虛弱者 (偶有腹海 )。3 ) 妊娠及可能是妊娠者的女性。；1 ) 偶見發疹、發紅、了眩暈、心刁、腹海。2 ) 出現附子中烏頭鹼系生物鹼引起的中毒症狀〈口導、舌的麻痺遲鈍及膝木感，心人，烘熱，顏面潮紅，手足麻交遲鈍及麻木感，噁心嘔吐，胸中昔閩，面色蒼白 ) 時，宣將患者置於陰涼處臥床，飲冷水，或甘草、黑豆等量煎服。建議使用烏頭鹼的解毒藥物阿托品、普魯卡因、腎上腺素等。[ 相互作用 ] 與強心苷並用則作用增強。[ 並用]1 ) 為增強附子的效果而廣泛並用配伍附子的方劑，如真武湯、桂枝加術附湯等。2 ) 對於未配伍附子的方劑，並用附子以增強鎮痛效果或新陳代謝，如區藥甘草湯加加工附子末，越婢加術湯加加工附子未，人參湯加加工附子末。；偶見皮疹，烘熱感，心慌導動，腹瀉。[ 相互作用 ] 與強心藥物並用作用增強。[ 並用 ] 與加工附子末相同。"
     },
     {
       "id": "F-BOOK-031",
@@ -22600,6 +22761,12 @@ window.X4KbData = {
           "id": "S-THIRST",
           "negated": false,
           "matchType": "book"
+        },
+        {
+          "raw": "痂皮",
+          "id": "S-CRUST",
+          "negated": false,
+          "matchType": "book"
         }
       ],
       "herbs": [],
@@ -22611,7 +22778,8 @@ window.X4KbData = {
         "S-DERMATITIS",
         "S-HEAT-SENSATION",
         "S-PRURITUS",
-        "S-THIRST"
+        "S-THIRST",
+        "S-CRUST"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：消風散（OCR 標題，已人工校名）",
@@ -22620,7 +22788,7 @@ window.X4KbData = {
       "bookPages": [
         334
       ],
-      "bookCautions": "1 ) 患部無分沁物、乾燥的場合。@〇 夸克掃描王家速掃描，就是高效 品下名-二2 ) 明顯體力衰弱患者。3 ) 明顯胃腸虛弱患者。",
+      "bookCautions": "1 ) 患部無分泌物、乾燥的場合。@〇 夸克掃描王家速掃描，就是高效 品下名-二2 ) 明顯體力衰弱患者。3 ) 明顯胃腸虛弱患者。",
       "channelStages": [
         "少陽"
       ],
