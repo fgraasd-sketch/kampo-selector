@@ -4264,7 +4264,8 @@ const EXCEL_FORMULA_KB = [
     "category": "人參湯類",
     "syndrome": "qi_xu",
     "patterns": [
-      "氣虛"
+      "氣虛",
+      "水滯"
     ],
     "zangFuTags": [],
     "symptoms": [
@@ -4299,7 +4300,7 @@ const EXCEL_FORMULA_KB = [
         "氣鬱": 0,
         "血虛": 0,
         "瘀血": 0,
-        "水滯": 0
+        "水滯": 1
       },
       "zangFu": {
         "肝": 0,

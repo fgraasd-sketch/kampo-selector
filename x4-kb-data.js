@@ -14069,7 +14069,7 @@ window.X4KbData = {
         "QI_YU": 0,
         "XUE_XU": 0,
         "YU_XUE": 0,
-        "SUI_ZHI": 0
+        "SUI_ZHI": 1
       },
       "zangFuVector": {
         "GAN-QIYU": 0,
