@@ -5218,6 +5218,7 @@ const EXCEL_FORMULA_KB = [
       "排尿痛",
       "尿頻",
       "排尿困難",
+      "心下痞硬",
       "眠淺"
     ],
     "keySymptoms": [
@@ -5229,9 +5230,10 @@ const EXCEL_FORMULA_KB = [
       "排尿痛",
       "尿頻",
       "排尿困難",
+      "心下痞硬",
       "眠淺"
     ],
-    "indications": "神經過敏，下尿道神經症，抑鬱，全身倦怠，尿不盡，排尿痛，尿頻，排尿困難，眠淺",
+    "indications": "神經過敏，下尿道神經症，抑鬱，全身倦怠，尿不盡，排尿痛，尿頻，排尿困難，心下痞硬，眠淺",
     "formulaPattern": [
       "陽氣實 / 陰液虛"
     ],
@@ -8425,7 +8427,7 @@ const EXCEL_FORMULA_KB = [
       "腹痛",
       "便秘",
       "腹瀉",
-      "痙攣"
+      "腹直肌拘攣"
     ],
     "keySymptoms": [
       "腹部膨滿",
@@ -8433,9 +8435,9 @@ const EXCEL_FORMULA_KB = [
       "腹痛",
       "便秘",
       "腹瀉",
-      "痙攣"
+      "腹直肌拘攣"
     ],
-    "indications": "腹部膨滿，裡急後重，腹痛，便秘，腹瀉，痙攣",
+    "indications": "腹部膨滿，裡急後重，腹痛，便秘，腹瀉，腹直肌拘攣",
     "formulaPattern": [],
     "specialIndications": [],
     "contraindications": [],

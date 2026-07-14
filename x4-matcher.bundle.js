@@ -544,6 +544,19 @@ const CHIEF_SPECIFICITY_MAX_FORMULAS = 5;
 // Swept {0.15, 0.2, 0.25}: battery identical across the range (第1 10→11,
 // zero regressions) — 0.2 sits mid-plateau.
 const W_CHIEF = 0.2;
+// 主證加分（2026-07-14）——**加法，不吃分母**。
+//
+// 書在〔病期病態〕開頭用「X型」替一個方指定**那一個**徵象：
+//   大柴胡湯 p.251「少陽病期，【胸脅苦滿型】」／人參湯 p.310「太陰病期，【心下痞硬型】」
+// 這是醫師那句「**通常柴胡劑 以胸脅苦滿 為最主要**」的機器可讀版。44 個方有這種宣告
+// （心下痞硬型 24／胸脅苦滿型 10／腹直肌拘攣型 10）。
+//
+// **為什麼是加分而不是加權**（先試了加權、失敗，勿重試）：把主證的 centrality 調高
+// （1.25～2.5 掃過）在**比值**裡沒有用——分子放大的同時**分母也放大**，於是主症多的方
+// （大柴胡湯 12 個）反而比主症少的方（小柴胡湯 7 個）吃虧，大柴胡湯 從第 2 掉到第 3。
+// **在覆蓋度比值裡，任何對主症的重新加權都救不了「被描述得完整」的方。**
+// 加分項不吃分母，這才是對的形狀（與主訴加分同型）。
+const W_CARDINAL = 0.05;
 // Only the first N reported symptoms are chief-complaint candidates — the
 // clinical convention that the presenting problem is stated first.
 const CHIEF_WINDOW = 3;
@@ -852,6 +865,7 @@ function normalizeFormulaKeySymptoms(rawSymptoms, normalizer) {
         raw: typeof ref === "object" ? (ref.raw || id) : ref,
         negated: symptomRefNegated(ref),
         centrality: keyCentrality(ref),
+        cardinal: Boolean(typeof ref === "object" && ref && ref.cardinal),
       }];
     }
 
@@ -1223,7 +1237,12 @@ function scoreFormula(formula, patientContext, normalizer) {
       matchedChief = { signs: explained.map((item) => item.canonical), coverage: strength };
     }
   }
-  const total = Math.max(baseTotal, channelRoute, heatRoute) + chiefBonus;
+  // 主證加分：病人身上有這個方「憑什麼開」的那個徵象。加法，不進分母。
+  const cardinalKey = key.keySymptoms.find((item) => item.cardinal);
+  const cardinalMatched = Boolean(cardinalKey
+    && key.matchedSymptoms.some((item) => item.id === cardinalKey.id && item.weight > 0));
+  const cardinalBonus = cardinalMatched ? W_CARDINAL : 0;
+  const total = Math.max(baseTotal, channelRoute, heatRoute) + chiefBonus + cardinalBonus;
   const routeLabel = total - chiefBonus === baseTotal
     ? "氣血水"
     : (channelRoute >= heatRoute ? "六經" : "熱證");
@@ -1243,6 +1262,7 @@ function scoreFormula(formula, patientContext, normalizer) {
       channelRoute,
       heatRoute,
       chiefBonus,
+      cardinalBonus,
       routeTaken: routeLabel,
     },
     explanation: {
@@ -1463,5 +1483,5 @@ function createX4Matcher(kb) {
 
 
 
-  return { isExamFinding, buildHeatEvidence, buildChannelEvidence, normalizeXushiClass, createX4Matcher, W_KEY, W_PATTERN, W_ZANGFU, PARENT_FALLBACK_WEIGHT, EVIDENCE_DAMPING_K, W_BOOK_SECONDARY, BOOK_SECONDARY_K, DERIVED_VECTOR_K, KEY_EVIDENCE_K, PATTERN_RECALL_BETA, CHANNEL_W_KEY, CHANNEL_W_STAGE, CHIEF_SPECIFICITY_MAX_FORMULAS, W_CHIEF, CHIEF_WINDOW, KEY_CENTRALITY_SECONDARY, KEY_CENTRALITY_MILD };
+  return { isExamFinding, buildHeatEvidence, buildChannelEvidence, normalizeXushiClass, createX4Matcher, W_KEY, W_PATTERN, W_ZANGFU, PARENT_FALLBACK_WEIGHT, EVIDENCE_DAMPING_K, W_BOOK_SECONDARY, BOOK_SECONDARY_K, DERIVED_VECTOR_K, KEY_EVIDENCE_K, PATTERN_RECALL_BETA, CHANNEL_W_KEY, CHANNEL_W_STAGE, CHIEF_SPECIFICITY_MAX_FORMULAS, W_CHIEF, W_CARDINAL, CHIEF_WINDOW, KEY_CENTRALITY_SECONDARY, KEY_CENTRALITY_MILD };
 })();

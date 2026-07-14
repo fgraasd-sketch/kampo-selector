@@ -2473,6 +2473,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 344
         },
         {
@@ -2482,6 +2483,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "page": 344
         },
         {
@@ -2491,6 +2493,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "page": 344
         }
       ],
@@ -2534,6 +2537,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -2544,6 +2548,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -2634,6 +2639,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 272
         },
         {
@@ -2643,6 +2649,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 272
         }
       ],
@@ -2794,6 +2801,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -2804,6 +2812,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -2814,6 +2823,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -2910,6 +2920,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "page": 261
         }
       ],
@@ -2953,6 +2964,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -2963,6 +2975,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -2973,6 +2986,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -2983,6 +2997,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -3100,6 +3115,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -3110,6 +3126,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -3221,6 +3238,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -3231,6 +3249,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -3241,6 +3260,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -3251,6 +3271,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -3261,6 +3282,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -3271,6 +3293,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -3281,6 +3304,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -3291,6 +3315,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -3413,6 +3438,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -3423,6 +3449,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -3433,6 +3460,7 @@ window.X4KbData = {
           "section": "病期病態",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -3443,6 +3471,7 @@ window.X4KbData = {
           "section": "病期病態",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -3538,6 +3567,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 297
         },
         {
@@ -3547,6 +3577,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 297
         },
         {
@@ -3556,6 +3587,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "page": 297
         }
       ],
@@ -3683,6 +3715,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "page": 260
         },
         {
@@ -3692,6 +3725,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "page": 260
         },
         {
@@ -3701,6 +3735,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "page": 260
         },
         {
@@ -3710,6 +3745,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "page": 260
         }
       ],
@@ -3766,6 +3802,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -3776,6 +3813,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -3786,6 +3824,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -3796,6 +3835,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -3806,6 +3846,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -3816,6 +3857,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -3972,6 +4014,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -3982,6 +4025,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -3992,6 +4036,7 @@ window.X4KbData = {
           "section": "病期病態",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -4002,6 +4047,7 @@ window.X4KbData = {
           "section": "病期病態",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -4012,6 +4058,7 @@ window.X4KbData = {
           "section": "病期病態",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -4022,6 +4069,7 @@ window.X4KbData = {
           "section": "病期病態",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -4032,6 +4080,7 @@ window.X4KbData = {
           "section": "病期病態",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -4162,6 +4211,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -4172,6 +4222,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -4182,6 +4233,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -4192,6 +4244,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -4202,6 +4255,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -4212,6 +4266,7 @@ window.X4KbData = {
           "section": "病期病態",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -4222,6 +4277,7 @@ window.X4KbData = {
           "section": "病期病態",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -4498,6 +4554,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 329
         },
         {
@@ -4507,6 +4564,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 329
         },
         {
@@ -4516,6 +4574,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "page": 329
         }
       ],
@@ -4561,6 +4620,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -4571,6 +4631,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -4581,6 +4642,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -4591,6 +4653,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -4740,6 +4803,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -4750,6 +4814,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -4760,6 +4825,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -4770,6 +4836,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -4908,6 +4975,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -4918,6 +4986,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -4928,6 +4997,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -4938,6 +5008,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -4948,6 +5019,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -5073,6 +5145,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 255
         },
         {
@@ -5082,6 +5155,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 255
         },
         {
@@ -5091,6 +5165,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 255
         },
         {
@@ -5100,6 +5175,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 255
         }
       ],
@@ -5155,6 +5231,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -5165,6 +5242,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -5175,6 +5253,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -5499,6 +5578,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -5509,6 +5589,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -5519,6 +5600,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -5529,6 +5611,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -5680,6 +5763,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -5690,6 +5774,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -5819,6 +5904,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -5829,6 +5915,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -5839,6 +5926,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -5849,6 +5937,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -5859,6 +5948,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -5978,6 +6068,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -5988,6 +6079,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -5998,6 +6090,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -6008,6 +6101,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -6111,6 +6205,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -6121,6 +6216,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -6131,6 +6227,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -6141,6 +6238,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -6151,6 +6249,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -6161,6 +6260,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -6171,6 +6271,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -6181,6 +6282,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -6191,6 +6293,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -6261,6 +6364,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 343
         },
         {
@@ -6270,6 +6374,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 343
         },
         {
@@ -6279,6 +6384,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 343
         },
         {
@@ -6288,6 +6394,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 343
         },
         {
@@ -6297,6 +6404,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 343
         }
       ],
@@ -6341,6 +6449,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -6470,6 +6579,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -6480,6 +6590,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -6490,6 +6601,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -6627,6 +6739,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": true,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -6637,6 +6750,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -6647,6 +6761,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -6657,6 +6772,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -6667,6 +6783,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -6870,6 +6987,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -6880,6 +6998,7 @@ window.X4KbData = {
           "section": "病期病態",
           "primary": false,
           "mild": false,
+          "cardinal": true,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -6994,6 +7113,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -7004,6 +7124,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -7014,6 +7135,7 @@ window.X4KbData = {
           "section": "病期病態",
           "primary": false,
           "mild": false,
+          "cardinal": true,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -7138,6 +7260,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -7148,6 +7271,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -7158,6 +7282,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -7168,6 +7293,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -7178,6 +7304,7 @@ window.X4KbData = {
           "section": "病期病態",
           "primary": false,
           "mild": false,
+          "cardinal": true,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -7188,6 +7315,7 @@ window.X4KbData = {
           "section": "病期病態",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -7198,6 +7326,7 @@ window.X4KbData = {
           "section": "病期病態",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -7208,6 +7337,7 @@ window.X4KbData = {
           "section": "病期病態",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -7493,6 +7623,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -7503,6 +7634,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -7513,6 +7645,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -7523,6 +7656,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -7533,6 +7667,7 @@ window.X4KbData = {
           "section": "病期病態",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -7700,6 +7835,7 @@ window.X4KbData = {
           "section": "病期病態",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -7854,6 +7990,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 301
         },
         {
@@ -7863,6 +8000,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "page": 301
         }
       ],
@@ -8155,6 +8293,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -8165,6 +8304,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -8175,6 +8315,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -8185,6 +8326,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -8195,6 +8337,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -8319,6 +8462,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -8329,6 +8473,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -8339,6 +8484,7 @@ window.X4KbData = {
           "section": "病期病態",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -8349,6 +8495,7 @@ window.X4KbData = {
           "section": "病期病態",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -8359,6 +8506,7 @@ window.X4KbData = {
           "section": "病期病態",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -8464,6 +8612,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -8474,6 +8623,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -8484,6 +8634,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -8494,6 +8645,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -8640,6 +8792,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 321
         },
         {
@@ -8649,6 +8802,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 321
         }
       ],
@@ -8818,6 +8972,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -9057,6 +9212,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -9067,6 +9223,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -9183,6 +9340,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -9193,6 +9351,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -9203,6 +9362,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -9213,6 +9373,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -9302,6 +9463,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -9312,6 +9474,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -9322,6 +9485,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -9332,6 +9496,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -9342,6 +9507,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -9352,6 +9518,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -9467,6 +9634,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -9477,6 +9645,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -9487,6 +9656,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -9497,6 +9667,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -9507,6 +9678,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -9517,6 +9689,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -9527,6 +9700,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -9537,6 +9711,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -9547,6 +9722,7 @@ window.X4KbData = {
           "section": "病期病態",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -9644,6 +9820,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -9654,6 +9831,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -9664,6 +9842,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -9674,6 +9853,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -9684,6 +9864,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -9694,6 +9875,7 @@ window.X4KbData = {
           "section": "病期病態",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -9767,6 +9949,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 241
         },
         {
@@ -9776,6 +9959,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 241
         },
         {
@@ -9785,6 +9969,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "page": 241
         }
       ],
@@ -9891,6 +10076,7 @@ window.X4KbData = {
           "section": "病期病態",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -9901,6 +10087,7 @@ window.X4KbData = {
           "section": "病期病態",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -9960,6 +10147,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 272
         },
         {
@@ -9969,6 +10157,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 272
         },
         {
@@ -9978,6 +10167,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 272
         },
         {
@@ -9987,6 +10177,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 272
         },
         {
@@ -9996,6 +10187,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 272
         },
         {
@@ -10005,6 +10197,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 272
         },
         {
@@ -10014,6 +10207,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 272
         }
       ],
@@ -10059,6 +10253,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -10069,6 +10264,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -10079,6 +10275,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -10089,6 +10286,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -10179,6 +10377,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 288
         },
         {
@@ -10188,6 +10387,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 288
         },
         {
@@ -10197,6 +10397,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 288
         },
         {
@@ -10206,6 +10407,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 288
         },
         {
@@ -10215,6 +10417,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 288
         },
         {
@@ -10224,6 +10427,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 288
         },
         {
@@ -10233,6 +10437,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 288
         },
         {
@@ -10242,6 +10447,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "page": 288
         },
         {
@@ -10251,6 +10457,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "page": 288
         },
         {
@@ -10260,6 +10467,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "page": 288
         }
       ],
@@ -10322,6 +10530,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -10332,6 +10541,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -10342,6 +10552,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -10441,6 +10652,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 318
         },
         {
@@ -10450,6 +10662,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 318
         }
       ],
@@ -10489,6 +10702,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -10594,6 +10808,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -10604,6 +10819,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -10614,6 +10830,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -10624,6 +10841,7 @@ window.X4KbData = {
           "section": "病期病態",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -10723,6 +10941,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -10733,6 +10952,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -11091,6 +11311,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -11101,6 +11322,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -11111,6 +11333,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -11121,6 +11344,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -11131,6 +11355,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -11141,6 +11366,7 @@ window.X4KbData = {
           "section": "病期病態",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -11231,6 +11457,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -11241,6 +11468,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -11251,6 +11479,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -11311,6 +11540,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 279
         },
         {
@@ -11320,6 +11550,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 279
         },
         {
@@ -11329,6 +11560,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 279
         },
         {
@@ -11338,6 +11570,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 279
         },
         {
@@ -11347,6 +11580,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 279
         },
         {
@@ -11356,6 +11590,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": false,
           "mild": false,
+          "cardinal": true,
           "page": 279
         },
         {
@@ -11365,6 +11600,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "page": 279
         },
         {
@@ -11374,6 +11610,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "page": 279
         },
         {
@@ -11383,6 +11620,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "page": 279
         },
         {
@@ -11392,6 +11630,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "page": 279
         }
       ],
@@ -11510,6 +11749,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 284
         },
         {
@@ -11519,6 +11759,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 284
         },
         {
@@ -11528,6 +11769,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 284
         },
         {
@@ -11537,6 +11779,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": false,
           "mild": false,
+          "cardinal": true,
           "page": 284
         },
         {
@@ -11546,6 +11789,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "page": 284
         },
         {
@@ -11555,6 +11799,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "page": 284
         },
         {
@@ -11564,6 +11809,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "page": 284
         }
       ],
@@ -11612,6 +11858,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -11694,6 +11941,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 331
         },
         {
@@ -11703,6 +11951,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 331
         },
         {
@@ -11712,6 +11961,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 331
         },
         {
@@ -11721,6 +11971,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 331
         },
         {
@@ -11730,6 +11981,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "page": 331
         },
         {
@@ -11739,6 +11991,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "page": 331
         }
       ],
@@ -11950,6 +12203,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 303
         },
         {
@@ -11959,6 +12213,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 303
         },
         {
@@ -11968,6 +12223,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 303
         },
         {
@@ -11977,6 +12233,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "page": 303
         }
       ],
@@ -12104,6 +12361,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 238
         },
         {
@@ -12113,6 +12371,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 238
         },
         {
@@ -12122,6 +12381,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 238
         },
         {
@@ -12131,6 +12391,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 238
         },
         {
@@ -12140,6 +12401,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 238
         },
         {
@@ -12149,6 +12411,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 238
         },
         {
@@ -12158,6 +12421,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 238
         },
         {
@@ -12167,6 +12431,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "page": 238
         }
       ],
@@ -12213,6 +12478,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -12309,6 +12575,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -12319,6 +12586,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -12329,6 +12597,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -12339,6 +12608,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -12349,6 +12619,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -12359,6 +12630,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -12369,6 +12641,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -12379,6 +12652,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -12389,6 +12663,7 @@ window.X4KbData = {
           "section": "病期病態",
           "primary": false,
           "mild": true,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -12588,6 +12863,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 283
         },
         {
@@ -12597,6 +12873,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 283
         },
         {
@@ -12606,6 +12883,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 283
         },
         {
@@ -12615,6 +12893,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 283
         },
         {
@@ -12624,6 +12903,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 283
         },
         {
@@ -12633,6 +12913,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "page": 283
         }
       ],
@@ -12681,6 +12962,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -12785,6 +13067,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 270
         },
         {
@@ -12794,6 +13077,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 270
         },
         {
@@ -12803,6 +13087,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 270
         },
         {
@@ -12812,6 +13097,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 270
         }
       ],
@@ -12857,6 +13143,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -12867,6 +13154,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -12877,6 +13165,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -12963,6 +13252,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -12973,6 +13263,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -12983,6 +13274,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -12993,6 +13285,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -13052,6 +13345,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": true,
+          "cardinal": false,
           "page": 258
         },
         {
@@ -13061,6 +13355,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 258
         },
         {
@@ -13070,6 +13365,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": false,
           "mild": true,
+          "cardinal": false,
           "page": 258
         }
       ],
@@ -13115,6 +13411,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -13175,6 +13472,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 326
         },
         {
@@ -13184,6 +13482,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 326
         },
         {
@@ -13193,6 +13492,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 326
         },
         {
@@ -13202,6 +13502,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 326
         },
         {
@@ -13211,6 +13512,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 326
         },
         {
@@ -13220,6 +13522,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 326
         },
         {
@@ -13229,6 +13532,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 326
         },
         {
@@ -13238,6 +13542,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 326
         },
         {
@@ -13247,6 +13552,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "page": 326
         },
         {
@@ -13256,6 +13562,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "page": 326
         }
       ],
@@ -13307,6 +13614,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -13317,6 +13625,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -13327,6 +13636,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -13337,6 +13647,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -13442,6 +13753,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -13452,6 +13764,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -13462,6 +13775,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -13472,6 +13786,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -13482,6 +13797,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -13492,6 +13808,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -13502,6 +13819,7 @@ window.X4KbData = {
           "section": "病期病態",
           "primary": false,
           "mild": true,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -13572,6 +13890,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "page": 290
         }
       ],
@@ -13660,6 +13979,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "page": 311
         }
       ],
@@ -13806,6 +14126,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -13816,16 +14137,18 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
           "id": "S-MUSCLE-SPASM",
           "canonical": "肌肉拘攣",
-          "term": "痙攣",
+          "term": "腹直肌拘攣",
           "page": 316,
           "section": "病期病態",
           "primary": false,
           "mild": false,
+          "cardinal": true,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -13943,6 +14266,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 271
         },
         {
@@ -13952,6 +14276,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 271
         },
         {
@@ -13961,6 +14286,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 271
         },
         {
@@ -13970,6 +14296,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 271
         },
         {
@@ -13979,6 +14306,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": false,
           "mild": false,
+          "cardinal": true,
           "page": 271
         }
       ],
@@ -14180,6 +14508,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -14190,6 +14519,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -14200,6 +14530,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -14210,6 +14541,7 @@ window.X4KbData = {
           "section": "病期病態",
           "primary": false,
           "mild": false,
+          "cardinal": true,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -14349,6 +14681,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -14359,6 +14692,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -14369,6 +14703,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -14379,6 +14714,7 @@ window.X4KbData = {
           "section": "病期病態",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -14505,6 +14841,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -14515,6 +14852,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -14525,6 +14863,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -14535,6 +14874,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -14545,6 +14885,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -14555,6 +14896,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -14565,6 +14907,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -14575,6 +14918,7 @@ window.X4KbData = {
           "section": "病期病態",
           "primary": false,
           "mild": false,
+          "cardinal": true,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -14695,6 +15039,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -14705,6 +15050,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -14715,6 +15061,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -14725,6 +15072,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -14735,6 +15083,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -14745,6 +15094,7 @@ window.X4KbData = {
           "section": "病期病態",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -14826,6 +15176,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 275
         },
         {
@@ -14835,6 +15186,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 275
         },
         {
@@ -14844,6 +15196,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 275
         },
         {
@@ -14853,6 +15206,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 275
         },
         {
@@ -14862,6 +15216,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 275
         },
         {
@@ -14871,6 +15226,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 275
         },
         {
@@ -14880,6 +15236,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "page": 275
         }
       ],
@@ -14987,6 +15344,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 335
         },
         {
@@ -14996,6 +15354,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 335
         },
         {
@@ -15005,6 +15364,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 335
         },
         {
@@ -15014,6 +15374,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 335
         },
         {
@@ -15023,6 +15384,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 335
         },
         {
@@ -15032,6 +15394,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 335
         },
         {
@@ -15041,6 +15404,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 335
         },
         {
@@ -15050,6 +15414,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 335
         }
       ],
@@ -15100,6 +15465,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -15110,6 +15476,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -15120,6 +15487,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -15214,6 +15582,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 285
         },
         {
@@ -15223,6 +15592,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 285
         }
       ],
@@ -15268,6 +15638,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -15285,6 +15656,11 @@ window.X4KbData = {
         {
           "id": "S-NIGHT-SWEAT",
           "canonical": "盜汗",
+          "page": 285
+        },
+        {
+          "id": "S-MUSCLE-SPASM",
+          "canonical": "肌肉拘攣",
           "page": 285
         }
       ],
@@ -15343,6 +15719,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": true,
           "page": 254
         },
         {
@@ -15352,6 +15729,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 254
         },
         {
@@ -15361,6 +15739,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 254
         },
         {
@@ -15370,6 +15749,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 254
         }
       ],
@@ -15414,6 +15794,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -15424,6 +15805,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -15594,6 +15976,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -15604,6 +15987,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -15614,6 +15998,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -15624,6 +16009,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -15634,6 +16020,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -15714,6 +16101,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 281
         },
         {
@@ -15723,6 +16111,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 281
         },
         {
@@ -15732,6 +16121,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 281
         },
         {
@@ -15741,6 +16131,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 281
         },
         {
@@ -15750,6 +16141,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": false,
           "mild": true,
+          "cardinal": false,
           "page": 281
         }
       ],
@@ -16127,6 +16519,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -16137,6 +16530,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -16147,6 +16541,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -16260,6 +16655,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -16270,6 +16666,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -16280,6 +16677,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -16290,6 +16688,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -16300,6 +16699,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -16310,6 +16710,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -16320,6 +16721,7 @@ window.X4KbData = {
           "section": "病期病態",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -16440,6 +16842,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -16533,6 +16936,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 239
         },
         {
@@ -16542,6 +16946,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": true,
+          "cardinal": false,
           "page": 239
         },
         {
@@ -16551,6 +16956,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 239
         }
       ],
@@ -16597,6 +17003,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -16607,6 +17014,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -16617,6 +17025,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -16748,6 +17157,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -16758,6 +17168,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -16768,6 +17179,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -16854,6 +17266,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 309
         },
         {
@@ -16863,6 +17276,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 309
         },
         {
@@ -16872,6 +17286,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": true,
+          "cardinal": false,
           "page": 309
         },
         {
@@ -16881,6 +17296,17 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": false,
           "mild": false,
+          "cardinal": false,
+          "page": 309
+        },
+        {
+          "raw": "心下痞硬",
+          "id": "S-EPIGASTRIC-RESISTANCE",
+          "negated": false,
+          "matchType": "book-physician",
+          "primary": false,
+          "mild": false,
+          "cardinal": true,
           "page": 309
         },
         {
@@ -16890,6 +17316,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "page": 309
         }
       ],
@@ -16908,6 +17335,7 @@ window.X4KbData = {
         "S-URINARY-PAIN",
         "S-URINARY-FREQUENCY",
         "S-DYSURIA",
+        "S-EPIGASTRIC-RESISTANCE",
         "S-INSOMNIA"
       ],
       "formulaPattern": [
@@ -17005,6 +17433,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 321
         },
         {
@@ -17014,6 +17443,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "page": 321
         },
         {
@@ -17023,6 +17453,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "page": 321
         },
         {
@@ -17032,6 +17463,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "page": 321
         }
       ],
@@ -17208,6 +17640,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 283
         }
       ],
@@ -17249,6 +17682,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -17259,6 +17693,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -17269,6 +17704,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -17402,6 +17838,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -17659,6 +18096,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -17669,6 +18107,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -17679,6 +18118,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -17689,6 +18129,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -17699,6 +18140,7 @@ window.X4KbData = {
           "section": "病期病態",
           "primary": false,
           "mild": false,
+          "cardinal": true,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -17709,6 +18151,7 @@ window.X4KbData = {
           "section": "病期病態",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -17808,6 +18251,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -17818,6 +18262,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -17828,6 +18273,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -17838,6 +18284,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -17848,6 +18295,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -17858,6 +18306,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -17868,6 +18317,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -17977,6 +18427,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -17987,6 +18438,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -18068,6 +18520,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "page": 302
         },
         {
@@ -18077,6 +18530,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "page": 302
         },
         {
@@ -18086,6 +18540,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "page": 302
         }
       ],
@@ -18128,6 +18583,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -18298,6 +18754,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -18308,6 +18765,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -18318,6 +18776,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -18328,6 +18787,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -18338,6 +18798,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -18398,6 +18859,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 351
         },
         {
@@ -18407,6 +18869,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 351
         },
         {
@@ -18416,6 +18879,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 351
         },
         {
@@ -18425,6 +18889,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 351
         },
         {
@@ -18434,6 +18899,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "page": 351
         }
       ],
@@ -18470,6 +18936,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -18698,6 +19165,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -18708,6 +19176,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -18718,6 +19187,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -18728,6 +19198,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -18738,6 +19209,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -18748,6 +19220,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -18758,6 +19231,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -18768,6 +19242,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -18778,6 +19253,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -18788,6 +19264,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -18798,6 +19275,7 @@ window.X4KbData = {
           "section": "病期病態",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -18907,6 +19385,7 @@ window.X4KbData = {
           "section": "適應病症",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -19166,6 +19645,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -19176,6 +19656,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -19186,6 +19667,7 @@ window.X4KbData = {
           "section": "病期病態",
           "primary": false,
           "mild": false,
+          "cardinal": true,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -19380,6 +19862,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -19390,6 +19873,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -19400,6 +19884,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": true,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -19410,6 +19895,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -19420,6 +19906,7 @@ window.X4KbData = {
           "section": "證候特徵",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -19430,6 +19917,7 @@ window.X4KbData = {
           "section": "病期病態",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -19440,6 +19928,7 @@ window.X4KbData = {
           "section": "病期病態",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -19518,6 +20007,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 325
         },
         {
@@ -19527,6 +20017,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 325
         },
         {
@@ -19536,6 +20027,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 325
         },
         {
@@ -19545,6 +20037,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 325
         },
         {
@@ -19554,6 +20047,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 325
         },
         {
@@ -19563,6 +20057,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 325
         },
         {
@@ -19572,6 +20067,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": true,
           "mild": false,
+          "cardinal": false,
           "page": 325
         },
         {
@@ -19581,6 +20077,7 @@ window.X4KbData = {
           "matchType": "book-physician",
           "primary": false,
           "mild": false,
+          "cardinal": false,
           "page": 325
         }
       ],
@@ -19684,7 +20181,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": true
+          "mild": true,
+          "cardinal": false
         },
         {
           "raw": "便秘",
@@ -19692,7 +20190,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "瘙癢",
@@ -19700,7 +20199,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "痔",
@@ -19708,7 +20208,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -19768,7 +20269,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "肩凝",
@@ -19776,7 +20278,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "熱感",
@@ -19784,7 +20287,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -19842,7 +20346,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "皮疹",
@@ -19850,7 +20355,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "化膿",
@@ -19858,7 +20364,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "胸脅苦滿",
@@ -19866,7 +20373,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": true
         }
       ],
       "herbs": [],
@@ -19926,7 +20434,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "呼吸困難",
@@ -19934,7 +20443,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "胸痛",
@@ -19942,7 +20452,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -20000,7 +20511,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "熱感",
@@ -20008,7 +20520,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "失眠",
@@ -20016,7 +20529,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "瘙癢",
@@ -20024,7 +20538,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "口渴",
@@ -20032,7 +20547,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "皮疹",
@@ -20040,7 +20556,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "發熱",
@@ -20048,7 +20565,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -20111,7 +20629,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "便秘",
@@ -20119,7 +20638,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "失眠",
@@ -20127,7 +20647,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "口渴",
@@ -20135,7 +20656,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [
@@ -20200,7 +20722,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "關節痛",
@@ -20208,7 +20731,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "肌肉痛",
@@ -20216,7 +20740,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "咳嗽",
@@ -20224,7 +20749,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "口渴",
@@ -20232,7 +20758,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -20292,7 +20819,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "體力低下",
@@ -20300,7 +20828,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "腹痛",
@@ -20308,7 +20837,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "發冷",
@@ -20316,7 +20846,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "腹力軟弱",
@@ -20324,7 +20855,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [
@@ -20389,7 +20921,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": true
         },
         {
           "raw": "便秘",
@@ -20397,7 +20930,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "眩暈",
@@ -20405,7 +20939,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "頭痛",
@@ -20413,7 +20948,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "頭重",
@@ -20421,7 +20957,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "噁心",
@@ -20429,7 +20966,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "肩凝",
@@ -20437,7 +20975,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "耳鳴",
@@ -20445,7 +20984,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "嘔吐",
@@ -20453,7 +20993,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "神經過敏",
@@ -20461,7 +21002,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "烘熱感",
@@ -20469,7 +21011,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "熱感",
@@ -20477,7 +21020,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [
@@ -20553,7 +21097,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -20610,7 +21155,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "腰痛",
@@ -20618,7 +21164,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "神經痛",
@@ -20626,7 +21173,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "嘔吐",
@@ -20634,7 +21182,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -20696,7 +21245,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "精神不安",
@@ -20704,7 +21254,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "精神症狀",
@@ -20712,7 +21263,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "便秘",
@@ -20720,7 +21272,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "發熱",
@@ -20728,7 +21281,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -20789,7 +21343,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "胸脅苦滿",
@@ -20797,7 +21352,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": true
         },
         {
           "raw": "虛弱",
@@ -20805,7 +21361,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "發熱",
@@ -20813,7 +21370,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "心下痞硬",
@@ -20821,7 +21379,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": true
+          "mild": true,
+          "cardinal": false
         },
         {
           "raw": "口苦",
@@ -20903,7 +21462,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "肌肉痛",
@@ -20911,7 +21471,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "頭痛",
@@ -20919,7 +21480,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "鼻塞",
@@ -20927,7 +21489,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -20986,7 +21549,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "自然汗出",
@@ -20994,7 +21558,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "咳嗽",
@@ -21002,7 +21567,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "口渴",
@@ -21010,7 +21576,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "顏面潮紅",
@@ -21018,7 +21585,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "發熱",
@@ -21026,7 +21594,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "熱感",
@@ -21034,7 +21603,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -21097,7 +21667,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "排尿痛",
@@ -21105,7 +21676,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "發冷",
@@ -21113,7 +21685,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "尿頻",
@@ -21121,7 +21694,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "炎症",
@@ -21129,7 +21703,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -21190,7 +21765,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "月經不調",
@@ -21198,7 +21774,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "項背強凝",
@@ -21206,7 +21783,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "關節痛",
@@ -21214,7 +21792,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "發冷",
@@ -21222,7 +21801,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "痛經",
@@ -21230,7 +21810,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "頭痛",
@@ -21238,7 +21819,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "烘熱",
@@ -21246,7 +21828,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "噁心",
@@ -21254,7 +21837,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "嘔吐",
@@ -21262,7 +21846,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "上熱下寒",
@@ -21270,7 +21855,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -21336,7 +21922,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "食慾不振",
@@ -21344,7 +21931,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "抑鬱傾向",
@@ -21352,7 +21940,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "頭重",
@@ -21360,7 +21949,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "腰痛",
@@ -21368,7 +21958,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -21425,7 +22016,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "尿量減少",
@@ -21433,7 +22025,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "腹水",
@@ -21441,7 +22034,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "便秘",
@@ -21449,7 +22043,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "浮腫",
@@ -21457,7 +22052,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -21514,7 +22110,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "發熱",
@@ -21522,7 +22119,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "頭痛",
@@ -21530,7 +22128,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -21588,7 +22187,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "貧血",
@@ -21596,7 +22196,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "失眠",
@@ -21604,7 +22205,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "心下痞硬",
@@ -21612,7 +22214,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": true
         }
       ],
       "herbs": [],
@@ -21671,7 +22274,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "尿量減少",
@@ -21679,7 +22283,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "血壓低",
@@ -21687,7 +22292,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "腹瀉",
@@ -21695,7 +22301,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -21754,7 +22361,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "炎症",
@@ -21762,7 +22370,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -21821,7 +22430,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "失眠",
@@ -21829,7 +22439,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "小兒夜啼",
@@ -21837,7 +22448,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -21895,7 +22507,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "熱感",
@@ -21903,7 +22516,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "口渴",
@@ -21911,7 +22525,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -21970,7 +22585,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "口渴",
@@ -21978,7 +22594,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -22036,7 +22653,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "口渴",
@@ -22044,7 +22662,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -22102,7 +22721,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "神經痛",
@@ -22110,7 +22730,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -22169,7 +22790,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "胸脅苦滿",
@@ -22177,7 +22799,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "壓痛",
@@ -22185,7 +22808,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "咳嗽",
@@ -22193,7 +22817,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "病後",
@@ -22201,7 +22826,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "微熱",
@@ -22209,7 +22835,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "失眠",
@@ -22217,7 +22844,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "腹部膨滿感",
@@ -22225,7 +22853,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "食欲不振",
@@ -22233,7 +22862,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "烘熱感",
@@ -22241,7 +22871,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "熱感",
@@ -22249,7 +22880,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -22316,7 +22948,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "月經不調",
@@ -22324,7 +22957,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "面色欠佳",
@@ -22332,7 +22966,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "虛弱",
@@ -22340,7 +22975,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": true
+          "mild": true,
+          "cardinal": false
         },
         {
           "raw": "頭痛",
@@ -22348,7 +22984,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "失眠",
@@ -22356,7 +22993,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "耳鳴",
@@ -22364,7 +23002,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -22426,7 +23065,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "鼻塞",
@@ -22434,7 +23074,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "炎症",
@@ -22442,7 +23083,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "口渴",
@@ -22450,7 +23092,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -22510,7 +23153,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "下肢發冷",
@@ -22518,7 +23162,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "心下痞硬",
@@ -22526,7 +23171,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": true
         },
         {
           "raw": "肩凝",
@@ -22534,7 +23180,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -22593,7 +23240,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "化膿",
@@ -22601,7 +23249,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "結痂",
@@ -22609,7 +23258,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "皮疹",
@@ -22617,7 +23267,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "炎症",
@@ -22625,7 +23276,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -22686,7 +23338,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "體力低下",
@@ -22694,7 +23347,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "尿量減少",
@@ -22702,7 +23356,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "關節痛",
@@ -22710,7 +23365,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "身體痛",
@@ -22718,7 +23374,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "氣短",
@@ -22726,7 +23383,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "浮腫",
@@ -22734,7 +23392,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "水樣腹瀉",
@@ -22742,7 +23401,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "腹瀉",
@@ -22750,7 +23410,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "嗜睡",
@@ -22758,7 +23419,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "自汗",
@@ -22766,7 +23428,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -22833,7 +23496,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "胃腸虛弱",
@@ -22841,7 +23505,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "面色差",
@@ -22849,7 +23514,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "胃痛",
@@ -22857,7 +23523,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "炎症",
@@ -22865,7 +23532,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "頭重",
@@ -22873,7 +23541,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "噁心",
@@ -22881,7 +23550,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "心下痞硬",
@@ -22889,7 +23559,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": true
         },
         {
           "raw": "發冷",
@@ -22897,7 +23568,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -22961,7 +23633,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "發冷",
@@ -22969,7 +23642,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -23026,7 +23700,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "顏面潮紅",
@@ -23034,7 +23709,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "頭痛",
@@ -23042,7 +23718,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -23097,7 +23774,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "微熱",
@@ -23105,7 +23783,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "頭痛",
@@ -23113,7 +23792,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "噁心",
@@ -23121,7 +23801,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "嘔吐",
@@ -23129,7 +23810,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -23189,7 +23871,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "便秘",
@@ -23197,7 +23880,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "噁心",
@@ -23205,7 +23889,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "嘔吐",
@@ -23213,7 +23898,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -23272,7 +23958,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "胸內苦悶感",
@@ -23280,7 +23967,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "神經痛",
@@ -23288,7 +23976,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "哮喘",
@@ -23296,7 +23985,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "抑鬱",
@@ -23304,7 +23994,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -23365,7 +24056,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "抑鬱",
@@ -23373,7 +24065,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "頭痛",
@@ -23381,7 +24074,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "頭重",
@@ -23389,7 +24083,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "噁心",
@@ -23397,7 +24092,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "嘔吐",
@@ -23405,7 +24101,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -23509,7 +24206,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "胸脅苦滿",
@@ -23517,7 +24215,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": true
         },
         {
           "raw": "惡寒",
@@ -23525,7 +24224,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "發熱",
@@ -23533,7 +24233,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "津液不足",
@@ -23541,7 +24242,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "顏面潮紅",
@@ -23549,7 +24251,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "舌尖紅",
@@ -23557,7 +24260,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -23619,7 +24323,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "精神不安",
@@ -23627,7 +24332,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "食慾不振",
@@ -23635,7 +24341,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "胸脅苦滿",
@@ -23643,7 +24350,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": true
         },
         {
           "raw": "關節痛",
@@ -23651,7 +24359,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "腹痛",
@@ -23659,7 +24368,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "壓痛",
@@ -23667,7 +24377,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "惡寒",
@@ -23675,7 +24386,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "發熱",
@@ -23683,7 +24395,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "頭痛",
@@ -23691,7 +24404,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "失眠",
@@ -23699,7 +24413,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "口苦",
@@ -23707,7 +24422,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "噁心",
@@ -23715,7 +24431,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -23784,7 +24501,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "裡急後重",
@@ -23792,7 +24510,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "腹痛",
@@ -23800,7 +24519,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "便秘",
@@ -23808,7 +24528,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "腹瀉",
@@ -23816,15 +24537,17 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
-          "raw": "痙攣",
+          "raw": "腹直肌拘攣",
           "id": "S-MUSCLE-SPASM",
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": true
         }
       ],
       "herbs": [],
@@ -23885,7 +24608,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "胃腸虛弱",
@@ -23893,7 +24617,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "裡急後重",
@@ -23901,7 +24626,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "水樣便",
@@ -23909,7 +24635,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "振水音",
@@ -23917,7 +24644,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "腹痛",
@@ -23925,7 +24653,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "腹瀉",
@@ -23933,7 +24662,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "軟便",
@@ -23941,7 +24671,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "腹直肌拘攣",
@@ -23949,7 +24680,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": true
         }
       ],
       "herbs": [
@@ -24019,7 +24751,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "尿量減少",
@@ -24027,7 +24760,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "惡寒",
@@ -24035,7 +24769,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -24093,7 +24828,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "身體疼痛",
@@ -24101,7 +24837,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "咳喘",
@@ -24109,7 +24846,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "惡風",
@@ -24117,7 +24855,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "發熱",
@@ -24125,7 +24864,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "頭痛",
@@ -24133,7 +24873,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "自汗",
@@ -24141,7 +24882,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "脈浮",
@@ -24149,7 +24891,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "炎症",
@@ -24157,7 +24900,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -24221,7 +24965,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "發冷",
@@ -24229,7 +24974,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "虛弱",
@@ -24237,7 +24983,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -24295,7 +25042,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "惡寒",
@@ -24303,7 +25051,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "發熱",
@@ -24311,7 +25060,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "自汗",
@@ -24319,7 +25069,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "脈浮",
@@ -24327,7 +25078,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -24387,7 +25139,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "神經痛",
@@ -24395,7 +25148,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "發冷",
@@ -24403,7 +25157,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -24462,7 +25217,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "月經異常",
@@ -24470,7 +25226,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "肌膚甲錯",
@@ -24478,7 +25235,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "烘熱感",
@@ -24486,7 +25244,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "壓痛",
@@ -24494,7 +25253,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "出血",
@@ -24502,7 +25262,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "眩暈",
@@ -24510,7 +25271,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "頭痛",
@@ -24518,7 +25280,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "熱感",
@@ -24526,7 +25289,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "炎症",
@@ -24534,7 +25298,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "排膿",
@@ -24542,7 +25307,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "肩凝",
@@ -24550,7 +25316,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "皮疹",
@@ -24558,7 +25325,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "疣",
@@ -24566,7 +25334,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -24635,7 +25404,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "咳嗽",
@@ -24643,7 +25413,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "發熱",
@@ -24651,7 +25422,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "頭痛",
@@ -24659,7 +25431,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "熱感",
@@ -24667,7 +25440,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "瘙癢",
@@ -24675,7 +25449,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "咽痛",
@@ -24683,7 +25458,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "自汗",
@@ -24691,7 +25467,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -24754,7 +25531,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "惡寒",
@@ -24762,7 +25540,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "發熱",
@@ -24770,7 +25549,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "頭痛",
@@ -24778,7 +25558,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "汗出",
@@ -24786,7 +25567,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "頭重感",
@@ -24794,7 +25576,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "烘熱感",
@@ -24802,7 +25585,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "熱感",
@@ -24810,7 +25594,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [
@@ -24879,7 +25664,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "腹痛",
@@ -24887,7 +25673,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "腹瀉",
@@ -24895,7 +25682,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -24953,7 +25741,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "發熱",
@@ -24961,7 +25750,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "熱感",
@@ -24969,7 +25759,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "炎症",
@@ -24977,7 +25768,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "化膿",
@@ -24985,7 +25777,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "口渴",
@@ -24993,7 +25786,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -25054,7 +25848,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "發熱",
@@ -25062,7 +25857,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": true
+          "mild": true,
+          "cardinal": false
         },
         {
           "raw": "頭痛",
@@ -25070,7 +25866,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "肩凝",
@@ -25078,7 +25875,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -25138,7 +25936,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "熱感",
@@ -25146,7 +25945,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "瘙癢",
@@ -25154,7 +25954,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "口渴",
@@ -25162,7 +25963,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "痂皮",
@@ -25170,7 +25972,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -25231,7 +26034,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "四肢發冷",
@@ -25239,7 +26043,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "關節痛",
@@ -25247,7 +26052,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "腹痛",
@@ -25255,7 +26061,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "汗出",
@@ -25263,7 +26070,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -25323,7 +26131,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "關節痛",
@@ -25331,7 +26140,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "腹痛",
@@ -25339,7 +26149,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "胸痛",
@@ -25347,7 +26158,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -25406,7 +26218,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "抑鬱傾向",
@@ -25414,7 +26227,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "知覺",
@@ -25422,7 +26236,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -25481,7 +26296,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "精神不安",
@@ -25489,7 +26305,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "四肢發冷",
@@ -25497,7 +26314,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "尿量減少",
@@ -25505,7 +26323,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -25564,7 +26383,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "振水音",
@@ -25572,7 +26392,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "異物感",
@@ -25580,7 +26401,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "泛酸",
@@ -25588,7 +26410,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "抑鬱",
@@ -25596,7 +26419,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "噁心",
@@ -25604,7 +26428,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "心慌",
@@ -25612,7 +26437,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "心下痞硬",
@@ -25620,7 +26446,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": true
         }
       ],
       "herbs": [],
@@ -25686,7 +26513,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "噁心",
@@ -25694,7 +26522,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "瘙癢",
@@ -25702,7 +26531,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "口渴",
@@ -25710,7 +26540,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -25770,7 +26601,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "咳嗽",
@@ -25778,7 +26610,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "虛弱",
@@ -25786,7 +26619,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "微熱",
@@ -25794,7 +26628,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "頭痛",
@@ -25802,7 +26637,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": true
+          "mild": true,
+          "cardinal": false
         },
         {
           "raw": "噁心",
@@ -25810,7 +26646,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "嘔吐",
@@ -25818,7 +26655,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -25880,7 +26718,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "瘙癢",
@@ -25888,7 +26727,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "煩躁不安",
@@ -25896,7 +26736,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "皮疹",
@@ -25904,7 +26745,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -25964,7 +26806,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "頭痛",
@@ -25972,7 +26815,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "烘熱",
@@ -25980,7 +26824,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "化膿",
@@ -25988,7 +26833,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "顏面潮紅",
@@ -25996,7 +26842,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "炎症",
@@ -26004,7 +26851,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -26066,7 +26914,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "哮喘",
@@ -26074,7 +26923,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -26131,7 +26981,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "四肢發冷",
@@ -26139,7 +26990,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "血壓低",
@@ -26147,7 +26999,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "腹瀉",
@@ -26155,7 +27008,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -26211,7 +27065,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "病後",
@@ -26219,7 +27074,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "腹部膨滿感",
@@ -26227,7 +27083,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -26285,7 +27142,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "自然汗出",
@@ -26293,7 +27151,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "咳嗽",
@@ -26301,7 +27160,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "發熱",
@@ -26309,7 +27169,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "熱感",
@@ -26317,7 +27178,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "口渴",
@@ -26325,7 +27187,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -26386,7 +27249,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "肌膚甲錯",
@@ -26394,7 +27258,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "肌肉痛",
@@ -26402,7 +27267,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "浮腫",
@@ -26410,7 +27276,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "汗出",
@@ -26418,7 +27285,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": true
+          "mild": true,
+          "cardinal": false
         },
         {
           "raw": "尿量減少",
@@ -26426,7 +27294,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "熱感",
@@ -26434,7 +27303,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -26498,7 +27368,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "咳嗽",
@@ -26506,7 +27377,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "哮喘",
@@ -26514,7 +27386,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "虛弱",
@@ -26522,7 +27395,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -26581,7 +27455,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "關節痛",
@@ -26589,7 +27464,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "喘鳴",
@@ -26597,7 +27473,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "惡寒",
@@ -26605,7 +27482,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "咳嗽",
@@ -26613,7 +27491,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "發熱",
@@ -26621,7 +27500,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "頭重",
@@ -26629,7 +27509,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "腰痛",
@@ -26637,7 +27518,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "鼻塞",
@@ -26645,7 +27527,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "出血",
@@ -26653,7 +27536,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "脈浮",
@@ -26661,7 +27545,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "無汗",
@@ -26753,7 +27638,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "痔",
@@ -26761,7 +27647,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -26815,7 +27702,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "腹瀉",
@@ -26823,7 +27711,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "發熱",
@@ -26831,7 +27720,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "頭痛",
@@ -26839,7 +27729,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "口渴",
@@ -26847,7 +27738,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "嘔吐",
@@ -26855,7 +27747,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "裡急後重",
@@ -26863,7 +27756,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "腹痛",
@@ -26871,7 +27765,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "口苦",
@@ -26879,7 +27774,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "脈浮",
@@ -26887,7 +27783,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -26953,7 +27850,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "蟻行感",
@@ -26961,7 +27859,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -27018,7 +27917,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "手足發冷",
@@ -27026,7 +27926,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "虛弱",
@@ -27034,7 +27935,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "頭痛",
@@ -27042,7 +27944,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "腰痛",
@@ -27050,7 +27953,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "噁心",
@@ -27058,7 +27962,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "嘔吐",
@@ -27066,7 +27971,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "腹直肌拘攣",
@@ -27074,7 +27980,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": true
         }
       ],
       "herbs": [],
@@ -27137,7 +28044,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "面色差",
@@ -27145,7 +28053,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "貧血",
@@ -27153,7 +28062,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "發冷",
@@ -27161,7 +28071,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "痛經",
@@ -27169,7 +28080,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "頭痛",
@@ -27177,7 +28089,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "頭重",
@@ -27185,7 +28098,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "肩凝",
@@ -27193,7 +28107,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "耳鳴",
@@ -27201,7 +28116,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -27262,7 +28178,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "腹痛",
@@ -27270,7 +28187,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "發冷",
@@ -27278,7 +28196,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -27336,7 +28255,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "神經痛",
@@ -27344,7 +28264,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "惡寒",
@@ -27352,7 +28273,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "面赤",
@@ -27360,7 +28282,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "發熱",
@@ -27368,7 +28291,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "頭痛",
@@ -27376,7 +28300,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "熱感",
@@ -27384,7 +28309,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "無自然汗出",
@@ -27392,7 +28318,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "關節腫脹",
@@ -27400,7 +28327,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -27465,7 +28393,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "頭重",
@@ -27473,7 +28402,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "鼻塞",
@@ -27481,7 +28411,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "無自然汗出",
@@ -27489,7 +28420,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -27548,7 +28480,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "腹瀉",
@@ -27556,7 +28489,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "發熱",
@@ -27564,7 +28498,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -27623,7 +28558,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "嘔吐",
@@ -27631,7 +28567,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -27689,7 +28626,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "腹痛",
@@ -27697,7 +28635,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "便秘",
@@ -27705,7 +28644,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "口內乾燥感",
@@ -27713,7 +28653,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -27773,7 +28714,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "面色不良",
@@ -27781,7 +28723,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "排尿痛",
@@ -27789,7 +28732,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "發冷",
@@ -27797,7 +28741,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": true
+          "mild": true,
+          "cardinal": false
         },
         {
           "raw": "虛弱",
@@ -27805,7 +28750,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "口渴",
@@ -27813,7 +28759,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "尿頻",
@@ -27821,7 +28768,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "手足發熱",
@@ -27829,7 +28777,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "皮膚枯燥",
@@ -27837,7 +28786,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "發熱",
@@ -27845,7 +28795,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "眠淺",
@@ -27853,7 +28804,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": false,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -27923,7 +28875,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "瘙癢",
@@ -27931,7 +28884,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "疣",
@@ -27939,7 +28893,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
@@ -27994,7 +28949,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": true
         },
         {
           "raw": "皮膚枯燥",
@@ -28002,7 +28958,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "腹痛",
@@ -28010,7 +28967,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         },
         {
           "raw": "貧血",
@@ -28018,7 +28976,8 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book",
           "primary": true,
-          "mild": false
+          "mild": false,
+          "cardinal": false
         }
       ],
       "herbs": [],
