@@ -799,8 +799,34 @@ function passesXushiGate(formula, patientXushi) {
 // 金絲雀全綠）；≤0.6 太狠（第1 掉到 13）；≥0.9 訊號太弱，平手案回來。取 0.75。
 const KEY_CENTRALITY_SECONDARY = 0.75;
 
+// 弱化限定詞（2026-07-14，醫師：「通常柴胡劑 以胸脅苦滿 為最主要」）。
+//
+// 書／工作簿會**自己標註**一個徵象對某方只是輕微的伴隨所見，而那個限定詞就寫在
+// 主症的原文裡，模型卻一直視而不見：
+//
+//   補中益氣湯 「**輕度**胸脇苦滿」   ← 伴隨所見
+//   疏經活血湯 「**輕度**胸脇苦滿」   ← 伴隨所見
+//   小柴胡湯   「胸脅苦滿」          ← 它的證本身
+//
+// 後果正是醫師指出的那件事：純少陽腹證（胸脇苦滿＋脈弦）的第 1 名是**補中益氣湯**
+// ——一個書上只寫「輕度」的方，壓過每一個柴胡劑。它贏純粹是因為主症少（分母 5.00
+// vs 小柴胡湯 6.75），而兩者的胸脅苦滿被當成一樣重。
+//
+// 全 KB 只有 7 筆帶這種限定詞（輕度胸脇苦滿 ×2、輕度口渴 ×3、有時發熱、有時手足發熱），
+// 所以這是一條很窄的規則，不是全面重新加權。
+const MILD_QUALIFIER_RE = /^(輕度|輕微|稍|略|有時|偶爾|偶)/;
+// 掃描 {0.25,0.4,0.5,0.6,0.75}：**0.5** 是最佳點（第1 17／前3 **22**／前5 22，全綠）。
+// 太狠（0.25/0.4）會傷到 當歸飲子——它自己的書文說「有時呈輕度貧血」「輕度手足發冷」，
+// 而醫師乾癬案的病人正是靠這兩個體質徵象命中它，壓到 0.25 就把它打下第 2。
+// 太鬆（0.75）則 十味敗毒湯 又爬回少陽腹證的前三。
+const KEY_CENTRALITY_MILD = 0.5;
+
 function keyCentrality(ref) {
   if (typeof ref !== "object" || !ref) return 1;
+  // 限定詞優先於來源：書自己說了這個徵象對這個方只是輕微伴隨。
+  // Excel 主症的限定詞寫在 raw 裡（「輕度胸脇苦滿」）；書源主症的限定詞寫在**前文**
+  // （「腹診可觸及輕度胸脅苦滿」），由 handbook_bridge.mjs 抽成 mild 旗標。
+  if (ref.mild || MILD_QUALIFIER_RE.test(String(ref.raw || ""))) return KEY_CENTRALITY_MILD;
   const fromBook = ref.matchType === "book" || ref.matchType === "book-physician";
   if (!fromBook) return 1;                       // Excel／醫師策展 ⇒ 一律主徵
   return ref.primary ? 1 : KEY_CENTRALITY_SECONDARY;
@@ -1403,5 +1429,5 @@ function createX4Matcher(kb) {
 
 
 
-  return { isExamFinding, buildHeatEvidence, buildChannelEvidence, normalizeXushiClass, createX4Matcher, W_KEY, W_PATTERN, W_ZANGFU, PARENT_FALLBACK_WEIGHT, EVIDENCE_DAMPING_K, W_BOOK_SECONDARY, BOOK_SECONDARY_K, DERIVED_VECTOR_K, KEY_EVIDENCE_K, PATTERN_RECALL_BETA, CHANNEL_W_KEY, CHANNEL_W_STAGE, CHIEF_SPECIFICITY_MAX_FORMULAS, W_CHIEF, CHIEF_WINDOW, KEY_CENTRALITY_SECONDARY };
+  return { isExamFinding, buildHeatEvidence, buildChannelEvidence, normalizeXushiClass, createX4Matcher, W_KEY, W_PATTERN, W_ZANGFU, PARENT_FALLBACK_WEIGHT, EVIDENCE_DAMPING_K, W_BOOK_SECONDARY, BOOK_SECONDARY_K, DERIVED_VECTOR_K, KEY_EVIDENCE_K, PATTERN_RECALL_BETA, CHANNEL_W_KEY, CHANNEL_W_STAGE, CHIEF_SPECIFICITY_MAX_FORMULAS, W_CHIEF, CHIEF_WINDOW, KEY_CENTRALITY_SECONDARY, KEY_CENTRALITY_MILD };
 })();
