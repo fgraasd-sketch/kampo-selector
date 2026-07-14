@@ -638,7 +638,19 @@ const HEAT_SIGNS = {
   // 舌紅 supports but never gates (2026-07-13 physician: 舌紅 in, 口苦 out —
   // 口苦 is a 少陽 gate sign and would flood the heat formulas).
   supporting: ["S-HOT-FLUSH", "S-FACIAL-FLUSH", "S-HEAT-SENSATION", "S-FEVER", "S-THIRST", "S-TONGUE-RED"],
-  saturation: 3,
+  // 飽和值 3 → 2（2026-07-14）。書的黃連解毒湯 p.283 開頭寫的就是
+  // 「有【烘熱感】而【顏面潮紅】、精神不安、失眠、煩躁焦慮」——**烘熱＋顏面潮紅
+  // 就是書對這個方的熱證宣告**。飽和 3 卻讓它在**自己的教科書證型上永遠拿不到
+  // 滿強度**（只有 2 個熱徵象 ⇒ 0.667），總分封在 0.628，於是走氣血水路線的
+  // 桂枝加龍骨牡蠣湯（0.685）壓過它。而 失眠/精神不安 是**刻意**不列入熱徵象的
+  // （非熱特異，會把柴胡家族病人灌進清熱方），所以病人補不上第三個。
+  //
+  // 兩個並見的熱徵象就是完整的熱象——與少陽的設計一致（少陽飽和也是 2：
+  // 胸脇苦滿＋口苦 即滿）。太陽是 4，因為它有四個獨立徵象可數。
+  //
+  // 這個封頂是**唯一**擋著 桃核承氣湯／大黃牡丹皮湯 方名修補的東西（W_KEY 與
+  // 主症中心性都救不了它——熱證路線兩者都不用）。改成 2 之後兩筆一起接回來。
+  saturation: 2,
 };
 
 function buildHeatEvidence(patientMatches) {

@@ -9108,7 +9108,114 @@ window.X4KbData = {
       ],
       "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。",
       "confidence": "中",
-      "draft": true
+      "draft": true,
+      "bookPages": [
+        321
+      ],
+      "bookSymptoms": [
+        {
+          "id": "S-BLEEDING",
+          "canonical": "出血",
+          "term": "出血",
+          "page": 321,
+          "section": "證候特徵",
+          "primary": true,
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-DYSMENORRHEA",
+          "canonical": "痛經",
+          "term": "痛經",
+          "page": 321,
+          "section": "證候特徵",
+          "primary": true,
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-HEADACHE",
+          "canonical": "頭痛",
+          "term": "頭痛",
+          "page": 321,
+          "section": "證候特徵",
+          "primary": true,
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-HEAT-SENSATION",
+          "canonical": "熱感",
+          "term": "熱感",
+          "page": 321,
+          "section": "證候特徵",
+          "primary": true,
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-INSOMNIA",
+          "canonical": "失眠",
+          "term": "失眠",
+          "page": 321,
+          "section": "證候特徵",
+          "primary": true,
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-MENSTRUAL-IRREGULAR",
+          "canonical": "月經不調",
+          "term": "月經不調",
+          "page": 321,
+          "section": "適應病症",
+          "primary": false,
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-HYPERTENSION",
+          "canonical": "高血壓",
+          "term": "高血壓",
+          "page": 321,
+          "section": "適應病症",
+          "primary": false,
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-LOW-BACK-PAIN",
+          "canonical": "腰痛",
+          "term": "腰痛",
+          "page": 321,
+          "section": "適應病症",
+          "primary": false,
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-FACIAL-FLUSH",
+          "canonical": "顏面潮紅",
+          "term": "顏面潮紅",
+          "page": 321,
+          "section": "病期病態",
+          "primary": false,
+          "physicianDecision": "accept-secondary"
+        }
+      ],
+      "bookCorroborated": [
+        {
+          "id": "S-HOT-FLUSH",
+          "canonical": "烘熱",
+          "page": 321
+        },
+        {
+          "id": "S-ABDOMINAL-TENDERNESS",
+          "canonical": "腹部壓痛",
+          "page": 321
+        },
+        {
+          "id": "S-CONSTIPATION",
+          "canonical": "便秘",
+          "page": 321
+        }
+      ],
+      "channelStages": [
+        "陽明"
+      ],
+      "heatNature": "熱"
     },
     {
       "id": "F-0023",
@@ -9169,7 +9276,78 @@ window.X4KbData = {
       ],
       "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。",
       "confidence": "中",
-      "draft": true
+      "draft": true,
+      "bookPages": [
+        249
+      ],
+      "bookSymptoms": [
+        {
+          "id": "S-MENSTRUAL-IRREGULAR",
+          "canonical": "月經不調",
+          "term": "月經異常",
+          "page": 249,
+          "section": "證候特徵",
+          "primary": true,
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-DYSMENORRHEA",
+          "canonical": "痛經",
+          "term": "痛經",
+          "page": 249,
+          "section": "證候特徵",
+          "primary": true,
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-ABDOMINAL-PAIN",
+          "canonical": "腹痛",
+          "term": "腹部疼痛",
+          "page": 249,
+          "section": "適應病症",
+          "primary": false,
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-CONSTIPATION",
+          "canonical": "便秘",
+          "term": "便秘",
+          "page": 249,
+          "section": "適應病症",
+          "primary": false,
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-HEMORRHOIDS",
+          "canonical": "痔瘡",
+          "term": "痔",
+          "page": 249,
+          "section": "適應病症",
+          "primary": false,
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-HEAT-TOXIN",
+          "canonical": "炎症",
+          "term": "炎症",
+          "page": 249,
+          "section": "病期病態",
+          "primary": false,
+          "physicianDecision": "accept-secondary"
+        }
+      ],
+      "bookCorroborated": [
+        {
+          "id": "S-ABDOMINAL-TENDERNESS",
+          "canonical": "腹部壓痛",
+          "page": 249
+        }
+      ],
+      "channelStages": [
+        "陽明"
+      ],
+      "heatNature": "熱",
+      "bookCautions": "1 ) 體力明顯衰弱者。2 ) 治療上有食鹽受限的患者。"
     },
     {
       "id": "F-0079",
