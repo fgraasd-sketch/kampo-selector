@@ -319,9 +319,24 @@ function createPhase1Engine(kb) {
 window.X4Kampo = (function () {
 const { createSymptomNormalizer } = window.Phase1Kampo;
 
-const W_KEY = 0.50;
-const W_PATTERN = 0.40;
-const W_ZANGFU = 0.10;
+// 主症證據必須壓得過體質向量（2026-07-14，W_KEY 0.50 → 0.55）。
+//
+// 0.50 時，一個「幾乎完全解釋病人」的方會輸給一個「解釋不到一半」的方——
+// 六證(0.40)＋五臟(0.10)＋書證加分 合起來足以翻掉兩倍的主症證據差距：
+//   六君子湯   key=0.894（自己的教科書證型）→ 第 4，輸給 人參湯 key=0.378
+//   黃連解毒湯 key=0.894（自己的熱證證型）  → 輸給 桃核承氣湯 key=0.447
+// 這個失衡**擋住了兩筆正確的資料修補**（心下痞硬 OCR 修補讓 小柴胡湯 多一個
+// 正確主症，反而因為分母變大而變差；桃核承氣湯 的方名修補同理），所以先修它。
+//
+// W_KEY ∈ {0.55,0.60,0.65,0.70,0.75} 掃描（餘額按 8:2 分給六證/五臟）：
+//   0.55 → 第1 15／前3 21／前5 22，金絲雀全綠，旗艦 當歸芍藥散 守住  ← 採用
+//   0.60 → 六君子湯 升第 1，但**當歸芍藥散與苓桂術甘湯雙雙掉到第 2**（旗艦破功）
+//   0.65+ → 黃連解毒湯 的氣血水路線超過它自己的熱證路線，熱證路線金絲雀紅
+// 0.55 是「不犧牲任何既有裁決」的上限。六君子湯 仍在第 3（4→3）——要讓主症證據
+// 真正主導還需要別的機制（主症的「中心性」權重），不是再往上調權重。
+const W_KEY = 0.55;
+const W_PATTERN = 0.36;
+const W_ZANGFU = 0.09;
 const PARENT_FALLBACK_WEIGHT = 0.7;
 // Evidence damping (physician decision 2026-07-10, option A of
 // HANDOFF-2026-07-08): pattern/zangfu cosine similarity only earns its full

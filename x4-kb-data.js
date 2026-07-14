@@ -3551,7 +3551,7 @@ window.X4KbData = {
       "channelStages": [
         "少陰"
       ],
-      "bookCautions": "體力充實而有發熱感者。；過敏症，自主神經系統 (不眠、汗出、心慌性動、全身無力感、精神興奮 )，肝功能損害(AST、ALT、y-GTP 升高 )，消化系統 〈口渴、食慾不振、胃部不適感、亞心、嘔吐 )，刻尿系統 (排尿障礙 )，烘熱感，麻木感。[ 相互作用 ]1 ) 交感神經興奮藥並用，可能引起心慌茜動、心動過速等。@ 奪克掃描王.270 漢方臨床診療學92 ) 與解熱鎮痛藥並用，可能引起過度汗出《有時甚至發生休克 )；體力充實而有發熱感者。"
+      "bookCautions": "體力充實而有發熱感者。；過敏症，自主神經系統 (不眠、汗出、心慌性動、全身無力感、精神興奮 )，肝功能損害(AST、ALT、y-GTP 升高 )，消化系統 〈口渴、食慾不振、胃部不適感、噁心、嘔吐 )，刻尿系統 (排尿障礙 )，烘熱感，麻木感。[ 相互作用 ]1 ) 交感神經興奮藥並用，可能引起心慌茜動、心動過速等。@ 奪克掃描王.270 漢方臨床診療學92 ) 與解熱鎮痛藥並用，可能引起過度汗出《有時甚至發生休克 )；體力充實而有發熱感者。"
     },
     {
       "id": "F-0109",
@@ -4378,6 +4378,13 @@ window.X4KbData = {
           "page": 329
         },
         {
+          "raw": "噁心",
+          "id": "S-NAUSEA",
+          "negated": false,
+          "matchType": "book-physician",
+          "page": 329
+        },
+        {
           "raw": "上熱下寒",
           "id": "S-UPPER-HOT-LOWER-COLD",
           "negated": false,
@@ -4406,6 +4413,7 @@ window.X4KbData = {
         "S-THIRST",
         "S-VOMITING",
         "S-EDEMA",
+        "S-NAUSEA",
         "S-UPPER-HOT-LOWER-COLD"
       ],
       "formulaPattern": [
@@ -4446,14 +4454,6 @@ window.X4KbData = {
           "id": "S-HEAT-TOXIN",
           "canonical": "炎症",
           "term": "炎症",
-          "page": 329,
-          "section": "適應病症",
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-NAUSEA",
-          "canonical": "噁心",
-          "term": "噁心",
           "page": 329,
           "section": "適應病症",
           "physicianDecision": "accept-secondary"
@@ -5723,6 +5723,11 @@ window.X4KbData = {
           "page": 347
         },
         {
+          "id": "S-EPIGASTRIC-RESISTANCE",
+          "canonical": "心下痞硬",
+          "page": 347
+        },
+        {
           "id": "S-NAUSEA",
           "canonical": "噁心",
           "page": 347
@@ -6651,6 +6656,14 @@ window.X4KbData = {
           "page": 331,
           "section": "適應病症",
           "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-EPIGASTRIC-RESISTANCE",
+          "canonical": "心下痞硬",
+          "term": "心下痞硬",
+          "page": 331,
+          "section": "病期病態",
+          "physicianDecision": "accept-secondary"
         }
       ],
       "bookCorroborated": [
@@ -6796,6 +6809,14 @@ window.X4KbData = {
           "term": "食慾不振",
           "page": 305,
           "section": "適應病症",
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-EPIGASTRIC-RESISTANCE",
+          "canonical": "心下痞硬",
+          "term": "心下痞硬",
+          "page": 305,
+          "section": "病期病態",
           "physicianDecision": "accept-secondary"
         },
         {
@@ -7293,7 +7314,16 @@ window.X4KbData = {
       "bookPages": [
         237
       ],
-      "bookSymptoms": [],
+      "bookSymptoms": [
+        {
+          "id": "S-EPIGASTRIC-RESISTANCE",
+          "canonical": "心下痞硬",
+          "term": "心下痞硬",
+          "page": 237,
+          "section": "病期病態",
+          "physicianDecision": "accept-secondary"
+        }
+      ],
       "bookCorroborated": [
         {
           "id": "S-GASTRIC-SPLASH",
@@ -10500,6 +10530,13 @@ window.X4KbData = {
           "page": 279
         },
         {
+          "raw": "心下痞硬",
+          "id": "S-EPIGASTRIC-RESISTANCE",
+          "negated": false,
+          "matchType": "book-physician",
+          "page": 279
+        },
+        {
           "raw": "上熱下寒",
           "id": "S-UPPER-HOT-LOWER-COLD",
           "negated": false,
@@ -10549,6 +10586,7 @@ window.X4KbData = {
         "S-GASTRIC-SPLASH",
         "S-COLD",
         "S-FEVER",
+        "S-EPIGASTRIC-RESISTANCE",
         "S-UPPER-HOT-LOWER-COLD",
         "S-HOT-FLUSH",
         "S-DIARRHEA-LOOSE",
@@ -10657,6 +10695,13 @@ window.X4KbData = {
           "page": 284
         },
         {
+          "raw": "心下痞硬",
+          "id": "S-EPIGASTRIC-RESISTANCE",
+          "negated": false,
+          "matchType": "book-physician",
+          "page": 284
+        },
+        {
           "raw": "上熱下寒",
           "id": "S-UPPER-HOT-LOWER-COLD",
           "negated": false,
@@ -10700,6 +10745,7 @@ window.X4KbData = {
         "S-APPETITE-LOW",
         "S-ABDOMINAL-PAIN",
         "S-ABDOMINAL-TENDERNESS",
+        "S-EPIGASTRIC-RESISTANCE",
         "S-UPPER-HOT-LOWER-COLD",
         "S-FEVER",
         "S-HEADACHE"
@@ -11059,6 +11105,13 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book-physician",
           "page": 303
+        },
+        {
+          "raw": "心下痞硬",
+          "id": "S-EPIGASTRIC-RESISTANCE",
+          "negated": false,
+          "matchType": "book-physician",
+          "page": 303
         }
       ],
       "herbs": [
@@ -11089,7 +11142,8 @@ window.X4KbData = {
         "S-LOW-BACK-PAIN",
         "S-MENSTRUAL-IRREGULAR",
         "S-HEADACHE",
-        "S-PALPITATION"
+        "S-PALPITATION",
+        "S-EPIGASTRIC-RESISTANCE"
       ],
       "formulaPattern": [
         "香蘇散類"
@@ -11416,6 +11470,14 @@ window.X4KbData = {
           "term": "虛弱",
           "page": 245,
           "section": "適應病症",
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-EPIGASTRIC-RESISTANCE",
+          "canonical": "心下痞硬",
+          "term": "心下痞硬",
+          "page": 245,
+          "section": "病期病態",
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -12886,6 +12948,13 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book-physician",
           "page": 271
+        },
+        {
+          "raw": "心下痞硬",
+          "id": "S-EPIGASTRIC-RESISTANCE",
+          "negated": false,
+          "matchType": "book-physician",
+          "page": 271
         }
       ],
       "herbs": [
@@ -12922,7 +12991,8 @@ window.X4KbData = {
         "S-APPETITE-LOW",
         "S-FATIGUE",
         "S-FEVER",
-        "S-NIGHT-SWEAT"
+        "S-NIGHT-SWEAT",
+        "S-EPIGASTRIC-RESISTANCE"
       ],
       "formulaPattern": [
         "人參湯類",
@@ -13100,6 +13170,14 @@ window.X4KbData = {
           "page": 318,
           "section": "適應病症",
           "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-EPIGASTRIC-RESISTANCE",
+          "canonical": "心下痞硬",
+          "term": "心下痞硬",
+          "page": 318,
+          "section": "病期病態",
+          "physicianDecision": "accept-secondary"
         }
       ],
       "bookCorroborated": [
@@ -13273,6 +13351,11 @@ window.X4KbData = {
           "id": "S-FATIGUE",
           "canonical": "易疲勞",
           "page": 295
+        },
+        {
+          "id": "S-EPIGASTRIC-RESISTANCE",
+          "canonical": "心下痞硬",
+          "page": 295
         }
       ],
       "channelStages": [
@@ -13422,6 +13505,14 @@ window.X4KbData = {
           "term": "痔",
           "page": 240,
           "section": "適應病症",
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-EPIGASTRIC-RESISTANCE",
+          "canonical": "心下痞硬",
+          "term": "心下痞硬",
+          "page": 240,
+          "section": "病期病態",
           "physicianDecision": "accept-secondary"
         }
       ],
@@ -14434,6 +14525,13 @@ window.X4KbData = {
           "negated": false,
           "matchType": "book-physician",
           "page": 281
+        },
+        {
+          "raw": "心下痞硬",
+          "id": "S-EPIGASTRIC-RESISTANCE",
+          "negated": false,
+          "matchType": "book-physician",
+          "page": 281
         }
       ],
       "herbs": [
@@ -14464,7 +14562,8 @@ window.X4KbData = {
         "S-HEAVY-HEAD",
         "S-HOT-FLUSH",
         "S-INSOMNIA",
-        "S-TINNITUS"
+        "S-TINNITUS",
+        "S-EPIGASTRIC-RESISTANCE"
       ],
       "formulaPattern": [
         "(陽氣 ↑↑ / 陰液 )"
@@ -15000,6 +15099,11 @@ window.X4KbData = {
           "id": "S-CONSTIPATION",
           "canonical": "便秘",
           "page": 312
+        },
+        {
+          "id": "S-EPIGASTRIC-RESISTANCE",
+          "canonical": "心下痞硬",
+          "page": 312
         }
       ],
       "channelStages": [
@@ -15401,6 +15505,11 @@ window.X4KbData = {
         }
       ],
       "bookCorroborated": [
+        {
+          "id": "S-EPIGASTRIC-RESISTANCE",
+          "canonical": "心下痞硬",
+          "page": 267
+        },
         {
           "id": "S-DIARRHEA",
           "canonical": "腹瀉",
@@ -17959,6 +18068,14 @@ window.X4KbData = {
           "page": 304,
           "section": "證候特徵",
           "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-EPIGASTRIC-RESISTANCE",
+          "canonical": "心下痞硬",
+          "term": "心下痞硬",
+          "page": 304,
+          "section": "病期病態",
+          "physicianDecision": "accept-secondary"
         }
       ],
       "bookCorroborated": [
@@ -19610,6 +19727,12 @@ window.X4KbData = {
           "id": "S-FEVER",
           "negated": false,
           "matchType": "book"
+        },
+        {
+          "raw": "心下痞硬",
+          "id": "S-EPIGASTRIC-RESISTANCE",
+          "negated": false,
+          "matchType": "book"
         }
       ],
       "herbs": [
@@ -19629,7 +19752,8 @@ window.X4KbData = {
         "S-APPETITE-LOW",
         "S-CHEST-RIB-FULLNESS",
         "S-FATIGUE",
-        "S-FEVER"
+        "S-FEVER",
+        "S-EPIGASTRIC-RESISTANCE"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：小柴胡湯（OCR 標題，已人工校名）",
@@ -20292,6 +20416,12 @@ window.X4KbData = {
           "id": "S-INSOMNIA",
           "negated": false,
           "matchType": "book"
+        },
+        {
+          "raw": "心下痞硬",
+          "id": "S-EPIGASTRIC-RESISTANCE",
+          "negated": false,
+          "matchType": "book"
         }
       ],
       "herbs": [],
@@ -20302,7 +20432,8 @@ window.X4KbData = {
       "indications": [
         "S-ANXIETY",
         "S-BLOOD-DEF",
-        "S-INSOMNIA"
+        "S-INSOMNIA",
+        "S-EPIGASTRIC-RESISTANCE"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：加味歸妥湯（OCR 標題，已人工校名）",
@@ -21108,6 +21239,12 @@ window.X4KbData = {
           "matchType": "book"
         },
         {
+          "raw": "心下痞硬",
+          "id": "S-EPIGASTRIC-RESISTANCE",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
           "raw": "肩凝",
           "id": "S-SHOULDER-STIFF",
           "negated": false,
@@ -21122,6 +21259,7 @@ window.X4KbData = {
       "indications": [
         "S-EPIGASTRIC-PAIN",
         "S-COLD",
+        "S-EPIGASTRIC-RESISTANCE",
         "S-SHOULDER-STIFF"
       ],
       "formulaPattern": "",
@@ -21387,6 +21525,12 @@ window.X4KbData = {
           "matchType": "book"
         },
         {
+          "raw": "心下痞硬",
+          "id": "S-EPIGASTRIC-RESISTANCE",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
           "raw": "發冷",
           "id": "S-COLD",
           "negated": false,
@@ -21405,6 +21549,7 @@ window.X4KbData = {
         "S-HEAT-TOXIN",
         "S-HEAVY-HEAD",
         "S-NAUSEA",
+        "S-EPIGASTRIC-RESISTANCE",
         "S-COLD"
       ],
       "formulaPattern": "",
@@ -23722,7 +23867,7 @@ window.X4KbData = {
       "patternVector": {
         "QI_XU": 0,
         "QI_NI": 0,
-        "QI_YU": 1,
+        "QI_YU": 0,
         "XUE_XU": 0,
         "YU_XUE": 0,
         "SUI_ZHI": 1
@@ -23772,8 +23917,20 @@ window.X4KbData = {
           "matchType": "book"
         },
         {
+          "raw": "噁心",
+          "id": "S-NAUSEA",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
           "raw": "心慌",
           "id": "S-PALPITATION",
+          "negated": false,
+          "matchType": "book"
+        },
+        {
+          "raw": "心下痞硬",
+          "id": "S-EPIGASTRIC-RESISTANCE",
           "negated": false,
           "matchType": "book"
         }
@@ -23792,7 +23949,9 @@ window.X4KbData = {
         "S-THROAT-BLOCK",
         "S-ACID-REFLUX",
         "S-DEPRESSION",
-        "S-PALPITATION"
+        "S-NAUSEA",
+        "S-PALPITATION",
+        "S-EPIGASTRIC-RESISTANCE"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：茯苓飲合半夏厚朴湯（OCR 標題，已人工校名）",

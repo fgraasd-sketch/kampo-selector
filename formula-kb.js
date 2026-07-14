@@ -750,6 +750,7 @@ const EXCEL_FORMULA_KB = [
       "頭痛",
       "胃部振水音",
       "浮腫",
+      "噁心",
       "上熱下寒"
     ],
     "keySymptoms": [
@@ -761,9 +762,10 @@ const EXCEL_FORMULA_KB = [
       "頭痛",
       "胃部振水音",
       "浮腫",
+      "噁心",
       "上熱下寒"
     ],
-    "indications": "口渴，尿量減少，自然汗出傾向，嘔吐，腹瀉，頭痛，胃部振水音，浮腫，上熱下寒",
+    "indications": "口渴，尿量減少，自然汗出傾向，嘔吐，腹瀉，頭痛，胃部振水音，浮腫，噁心，上熱下寒",
     "formulaPattern": [
       "虛實夾雜"
     ],
@@ -3246,6 +3248,7 @@ const EXCEL_FORMULA_KB = [
       "振水音",
       "怕冷",
       "發熱",
+      "心下痞硬",
       "上熱下寒",
       "烘熱感",
       "軟便",
@@ -3260,12 +3263,13 @@ const EXCEL_FORMULA_KB = [
       "振水音",
       "怕冷",
       "發熱",
+      "心下痞硬",
       "上熱下寒",
       "烘熱感",
       "軟便",
       "熱感"
     ],
-    "indications": "搏動性頭痛，腹瀉，心窩部疼痛，食慾不振，易疲勞，振水音，怕冷，發熱，上熱下寒，烘熱感，軟便，熱感",
+    "indications": "搏動性頭痛，腹瀉，心窩部疼痛，食慾不振，易疲勞，振水音，怕冷，發熱，心下痞硬，上熱下寒，烘熱感，軟便，熱感",
     "formulaPattern": [
       "其他類"
     ],
@@ -3308,6 +3312,7 @@ const EXCEL_FORMULA_KB = [
       "食慾不振",
       "腹痛",
       "壓痛",
+      "心下痞硬",
       "上熱下寒",
       "發熱",
       "頭痛"
@@ -3320,11 +3325,12 @@ const EXCEL_FORMULA_KB = [
       "食慾不振",
       "腹痛",
       "壓痛",
+      "心下痞硬",
       "上熱下寒",
       "發熱",
       "頭痛"
     ],
-    "indications": "噁心，嘔吐，胃痛，上熱下寒性烘熱，食慾不振，腹痛，壓痛，上熱下寒，發熱，頭痛",
+    "indications": "噁心，嘔吐，胃痛，上熱下寒性烘熱，食慾不振，腹痛，壓痛，心下痞硬，上熱下寒，發熱，頭痛",
     "formulaPattern": [
       "其他類"
     ],
@@ -3478,7 +3484,8 @@ const EXCEL_FORMULA_KB = [
       "下腹部壓痛",
       "月經異常",
       "頭痛",
-      "心慌"
+      "心慌",
+      "心下痞硬"
     ],
     "keySymptoms": [
       "頭重感",
@@ -3489,9 +3496,10 @@ const EXCEL_FORMULA_KB = [
       "下腹部壓痛",
       "月經異常",
       "頭痛",
-      "心慌"
+      "心慌",
+      "心下痞硬"
     ],
-    "indications": "頭重感，烘熱感，失眠，腰痛，下肢發冷，下腹部壓痛，月經異常，頭痛，心慌",
+    "indications": "頭重感，烘熱感，失眠，腰痛，下肢發冷，下腹部壓痛，月經異常，頭痛，心慌，心下痞硬",
     "formulaPattern": [
       "香蘇散類"
     ],
@@ -4149,7 +4157,8 @@ const EXCEL_FORMULA_KB = [
       "食慾不振",
       "體力低下",
       "發熱",
-      "盜汗"
+      "盜汗",
+      "心下痞硬"
     ],
     "keySymptoms": [
       "精神不安",
@@ -4164,9 +4173,10 @@ const EXCEL_FORMULA_KB = [
       "食慾不振",
       "體力低下",
       "發熱",
-      "盜汗"
+      "盜汗",
+      "心下痞硬"
     ],
-    "indications": "精神不安，失眠，皮下出血，貧血，腹脹，出血，抑鬱，健忘，面色蒼白，食慾不振，體力低下，發熱，盜汗",
+    "indications": "精神不安，失眠，皮下出血，貧血，腹脹，出血，抑鬱，健忘，面色蒼白，食慾不振，體力低下，發熱，盜汗，心下痞硬",
     "formulaPattern": [
       "人參湯類",
       "氣血雙補",
@@ -4722,7 +4732,8 @@ const EXCEL_FORMULA_KB = [
       "頭重感",
       "烘熱",
       "失眠",
-      "耳鳴"
+      "耳鳴",
+      "心下痞硬"
     ],
     "keySymptoms": [
       "頭痛",
@@ -4734,9 +4745,10 @@ const EXCEL_FORMULA_KB = [
       "頭重感",
       "烘熱",
       "失眠",
-      "耳鳴"
+      "耳鳴",
+      "心下痞硬"
     ],
-    "indications": "頭痛，眩暈感，眼痛，神經過敏，健忘，高血壓，頭重感，烘熱，失眠，耳鳴",
+    "indications": "頭痛，眩暈感，眼痛，神經過敏，健忘，高血壓，頭重感，烘熱，失眠，耳鳴，心下痞硬",
     "formulaPattern": [
       "(陽氣 ↑↑ / 陰液 )"
     ],
@@ -7009,15 +7021,17 @@ const EXCEL_FORMULA_KB = [
       "食慾不振",
       "胸脅苦滿",
       "虛弱",
-      "發熱"
+      "發熱",
+      "心下痞硬"
     ],
     "keySymptoms": [
       "食慾不振",
       "胸脅苦滿",
       "虛弱",
-      "發熱"
+      "發熱",
+      "心下痞硬"
     ],
-    "indications": "食慾不振，胸脅苦滿，虛弱，發熱",
+    "indications": "食慾不振，胸脅苦滿，虛弱，發熱，心下痞硬",
     "formulaPattern": [],
     "specialIndications": [],
     "contraindications": [],
@@ -7395,14 +7409,16 @@ const EXCEL_FORMULA_KB = [
     "symptoms": [
       "精神不安",
       "貧血",
-      "失眠"
+      "失眠",
+      "心下痞硬"
     ],
     "keySymptoms": [
       "精神不安",
       "貧血",
-      "失眠"
+      "失眠",
+      "心下痞硬"
     ],
-    "indications": "精神不安，貧血，失眠",
+    "indications": "精神不安，貧血，失眠，心下痞硬",
     "formulaPattern": [],
     "specialIndications": [],
     "contraindications": [],
@@ -7882,14 +7898,16 @@ const EXCEL_FORMULA_KB = [
     "symptoms": [
       "心窩部疼痛",
       "下肢發冷",
+      "心下痞硬",
       "肩凝"
     ],
     "keySymptoms": [
       "心窩部疼痛",
       "下肢發冷",
+      "心下痞硬",
       "肩凝"
     ],
-    "indications": "心窩部疼痛，下肢發冷，肩凝",
+    "indications": "心窩部疼痛，下肢發冷，心下痞硬，肩凝",
     "formulaPattern": [],
     "specialIndications": [],
     "contraindications": [],
@@ -8029,6 +8047,7 @@ const EXCEL_FORMULA_KB = [
       "炎症",
       "頭重",
       "噁心",
+      "心下痞硬",
       "發冷"
     ],
     "keySymptoms": [
@@ -8038,9 +8057,10 @@ const EXCEL_FORMULA_KB = [
       "炎症",
       "頭重",
       "噁心",
+      "心下痞硬",
       "發冷"
     ],
-    "indications": "腹瀉傾向，胃腸虛弱，胃痛，炎症，頭重，噁心，發冷",
+    "indications": "腹瀉傾向，胃腸虛弱，胃痛，炎症，頭重，噁心，心下痞硬，發冷",
     "formulaPattern": [],
     "specialIndications": [],
     "contraindications": [],
@@ -9354,9 +9374,8 @@ const EXCEL_FORMULA_KB = [
     "name": "茯苓飲合半夏厚朴湯",
     "type": "虛證",
     "category": "書籍補充（漢方臨床診療學）",
-    "syndrome": "qi_yu",
+    "syndrome": "shui_zhi",
     "patterns": [
-      "氣鬱",
       "水滯"
     ],
     "zangFuTags": [],
@@ -9366,7 +9385,9 @@ const EXCEL_FORMULA_KB = [
       "異物感",
       "泛酸",
       "抑鬱",
-      "心慌"
+      "噁心",
+      "心慌",
+      "心下痞硬"
     ],
     "keySymptoms": [
       "胃部膨滿感",
@@ -9374,9 +9395,11 @@ const EXCEL_FORMULA_KB = [
       "異物感",
       "泛酸",
       "抑鬱",
-      "心慌"
+      "噁心",
+      "心慌",
+      "心下痞硬"
     ],
-    "indications": "胃部膨滿感，振水音，異物感，泛酸，抑鬱，心慌",
+    "indications": "胃部膨滿感，振水音，異物感，泛酸，抑鬱，噁心，心慌，心下痞硬",
     "formulaPattern": [],
     "specialIndications": [],
     "contraindications": [],
@@ -9386,7 +9409,7 @@ const EXCEL_FORMULA_KB = [
       "patterns": {
         "氣虛": 0,
         "氣逆": 0,
-        "氣鬱": 1,
+        "氣鬱": 0,
         "血虛": 0,
         "瘀血": 0,
         "水滯": 1
