@@ -764,6 +764,36 @@ function passesXushiGate(formula, patientXushi) {
   return true;
 }
 
+// 主徵 vs 附加所見（2026-07-14）。書用一個非常固定的句式宣告一個方**憑什麼開**：
+//
+//   小柴胡湯 p.333  「用於體力中等度者具有【胸脅苦滿】的場合。1) … 2) …」
+//   十味敗毒湯 p.317「用於…多種皮膚疾患，患部為散發或瀰漫性【皮疹】…。
+//                    1) …化膿… 2) 季肋下…壓痛…」
+//
+// 〔證候特徵〕開頭的宣告＝**主徵**；編號子條件與其他段落＝**附加所見**。
+// 這條線是書自己畫的（handbook_bridge.mjs 的 openingDeclarationEnd 抽出來，
+// 以 keySymptoms[].primary 落進 KB）。
+//
+// 為什麼一定要它：KB 原本把一個方的所有主症**等權**，於是同一天出現三次同樣的
+// 病灶——一個方的**附加所見**被病人命中，就跟另一個方的**主徵**被命中拿一樣多分：
+//   ① 十味敗毒湯（胸脅苦滿是它的 2)）vs 小柴胡湯（胸脅苦滿是它的主徵）：完全同分
+//   ② 桂枝麻黃各半湯（證候特徵整段空的）vs 桂枝湯：在桂枝湯自己的證型上完全同分
+//   ③ 黃連解毒湯（key 0.894）輸給 桃核承氣湯（key 0.447）
+// 書明說十味敗毒湯「以**皮膚症狀**為主徵」——沒有皮膚症狀就不該是它。
+//
+// Excel／醫師主症一律視為主徵（1.0）：那是工作簿策展的定義性徵候，沒有書的位置
+// 資訊可用，而且它們本來就是被挑過的，不是條目裡順帶一提的。
+// 掃描 {0.5,0.6,0.7,0.75,0.8,0.9,1.0}：0.7–0.8 是平原（第1 16／前3 21／前5 22，
+// 金絲雀全綠）；≤0.6 太狠（第1 掉到 13）；≥0.9 訊號太弱，平手案回來。取 0.75。
+const KEY_CENTRALITY_SECONDARY = 0.75;
+
+function keyCentrality(ref) {
+  if (typeof ref !== "object" || !ref) return 1;
+  const fromBook = ref.matchType === "book" || ref.matchType === "book-physician";
+  if (!fromBook) return 1;                       // Excel／醫師策展 ⇒ 一律主徵
+  return ref.primary ? 1 : KEY_CENTRALITY_SECONDARY;
+}
+
 function normalizeFormulaKeySymptoms(rawSymptoms, normalizer) {
   const mapped = toArray(rawSymptoms).flatMap((ref) => {
     const id = symptomRefId(ref);
@@ -773,6 +803,7 @@ function normalizeFormulaKeySymptoms(rawSymptoms, normalizer) {
         canonical: normalizer.getCanonical(id),
         raw: typeof ref === "object" ? (ref.raw || id) : ref,
         negated: symptomRefNegated(ref),
+        centrality: keyCentrality(ref),
       }];
     }
 
@@ -787,6 +818,7 @@ function normalizeFormulaKeySymptoms(rawSymptoms, normalizer) {
         canonical: match.canonical,
         raw: text,
         negated,
+        centrality: keyCentrality(ref),
       }));
   });
 
@@ -882,6 +914,7 @@ function scoreKeySymptoms(formula, patientMatches, normalizer, reportedSymptomCo
         raw: keySymptom.raw,
         matchType: "direct",
         weight,
+        centrality: keySymptom.centrality ?? 1,
         negated: keySymptom.negated,
       });
       continue;
@@ -901,6 +934,7 @@ function scoreKeySymptoms(formula, patientMatches, normalizer, reportedSymptomCo
         childId: childMatch.childId || childMatch.id,
         childCanonical: childMatch.canonical,
         weight,
+        centrality: keySymptom.centrality ?? 1,
         negated: keySymptom.negated,
       });
       continue;
@@ -914,7 +948,12 @@ function scoreKeySymptoms(formula, patientMatches, normalizer, reportedSymptomCo
     });
   }
 
-  const matchedWeight = matchedSymptoms.reduce((sum, item) => sum + item.weight, 0);
+  // 中心性加權（2026-07-14）：命中一個方的**主徵**，比命中它的**附加所見**值錢。
+  // 分子與分母同時按 centrality 計，所以一個「主症全是附加所見」的方（桂枝麻黃各半
+  // 湯的證候特徵整段是空的）分母也跟著縮小——它不會因為權重低而被硬性懲罰，
+  // 只是贏不過一個「病人命中的正是它的主徵」的方。
+  const matchedWeight = matchedSymptoms.reduce((sum, item) => sum + item.weight * (item.centrality ?? 1), 0);
+  const totalCentrality = keySymptoms.reduce((sum, item) => sum + (item.centrality ?? 1), 0);
   // Finding D (2026-07-12): a patient reporting N symptoms can confirm at most
   // N of a formula's keys, so an uncapped denominator punishes large formulas
   // for evidence the patient never had a chance to give (黃連解毒湯 explains
@@ -936,8 +975,8 @@ function scoreKeySymptoms(formula, patientMatches, normalizer, reportedSymptomCo
   const positiveHitCount = matchedSymptoms.filter((item) => item.weight > 0).length;
   const fullRecall = reportedSymptomCount > 0 && positiveHitCount >= reportedSymptomCount;
   const effectiveKeyCount = fullRecall
-    ? Math.min(keySymptoms.length, Math.max(reportedSymptomCount, KEY_EVIDENCE_K))
-    : keySymptoms.length;
+    ? Math.min(totalCentrality, Math.max(reportedSymptomCount, KEY_EVIDENCE_K))
+    : totalCentrality;
   const coverage = matchedWeight / Math.max(1, effectiveKeyCount);
   const achievable = Math.max(1, Math.min(KEY_EVIDENCE_K, reportedSymptomCount || KEY_EVIDENCE_K));
   const volume = Math.min(1, Math.max(0, matchedWeight) / achievable);
@@ -1352,5 +1391,5 @@ function createX4Matcher(kb) {
 
 
 
-  return { isExamFinding, buildHeatEvidence, buildChannelEvidence, normalizeXushiClass, createX4Matcher, W_KEY, W_PATTERN, W_ZANGFU, PARENT_FALLBACK_WEIGHT, EVIDENCE_DAMPING_K, W_BOOK_SECONDARY, BOOK_SECONDARY_K, DERIVED_VECTOR_K, KEY_EVIDENCE_K, PATTERN_RECALL_BETA, CHANNEL_W_KEY, CHANNEL_W_STAGE, CHIEF_SPECIFICITY_MAX_FORMULAS, W_CHIEF, CHIEF_WINDOW };
+  return { isExamFinding, buildHeatEvidence, buildChannelEvidence, normalizeXushiClass, createX4Matcher, W_KEY, W_PATTERN, W_ZANGFU, PARENT_FALLBACK_WEIGHT, EVIDENCE_DAMPING_K, W_BOOK_SECONDARY, BOOK_SECONDARY_K, DERIVED_VECTOR_K, KEY_EVIDENCE_K, PATTERN_RECALL_BETA, CHANNEL_W_KEY, CHANNEL_W_STAGE, CHIEF_SPECIFICITY_MAX_FORMULAS, W_CHIEF, CHIEF_WINDOW, KEY_CENTRALITY_SECONDARY };
 })();
