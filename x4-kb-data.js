@@ -5368,11 +5368,11 @@ window.X4KbData = {
         "XIN-YANGXU": 0.75,
         "XIN-XUEXU": 0,
         "PI-QIXU": 0.2,
-        "PI-YANGXU": 0.3333,
+        "PI-YANGXU": 0.5,
         "FEI-QIXU": 0.2,
         "FEI-YINXU": 0,
-        "SHEN-YANGXU": 0.6,
-        "SHEN-YINXU": 0
+        "SHEN-YANGXU": 0.8,
+        "SHEN-YINXU": 0.1111
       },
       "keySymptoms": [
         {
@@ -5434,6 +5434,18 @@ window.X4KbData = {
           "id": "S-LOWER-LIMB-PAIN",
           "negated": false,
           "fromIndications": true
+        },
+        {
+          "raw": "S-OLIGURIA",
+          "id": "S-OLIGURIA",
+          "negated": false,
+          "fromIndications": true
+        },
+        {
+          "raw": "S-WEAK-LOWER-LIMB",
+          "id": "S-WEAK-LOWER-LIMB",
+          "negated": false,
+          "fromIndications": true
         }
       ],
       "herbs": [
@@ -5451,7 +5463,8 @@ window.X4KbData = {
       "composedOfFormulas": [],
       "sourceSheets": [
         "水滯 全身型 ",
-        "「腎異常方劑彙整表」的副本"
+        "「腎異常方劑彙整表」的副本",
+        "missing_formulas_draft"
       ],
       "indications": [
         "S-COLD",
@@ -5463,7 +5476,9 @@ window.X4KbData = {
         "S-LOWER-ABDOMEN-NUMB",
         "S-LOWER-LIMB-PAIN",
         "S-NOCTURIA",
-        "S-URINATION-ABNORMAL"
+        "S-URINATION-ABNORMAL",
+        "S-OLIGURIA",
+        "S-WEAK-LOWER-LIMB"
       ],
       "formulaPattern": [
         "虛證",
@@ -5471,7 +5486,98 @@ window.X4KbData = {
       ],
       "notes": "由 Excel 方劑列抓取指徵；組成為待覆核草稿。",
       "confidence": "高",
-      "draft": true
+      "draft": true,
+      "bookPages": [
+        287
+      ],
+      "bookSymptoms": [
+        {
+          "id": "S-THIRST",
+          "canonical": "口渴",
+          "term": "口渴",
+          "page": 287,
+          "section": "證候特徵",
+          "primary": true,
+          "mild": false,
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-HYPERTENSION",
+          "canonical": "高血壓",
+          "term": "高血壓",
+          "page": 287,
+          "section": "適應病症",
+          "primary": false,
+          "mild": false,
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-NEURALGIA",
+          "canonical": "神經痛",
+          "term": "神經痛",
+          "page": 287,
+          "section": "適應病症",
+          "primary": false,
+          "mild": false,
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-PRURITUS",
+          "canonical": "瘙癢",
+          "term": "瘙癢",
+          "page": 287,
+          "section": "適應病症",
+          "primary": false,
+          "mild": false,
+          "physicianDecision": "accept-secondary"
+        }
+      ],
+      "bookCorroborated": [
+        {
+          "id": "S-COLD",
+          "canonical": "發冷",
+          "page": 287
+        },
+        {
+          "id": "S-OLIGURIA",
+          "canonical": "尿量減少",
+          "page": 287
+        },
+        {
+          "id": "S-EDEMA",
+          "canonical": "浮腫",
+          "page": 287
+        },
+        {
+          "id": "S-FATIGUE",
+          "canonical": "易疲勞",
+          "page": 287
+        },
+        {
+          "id": "S-LOW-BACK-PAIN",
+          "canonical": "腰痛",
+          "page": 287
+        },
+        {
+          "id": "S-NOCTURIA",
+          "canonical": "夜尿頻",
+          "page": 287
+        },
+        {
+          "id": "S-LOWER-ABDOMEN-NUMB",
+          "canonical": "小腹不仁",
+          "page": 287
+        },
+        {
+          "id": "S-JOINT-PAIN",
+          "canonical": "關節痛",
+          "page": 287
+        }
+      ],
+      "channelStages": [
+        "太陰"
+      ],
+      "bookCautions": "易出現烘熱感者，胃腸虛弱者。"
     },
     {
       "id": "F-0110",
@@ -19544,206 +19650,6 @@ window.X4KbData = {
       "channelStages": [
         "少陽"
       ]
-    },
-    {
-      "id": "MF-SHENQIWAN_PLUS_MINUS",
-      "name": "牛車腎氣丸",
-      "category": null,
-      "xushiClass": "虛證",
-      "patternVector": {
-        "QI_XU": 0.55,
-        "QI_NI": 0,
-        "QI_YU": 0,
-        "XUE_XU": 0,
-        "YU_XUE": 0,
-        "SUI_ZHI": 0.55
-      },
-      "zangFuVector": {
-        "GAN-QIYU": 0,
-        "GAN-YINXU": 0,
-        "XIN-YANGXU": 0.25,
-        "XIN-XUEXU": 0,
-        "PI-QIXU": 0,
-        "PI-YANGXU": 0.3333,
-        "FEI-QIXU": 0,
-        "FEI-YINXU": 0,
-        "SHEN-YANGXU": 0.5,
-        "SHEN-YINXU": 0.1111
-      },
-      "keySymptoms": [
-        {
-          "raw": "S-EDEMA",
-          "id": "S-EDEMA",
-          "negated": false,
-          "fromIndications": true
-        },
-        {
-          "raw": "S-OLIGURIA",
-          "id": "S-OLIGURIA",
-          "negated": false,
-          "fromIndications": true
-        },
-        {
-          "raw": "S-NOCTURIA",
-          "id": "S-NOCTURIA",
-          "negated": false,
-          "fromIndications": true
-        },
-        {
-          "raw": "S-LOW-BACK-PAIN",
-          "id": "S-LOW-BACK-PAIN",
-          "negated": false,
-          "fromIndications": true
-        },
-        {
-          "raw": "S-WEAK-LOWER-LIMB",
-          "id": "S-WEAK-LOWER-LIMB",
-          "negated": false,
-          "fromIndications": true
-        }
-      ],
-      "herbs": [
-        "熟地黃",
-        "山茱萸",
-        "山藥",
-        "澤瀉",
-        "茯苓",
-        "牡丹皮",
-        "桂枝",
-        "附子",
-        "牛膝",
-        "車前子"
-      ],
-      "composedOfFormulas": [],
-      "sourceSheets": [
-        "missing_formulas_draft"
-      ],
-      "indications": [
-        "S-EDEMA",
-        "S-OLIGURIA",
-        "S-NOCTURIA",
-        "S-LOW-BACK-PAIN",
-        "S-WEAK-LOWER-LIMB"
-      ],
-      "formulaPattern": [
-        "腎陽虛",
-        "水滯",
-        "下焦虛寒"
-      ],
-      "notes": "Excel 藥物表有車前子代表方；需與濟生腎氣丸/牛車腎氣丸版本差異人工確認。",
-      "confidence": "低",
-      "draft": true,
-      "bookPages": [
-        287
-      ],
-      "bookSymptoms": [
-        {
-          "id": "S-COLD",
-          "canonical": "發冷",
-          "term": "四肢發冷",
-          "page": 287,
-          "section": "證候特徵",
-          "primary": true,
-          "mild": false,
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-FATIGUE",
-          "canonical": "易疲勞",
-          "term": "無力",
-          "page": 287,
-          "section": "證候特徵",
-          "primary": true,
-          "mild": false,
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-THIRST",
-          "canonical": "口渴",
-          "term": "口渴",
-          "page": 287,
-          "section": "證候特徵",
-          "primary": true,
-          "mild": false,
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-HYPERTENSION",
-          "canonical": "高血壓",
-          "term": "高血壓",
-          "page": 287,
-          "section": "適應病症",
-          "primary": false,
-          "mild": false,
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-NEURALGIA",
-          "canonical": "神經痛",
-          "term": "神經痛",
-          "page": 287,
-          "section": "適應病症",
-          "primary": false,
-          "mild": false,
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-PRURITUS",
-          "canonical": "瘙癢",
-          "term": "瘙癢",
-          "page": 287,
-          "section": "適應病症",
-          "primary": false,
-          "mild": false,
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-LOWER-ABDOMEN-NUMB",
-          "canonical": "小腹不仁",
-          "term": "小腹不仁",
-          "page": 287,
-          "section": "病期病態",
-          "primary": false,
-          "mild": false,
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-JOINT-PAIN",
-          "canonical": "關節痛",
-          "term": "關節痛",
-          "page": 287,
-          "section": "病期病態",
-          "primary": false,
-          "mild": false,
-          "physicianDecision": "accept-secondary"
-        }
-      ],
-      "bookCorroborated": [
-        {
-          "id": "S-OLIGURIA",
-          "canonical": "尿量減少",
-          "page": 287
-        },
-        {
-          "id": "S-EDEMA",
-          "canonical": "浮腫",
-          "page": 287
-        },
-        {
-          "id": "S-LOW-BACK-PAIN",
-          "canonical": "腰痛",
-          "page": 287
-        },
-        {
-          "id": "S-NOCTURIA",
-          "canonical": "夜尿頻",
-          "page": 287
-        }
-      ],
-      "channelStages": [
-        "太陰"
-      ],
-      "bookCautions": "易出現烘熱感者，胃腸虛弱者。"
     },
     {
       "id": "F-BOOK-001",
