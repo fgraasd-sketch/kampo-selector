@@ -3235,9 +3235,11 @@ const EXCEL_FORMULA_KB = [
     "name": "桂枝人參湯",
     "type": "虛證",
     "category": "其他類",
-    "syndrome": "qi_ni",
+    "syndrome": "qi_xu",
     "patterns": [
-      "氣逆"
+      "氣虛",
+      "氣逆",
+      "水滯"
     ],
     "zangFuTags": [],
     "symptoms": [
@@ -3280,12 +3282,12 @@ const EXCEL_FORMULA_KB = [
     "sourceSheet": "「氣逆 方劑」的副本",
     "vector": {
       "patterns": {
-        "氣虛": 0,
+        "氣虛": 1,
         "氣逆": 1,
         "氣鬱": 0,
         "血虛": 0,
         "瘀血": 0,
-        "水滯": 0
+        "水滯": 1
       },
       "zangFu": {
         "肝": 0.2,

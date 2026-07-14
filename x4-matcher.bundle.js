@@ -890,8 +890,32 @@ function thresholdMap(patterns) {
   return new Map(toArray(patterns).map((pattern) => [pattern.id, Number(pattern.threshold || 1)]));
 }
 
-function buildPatternVector(patientMatches, patterns) {
+// 表證的症狀不是裡證的症狀（2026-07-14）。
+//
+// 工作簿沒有表證軸，所以純太陽病人（惡寒/發熱/頭痛）的六證只剩殘渣——而且殘渣
+// 從哪來查得一清二楚，只有兩個字：
+//   發冷 → 氣逆 +4（門檻 30）
+//   頭痛 → 氣逆 +8、水滯 +4（門檻 30 / 13）
+//   （發熱、無汗 根本不在任何證的檢查表裡）
+// ⇒ 氣逆 12/30 = 0.40、水滯 4/13 = 0.31。就是這組數字在決定 0.36 的權重。
+//
+// **那兩個權重本身沒有錯**：氣逆的頭痛是上衝性頭痛，氣逆的發冷是下肢發冷。
+// 錯的是——**太陽的頭痛不是氣逆的頭痛，太陽的惡寒不是氣逆的發冷**。
+// 與 exteriorFalseColdIds（真熱表假寒）完全同一個形狀：同一個徵象，在表證的
+// 語境下指的是別的東西。
+//
+// 所以不需要替工作簿長一根表裡軸——**我們早就有一個醫師核可的表證偵測器了**
+// （六經路線的太陽門：惡寒＋發熱同見，或脈浮）。門開著的時候，把這兩個徵象
+// 擋在六證之外即可。刻意收窄到「惡寒＋發熱同見」＝書自己定義的表證組合；
+// 慢性頭痛、無發熱的發冷，照樣正常餵六證。
+function exteriorPatternExclusions(patientMatches) {
+  const ids = positiveDirectIds(patientMatches);
+  return (ids.has("S-COLD") && ids.has("S-FEVER")) ? ["S-COLD", "S-HEADACHE"] : [];
+}
+
+function buildPatternVector(patientMatches, patterns, excludedIds = []) {
   const byId = bestPatientMatchesById(patientMatches);
+  for (const id of excludedIds) byId.delete(id);
   const raw = {};
   for (const pattern of toArray(patterns)) {
     let score = 0;
@@ -1288,7 +1312,7 @@ function createX4Matcher(kb) {
     const matches = buildPatientMatches(patient || {}, normalizer);
     return {
       matches,
-      patternVector: buildPatternVector(matches, patterns),
+      patternVector: buildPatternVector(matches, patterns, exteriorPatternExclusions(matches)),
       zangFuVector: buildZangFuVector(matches, kb.zangFuStates, exteriorFalseColdIds(matches)),
       channelEvidence: buildChannelEvidence(matches),
       heatEvidence: buildHeatEvidence(matches),

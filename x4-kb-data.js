@@ -11081,12 +11081,12 @@ window.X4KbData = {
       "category": "其他類",
       "xushiClass": "虛證",
       "patternVector": {
-        "QI_XU": 0,
+        "QI_XU": 1,
         "QI_NI": 1,
         "QI_YU": 0,
         "XUE_XU": 0,
         "YU_XUE": 0,
-        "SUI_ZHI": 0
+        "SUI_ZHI": 1
       },
       "zangFuVector": {
         "GAN-QIYU": 0.1429,
