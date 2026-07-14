@@ -3211,7 +3211,7 @@ window.X4KbData = {
           "term": "晨起",
           "page": 277,
           "section": "證候特徵",
-          "primary": false,
+          "primary": true,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -3220,7 +3220,7 @@ window.X4KbData = {
           "term": "微熱",
           "page": 277,
           "section": "證候特徵",
-          "primary": false,
+          "primary": true,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -3229,7 +3229,7 @@ window.X4KbData = {
           "term": "盜汗",
           "page": 277,
           "section": "證候特徵",
-          "primary": false,
+          "primary": true,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -4440,7 +4440,7 @@ window.X4KbData = {
           "id": "S-EDEMA",
           "negated": false,
           "matchType": "book-physician",
-          "primary": false,
+          "primary": true,
           "page": 329
         },
         {
@@ -4448,7 +4448,7 @@ window.X4KbData = {
           "id": "S-NAUSEA",
           "negated": false,
           "matchType": "book-physician",
-          "primary": false,
+          "primary": true,
           "page": 329
         },
         {
@@ -4675,7 +4675,7 @@ window.X4KbData = {
           "term": "氣短",
           "page": 293,
           "section": "證候特徵",
-          "primary": false,
+          "primary": true,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -4684,7 +4684,7 @@ window.X4KbData = {
           "term": "頭痛",
           "page": 293,
           "section": "證候特徵",
-          "primary": false,
+          "primary": true,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -4693,7 +4693,7 @@ window.X4KbData = {
           "term": "熱感",
           "page": 293,
           "section": "證候特徵",
-          "primary": false,
+          "primary": true,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -4999,7 +4999,7 @@ window.X4KbData = {
           "id": "S-DIZZINESS",
           "negated": false,
           "matchType": "book-physician",
-          "primary": false,
+          "primary": true,
           "page": 255
         },
         {
@@ -5007,7 +5007,7 @@ window.X4KbData = {
           "id": "S-HEADACHE",
           "negated": false,
           "matchType": "book-physician",
-          "primary": false,
+          "primary": true,
           "page": 255
         },
         {
@@ -5015,7 +5015,7 @@ window.X4KbData = {
           "id": "S-SHOULDER-STIFF",
           "negated": false,
           "matchType": "book-physician",
-          "primary": false,
+          "primary": true,
           "page": 255
         },
         {
@@ -5023,7 +5023,7 @@ window.X4KbData = {
           "id": "S-TINNITUS",
           "negated": false,
           "matchType": "book-physician",
-          "primary": false,
+          "primary": true,
           "page": 255
         }
       ],
@@ -6912,7 +6912,7 @@ window.X4KbData = {
           "term": "腹痛",
           "page": 305,
           "section": "證候特徵",
-          "primary": false,
+          "primary": true,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -6930,7 +6930,7 @@ window.X4KbData = {
           "term": "嘔吐",
           "page": 305,
           "section": "證候特徵",
-          "primary": false,
+          "primary": true,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -7268,7 +7268,7 @@ window.X4KbData = {
           "term": "振水音",
           "page": 310,
           "section": "證候特徵",
-          "primary": false,
+          "primary": true,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -9414,7 +9414,7 @@ window.X4KbData = {
           "id": "S-COLD",
           "negated": false,
           "matchType": "book-physician",
-          "primary": false,
+          "primary": true,
           "page": 272
         },
         {
@@ -9422,7 +9422,7 @@ window.X4KbData = {
           "id": "S-MENSTRUAL-IRREGULAR",
           "negated": false,
           "matchType": "book-physician",
-          "primary": false,
+          "primary": true,
           "page": 272
         },
         {
@@ -9438,7 +9438,7 @@ window.X4KbData = {
           "id": "S-DYSMENORRHEA",
           "negated": false,
           "matchType": "book-physician",
-          "primary": false,
+          "primary": true,
           "page": 272
         },
         {
@@ -9446,7 +9446,7 @@ window.X4KbData = {
           "id": "S-HEADACHE",
           "negated": false,
           "matchType": "book-physician",
-          "primary": false,
+          "primary": true,
           "page": 272
         },
         {
@@ -9462,7 +9462,7 @@ window.X4KbData = {
           "id": "S-SHOULDER-STIFF",
           "negated": false,
           "matchType": "book-physician",
-          "primary": false,
+          "primary": true,
           "page": 272
         }
       ],
@@ -9622,7 +9622,7 @@ window.X4KbData = {
           "id": "S-CHEST-RIB-FULLNESS",
           "negated": false,
           "matchType": "book-physician",
-          "primary": false,
+          "primary": true,
           "page": 288
         },
         {
@@ -9638,7 +9638,7 @@ window.X4KbData = {
           "id": "S-HEADACHE",
           "negated": false,
           "matchType": "book-physician",
-          "primary": false,
+          "primary": true,
           "page": 288
         },
         {
@@ -9646,7 +9646,7 @@ window.X4KbData = {
           "id": "S-HEAT-SENSATION",
           "negated": false,
           "matchType": "book-physician",
-          "primary": false,
+          "primary": true,
           "page": 288
         },
         {
@@ -9662,7 +9662,7 @@ window.X4KbData = {
           "id": "S-SHOULDER-STIFF",
           "negated": false,
           "matchType": "book-physician",
-          "primary": false,
+          "primary": true,
           "page": 288
         },
         {
@@ -9670,7 +9670,7 @@ window.X4KbData = {
           "id": "S-SPONTANEOUS-SWEAT",
           "negated": false,
           "matchType": "book-physician",
-          "primary": false,
+          "primary": true,
           "page": 288
         },
         {
@@ -10512,7 +10512,7 @@ window.X4KbData = {
           "term": "手足發冷",
           "page": 275,
           "section": "證候特徵",
-          "primary": false,
+          "primary": true,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -10530,7 +10530,7 @@ window.X4KbData = {
           "term": "易疲勞",
           "page": 275,
           "section": "證候特徵",
-          "primary": false,
+          "primary": true,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -10539,7 +10539,7 @@ window.X4KbData = {
           "term": "遺精",
           "page": 275,
           "section": "證候特徵",
-          "primary": false,
+          "primary": true,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -11516,7 +11516,7 @@ window.X4KbData = {
           "term": "精神不安",
           "page": 238,
           "section": "證候特徵",
-          "primary": false,
+          "primary": true,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -11525,7 +11525,7 @@ window.X4KbData = {
           "term": "呼吸困難",
           "page": 238,
           "section": "證候特徵",
-          "primary": false,
+          "primary": true,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -11543,7 +11543,7 @@ window.X4KbData = {
           "term": "振水音",
           "page": 238,
           "section": "證候特徵",
-          "primary": false,
+          "primary": true,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -11552,7 +11552,7 @@ window.X4KbData = {
           "term": "胸痛",
           "page": 238,
           "section": "證候特徵",
-          "primary": false,
+          "primary": true,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -11561,7 +11561,7 @@ window.X4KbData = {
           "term": "鬱悶",
           "page": 238,
           "section": "證候特徵",
-          "primary": false,
+          "primary": true,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -11953,7 +11953,7 @@ window.X4KbData = {
           "id": "S-EPIGASTRIC-RESISTANCE",
           "negated": false,
           "matchType": "book-physician",
-          "primary": false,
+          "primary": true,
           "page": 283
         },
         {
@@ -11961,7 +11961,7 @@ window.X4KbData = {
           "id": "S-BLEEDING",
           "negated": false,
           "matchType": "book-physician",
-          "primary": false,
+          "primary": true,
           "page": 283
         },
         {
@@ -11969,7 +11969,7 @@ window.X4KbData = {
           "id": "S-DERMATITIS",
           "negated": false,
           "matchType": "book-physician",
-          "primary": false,
+          "primary": true,
           "page": 283
         },
         {
@@ -11985,7 +11985,7 @@ window.X4KbData = {
           "id": "S-PRURITUS",
           "negated": false,
           "matchType": "book-physician",
-          "primary": false,
+          "primary": true,
           "page": 283
         },
         {
@@ -12143,7 +12143,7 @@ window.X4KbData = {
           "id": "S-COLD",
           "negated": false,
           "matchType": "book-physician",
-          "primary": false,
+          "primary": true,
           "page": 270
         },
         {
@@ -12151,7 +12151,7 @@ window.X4KbData = {
           "id": "S-FEVER",
           "negated": false,
           "matchType": "book-physician",
-          "primary": false,
+          "primary": true,
           "page": 270
         },
         {
@@ -12159,7 +12159,7 @@ window.X4KbData = {
           "id": "S-HEADACHE",
           "negated": false,
           "matchType": "book-physician",
-          "primary": false,
+          "primary": true,
           "page": 270
         },
         {
@@ -13126,7 +13126,7 @@ window.X4KbData = {
           "term": "食慾不振",
           "page": 316,
           "section": "證候特徵",
-          "primary": false,
+          "primary": true,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -13135,7 +13135,7 @@ window.X4KbData = {
           "term": "面色欠佳",
           "page": 316,
           "section": "證候特徵",
-          "primary": false,
+          "primary": true,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -13657,7 +13657,7 @@ window.X4KbData = {
           "term": "手足發冷",
           "page": 295,
           "section": "證候特徵",
-          "primary": false,
+          "primary": true,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -13991,7 +13991,7 @@ window.X4KbData = {
           "term": "尿量減少",
           "page": 308,
           "section": "證候特徵",
-          "primary": false,
+          "primary": true,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -14000,7 +14000,7 @@ window.X4KbData = {
           "term": "自然汗出",
           "page": 308,
           "section": "證候特徵",
-          "primary": false,
+          "primary": true,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -14009,7 +14009,7 @@ window.X4KbData = {
           "term": "軟便",
           "page": 308,
           "section": "證候特徵",
-          "primary": false,
+          "primary": true,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -14018,7 +14018,7 @@ window.X4KbData = {
           "term": "消瘦",
           "page": 308,
           "section": "證候特徵",
-          "primary": false,
+          "primary": true,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -14027,7 +14027,7 @@ window.X4KbData = {
           "term": "熱感",
           "page": 308,
           "section": "證候特徵",
-          "primary": false,
+          "primary": true,
           "physicianDecision": "accept-secondary"
         },
         {
@@ -14906,7 +14906,7 @@ window.X4KbData = {
           "id": "S-HEAVY-HEAD",
           "negated": false,
           "matchType": "book-physician",
-          "primary": false,
+          "primary": true,
           "page": 281
         },
         {
@@ -14914,7 +14914,7 @@ window.X4KbData = {
           "id": "S-HOT-FLUSH",
           "negated": false,
           "matchType": "book-physician",
-          "primary": false,
+          "primary": true,
           "page": 281
         },
         {
@@ -14922,7 +14922,7 @@ window.X4KbData = {
           "id": "S-INSOMNIA",
           "negated": false,
           "matchType": "book-physician",
-          "primary": false,
+          "primary": true,
           "page": 281
         },
         {
@@ -14930,7 +14930,7 @@ window.X4KbData = {
           "id": "S-TINNITUS",
           "negated": false,
           "matchType": "book-physician",
-          "primary": false,
+          "primary": true,
           "page": 281
         },
         {
@@ -15709,7 +15709,7 @@ window.X4KbData = {
           "id": "S-APPETITE-LOW",
           "negated": false,
           "matchType": "book-physician",
-          "primary": false,
+          "primary": true,
           "page": 239
         },
         {
@@ -15717,7 +15717,7 @@ window.X4KbData = {
           "id": "S-EPIGASTRIC-PAIN",
           "negated": false,
           "matchType": "book-physician",
-          "primary": false,
+          "primary": true,
           "page": 239
         },
         {
@@ -15725,7 +15725,7 @@ window.X4KbData = {
           "id": "S-ABDOMINAL-PAIN",
           "negated": false,
           "matchType": "book-physician",
-          "primary": false,
+          "primary": true,
           "page": 239
         }
       ],
@@ -19267,21 +19267,21 @@ window.X4KbData = {
           "id": "S-BLEEDING",
           "negated": false,
           "matchType": "book",
-          "primary": false
+          "primary": true
         },
         {
           "raw": "便秘",
           "id": "S-CONSTIPATION",
           "negated": false,
           "matchType": "book",
-          "primary": false
+          "primary": true
         },
         {
           "raw": "瘙癢",
           "id": "S-PRURITUS",
           "negated": false,
           "matchType": "book",
-          "primary": false
+          "primary": true
         },
         {
           "raw": "痔",
@@ -19418,7 +19418,7 @@ window.X4KbData = {
           "id": "S-ABDOMINAL-TENDERNESS",
           "negated": false,
           "matchType": "book",
-          "primary": false
+          "primary": true
         },
         {
           "raw": "皮疹",
@@ -19432,7 +19432,7 @@ window.X4KbData = {
           "id": "S-PUS",
           "negated": false,
           "matchType": "book",
-          "primary": false
+          "primary": true
         },
         {
           "raw": "胸脅苦滿",
@@ -19951,49 +19951,49 @@ window.X4KbData = {
           "id": "S-DIZZINESS",
           "negated": false,
           "matchType": "book",
-          "primary": false
+          "primary": true
         },
         {
           "raw": "頭痛",
           "id": "S-HEADACHE",
           "negated": false,
           "matchType": "book",
-          "primary": false
+          "primary": true
         },
         {
           "raw": "頭重",
           "id": "S-HEAVY-HEAD",
           "negated": false,
           "matchType": "book",
-          "primary": false
+          "primary": true
         },
         {
           "raw": "噁心",
           "id": "S-NAUSEA",
           "negated": false,
           "matchType": "book",
-          "primary": false
+          "primary": true
         },
         {
           "raw": "肩凝",
           "id": "S-SHOULDER-STIFF",
           "negated": false,
           "matchType": "book",
-          "primary": false
+          "primary": true
         },
         {
           "raw": "耳鳴",
           "id": "S-TINNITUS",
           "negated": false,
           "matchType": "book",
-          "primary": false
+          "primary": true
         },
         {
           "raw": "嘔吐",
           "id": "S-VOMITING",
           "negated": false,
           "matchType": "book",
-          "primary": false
+          "primary": true
         },
         {
           "raw": "神經過敏",
@@ -20315,7 +20315,7 @@ window.X4KbData = {
           "id": "S-APPETITE-LOW",
           "negated": false,
           "matchType": "book",
-          "primary": false
+          "primary": true
         },
         {
           "raw": "胸脅苦滿",
@@ -20329,14 +20329,14 @@ window.X4KbData = {
           "id": "S-FATIGUE",
           "negated": false,
           "matchType": "book",
-          "primary": false
+          "primary": true
         },
         {
           "raw": "發熱",
           "id": "S-FEVER",
           "negated": false,
           "matchType": "book",
-          "primary": false
+          "primary": true
         },
         {
           "raw": "心下痞硬",
@@ -22163,28 +22163,28 @@ window.X4KbData = {
           "id": "S-DIARRHEA-WATERY",
           "negated": false,
           "matchType": "book",
-          "primary": false
+          "primary": true
         },
         {
           "raw": "腹瀉",
           "id": "S-DIARRHEA",
           "negated": false,
           "matchType": "book",
-          "primary": false
+          "primary": true
         },
         {
           "raw": "嗜睡",
           "id": "S-SLEEPINESS",
           "negated": false,
           "matchType": "book",
-          "primary": false
+          "primary": true
         },
         {
           "raw": "自汗",
           "id": "S-SPONTANEOUS-SWEAT",
           "negated": false,
           "matchType": "book",
-          "primary": false
+          "primary": true
         }
       ],
       "herbs": [],
@@ -22899,21 +22899,21 @@ window.X4KbData = {
           "id": "S-CHEST-RIB-FULLNESS",
           "negated": false,
           "matchType": "book",
-          "primary": false
+          "primary": true
         },
         {
           "raw": "惡寒",
           "id": "S-COLD",
           "negated": false,
           "matchType": "book",
-          "primary": false
+          "primary": true
         },
         {
           "raw": "發熱",
           "id": "S-FEVER",
           "negated": false,
           "matchType": "book",
-          "primary": false
+          "primary": true
         },
         {
           "raw": "津液不足",
@@ -23002,7 +23002,7 @@ window.X4KbData = {
           "id": "S-ANXIETY",
           "negated": false,
           "matchType": "book",
-          "primary": false
+          "primary": true
         },
         {
           "raw": "食慾不振",
@@ -23030,7 +23030,7 @@ window.X4KbData = {
           "id": "S-ABDOMINAL-PAIN",
           "negated": false,
           "matchType": "book",
-          "primary": false
+          "primary": true
         },
         {
           "raw": "壓痛",
@@ -23065,7 +23065,7 @@ window.X4KbData = {
           "id": "S-INSOMNIA",
           "negated": false,
           "matchType": "book",
-          "primary": false
+          "primary": true
         },
         {
           "raw": "口苦",
@@ -24420,7 +24420,7 @@ window.X4KbData = {
           "id": "S-DERMATITIS",
           "negated": false,
           "matchType": "book",
-          "primary": false
+          "primary": true
         },
         {
           "raw": "熱感",
@@ -24441,14 +24441,14 @@ window.X4KbData = {
           "id": "S-THIRST",
           "negated": false,
           "matchType": "book",
-          "primary": false
+          "primary": true
         },
         {
           "raw": "痂皮",
           "id": "S-CRUST",
           "negated": false,
           "matchType": "book",
-          "primary": false
+          "primary": true
         }
       ],
       "herbs": [],
@@ -24953,14 +24953,14 @@ window.X4KbData = {
           "id": "S-PRURITUS",
           "negated": false,
           "matchType": "book",
-          "primary": false
+          "primary": true
         },
         {
           "raw": "口渴",
           "id": "S-THIRST",
           "negated": false,
           "matchType": "book",
-          "primary": false
+          "primary": true
         }
       ],
       "herbs": [],
@@ -25122,7 +25122,7 @@ window.X4KbData = {
           "id": "S-HEAT-TOXIN",
           "negated": false,
           "matchType": "book",
-          "primary": false
+          "primary": true
         },
         {
           "raw": "瘙癢",
@@ -25801,7 +25801,7 @@ window.X4KbData = {
           "id": "S-ASTHMA-WHEEZE",
           "negated": false,
           "matchType": "book",
-          "primary": false
+          "primary": true
         },
         {
           "raw": "惡寒",
@@ -25815,7 +25815,7 @@ window.X4KbData = {
           "id": "S-COUGH",
           "negated": false,
           "matchType": "book",
-          "primary": false
+          "primary": true
         },
         {
           "raw": "發熱",
@@ -25843,7 +25843,7 @@ window.X4KbData = {
           "id": "S-NASAL-CONGESTION",
           "negated": false,
           "matchType": "book",
-          "primary": false
+          "primary": true
         },
         {
           "raw": "出血",
@@ -25948,7 +25948,7 @@ window.X4KbData = {
           "id": "S-SKIN-DRY",
           "negated": false,
           "matchType": "book",
-          "primary": false
+          "primary": true
         },
         {
           "raw": "痔",
@@ -26220,28 +26220,28 @@ window.X4KbData = {
           "id": "S-HEADACHE",
           "negated": false,
           "matchType": "book",
-          "primary": false
+          "primary": true
         },
         {
           "raw": "腰痛",
           "id": "S-LOW-BACK-PAIN",
           "negated": false,
           "matchType": "book",
-          "primary": false
+          "primary": true
         },
         {
           "raw": "噁心",
           "id": "S-NAUSEA",
           "negated": false,
           "matchType": "book",
-          "primary": false
+          "primary": true
         },
         {
           "raw": "嘔吐",
           "id": "S-VOMITING",
           "negated": false,
           "matchType": "book",
-          "primary": false
+          "primary": true
         },
         {
           "raw": "腹直肌拘攣",
@@ -26497,7 +26497,7 @@ window.X4KbData = {
           "id": "S-HOT-FLUSH",
           "negated": false,
           "matchType": "book",
-          "primary": false
+          "primary": true
         },
         {
           "raw": "神經痛",
@@ -26518,7 +26518,7 @@ window.X4KbData = {
           "id": "S-FACIAL-FLUSH",
           "negated": false,
           "matchType": "book",
-          "primary": false
+          "primary": true
         },
         {
           "raw": "發熱",
@@ -26539,7 +26539,7 @@ window.X4KbData = {
           "id": "S-HEAT-SENSATION",
           "negated": false,
           "matchType": "book",
-          "primary": false
+          "primary": true
         },
         {
           "raw": "無自然汗出",
@@ -27051,14 +27051,14 @@ window.X4KbData = {
           "id": "S-DERMATITIS",
           "negated": false,
           "matchType": "book",
-          "primary": false
+          "primary": true
         },
         {
           "raw": "瘙癢",
           "id": "S-PRURITUS",
           "negated": false,
           "matchType": "book",
-          "primary": false
+          "primary": true
         },
         {
           "raw": "疣",
