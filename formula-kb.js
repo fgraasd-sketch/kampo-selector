@@ -638,8 +638,9 @@ const EXCEL_FORMULA_KB = [
     "name": "柴苓湯",
     "type": "虛實夾雜",
     "category": "虛實夾雜",
-    "syndrome": "shui_zhi",
+    "syndrome": "qi_xu",
     "patterns": [
+      "氣虛",
       "水滯"
     ],
     "zangFuTags": [],
@@ -669,7 +670,7 @@ const EXCEL_FORMULA_KB = [
     "sourceSheet": "水滯 全身型 ",
     "vector": {
       "patterns": {
-        "氣虛": 0,
+        "氣虛": 1,
         "氣逆": 0,
         "氣鬱": 0,
         "血虛": 0,
@@ -3574,8 +3575,9 @@ const EXCEL_FORMULA_KB = [
     "name": "柴朴湯",
     "type": "虛實夾雜",
     "category": "半夏厚朴湯類",
-    "syndrome": "qi_yu",
+    "syndrome": "qi_xu",
     "patterns": [
+      "氣虛",
       "氣鬱"
     ],
     "zangFuTags": [],
@@ -3601,7 +3603,7 @@ const EXCEL_FORMULA_KB = [
     "sourceSheet": "「氣郁 方劑」",
     "vector": {
       "patterns": {
-        "氣虛": 0,
+        "氣虛": 1,
         "氣逆": 0,
         "氣鬱": 1,
         "血虛": 0,
@@ -4681,8 +4683,10 @@ const EXCEL_FORMULA_KB = [
     "name": "抑肝散加陳皮半夏",
     "type": "虛實夾雜",
     "category": "(陽氣 ↑↑ / 陰液 )",
-    "syndrome": "heart",
-    "patterns": [],
+    "syndrome": "shui_zhi",
+    "patterns": [
+      "水滯"
+    ],
     "zangFuTags": [],
     "symptoms": [
       "還有胃腸虛弱",
@@ -4707,7 +4711,7 @@ const EXCEL_FORMULA_KB = [
         "氣鬱": 0,
         "血虛": 0,
         "瘀血": 0,
-        "水滯": 0
+        "水滯": 1
       },
       "zangFu": {
         "肝": 0,
@@ -5618,9 +5622,10 @@ const EXCEL_FORMULA_KB = [
     "name": "苓甘五味加姜辛半夏杏仁湯",
     "type": "虛證",
     "category": "陽氣虛 / 陰液實(肺氣虛)",
-    "syndrome": "qi_xu",
+    "syndrome": "shui_zhi",
     "patterns": [
-      "氣虛"
+      "氣虛",
+      "水滯"
     ],
     "zangFuTags": [],
     "symptoms": [
@@ -5652,7 +5657,7 @@ const EXCEL_FORMULA_KB = [
         "氣鬱": 0,
         "血虛": 0,
         "瘀血": 0,
-        "水滯": 0
+        "水滯": 1
       },
       "zangFu": {
         "肝": 0,
@@ -9395,8 +9400,10 @@ const EXCEL_FORMULA_KB = [
     "name": "茯苓飲合半夏厚朴湯",
     "type": "虛證",
     "category": "書籍補充（漢方臨床診療學）",
-    "syndrome": "shui_zhi",
+    "syndrome": "qi_xu",
     "patterns": [
+      "氣虛",
+      "氣鬱",
       "水滯"
     ],
     "zangFuTags": [],
@@ -9428,9 +9435,9 @@ const EXCEL_FORMULA_KB = [
     "sourceSheet": "《漢方臨床診療學》p.263",
     "vector": {
       "patterns": {
-        "氣虛": 0,
+        "氣虛": 1,
         "氣逆": 0,
-        "氣鬱": 0,
+        "氣鬱": 1,
         "血虛": 0,
         "瘀血": 0,
         "水滯": 1
@@ -10504,7 +10511,8 @@ const EXCEL_FORMULA_KB = [
     "category": "書籍補充（漢方臨床診療學）",
     "syndrome": "xue_xu",
     "patterns": [
-      "血虛"
+      "血虛",
+      "水滯"
     ],
     "zangFuTags": [],
     "symptoms": [
@@ -10546,7 +10554,7 @@ const EXCEL_FORMULA_KB = [
         "氣鬱": 0,
         "血虛": 1,
         "瘀血": 0,
-        "水滯": 0
+        "水滯": 1
       },
       "zangFu": {
         "肝": 0.2,

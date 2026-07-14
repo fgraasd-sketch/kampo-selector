@@ -4253,7 +4253,7 @@ window.X4KbData = {
       "category": "虛實夾雜",
       "xushiClass": "虛實夾雜",
       "patternVector": {
-        "QI_XU": 0,
+        "QI_XU": 1,
         "QI_NI": 0,
         "QI_YU": 0,
         "XUE_XU": 0,
@@ -12047,7 +12047,7 @@ window.X4KbData = {
       "category": "半夏厚朴湯類",
       "xushiClass": "虛實夾雜",
       "patternVector": {
-        "QI_XU": 0,
+        "QI_XU": 1,
         "QI_NI": 0,
         "QI_YU": 1,
         "XUE_XU": 0,
@@ -15274,7 +15274,7 @@ window.X4KbData = {
         "QI_YU": 0,
         "XUE_XU": 0,
         "YU_XUE": 0,
-        "SUI_ZHI": 0
+        "SUI_ZHI": 1
       },
       "zangFuVector": {
         "GAN-QIYU": 0,
@@ -17624,7 +17624,7 @@ window.X4KbData = {
         "QI_YU": 0,
         "XUE_XU": 0,
         "YU_XUE": 0,
-        "SUI_ZHI": 0
+        "SUI_ZHI": 1
       },
       "zangFuVector": {
         "GAN-QIYU": 0,
@@ -25787,9 +25787,9 @@ window.X4KbData = {
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛證",
       "patternVector": {
-        "QI_XU": 0,
+        "QI_XU": 1,
         "QI_NI": 0,
-        "QI_YU": 0,
+        "QI_YU": 1,
         "XUE_XU": 0,
         "YU_XUE": 0,
         "SUI_ZHI": 1
@@ -28001,7 +28001,7 @@ window.X4KbData = {
         "QI_YU": 0,
         "XUE_XU": 1,
         "YU_XUE": 0,
-        "SUI_ZHI": 0
+        "SUI_ZHI": 1
       },
       "zangFuVector": {
         "GAN-QIYU": 0.1429,
