@@ -746,7 +746,8 @@ window.X4KbData = {
         "心窩部廣泛抵抗",
         "心窩部抵抗",
         "心窩部痞塞",
-        "心窩部膨滿感"
+        "心窩部膨滿感",
+        "心下痞堅"
       ],
       "parent": null,
       "negationSensitive": false,
@@ -7783,6 +7784,16 @@ window.X4KbData = {
           "id": "S-DIZZINESS",
           "negated": false,
           "fromIndications": true
+        },
+        {
+          "raw": "心下痞硬",
+          "id": "S-EPIGASTRIC-RESISTANCE",
+          "negated": false,
+          "matchType": "book-physician",
+          "primary": false,
+          "mild": false,
+          "cardinal": true,
+          "page": 237
         }
       ],
       "herbs": [
@@ -7805,7 +7816,8 @@ window.X4KbData = {
         "「水滯 心下型  胃內型」",
         "「氣郁 方劑」",
         "「氣虛 方劑」",
-        "「脾異常治療方劑彙整表」的副本"
+        "「脾異常治療方劑彙整表」的副本",
+        "《漢方臨床診療學》p.237"
       ],
       "indications": [
         "S-ABDOMINAL-DISTENSION",
@@ -7815,7 +7827,8 @@ window.X4KbData = {
         "S-FATIGUE",
         "S-GASTRIC-SPLASH",
         "S-HEADACHE",
-        "S-HEAVY-HEAD"
+        "S-HEAVY-HEAD",
+        "S-EPIGASTRIC-RESISTANCE"
       ],
       "formulaPattern": [
         "人參湯類",
@@ -7829,19 +7842,7 @@ window.X4KbData = {
       "bookPages": [
         237
       ],
-      "bookSymptoms": [
-        {
-          "id": "S-EPIGASTRIC-RESISTANCE",
-          "canonical": "心下痞硬",
-          "term": "心下痞硬",
-          "page": 237,
-          "section": "病期病態",
-          "primary": false,
-          "mild": false,
-          "cardinal": false,
-          "physicianDecision": "accept-secondary"
-        }
-      ],
+      "bookSymptoms": [],
       "bookCorroborated": [
         {
           "id": "S-GASTRIC-SPLASH",
@@ -8062,6 +8063,11 @@ window.X4KbData = {
         {
           "id": "S-COUGH",
           "canonical": "咳嗽",
+          "page": 301
+        },
+        {
+          "id": "S-EPIGASTRIC-RESISTANCE",
+          "canonical": "心下痞硬",
           "page": 301
         }
       ],
@@ -11756,6 +11762,16 @@ window.X4KbData = {
           "page": 284
         },
         {
+          "raw": "心下痞硬",
+          "id": "S-EPIGASTRIC-RESISTANCE",
+          "negated": false,
+          "matchType": "book-physician",
+          "primary": true,
+          "mild": false,
+          "cardinal": true,
+          "page": 284
+        },
+        {
           "raw": "腹痛",
           "id": "S-ABDOMINAL-PAIN",
           "negated": false,
@@ -11773,16 +11789,6 @@ window.X4KbData = {
           "primary": true,
           "mild": false,
           "cardinal": false,
-          "page": 284
-        },
-        {
-          "raw": "心下痞硬",
-          "id": "S-EPIGASTRIC-RESISTANCE",
-          "negated": false,
-          "matchType": "book-physician",
-          "primary": false,
-          "mild": false,
-          "cardinal": true,
           "page": 284
         },
         {
@@ -11836,9 +11842,9 @@ window.X4KbData = {
         "S-NAUSEA",
         "S-VOMITING",
         "S-APPETITE-LOW",
+        "S-EPIGASTRIC-RESISTANCE",
         "S-ABDOMINAL-PAIN",
         "S-ABDOMINAL-TENDERNESS",
-        "S-EPIGASTRIC-RESISTANCE",
         "S-UPPER-HOT-LOWER-COLD",
         "S-FEVER",
         "S-HEADACHE"
