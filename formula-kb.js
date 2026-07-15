@@ -5263,9 +5263,10 @@ const EXCEL_FORMULA_KB = [
     "name": "酸棗仁湯",
     "type": "虛證",
     "category": "陽氣虛 / 陰液虛(虛證/虛勞)",
-    "syndrome": "lung",
+    "syndrome": "xue_xu",
     "patterns": [
-      "氣虛"
+      "氣虛",
+      "血虛"
     ],
     "zangFuTags": [],
     "symptoms": [
@@ -5305,7 +5306,7 @@ const EXCEL_FORMULA_KB = [
         "氣虛": 0.55,
         "氣逆": 0,
         "氣鬱": 0,
-        "血虛": 0,
+        "血虛": 1,
         "瘀血": 0,
         "水滯": 0
       },

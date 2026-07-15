@@ -17376,7 +17376,7 @@ window.X4KbData = {
         "QI_XU": 0.55,
         "QI_NI": 0,
         "QI_YU": 0,
-        "XUE_XU": 0,
+        "XUE_XU": 1,
         "YU_XUE": 0,
         "SUI_ZHI": 0
       },
