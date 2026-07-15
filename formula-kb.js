@@ -2843,8 +2843,8 @@ const EXCEL_FORMULA_KB = [
       "關節痛",
       "神經痛",
       "知覺障礙",
-      "浮腫傾向",
-      "壓痛"
+      "腹部抵抗",
+      "浮腫傾向"
     ],
     "keySymptoms": [
       "精神不安",
@@ -2853,10 +2853,10 @@ const EXCEL_FORMULA_KB = [
       "關節痛",
       "神經痛",
       "知覺障礙",
-      "浮腫傾向",
-      "壓痛"
+      "腹部抵抗",
+      "浮腫傾向"
     ],
-    "indications": "精神不安，輕度胸脇苦滿，胸悶，關節痛，神經痛，知覺障礙，浮腫傾向，壓痛",
+    "indications": "精神不安，輕度胸脇苦滿，胸悶，關節痛，神經痛，知覺障礙，腹部抵抗，浮腫傾向",
     "formulaPattern": [
       "虛實夾雜",
       "伴氣逆",
@@ -7942,15 +7942,17 @@ const EXCEL_FORMULA_KB = [
     "name": "附子理中湯",
     "type": "虛證",
     "category": "書籍補充（漢方臨床診療學）",
-    "syndrome": "qi_xu",
+    "syndrome": "xue_xu",
     "patterns": [
-      "氣虛"
+      "血虛",
+      "水滯"
     ],
     "zangFuTags": [],
     "symptoms": [
       "腹瀉傾向",
       "胃腸虛弱",
       "面色差",
+      "目眩",
       "胃痛",
       "炎症",
       "頭重",
@@ -7962,6 +7964,7 @@ const EXCEL_FORMULA_KB = [
       "腹瀉傾向",
       "胃腸虛弱",
       "面色差",
+      "目眩",
       "胃痛",
       "炎症",
       "頭重",
@@ -7969,7 +7972,7 @@ const EXCEL_FORMULA_KB = [
       "心下痞硬",
       "發冷"
     ],
-    "indications": "腹瀉傾向，胃腸虛弱，面色差，胃痛，炎症，頭重，噁心，心下痞硬，發冷",
+    "indications": "腹瀉傾向，胃腸虛弱，面色差，目眩，胃痛，炎症，頭重，噁心，心下痞硬，發冷",
     "formulaPattern": [],
     "specialIndications": [],
     "contraindications": [],
@@ -7977,15 +7980,15 @@ const EXCEL_FORMULA_KB = [
     "sourceSheet": "《漢方臨床診療學》p.265",
     "vector": {
       "patterns": {
-        "氣虛": 1,
+        "氣虛": 0,
         "氣逆": 0,
         "氣鬱": 0,
-        "血虛": 0,
+        "血虛": 1,
         "瘀血": 0,
-        "水滯": 0
+        "水滯": 1
       },
       "zangFu": {
-        "肝": 0,
+        "肝": 0.2,
         "心": 0.5,
         "脾": 0.4,
         "肺": 0.2,
@@ -8760,11 +8763,11 @@ const EXCEL_FORMULA_KB = [
     ],
     "zangFuTags": [],
     "symptoms": [
+      "腹部抵抗",
       "下肢發冷",
       "月經異常",
       "肌膚甲錯",
       "烘熱感",
-      "壓痛",
       "出血",
       "眩暈",
       "頭痛",
@@ -8776,11 +8779,11 @@ const EXCEL_FORMULA_KB = [
       "疣"
     ],
     "keySymptoms": [
+      "腹部抵抗",
       "下肢發冷",
       "月經異常",
       "肌膚甲錯",
       "烘熱感",
-      "壓痛",
       "出血",
       "眩暈",
       "頭痛",
@@ -8791,7 +8794,7 @@ const EXCEL_FORMULA_KB = [
       "皮疹",
       "疣"
     ],
-    "indications": "下肢發冷，月經異常，肌膚甲錯，烘熱感，壓痛，出血，眩暈，頭痛，熱感，炎症，排膿，肩凝，皮疹，疣",
+    "indications": "腹部抵抗，下肢發冷，月經異常，肌膚甲錯，烘熱感，出血，眩暈，頭痛，熱感，炎症，排膿，肩凝，皮疹，疣",
     "formulaPattern": [],
     "specialIndications": [],
     "contraindications": [],

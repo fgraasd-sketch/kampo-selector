@@ -82,7 +82,8 @@ window.X4KbData = {
         "心窩部抵抗、壓痛",
         "深部壓痛",
         "腹部壓痛抵抗",
-        "臍旁和右下腹壓痛"
+        "臍旁和右下腹壓痛",
+        "腹部抵抗"
       ],
       "parent": null,
       "negationSensitive": false,
@@ -136,7 +137,8 @@ window.X4KbData = {
         "心神不寧",
         "心神不安",
         "坐立不安",
-        "情緒不穩"
+        "情緒不穩",
+        "煩躁"
       ],
       "parent": null,
       "negationSensitive": false,
@@ -598,7 +600,8 @@ window.X4KbData = {
         "眩暈感",
         "眩暈發作",
         "頭暈",
-        "頭暈感"
+        "頭暈感",
+        "目眩"
       ],
       "parent": null,
       "negationSensitive": false,
@@ -1191,7 +1194,8 @@ window.X4KbData = {
         "淺眠",
         "難以入睡",
         "入睡困難",
-        "睡眠品質差"
+        "睡眠品質差",
+        "睡眠困難"
       ],
       "parent": null,
       "negationSensitive": false,
@@ -1643,7 +1647,8 @@ window.X4KbData = {
         "面色不佳",
         "面色欠佳",
         "面色差",
-        "面色不良"
+        "面色不良",
+        "皮色黑"
       ],
       "parent": null,
       "negationSensitive": false,
@@ -10655,8 +10660,8 @@ window.X4KbData = {
           "fromIndications": true
         },
         {
-          "raw": "浮腫傾向",
-          "id": "S-EDEMA",
+          "raw": "腹部抵抗",
+          "id": "S-ABDOMINAL-TENDERNESS",
           "negated": false,
           "matchType": "book-physician",
           "primary": true,
@@ -10665,8 +10670,8 @@ window.X4KbData = {
           "page": 318
         },
         {
-          "raw": "壓痛",
-          "id": "S-ABDOMINAL-TENDERNESS",
+          "raw": "浮腫傾向",
+          "id": "S-EDEMA",
           "negated": false,
           "matchType": "book-physician",
           "primary": true,
@@ -10687,8 +10692,8 @@ window.X4KbData = {
         "S-JOINT-PAIN",
         "S-NEURALGIA",
         "S-NUMBNESS",
-        "S-EDEMA",
-        "S-ABDOMINAL-TENDERNESS"
+        "S-ABDOMINAL-TENDERNESS",
+        "S-EDEMA"
       ],
       "formulaPattern": [
         "虛實夾雜",
@@ -23478,16 +23483,16 @@ window.X4KbData = {
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛證",
       "patternVector": {
-        "QI_XU": 1,
+        "QI_XU": 0,
         "QI_NI": 0,
         "QI_YU": 0,
-        "XUE_XU": 0,
+        "XUE_XU": 1,
         "YU_XUE": 0,
-        "SUI_ZHI": 0
+        "SUI_ZHI": 1
       },
       "zangFuVector": {
-        "GAN-QIYU": 0,
-        "GAN-YINXU": 0,
+        "GAN-QIYU": 0.1429,
+        "GAN-YINXU": 0.2,
         "XIN-YANGXU": 0.5,
         "XIN-XUEXU": 0,
         "PI-QIXU": 0.4,
@@ -23495,7 +23500,7 @@ window.X4KbData = {
         "FEI-QIXU": 0.2,
         "FEI-YINXU": 0,
         "SHEN-YANGXU": 0.2,
-        "SHEN-YINXU": 0
+        "SHEN-YINXU": 0.1111
       },
       "vectorSource": "book-derived",
       "keySymptoms": [
@@ -23520,6 +23525,15 @@ window.X4KbData = {
         {
           "raw": "面色差",
           "id": "S-PALE-COMPLEXION",
+          "negated": false,
+          "matchType": "book",
+          "primary": false,
+          "mild": false,
+          "cardinal": false
+        },
+        {
+          "raw": "目眩",
+          "id": "S-DIZZINESS",
           "negated": false,
           "matchType": "book",
           "primary": false,
@@ -23590,6 +23604,7 @@ window.X4KbData = {
         "S-DIARRHEA",
         "S-FATIGUE",
         "S-PALE-COMPLEXION",
+        "S-DIZZINESS",
         "S-EPIGASTRIC-PAIN",
         "S-HEAT-TOXIN",
         "S-HEAVY-HEAD",
@@ -25221,6 +25236,15 @@ window.X4KbData = {
       "vectorSource": "book-derived",
       "keySymptoms": [
         {
+          "raw": "腹部抵抗",
+          "id": "S-ABDOMINAL-TENDERNESS",
+          "negated": false,
+          "matchType": "book",
+          "primary": true,
+          "mild": false,
+          "cardinal": false
+        },
+        {
           "raw": "下肢發冷",
           "id": "S-COLD",
           "negated": false,
@@ -25250,15 +25274,6 @@ window.X4KbData = {
         {
           "raw": "烘熱感",
           "id": "S-HOT-FLUSH",
-          "negated": false,
-          "matchType": "book",
-          "primary": true,
-          "mild": false,
-          "cardinal": false
-        },
-        {
-          "raw": "壓痛",
-          "id": "S-ABDOMINAL-TENDERNESS",
           "negated": false,
           "matchType": "book",
           "primary": true,
@@ -25353,11 +25368,11 @@ window.X4KbData = {
         "《漢方臨床診療學》p.273"
       ],
       "indications": [
+        "S-ABDOMINAL-TENDERNESS",
         "S-COLD",
         "S-MENSTRUAL-IRREGULAR",
         "S-SKIN-SCALY",
         "S-HOT-FLUSH",
-        "S-ABDOMINAL-TENDERNESS",
         "S-BLEEDING",
         "S-DIZZINESS",
         "S-HEADACHE",
