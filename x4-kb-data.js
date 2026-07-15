@@ -201,7 +201,10 @@ window.X4KbData = {
         "咳喘",
         "哮喘",
         "喘鳴",
-        "氣短"
+        "氣短",
+        "端坐呼吸",
+        "端座呼吸",
+        "不能平臥"
       ],
       "parent": null,
       "negationSensitive": false,
