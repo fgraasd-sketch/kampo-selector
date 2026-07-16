@@ -113,6 +113,19 @@ const X4Adapter = (function () {
     return signs.length ? "本方涵蓋病人的特異主訴（" + signs.join("、") + "）" : null;
   }
 
+  // 主證加分 (2026-07-16): when the cardinal bonus lifted this card, say which
+  // book-declared cardinal sign (the formula's own 型 type-declaration in
+  // 漢方臨床診療學, e.g. 大柴胡湯「胸脅苦滿型」) the patient actually has. Only
+  // ~44 formulas carry a cardinal flag at all (see cardinalSignOf() in
+  // scripts/handbook_bridge.mjs) — most cards simply omit this line.
+  function buildCardinalMatchText(result) {
+    if (!result.score.cardinalBonus) return null;
+    const cardinalKey = (result.formula.keySymptoms || []).find((item) => item.cardinal);
+    if (!cardinalKey) return null;
+    const label = canonicalById(cardinalKey.id) || cardinalKey.raw;
+    return label ? "本方書載主證為「" + label + "」，病人身上有這個徵象" : null;
+  }
+
   // 加味建議 (2026-07-13): the matcher's explanation.addonSuggestions lists
   // single-herb preparations whose book indications cover this card's residual
   // (unexplained) patient symptoms. Pure annotation — never affects ranking.
@@ -290,6 +303,7 @@ const X4Adapter = (function () {
             channelRoute: channelRouteText,
             heatRoute: heatRouteText,
             chiefMatch: buildChiefMatchText(result),
+            cardinalMatch: buildCardinalMatchText(result),
             addonSuggestions: buildAddonSuggestionTexts(result),
             reason: buildRecommendationReason(result, matchedCanonical, unmatchedCanonical, channelRouteText, heatRouteText),
           },
