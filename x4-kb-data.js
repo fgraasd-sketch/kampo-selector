@@ -19088,13 +19088,13 @@ window.X4KbData = {
       "zangFuVector": {
         "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0.6,
-        "XIN-YANGXU": 0,
+        "XIN-YANGXU": 0.25,
         "XIN-XUEXU": 0.2,
         "PI-QIXU": 0,
-        "PI-YANGXU": 0,
-        "FEI-QIXU": 0,
+        "PI-YANGXU": 0.3333,
+        "FEI-QIXU": 0.2,
         "FEI-YINXU": 0.2,
-        "SHEN-YANGXU": 0.1,
+        "SHEN-YANGXU": 0.5,
         "SHEN-YINXU": 0.6667
       },
       "keySymptoms": [
@@ -19139,6 +19139,76 @@ window.X4KbData = {
           "id": "S-SPERMATORRHEA",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "尿量減少",
+          "id": "S-OLIGURIA",
+          "negated": false,
+          "matchType": "book-physician",
+          "primary": true,
+          "mild": false,
+          "cardinal": false,
+          "page": 295
+        },
+        {
+          "raw": "尿不盡",
+          "id": "S-URINARY-INCOMPLETE",
+          "negated": false,
+          "matchType": "book-physician",
+          "primary": true,
+          "mild": false,
+          "cardinal": false,
+          "page": 295
+        },
+        {
+          "raw": "哮喘",
+          "id": "S-ASTHMA-WHEEZE",
+          "negated": false,
+          "matchType": "book-physician",
+          "primary": true,
+          "mild": false,
+          "cardinal": false,
+          "page": 295
+        },
+        {
+          "raw": "發冷",
+          "id": "S-COLD",
+          "negated": false,
+          "matchType": "book-physician",
+          "primary": true,
+          "mild": false,
+          "cardinal": false,
+          "page": 295
+        },
+        {
+          "raw": "夜尿",
+          "id": "S-NOCTURIA",
+          "negated": false,
+          "matchType": "book-physician",
+          "primary": true,
+          "mild": false,
+          "cardinal": false,
+          "page": 295
+        },
+        {
+          "raw": "多尿",
+          "id": "S-POLYURIA",
+          "negated": false,
+          "matchType": "book-physician",
+          "primary": true,
+          "mild": false,
+          "cardinal": false,
+          "page": 295
+        },
+        {
+          "raw": "小腹不仁",
+          "id": "S-LOWER-ABDOMEN-NUMB",
+          "negated": false,
+          "matchType": "book-physician",
+          "primary": false,
+          "mild": false,
+          "cardinal": false,
+          "page": 295
         }
       ],
       "herbs": [
@@ -19151,7 +19221,8 @@ window.X4KbData = {
       ],
       "composedOfFormulas": [],
       "sourceSheets": [
-        "「腎異常方劑彙整表」的副本"
+        "「腎異常方劑彙整表」的副本",
+        "《漢方臨床診療學》p.295"
       ],
       "indications": [
         "S-DIZZINESS",
@@ -19160,7 +19231,14 @@ window.X4KbData = {
         "S-SPERMATORRHEA",
         "S-THIRST",
         "S-TINNITUS",
-        "S-WEAK-LOWER-LIMB"
+        "S-WEAK-LOWER-LIMB",
+        "S-OLIGURIA",
+        "S-URINARY-INCOMPLETE",
+        "S-ASTHMA-WHEEZE",
+        "S-COLD",
+        "S-NOCTURIA",
+        "S-POLYURIA",
+        "S-LOWER-ABDOMEN-NUMB"
       ],
       "formulaPattern": [
         "陽氣實 / 陰液虛 (腎陰虛)"
@@ -19173,75 +19251,9 @@ window.X4KbData = {
       ],
       "bookSymptoms": [
         {
-          "id": "S-OLIGURIA",
-          "canonical": "尿量減少",
-          "term": "尿量減少",
-          "page": 295,
-          "section": "證候特徵",
-          "primary": true,
-          "mild": false,
-          "cardinal": false,
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-URINARY-INCOMPLETE",
-          "canonical": "尿不盡",
-          "term": "尿不盡",
-          "page": 295,
-          "section": "證候特徵",
-          "primary": true,
-          "mild": false,
-          "cardinal": false,
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-ASTHMA-WHEEZE",
-          "canonical": "喘息",
-          "term": "哮喘",
-          "page": 295,
-          "section": "證候特徵",
-          "primary": true,
-          "mild": false,
-          "cardinal": false,
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-COLD",
-          "canonical": "發冷",
-          "term": "發冷",
-          "page": 295,
-          "section": "證候特徵",
-          "primary": true,
-          "mild": false,
-          "cardinal": false,
-          "physicianDecision": "accept-secondary"
-        },
-        {
           "id": "S-EDEMA",
           "canonical": "浮腫",
           "term": "浮腫",
-          "page": 295,
-          "section": "證候特徵",
-          "primary": true,
-          "mild": false,
-          "cardinal": false,
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-NOCTURIA",
-          "canonical": "夜尿頻",
-          "term": "夜尿",
-          "page": 295,
-          "section": "證候特徵",
-          "primary": true,
-          "mild": false,
-          "cardinal": false,
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-POLYURIA",
-          "canonical": "多尿",
-          "term": "多尿",
           "page": 295,
           "section": "證候特徵",
           "primary": true,
@@ -19277,17 +19289,6 @@ window.X4KbData = {
           "term": "瘙癢",
           "page": 295,
           "section": "適應病症",
-          "primary": false,
-          "mild": false,
-          "cardinal": false,
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-LOWER-ABDOMEN-NUMB",
-          "canonical": "小腹不仁",
-          "term": "小腹不仁",
-          "page": 295,
-          "section": "病期病態",
           "primary": false,
           "mild": false,
           "cardinal": false,
