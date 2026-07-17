@@ -19805,15 +19805,15 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.2857,
+        "GAN-QIYU": 0.4286,
         "GAN-YINXU": 0,
-        "XIN-YANGXU": 0,
-        "XIN-XUEXU": 0.2,
+        "XIN-YANGXU": 0.25,
+        "XIN-XUEXU": 0.4,
         "PI-QIXU": 0.2,
-        "PI-YANGXU": 0.1667,
-        "FEI-QIXU": 0,
+        "PI-YANGXU": 0.3333,
+        "FEI-QIXU": 0.2,
         "FEI-YINXU": 0,
-        "SHEN-YANGXU": 0,
+        "SHEN-YANGXU": 0.1,
         "SHEN-YINXU": 0
       },
       "keySymptoms": [
@@ -19840,6 +19840,76 @@ window.X4KbData = {
           "id": "S-ABDOMINAL-DISTENSION",
           "negated": false,
           "fromIndications": true
+        },
+        {
+          "raw": "腹直肌拘攣",
+          "id": "S-MUSCLE-SPASM",
+          "negated": false,
+          "matchType": "book-physician",
+          "primary": true,
+          "mild": false,
+          "cardinal": false,
+          "page": 319
+        },
+        {
+          "raw": "精神症狀",
+          "id": "S-MENTAL-SYMPTOMS",
+          "negated": false,
+          "matchType": "book-physician",
+          "primary": true,
+          "mild": false,
+          "cardinal": false,
+          "page": 319
+        },
+        {
+          "raw": "胸脅苦滿",
+          "id": "S-CHEST-RIB-FULLNESS",
+          "negated": false,
+          "matchType": "book-physician",
+          "primary": true,
+          "mild": false,
+          "cardinal": true,
+          "page": 319
+        },
+        {
+          "raw": "抑鬱",
+          "id": "S-DEPRESSION",
+          "negated": false,
+          "matchType": "book-physician",
+          "primary": true,
+          "mild": false,
+          "cardinal": false,
+          "page": 319
+        },
+        {
+          "raw": "失眠",
+          "id": "S-INSOMNIA",
+          "negated": false,
+          "matchType": "book-physician",
+          "primary": true,
+          "mild": false,
+          "cardinal": false,
+          "page": 319
+        },
+        {
+          "raw": "發冷",
+          "id": "S-COLD",
+          "negated": false,
+          "matchType": "book-physician",
+          "primary": false,
+          "mild": false,
+          "cardinal": false,
+          "page": 319
+        },
+        {
+          "raw": "汗出",
+          "id": "S-SPONTANEOUS-SWEAT",
+          "negated": false,
+          "matchType": "book-physician",
+          "primary": false,
+          "mild": false,
+          "cardinal": false,
+          "page": 319
         }
       ],
       "herbs": [
@@ -19850,13 +19920,21 @@ window.X4KbData = {
       ],
       "composedOfFormulas": [],
       "sourceSheets": [
-        "missing_formulas_draft"
+        "missing_formulas_draft",
+        "《漢方臨床診療學》p.319"
       ],
       "indications": [
         "S-CHEST-OPPRESSION",
         "S-ABDOMINAL-PAIN",
         "S-ANXIETY",
-        "S-ABDOMINAL-DISTENSION"
+        "S-ABDOMINAL-DISTENSION",
+        "S-MUSCLE-SPASM",
+        "S-MENTAL-SYMPTOMS",
+        "S-CHEST-RIB-FULLNESS",
+        "S-DEPRESSION",
+        "S-INSOMNIA",
+        "S-COLD",
+        "S-SPONTANEOUS-SWEAT"
       ],
       "formulaPattern": [
         "氣鬱",
@@ -19869,85 +19947,7 @@ window.X4KbData = {
       "bookPages": [
         319
       ],
-      "bookSymptoms": [
-        {
-          "id": "S-MUSCLE-SPASM",
-          "canonical": "肌肉拘攣",
-          "term": "腹直肌拘攣",
-          "page": 319,
-          "section": "證候特徵",
-          "primary": true,
-          "mild": false,
-          "cardinal": false,
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-MENTAL-SYMPTOMS",
-          "canonical": "精神症狀",
-          "term": "精神症狀",
-          "page": 319,
-          "section": "證候特徵",
-          "primary": true,
-          "mild": false,
-          "cardinal": false,
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-CHEST-RIB-FULLNESS",
-          "canonical": "胸脇苦滿",
-          "term": "胸脅苦滿",
-          "page": 319,
-          "section": "證候特徵",
-          "primary": true,
-          "mild": false,
-          "cardinal": true,
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-DEPRESSION",
-          "canonical": "抑鬱",
-          "term": "抑鬱",
-          "page": 319,
-          "section": "證候特徵",
-          "primary": true,
-          "mild": false,
-          "cardinal": false,
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-INSOMNIA",
-          "canonical": "失眠",
-          "term": "失眠",
-          "page": 319,
-          "section": "證候特徵",
-          "primary": true,
-          "mild": false,
-          "cardinal": false,
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-COLD",
-          "canonical": "發冷",
-          "term": "發冷",
-          "page": 319,
-          "section": "病期病態",
-          "primary": false,
-          "mild": false,
-          "cardinal": false,
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-SPONTANEOUS-SWEAT",
-          "canonical": "自然汗出",
-          "term": "汗出",
-          "page": 319,
-          "section": "病期病態",
-          "primary": false,
-          "mild": false,
-          "cardinal": false,
-          "physicianDecision": "accept-secondary"
-        }
-      ],
+      "bookSymptoms": [],
       "bookCorroborated": [
         {
           "id": "S-ANXIETY",
