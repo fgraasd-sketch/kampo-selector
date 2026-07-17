@@ -16585,16 +16585,16 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1429,
-        "GAN-YINXU": 0.2,
+        "GAN-QIYU": 0.2857,
+        "GAN-YINXU": 0.4,
         "XIN-YANGXU": 0,
-        "XIN-XUEXU": 0.4,
+        "XIN-XUEXU": 0.6,
         "PI-QIXU": 0,
         "PI-YANGXU": 0,
         "FEI-QIXU": 0,
         "FEI-YINXU": 0,
         "SHEN-YANGXU": 0,
-        "SHEN-YINXU": 0.1111
+        "SHEN-YINXU": 0.2222
       },
       "keySymptoms": [
         {
@@ -16632,6 +16632,56 @@ window.X4KbData = {
           "id": "S-HEAT-SENSATION",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "頭痛",
+          "id": "S-HEADACHE",
+          "negated": false,
+          "matchType": "book-physician",
+          "primary": true,
+          "mild": false,
+          "cardinal": false,
+          "page": 312
+        },
+        {
+          "raw": "烘熱",
+          "id": "S-HOT-FLUSH",
+          "negated": false,
+          "matchType": "book-physician",
+          "primary": true,
+          "mild": false,
+          "cardinal": false,
+          "page": 312
+        },
+        {
+          "raw": "失眠",
+          "id": "S-INSOMNIA",
+          "negated": false,
+          "matchType": "book-physician",
+          "primary": true,
+          "mild": false,
+          "cardinal": false,
+          "page": 312
+        },
+        {
+          "raw": "耳鳴",
+          "id": "S-TINNITUS",
+          "negated": false,
+          "matchType": "book-physician",
+          "primary": true,
+          "mild": false,
+          "cardinal": false,
+          "page": 312
+        },
+        {
+          "raw": "痔瘡",
+          "id": "S-HEMORRHOIDS",
+          "negated": false,
+          "matchType": "book-physician",
+          "primary": false,
+          "mild": false,
+          "cardinal": false,
+          "page": 312
         }
       ],
       "herbs": [
@@ -16641,7 +16691,8 @@ window.X4KbData = {
       ],
       "composedOfFormulas": [],
       "sourceSheets": [
-        "「漢方心異常」的副本"
+        "「漢方心異常」的副本",
+        "《漢方臨床診療學》p.312"
       ],
       "indications": [
         "S-ANXIETY",
@@ -16649,7 +16700,12 @@ window.X4KbData = {
         "S-CONSTIPATION",
         "S-EPIGASTRIC-RESISTANCE",
         "S-FACIAL-FLUSH",
-        "S-HEAT-SENSATION"
+        "S-HEAT-SENSATION",
+        "S-HEADACHE",
+        "S-HOT-FLUSH",
+        "S-INSOMNIA",
+        "S-TINNITUS",
+        "S-HEMORRHOIDS"
       ],
       "formulaPattern": [
         "陽氣實 / 陰液實(實證/熱證)"
@@ -16661,50 +16717,6 @@ window.X4KbData = {
         312
       ],
       "bookSymptoms": [
-        {
-          "id": "S-HEADACHE",
-          "canonical": "頭痛",
-          "term": "頭痛",
-          "page": 312,
-          "section": "證候特徵",
-          "primary": true,
-          "mild": false,
-          "cardinal": false,
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-HOT-FLUSH",
-          "canonical": "烘熱",
-          "term": "烘熱",
-          "page": 312,
-          "section": "證候特徵",
-          "primary": true,
-          "mild": false,
-          "cardinal": false,
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-INSOMNIA",
-          "canonical": "失眠",
-          "term": "失眠",
-          "page": 312,
-          "section": "證候特徵",
-          "primary": true,
-          "mild": false,
-          "cardinal": false,
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-TINNITUS",
-          "canonical": "耳鳴",
-          "term": "耳鳴",
-          "page": 312,
-          "section": "證候特徵",
-          "primary": true,
-          "mild": false,
-          "cardinal": false,
-          "physicianDecision": "accept-secondary"
-        },
         {
           "id": "S-HEAT-TOXIN",
           "canonical": "炎症",
@@ -16722,17 +16734,6 @@ window.X4KbData = {
           "term": "高血壓",
           "page": 312,
           "section": "適應病症",
-          "primary": false,
-          "mild": false,
-          "cardinal": false,
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-HEMORRHOIDS",
-          "canonical": "痔瘡",
-          "term": "痔瘡",
-          "page": 312,
-          "section": "病期病態",
           "primary": false,
           "mild": false,
           "cardinal": false,
