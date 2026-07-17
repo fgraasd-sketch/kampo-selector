@@ -423,6 +423,35 @@ function symptomRefNegated(ref) {
 const PATIENT_NEGATION_PREFIX = /^(未發現明顯|未發現|無明顯|沒有明顯|未見明顯|沒有|未見|未有|否認|排除|無)/;
 const PATIENT_NEGATION_BREAKERS = /[但而卻仍還]|有/;
 
+// 病人側否定證據（2026-07-17，醫師裁示「先修大便正常→便秘否定再評估」）。
+//
+// 起因是薛案 vs 桃核承氣湯：薛案病人**大便正常**，而 桃核承氣湯 是陽明便秘方——
+// 書自己的方證鑑別把「便秘」列為它與近緣瘀血方的分界——但模型對「病人明確沒有
+// 某個主症」完全不扣分，於是 桃核承氣湯 靠臍旁壓痛/頭痛擠進前五，把書的答案
+// 清上蠲痛湯（第 5，零餘裕）擠出去。
+//
+// 形狀（兩層，都只在 negatedSymptoms 非空時觸發）：
+// 1. **證據層**：矛盾主症計一筆負權重進覆蓋度分子（分母不變），與方側否定主症
+//    被命中時的 -0.5 同型鏡像——這層是誠實的證據記帳，量級小。
+// 2. **降級層**（乘法，吃總分）：每一筆矛盾主症把總分乘上
+//    (1 − PATIENT_NEGATION_DEMOTION × centrality)。單靠證據層翻不了盤——
+//    量測：薛案上 桃核承氣湯 靠頭痛/痛經兩個新正向命中賺 +2，證據層扣 -0.5
+//    （掃到 -2.0 也只縮 0.02 總分），清上蠲痛湯 仍被擠在第 6。醫師的裁示是
+//    「陽明便秘方**自然掉下去**」——沒有便秘的病人不該吃承氣類，這是接近
+//    禁忌級的訊號，不是邊際證據。乘法降級才做得到，而且它跟被否決的
+//    「覆蓋度封頂」完全不同：那些是對**正向證據**的無條件封頂（傷及無辜），
+//    這個只在病人**明確否定**某方主症時觸發（目前唯一來源＝前端「正常所見」
+//    對照表，醫師逐條核可），其餘一切路徑逐位元不變。
+// **刻意只吃顯式的 negatedSymptoms 通道**：既有「無X」前綴詞照舊被丟棄（不扣分），
+// 把「無X」也改成扣分是合理的下一步，但要另外量測，不搭這次的便車。
+// PATIENT_NEGATION_DEMOTION 掃 {0.05,0.10,0.15,0.20,0.25,0.30}——**全範圍薛案綠**
+// （真實解析下 桃核承氣湯 對 清上蠲痛湯 的差距只有幾個百分點，0.05 就翻得動；
+// 我先用近似關鍵詞集量到 25% 差距是高估）。取 0.25 而不是低空掠過的值：這是
+// 接近禁忌級的訊號，「病人明確沒有承氣類的定義徵象」的降級不該懸在 5% 的邊上，
+// 0.25 讓它對未來的 KB 變動保有餘裕，且離 0.30（掃過的上界，仍全綠）有距離。
+const PATIENT_NEGATION_WEIGHT = 0.5;
+const PATIENT_NEGATION_DEMOTION = 0.25;
+
 // Exact ontology terms whose NAME merely starts with a negation marker
 // (無汗, 無力, 無熱候) are positive symptoms, not negations. Self-negating
 // phrasings stay negated: 無口渴 is excluded because its remainder (口渴)
@@ -921,6 +950,21 @@ function buildPatientMatches(patient, normalizer) {
   return uniqueBy(matches, (item) => `${item.id}:${item.matchType}:${item.childId || ""}`);
 }
 
+// 病人明確否定的徵象 → ontology id 集合（餵 scoreKeySymptoms 的矛盾扣分）。
+// **只讀顯式的 patient.negatedSymptoms**（目前唯一來源：前端「正常所見」對照表，
+// 大便正常→便秘）。刻意不把 symptoms 裡被 patientTermNegated 丟棄的「無X」詞
+// 也收進來——那會改變所有既有含否定詞輸入的行為，是另一個要單獨量測的步驟
+// （見 PATIENT_NEGATION_WEIGHT 註解）。
+function buildPatientNegations(patient, normalizer) {
+  const ids = new Set();
+  for (const term of toArray(patient.negatedSymptoms)) {
+    const text = typeof term === "object" && term ? String(term.raw || term.canonical || "") : String(term || "");
+    if (!text.trim()) continue;
+    for (const match of normalizer.normalizeText(text)) ids.add(match.id);
+  }
+  return ids;
+}
+
 function bestPatientMatchesById(patientMatches) {
   const byId = new Map();
   for (const match of patientMatches) {
@@ -1004,11 +1048,16 @@ function buildZangFuVector(patientMatches, zangFuStates, excludedIds = []) {
   return vector;
 }
 
-function scoreKeySymptoms(formula, patientMatches, normalizer, reportedSymptomCount) {
+function scoreKeySymptoms(formula, patientMatches, normalizer, reportedSymptomCount, negatedIds = null) {
   const keySymptoms = normalizeFormulaKeySymptoms(formula.keySymptoms || [], normalizer);
   const patientById = bestPatientMatchesById(patientMatches);
   const matchedSymptoms = [];
   const unmatchedKeySymptoms = [];
+  // 病人明確否定、而本方以之為主症的徵象（薛案「大便正常」 vs 桃核承氣湯 便秘）。
+  // 獨立清單，不混進 matchedSymptoms——前端把 matchedSymptoms 顯示為「命中」，
+  // 矛盾證據不是命中；也不進 unmatchedKeySymptoms——那份清單餵加減建議
+  // （「病人沒提到的主症」），明確否定的徵象不該被建議補問。
+  const contradictedKeySymptoms = [];
 
   for (const keySymptom of keySymptoms) {
     const direct = patientById.get(keySymptom.id);
@@ -1046,6 +1095,19 @@ function scoreKeySymptoms(formula, patientMatches, normalizer, reportedSymptomCo
       continue;
     }
 
+    // 病人明確否定這個主症（且不是本方自己就標否定的主症——那種「雙重否定」
+    // 是一致而非矛盾，維持原本的 unmatched 處理）。
+    if (negatedIds && !keySymptom.negated && negatedIds.has(keySymptom.id)) {
+      contradictedKeySymptoms.push({
+        id: keySymptom.id,
+        canonical: keySymptom.canonical,
+        raw: keySymptom.raw,
+        weight: -PATIENT_NEGATION_WEIGHT,
+        centrality: keySymptom.centrality ?? 1,
+      });
+      continue;
+    }
+
     unmatchedKeySymptoms.push({
       id: keySymptom.id,
       canonical: keySymptom.canonical,
@@ -1058,7 +1120,11 @@ function scoreKeySymptoms(formula, patientMatches, normalizer, reportedSymptomCo
   // 分子與分母同時按 centrality 計，所以一個「主症全是附加所見」的方（桂枝麻黃各半
   // 湯的證候特徵整段是空的）分母也跟著縮小——它不會因為權重低而被硬性懲罰，
   // 只是贏不過一個「病人命中的正是它的主徵」的方。
-  const matchedWeight = matchedSymptoms.reduce((sum, item) => sum + item.weight * (item.centrality ?? 1), 0);
+  // 矛盾證據（病人明確否定的主症）以負權重進分子、分母不變——與方側否定主症
+  // 被命中時的 -0.5 同型。negatedIds 為空時 contradictedKeySymptoms 恆空，
+  // 這一項為 0，所有既有路徑逐位元不變。
+  const matchedWeight = matchedSymptoms.reduce((sum, item) => sum + item.weight * (item.centrality ?? 1), 0)
+    + contradictedKeySymptoms.reduce((sum, item) => sum + item.weight * (item.centrality ?? 1), 0);
   const totalCentrality = keySymptoms.reduce((sum, item) => sum + (item.centrality ?? 1), 0);
   // Finding D (2026-07-12): a patient reporting N symptoms can confirm at most
   // N of a formula's keys, so an uncapped denominator punishes large formulas
@@ -1093,6 +1159,7 @@ function scoreKeySymptoms(formula, patientMatches, normalizer, reportedSymptomCo
     keySymptomScore: coverage <= 0 ? coverage : Math.sqrt(coverage * volume),
     matchedSymptoms,
     unmatchedKeySymptoms,
+    contradictedKeySymptoms,
   };
 }
 
@@ -1174,7 +1241,7 @@ function scoreFormula(formula, patientContext, normalizer) {
   // Distinct symptoms the patient reported — the ceiling on how much key evidence
   // any formula could possibly confirm for this patient.
   const reportedSymptomCount = bestPatientMatchesById(patientContext.matches).size;
-  const key = scoreKeySymptoms(formula, patientContext.matches, normalizer, reportedSymptomCount);
+  const key = scoreKeySymptoms(formula, patientContext.matches, normalizer, reportedSymptomCount, patientContext.negatedIds);
   const patternScore = patternCoverage(patientContext.patternVector, formula.patternVector || {});
   const zangFuScore = cosine(patientContext.zangFuVector, formula.zangFuVector || {});
   // 五臟資料缺席 ≠ 五臟完全不合（2026-07-14）。
@@ -1262,8 +1329,18 @@ function scoreFormula(formula, patientContext, normalizer) {
   const cardinalMatched = Boolean(cardinalKey
     && key.matchedSymptoms.some((item) => item.id === cardinalKey.id && item.weight > 0));
   const cardinalBonus = cardinalMatched ? W_CARDINAL : 0;
-  const total = Math.max(baseTotal, channelRoute, heatRoute) + chiefBonus + cardinalBonus;
-  const routeLabel = total - chiefBonus === baseTotal
+  const routeMax = Math.max(baseTotal, channelRoute, heatRoute);
+  // 矛盾降級（見 PATIENT_NEGATION_DEMOTION 註解）：病人明確否定的主症每筆把總分
+  // 乘上 (1 − DEMOTION × centrality)。無否定證據時 factor === 1，total 逐位元不變
+  // （IEEE754 的 x*1 恆等於 x）。
+  const contradictionFactor = key.contradictedKeySymptoms.length
+    ? key.contradictedKeySymptoms.reduce(
+        (factor, item) => factor * Math.max(0, 1 - PATIENT_NEGATION_DEMOTION * Math.min(1, item.centrality ?? 1)), 1)
+    : 1;
+  const total = (routeMax + chiefBonus + cardinalBonus) * contradictionFactor;
+  // 直接比對三條路線的 max——舊式 `total - chiefBonus === baseTotal` 在
+  // cardinalBonus > 0 或矛盾降級時會把 氣血水 誤標成 六經/熱證。
+  const routeLabel = routeMax === baseTotal
     ? "氣血水"
     : (channelRoute >= heatRoute ? "六經" : "熱證");
 
@@ -1288,6 +1365,7 @@ function scoreFormula(formula, patientContext, normalizer) {
     explanation: {
       matchedSymptoms: key.matchedSymptoms,
       unmatchedKeySymptoms: key.unmatchedKeySymptoms,
+      contradictedKeySymptoms: key.contradictedKeySymptoms,
       matchedBookSymptoms,
       matchedChannels: channel.matchedChannels,
       patientChannelEvidence: patientContext.channelEvidence,
@@ -1362,6 +1440,7 @@ function createX4Matcher(kb) {
     const matches = buildPatientMatches(patient || {}, normalizer);
     return {
       matches,
+      negatedIds: buildPatientNegations(patient || {}, normalizer),
       patternVector: buildPatternVector(matches, patterns, exteriorPatternExclusions(matches)),
       zangFuVector: buildZangFuVector(matches, kb.zangFuStates, exteriorFalseColdIds(matches)),
       channelEvidence: buildChannelEvidence(matches),
@@ -1503,5 +1582,5 @@ function createX4Matcher(kb) {
 
 
 
-  return { isExamFinding, buildHeatEvidence, buildChannelEvidence, normalizeXushiClass, createX4Matcher, W_KEY, W_PATTERN, W_ZANGFU, PARENT_FALLBACK_WEIGHT, EVIDENCE_DAMPING_K, W_BOOK_SECONDARY, BOOK_SECONDARY_K, DERIVED_VECTOR_K, KEY_EVIDENCE_K, PATTERN_RECALL_BETA, CHANNEL_W_KEY, CHANNEL_W_STAGE, CHIEF_SPECIFICITY_MAX_FORMULAS, W_CHIEF, W_CARDINAL, CHIEF_WINDOW, KEY_CENTRALITY_SECONDARY, KEY_CENTRALITY_MILD };
+  return { isExamFinding, buildHeatEvidence, buildChannelEvidence, normalizeXushiClass, createX4Matcher, W_KEY, W_PATTERN, W_ZANGFU, PARENT_FALLBACK_WEIGHT, EVIDENCE_DAMPING_K, W_BOOK_SECONDARY, BOOK_SECONDARY_K, DERIVED_VECTOR_K, KEY_EVIDENCE_K, PATIENT_NEGATION_WEIGHT, PATIENT_NEGATION_DEMOTION, PATTERN_RECALL_BETA, CHANNEL_W_KEY, CHANNEL_W_STAGE, CHIEF_SPECIFICITY_MAX_FORMULAS, W_CHIEF, W_CARDINAL, CHIEF_WINDOW, KEY_CENTRALITY_SECONDARY, KEY_CENTRALITY_MILD };
 })();

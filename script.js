@@ -996,9 +996,29 @@ function parseCaseTextWithOntology(text = '') {
             }
         });
     });
-    return [...matchesByCanonical.values()]
+    const items = [...matchesByCanonical.values()]
         .sort((a, b) => a.index - b.index || b.term.length - a.term.length)
         .map(({ canonical, negated }) => ({ source: canonical, keyword: canonical, weight: 1, negated, ontology: true }));
+    // 正常所見 → 否定證據（2026-07-17，醫師裁示「先修大便正常→便秘否定」）。
+    // 「大便正常」不含任何 便秘 的別名字串，上面的 ontology 掃描看不到它；但臨床上
+    // 這句話明確排除便秘——薛案（真實醫案）病人「食欲、大便正常」，而 桃核承氣湯
+    // （陽明便秘方，書的方證鑑別以便秘為近緣分界）不受任何懲罰地擠進前五，把書的
+    // 答案 清上蠲痛湯 擠出去。這張表把「X 正常」句型翻成對應徵象的否定項，經
+    // negatedCaseKeywords → x4-adapter → matcher 的 negatedSymptoms 通道變成
+    // 矛盾扣分（PATIENT_NEGATION_WEIGHT）。只列醫師核可的組合，不自動泛化。
+    const NORMAL_FINDINGS = [
+        { pattern: '大便正常', canonical: '便秘' },
+        { pattern: '排便正常', canonical: '便秘' },
+    ];
+    NORMAL_FINDINGS.forEach(({ pattern, canonical }) => {
+        if (!source.includes(pattern)) return;
+        const existing = items.find(item => item.source === canonical);
+        // 病文同時有正向命中時（「便秘，大便正常」不會同時出現，但防衛一下）正向優先。
+        if (existing && !existing.negated) return;
+        if (existing) { existing.normalFinding = true; return; }
+        items.push({ source: canonical, keyword: canonical, weight: 1, negated: true, ontology: true, normalFinding: true });
+    });
+    return items;
 }
 
 function mergeParsedCaseItems(...groups) {
@@ -1295,7 +1315,10 @@ function getFormulaKnowledgeBase() {
 }
 
 function getRecommendedFormulas(limit = 5) {
-    const args = { formulas: getFormulaKnowledgeBase(), syndromeDb: SYNDROME_DB, organDb: ORGAN_DB, checkedSymptomLabels: getCheckedSymptomLabels(), syndromeScores: appState.syndromeScores, organScores: appState.organScores, diagnosedSyndromes: appState.diagnosedSyndromes, constitutionFilter: document.getElementById('rx-constitution-filter')?.value || 'all', searchText: document.getElementById('rx-search-input')?.value || '', caseKeywords: appState.caseKeywords };
+    // negatedCaseKeywords: 只收「正常所見」對照表產生的否定項（normalFinding），
+    // 不收一般的「無X」否定 chips——後者維持原本的「丟棄不扣分」行為，要改成
+    // 扣分需另行量測（見 x4-matcher.mjs 的 PATIENT_NEGATION_WEIGHT 註解）。
+    const args = { formulas: getFormulaKnowledgeBase(), syndromeDb: SYNDROME_DB, organDb: ORGAN_DB, checkedSymptomLabels: getCheckedSymptomLabels(), syndromeScores: appState.syndromeScores, organScores: appState.organScores, diagnosedSyndromes: appState.diagnosedSyndromes, constitutionFilter: document.getElementById('rx-constitution-filter')?.value || 'all', searchText: document.getElementById('rx-search-input')?.value || '', caseKeywords: appState.caseKeywords, negatedCaseKeywords: (appState.parsedCaseItems || []).filter(item => item.negated && item.normalFinding).map(item => item.source) };
     // X4Adapter wraps the validated X4 matcher (src/kampo2/x4-matcher.mjs); fall back to the
     // older heuristic engine only if the X4 bundle failed to load for some reason.
     const engine = (typeof X4Adapter !== 'undefined' && X4Adapter.isAvailable()) ? X4Adapter : KampoRecommendationEngine;

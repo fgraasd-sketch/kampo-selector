@@ -221,6 +221,7 @@ const X4Adapter = (function () {
     constitutionFilter = "all",
     searchText = "",
     caseKeywords = [],
+    negatedCaseKeywords = [],
   } = {}) {
     const matcher = getMatcher();
     const rawSearchKeywords = String(searchText || "")
@@ -248,7 +249,9 @@ const X4Adapter = (function () {
     // Rank the FULL X4 KB (181 formulas incl. the 2026-07-11 book expansion),
     // not just the UI display list's length — the final output slices to 5
     // anyway, and a short pool silently hides valid mid-rank formulas.
-    const x4Results = matcher.recommend({ symptoms: rawTerms, xuShi: "unknown" }, { limit: 500 });
+    // negatedSymptoms: 病人明確否定的徵象（「大便正常」→ 便秘），matcher 對以之
+    // 為主症的方計矛盾扣分（PATIENT_NEGATION_WEIGHT）。空陣列時逐位元不變。
+    const x4Results = matcher.recommend({ symptoms: rawTerms, negatedSymptoms: Array.isArray(negatedCaseKeywords) ? negatedCaseKeywords : [], xuShi: "unknown" }, { limit: 500 });
     const displayByName = new Map(formulas.map((formula) => [formula.name, formula]));
 
     const hasExplicitSymptoms = rawTerms.length > 0;

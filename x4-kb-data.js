@@ -9567,10 +9567,10 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1429,
+        "GAN-QIYU": 0.4286,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0,
-        "XIN-XUEXU": 0.2,
+        "XIN-XUEXU": 0.4,
         "PI-QIXU": 0,
         "PI-YANGXU": 0,
         "FEI-QIXU": 0,
@@ -9608,6 +9608,46 @@ window.X4KbData = {
           "id": "S-HOT-FLUSH",
           "negated": false,
           "fromIndications": true
+        },
+        {
+          "raw": "痛經",
+          "id": "S-DYSMENORRHEA",
+          "negated": false,
+          "matchType": "book-physician",
+          "primary": true,
+          "mild": false,
+          "cardinal": false,
+          "page": 321
+        },
+        {
+          "raw": "頭痛",
+          "id": "S-HEADACHE",
+          "negated": false,
+          "matchType": "book-physician",
+          "primary": true,
+          "mild": false,
+          "cardinal": false,
+          "page": 321
+        },
+        {
+          "raw": "失眠",
+          "id": "S-INSOMNIA",
+          "negated": false,
+          "matchType": "book-physician",
+          "primary": true,
+          "mild": false,
+          "cardinal": false,
+          "page": 321
+        },
+        {
+          "raw": "顏面潮紅",
+          "id": "S-FACIAL-FLUSH",
+          "negated": false,
+          "matchType": "book-physician",
+          "primary": false,
+          "mild": false,
+          "cardinal": false,
+          "page": 321
         }
       ],
       "herbs": [
@@ -9620,13 +9660,18 @@ window.X4KbData = {
       "composedOfFormulas": [],
       "sourceSheets": [
         "「瘀血 」方",
-        "「氣逆 方劑」的副本"
+        "「氣逆 方劑」的副本",
+        "《漢方臨床診療學》p.321"
       ],
       "indications": [
         "S-ABDOMINAL-TENDERNESS",
         "S-ANXIETY",
         "S-CONSTIPATION",
-        "S-HOT-FLUSH"
+        "S-HOT-FLUSH",
+        "S-DYSMENORRHEA",
+        "S-HEADACHE",
+        "S-INSOMNIA",
+        "S-FACIAL-FLUSH"
       ],
       "formulaPattern": [
         "其他類",
@@ -9652,42 +9697,9 @@ window.X4KbData = {
           "physicianDecision": "accept-secondary"
         },
         {
-          "id": "S-DYSMENORRHEA",
-          "canonical": "痛經",
-          "term": "痛經",
-          "page": 321,
-          "section": "證候特徵",
-          "primary": true,
-          "mild": false,
-          "cardinal": false,
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-HEADACHE",
-          "canonical": "頭痛",
-          "term": "頭痛",
-          "page": 321,
-          "section": "證候特徵",
-          "primary": true,
-          "mild": false,
-          "cardinal": false,
-          "physicianDecision": "accept-secondary"
-        },
-        {
           "id": "S-HEAT-SENSATION",
           "canonical": "熱感",
           "term": "熱感",
-          "page": 321,
-          "section": "證候特徵",
-          "primary": true,
-          "mild": false,
-          "cardinal": false,
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-INSOMNIA",
-          "canonical": "失眠",
-          "term": "失眠",
           "page": 321,
           "section": "證候特徵",
           "primary": true,
@@ -9723,17 +9735,6 @@ window.X4KbData = {
           "term": "腰痛",
           "page": 321,
           "section": "適應病症",
-          "primary": false,
-          "mild": false,
-          "cardinal": false,
-          "physicianDecision": "accept-secondary"
-        },
-        {
-          "id": "S-FACIAL-FLUSH",
-          "canonical": "顏面潮紅",
-          "term": "顏面潮紅",
-          "page": 321,
-          "section": "病期病態",
           "primary": false,
           "mild": false,
           "cardinal": false,
