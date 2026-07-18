@@ -20595,7 +20595,20 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "半夏",
+        "蒼朮",
+        "黃芩",
+        "香附子",
+        "陳皮",
+        "白朮",
+        "茯苓",
+        "甘草",
+        "生薑",
+        "威靈仙",
+        "天南星",
+        "羌活"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.259"
@@ -21818,7 +21831,17 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "香附子",
+        "川芎",
+        "荊芥",
+        "薄荷",
+        "白芷",
+        "防風",
+        "甘草",
+        "羌活",
+        "茶葉"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.248"
@@ -25315,7 +25338,15 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "桂皮",
+        "芍藥",
+        "大棗",
+        "生薑",
+        "甘草",
+        "厚朴",
+        "杏仁"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.274"
@@ -25579,7 +25610,17 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "桂皮",
+        "知母",
+        "防風",
+        "生薑",
+        "芍藥",
+        "麻黃",
+        "白朮",
+        "甘草",
+        "附子"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.280"
@@ -25756,7 +25797,14 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "薏苡仁",
+        "桃仁",
+        "桂皮",
+        "茯苓",
+        "芍藥",
+        "牡丹皮"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.273"
@@ -28335,7 +28383,13 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "黃芪",
+        "桂皮",
+        "芍藥",
+        "生薑",
+        "大棗"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.285"
