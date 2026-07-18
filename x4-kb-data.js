@@ -21479,7 +21479,11 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "大黃",
+        "附子",
+        "細辛"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.249",
@@ -23884,7 +23888,13 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "人參",
+        "甘草",
+        "白朮",
+        "乾薑",
+        "附子"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.265"
@@ -29399,6 +29409,80 @@ window.X4KbData = {
       ],
       "formulaPattern": "",
       "notes": "《壽世保元》卷五・頭痛門（一切頭痛之主方，不問左右偏正新久）；矢數道明用於頑固慢性頭痛、顏面痛。2026-07-11 醫師指示新增（薛案：13 年顳部及眼窩深處疼痛、月經期加劇之頭痛，書答案即本方）。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-002",
+      "name": "溫脾湯",
+      "category": "醫師補充",
+      "xushiClass": "虛實夾雜",
+      "patternVector": {
+        "QI_XU": 1,
+        "QI_NI": 1,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0.5,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0.2,
+        "PI-YANGXU": 0.3333,
+        "FEI-QIXU": 0.2,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0.1,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "便秘（陽虛冷積之冷秘）",
+          "id": "S-CONSTIPATION",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "腹痛（臍腹冷痛、繞臍痛）",
+          "id": "S-ABDOMINAL-PAIN",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "手足不溫、畏寒",
+          "id": "S-COLD",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "倦怠乏力（脾陽虛）",
+          "id": "S-FATIGUE",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "大黃",
+        "附子",
+        "乾薑",
+        "人參",
+        "甘草"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《備急千金要方》卷十五（脾胃陽虛、冷積便秘之主方：大黃附子乾薑人參甘草，溫補脾陽兼攻下寒積）。2026-07-18 醫師指示新增，臨床依據＝Mitsuma T. Int J Urol 1996（doi:10.1111/j.1442-2042.1996.tb00355.x，見 reports/reference-eastern-medication-crf-mitsuma-1996.md）：以溫脾湯為主的漢方延緩慢性腎衰竭進展（大黃降濁、溫陽扶正）。主症取其古典主治（陽虛冷積），非腎衰竭病名——腎衰竭是治療脈絡不是辨證徵候。"
+      ],
+      "indications": [
+        "S-CONSTIPATION",
+        "S-ABDOMINAL-PAIN",
+        "S-COLD",
+        "S-FATIGUE"
+      ],
+      "formulaPattern": "",
+      "notes": "《備急千金要方》卷十五（脾胃陽虛、冷積便秘之主方：大黃附子乾薑人參甘草，溫補脾陽兼攻下寒積）。2026-07-18 醫師指示新增，臨床依據＝Mitsuma T. Int J Urol 1996（doi:10.1111/j.1442-2042.1996.tb00355.x，見 reports/reference-eastern-medication-crf-mitsuma-1996.md）：以溫脾湯為主的漢方延緩慢性腎衰竭進展（大黃降濁、溫陽扶正）。主症取其古典主治（陽虛冷積），非腎衰竭病名——腎衰竭是治療脈絡不是辨證徵候。",
       "confidence": "physician_addition",
       "draft": true
     }

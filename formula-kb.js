@@ -10639,6 +10639,52 @@ const EXCEL_FORMULA_KB = [
         "腎": 0
       }
     }
+  },
+  {
+    "name": "溫脾湯",
+    "type": "虛實夾雜",
+    "category": "醫師補充",
+    "syndrome": "qi_xu",
+    "patterns": [
+      "氣虛",
+      "氣逆"
+    ],
+    "zangFuTags": [],
+    "symptoms": [
+      "便秘（陽虛冷積之冷秘）",
+      "腹痛（臍腹冷痛、繞臍痛）",
+      "手足不溫、畏寒",
+      "倦怠乏力（脾陽虛）"
+    ],
+    "keySymptoms": [
+      "便秘（陽虛冷積之冷秘）",
+      "腹痛（臍腹冷痛、繞臍痛）",
+      "手足不溫、畏寒",
+      "倦怠乏力（脾陽虛）"
+    ],
+    "indications": "便秘（陽虛冷積之冷秘），腹痛（臍腹冷痛、繞臍痛），手足不溫、畏寒，倦怠乏力（脾陽虛）",
+    "formulaPattern": [],
+    "specialIndications": [],
+    "contraindications": [],
+    "notes": "《備急千金要方》卷十五（脾胃陽虛、冷積便秘之主方：大黃附子乾薑人參甘草，溫補脾陽兼攻下寒積）。2026-07-18 醫師指示新增，臨床依據＝Mitsuma T. Int J Urol 1996（doi:10.1111/j.1442-2042.1996.tb00355.x，見 reports/reference-eastern-medication-crf-mitsuma-1996.md）：以溫脾湯為主的漢方延緩慢性腎衰竭進展（大黃降濁、溫陽扶正）。主症取其古典主治（陽虛冷積），非腎衰竭病名——腎衰竭是治療脈絡不是辨證徵候。",
+    "sourceSheet": "《備急千金要方》卷十五（脾胃陽虛、冷積便秘之主方：大黃附子乾薑人參甘草，溫補脾陽兼攻下寒積）。2026-07-18 醫師指示新增，臨床依據＝Mitsuma T. Int J Urol 1996（doi:10.1111/j.1442-2042.1996.tb00355.x，見 reports/reference-eastern-medication-crf-mitsuma-1996.md）：以溫脾湯為主的漢方延緩慢性腎衰竭進展（大黃降濁、溫陽扶正）。主症取其古典主治（陽虛冷積），非腎衰竭病名——腎衰竭是治療脈絡不是辨證徵候。",
+    "vector": {
+      "patterns": {
+        "氣虛": 1,
+        "氣逆": 1,
+        "氣鬱": 0,
+        "血虛": 0,
+        "瘀血": 0,
+        "水滯": 0
+      },
+      "zangFu": {
+        "肝": 0,
+        "心": 0.5,
+        "脾": 0.3333,
+        "肺": 0.2,
+        "腎": 0.1
+      }
+    }
   }
 ];
 if (typeof window !== "undefined") window.EXCEL_FORMULA_KB = EXCEL_FORMULA_KB;
