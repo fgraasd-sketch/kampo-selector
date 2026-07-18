@@ -21415,7 +21415,10 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "大黃",
+        "甘草"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.249"
@@ -22700,7 +22703,9 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "甘草"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.266"
@@ -22778,7 +22783,11 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "甘草",
+        "小麥",
+        "大棗"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.267"
@@ -22855,7 +22864,13 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "知母",
+        "石膏",
+        "甘草",
+        "粳米",
+        "人參"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.236"
@@ -22924,7 +22939,13 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "知母",
+        "石膏",
+        "甘草",
+        "粳米",
+        "桂皮"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.236"
@@ -25868,7 +25889,15 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "桂皮",
+        "芍藥",
+        "生薑",
+        "甘草",
+        "麻黃",
+        "大棗",
+        "杏仁"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.279"
@@ -26187,7 +26216,10 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "桔梗",
+        "石膏"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.289"
@@ -26276,7 +26308,10 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "桔梗",
+        "甘草"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.289"
@@ -26947,7 +26982,11 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "茵陳蒿",
+        "梔子",
+        "大黃"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.342"
@@ -27152,7 +27191,11 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "梔子",
+        "甘草",
+        "黃柏"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.348"
@@ -27494,7 +27537,14 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "麻子仁",
+        "芍藥",
+        "枳實",
+        "大黃",
+        "厚朴",
+        "杏仁"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.301"
@@ -27598,7 +27648,12 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "麻黃",
+        "杏仁",
+        "甘草",
+        "石膏"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.299"
@@ -27714,7 +27769,12 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "麻黃",
+        "杏仁",
+        "薏苡仁",
+        "甘草"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.300"
@@ -28194,7 +28254,12 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "黃芩",
+        "芍藥",
+        "甘草",
+        "大棗"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.286"
@@ -29074,7 +29139,11 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "大黃",
+        "甘草",
+        "芒硝"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.323"
