@@ -5804,7 +5804,13 @@ window.X4KbData = {
           "matchType": "exact"
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "附子",
+        "茯苓",
+        "人參",
+        "白朮",
+        "芍藥"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "水滯 全身型 "
@@ -18492,7 +18498,15 @@ window.X4KbData = {
           "matchType": "exact"
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "桂皮",
+        "生薑",
+        "大棗",
+        "甘草",
+        "麻黃",
+        "細辛",
+        "附子"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "「肺異常治療方劑彙整」的副本"
@@ -20495,7 +20509,14 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "當歸",
+        "柴胡",
+        "黃芩",
+        "甘草",
+        "升麻",
+        "大黃"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.342"
@@ -21582,7 +21603,11 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "大黃",
+        "枳實",
+        "厚朴"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.334"
@@ -22602,7 +22627,11 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "甘草",
+        "乾薑",
+        "附子"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.320"
@@ -22963,7 +22992,12 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "知母",
+        "石膏",
+        "甘草",
+        "粳米"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.236"
@@ -23969,7 +24003,13 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "附子",
+        "半夏",
+        "甘草",
+        "大棗",
+        "粳米"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.265"
@@ -24045,7 +24085,12 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "大黃",
+        "黃連",
+        "黃芩",
+        "附子"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.266"
@@ -24137,7 +24182,15 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "厚朴",
+        "甘草",
+        "大黃",
+        "大棗",
+        "枳實",
+        "桂皮",
+        "生薑"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.282"
@@ -24873,7 +24926,14 @@ window.X4KbData = {
           "cardinal": true
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "桂皮",
+        "芍藥",
+        "生薑",
+        "大棗",
+        "甘草",
+        "大黃"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.276"
@@ -25096,7 +25156,14 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "桂皮",
+        "芍藥",
+        "大棗",
+        "生薑",
+        "甘草",
+        "附子"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.274"
@@ -25405,7 +25472,14 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "葛根",
+        "桂皮",
+        "芍藥",
+        "生薑",
+        "甘草",
+        "大棗"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.274"
@@ -26650,7 +26724,13 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "茯苓",
+        "人參",
+        "附子",
+        "甘草",
+        "乾薑"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.262"
@@ -27335,7 +27415,11 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "甘草",
+        "乾薑",
+        "附子"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.323"
