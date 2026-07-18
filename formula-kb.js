@@ -7654,14 +7654,16 @@ const EXCEL_FORMULA_KB = [
     "patterns": [],
     "zangFuTags": [],
     "symptoms": [
+      "牙齒痛",
       "口腔",
       "神經痛"
     ],
     "keySymptoms": [
+      "牙齒痛",
       "口腔",
       "神經痛"
     ],
-    "indications": "口腔，神經痛",
+    "indications": "牙齒痛，口腔，神經痛",
     "formulaPattern": [],
     "specialIndications": [],
     "contraindications": [],

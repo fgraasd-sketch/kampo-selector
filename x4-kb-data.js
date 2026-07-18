@@ -707,7 +707,8 @@ window.X4KbData = {
         "臉腫",
         "腳腫",
         "全身浮腫",
-        "水腫"
+        "水腫",
+        "舌腫脹"
       ],
       "parent": null,
       "negationSensitive": false,
@@ -2369,6 +2370,23 @@ window.X4KbData = {
         "子宮肌腺症",
         "子宮腺肌症",
         "子宮內膜症"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-TOOTHACHE",
+      "canonical": "牙痛",
+      "aliases": [
+        "齒痛",
+        "牙齒痛",
+        "拔牙後疼痛",
+        "牙齦痛",
+        "齒齦腫痛",
+        "牙根膜炎"
       ],
       "parent": null,
       "negationSensitive": false,
@@ -22991,6 +23009,15 @@ window.X4KbData = {
       "vectorSource": "book-derived",
       "keySymptoms": [
         {
+          "raw": "牙齒痛",
+          "id": "S-TOOTHACHE",
+          "negated": false,
+          "matchType": "book",
+          "primary": true,
+          "mild": false,
+          "cardinal": false
+        },
+        {
           "raw": "口腔",
           "id": "S-HEAT-TOXIN",
           "negated": false,
@@ -23015,6 +23042,7 @@ window.X4KbData = {
         "《漢方臨床診療學》p.292"
       ],
       "indications": [
+        "S-TOOTHACHE",
         "S-HEAT-TOXIN",
         "S-NEURALGIA"
       ],
