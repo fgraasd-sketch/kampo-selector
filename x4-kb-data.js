@@ -258,7 +258,11 @@ window.X4KbData = {
         "尿道出血",
         "痔瘡出血",
         "陰道",
-        "陰道出血"
+        "陰道出血",
+        "月經淋漓",
+        "經血淋漓",
+        "淋漓不盡",
+        "漏下"
       ],
       "parent": null,
       "negationSensitive": false,
@@ -1356,6 +1360,7 @@ window.X4KbData = {
       "aliases": [
         "月經不調(",
         "月經異常",
+        "月經過多",
         "月經不順",
         "月經不規則",
         "經期不順",
@@ -2334,6 +2339,36 @@ window.X4KbData = {
       "canonical": "脈弦",
       "aliases": [
         "弦脈"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-MENOPAUSE",
+      "canonical": "圍絕經期綜合徵",
+      "aliases": [
+        "更年期綜合徵",
+        "更年期障礙",
+        "更年期",
+        "圍絕經期",
+        "絕經前後"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-ENDOMETRIOSIS",
+      "canonical": "子宮內膜異位症",
+      "aliases": [
+        "子宮肌腺症",
+        "子宮腺肌症",
+        "子宮內膜症"
       ],
       "parent": null,
       "negationSensitive": false,
@@ -5232,6 +5267,17 @@ window.X4KbData = {
         255
       ],
       "bookSymptoms": [
+        {
+          "id": "S-MENOPAUSE",
+          "canonical": "圍絕經期綜合徵",
+          "term": "圍絕經期綜合徵",
+          "page": 255,
+          "section": "適應病症",
+          "primary": false,
+          "mild": false,
+          "cardinal": false,
+          "physicianDecision": "accept-secondary"
+        },
         {
           "id": "S-HEAVY-HEAD",
           "canonical": "頭重",
@@ -9470,6 +9516,17 @@ window.X4KbData = {
       ],
       "bookSymptoms": [
         {
+          "id": "S-MENOPAUSE",
+          "canonical": "圍絕經期綜合徵",
+          "term": "圍絕經期綜合徵",
+          "page": 322,
+          "section": "適應病症",
+          "primary": false,
+          "mild": false,
+          "cardinal": false,
+          "physicianDecision": "accept-secondary"
+        },
+        {
           "id": "S-MENSTRUAL-IRREGULAR",
           "canonical": "月經不調",
           "term": "月經不調",
@@ -9703,6 +9760,28 @@ window.X4KbData = {
           "page": 321,
           "section": "證候特徵",
           "primary": true,
+          "mild": false,
+          "cardinal": false,
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-MENOPAUSE",
+          "canonical": "圍絕經期綜合徵",
+          "term": "圍絕經期綜合徵",
+          "page": 321,
+          "section": "適應病症",
+          "primary": false,
+          "mild": false,
+          "cardinal": false,
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-ENDOMETRIOSIS",
+          "canonical": "子宮內膜異位症",
+          "term": "子宮內膜異位症",
+          "page": 321,
+          "section": "適應病症",
+          "primary": false,
           "mild": false,
           "cardinal": false,
           "physicianDecision": "accept-secondary"
@@ -9978,6 +10057,16 @@ window.X4KbData = {
           "page": 241
         },
         {
+          "raw": "子宮內膜異位症",
+          "id": "S-ENDOMETRIOSIS",
+          "negated": false,
+          "matchType": "book-physician",
+          "primary": false,
+          "mild": false,
+          "cardinal": false,
+          "page": 241
+        },
+        {
           "raw": "炎症",
           "id": "S-HEAT-TOXIN",
           "negated": false,
@@ -10001,6 +10090,7 @@ window.X4KbData = {
         "S-APPETITE-LOW",
         "S-OLIGURIA",
         "S-LEUCORRHEA",
+        "S-ENDOMETRIOSIS",
         "S-HEAT-TOXIN"
       ],
       "formulaPattern": [
@@ -10260,6 +10350,28 @@ window.X4KbData = {
         272
       ],
       "bookSymptoms": [
+        {
+          "id": "S-MENOPAUSE",
+          "canonical": "圍絕經期綜合徵",
+          "term": "圍絕經期綜合徵",
+          "page": 272,
+          "section": "適應病症",
+          "primary": false,
+          "mild": false,
+          "cardinal": false,
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-ENDOMETRIOSIS",
+          "canonical": "子宮內膜異位症",
+          "term": "子宮內膜異位症",
+          "page": 272,
+          "section": "適應病症",
+          "primary": false,
+          "mild": false,
+          "cardinal": false,
+          "physicianDecision": "accept-secondary"
+        },
         {
           "id": "S-ABDOMINAL-PAIN",
           "canonical": "腹痛",
@@ -10537,6 +10649,17 @@ window.X4KbData = {
         288
       ],
       "bookSymptoms": [
+        {
+          "id": "S-MENOPAUSE",
+          "canonical": "圍絕經期綜合徵",
+          "term": "圍絕經期綜合徵",
+          "page": 288,
+          "section": "適應病症",
+          "primary": false,
+          "mild": false,
+          "cardinal": false,
+          "physicianDecision": "accept-secondary"
+        },
         {
           "id": "S-COLD",
           "canonical": "發冷",
@@ -10816,6 +10939,17 @@ window.X4KbData = {
       ],
       "bookSymptoms": [
         {
+          "id": "S-MENSTRUAL-IRREGULAR",
+          "canonical": "月經不調",
+          "term": "月經過多",
+          "page": 337,
+          "section": "證候特徵",
+          "primary": true,
+          "mild": false,
+          "cardinal": false,
+          "physicianDecision": "accept-secondary"
+        },
+        {
           "id": "S-PALE-COMPLEXION",
           "canonical": "面色蒼白",
           "term": "面色蒼白",
@@ -10955,6 +11089,17 @@ window.X4KbData = {
           "page": 340,
           "section": "證候特徵",
           "primary": true,
+          "mild": false,
+          "cardinal": false,
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-ENDOMETRIOSIS",
+          "canonical": "子宮內膜異位症",
+          "term": "子宮內膜異位症",
+          "page": 340,
+          "section": "適應病症",
+          "primary": false,
           "mild": false,
           "cardinal": false,
           "physicianDecision": "accept-secondary"
@@ -11112,7 +11257,19 @@ window.X4KbData = {
       "bookPages": [
         293
       ],
-      "bookSymptoms": [],
+      "bookSymptoms": [
+        {
+          "id": "S-MENOPAUSE",
+          "canonical": "圍絕經期綜合徵",
+          "term": "圍絕經期綜合徵",
+          "page": 293,
+          "section": "適應病症",
+          "primary": false,
+          "mild": false,
+          "cardinal": false,
+          "physicianDecision": "accept-secondary"
+        }
+      ],
       "bookCorroborated": [
         {
           "id": "S-PALPITATION",
@@ -11493,6 +11650,17 @@ window.X4KbData = {
           "page": 240,
           "section": "證候特徵",
           "primary": true,
+          "mild": false,
+          "cardinal": false,
+          "physicianDecision": "accept-secondary"
+        },
+        {
+          "id": "S-MENOPAUSE",
+          "canonical": "圍絕經期綜合徵",
+          "term": "圍絕經期綜合徵",
+          "page": 240,
+          "section": "適應病症",
+          "primary": false,
           "mild": false,
           "cardinal": false,
           "physicianDecision": "accept-secondary"
@@ -12044,7 +12212,19 @@ window.X4KbData = {
       "bookPages": [
         331
       ],
-      "bookSymptoms": [],
+      "bookSymptoms": [
+        {
+          "id": "S-MENOPAUSE",
+          "canonical": "圍絕經期綜合徵",
+          "term": "圍絕經期綜合徵",
+          "page": 331,
+          "section": "適應病症",
+          "primary": false,
+          "mild": false,
+          "cardinal": false,
+          "physicianDecision": "accept-secondary"
+        }
+      ],
       "bookCorroborated": [
         {
           "id": "S-APPETITE-LOW",
@@ -12292,7 +12472,19 @@ window.X4KbData = {
       "bookPages": [
         303
       ],
-      "bookSymptoms": [],
+      "bookSymptoms": [
+        {
+          "id": "S-MENOPAUSE",
+          "canonical": "圍絕經期綜合徵",
+          "term": "圍絕經期綜合徵",
+          "page": 303,
+          "section": "適應病症",
+          "primary": false,
+          "mild": false,
+          "cardinal": false,
+          "physicianDecision": "accept-secondary"
+        }
+      ],
       "bookCorroborated": [
         {
           "id": "S-HEAVY-HEAD",
@@ -13271,6 +13463,17 @@ window.X4KbData = {
           "physicianDecision": "accept-secondary"
         },
         {
+          "id": "S-MENOPAUSE",
+          "canonical": "圍絕經期綜合徵",
+          "term": "圍絕經期綜合徵",
+          "page": 320,
+          "section": "適應病症",
+          "primary": false,
+          "mild": false,
+          "cardinal": false,
+          "physicianDecision": "accept-secondary"
+        },
+        {
           "id": "S-MENSTRUAL-IRREGULAR",
           "canonical": "月經不調",
           "term": "月經不調",
@@ -13621,6 +13824,17 @@ window.X4KbData = {
         326
       ],
       "bookSymptoms": [
+        {
+          "id": "S-MENOPAUSE",
+          "canonical": "圍絕經期綜合徵",
+          "term": "圍絕經期綜合徵",
+          "page": 326,
+          "section": "適應病症",
+          "primary": false,
+          "mild": false,
+          "cardinal": false,
+          "physicianDecision": "accept-secondary"
+        },
         {
           "id": "S-MENTAL-SYMPTOMS",
           "canonical": "精神症狀",
@@ -16028,6 +16242,17 @@ window.X4KbData = {
           "physicianDecision": "accept-secondary"
         },
         {
+          "id": "S-MENOPAUSE",
+          "canonical": "圍絕經期綜合徵",
+          "term": "圍絕經期綜合徵",
+          "page": 340,
+          "section": "適應病症",
+          "primary": false,
+          "mild": false,
+          "cardinal": false,
+          "physicianDecision": "accept-secondary"
+        },
+        {
           "id": "S-BLEEDING",
           "canonical": "出血",
           "term": "出血",
@@ -16718,6 +16943,17 @@ window.X4KbData = {
         312
       ],
       "bookSymptoms": [
+        {
+          "id": "S-MENOPAUSE",
+          "canonical": "圍絕經期綜合徵",
+          "term": "圍絕經期綜合徵",
+          "page": 312,
+          "section": "適應病症",
+          "primary": false,
+          "mild": false,
+          "cardinal": false,
+          "physicianDecision": "accept-secondary"
+        },
         {
           "id": "S-HEAT-TOXIN",
           "canonical": "炎症",
@@ -20143,7 +20379,19 @@ window.X4KbData = {
       "bookPages": [
         325
       ],
-      "bookSymptoms": [],
+      "bookSymptoms": [
+        {
+          "id": "S-MENOPAUSE",
+          "canonical": "圍絕經期綜合徵",
+          "term": "圍絕經期綜合徵",
+          "page": 325,
+          "section": "適應病症",
+          "primary": false,
+          "mild": false,
+          "cardinal": false,
+          "physicianDecision": "accept-secondary"
+        }
+      ],
       "bookCorroborated": [
         {
           "id": "S-MENSTRUAL-IRREGULAR",
@@ -20568,6 +20816,15 @@ window.X4KbData = {
           "cardinal": false
         },
         {
+          "raw": "圍絕經期綜合徵",
+          "id": "S-MENOPAUSE",
+          "negated": false,
+          "matchType": "book",
+          "primary": false,
+          "mild": false,
+          "cardinal": false
+        },
+        {
           "raw": "皮疹",
           "id": "S-DERMATITIS",
           "negated": false,
@@ -20597,6 +20854,7 @@ window.X4KbData = {
         "S-INSOMNIA",
         "S-PRURITUS",
         "S-THIRST",
+        "S-MENOPAUSE",
         "S-DERMATITIS",
         "S-FEVER"
       ],
@@ -28066,6 +28324,15 @@ window.X4KbData = {
       "vectorSource": "book-derived",
       "keySymptoms": [
         {
+          "raw": "圍絕經期綜合徵",
+          "id": "S-MENOPAUSE",
+          "negated": false,
+          "matchType": "book",
+          "primary": false,
+          "mild": false,
+          "cardinal": false
+        },
+        {
           "raw": "神經痛",
           "id": "S-NEURALGIA",
           "negated": false,
@@ -28153,6 +28420,7 @@ window.X4KbData = {
         "《漢方臨床診療學》p.256"
       ],
       "indications": [
+        "S-MENOPAUSE",
         "S-NEURALGIA",
         "S-PALE-COMPLEXION",
         "S-BLOOD-DEF",

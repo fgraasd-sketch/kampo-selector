@@ -2612,6 +2612,7 @@ const EXCEL_FORMULA_KB = [
       "食欲不振",
       "小便不利",
       "帶下",
+      "子宮內膜異位症",
       "炎症"
     ],
     "keySymptoms": [
@@ -2621,9 +2622,10 @@ const EXCEL_FORMULA_KB = [
       "食欲不振",
       "小便不利",
       "帶下",
+      "子宮內膜異位症",
       "炎症"
     ],
-    "indications": "右下腹壓痛，腫塊，腹部膨滿，食欲不振，小便不利，帶下，炎症",
+    "indications": "右下腹壓痛，腫塊，腹部膨滿，食欲不振，小便不利，帶下，子宮內膜異位症，炎症",
     "formulaPattern": [
       "實證"
     ],
@@ -6585,6 +6587,7 @@ const EXCEL_FORMULA_KB = [
       "失眠",
       "瘙癢",
       "口渴",
+      "圍絕經期綜合徵",
       "皮疹",
       "發熱"
     ],
@@ -6594,10 +6597,11 @@ const EXCEL_FORMULA_KB = [
       "失眠",
       "瘙癢",
       "口渴",
+      "圍絕經期綜合徵",
       "皮疹",
       "發熱"
     ],
-    "indications": "頭痛，熱感，失眠，瘙癢，口渴，皮疹，發熱",
+    "indications": "頭痛，熱感，失眠，瘙癢，口渴，圍絕經期綜合徵，皮疹，發熱",
     "formulaPattern": [],
     "specialIndications": [],
     "contraindications": [],
@@ -10121,6 +10125,7 @@ const EXCEL_FORMULA_KB = [
     ],
     "zangFuTags": [],
     "symptoms": [
+      "圍絕經期綜合徵",
       "神經痛",
       "面色差",
       "貧血",
@@ -10132,6 +10137,7 @@ const EXCEL_FORMULA_KB = [
       "耳鳴"
     ],
     "keySymptoms": [
+      "圍絕經期綜合徵",
       "神經痛",
       "面色差",
       "貧血",
@@ -10142,7 +10148,7 @@ const EXCEL_FORMULA_KB = [
       "肩凝",
       "耳鳴"
     ],
-    "indications": "神經痛，面色差，貧血，發冷，痛經，頭痛，頭重，肩凝，耳鳴",
+    "indications": "圍絕經期綜合徵，神經痛，面色差，貧血，發冷，痛經，頭痛，頭重，肩凝，耳鳴",
     "formulaPattern": [],
     "specialIndications": [],
     "contraindications": [],
