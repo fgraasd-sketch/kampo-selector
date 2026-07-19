@@ -8794,8 +8794,8 @@ window.X4KbData = {
       "zangFuVector": {
         "GAN-QIYU": 0,
         "GAN-YINXU": 0,
-        "XIN-YANGXU": 0.5,
-        "XIN-XUEXU": 0.2,
+        "XIN-YANGXU": 0.25,
+        "XIN-XUEXU": 0,
         "PI-QIXU": 0,
         "PI-YANGXU": 0.3333,
         "FEI-QIXU": 0.2,
@@ -8827,12 +8827,6 @@ window.X4KbData = {
           "id": "S-EPIGASTRIC-RESISTANCE",
           "negated": false,
           "matchType": "exact"
-        },
-        {
-          "raw": "心下動悸",
-          "id": "S-PALPITATION",
-          "negated": false,
-          "matchType": "physician-patch"
         }
       ],
       "herbs": [],
@@ -8844,8 +8838,7 @@ window.X4KbData = {
         "S-ASTHMA-WHEEZE",
         "S-EDEMA",
         "S-EPIGASTRIC-RESISTANCE",
-        "S-OLIGURIA",
-        "S-PALPITATION"
+        "S-OLIGURIA"
       ],
       "formulaPattern": [
         "虛實夾雜"
