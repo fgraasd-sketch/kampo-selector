@@ -3738,7 +3738,7 @@ window.X4KbData = {
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0,
         "XIN-XUEXU": 0,
-        "PI-QIXU": 0,
+        "PI-QIXU": 0.2,
         "PI-YANGXU": 0,
         "FEI-QIXU": 0,
         "FEI-YINXU": 0,
@@ -3769,6 +3769,12 @@ window.X4KbData = {
           "id": "S-MORNING-STIFFNESS",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "腹部充實膨滿、鼓狀腹",
+          "id": "S-ABDOMINAL-DISTENSION",
+          "negated": false,
+          "matchType": "physician-patch"
         },
         {
           "raw": "顏面潮紅",
@@ -3841,6 +3847,7 @@ window.X4KbData = {
         "S-CONSTIPATION",
         "S-JOINT-PAIN",
         "S-MORNING-STIFFNESS",
+        "S-ABDOMINAL-DISTENSION",
         "S-FACIAL-FLUSH",
         "S-PERIUMBILICAL-TENDERNESS",
         "S-ABDOMINAL-TENDERNESS",
@@ -7461,7 +7468,7 @@ window.X4KbData = {
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0.25,
         "XIN-XUEXU": 0,
-        "PI-QIXU": 0.2,
+        "PI-QIXU": 0.4,
         "PI-YANGXU": 0.5,
         "FEI-QIXU": 0,
         "FEI-YINXU": 0,
@@ -7522,6 +7529,12 @@ window.X4KbData = {
           "id": "S-GASTRIC-SPLASH",
           "negated": false,
           "fromIndications": true
+        },
+        {
+          "raw": "心下部膨滿",
+          "id": "S-ABDOMINAL-DISTENSION",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -7546,7 +7559,8 @@ window.X4KbData = {
         "S-EPIGASTRIC-RESISTANCE",
         "S-GASTRIC-SPLASH",
         "S-HEADACHE",
-        "S-VOMITING"
+        "S-VOMITING",
+        "S-ABDOMINAL-DISTENSION"
       ],
       "formulaPattern": [
         "人參湯類",
@@ -7659,6 +7673,12 @@ window.X4KbData = {
           "id": "S-COLD",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "胃中停水（振水音）",
+          "id": "S-GASTRIC-SPLASH",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -7680,7 +7700,8 @@ window.X4KbData = {
         "S-DIARRHEA",
         "S-EPIGASTRIC-PAIN",
         "S-EPIGASTRIC-RESISTANCE",
-        "S-FATIGUE"
+        "S-FATIGUE",
+        "S-GASTRIC-SPLASH"
       ],
       "formulaPattern": [
         "人參湯類",
@@ -8018,7 +8039,7 @@ window.X4KbData = {
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0.5,
         "XIN-XUEXU": 0.2,
-        "PI-QIXU": 0,
+        "PI-QIXU": 0.2,
         "PI-YANGXU": 0.3333,
         "FEI-QIXU": 0.4,
         "FEI-YINXU": 0.2,
@@ -8063,6 +8084,12 @@ window.X4KbData = {
           "matchType": "exact"
         },
         {
+          "raw": "腹滿",
+          "id": "S-ABDOMINAL-DISTENSION",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
           "raw": "心慌",
           "id": "S-PALPITATION",
           "negated": false,
@@ -8101,6 +8128,7 @@ window.X4KbData = {
         "S-EPIGASTRIC-RESISTANCE",
         "S-OLIGURIA",
         "S-THIRST",
+        "S-ABDOMINAL-DISTENSION",
         "S-PALPITATION",
         "S-HEAT-TOXIN"
       ],
@@ -8766,8 +8794,8 @@ window.X4KbData = {
       "zangFuVector": {
         "GAN-QIYU": 0,
         "GAN-YINXU": 0,
-        "XIN-YANGXU": 0.25,
-        "XIN-XUEXU": 0,
+        "XIN-YANGXU": 0.5,
+        "XIN-XUEXU": 0.2,
         "PI-QIXU": 0,
         "PI-YANGXU": 0.3333,
         "FEI-QIXU": 0.2,
@@ -8799,6 +8827,12 @@ window.X4KbData = {
           "id": "S-EPIGASTRIC-RESISTANCE",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "心下動悸",
+          "id": "S-PALPITATION",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [],
@@ -8810,7 +8844,8 @@ window.X4KbData = {
         "S-ASTHMA-WHEEZE",
         "S-EDEMA",
         "S-EPIGASTRIC-RESISTANCE",
-        "S-OLIGURIA"
+        "S-OLIGURIA",
+        "S-PALPITATION"
       ],
       "formulaPattern": [
         "虛實夾雜"
@@ -10243,7 +10278,7 @@ window.X4KbData = {
         "GAN-YINXU": 0.2,
         "XIN-YANGXU": 0.25,
         "XIN-XUEXU": 0.2,
-        "PI-QIXU": 0,
+        "PI-QIXU": 0.2,
         "PI-YANGXU": 0.1667,
         "FEI-QIXU": 0,
         "FEI-YINXU": 0,
@@ -10268,6 +10303,12 @@ window.X4KbData = {
           "id": "S-ABDOMINAL-TENDERNESS",
           "negated": false,
           "fromIndications": true
+        },
+        {
+          "raw": "腹部充實",
+          "id": "S-ABDOMINAL-DISTENSION",
+          "negated": false,
+          "matchType": "physician-patch"
         },
         {
           "raw": "下肢發冷",
@@ -10355,6 +10396,7 @@ window.X4KbData = {
       "indications": [
         "S-ABDOMINAL-MASS",
         "S-ABDOMINAL-TENDERNESS",
+        "S-ABDOMINAL-DISTENSION",
         "S-COLD",
         "S-MENSTRUAL-IRREGULAR",
         "S-HOT-FLUSH",
@@ -16099,8 +16141,8 @@ window.X4KbData = {
       "zangFuVector": {
         "GAN-QIYU": 0.2857,
         "GAN-YINXU": 0,
-        "XIN-YANGXU": 0,
-        "XIN-XUEXU": 0.2,
+        "XIN-YANGXU": 0.25,
+        "XIN-XUEXU": 0.4,
         "PI-QIXU": 0,
         "PI-YANGXU": 0,
         "FEI-QIXU": 0,
@@ -16126,6 +16168,12 @@ window.X4KbData = {
           "id": "S-MUSCLE-SPASM",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "臍上動氣、大動脈搏動亢進",
+          "id": "S-PALPITATION",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -16144,7 +16192,8 @@ window.X4KbData = {
       "indications": [
         "S-ANXIETY",
         "S-IRRITABILITY",
-        "S-MUSCLE-SPASM"
+        "S-MUSCLE-SPASM",
+        "S-PALPITATION"
       ],
       "formulaPattern": [
         "肝陽病態性亢進狀態"
@@ -17047,7 +17096,7 @@ window.X4KbData = {
         "GAN-YINXU": 0.2,
         "XIN-YANGXU": 0,
         "XIN-XUEXU": 0.6,
-        "PI-QIXU": 0,
+        "PI-QIXU": 0.2,
         "PI-YANGXU": 0,
         "FEI-QIXU": 0,
         "FEI-YINXU": 0,
@@ -17084,6 +17133,18 @@ window.X4KbData = {
           "id": "S-HEAT-IN-CHEST",
           "negated": false,
           "fromIndications": true
+        },
+        {
+          "raw": "心下部堅硬",
+          "id": "S-EPIGASTRIC-RESISTANCE",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "膨滿不柔和",
+          "id": "S-ABDOMINAL-DISTENSION",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -17098,7 +17159,9 @@ window.X4KbData = {
         "S-ANXIETY",
         "S-HEAT-IN-CHEST",
         "S-HEAT-SENSATION",
-        "S-INSOMNIA"
+        "S-INSOMNIA",
+        "S-EPIGASTRIC-RESISTANCE",
+        "S-ABDOMINAL-DISTENSION"
       ],
       "formulaPattern": [
         "陽氣實 / 陰液實"
@@ -22758,9 +22821,9 @@ window.X4KbData = {
       "xushiClass": "虛證",
       "patternVector": {
         "QI_XU": 0,
-        "QI_NI": 1,
+        "QI_NI": 0,
         "QI_YU": 0,
-        "XUE_XU": 0,
+        "XUE_XU": 1,
         "YU_XUE": 0,
         "SUI_ZHI": 0
       },
@@ -22804,6 +22867,12 @@ window.X4KbData = {
           "primary": false,
           "mild": false,
           "cardinal": false
+        },
+        {
+          "raw": "腹直肌痙急、腹皮攣急",
+          "id": "S-MUSCLE-SPASM",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -22818,7 +22887,8 @@ window.X4KbData = {
       "indications": [
         "S-ANXIETY",
         "S-INSOMNIA",
-        "S-NIGHT-CRYING"
+        "S-NIGHT-CRYING",
+        "S-MUSCLE-SPASM"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：甘去大囊湯（OCR 標題，已人工校名）",
@@ -24609,8 +24679,8 @@ window.X4KbData = {
       "zangFuVector": {
         "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0,
-        "XIN-YANGXU": 0.25,
-        "XIN-XUEXU": 0,
+        "XIN-YANGXU": 0.5,
+        "XIN-XUEXU": 0.2,
         "PI-QIXU": 0,
         "PI-YANGXU": 0.1667,
         "FEI-QIXU": 0,
@@ -24682,6 +24752,12 @@ window.X4KbData = {
           "primary": false,
           "mild": false,
           "cardinal": false
+        },
+        {
+          "raw": "臍上悸動",
+          "id": "S-PALPITATION",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [],
@@ -24696,7 +24772,8 @@ window.X4KbData = {
         "S-FEVER",
         "S-DROOLING",
         "S-FACIAL-FLUSH",
-        "S-TONGUE-RED"
+        "S-TONGUE-RED",
+        "S-PALPITATION"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：緊胡桂枝幹羨湯（OCR 標題，已人工校名）",
