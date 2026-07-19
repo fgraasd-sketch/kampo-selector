@@ -22539,7 +22539,23 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "桂皮",
+        "芍藥",
+        "木通",
+        "半夏",
+        "甘草",
+        "大棗",
+        "燈心草",
+        "生薑",
+        "桑白皮",
+        "青皮",
+        "陳皮",
+        "大腹皮",
+        "羌活",
+        "茯苓",
+        "紫蘇葉"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.262"
@@ -22815,7 +22831,22 @@ window.X4KbData = {
           "cardinal": true
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "人參",
+        "蒼朮",
+        "茯苓",
+        "黃芪",
+        "當歸",
+        "遠志",
+        "柴胡",
+        "梔子",
+        "甘草",
+        "木香",
+        "大棗",
+        "生薑",
+        "酸棗仁",
+        "龍眼肉"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.287"
@@ -23531,7 +23562,21 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "半夏",
+        "柴胡",
+        "麥門冬",
+        "茯苓",
+        "桔梗",
+        "枳實",
+        "香附子",
+        "陳皮",
+        "黃連",
+        "甘草",
+        "生薑",
+        "人參",
+        "竹茹"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.350"
@@ -24982,7 +25027,15 @@ window.X4KbData = {
           "matchType": "physician-patch"
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "柴胡",
+        "桂皮",
+        "乾薑",
+        "栝樓根",
+        "黃芩",
+        "牡蠣",
+        "甘草"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.242"
@@ -25154,7 +25207,17 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "柴胡",
+        "半夏",
+        "人參",
+        "大棗",
+        "甘草",
+        "生薑",
+        "黃芩",
+        "桂皮",
+        "芍藥"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.243"
@@ -27288,7 +27351,17 @@ window.X4KbData = {
           "cardinal": true
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "半夏",
+        "茯苓",
+        "蒼朮",
+        "厚朴",
+        "陳皮",
+        "人參",
+        "蘇葉",
+        "枳實",
+        "生薑"
+      ],
       "composedOfFormulas": [
         "茯苓飲",
         "半夏厚朴湯"
@@ -27501,7 +27574,20 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "半夏",
+        "茯苓",
+        "葛根",
+        "桔梗",
+        "陳皮",
+        "大棗",
+        "人參",
+        "甘草",
+        "枳實",
+        "蘇葉",
+        "生薑",
+        "前胡"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.315"
@@ -27773,7 +27859,24 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "當歸",
+        "麥門冬",
+        "茯苓",
+        "黃芩",
+        "桔梗",
+        "杏仁",
+        "梔子",
+        "桑白皮",
+        "大棗",
+        "陳皮",
+        "甘草",
+        "五味子",
+        "生薑",
+        "竹茹",
+        "天門冬",
+        "貝母"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.307"
@@ -28266,7 +28369,11 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "麻黃",
+        "附子",
+        "甘草"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.298"
@@ -29098,7 +29205,18 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "當歸",
+        "半夏",
+        "桂皮",
+        "厚朴",
+        "芍藥",
+        "人參",
+        "黃芪",
+        "山椒",
+        "甘草",
+        "乾薑"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.257"
@@ -29725,7 +29843,17 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "地黃",
+        "芍藥",
+        "川芎",
+        "澤瀉",
+        "豬苓",
+        "當歸",
+        "茯苓",
+        "阿膠",
+        "滑石"
+      ],
       "composedOfFormulas": [
         "豬苓湯",
         "四物湯"
