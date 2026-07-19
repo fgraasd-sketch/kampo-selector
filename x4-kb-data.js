@@ -20829,7 +20829,12 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "芫花",
+        "甘遂",
+        "大戟",
+        "大棗"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.317"
@@ -21145,7 +21150,15 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "麻黃",
+        "杏仁",
+        "桂皮",
+        "生薑",
+        "大棗",
+        "甘草",
+        "石膏"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.254"
@@ -22460,7 +22473,21 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "蒼朮",
+        "茯苓",
+        "陳皮",
+        "厚朴",
+        "香附子",
+        "豬苓",
+        "澤瀉",
+        "枳實",
+        "大腹皮",
+        "縮砂",
+        "木香",
+        "生薑",
+        "燈心草"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.261"
@@ -24385,7 +24412,13 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "厚朴",
+        "半夏",
+        "人參",
+        "甘草",
+        "生薑"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.283"
@@ -24588,7 +24621,21 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "枳實",
+        "縮砂",
+        "半夏",
+        "茯苓",
+        "陳皮",
+        "香附子",
+        "厚朴",
+        "延胡索",
+        "茴香",
+        "木香",
+        "草豆蔻",
+        "乾薑",
+        "甘草"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.345"
@@ -26230,7 +26277,11 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "赤石脂",
+        "粳米",
+        "乾薑"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.322"
@@ -26712,7 +26763,13 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "麻黃",
+        "芍藥",
+        "黃芪",
+        "甘草",
+        "烏頭"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.324"
@@ -28580,7 +28637,17 @@ window.X4KbData = {
           "cardinal": true
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "當歸",
+        "桂皮",
+        "芍藥",
+        "細辛",
+        "甘草",
+        "木通",
+        "大棗",
+        "吳茱萸",
+        "生薑"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.256"
@@ -28937,7 +29004,17 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "葛根",
+        "麻黃",
+        "桂皮",
+        "甘草",
+        "芍藥",
+        "大棗",
+        "生薑",
+        "蒼朮",
+        "附子"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.269"
@@ -29108,7 +29185,12 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "葛根",
+        "甘草",
+        "黃連",
+        "黃芩"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.268"
