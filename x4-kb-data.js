@@ -367,6 +367,9 @@ window.X4KbData = {
         "全身冷",
         "畏寒",
         "惡風",
+        "厥冷",
+        "手足厥冷",
+        "四肢厥冷",
         "手腳冰冷",
         "手腳冷",
         "四肢冰冷",
@@ -1273,7 +1276,11 @@ window.X4KbData = {
     {
       "id": "S-LEUCORRHEA",
       "canonical": "帶下",
-      "aliases": [],
+      "aliases": [
+        "白帶",
+        "白帶下",
+        "帶下量多"
+      ],
       "parent": null,
       "negationSensitive": false,
       "source": [
