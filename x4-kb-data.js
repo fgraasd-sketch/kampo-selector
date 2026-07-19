@@ -6131,7 +6131,10 @@ window.X4KbData = {
           "matchType": "exact"
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "枳實",
+        "白朮"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "「水滯 心下型  胃內型」"
@@ -10165,7 +10168,12 @@ window.X4KbData = {
           "page": 241
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "薏苡仁",
+        "冬瓜子",
+        "桃仁",
+        "牡丹皮"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "「瘀血 」方",
@@ -14244,7 +14252,25 @@ window.X4KbData = {
           "page": 290
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "黃芩",
+        "黃柏",
+        "黃連",
+        "桔梗",
+        "枳實",
+        "荊芥",
+        "柴胡",
+        "梔子",
+        "地黃",
+        "芍藥",
+        "川芎",
+        "當歸",
+        "薄荷",
+        "白芷",
+        "防風",
+        "連翹",
+        "甘草"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "「血虛 方劑」",
@@ -21088,7 +21114,11 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "地黃",
+        "黃芩",
+        "苦參"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.312"
@@ -29131,7 +29161,15 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "當歸",
+        "川芎",
+        "芍藥",
+        "茯苓",
+        "白朮",
+        "澤瀉",
+        "附子"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.256"
@@ -29457,7 +29495,17 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "葛根",
+        "大棗",
+        "麻黃",
+        "甘草",
+        "桂皮",
+        "芍藥",
+        "生薑",
+        "川芎",
+        "辛夷"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.268"
@@ -30032,7 +30080,16 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "桂皮",
+        "芍藥",
+        "大棗",
+        "生薑",
+        "甘草",
+        "膠飴",
+        "黃芪",
+        "當歸"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.271"
