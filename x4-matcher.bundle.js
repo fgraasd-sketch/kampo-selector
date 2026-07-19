@@ -1503,10 +1503,16 @@ function createX4Matcher(kb) {
     return result;
   }
 
+  // 單味藥製劑（附子末/紅參末/薏苡仁末）是**加味用的單味藥**，由 computeAddonSuggestions
+  // 專門推薦（「加味建議」機制），不該當主推薦方跟真方搶排名——臨床上不會單開附子末。
+  // 它們原設計是「filed for cautions/provenance, never ranks」（見 handbook_bridge.mjs），
+  // 但書證裁決給了附子末 11 個主症後就破功（2026-07-18 大塚鑑別 battery 抓到：發冷案
+  // 附子末 排到第1-2）。主推薦排名排除它們；加味建議照舊（它讀的是這些方的 keySymptoms）。
+  const isSingleHerbPrep = (formula) => String(formula.category || "").startsWith("單味藥製劑");
   function recommend(patient, { limit = 5 } = {}) {
     const patientContext = buildPatientContext(patient || {});
     const scored = formulas
-      .filter((formula) => passesXushiGate(formula, patientContext.xuShi))
+      .filter((formula) => passesXushiGate(formula, patientContext.xuShi) && !isSingleHerbPrep(formula))
       .map((formula) => scoreFormulaWithContext(formula, patientContext));
     applyCombinationRule(scored);
     return scored
