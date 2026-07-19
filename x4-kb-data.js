@@ -6273,7 +6273,19 @@ window.X4KbData = {
           "matchType": "exact"
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "厚朴",
+        "蒼朮",
+        "澤瀉",
+        "豬苓",
+        "陳皮",
+        "白朮",
+        "茯苓",
+        "桂皮",
+        "生薑",
+        "大棗",
+        "甘草"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "「水滯 心下型  胃內型」"
@@ -11458,7 +11470,12 @@ window.X4KbData = {
           "matchType": "exact"
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "茯苓",
+        "桂皮",
+        "五味子",
+        "甘草"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "「氣逆 方劑」的副本"
@@ -11515,7 +11532,13 @@ window.X4KbData = {
           "matchType": "exact"
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "桂皮",
+        "芍藥",
+        "大棗",
+        "生薑",
+        "甘草"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "「氣逆 方劑」的副本"
@@ -11731,7 +11754,14 @@ window.X4KbData = {
           "matchType": "exact"
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "吳茱萸",
+        "桂皮",
+        "半夏",
+        "生薑",
+        "人參",
+        "甘草"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "「氣逆 方劑」的副本"
@@ -16825,7 +16855,17 @@ window.X4KbData = {
           "matchType": "exact"
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "人參",
+        "白朮",
+        "乾薑",
+        "甘草",
+        "當歸",
+        "芍藥",
+        "川芎",
+        "茯苓",
+        "澤瀉"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "「肝異常」的副本"
@@ -24171,7 +24211,9 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "附子"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.264",
@@ -24952,7 +24994,9 @@ window.X4KbData = {
       },
       "vectorSource": "book-derived",
       "keySymptoms": [],
-      "herbs": [],
+      "herbs": [
+        "紅參"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.282"
@@ -28662,7 +28706,13 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "紫根",
+        "當歸",
+        "胡麻油",
+        "黃蠟",
+        "豚脂"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.352"
@@ -29657,7 +29707,17 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "蜀椒",
+        "附子",
+        "粳米",
+        "乾薑",
+        "半夏",
+        "大棗",
+        "甘草",
+        "人參",
+        "膠飴"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.290"
@@ -29997,7 +30057,9 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "薏苡仁"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.341"
