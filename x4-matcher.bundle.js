@@ -394,6 +394,25 @@ const DERIVED_VECTOR_K = 4;
 // never produce five key hits, so the term stops discriminating and 半夏厚朴湯,
 // three keys and one hit but the 梅核氣 answer, falls out of first place).
 const KEY_EVIDENCE_K = 5;
+// keySymptomScore ＝ coverage^COVERAGE_WEIGHT × volume^(1−COVERAGE_WEIGHT)（見計算處）。
+//
+// **待辦#2 第七個嘗試——成功上線（2026-07-18 醫師裁決接受，大塚 battery 當量尺）。**
+// 前六個都試著動 coverage 比值本身（重新加權）或在它之外加分，全失敗；這個不動比值，
+// 改動**幾何平均的平衡**。coverage（吃方大小＝待辦#2 源頭）與 volume（病人端正規化、
+// 不吃大小）原本各佔一半（sqrt=0.5）。探針證實 coverage 承重「小方是答案」、volume
+// 承重「大方是答案」。把權重偏向 volume（0.35）：
+//   ✅ 大塚 battery 第1 37→39、前3 66→69、前5 79→81——**待辦#2 受害方（大方是答案）
+//      回來**：失眠→三物黃芩湯、發冷→當歸四逆加吳茱萸生薑湯、皮膚病→桂枝茯苓丸。
+//   ✅ 臨床 22 案含六經欄逐案位元相同。
+//   ⚖️ 薛案：清上蠲痛湯（小方、書的頭痛答案）從 adapter #5 掉到 #6（raw #8）。這病人
+//      是教科書瘀血證（肥胖/臍旁壓痛/痛經/脈沉有力），工具前四排瘀血方**臨床合理**，
+//      書選清上蠲痛湯只是主訴切入點不同。**醫師裁決：接受此 trade-off**（同三黃瀉心湯
+//      打平模式）。薛案金絲雀放寬為「瘀血方領先＋清上蠲痛湯進 raw 前八」（見
+//      tests/kampo-frontend-xue-case.test.mjs、scripts/live_spotcheck.mjs）。
+// 掃 0.30–0.40 皆穩，0.35 取中段平原（前3 最佳）。0.5 走原 sqrt 路徑（可逐位元回退）。
+// ⚠️ 量測陷阱（吃過一次）：前端金絲雀（薛案等）跑 **bundle**，掃這個常數**必須每個值
+//    重建 bundle** 再跑測試，否則前端測試跑舊 bundle 給假綠。
+const COVERAGE_WEIGHT = 0.35;
 
 const XUSHI_CLASSES = new Set(["虛證", "實證", "虛實夾雜", "未分類"]);
 
@@ -573,6 +592,31 @@ const CHIEF_SPECIFICITY_MAX_FORMULAS = 5;
 // Swept {0.15, 0.2, 0.25}: battery identical across the range (第1 10→11,
 // zero regressions) — 0.2 sits mid-plateau.
 const W_CHIEF = 0.2;
+// ── 待辦#2 第六個嘗試（2026-07-18，大塚 battery 當量尺）：特異度。兩種形狀，
+//    結論＝小改動空間已窮盡，需架構級重設計（勿再重試這兩種）：
+//
+// (a) **加分版（量測後否決）**：specBonus = W × min(1, Σ命中主症的 1/keyedBy / K)，
+//     加在路線 max 之上、不吃分母、按特異度加權（罕見主症命中給多分）。這是大塚
+//     「每分支押一個最具鑑別力徵象」的機器版。掃 W∈{0.03..0.10}×K∈{1,1.5,2}：
+//     大塚 battery 第1 僅 37→38（+1 分支），臨床零變動——**幾乎惰性**，與第五個
+//     否決（W_KEY_HIT，等額加分）同命：比值外的加分被 W 封頂，救不了差距更大的
+//     分母稀釋，又同時幫到命中特異主症的競爭方。**加分項對待辦#2 已兩度證明無效。**
+//
+// (b) **比值版（未上線，但已推導出障礙）**：把覆蓋度分子分母都按特異度（1/keyedBy）
+//     加權。approaches 1-4「重新加權在比值裡沒用」是基於**中心性**（0.75-1.0，變化
+//     1.3 倍）；特異度變化 30 倍，是唯一沒被那結論涵蓋的重新加權。三種正規化都
+//     **量測後否決**（碼已移除，勿重試）：
+//       - raw（1/keyedBy 直接乘）：破尺度（matchedWeight 崩、volume/封頂塌）。
+//       - 方內正規化：每個方分母仍＝主症數，不解決跨方問題。
+//       - **全域正規化**（權重÷全體平均＝mean 1，保尺度又縮常見主症多的方分母）：
+//         真的實作＋掃 α∈{0.3..1.5} 量了。α=0.3 大塚 battery 前5 僅 +1（79→80）、
+//         α≥0.5 起**臨床 battery 倒退**（第1 20→17→15）。根因：即使保尺度，重新
+//         分配權重仍擾動那 22 個已調校的教科書案（它們常靠某個現在權重變低的常見
+//         主症定義）。特異度訊號雖直覺，與既有調校排序衝突。
+//   ⇒ 六個方向試完（4 個比值重新加權含 3 種特異度正規化＋2 個加分）全否決——
+//     教訓：不要動 coverage 比值本身、也不要在它之外加分。**第七個方向（見上方
+//     COVERAGE_WEIGHT，改 coverage/volume 平衡偏向 volume）有 trade-off**：改善大塚
+//     待辦#2 受害方，但破薛案（零餘裕小方答案）。要不要接受屬醫師裁決，機制閘在 0.5。
 // 主證加分（2026-07-14）——**加法，不吃分母**。
 //
 // 書在〔病期病態〕開頭用「X型」替一個方指定**那一個**徵象：
@@ -1152,11 +1196,17 @@ function scoreKeySymptoms(formula, patientMatches, normalizer, reportedSymptomCo
   const coverage = matchedWeight / Math.max(1, effectiveKeyCount);
   const achievable = Math.max(1, Math.min(KEY_EVIDENCE_K, reportedSymptomCount || KEY_EVIDENCE_K));
   const volume = Math.min(1, Math.max(0, matchedWeight) / achievable);
+  // 覆蓋度 vs volume 的加權幾何平均（2026-07-18，待辦#2 第七個嘗試）：
+  // coverage^w × volume^(1−w)。coverage 吃方大小（待辦#2 的源頭），volume 不吃。
+  // 探針證實 coverage 承重臨床第1、volume 承重大塚前3/前5——偏向 volume 或可兩全。
+  // w=0.5 時＝原 sqrt(coverage×volume)，走原路徑保逐位元不變。
   // A net-negative match (the patient contradicts the formula's key symptoms)
   // stays negative — the geometric mean is only meaningful above zero.
   return {
     keySymptoms,
-    keySymptomScore: coverage <= 0 ? coverage : Math.sqrt(coverage * volume),
+    keySymptomScore: coverage <= 0 ? coverage
+      : (COVERAGE_WEIGHT === 0.5 ? Math.sqrt(coverage * volume)
+        : Math.pow(coverage, COVERAGE_WEIGHT) * Math.pow(volume, 1 - COVERAGE_WEIGHT)),
     matchedSymptoms,
     unmatchedKeySymptoms,
     contradictedKeySymptoms,
@@ -1588,5 +1638,5 @@ function createX4Matcher(kb) {
 
 
 
-  return { isExamFinding, buildHeatEvidence, buildChannelEvidence, normalizeXushiClass, createX4Matcher, W_KEY, W_PATTERN, W_ZANGFU, PARENT_FALLBACK_WEIGHT, EVIDENCE_DAMPING_K, W_BOOK_SECONDARY, BOOK_SECONDARY_K, DERIVED_VECTOR_K, KEY_EVIDENCE_K, PATIENT_NEGATION_WEIGHT, PATIENT_NEGATION_DEMOTION, PATTERN_RECALL_BETA, CHANNEL_W_KEY, CHANNEL_W_STAGE, CHIEF_SPECIFICITY_MAX_FORMULAS, W_CHIEF, W_CARDINAL, CHIEF_WINDOW, KEY_CENTRALITY_SECONDARY, KEY_CENTRALITY_MILD };
+  return { isExamFinding, buildHeatEvidence, buildChannelEvidence, normalizeXushiClass, createX4Matcher, W_KEY, W_PATTERN, W_ZANGFU, PARENT_FALLBACK_WEIGHT, EVIDENCE_DAMPING_K, W_BOOK_SECONDARY, BOOK_SECONDARY_K, DERIVED_VECTOR_K, KEY_EVIDENCE_K, COVERAGE_WEIGHT, PATIENT_NEGATION_WEIGHT, PATIENT_NEGATION_DEMOTION, PATTERN_RECALL_BETA, CHANNEL_W_KEY, CHANNEL_W_STAGE, CHIEF_SPECIFICITY_MAX_FORMULAS, W_CHIEF, W_CARDINAL, CHIEF_WINDOW, KEY_CENTRALITY_SECONDARY, KEY_CENTRALITY_MILD };
 })();
