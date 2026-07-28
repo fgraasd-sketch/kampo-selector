@@ -465,7 +465,13 @@ window.X4KbData = {
       "id": "S-DARK-TONGUE",
       "canonical": "舌暗紫",
       "aliases": [
-        "女評分： 舌暗紫"
+        "瘀血舌",
+        "舌紫",
+        "舌邊有靜脈膨脹",
+        "舌下靜脈膨脹",
+        "瘀血象",
+        "舌紫暗",
+        "舌質暗紫"
       ],
       "parent": null,
       "negationSensitive": false,
@@ -2176,7 +2182,13 @@ window.X4KbData = {
       "id": "S-WEAK-LOWER-LIMB",
       "canonical": "下肢肌力低下",
       "aliases": [
-        "腰腿肌力低下"
+        "腰腿肌力低下",
+        "下肢無力",
+        "下肢乏力",
+        "下肢軟弱",
+        "腿無力",
+        "腳無力",
+        "步行無力"
       ],
       "parent": null,
       "negationSensitive": false,
@@ -2394,6 +2406,84 @@ window.X4KbData = {
         "牙齦痛",
         "齒齦腫痛",
         "牙根膜炎"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-PALE-TONGUE",
+      "canonical": "舌淡",
+      "aliases": [
+        "舌淡白",
+        "舌質淡",
+        "舌色淡",
+        "舌淡無光澤",
+        "舌淡少津",
+        "血虛舌",
+        "舌淡無血色",
+        "舌質淡白"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-INDENTED-TONGUE",
+      "canonical": "齒痕舌",
+      "aliases": [
+        "舌邊齒痕",
+        "齒痕",
+        "舌齒痕"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-WHITE-GREASY-COATING",
+      "canonical": "白膩苔",
+      "aliases": [
+        "白厚膩苔",
+        "白膩",
+        "膩苔",
+        "白苔厚膩"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-WATER-TOXIN-TONGUE",
+      "canonical": "水毒舌",
+      "aliases": [
+        "齒痕舌白膩苔",
+        "胖大舌白膩苔",
+        "水毒象"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-HAND-TREMOR",
+      "canonical": "手顫",
+      "aliases": [
+        "手抖",
+        "手震顫",
+        "雙手顫抖",
+        "震顫",
+        "手部震顫"
       ],
       "parent": null,
       "negationSensitive": false,
@@ -7496,8 +7586,8 @@ window.X4KbData = {
         "SUI_ZHI": 1
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1429,
-        "GAN-YINXU": 0,
+        "GAN-QIYU": 0.2857,
+        "GAN-YINXU": 0.2,
         "XIN-YANGXU": 0.25,
         "XIN-XUEXU": 0,
         "PI-QIXU": 0.4,
@@ -7505,7 +7595,7 @@ window.X4KbData = {
         "FEI-QIXU": 0,
         "FEI-YINXU": 0,
         "SHEN-YANGXU": 0.2,
-        "SHEN-YINXU": 0
+        "SHEN-YINXU": 0.1111
       },
       "keySymptoms": [
         {
@@ -7567,6 +7657,18 @@ window.X4KbData = {
           "id": "S-ABDOMINAL-DISTENSION",
           "negated": false,
           "matchType": "physician-patch"
+        },
+        {
+          "raw": "眩暈",
+          "id": "S-DIZZINESS",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "胖大舌",
+          "id": "S-TONGUE-SWOLLEN",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -7592,7 +7694,9 @@ window.X4KbData = {
         "S-GASTRIC-SPLASH",
         "S-HEADACHE",
         "S-VOMITING",
-        "S-ABDOMINAL-DISTENSION"
+        "S-ABDOMINAL-DISTENSION",
+        "S-DIZZINESS",
+        "S-TONGUE-SWOLLEN"
       ],
       "formulaPattern": [
         "人參湯類",
@@ -10368,6 +10472,12 @@ window.X4KbData = {
           "matchType": "physician-patch"
         },
         {
+          "raw": "瘀血舌",
+          "id": "S-DARK-TONGUE",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
           "raw": "下肢發冷",
           "id": "S-COLD",
           "negated": false,
@@ -10454,6 +10564,7 @@ window.X4KbData = {
         "S-ABDOMINAL-MASS",
         "S-ABDOMINAL-TENDERNESS",
         "S-ABDOMINAL-DISTENSION",
+        "S-DARK-TONGUE",
         "S-COLD",
         "S-MENSTRUAL-IRREGULAR",
         "S-HOT-FLUSH",
@@ -10866,7 +10977,7 @@ window.X4KbData = {
         "PI-YANGXU": 0.1667,
         "FEI-QIXU": 0,
         "FEI-YINXU": 0,
-        "SHEN-YANGXU": 0.1,
+        "SHEN-YANGXU": 0.2,
         "SHEN-YINXU": 0
       },
       "keySymptoms": [
@@ -10905,6 +11016,18 @@ window.X4KbData = {
           "id": "S-NUMBNESS",
           "negated": false,
           "fromIndications": true
+        },
+        {
+          "raw": "腰痛（瘀血、行痺）",
+          "id": "S-LOW-BACK-PAIN",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "舌暗紫、舌下靜脈膨脹",
+          "id": "S-DARK-TONGUE",
+          "negated": false,
+          "matchType": "physician-patch"
         },
         {
           "raw": "腹部抵抗",
@@ -10957,6 +11080,8 @@ window.X4KbData = {
         "S-JOINT-PAIN",
         "S-NEURALGIA",
         "S-NUMBNESS",
+        "S-LOW-BACK-PAIN",
+        "S-DARK-TONGUE",
         "S-ABDOMINAL-TENDERNESS",
         "S-EDEMA"
       ],
@@ -14450,7 +14575,7 @@ window.X4KbData = {
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0.5,
         "XIN-XUEXU": 0.2,
-        "PI-QIXU": 0.2,
+        "PI-QIXU": 0.4,
         "PI-YANGXU": 0.1667,
         "FEI-QIXU": 0.2,
         "FEI-YINXU": 0.2,
@@ -14487,6 +14612,18 @@ window.X4KbData = {
           "id": "S-SKIN-DRY",
           "negated": false,
           "fromIndications": true
+        },
+        {
+          "raw": "舌淡",
+          "id": "S-PALE-TONGUE",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "食欲不振",
+          "id": "S-APPETITE-LOW",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -14511,7 +14648,9 @@ window.X4KbData = {
         "S-COLD",
         "S-FATIGUE",
         "S-NIGHT-SWEAT",
-        "S-SKIN-DRY"
+        "S-SKIN-DRY",
+        "S-PALE-TONGUE",
+        "S-APPETITE-LOW"
       ],
       "formulaPattern": [
         "氣血雙補",
@@ -30321,6 +30460,74 @@ window.X4KbData = {
       ],
       "formulaPattern": "",
       "notes": "《備急千金要方》卷十五（脾胃陽虛、冷積便秘之主方：大黃附子乾薑人參甘草，溫補脾陽兼攻下寒積）。2026-07-18 醫師指示新增，臨床依據＝Mitsuma T. Int J Urol 1996（doi:10.1111/j.1442-2042.1996.tb00355.x，見 reports/reference-eastern-medication-crf-mitsuma-1996.md）：以溫脾湯為主的漢方延緩慢性腎衰竭進展（大黃降濁、溫陽扶正）。主症取其古典主治（陽虛冷積），非腎衰竭病名——腎衰竭是治療脈絡不是辨證徵候。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-003",
+      "name": "桂枝加芍藥大黃湯",
+      "category": "醫師補充",
+      "xushiClass": "虛實夾雜",
+      "patternVector": {
+        "QI_XU": 1,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0.25,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0.2,
+        "PI-YANGXU": 0.1667,
+        "FEI-QIXU": 0.2,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "便秘（虛實夾雜）",
+          "id": "S-CONSTIPATION",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "腹痛、腹脹",
+          "id": "S-ABDOMINAL-PAIN",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "易疲勞（脾虛）",
+          "id": "S-FATIGUE",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "桂枝",
+        "芍藥",
+        "甘草",
+        "生薑",
+        "大棗",
+        "大黃"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《傷寒論》溫陽活血通便方。桂枝湯加大量芍藥、大黃，治虛實夾雜便秘腹痛。2026-07-20 萩野醫院 case #78（虛證便秘伴腹痛）。"
+      ],
+      "indications": [
+        "S-CONSTIPATION",
+        "S-ABDOMINAL-PAIN",
+        "S-FATIGUE"
+      ],
+      "formulaPattern": "",
+      "notes": "《傷寒論》溫陽活血通便方。桂枝湯加大量芍藥、大黃，治虛實夾雜便秘腹痛。2026-07-20 萩野醫院 case #78（虛證便秘伴腹痛）。",
       "confidence": "physician_addition",
       "draft": true
     }
