@@ -1934,7 +1934,10 @@ window.X4KbData = {
         "汗出",
         "無自然汗出",
         "自然汗出傾向",
-        "自汗"
+        "多汗",
+        "汗多",
+        "容易出汗",
+        "動輒汗出"
       ],
       "parent": null,
       "negationSensitive": true,
