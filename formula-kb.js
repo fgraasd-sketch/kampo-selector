@@ -221,6 +221,7 @@ const EXCEL_FORMULA_KB = [
       "身體沉重疲憊感",
       "尿量減少",
       "無口渴",
+      "膝關節腫痛（風濕）",
       "惡風"
     ],
     "keySymptoms": [
@@ -230,9 +231,10 @@ const EXCEL_FORMULA_KB = [
       "身體沉重疲憊感",
       "尿量減少",
       "無口渴",
+      "膝關節腫痛（風濕）",
       "惡風"
     ],
-    "indications": "虛胖，下肢浮腫，面頰潮紅，身體沉重疲憊感，尿量減少，無口渴，惡風",
+    "indications": "虛胖，下肢浮腫，面頰潮紅，身體沉重疲憊感，尿量減少，無口渴，膝關節腫痛（風濕），惡風",
     "formulaPattern": [
       "虛證"
     ],
@@ -8763,16 +8765,18 @@ const EXCEL_FORMULA_KB = [
       "惡寒",
       "發熱",
       "自汗",
-      "脈浮"
+      "脈浮",
+      "項背強几几"
     ],
     "keySymptoms": [
       "身體疼痛",
       "惡寒",
       "發熱",
       "自汗",
-      "脈浮"
+      "脈浮",
+      "項背強几几"
     ],
-    "indications": "身體疼痛，惡寒，發熱，自汗，脈浮",
+    "indications": "身體疼痛，惡寒，發熱，自汗，脈浮，項背強几几",
     "formulaPattern": [],
     "specialIndications": [],
     "contraindications": [],
@@ -10270,7 +10274,8 @@ const EXCEL_FORMULA_KB = [
       "頭痛",
       "熱感",
       "無自然汗出",
-      "關節腫脹"
+      "關節腫脹",
+      "項背強、肩凝"
     ],
     "keySymptoms": [
       "烘熱感",
@@ -10281,9 +10286,10 @@ const EXCEL_FORMULA_KB = [
       "頭痛",
       "熱感",
       "無自然汗出",
-      "關節腫脹"
+      "關節腫脹",
+      "項背強、肩凝"
     ],
-    "indications": "烘熱感，神經痛，惡寒，面赤，發熱，頭痛，熱感，無自然汗出，關節腫脹",
+    "indications": "烘熱感，神經痛，惡寒，面赤，發熱，頭痛，熱感，無自然汗出，關節腫脹，項背強、肩凝",
     "formulaPattern": [],
     "specialIndications": [],
     "contraindications": [],

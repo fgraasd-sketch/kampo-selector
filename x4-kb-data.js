@@ -1249,7 +1249,10 @@ window.X4KbData = {
       "id": "S-JOINT-PAIN",
       "canonical": "關節痛",
       "aliases": [
-        "膝關節痛"
+        "膝關節痛",
+        "膝痛",
+        "膝關節疼痛",
+        "膝蓋痛"
       ],
       "parent": null,
       "negationSensitive": false,
@@ -1351,7 +1354,12 @@ window.X4KbData = {
     {
       "id": "S-LOWER-LIMB-PAIN",
       "canonical": "下肢痛",
-      "aliases": [],
+      "aliases": [
+        "下肢疼痛",
+        "腿痛",
+        "下肢痠痛",
+        "腳痛"
+      ],
       "parent": null,
       "negationSensitive": false,
       "source": [
@@ -1748,7 +1756,11 @@ window.X4KbData = {
       "id": "S-PRURITUS",
       "canonical": "瘙癢",
       "aliases": [
-        "搔癢"
+        "搔癢",
+        "皮膚瘙癢",
+        "皮膚搔癢",
+        "皮膚癢",
+        "身癢"
       ],
       "parent": null,
       "negationSensitive": false,
@@ -3073,6 +3085,12 @@ window.X4KbData = {
           "fromIndications": true
         },
         {
+          "raw": "膝關節腫痛（風濕）",
+          "id": "S-JOINT-PAIN",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
           "raw": "惡風",
           "id": "S-COLD",
           "negated": false,
@@ -3103,6 +3121,7 @@ window.X4KbData = {
         "S-FACIAL-FLUSH",
         "S-MUSCLE-SOFT",
         "S-OLIGURIA",
+        "S-JOINT-PAIN",
         "S-COLD"
       ],
       "formulaPattern": [
@@ -26113,6 +26132,12 @@ window.X4KbData = {
           "primary": true,
           "mild": false,
           "cardinal": false
+        },
+        {
+          "raw": "項背強几几",
+          "id": "S-SHOULDER-STIFF",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -26132,7 +26157,8 @@ window.X4KbData = {
         "S-COLD",
         "S-FEVER",
         "S-SPONTANEOUS-SWEAT",
-        "S-PULSE-FLOATING"
+        "S-PULSE-FLOATING",
+        "S-SHOULDER-STIFF"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：桂枝加葛根湯（OCR 標題，已人工校名）",
@@ -29579,6 +29605,12 @@ window.X4KbData = {
           "primary": false,
           "mild": false,
           "cardinal": false
+        },
+        {
+          "raw": "項背強、肩凝",
+          "id": "S-SHOULDER-STIFF",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -29605,7 +29637,8 @@ window.X4KbData = {
         "S-HEADACHE",
         "S-HEAT-SENSATION",
         "S-SPONTANEOUS-SWEAT",
-        "S-JOINT-SWELLING"
+        "S-JOINT-SWELLING",
+        "S-SHOULDER-STIFF"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：葛根加術附湯（OCR 標題，已人工校名）",
