@@ -414,6 +414,57 @@ const KEY_EVIDENCE_K = 5;
 //    重建 bundle** 再跑測試，否則前端測試跑舊 bundle 給假綠。
 const COVERAGE_WEIGHT = 0.35;
 
+// ── 待辦#2 第八個嘗試（2026-07-31，醫師「做」）：**換掉比值本身** ──────────────
+//
+// 前七次的教訓寫在 W_CHIEF 下方那段：4 個「在比值裡重新加權」＋2 個「在比值外加分」
+// 全部否決，第 7 個（改 coverage/volume 幾何平均的平衡）成功但有 trade-off。
+// 共同結論：**問題是 coverage 這個比值的形狀，不是它的權重。**
+//
+// 比值錯在哪（一句話）：分母是**方的主症數**，那是「書把這個方寫得多詳細」，
+// 不是關於這個病人的證據。於是把 當歸芍藥散 從 10 主症補到 14（臨床上正確），
+// 它在自己的教科書案上就從 10/10 掉到 10/14。
+//
+// 換掉它的形狀：**未命中的主症不再當分母，改當「弱的不利證據」，而且要按病人
+// 到底講了多少來打折。** 病人只報 2 個症狀時，一個 12 主症的方有 10 個沒被命中——
+// 那 10 個是**「不知道」不是「沒有」**。比值把它們全當滿額不利證據，這就是病灶。
+//
+//   evidence:  volume × (1 − MISS_WEIGHT × min(1, 報告數/KEY_EVIDENCE_K) × 未解釋比例)
+//   ratio   :  coverage^COVERAGE_WEIGHT × volume^(1−COVERAGE_WEIGHT)   ← 既有，預設
+//
+// 驗收標準不是 battery 分數，是 **scripts/xlsx_to_kb.py 的 SUSPENDED_KEY_SYMPTOM_PATCHES
+// 那六筆**：六個臨床/文本上都正確、卻因為分母而被迫暫緩的主症。真的解決了分母問題，
+// 它們就該能全部落地而不破臨床 22 案。（驗收台會產兩份 KB 對跑。）
+// 兩個形狀（都實作了、都量了，**預設仍是 ratio**，切過去才生效）：
+//   "evidence" — 拿掉比值，未命中主症改當弱的不利證據，按病人給的資訊量打折。
+//   "softcap"  — 保留比值，但把既有那個**二元**的 full-recall 封頂改成**連續**：
+//                分母按 recall^SOFTCAP_GAMMA 在「封頂」與「不封頂」之間內插。
+//                recall=1 時與現況完全相同（全 recall 的既有裁決一個都不動），
+//                差一個症狀不再有斷崖。
+//
+// 掃參結果（現況 KB，第1/前3/前5）：
+//   ratio（現況）    萩 8/14/19 ｜ 塚 39/69/82 ｜ 臨 20/22/22
+//   evidence w=0     萩 7/15/20 ｜ 塚 36/72/81 ｜ 臨 16/21/22  ← 純 volume，臨床崩
+//   evidence w=0.25  萩 7/15/20 ｜ 塚 39/71/82 ｜ 臨 18/22/22
+//   evidence w=0.5   萩 7/15/20 ｜ 塚 42/65/81 ｜ 臨 20/22/22
+//   evidence w=0.6   萩 7/15/20 ｜ 塚 40/66/81 ｜ 臨 **21**/22/22 ← 臨床最佳
+//   evidence w=1     萩 7/13/19 ｜ 塚 37/64/82 ｜ 臨 20/22/22
+//   softcap γ=1      萩 8/14/19 ｜ 塚 41/67/81 ｜ 臨 20/22/22
+//   softcap γ=1.5    萩 8/14/19 ｜ 塚 41/68/81 ｜ 臨 20/22/22
+//   softcap γ=2      萩 8/14/19 ｜ 塚 41/68/82 ｜ 臨 20/22/22
+//
+// **沒有任何一點全面優於 ratio**，所以不自行切換：
+//   evidence 把大塚的第1 換前3（w 越大第1 越好、前3 越差），臨床要 w≈0.6 才追平
+//     並小勝一案，但同時萩野第1 −1。三軸互相拉扯，是換一組 trade-off 不是解決。
+//   softcap γ=2 最接近「免費」：大塚第1 39→41（+2），代價是前3 −1，其餘逐位元不變。
+//     **這一組值得醫師裁決**（同 COVERAGE_WEIGHT 0.35 當初那種「接受 trade-off」）。
+// 常數留著是為了讓它可被重跑驗證，不是為了以後偷偷切換——切之前先跑
+// scratchpad 的驗收台（兩份 KB × 三個 battery）＋ tests ＋ live_spotcheck --local。
+const KEY_SCORE_MODEL = "ratio";
+// 未解釋主症的不利權重（只在 evidence 模型下有作用）。0 ＝ 完全不管方多大（純 volume）。
+const MISS_WEIGHT = 0.5;
+// softcap 的曲率。1 ＝ 線性內插；>1 ＝ 要 recall 夠高才給封頂（更接近既有的二元行為）。
+const SOFTCAP_GAMMA = 1;
+
 // 舌象優先級機制（2026-07-25）：
 // 舌象是診斷中最高優先的證據（formula-decision-logic.md#153）。
 // 在與症狀清單可能衝突時，舌象決定方向。
@@ -1295,23 +1346,49 @@ function scoreKeySymptoms(formula, patientMatches, normalizer, reportedSymptomCo
   // byte-for-byte, so no adjudicated partial-match ranking can move.
   const positiveHitCount = matchedSymptoms.filter((item) => item.weight > 0).length;
   const fullRecall = reportedSymptomCount > 0 && positiveHitCount >= reportedSymptomCount;
-  const effectiveKeyCount = fullRecall
-    ? Math.min(totalCentrality, Math.max(reportedSymptomCount, KEY_EVIDENCE_K))
-    : totalCentrality;
+  // KEY_SCORE_MODEL === "softcap"（待辦#2 第八個嘗試的第二個形狀，2026-07-31）：
+  // 上面那個封頂是**二元**的——解釋了病人全部所述才給，差一個就完全不給，分母從
+  // max(reported,K) 一口氣跳回主症總數。改成連續：按 recall（這個方解釋了病人多少）
+  // 在「封頂」與「不封頂」之間內插。recall=1 時與既有封頂**完全相同**（所以現有
+  // 全 recall 的裁決都不動），recall=0 時等於完全不封頂，中間不再有斷崖。
+  const capBase = Math.max(reportedSymptomCount, KEY_EVIDENCE_K);
+  const recall = reportedSymptomCount > 0
+    ? Math.min(1, positiveHitCount / reportedSymptomCount) : 0;
+  const effectiveKeyCount = KEY_SCORE_MODEL === "softcap"
+    ? totalCentrality - Math.pow(recall, SOFTCAP_GAMMA) * Math.max(0, totalCentrality - capBase)
+    : fullRecall
+      ? Math.min(totalCentrality, Math.max(reportedSymptomCount, KEY_EVIDENCE_K))
+      : totalCentrality;
   const coverage = matchedWeight / Math.max(1, effectiveKeyCount);
   const achievable = Math.max(1, Math.min(KEY_EVIDENCE_K, reportedSymptomCount || KEY_EVIDENCE_K));
   const volume = Math.min(1, Math.max(0, matchedWeight) / achievable);
+  // 待辦#2 第八個嘗試（2026-07-31）：**換掉比值**。見 KEY_SCORE_MODEL 的長註解。
+  // 沒被命中也沒被否定的主症，其 centrality 總和＝「這個方還有多少沒被解釋」。
+  const missCentrality = Math.max(0, totalCentrality
+    - matchedSymptoms.reduce((sum, item) => sum + (item.centrality ?? 1), 0)
+    - contradictedKeySymptoms.reduce((sum, item) => sum + (item.centrality ?? 1), 0));
   // 覆蓋度 vs volume 的加權幾何平均（2026-07-18，待辦#2 第七個嘗試）：
   // coverage^w × volume^(1−w)。coverage 吃方大小（待辦#2 的源頭），volume 不吃。
   // 探針證實 coverage 承重臨床第1、volume 承重大塚前3/前5——偏向 volume 或可兩全。
   // w=0.5 時＝原 sqrt(coverage×volume)，走原路徑保逐位元不變。
   // A net-negative match (the patient contradicts the formula's key symptoms)
   // stays negative — the geometric mean is only meaningful above zero.
+  // 證據模型（KEY_SCORE_MODEL === "evidence"）：不除以方的大小，改成
+  //   volume × (1 − MISS_WEIGHT × 資訊量 × 未解釋比例)
+  // 「資訊量」＝病人到底講了多少（min(1, 報告症狀數 / KEY_EVIDENCE_K)）。這是與比值
+  // 最關鍵的差別：病人只講 2 個症狀時，一個 12 主症的方有 10 個沒被命中，那 10 個是
+  // **「不知道」不是「沒有」**——比值把它們全當成不利證據，證據模型只按病人給的
+  // 資訊量計入。病人講滿 5 個以上時懲罰才拉滿，那時「沒提到」才真的有鑑別意義。
+  const missPenalty = totalCentrality > 0
+    ? MISS_WEIGHT * Math.min(1, reportedSymptomCount / KEY_EVIDENCE_K) * (missCentrality / totalCentrality)
+    : 0;
+  const evidenceScore = volume * Math.max(0, 1 - missPenalty);
   return {
     keySymptoms,
     keySymptomScore: coverage <= 0 ? coverage
-      : (COVERAGE_WEIGHT === 0.5 ? Math.sqrt(coverage * volume)
-        : Math.pow(coverage, COVERAGE_WEIGHT) * Math.pow(volume, 1 - COVERAGE_WEIGHT)),
+      : (KEY_SCORE_MODEL === "evidence" ? evidenceScore
+        : COVERAGE_WEIGHT === 0.5 ? Math.sqrt(coverage * volume)
+          : Math.pow(coverage, COVERAGE_WEIGHT) * Math.pow(volume, 1 - COVERAGE_WEIGHT)),
     matchedSymptoms,
     unmatchedKeySymptoms,
     contradictedKeySymptoms,
@@ -1753,5 +1830,5 @@ function createX4Matcher(kb) {
 
 
 
-  return { isExamFinding, buildHeatEvidence, buildChannelEvidence, normalizeXushiClass, inferXuShi, createX4Matcher, W_KEY, W_PATTERN, W_ZANGFU, PARENT_FALLBACK_WEIGHT, EVIDENCE_DAMPING_K, W_BOOK_SECONDARY, BOOK_SECONDARY_K, DERIVED_VECTOR_K, KEY_EVIDENCE_K, COVERAGE_WEIGHT, PATIENT_NEGATION_WEIGHT, PATIENT_NEGATION_DEMOTION, PATTERN_RECALL_BETA, CHANNEL_W_KEY, CHANNEL_W_STAGE, CHIEF_SPECIFICITY_MAX_FORMULAS, W_CHIEF, W_CARDINAL, CHIEF_WINDOW, XUSHI_MARGIN, XUSHI_MISMATCH_DEMOTION, KEY_CENTRALITY_SECONDARY, KEY_CENTRALITY_MILD };
+  return { isExamFinding, buildHeatEvidence, buildChannelEvidence, normalizeXushiClass, inferXuShi, createX4Matcher, W_KEY, W_PATTERN, W_ZANGFU, PARENT_FALLBACK_WEIGHT, EVIDENCE_DAMPING_K, W_BOOK_SECONDARY, BOOK_SECONDARY_K, DERIVED_VECTOR_K, KEY_EVIDENCE_K, COVERAGE_WEIGHT, KEY_SCORE_MODEL, MISS_WEIGHT, SOFTCAP_GAMMA, PATIENT_NEGATION_WEIGHT, PATIENT_NEGATION_DEMOTION, PATTERN_RECALL_BETA, CHANNEL_W_KEY, CHANNEL_W_STAGE, CHIEF_SPECIFICITY_MAX_FORMULAS, W_CHIEF, W_CARDINAL, CHIEF_WINDOW, XUSHI_MARGIN, XUSHI_MISMATCH_DEMOTION, KEY_CENTRALITY_SECONDARY, KEY_CENTRALITY_MILD };
 })();

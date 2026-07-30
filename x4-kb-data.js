@@ -4700,8 +4700,8 @@ window.X4KbData = {
       "zangFuVector": {
         "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0,
-        "XIN-YANGXU": 0.25,
-        "XIN-XUEXU": 0,
+        "XIN-YANGXU": 0.5,
+        "XIN-XUEXU": 0.2,
         "PI-QIXU": 0.2,
         "PI-YANGXU": 0.5,
         "FEI-QIXU": 0.2,
@@ -4751,6 +4751,18 @@ window.X4KbData = {
           "id": "S-GASTRIC-SPLASH",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "心下痞",
+          "id": "S-EPIGASTRIC-RESISTANCE",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "臍下悸動",
+          "id": "S-PALPITATION",
+          "negated": false,
+          "matchType": "physician-patch"
         },
         {
           "raw": "浮腫",
@@ -4803,6 +4815,8 @@ window.X4KbData = {
         "S-SPONTANEOUS-SWEAT",
         "S-THIRST",
         "S-VOMITING",
+        "S-EPIGASTRIC-RESISTANCE",
+        "S-PALPITATION",
         "S-EDEMA",
         "S-NAUSEA",
         "S-UPPER-HOT-LOWER-COLD"
@@ -4925,7 +4939,7 @@ window.X4KbData = {
         "GAN-YINXU": 0.2,
         "XIN-YANGXU": 0.25,
         "XIN-XUEXU": 0.2,
-        "PI-QIXU": 0,
+        "PI-QIXU": 0.2,
         "PI-YANGXU": 0.1667,
         "FEI-QIXU": 0,
         "FEI-YINXU": 0,
@@ -4968,6 +4982,12 @@ window.X4KbData = {
           "id": "S-UPPER-HOT-LOWER-COLD",
           "negated": false,
           "fromIndications": true
+        },
+        {
+          "raw": "腹滿",
+          "id": "S-ABDOMINAL-DISTENSION",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -4987,7 +5007,8 @@ window.X4KbData = {
         "S-HOT-FLUSH",
         "S-OLIGURIA",
         "S-PALPITATION",
-        "S-UPPER-HOT-LOWER-COLD"
+        "S-UPPER-HOT-LOWER-COLD",
+        "S-ABDOMINAL-DISTENSION"
       ],
       "formulaPattern": [
         "桂枝和甘草配伍",
