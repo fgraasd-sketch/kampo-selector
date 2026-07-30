@@ -2724,6 +2724,7 @@ const EXCEL_FORMULA_KB = [
       "腹部壓痛",
       "腹部充實",
       "瘀血舌",
+      "痤瘡（瘀血型）",
       "下肢發冷",
       "月經異常",
       "烘熱感",
@@ -2738,6 +2739,7 @@ const EXCEL_FORMULA_KB = [
       "腹部壓痛",
       "腹部充實",
       "瘀血舌",
+      "痤瘡（瘀血型）",
       "下肢發冷",
       "月經異常",
       "烘熱感",
@@ -2746,7 +2748,7 @@ const EXCEL_FORMULA_KB = [
       "熱感",
       "肩凝"
     ],
-    "indications": "臍旁壓痛，腫塊，腹部壓痛，腹部充實，瘀血舌，下肢發冷，月經異常，烘熱感，痛經，頭痛，熱感，肩凝",
+    "indications": "臍旁壓痛，腫塊，腹部壓痛，腹部充實，瘀血舌，痤瘡（瘀血型），下肢發冷，月經異常，烘熱感，痛經，頭痛，熱感，肩凝",
     "formulaPattern": [
       "虛實夾雜",
       "伴氣逆"
@@ -4068,14 +4070,16 @@ const EXCEL_FORMULA_KB = [
     "symptoms": [
       "上半身炎症",
       "手掌足底汗出",
+      "痤瘡（青年期體質）",
       "發熱"
     ],
     "keySymptoms": [
       "上半身炎症",
       "手掌足底汗出",
+      "痤瘡（青年期體質）",
       "發熱"
     ],
-    "indications": "上半身炎症，手掌足底汗出，發熱",
+    "indications": "上半身炎症，手掌足底汗出，痤瘡（青年期體質），發熱",
     "formulaPattern": [
       "補血理氣"
     ],
@@ -6527,15 +6531,17 @@ const EXCEL_FORMULA_KB = [
       "壓痛",
       "皮疹",
       "化膿",
-      "胸脅苦滿"
+      "胸脅苦滿",
+      "痤瘡（化膿型）"
     ],
     "keySymptoms": [
       "壓痛",
       "皮疹",
       "化膿",
-      "胸脅苦滿"
+      "胸脅苦滿",
+      "痤瘡（化膿型）"
     ],
-    "indications": "壓痛，皮疹，化膿，胸脅苦滿",
+    "indications": "壓痛，皮疹，化膿，胸脅苦滿，痤瘡（化膿型）",
     "formulaPattern": [],
     "specialIndications": [],
     "contraindications": [],
@@ -9588,7 +9594,8 @@ const EXCEL_FORMULA_KB = [
       "烘熱",
       "化膿",
       "顏面潮紅",
-      "炎症"
+      "炎症",
+      "痤瘡（上焦風熱）"
     ],
     "keySymptoms": [
       "皮疹",
@@ -9596,9 +9603,10 @@ const EXCEL_FORMULA_KB = [
       "烘熱",
       "化膿",
       "顏面潮紅",
-      "炎症"
+      "炎症",
+      "痤瘡（上焦風熱）"
     ],
-    "indications": "皮疹，頭痛，烘熱，化膿，顏面潮紅，炎症",
+    "indications": "皮疹，頭痛，烘熱，化膿，顏面潮紅，炎症，痤瘡（上焦風熱）",
     "formulaPattern": [],
     "specialIndications": [],
     "contraindications": [],

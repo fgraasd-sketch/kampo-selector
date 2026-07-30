@@ -692,13 +692,27 @@ const CHIEF_WINDOW = 3;
 // Examination findings can never be chief complaints (they differentiate):
 // pulse, tongue, abdominal palpation, complexion. Id prefixes plus the exam
 // ids that don't follow a prefix convention.
-const EXAM_FINDING_ID_RE = /^S-(PULSE|TONGUE)-/;
+// 2026-07-28：**後綴那一半是補的**。07-25 建的舌診概念沒有照 S-TONGUE-* 的命名
+// 慣例（寫成 S-PALE-TONGUE／S-DARK-TONGUE／S-INDENTED-TONGUE／S-WATER-TOXIN-TONGUE／
+// S-WHITE-GREASY-COATING），於是**整批從這道排除規則底下溜過去**——舌象拿到了
+// 主訴加分資格。實測後果正是這條規則當初要擋的東西：
+//   「便秘、腹部充實、舌淡」→ 十全大補湯 第 1（舌淡當時只有它一個擁有者 ⇒ 稀有
+//   ⇒ 取得主訴加分 ⇒ 一個舌象把實證便秘的病人劫持給一個補劑）。
+// 這與 脫屑 劫持溫清飲 是同一個陷阱（見下方 CHIEF_INELIGIBLE_IDS）。
+// 舌象仍然是正常症狀（會解析、會上晶片、會計入主症覆蓋），只是**不當主訴**——
+// 病人不會因為「我舌頭淡」而來看診，舌象是鑑別用的，不是呈現用的。
+const EXAM_FINDING_ID_RE = /^S-(PULSE|TONGUE)-|-(TONGUE|COATING)$/;
 const EXAM_FINDING_IDS = new Set([
   "S-PALE-COMPLEXION", "S-ABDOMINAL-WEAKNESS", "S-GASTRIC-SPLASH",
   "S-CHEST-RIB-FULLNESS", "S-ABDOMINAL-TENDERNESS", "S-PERIUMBILICAL-TENDERNESS",
   "S-RECTUS-TENSION", "S-ABDOMINAL-MASS", "S-PULSATION-ABOVE-NAVEL",
 ]);
+// 舌痛症 是**主訴**，不是舌診所見——病人會因為舌頭痛來看診（立效散 的定義主訴之一，
+// 見 reports/reference-dental-kampo-watanabe-2019.md）。它只是剛好用 S-TONGUE- 開頭，
+// 被字首規則掃到（2026-07-28 盤點排除清單時發現，是既有問題不是新的）。
+const EXAM_FINDING_EXCEPTIONS = new Set(["S-TONGUE-PAIN"]);
 function isExamFinding(id) {
+  if (EXAM_FINDING_EXCEPTIONS.has(id)) return false;
   return EXAM_FINDING_ID_RE.test(id) || EXAM_FINDING_IDS.has(id);
 }
 // 稀有 ≠ 特異。主訴資格用「KB 裡以它為主症的方 ≤5 個」當特異度的代理，這對大多數

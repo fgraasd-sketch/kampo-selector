@@ -2505,6 +2505,23 @@ window.X4KbData = {
       "source": [
         "Codex C1 alias patch"
       ]
+    },
+    {
+      "id": "S-ACNE",
+      "canonical": "痤瘡",
+      "aliases": [
+        "尋常性痤瘡",
+        "粉刺",
+        "面皰",
+        "青春痘",
+        "痘痘",
+        "座瘡"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
     }
   ],
   "formulas": [
@@ -10500,6 +10517,12 @@ window.X4KbData = {
           "matchType": "physician-patch"
         },
         {
+          "raw": "痤瘡（瘀血型）",
+          "id": "S-ACNE",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
           "raw": "下肢發冷",
           "id": "S-COLD",
           "negated": false,
@@ -10587,6 +10610,7 @@ window.X4KbData = {
         "S-ABDOMINAL-TENDERNESS",
         "S-ABDOMINAL-DISTENSION",
         "S-DARK-TONGUE",
+        "S-ACNE",
         "S-COLD",
         "S-MENSTRUAL-IRREGULAR",
         "S-HOT-FLUSH",
@@ -14419,6 +14443,12 @@ window.X4KbData = {
           "matchType": "exact"
         },
         {
+          "raw": "痤瘡（青年期體質）",
+          "id": "S-ACNE",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
           "raw": "發熱",
           "id": "S-FEVER",
           "negated": false,
@@ -14456,6 +14486,7 @@ window.X4KbData = {
       "indications": [
         "S-HAND-FOOT-SWEAT",
         "S-HEAT-TOXIN",
+        "S-ACNE",
         "S-FEVER"
       ],
       "formulaPattern": [
@@ -21096,6 +21127,12 @@ window.X4KbData = {
           "primary": false,
           "mild": false,
           "cardinal": true
+        },
+        {
+          "raw": "痤瘡（化膿型）",
+          "id": "S-ACNE",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -21118,7 +21155,8 @@ window.X4KbData = {
         "S-ABDOMINAL-TENDERNESS",
         "S-DERMATITIS",
         "S-PUS",
-        "S-CHEST-RIB-FULLNESS"
+        "S-CHEST-RIB-FULLNESS",
+        "S-ACNE"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：十味敗毒湯（OCR 標題，已人工校名）",
@@ -28034,6 +28072,12 @@ window.X4KbData = {
           "primary": false,
           "mild": false,
           "cardinal": false
+        },
+        {
+          "raw": "痤瘡（上焦風熱）",
+          "id": "S-ACNE",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [],
@@ -28047,7 +28091,8 @@ window.X4KbData = {
         "S-HOT-FLUSH",
         "S-PUS",
         "S-FACIAL-FLUSH",
-        "S-HEAT-TOXIN"
+        "S-HEAT-TOXIN",
+        "S-ACNE"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：清上防風湯（OCR 標題，已人工校名）",
@@ -30587,7 +30632,8 @@ window.X4KbData = {
         "S-LOWER-ABDOMEN-NUMB": 6,
         "S-APPETITE-LOW": 4,
         "S-ANXIETY": 4,
-        "S-DIARRHEA": 4
+        "S-DIARRHEA": 4,
+        "S-INDENTED-TONGUE": 8
       },
       "rawWeights": [
         {
@@ -30660,6 +30706,9 @@ window.X4KbData = {
           "score": 4,
           "id": "S-DIARRHEA"
         }
+      ],
+      "patchedIndicators": [
+        "S-INDENTED-TONGUE"
       ]
     },
     {
@@ -30849,7 +30898,8 @@ window.X4KbData = {
         "S-NUMBNESS": 6,
         "S-MENSTRUAL-SCANTY": 6,
         "S-MUSCLE-SPASM": 6,
-        "S-BLOOD-DEF": 14
+        "S-BLOOD-DEF": 14,
+        "S-PALE-TONGUE": 10
       },
       "rawWeights": [
         {
@@ -30914,7 +30964,8 @@ window.X4KbData = {
         }
       ],
       "patchedIndicators": [
-        "S-BLOOD-DEF"
+        "S-BLOOD-DEF",
+        "S-PALE-TONGUE"
       ]
     },
     {
@@ -31018,7 +31069,9 @@ window.X4KbData = {
         "S-WATERY-SPUTUM": 4,
         "S-BODY-HEAVY": 3,
         "S-NAUSEA": 3,
-        "S-RUNNY-NOSE-WATERY": 3
+        "S-RUNNY-NOSE-WATERY": 3,
+        "S-WHITE-GREASY-COATING": 7,
+        "S-WATER-TOXIN-TONGUE": 10
       },
       "rawWeights": [
         {
@@ -31091,6 +31144,10 @@ window.X4KbData = {
           "score": 3,
           "id": "S-RUNNY-NOSE-WATERY"
         }
+      ],
+      "patchedIndicators": [
+        "S-WHITE-GREASY-COATING",
+        "S-WATER-TOXIN-TONGUE"
       ]
     }
   ],
