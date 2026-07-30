@@ -136,13 +136,10 @@ const X4Adapter = (function () {
       + item.matchedResiduals.join("、") + " 未被本方涵蓋）");
   }
 
-  function deriveXuShi(patientVectorXuShi) {
-    const xu = patientVectorXuShi?.虛 || 0;
-    const shi = patientVectorXuShi?.實 || 0;
-    if (xu - shi >= 0.15) return "xu";
-    if (shi - xu >= 0.15) return "shi";
-    return "unknown";
-  }
+  // （2026-07-31 移除 deriveXuShi）病人虛實改由 matcher 從六證向量推並回傳
+  // （explanation.patientXuShi）。這裡原本自己算一份，讀的是舊引擎 engine.js 的
+  // 手寫 SYMPTOM_SIGNALS 表——那份只餵畫面不餵排名，現在虛實真的參與計分了，
+  // 兩套資料會互相打架，所以砍掉，只留一個真相來源。
 
   function isAvailable() {
     return Boolean(getMatcher());
@@ -242,8 +239,6 @@ const X4Adapter = (function () {
       organScores,
       checkedSymptomLabels,
     });
-    const inferredXuShi = deriveXuShi(patientVector.xuShi);
-
     if (!rawTerms.length) return [];
 
     // Rank the FULL X4 KB (181 formulas incl. the 2026-07-11 book expansion),
@@ -252,6 +247,11 @@ const X4Adapter = (function () {
     // negatedSymptoms: 病人明確否定的徵象（「大便正常」→ 便秘），matcher 對以之
     // 為主症的方計矛盾扣分（PATIENT_NEGATION_WEIGHT）。空陣列時逐位元不變。
     const x4Results = matcher.recommend({ symptoms: rawTerms, negatedSymptoms: Array.isArray(negatedCaseKeywords) ? negatedCaseKeywords : [], xuShi: "unknown" }, { limit: 500 });
+    // 2026-07-31：卡片上的病人虛實**改讀 matcher 自己推的那一份**
+    // （explanation.patientXuShi，從六證向量算），不再用舊引擎 engine.js 手寫表的
+    // deriveXuShi。原本兩者是兩套資料：畫面說「病人：虛證」而排名根本沒吃虛實，
+    // 現在虛實會軟降級不相符的方（XUSHI_MISMATCH_DEMOTION），畫面與排名必須是同一個值。
+    const inferredXuShi = x4Results.length ? (x4Results[0].explanation.patientXuShi || "unknown") : "unknown";
     const displayByName = new Map(formulas.map((formula) => [formula.name, formula]));
 
     const hasExplicitSymptoms = rawTerms.length > 0;

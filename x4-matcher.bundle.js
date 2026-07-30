@@ -933,13 +933,68 @@ function formulaXushiClass(formula) {
   return XUSHI_CLASSES.has(value) ? value : "未分類";
 }
 
-function passesXushiGate(formula, patientXushi) {
+// 虛實：從硬過濾改成**軟降級**，並讓推算出來的虛實真的參與排名
+// （2026-07-31 醫師三項裁定：①推算的虛實應該參與排名 ②舌淡算虛 ③軟降級不硬過濾）。
+//
+// 改之前的狀態（2026-07-30 盤點發現）：`passesXushiGate` 是硬過濾，但**它從來沒有
+// 開過**——前端 x4-adapter.js 算了病人的虛實（deriveXuShi）卻只拿去印在卡片上
+// （「病人：虛證／方：實證」），送進 matcher 的那一行寫死 `xuShi: "unknown"`；
+// 三個 battery 也全部傳 unknown。**工具在畫面上說病人是虛證，然後照著不知道的方式排名。**
+// 醫師 2026-07-04 覆核的 16 帖虛實分類，等於一直沒有參與過計分。
+//
+// 病人側的虛實**不再讀舊引擎 engine.js 那張手寫的 SYMPTOM_SIGNALS 表**（那是被取代掉的
+// 啟發式引擎的資料，讓排名建在它上面等於多一個真相來源），改從**六證向量**推——
+// 那是工作簿自己的檢查表算出來的：
+//     虛側＝氣虛、血虛      實側＝氣鬱、瘀血      水滯／氣逆不計（虛實皆可見）
+// 醫師裁定的「舌淡是虛」因此自動成立：舌淡 已是血虛指標（10 分，見 xlsx_to_kb.py 的
+// PATTERN_WEIGHT_PATCHES），血虛在虛側，不必另開一張舌象→虛實的表。
+//
+// **氣逆為什麼不算實（量測後移出）**：第一版把氣逆放進實側，苓桂朮甘湯 立刻掉出
+// 自己的教科書案第 1（臨床 22 案 battery 20→19）。原因很具體——心悸 是氣逆的頭號
+// 指標（14 分），而 苓桂朮甘湯 的動悸是**水飲上衝**、方本身是虛證，於是它被自己的
+// 定義症狀判成實證再降級。氣逆（上衝/動悸/烘熱）在虛實兩邊都常見
+// （桂枝加龍骨牡蠣湯 的上衝是虛、承氣湯 的上衝是實），不是虛實的判準。
+// 水滯同理（工作簿自己的表也給它 虛 0.35／實 0.2 兩邊都給）。
+const XU_PATTERN_IDS = ["QI_XU", "XUE_XU"];
+const SHI_PATTERN_IDS = ["QI_YU", "YU_XUE"];
+// 判定門檻沿用前端 deriveXuShi 本來就在用的 0.15（兩側差距小於它＝未定，不降任何方）。
+const XUSHI_MARGIN = 0.15;
+// 不相符時的降級幅度。硬過濾＝1.0（整批消失），醫師選軟。掃參結果（0＝虛實不參與排名）：
+//   0     萩野 8/13/19 ｜ 大塚 39/68/81 ｜ 臨床 20/22/22   ← 改動前
+//   0.05  萩野 8/13/19 ｜ 大塚 39/68/82 ｜ 臨床 20/22/22
+//   0.10  萩野 8/14/19 ｜ 大塚 39/69/82 ｜ 臨床 20/22/22   ← 採用（三個 battery 全部持平或更好）
+//   0.15  萩野 8/14/19 ｜ 大塚 39/68/81 ｜ 臨床 20/22/22
+//   0.20  萩野 8/14/19 ｜ 大塚 39/68/80 ｜ 臨床 20/22/22
+//   0.30  萩野 9/14/19 ｜ 大塚 39/66/77 ｜ 臨床 20/21/22   ← 教科書案開始破
+//   0.50  萩野 10/14/19｜ 大塚 38/65/76 ｜ 臨床 20/21/21
+// 0.3 以上萩野的第1 會再多撿 1-2 個，但代價是大塚前5 掉 4-6 個**且**教科書案破——
+// 不換。0.10 之後大塚前5 隨幅度單調變差，是這個機制的天花板。
+const XUSHI_MISMATCH_DEMOTION = 0.1;
+
+function inferXuShi(patternVector) {
+  const peak = (ids) => Math.max(0, ...ids.map((id) => (patternVector || {})[id] || 0));
+  const xu = peak(XU_PATTERN_IDS);
+  const shi = peak(SHI_PATTERN_IDS);
+  if (xu - shi >= XUSHI_MARGIN) return "xu";
+  if (shi - xu >= XUSHI_MARGIN) return "shi";
+  return "unknown";
+}
+
+// 病人明講的虛實優先（UI 的手動選擇／醫師直接指定），沒講才用推算的。
+function resolveXuShi(patient, patternVector) {
+  const explicit = patient?.xuShi;
+  if (explicit === "xu" || explicit === "shi") return explicit;
+  return inferXuShi(patternVector);
+}
+
+// 方與病人的虛實不相符時的降級係數（相符或未定時恆為 1，total 逐位元不變）。
+function xushiMismatchFactor(formula, patientXushi) {
   const tendency = patientXushi || "unknown";
+  if (tendency === "unknown") return 1;
   const klass = formulaXushiClass(formula);
-  if (tendency === "unknown" || klass === "虛實夾雜" || klass === "未分類") return true;
-  if (tendency === "xu" && klass === "實證") return false;
-  if (tendency === "shi" && klass === "虛證") return false;
-  return true;
+  if (klass === "虛實夾雜" || klass === "未分類") return 1;
+  const mismatch = (tendency === "xu" && klass === "實證") || (tendency === "shi" && klass === "虛證");
+  return mismatch ? 1 - XUSHI_MISMATCH_DEMOTION : 1;
 }
 
 // 主徵 vs 附加所見（2026-07-14）。書用一個非常固定的句式宣告一個方**憑什麼開**：
@@ -1437,7 +1492,8 @@ function scoreFormula(formula, patientContext, normalizer) {
     ? key.contradictedKeySymptoms.reduce(
         (factor, item) => factor * Math.max(0, 1 - PATIENT_NEGATION_DEMOTION * Math.min(1, item.centrality ?? 1)), 1)
     : 1;
-  const total = (routeMax + chiefBonus + cardinalBonus) * contradictionFactor;
+  const total = (routeMax + chiefBonus + cardinalBonus) * contradictionFactor
+    * xushiMismatchFactor(formula, patientContext.xuShi);
   // 直接比對三條路線的 max——舊式 `total - chiefBonus === baseTotal` 在
   // cardinalBonus > 0 或矛盾降級時會把 氣血水 誤標成 六經/熱證。
   const routeLabel = routeMax === baseTotal
@@ -1475,6 +1531,11 @@ function scoreFormula(formula, patientContext, normalizer) {
       patientPatternVector: patientContext.patternVector,
       patientZangFuVector: patientContext.zangFuVector,
       xushiClass: formulaXushiClass(formula),
+      // 病人側的虛實（明講的或推算的）——前端卡片的「病人：虛證／方：實證」那一行
+      // 必須讀這個，不能自己再算一份。之前它讀舊引擎 engine.js 的手寫表，
+      // 而排名根本沒吃虛實，於是**畫面說的和排名做的是兩回事**。
+      patientXuShi: patientContext.xuShi,
+      xushiMismatch: xushiMismatchFactor(formula, patientContext.xuShi) !== 1,
     },
     _keySymptomCount: key.keySymptoms.length,
   };
@@ -1538,15 +1599,18 @@ function createX4Matcher(kb) {
 
   function buildPatientContext(patient) {
     const matches = buildPatientMatches(patient || {}, normalizer);
+    const patternVector = buildPatternVector(matches, patterns, exteriorPatternExclusions(matches));
     return {
       matches,
       negatedIds: buildPatientNegations(patient || {}, normalizer),
-      patternVector: buildPatternVector(matches, patterns, exteriorPatternExclusions(matches)),
+      patternVector,
       zangFuVector: buildZangFuVector(matches, kb.zangFuStates, exteriorFalseColdIds(matches)),
       channelEvidence: buildChannelEvidence(matches),
       heatEvidence: buildHeatEvidence(matches),
       chiefEvidence: buildChiefEvidence(patient, matches),
-      xuShi: patient?.xuShi || "unknown",
+      // 病人沒明講虛實時從六證向量推（見 inferXuShi）。以前這裡直接落到 "unknown"，
+      // 而前端也只傳 "unknown"，所以虛實這一軸實際上從未參與過排名。
+      xuShi: resolveXuShi(patient, patternVector),
     };
   }
 
@@ -1612,7 +1676,7 @@ function createX4Matcher(kb) {
   function recommend(patient, { limit = 5 } = {}) {
     const patientContext = buildPatientContext(patient || {});
     const scored = formulas
-      .filter((formula) => passesXushiGate(formula, patientContext.xuShi) && !isSingleHerbPrep(formula))
+      .filter((formula) => !isSingleHerbPrep(formula))
       .map((formula) => scoreFormulaWithContext(formula, patientContext));
     applyCombinationRule(scored);
 
@@ -1689,5 +1753,5 @@ function createX4Matcher(kb) {
 
 
 
-  return { isExamFinding, buildHeatEvidence, buildChannelEvidence, normalizeXushiClass, createX4Matcher, W_KEY, W_PATTERN, W_ZANGFU, PARENT_FALLBACK_WEIGHT, EVIDENCE_DAMPING_K, W_BOOK_SECONDARY, BOOK_SECONDARY_K, DERIVED_VECTOR_K, KEY_EVIDENCE_K, COVERAGE_WEIGHT, PATIENT_NEGATION_WEIGHT, PATIENT_NEGATION_DEMOTION, PATTERN_RECALL_BETA, CHANNEL_W_KEY, CHANNEL_W_STAGE, CHIEF_SPECIFICITY_MAX_FORMULAS, W_CHIEF, W_CARDINAL, CHIEF_WINDOW, KEY_CENTRALITY_SECONDARY, KEY_CENTRALITY_MILD };
+  return { isExamFinding, buildHeatEvidence, buildChannelEvidence, normalizeXushiClass, inferXuShi, createX4Matcher, W_KEY, W_PATTERN, W_ZANGFU, PARENT_FALLBACK_WEIGHT, EVIDENCE_DAMPING_K, W_BOOK_SECONDARY, BOOK_SECONDARY_K, DERIVED_VECTOR_K, KEY_EVIDENCE_K, COVERAGE_WEIGHT, PATIENT_NEGATION_WEIGHT, PATIENT_NEGATION_DEMOTION, PATTERN_RECALL_BETA, CHANNEL_W_KEY, CHANNEL_W_STAGE, CHIEF_SPECIFICITY_MAX_FORMULAS, W_CHIEF, W_CARDINAL, CHIEF_WINDOW, XUSHI_MARGIN, XUSHI_MISMATCH_DEMOTION, KEY_CENTRALITY_SECONDARY, KEY_CENTRALITY_MILD };
 })();
