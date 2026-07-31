@@ -565,6 +565,9 @@ const PATIENT_NEGATION_BREAKERS = /[但而卻仍還]|有/;
 // 0.25 讓它對未來的 KB 變動保有餘裕，且離 0.30（掃過的上界，仍全綠）有距離。
 const PATIENT_NEGATION_WEIGHT = 0.5;
 const PATIENT_NEGATION_DEMOTION = 0.25;
+// 「無X」前綴詞要不要也扣分（2026-07-31 補做 07-17 留下的那個單獨量測）。
+// false ＝ 照舊丟棄（07-17 起的行為）；true ＝ 與顯式的「正常所見」通道同等對待。
+const NEGATION_PREFIX_SCORES = true;
 
 // Exact ontology terms whose NAME merely starts with a negation marker
 // (無汗, 無力, 無熱候) are positive symptoms, not negations. Self-negating
@@ -1159,16 +1162,34 @@ function buildPatientMatches(patient, normalizer) {
 }
 
 // 病人明確否定的徵象 → ontology id 集合（餵 scoreKeySymptoms 的矛盾扣分）。
-// **只讀顯式的 patient.negatedSymptoms**（目前唯一來源：前端「正常所見」對照表，
-// 大便正常→便秘）。刻意不把 symptoms 裡被 patientTermNegated 丟棄的「無X」詞
-// 也收進來——那會改變所有既有含否定詞輸入的行為，是另一個要單獨量測的步驟
-// （見 PATIENT_NEGATION_WEIGHT 註解）。
+//
+// 兩個來源：
+// 1. 顯式的 `patient.negatedSymptoms`（前端「正常所見」對照表，大便正常→便秘，
+//    醫師逐條核可）——2026-07-17 上線。
+// 2. `patient.symptoms` 裡被 `patientTermNegated` 判定為否定的「無X」詞
+//    （「未發現明顯的胸脅苦滿」）——**原本是直接丟棄、不扣分**，
+//    2026-07-31 升級為扣分，開關見 NEGATION_PREFIX_SCORES。
+//
+// 為什麼原本要丟棄：把「無X」也算扣分會改變**所有**含否定詞輸入的行為，
+// 07-17 那輪刻意不搭便車，留給單獨量測。這裡就是那次量測。
 function buildPatientNegations(patient, normalizer) {
   const ids = new Set();
-  for (const term of toArray(patient.negatedSymptoms)) {
-    const text = typeof term === "object" && term ? String(term.raw || term.canonical || "") : String(term || "");
-    if (!text.trim()) continue;
+  const collect = (text) => {
+    if (!String(text || "").trim()) return;
     for (const match of normalizer.normalizeText(text)) ids.add(match.id);
+  };
+  for (const term of toArray(patient.negatedSymptoms)) {
+    collect(typeof term === "object" && term ? String(term.raw || term.canonical || "") : String(term || ""));
+  }
+  if (NEGATION_PREFIX_SCORES) {
+    for (const term of toArray(patient.symptoms)) {
+      if (typeof term === "object" && term) continue;   // 物件形式的否定走上面的顯式通道
+      const text = String(term || "").trim();
+      if (!text || !patientTermNegated(text, normalizer)) continue;
+      // 去掉否定前綴，剩下的才是被否定的那個徵象（「未發現明顯的胸脅苦滿」→ 胸脅苦滿）。
+      const marker = text.match(PATIENT_NEGATION_PREFIX)?.[0] || "";
+      collect(text.slice(marker.length).replace(/^的/, ""));
+    }
   }
   return ids;
 }
@@ -1856,5 +1877,5 @@ function createX4Matcher(kb) {
 
 
 
-  return { isExamFinding, buildHeatEvidence, buildChannelEvidence, normalizeXushiClass, inferXuShi, createX4Matcher, W_KEY, W_PATTERN, W_ZANGFU, PARENT_FALLBACK_WEIGHT, EVIDENCE_DAMPING_K, W_BOOK_SECONDARY, BOOK_SECONDARY_K, DERIVED_VECTOR_K, KEY_EVIDENCE_K, COVERAGE_WEIGHT, KEY_SCORE_MODEL, MISS_WEIGHT, SOFTCAP_GAMMA, PATIENT_NEGATION_WEIGHT, PATIENT_NEGATION_DEMOTION, PATTERN_RECALL_BETA, CHANNEL_W_KEY, CHANNEL_W_STAGE, CHIEF_SPECIFICITY_MAX_FORMULAS, W_CHIEF, W_CARDINAL, CHIEF_WINDOW, XUSHI_MARGIN, XUSHI_MISMATCH_DEMOTION, KEY_CENTRALITY_SECONDARY, KEY_CENTRALITY_MILD };
+  return { isExamFinding, buildHeatEvidence, buildChannelEvidence, normalizeXushiClass, inferXuShi, createX4Matcher, W_KEY, W_PATTERN, W_ZANGFU, PARENT_FALLBACK_WEIGHT, EVIDENCE_DAMPING_K, W_BOOK_SECONDARY, BOOK_SECONDARY_K, DERIVED_VECTOR_K, KEY_EVIDENCE_K, COVERAGE_WEIGHT, KEY_SCORE_MODEL, MISS_WEIGHT, SOFTCAP_GAMMA, PATIENT_NEGATION_WEIGHT, PATIENT_NEGATION_DEMOTION, NEGATION_PREFIX_SCORES, PATTERN_RECALL_BETA, CHANNEL_W_KEY, CHANNEL_W_STAGE, CHIEF_SPECIFICITY_MAX_FORMULAS, W_CHIEF, W_CARDINAL, CHIEF_WINDOW, XUSHI_MARGIN, XUSHI_MISMATCH_DEMOTION, KEY_CENTRALITY_SECONDARY, KEY_CENTRALITY_MILD };
 })();

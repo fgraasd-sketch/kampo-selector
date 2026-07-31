@@ -1315,10 +1315,16 @@ function getFormulaKnowledgeBase() {
 }
 
 function getRecommendedFormulas(limit = 5) {
-    // negatedCaseKeywords: 只收「正常所見」對照表產生的否定項（normalFinding），
-    // 不收一般的「無X」否定 chips——後者維持原本的「丟棄不扣分」行為，要改成
-    // 扣分需另行量測（見 x4-matcher.mjs 的 PATIENT_NEGATION_WEIGHT 註解）。
-    const args = { formulas: getFormulaKnowledgeBase(), syndromeDb: SYNDROME_DB, organDb: ORGAN_DB, checkedSymptomLabels: getCheckedSymptomLabels(), syndromeScores: appState.syndromeScores, organScores: appState.organScores, diagnosedSyndromes: appState.diagnosedSyndromes, constitutionFilter: document.getElementById('rx-constitution-filter')?.value || 'all', searchText: document.getElementById('rx-search-input')?.value || '', caseKeywords: appState.caseKeywords, negatedCaseKeywords: (appState.parsedCaseItems || []).filter(item => item.negated && item.normalFinding).map(item => item.source) };
+    // negatedCaseKeywords（2026-07-31 擴大）：原本**只**收「正常所見」對照表產生的
+    // 否定項（normalFinding），一般的「無X」否定 chips 維持「丟棄不扣分」。
+    // 那是 07-17 上線時刻意不搭便車、留給單獨量測的一步，現在補上：兩種否定都收。
+    //
+    // 為什麼它們本來就該同等對待：「大便正常」與「未發現明顯的胸脅苦滿」都是醫師
+    // **明確記下的陰性所見**，差別只在前者靠對照表推出、後者直接寫在病歷上——
+    // 後者其實是更強的證據（醫師特地寫下來的）。
+    // 註：解析器早就把否定 chips 排除在 caseKeywords 之外（見 parseCaseBtn），
+    // 所以這裡是它們唯一能影響排名的通道；不接上就等於整條線斷著。
+    const args = { formulas: getFormulaKnowledgeBase(), syndromeDb: SYNDROME_DB, organDb: ORGAN_DB, checkedSymptomLabels: getCheckedSymptomLabels(), syndromeScores: appState.syndromeScores, organScores: appState.organScores, diagnosedSyndromes: appState.diagnosedSyndromes, constitutionFilter: document.getElementById('rx-constitution-filter')?.value || 'all', searchText: document.getElementById('rx-search-input')?.value || '', caseKeywords: appState.caseKeywords, negatedCaseKeywords: (appState.parsedCaseItems || []).filter(item => item.negated).map(item => item.source) };
     // X4Adapter wraps the validated X4 matcher (src/kampo2/x4-matcher.mjs); fall back to the
     // older heuristic engine only if the X4 bundle failed to load for some reason.
     const engine = (typeof X4Adapter !== 'undefined' && X4Adapter.isAvailable()) ? X4Adapter : KampoRecommendationEngine;
