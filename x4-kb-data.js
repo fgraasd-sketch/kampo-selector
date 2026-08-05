@@ -2246,6 +2246,22 @@ window.X4KbData = {
       ]
     },
     {
+      "id": "S-PULSE-DEEP",
+      "canonical": "脈沉",
+      "aliases": [
+        "沉脈",
+        "脈沉遲",
+        "脈沉緊",
+        "脈沉實",
+        "脈沉有力"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "2026-08-05 physician split decision"
+      ]
+    },
+    {
       "id": "S-NO-SWEAT",
       "canonical": "無汗",
       "aliases": [],
@@ -3759,6 +3775,12 @@ window.X4KbData = {
           "fromIndications": true
         },
         {
+          "raw": "脈沉（傷寒論 301）",
+          "id": "S-PULSE-DEEP",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
           "raw": "脈沉細",
           "id": "S-PULSE-WEAK",
           "negated": false,
@@ -3809,6 +3831,7 @@ window.X4KbData = {
         "S-PALE-COMPLEXION",
         "S-RUNNY-NOSE-WATERY",
         "S-SORE-THROAT",
+        "S-PULSE-DEEP",
         "S-PULSE-WEAK",
         "S-FEVER",
         "S-SLEEPINESS"
