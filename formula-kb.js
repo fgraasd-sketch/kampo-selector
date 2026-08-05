@@ -7664,13 +7664,17 @@ const EXCEL_FORMULA_KB = [
     "zangFuTags": [],
     "symptoms": [
       "精神不安",
-      "口渴"
+      "口渴",
+      "大熱",
+      "大汗"
     ],
     "keySymptoms": [
       "精神不安",
-      "口渴"
+      "口渴",
+      "大熱",
+      "大汗"
     ],
-    "indications": "精神不安，口渴",
+    "indications": "精神不安，口渴，大熱，大汗",
     "formulaPattern": [],
     "specialIndications": [],
     "contraindications": [],
@@ -7689,7 +7693,7 @@ const EXCEL_FORMULA_KB = [
         "肝": 0.1429,
         "心": 0.2,
         "脾": 0,
-        "肺": 0,
+        "肺": 0.2,
         "腎": 0.1111
       }
     }

@@ -23617,8 +23617,8 @@ window.X4KbData = {
         "XIN-XUEXU": 0.2,
         "PI-QIXU": 0,
         "PI-YANGXU": 0,
-        "FEI-QIXU": 0,
-        "FEI-YINXU": 0,
+        "FEI-QIXU": 0.2,
+        "FEI-YINXU": 0.2,
         "SHEN-YANGXU": 0,
         "SHEN-YINXU": 0.1111
       },
@@ -23641,6 +23641,18 @@ window.X4KbData = {
           "primary": true,
           "mild": false,
           "cardinal": false
+        },
+        {
+          "raw": "大熱",
+          "id": "S-FEVER",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "大汗",
+          "id": "S-SPONTANEOUS-SWEAT",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -23655,7 +23667,9 @@ window.X4KbData = {
       ],
       "indications": [
         "S-ANXIETY",
-        "S-THIRST"
+        "S-THIRST",
+        "S-FEVER",
+        "S-SPONTANEOUS-SWEAT"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：白虎湯（OCR 標題，已人工校名）",
