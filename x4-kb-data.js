@@ -23544,7 +23544,7 @@ window.X4KbData = {
         "PI-QIXU": 0,
         "PI-YANGXU": 0,
         "FEI-QIXU": 0,
-        "FEI-YINXU": 0,
+        "FEI-YINXU": 0.2,
         "SHEN-YANGXU": 0,
         "SHEN-YINXU": 0.1111
       },
@@ -23567,6 +23567,12 @@ window.X4KbData = {
           "primary": true,
           "mild": false,
           "cardinal": false
+        },
+        {
+          "raw": "白虎湯證之身熱",
+          "id": "S-FEVER",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -23582,7 +23588,8 @@ window.X4KbData = {
       ],
       "indications": [
         "S-HEADACHE",
-        "S-THIRST"
+        "S-THIRST",
+        "S-FEVER"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：白虎加桂枝湯（OCR 標題，已人工校名）",
@@ -25718,13 +25725,13 @@ window.X4KbData = {
       "zangFuVector": {
         "GAN-QIYU": 0,
         "GAN-YINXU": 0,
-        "XIN-YANGXU": 0.25,
+        "XIN-YANGXU": 0.5,
         "XIN-XUEXU": 0,
         "PI-QIXU": 0.6,
-        "PI-YANGXU": 0.5,
+        "PI-YANGXU": 0.6667,
         "FEI-QIXU": 0.2,
         "FEI-YINXU": 0,
-        "SHEN-YANGXU": 0.1,
+        "SHEN-YANGXU": 0.2,
         "SHEN-YINXU": 0
       },
       "vectorSource": "book-derived",
@@ -25809,6 +25816,12 @@ window.X4KbData = {
           "primary": false,
           "mild": false,
           "cardinal": true
+        },
+        {
+          "raw": "冷症",
+          "id": "S-COLD",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -25831,7 +25844,8 @@ window.X4KbData = {
         "S-ABDOMINAL-PAIN",
         "S-DIARRHEA",
         "S-DIARRHEA-LOOSE",
-        "S-MUSCLE-SPASM"
+        "S-MUSCLE-SPASM",
+        "S-COLD"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：桂枝加芍藥湯（OCR 標題，已人工校名）",

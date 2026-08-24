@@ -7623,13 +7623,15 @@ const EXCEL_FORMULA_KB = [
     "zangFuTags": [],
     "symptoms": [
       "頭痛",
-      "口渴"
+      "口渴",
+      "白虎湯證之身熱"
     ],
     "keySymptoms": [
       "頭痛",
-      "口渴"
+      "口渴",
+      "白虎湯證之身熱"
     ],
-    "indications": "頭痛，口渴",
+    "indications": "頭痛，口渴，白虎湯證之身熱",
     "formulaPattern": [],
     "specialIndications": [],
     "contraindications": [],
@@ -7648,7 +7650,7 @@ const EXCEL_FORMULA_KB = [
         "肝": 0.1429,
         "心": 0,
         "脾": 0,
-        "肺": 0,
+        "肺": 0.2,
         "腎": 0.1111
       }
     }
@@ -8591,7 +8593,8 @@ const EXCEL_FORMULA_KB = [
       "腹痛",
       "腹瀉",
       "軟便",
-      "腹直肌拘攣"
+      "腹直肌拘攣",
+      "冷症"
     ],
     "keySymptoms": [
       "腹部膨滿感",
@@ -8602,9 +8605,10 @@ const EXCEL_FORMULA_KB = [
       "腹痛",
       "腹瀉",
       "軟便",
-      "腹直肌拘攣"
+      "腹直肌拘攣",
+      "冷症"
     ],
-    "indications": "腹部膨滿感，胃腸虛弱，裡急後重，水樣便，振水音，腹痛，腹瀉，軟便，腹直肌拘攣",
+    "indications": "腹部膨滿感，胃腸虛弱，裡急後重，水樣便，振水音，腹痛，腹瀉，軟便，腹直肌拘攣，冷症",
     "formulaPattern": [],
     "specialIndications": [],
     "contraindications": [],
@@ -8621,10 +8625,10 @@ const EXCEL_FORMULA_KB = [
       },
       "zangFu": {
         "肝": 0,
-        "心": 0.25,
-        "脾": 0.6,
+        "心": 0.5,
+        "脾": 0.6667,
         "肺": 0.2,
-        "腎": 0.1
+        "腎": 0.2
       }
     }
   },
