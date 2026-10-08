@@ -31,7 +31,10 @@ window.X4KbData = {
       "id": "S-ABDOMINAL-MASS",
       "canonical": "腹部腫塊",
       "aliases": [
-        "腫塊"
+        "腫塊",
+        "子宮肌瘤",
+        "子宮筋腫",
+        "癥瘕"
       ],
       "parent": null,
       "negationSensitive": false,
@@ -167,7 +170,12 @@ window.X4KbData = {
         "沒胃口",
         "食慾差",
         "食欲差",
-        "吃不下"
+        "吃不下",
+        "厭食",
+        "厭食症",
+        "神經性厭食",
+        "神經性厭食症",
+        "不想吃"
       ],
       "parent": null,
       "negationSensitive": false,
@@ -308,7 +316,9 @@ window.X4KbData = {
       "canonical": "腹鳴",
       "aliases": [
         "腹部鼓音",
-        "腸鳴音亢進"
+        "腸鳴音亢進",
+        "腹中雷鳴",
+        "腸中雷鳴"
       ],
       "parent": null,
       "negationSensitive": false,
@@ -664,7 +674,10 @@ window.X4KbData = {
     {
       "id": "S-DYSMENORRHEA",
       "canonical": "痛經",
-      "aliases": [],
+      "aliases": [
+        "經期腹痛",
+        "生理痛"
+      ],
       "parent": "S-MENSTRUAL-IRREGULAR",
       "negationSensitive": false,
       "source": [
@@ -675,7 +688,12 @@ window.X4KbData = {
       "id": "S-DYSURIA",
       "canonical": "排尿困難",
       "aliases": [
-        "排尿障礙"
+        "排尿障礙",
+        "前列腺肥大",
+        "攝護腺肥大",
+        "前立腺肥大",
+        "尿線變細",
+        "小便不暢"
       ],
       "parent": null,
       "negationSensitive": false,
@@ -983,7 +1001,14 @@ window.X4KbData = {
     {
       "id": "S-HAIR-LOSS",
       "canonical": "脫髮",
-      "aliases": [],
+      "aliases": [
+        "圓形脫毛",
+        "圓形脫毛症",
+        "鬼剃頭",
+        "斑禿",
+        "禿髮症",
+        "掉髮"
+      ],
       "parent": null,
       "negationSensitive": false,
       "source": [
@@ -1177,7 +1202,15 @@ window.X4KbData = {
     {
       "id": "S-IMPOTENCE",
       "canonical": "陽萎",
-      "aliases": [],
+      "aliases": [
+        "陽痿",
+        "陰萎",
+        "勃起不全",
+        "勃起障礙",
+        "性功能障礙",
+        "性慾減退",
+        "性欲減退"
+      ],
       "parent": null,
       "negationSensitive": false,
       "source": [
@@ -1265,7 +1298,10 @@ window.X4KbData = {
     {
       "id": "S-JOINT-SWELLING",
       "canonical": "關節腫脹",
-      "aliases": [],
+      "aliases": [
+        "關節積液",
+        "關節腔積液"
+      ],
       "parent": null,
       "negationSensitive": false,
       "source": [
@@ -1383,6 +1419,11 @@ window.X4KbData = {
         "月經不調(",
         "月經異常",
         "月經過多",
+        "無月經",
+        "閉經",
+        "經閉",
+        "月經閉止",
+        "月經不來",
         "月經不順",
         "月經不規則",
         "經期不順",
@@ -1530,6 +1571,10 @@ window.X4KbData = {
       "aliases": [
         "劇烈噁心",
         "惡心",
+        "惡阻",
+        "妊娠惡阻",
+        "害喜",
+        "孕吐",
         "想吐",
         "噁心想吐",
         "反胃",
@@ -1573,7 +1618,13 @@ window.X4KbData = {
     {
       "id": "S-NIGHT-CRYING",
       "canonical": "小兒夜啼",
-      "aliases": [],
+      "aliases": [
+        "夜啼",
+        "夜啼症",
+        "夜哭",
+        "晚上哭鬧",
+        "半夜哭鬧"
+      ],
       "parent": null,
       "negationSensitive": false,
       "source": [
@@ -1819,7 +1870,13 @@ window.X4KbData = {
       "id": "S-RUNNY-NOSE-WATERY",
       "canonical": "水樣鼻涕",
       "aliases": [
-        "水鼻涕"
+        "水鼻涕",
+        "流鼻水",
+        "鼻水",
+        "清涕",
+        "流清涕",
+        "鼻汁如水",
+        "鼻涕如水"
       ],
       "parent": null,
       "negationSensitive": false,
@@ -1845,7 +1902,10 @@ window.X4KbData = {
         "肩膀僵硬",
         "脖子僵硬",
         "項背僵硬",
-        "肩頸僵硬"
+        "肩頸僵硬",
+        "五十肩",
+        "肩關節周圍炎",
+        "肩關節周圍炎症"
       ],
       "parent": null,
       "negationSensitive": false,
@@ -1905,7 +1965,12 @@ window.X4KbData = {
         "咽喉乾燥感",
         "咽喉炎症",
         "咽喉乾燥",
-        "咽乾"
+        "咽乾",
+        "咽喉痛",
+        "喉嚨痛",
+        "喉痛",
+        "咽喉腫痛",
+        "喉嚨腫痛"
       ],
       "parent": null,
       "negationSensitive": false,
@@ -1919,7 +1984,12 @@ window.X4KbData = {
     {
       "id": "S-SPERMATORRHEA",
       "canonical": "遺精",
-      "aliases": [],
+      "aliases": [
+        "夢遺",
+        "滑精",
+        "早洩",
+        "夢交"
+      ],
       "parent": null,
       "negationSensitive": false,
       "source": [
@@ -1937,7 +2007,11 @@ window.X4KbData = {
         "多汗",
         "汗多",
         "容易出汗",
-        "動輒汗出"
+        "動輒汗出",
+        "陣發性汗出",
+        "上半身出汗",
+        "上半身易出汗",
+        "自汗"
       ],
       "parent": null,
       "negationSensitive": true,
@@ -1999,7 +2073,8 @@ window.X4KbData = {
       "aliases": [
         "無裡急後重",
         "無里急後重",
-        "里急後重"
+        "里急後重",
+        "裏急後重"
       ],
       "parent": null,
       "negationSensitive": true,
@@ -2124,7 +2199,13 @@ window.X4KbData = {
     {
       "id": "S-URINARY-INCOMPLETE",
       "canonical": "尿不盡",
-      "aliases": [],
+      "aliases": [
+        "殘尿感",
+        "殘尿",
+        "排尿不盡",
+        "尿後餘瀝",
+        "小便不盡"
+      ],
       "parent": null,
       "negationSensitive": false,
       "source": [
@@ -2436,7 +2517,13 @@ window.X4KbData = {
         "拔牙後疼痛",
         "牙齦痛",
         "齒齦腫痛",
-        "牙根膜炎"
+        "牙根膜炎",
+        "齒根膜炎",
+        "齒槽膿漏",
+        "牙周病",
+        "牙周炎",
+        "牙齦發炎",
+        "牙齦腫"
       ],
       "parent": null,
       "negationSensitive": false,
@@ -2538,6 +2625,741 @@ window.X4KbData = {
       "source": [
         "Codex C1 alias patch"
       ]
+    },
+    {
+      "id": "S-NECK-MASS",
+      "canonical": "頸部腫塊",
+      "aliases": [
+        "瘰癧",
+        "馬刀俠癭",
+        "馬刀結核",
+        "甲狀腺腫",
+        "甲狀腺腫大",
+        "頸部淋巴結腫",
+        "頸淋巴結腫",
+        "痄腮",
+        "腮腺炎",
+        "腮腺腫痛"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-HOARSE-VOICE",
+      "canonical": "聲音嘶啞",
+      "aliases": [
+        "聲嗄",
+        "嗄聲",
+        "失聲",
+        "聲音不出",
+        "聲嘶",
+        "聲音沙啞",
+        "沙啞",
+        "喉嚨沙啞",
+        "嘶啞",
+        "嗄啞"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-PREGNANCY",
+      "canonical": "妊娠",
+      "aliases": [
+        "懷孕",
+        "妊娠期",
+        "懷孕期",
+        "妊娠中",
+        "懷孕中"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-HEMIPLEGIA",
+      "canonical": "半身不遂",
+      "aliases": [
+        "偏癱",
+        "半身麻痺",
+        "運動障礙"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-EXCESS-SALIVA",
+      "canonical": "流涎",
+      "aliases": [
+        "唾液過多",
+        "唾液流涎異常",
+        "唾液充滿口中",
+        "唾液粘稠",
+        "口中流唾液"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-CATARACT",
+      "canonical": "白內障",
+      "aliases": [
+        "老人性白內障"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-GLAUCOMA",
+      "canonical": "綠內障",
+      "aliases": [
+        "眼壓不正常",
+        "眼壓過高"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-FUNDUS-HEMORRHAGE",
+      "canonical": "眼底出血",
+      "aliases": [],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-STYE",
+      "canonical": "麥粒腫",
+      "aliases": [
+        "眼瞼炎"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-PTERYGIUM",
+      "canonical": "翼狀片",
+      "aliases": [
+        "翼狀贅片"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-PSEUDOMYOPIA",
+      "canonical": "假性近視",
+      "aliases": [],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-CONJUNCTIVAL-CONGESTION",
+      "canonical": "結膜充血",
+      "aliases": [
+        "結膜充血、出血",
+        "結膜出血",
+        "目赤"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-FACIAL-PALSY",
+      "canonical": "顏面神經麻痺",
+      "aliases": [
+        "面癱",
+        "口角歪斜",
+        "左眼不能閉合"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-PATHOLOGICAL-LAUGHTER",
+      "canonical": "病理性發笑",
+      "aliases": [
+        "情緒失禁",
+        "不自主發笑",
+        "笑中風"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-YAWNING",
+      "canonical": "數欠伸",
+      "aliases": [
+        "頻頻欠伸",
+        "頻打呵欠",
+        "頻頻打哈欠",
+        "打呵欠",
+        "打哈欠",
+        "欠伸"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-SORROW-CRYING",
+      "canonical": "喜悲傷欲哭",
+      "aliases": [
+        "悲傷欲哭",
+        "無故悲傷",
+        "易哭泣",
+        "動輒哭泣",
+        "藏躁",
+        "臟躁"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-TEARING",
+      "canonical": "流淚",
+      "aliases": [
+        "流淚不止",
+        "淚流不止",
+        "迎風流淚",
+        "眼淚汪汪",
+        "羞明流淚",
+        "淚大泄"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-SNEEZING",
+      "canonical": "噴嚏",
+      "aliases": [
+        "打噴嚏",
+        "噴嚏頻發",
+        "噴嚏連連",
+        "連續打噴嚏"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-PURULENT-NASAL",
+      "canonical": "膿涕",
+      "aliases": [
+        "黃鼻涕",
+        "濃鼻涕",
+        "膿性鼻汁",
+        "蓄膿症",
+        "副鼻腔炎",
+        "鼻竇炎",
+        "上顎洞炎"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-ENURESIS",
+      "canonical": "遺尿",
+      "aliases": [
+        "遺尿症",
+        "夜尿症",
+        "尿床"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-URTICARIA",
+      "canonical": "蕁麻疹",
+      "aliases": [
+        "風疹塊",
+        "風團"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-SPLENOMEGALY",
+      "canonical": "脾臟腫大",
+      "aliases": [
+        "脾腫大",
+        "脾臟肿大",
+        "脾大",
+        "肝脾腫大",
+        "肝臟腫大",
+        "肝腫大"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-OTITIS-MEDIA",
+      "canonical": "中耳炎",
+      "aliases": [
+        "滲出性中耳炎",
+        "耳堵塞感",
+        "耳閉塞感",
+        "耳塞"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-DELIRIUM",
+      "canonical": "如狂",
+      "aliases": [
+        "譫妄",
+        "神志不清",
+        "意識不清",
+        "胡言亂語"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-BREAST-MASS",
+      "canonical": "乳房腫塊",
+      "aliases": [
+        "乳腺腫塊",
+        "乳核",
+        "乳岩"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-VISIBLE-PERISTALSIS",
+      "canonical": "腸管蠕動可見",
+      "aliases": [
+        "蠕動亢進",
+        "腹壁蠕動",
+        "腸型"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-LEFT-HYPOCHONDRIAC-PAIN",
+      "canonical": "左季肋疼痛",
+      "aliases": [
+        "左乳下疼痛",
+        "左季肋或左乳下疼痛",
+        "左脅肋疼痛",
+        "左肋下疼痛"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-ORAL-MUCOSA-EROSION",
+      "canonical": "齒齦腫爛",
+      "aliases": [
+        "齒齦腫爛出血",
+        "口舌生瘡",
+        "口腔黏膜糜爛",
+        "牙齦潰爛出血"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-HICCUP",
+      "canonical": "呃逆",
+      "aliases": [
+        "噦逆",
+        "打嗝",
+        "膈肌痙攣"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-EAR-DISCHARGE",
+      "canonical": "耳漏",
+      "aliases": [
+        "耳內生膿",
+        "耳內流膿",
+        "耳漏流膿",
+        "中耳流膿"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-BENTUN",
+      "canonical": "奔豚",
+      "aliases": [
+        "奔豚氣",
+        "氣上衝",
+        "氣上衝胸",
+        "氣自少腹上沖心胸"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-RECTAL-PROLAPSE",
+      "canonical": "脫肛",
+      "aliases": [
+        "肛門下墜",
+        "直腸脫垂"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-HYPOCHONDRIAC-PAIN",
+      "canonical": "脅痛",
+      "aliases": [
+        "脅肋疼痛",
+        "肋間疼痛",
+        "季肋部疼痛"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-PURULENT-SPUTUM",
+      "canonical": "膿痰",
+      "aliases": [
+        "咳吐膿痰",
+        "咳吐腥臭",
+        "口吐膿",
+        "痰有腥臭"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-STICKY-SPUTUM",
+      "canonical": "粘稠痰",
+      "aliases": [
+        "痰粘稠",
+        "咯痰不爽",
+        "痰難咯出",
+        "粘痰"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-BLOODY-STOOL",
+      "canonical": "便血",
+      "aliases": [
+        "下膿血",
+        "大便下血",
+        "腸風下血",
+        "血便",
+        "膿血便"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-OBESITY",
+      "canonical": "肥胖",
+      "aliases": [
+        "肥胖症",
+        "肥滿",
+        "減肥",
+        "體重過重",
+        "肥胖體質"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-POSTPARTUM",
+      "canonical": "產後",
+      "aliases": [
+        "產後調理",
+        "產後體虛",
+        "惡露不盡",
+        "惡露不絕",
+        "惡露不止"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-LACTATION-LOW",
+      "canonical": "乳汁不足",
+      "aliases": [
+        "乳汁缺乏",
+        "奶水不足",
+        "母乳不足",
+        "乳少"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-HABITUAL-ABORTION",
+      "canonical": "習慣性流產",
+      "aliases": [
+        "流產癖",
+        "反覆流產",
+        "易流產",
+        "安胎"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-INFERTILITY",
+      "canonical": "不妊症",
+      "aliases": [
+        "不孕",
+        "不孕症",
+        "不妊",
+        "難以受孕",
+        "久不受孕",
+        "備孕"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-AXILLARY-ODOR",
+      "canonical": "腋臭",
+      "aliases": [
+        "狐臭",
+        "腋下異味",
+        "腋汗多"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-SKIN-CRACK",
+      "canonical": "皸裂",
+      "aliases": [
+        "龜裂",
+        "皮膚龜裂",
+        "手掌龜裂",
+        "皮膚裂開",
+        "手足皸裂",
+        "富貴手",
+        "進行性指掌角皮症"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-CHLOASMA",
+      "canonical": "肝斑",
+      "aliases": [
+        "黃褐斑",
+        "雀斑",
+        "黑斑",
+        "色斑",
+        "臉上斑"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-ROSACEA",
+      "canonical": "酒皶",
+      "aliases": [
+        "酒皶鼻",
+        "酒糟鼻",
+        "酒渣鼻",
+        "鼻頭紅"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-PSORIASIS",
+      "canonical": "乾癬",
+      "aliases": [
+        "銀屑病",
+        "牛皮癬",
+        "尋常性乾癬"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-ATOPIC",
+      "canonical": "異位性皮膚炎",
+      "aliases": [
+        "特異反應性皮膚炎",
+        "特應性皮膚炎",
+        "過敏性皮膚炎",
+        "小兒濕疹",
+        "胎毒"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-HERPES-ZOSTER",
+      "canonical": "帶狀疱疹",
+      "aliases": [
+        "帶狀皰疹",
+        "皮蛇",
+        "蛇串瘡",
+        "火帶瘡",
+        "纏腰龍"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
+    },
+    {
+      "id": "S-HALITOSIS",
+      "canonical": "口臭",
+      "aliases": [
+        "口氣重",
+        "口中臭",
+        "口中惡臭",
+        "呼氣惡臭"
+      ],
+      "parent": null,
+      "negationSensitive": false,
+      "source": [
+        "Codex C1 alias patch"
+      ]
     }
   ],
   "formulas": [
@@ -2596,6 +3418,20 @@ window.X4KbData = {
           "id": "S-JOINT-PAIN",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "尿利減少（醫典藥方解說）",
+          "id": "S-OLIGURIA",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        },
+        {
+          "raw": "喘鳴（醫典藥方解說）",
+          "id": "S-ASTHMA-WHEEZE",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [
@@ -2614,7 +3450,9 @@ window.X4KbData = {
         "S-FEVER",
         "S-JOINT-PAIN",
         "S-SPONTANEOUS-SWEAT",
-        "S-THIRST"
+        "S-THIRST",
+        "S-OLIGURIA",
+        "S-ASTHMA-WHEEZE"
       ],
       "formulaPattern": [
         "虛實夾雜"
@@ -2674,6 +3512,18 @@ window.X4KbData = {
           "matchType": "exact"
         },
         {
+          "raw": "翼狀片（眼白部份出現三角形肉樣物，切除後仍有再發傾向，服本方可免再做手術，2026-09-16）",
+          "id": "S-PTERYGIUM",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "流淚不止、羞明流淚（醫典淚囊炎門／結膜炎門／角膜炎門，2026-10-06）",
+          "id": "S-TEARING",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
           "raw": "熱感",
           "id": "S-HEAT-SENSATION",
           "negated": false,
@@ -2722,6 +3572,8 @@ window.X4KbData = {
         "S-JOINT-PAIN",
         "S-OLIGURIA",
         "S-THIRST",
+        "S-PTERYGIUM",
+        "S-TEARING",
         "S-HEAT-SENSATION",
         "S-FACIAL-FLUSH",
         "S-JOINT-SWELLING"
@@ -2922,13 +3774,13 @@ window.X4KbData = {
       "zangFuVector": {
         "GAN-QIYU": 0,
         "GAN-YINXU": 0.2,
-        "XIN-YANGXU": 0,
+        "XIN-YANGXU": 0.25,
         "XIN-XUEXU": 0.2,
         "PI-QIXU": 0,
-        "PI-YANGXU": 0,
+        "PI-YANGXU": 0.1667,
         "FEI-QIXU": 0,
         "FEI-YINXU": 0,
-        "SHEN-YANGXU": 0,
+        "SHEN-YANGXU": 0.1,
         "SHEN-YINXU": 0.2222
       },
       "keySymptoms": [
@@ -2963,10 +3815,10 @@ window.X4KbData = {
           "matchType": "exact"
         },
         {
-          "raw": "!S-THIRST",
-          "id": "!S-THIRST",
+          "raw": "浮腫傾向（水滯）",
+          "id": "S-EDEMA",
           "negated": false,
-          "fromIndications": true
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -2988,7 +3840,8 @@ window.X4KbData = {
         "S-HEAT-SENSATION",
         "S-JOINT-PAIN",
         "S-JOINT-SWELLING",
-        "S-MORNING-STIFFNESS"
+        "S-MORNING-STIFFNESS",
+        "S-EDEMA"
       ],
       "formulaPattern": [
         "虛實夾雜"
@@ -3115,16 +3968,29 @@ window.X4KbData = {
           "matchType": "exact"
         },
         {
-          "raw": "!S-THIRST",
-          "id": "!S-THIRST",
-          "negated": false,
-          "fromIndications": true
-        },
-        {
           "raw": "膝關節腫痛（風濕）",
           "id": "S-JOINT-PAIN",
           "negated": false,
           "matchType": "physician-patch"
+        },
+        {
+          "raw": "虚証・水肥り型肥胖（肌肉鬆軟、易浮腫易疲勞，2026-09-10 現代臨床通識）",
+          "id": "S-OBESITY",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "腋臭、腋窩流汗（水肥型；醫典多汗症門，附30歲婦人病例，2026-10-06）",
+          "id": "S-AXILLARY-ODOR",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "汗出惡風",
+          "id": "S-SPONTANEOUS-SWEAT",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         },
         {
           "raw": "惡風",
@@ -3158,6 +4024,9 @@ window.X4KbData = {
         "S-MUSCLE-SOFT",
         "S-OLIGURIA",
         "S-JOINT-PAIN",
+        "S-OBESITY",
+        "S-AXILLARY-ODOR",
+        "S-SPONTANEOUS-SWEAT",
         "S-COLD"
       ],
       "formulaPattern": [
@@ -3604,6 +4473,12 @@ window.X4KbData = {
           "id": "S-WEAK-LOWER-LIMB",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "鶴膝風：關節顯著腫脹成紡錘形（醫典結核性關節炎門，2026-10-06）",
+          "id": "S-JOINT-SWELLING",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -3632,7 +4507,8 @@ window.X4KbData = {
         "S-EDEMA",
         "S-FATIGUE",
         "S-JOINT-PAIN",
-        "S-WEAK-LOWER-LIMB"
+        "S-WEAK-LOWER-LIMB",
+        "S-JOINT-SWELLING"
       ],
       "formulaPattern": [
         "虛證"
@@ -3775,6 +4651,12 @@ window.X4KbData = {
           "fromIndications": true
         },
         {
+          "raw": "三叉神經痛、後頭神經痛（醫典神經痛門）",
+          "id": "S-NEURALGIA",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
           "raw": "脈沉（傷寒論 301）",
           "id": "S-PULSE-DEEP",
           "negated": false,
@@ -3831,6 +4713,7 @@ window.X4KbData = {
         "S-PALE-COMPLEXION",
         "S-RUNNY-NOSE-WATERY",
         "S-SORE-THROAT",
+        "S-NEURALGIA",
         "S-PULSE-DEEP",
         "S-PULSE-WEAK",
         "S-FEVER",
@@ -3936,6 +4819,18 @@ window.X4KbData = {
           "matchType": "physician-patch"
         },
         {
+          "raw": "実証・便秘型肥胖（體格壯實、腹力強，2026-09-10 現代臨床通識）",
+          "id": "S-OBESITY",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "鼻塞（現代臨床通識，実証体質過敏性鼻炎常用方，大塚鑑別battery鑑別徵象，2026-09-16）",
+          "id": "S-NASAL-CONGESTION",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
           "raw": "顏面潮紅",
           "id": "S-FACIAL-FLUSH",
           "negated": false,
@@ -4007,6 +4902,8 @@ window.X4KbData = {
         "S-JOINT-PAIN",
         "S-MORNING-STIFFNESS",
         "S-ABDOMINAL-DISTENSION",
+        "S-OBESITY",
+        "S-NASAL-CONGESTION",
         "S-FACIAL-FLUSH",
         "S-PERIUMBILICAL-TENDERNESS",
         "S-ABDOMINAL-TENDERNESS",
@@ -4397,10 +5294,17 @@ window.X4KbData = {
           "matchType": "exact"
         },
         {
-          "raw": "!S-SPONTANEOUS-SWEAT",
-          "id": "!S-SPONTANEOUS-SWEAT",
+          "raw": "排尿困難（傷寒論223/319條「小便不利」）",
+          "id": "S-DYSURIA",
           "negated": false,
-          "fromIndications": true
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "尿路出血（醫典藥方解說）",
+          "id": "S-BLEEDING",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [
@@ -4419,7 +5323,9 @@ window.X4KbData = {
         "S-ANXIETY",
         "S-OLIGURIA",
         "S-THIRST",
-        "S-URINARY-PAIN"
+        "S-URINARY-PAIN",
+        "S-DYSURIA",
+        "S-BLEEDING"
       ],
       "formulaPattern": [
         "虛實夾雜"
@@ -4788,6 +5694,12 @@ window.X4KbData = {
           "matchType": "physician-patch"
         },
         {
+          "raw": "假性近視（心靈地圖[眼睛障害→假性近視]分支：口渴與反量減少為辨別，飲用2~3月可癒，2026-09-16）",
+          "id": "S-PSEUDOMYOPIA",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
           "raw": "浮腫",
           "id": "S-EDEMA",
           "negated": false,
@@ -4840,6 +5752,7 @@ window.X4KbData = {
         "S-VOMITING",
         "S-EPIGASTRIC-RESISTANCE",
         "S-PALPITATION",
+        "S-PSEUDOMYOPIA",
         "S-EDEMA",
         "S-NAUSEA",
         "S-UPPER-HOT-LOWER-COLD"
@@ -4959,7 +5872,7 @@ window.X4KbData = {
       },
       "zangFuVector": {
         "GAN-QIYU": 0.1429,
-        "GAN-YINXU": 0.2,
+        "GAN-YINXU": 0.4,
         "XIN-YANGXU": 0.25,
         "XIN-XUEXU": 0.2,
         "PI-QIXU": 0.2,
@@ -4967,7 +5880,7 @@ window.X4KbData = {
         "FEI-QIXU": 0,
         "FEI-YINXU": 0,
         "SHEN-YANGXU": 0.1,
-        "SHEN-YINXU": 0.1111
+        "SHEN-YINXU": 0.2222
       },
       "keySymptoms": [
         {
@@ -5011,6 +5924,18 @@ window.X4KbData = {
           "id": "S-ABDOMINAL-DISTENSION",
           "negated": false,
           "matchType": "physician-patch"
+        },
+        {
+          "raw": "視力障害、眼疲勞（醫典視神經炎門，藤平健49例視力好轉95.9%，2026-10-06）",
+          "id": "S-EYE-FATIGUE",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "假性近視（醫典視神經炎門／假性近視門「有起立性眩暈之場合，宜用本方」，2026-10-06）",
+          "id": "S-PSEUDOMYOPIA",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -5031,7 +5956,9 @@ window.X4KbData = {
         "S-OLIGURIA",
         "S-PALPITATION",
         "S-UPPER-HOT-LOWER-COLD",
-        "S-ABDOMINAL-DISTENSION"
+        "S-ABDOMINAL-DISTENSION",
+        "S-EYE-FATIGUE",
+        "S-PSEUDOMYOPIA"
       ],
       "formulaPattern": [
         "桂枝和甘草配伍",
@@ -5187,6 +6114,12 @@ window.X4KbData = {
           "id": "S-EDEMA",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "下肢痛（金匱要略「腰以下冷痛」，冷痛並列）",
+          "id": "S-LOWER-LIMB-PAIN",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -5204,7 +6137,8 @@ window.X4KbData = {
         "S-EDEMA",
         "S-LOW-BACK-HEAVY",
         "S-LOW-SPECIFIC-GRAVITY-URINE",
-        "S-POLYURIA"
+        "S-POLYURIA",
+        "S-LOWER-LIMB-PAIN"
       ],
       "formulaPattern": [
         "虛證"
@@ -5312,7 +6246,7 @@ window.X4KbData = {
         "GAN-QIYU": 0.4286,
         "GAN-YINXU": 0.4,
         "XIN-YANGXU": 1,
-        "XIN-XUEXU": 0.2,
+        "XIN-XUEXU": 0.4,
         "PI-QIXU": 0.2,
         "PI-YANGXU": 0.5,
         "FEI-QIXU": 0.2,
@@ -5388,6 +6322,42 @@ window.X4KbData = {
           "fromIndications": true
         },
         {
+          "raw": "更年期障礙（血虛型：體力虛弱、頭暈耳鳴、貧血、發冷）",
+          "id": "S-MENOPAUSE",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "下腹痛（矢數問診篇[腹痛→當歸芍藥散]鑑別徵象，與既有腹痛為本體不同概念，2026-09-16）",
+          "id": "S-LOWER-ABDOMINAL-PAIN",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "失眠（大塚敬節《漢方診療三十年》案268：產後頭重「頭冒」症狀兼夜間多夢失眠、足冷，酸棗仁湯效果不及本方；案269：慢性腎炎兼哮喘史，頭痛肩凝背凝頭暈耳鳴悸動失眠，服本方數月哮喘完全緩解諸症皆好轉，2026-09-28）",
+          "id": "S-INSOMNIA",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "關節腔積液（大塚敬節《漢方診療三十年》案270：妊娠三個月患關節炎、四肢大部分關節腫脹，妊娠中禁忌麻黃/風濕熱痺類方，本方為孕婦可安全使用的替代選擇，兩個月治療關節腔積液完全消失，2026-09-28）",
+          "id": "S-JOINT-SWELLING",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "冷症貧血虛弱體質之不妊（醫典不妊症門，附三例服後妊娠，2026-10-06）",
+          "id": "S-INFERTILITY",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "肝斑（虛弱貧血冷症婦人；醫典肝斑門，2026-10-06）",
+          "id": "S-CHLOASMA",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
           "raw": "眩暈",
           "id": "S-DIZZINESS",
           "negated": false,
@@ -5454,6 +6424,12 @@ window.X4KbData = {
         "S-GASTRIC-SPLASH",
         "S-MENSTRUAL-IRREGULAR",
         "S-PALPITATION",
+        "S-MENOPAUSE",
+        "S-LOWER-ABDOMINAL-PAIN",
+        "S-INSOMNIA",
+        "S-JOINT-SWELLING",
+        "S-INFERTILITY",
+        "S-CHLOASMA",
         "S-DIZZINESS",
         "S-HEADACHE",
         "S-SHOULDER-STIFF",
@@ -5650,6 +6626,41 @@ window.X4KbData = {
           "id": "S-THIRST",
           "negated": false,
           "fromIndications": true
+        },
+        {
+          "raw": "手足雖感煩熱（醫典藥方解說）",
+          "id": "S-HEAT-SENSATION",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        },
+        {
+          "raw": "多尿、頻尿（醫典藥方解說）",
+          "id": "S-POLYURIA",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        },
+        {
+          "raw": "下肢無力（腰膝痠軟）",
+          "id": "S-WEAK-LOWER-LIMB",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        },
+        {
+          "raw": "耳鳴（腎開竅於耳，腎虛耳鳴古典亦現代通識）",
+          "id": "S-TINNITUS",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        },
+        {
+          "raw": "老人性白內障（心靈地圖[眼睛障害→白內障]分支：未失明前早期使用可免動手術，原書作「八味丸」，2026-09-16）",
+          "id": "S-CATARACT",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [
@@ -5678,7 +6689,12 @@ window.X4KbData = {
         "S-LOWER-LIMB-PAIN",
         "S-NOCTURIA",
         "S-THIRST",
-        "S-URINATION-ABNORMAL"
+        "S-URINATION-ABNORMAL",
+        "S-HEAT-SENSATION",
+        "S-POLYURIA",
+        "S-WEAK-LOWER-LIMB",
+        "S-TINNITUS",
+        "S-CATARACT"
       ],
       "formulaPattern": [
         "虛證",
@@ -5785,6 +6801,12 @@ window.X4KbData = {
           "id": "S-WEAK-LOWER-LIMB",
           "negated": false,
           "fromIndications": true
+        },
+        {
+          "raw": "高血壓（大塚敬節《漢方診療三十年》案293：產後腎炎，血壓182/102mmHg，服藥三週降至108/45mmHg、尿蛋白轉陰，2026-09-28）",
+          "id": "S-HYPERTENSION",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -5817,7 +6839,8 @@ window.X4KbData = {
         "S-NOCTURIA",
         "S-URINATION-ABNORMAL",
         "S-OLIGURIA",
-        "S-WEAK-LOWER-LIMB"
+        "S-WEAK-LOWER-LIMB",
+        "S-HYPERTENSION"
       ],
       "formulaPattern": [
         "虛證",
@@ -5989,6 +7012,13 @@ window.X4KbData = {
           "id": "S-EDEMA",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "惡寒、手足厥冷（醫典藥方解說）",
+          "id": "S-COLD",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [
@@ -6009,7 +7039,8 @@ window.X4KbData = {
         "S-JOINT-PAIN",
         "S-MORNING-STIFFNESS",
         "S-MUSCLE-PAIN",
-        "S-OLIGURIA"
+        "S-OLIGURIA",
+        "S-COLD"
       ],
       "formulaPattern": [
         "虛證"
@@ -6131,6 +7162,43 @@ window.X4KbData = {
           "id": "S-COLD",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "胃部振水音（水氣內停）",
+          "id": "S-GASTRIC-SPLASH",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "關節痛（傷寒論82/316條「四肢沉重疼痛」，大塚鑑別battery[發冷→真武湯]鑑別徵象，2026-09-16）",
+          "id": "S-JOINT-PAIN",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "遺尿（大塚敬節《漢方診療三十年》案167：兄弟三人遺尿症，面色青黑消瘦怕冷，歷經小建中湯/苓姜朮甘湯/桂枝加龍骨牡蠣湯/伯州散皆無效，改投本方一週即癒，2026-09-28）",
+          "id": "S-ENURESIS",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "蕁麻疹（大塚敬節《漢方診療三十年》案168：兩名獨立患者皆以蕁麻疹為主訴、手足怕冷之陽虛水停體質，投予本方皆癒，2026-09-28）",
+          "id": "S-URTICARIA",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "瘙癢（大塚敬節《漢方診療三十年》案175：兩名獨立患者老人腰背部瘙癢久治不愈，引村井琴山口訣「老人亦有身體瘙癢，非真武不愈……老人則須用附子」與年輕人桂麻各半湯證區分，2026-09-28）",
+          "id": "S-PRURITUS",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "腹滿",
+          "id": "S-ABDOMINAL-DISTENSION",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [
@@ -6150,7 +7218,13 @@ window.X4KbData = {
         "S-DIZZINESS",
         "S-EDEMA",
         "S-FATIGUE",
-        "S-OLIGURIA"
+        "S-OLIGURIA",
+        "S-GASTRIC-SPLASH",
+        "S-JOINT-PAIN",
+        "S-ENURESIS",
+        "S-URTICARIA",
+        "S-PRURITUS",
+        "S-ABDOMINAL-DISTENSION"
       ],
       "formulaPattern": [
         "虛證"
@@ -6767,7 +7841,7 @@ window.X4KbData = {
         "GAN-QIYU": 0,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0.5,
-        "XIN-XUEXU": 0.2,
+        "XIN-XUEXU": 0.4,
         "PI-QIXU": 0.2,
         "PI-YANGXU": 0.1667,
         "FEI-QIXU": 0,
@@ -6817,6 +7891,19 @@ window.X4KbData = {
           "id": "S-PALPITATION",
           "negated": false,
           "fromIndications": true
+        },
+        {
+          "raw": "失眠（大塚敬節《漢方診療三十年》案198：胃脘脹滿兼失眠夜間多夢，服本方一次即胸部脹悶減輕，續服22週睡眠轉佳，2026-09-28）",
+          "id": "S-INSOMNIA",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "噯氣（醫典藥方解說）",
+          "id": "S-BELCHING",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [
@@ -6839,7 +7926,9 @@ window.X4KbData = {
         "S-EPIGASTRIC-RESISTANCE",
         "S-GASTRIC-SPLASH",
         "S-PALPITATION",
-        "S-VOMITING"
+        "S-VOMITING",
+        "S-INSOMNIA",
+        "S-BELCHING"
       ],
       "formulaPattern": [
         "人參湯類",
@@ -6979,6 +8068,20 @@ window.X4KbData = {
           "id": "S-DIZZINESS",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "尿利減少（醫典胃擴張門）",
+          "id": "S-OLIGURIA",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        },
+        {
+          "raw": "上腹部顯著之振水音（醫典胃擴張門）",
+          "id": "S-GASTRIC-SPLASH",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [
@@ -7000,7 +8103,9 @@ window.X4KbData = {
         "S-NAUSEA",
         "S-PALPITATION",
         "S-THIRST",
-        "S-VOMITING"
+        "S-VOMITING",
+        "S-OLIGURIA",
+        "S-GASTRIC-SPLASH"
       ],
       "formulaPattern": [
         "虛證"
@@ -7229,6 +8334,13 @@ window.X4KbData = {
           "id": "S-PALPITATION",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "眩暈（醫典藥方解說：因心下之水氣…眩暈、心動悸）",
+          "id": "S-DIZZINESS",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [
@@ -7248,7 +8360,8 @@ window.X4KbData = {
         "S-HEADACHE",
         "S-NAUSEA",
         "S-PALPITATION",
-        "S-VOMITING"
+        "S-VOMITING",
+        "S-DIZZINESS"
       ],
       "formulaPattern": [
         "虛證"
@@ -7359,6 +8472,13 @@ window.X4KbData = {
           "id": "S-OLIGURIA",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "妊娠惡阻（三十年案317）",
+          "id": "S-PREGNANCY",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [
@@ -7374,7 +8494,8 @@ window.X4KbData = {
         "S-GASTRIC-SPLASH",
         "S-NAUSEA",
         "S-OLIGURIA",
-        "S-VOMITING"
+        "S-VOMITING",
+        "S-PREGNANCY"
       ],
       "formulaPattern": [
         "虛證"
@@ -7491,12 +8612,6 @@ window.X4KbData = {
           "matchType": "exact"
         },
         {
-          "raw": "!S-TENESMUS",
-          "id": "!S-TENESMUS",
-          "negated": false,
-          "fromIndications": true
-        },
-        {
           "raw": "S-DIARRHEA-LOOSE",
           "id": "S-DIARRHEA-LOOSE",
           "negated": false,
@@ -7507,6 +8622,20 @@ window.X4KbData = {
           "id": "S-NO-HEAT-SIGN",
           "negated": false,
           "fromIndications": true
+        },
+        {
+          "raw": "食欲不振（醫典藥方解說）",
+          "id": "S-APPETITE-LOW",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        },
+        {
+          "raw": "具貧血性（醫典藥方解說）",
+          "id": "S-BLOOD-DEF",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [
@@ -7530,7 +8659,9 @@ window.X4KbData = {
         "S-DIARRHEA",
         "S-DIARRHEA-FOAMY",
         "S-DIARRHEA-LOOSE",
-        "S-NO-HEAT-SIGN"
+        "S-NO-HEAT-SIGN",
+        "S-APPETITE-LOW",
+        "S-BLOOD-DEF"
       ],
       "formulaPattern": [
         "虛證",
@@ -7736,6 +8867,12 @@ window.X4KbData = {
           "fromIndications": true
         },
         {
+          "raw": "吃逆頻發（醫典吃逆門）",
+          "id": "S-HICCUP",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
           "raw": "心下部膨滿",
           "id": "S-ABDOMINAL-DISTENSION",
           "negated": false,
@@ -7750,6 +8887,12 @@ window.X4KbData = {
         {
           "raw": "胖大舌",
           "id": "S-TONGUE-SWOLLEN",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "口中出現如水樣唾液（大塚敬節《漢方診療三十年》案220：胃弱偏頭痛，胸脘痞悶噯氣，2026-09-28）",
+          "id": "S-EXCESS-SALIVA",
           "negated": false,
           "matchType": "physician-patch"
         }
@@ -7777,9 +8920,11 @@ window.X4KbData = {
         "S-GASTRIC-SPLASH",
         "S-HEADACHE",
         "S-VOMITING",
+        "S-HICCUP",
         "S-ABDOMINAL-DISTENSION",
         "S-DIZZINESS",
-        "S-TONGUE-SWOLLEN"
+        "S-TONGUE-SWOLLEN",
+        "S-EXCESS-SALIVA"
       ],
       "formulaPattern": [
         "人參湯類",
@@ -7898,6 +9043,12 @@ window.X4KbData = {
           "id": "S-GASTRIC-SPLASH",
           "negated": false,
           "matchType": "physician-patch"
+        },
+        {
+          "raw": "唾液充滿口中（心靈地圖[唾液流涎異常→寒]分支：胃下垂/胃弛緩/妊娠惡阻，飲食後精神不快，稀的唾液充滿口中，2026-09-16）",
+          "id": "S-EXCESS-SALIVA",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -7920,7 +9071,8 @@ window.X4KbData = {
         "S-EPIGASTRIC-PAIN",
         "S-EPIGASTRIC-RESISTANCE",
         "S-FATIGUE",
-        "S-GASTRIC-SPLASH"
+        "S-GASTRIC-SPLASH",
+        "S-EXCESS-SALIVA"
       ],
       "formulaPattern": [
         "人參湯類",
@@ -8044,7 +9196,7 @@ window.X4KbData = {
         "GAN-YINXU": 0.2,
         "XIN-YANGXU": 0.5,
         "XIN-XUEXU": 0,
-        "PI-QIXU": 0.4,
+        "PI-QIXU": 0.6,
         "PI-YANGXU": 0.1667,
         "FEI-QIXU": 0.2,
         "FEI-YINXU": 0,
@@ -8101,6 +9253,19 @@ window.X4KbData = {
           "fromIndications": true
         },
         {
+          "raw": "食欲不振（脾胃氣虛痰濕內阻的常見伴隨症狀）",
+          "id": "S-APPETITE-LOW",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "食後感覺手足倦怠與嗜眠（醫典藥方解說）",
+          "id": "S-SLEEPINESS",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        },
+        {
           "raw": "心下痞硬",
           "id": "S-EPIGASTRIC-RESISTANCE",
           "negated": false,
@@ -8143,6 +9308,8 @@ window.X4KbData = {
         "S-GASTRIC-SPLASH",
         "S-HEADACHE",
         "S-HEAVY-HEAD",
+        "S-APPETITE-LOW",
+        "S-SLEEPINESS",
         "S-EPIGASTRIC-RESISTANCE"
       ],
       "formulaPattern": [
@@ -8309,6 +9476,13 @@ window.X4KbData = {
           "matchType": "physician-patch"
         },
         {
+          "raw": "血色不佳（醫典藥方解說）",
+          "id": "S-PALE-COMPLEXION",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        },
+        {
           "raw": "心慌",
           "id": "S-PALPITATION",
           "negated": false,
@@ -8348,6 +9522,7 @@ window.X4KbData = {
         "S-OLIGURIA",
         "S-THIRST",
         "S-ABDOMINAL-DISTENSION",
+        "S-PALE-COMPLEXION",
         "S-PALPITATION",
         "S-HEAT-TOXIN"
       ],
@@ -8920,6 +10095,13 @@ window.X4KbData = {
           "id": "S-OLIGURIA",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "心悸亢進（醫典藥方解說：脚氣樣症狀）",
+          "id": "S-PALPITATION",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [],
@@ -8931,7 +10113,8 @@ window.X4KbData = {
         "S-ASTHMA-WHEEZE",
         "S-CHEST-OPPRESSION",
         "S-EDEMA",
-        "S-OLIGURIA"
+        "S-OLIGURIA",
+        "S-PALPITATION"
       ],
       "formulaPattern": [
         "虛實夾雜"
@@ -9054,6 +10237,13 @@ window.X4KbData = {
           "id": "S-EPIGASTRIC-RESISTANCE",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "心下動悸",
+          "id": "S-PALPITATION",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [],
@@ -9065,7 +10255,8 @@ window.X4KbData = {
         "S-ASTHMA-WHEEZE",
         "S-EDEMA",
         "S-EPIGASTRIC-RESISTANCE",
-        "S-OLIGURIA"
+        "S-OLIGURIA",
+        "S-PALPITATION"
       ],
       "formulaPattern": [
         "虛實夾雜"
@@ -9125,6 +10316,13 @@ window.X4KbData = {
           "matchType": "exact"
         },
         {
+          "raw": "小便少（醫典藥方解說）",
+          "id": "S-OLIGURIA",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        },
+        {
           "raw": "下肢發冷",
           "id": "S-COLD",
           "negated": false,
@@ -9167,6 +10365,7 @@ window.X4KbData = {
         "S-COUGH",
         "S-HOT-FLUSH",
         "S-WEAK-LOWER-LIMB",
+        "S-OLIGURIA",
         "S-COLD",
         "S-FATIGUE"
       ],
@@ -9265,6 +10464,12 @@ window.X4KbData = {
           "id": "S-FEVER",
           "negated": false,
           "fromIndications": true
+        },
+        {
+          "raw": "噴嚏頻發（醫典過敏性鼻炎門／鼻炎門，2026-10-06）",
+          "id": "S-SNEEZING",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -9290,7 +10495,8 @@ window.X4KbData = {
         "S-GASTRIC-SPLASH",
         "S-RUNNY-NOSE-WATERY",
         "S-SPONTANEOUS-SWEAT",
-        "S-WATERY-SPUTUM"
+        "S-WATERY-SPUTUM",
+        "S-SNEEZING"
       ],
       "formulaPattern": [
         "虛證",
@@ -9379,8 +10585,8 @@ window.X4KbData = {
       "zangFuVector": {
         "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0,
-        "XIN-YANGXU": 0.25,
-        "XIN-XUEXU": 0,
+        "XIN-YANGXU": 0.5,
+        "XIN-XUEXU": 0.2,
         "PI-QIXU": 0,
         "PI-YANGXU": 0.1667,
         "FEI-QIXU": 0.2,
@@ -9412,6 +10618,12 @@ window.X4KbData = {
           "id": "S-EDEMA",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "呼吸困難與動悸為主訴（醫典肺氣腫門，2026-10-06）",
+          "id": "S-PALPITATION",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -9427,7 +10639,8 @@ window.X4KbData = {
         "S-ASTHMA-WHEEZE",
         "S-CHEST-OPPRESSION",
         "S-EDEMA",
-        "S-EPIGASTRIC-RESISTANCE"
+        "S-EPIGASTRIC-RESISTANCE",
+        "S-PALPITATION"
       ],
       "formulaPattern": [
         "虛證"
@@ -9509,6 +10722,13 @@ window.X4KbData = {
           "id": "S-GASTRIC-SPLASH",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "貧血（醫典藥方解說）",
+          "id": "S-BLOOD-DEF",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [
@@ -9531,7 +10751,8 @@ window.X4KbData = {
         "S-COUGH",
         "S-FATIGUE",
         "S-PALE-COMPLEXION",
-        "S-WATERY-SPUTUM"
+        "S-WATERY-SPUTUM",
+        "S-BLOOD-DEF"
       ],
       "formulaPattern": [
         "虛證"
@@ -9626,12 +10847,12 @@ window.X4KbData = {
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0,
         "XIN-XUEXU": 0,
-        "PI-QIXU": 0,
+        "PI-QIXU": 0.2,
         "PI-YANGXU": 0,
         "FEI-QIXU": 0,
         "FEI-YINXU": 0,
         "SHEN-YANGXU": 0,
-        "SHEN-YINXU": 0
+        "SHEN-YINXU": 0.1111
       },
       "keySymptoms": [
         {
@@ -9645,6 +10866,36 @@ window.X4KbData = {
           "id": "S-MENTAL-SYMPTOMS",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "壓之有抵抗，觸及塊狀",
+          "id": "S-ABDOMINAL-MASS",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "下腹部脹滿、胸滿腹滿、下腹硬滿",
+          "id": "S-ABDOMINAL-DISTENSION",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "健忘（傷寒論蓄血證「其人喜忘」）",
+          "id": "S-FORGETFULNESS",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "小便頻數",
+          "id": "S-URINARY-FREQUENCY",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "口燥煩渴",
+          "id": "S-THIRST",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -9659,7 +10910,12 @@ window.X4KbData = {
       ],
       "indications": [
         "S-ABDOMINAL-TENDERNESS",
-        "S-MENTAL-SYMPTOMS"
+        "S-MENTAL-SYMPTOMS",
+        "S-ABDOMINAL-MASS",
+        "S-ABDOMINAL-DISTENSION",
+        "S-FORGETFULNESS",
+        "S-URINARY-FREQUENCY",
+        "S-THIRST"
       ],
       "formulaPattern": [
         "實證"
@@ -9740,7 +10996,7 @@ window.X4KbData = {
         "GAN-YINXU": 0.2,
         "XIN-YANGXU": 0,
         "XIN-XUEXU": 0,
-        "PI-QIXU": 0,
+        "PI-QIXU": 0.2,
         "PI-YANGXU": 0.1667,
         "FEI-QIXU": 0,
         "FEI-YINXU": 0,
@@ -9771,6 +11027,18 @@ window.X4KbData = {
           "id": "S-LOWER-ABDOMINAL-PAIN",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "大小便不通（跌打損傷瘀血不散，矢數道明書p.476）",
+          "id": "S-CONSTIPATION",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "肚腹膨脹，上攻心腹",
+          "id": "S-ABDOMINAL-DISTENSION",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -9793,7 +11061,9 @@ window.X4KbData = {
         "S-DIZZINESS",
         "S-HEADACHE",
         "S-LOWER-ABDOMINAL-PAIN",
-        "S-SHOULDER-STIFF"
+        "S-SHOULDER-STIFF",
+        "S-CONSTIPATION",
+        "S-ABDOMINAL-DISTENSION"
       ],
       "formulaPattern": [
         "實證"
@@ -9915,15 +11185,15 @@ window.X4KbData = {
       },
       "zangFuVector": {
         "GAN-QIYU": 0.4286,
-        "GAN-YINXU": 0,
+        "GAN-YINXU": 0.2,
         "XIN-YANGXU": 0,
-        "XIN-XUEXU": 0.4,
+        "XIN-XUEXU": 0.6,
         "PI-QIXU": 0,
         "PI-YANGXU": 0,
         "FEI-QIXU": 0,
         "FEI-YINXU": 0,
         "SHEN-YANGXU": 0,
-        "SHEN-YINXU": 0
+        "SHEN-YINXU": 0.1111
       },
       "keySymptoms": [
         {
@@ -9955,6 +11225,18 @@ window.X4KbData = {
           "id": "S-HOT-FLUSH",
           "negated": false,
           "fromIndications": true
+        },
+        {
+          "raw": "如狂、意識不清、胡言亂語（大塚敬節《漢方診療三十年》案256：產後瘀血上沖之證，傷寒論106條本方經典定義「其人如狂」，服藥後翌日意識即恢復清醒，2026-09-28）",
+          "id": "S-DELIRIUM",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "手足煩熱甚至難以忍受（大塚敬節《漢方診療三十年》案259：產後六年身體內部麻木不能早起，左髂骨窩少腹急結為本方經典腹證，服藥三週痊癒，2026-09-28）",
+          "id": "S-HEAT-SENSATION",
+          "negated": false,
+          "matchType": "physician-patch"
         },
         {
           "raw": "痛經",
@@ -10015,6 +11297,8 @@ window.X4KbData = {
         "S-ANXIETY",
         "S-CONSTIPATION",
         "S-HOT-FLUSH",
+        "S-DELIRIUM",
+        "S-HEAT-SENSATION",
         "S-DYSMENORRHEA",
         "S-HEADACHE",
         "S-INSOMNIA",
@@ -10169,6 +11453,26 @@ window.X4KbData = {
           "id": "S-ABDOMINAL-MASS",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "便秘（腸癰下法前提，現代臨床通識）",
+          "id": "S-CONSTIPATION",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "蟲垂炎疼痛局限於盲腸部而有發熱（醫典藥方解說）",
+          "id": "S-FEVER",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        },
+        {
+          "raw": "口渴（醫典藥方解說）",
+          "id": "S-THIRST",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [
@@ -10184,7 +11488,10 @@ window.X4KbData = {
       ],
       "indications": [
         "S-ABDOMINAL-MASS",
-        "S-ABDOMINAL-TENDERNESS"
+        "S-ABDOMINAL-TENDERNESS",
+        "S-CONSTIPATION",
+        "S-FEVER",
+        "S-THIRST"
       ],
       "formulaPattern": [
         "實證"
@@ -10567,6 +11874,24 @@ window.X4KbData = {
           "matchType": "physician-patch"
         },
         {
+          "raw": "瘀血型肥胖（下半身肥胖，女性多見，2026-09-10 醫師追問「就三個？」後補齊）",
+          "id": "S-OBESITY",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "更年期障礙（瘀血型：體力充實、月經不調、下肢瘀血徵象）",
+          "id": "S-MENOPAUSE",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "濕疹（瘀血型皮膚病常見表現，大塚鑑別battery鑑別徵象，2026-09-16）",
+          "id": "S-ECZEMA",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
           "raw": "下肢發冷",
           "id": "S-COLD",
           "negated": false,
@@ -10655,6 +11980,9 @@ window.X4KbData = {
         "S-ABDOMINAL-DISTENSION",
         "S-DARK-TONGUE",
         "S-ACNE",
+        "S-OBESITY",
+        "S-MENOPAUSE",
+        "S-ECZEMA",
         "S-COLD",
         "S-MENSTRUAL-IRREGULAR",
         "S-HOT-FLUSH",
@@ -10822,6 +12150,24 @@ window.X4KbData = {
           "fromIndications": true
         },
         {
+          "raw": "自律神經失調／更年期型肥胖（壓力性暴食、情緒不穩伴體重增加）",
+          "id": "S-OBESITY",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "更年期障礙（気逆型：體力中等、烘熱易怒、熱感上衝為主）",
+          "id": "S-MENOPAUSE",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "脫髮（毛髮脫落多、肝斑多者，大塚心靈地圖鑑別徵象，2026-09-16）",
+          "id": "S-HAIR-LOSS",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
           "raw": "胸脅苦滿",
           "id": "S-CHEST-RIB-FULLNESS",
           "negated": false,
@@ -10948,6 +12294,9 @@ window.X4KbData = {
         "S-FEVER",
         "S-HOT-FLUSH",
         "S-MENSTRUAL-IRREGULAR",
+        "S-OBESITY",
+        "S-MENOPAUSE",
+        "S-HAIR-LOSS",
         "S-CHEST-RIB-FULLNESS",
         "S-FATIGUE",
         "S-HEADACHE",
@@ -11067,8 +12416,8 @@ window.X4KbData = {
         "PI-YANGXU": 0.1667,
         "FEI-QIXU": 0,
         "FEI-YINXU": 0,
-        "SHEN-YANGXU": 0.2,
-        "SHEN-YINXU": 0
+        "SHEN-YANGXU": 0.3,
+        "SHEN-YINXU": 0.1111
       },
       "keySymptoms": [
         {
@@ -11118,6 +12467,19 @@ window.X4KbData = {
           "id": "S-DARK-TONGUE",
           "negated": false,
           "matchType": "physician-patch"
+        },
+        {
+          "raw": "下肢無力（萩野醫院#68行走困難/脊柱管狹窄症病案佐證，2026-09-16）",
+          "id": "S-WEAK-LOWER-LIMB",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "疼痛厲害，夜間全不能眠（醫典神經痛門）",
+          "id": "S-INSOMNIA",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         },
         {
           "raw": "腹部抵抗",
@@ -11172,6 +12534,8 @@ window.X4KbData = {
         "S-NUMBNESS",
         "S-LOW-BACK-PAIN",
         "S-DARK-TONGUE",
+        "S-WEAK-LOWER-LIMB",
+        "S-INSOMNIA",
         "S-ABDOMINAL-TENDERNESS",
         "S-EDEMA"
       ],
@@ -11260,6 +12624,13 @@ window.X4KbData = {
           "id": "S-HEMORRHOIDS",
           "negated": false,
           "fromIndications": true
+        },
+        {
+          "raw": "發冷",
+          "id": "S-COLD",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [
@@ -11280,7 +12651,8 @@ window.X4KbData = {
         "S-ABDOMINAL-TENDERNESS",
         "S-BLEEDING",
         "S-BLOOD-DEF",
-        "S-HEMORRHOIDS"
+        "S-HEMORRHOIDS",
+        "S-COLD"
       ],
       "formulaPattern": [
         "虛證",
@@ -11392,13 +12764,13 @@ window.X4KbData = {
       "zangFuVector": {
         "GAN-QIYU": 0,
         "GAN-YINXU": 0,
-        "XIN-YANGXU": 0,
+        "XIN-YANGXU": 0.5,
         "XIN-XUEXU": 0,
-        "PI-QIXU": 0,
-        "PI-YANGXU": 0.1667,
-        "FEI-QIXU": 0,
+        "PI-QIXU": 0.2,
+        "PI-YANGXU": 0.3333,
+        "FEI-QIXU": 0.2,
         "FEI-YINXU": 0,
-        "SHEN-YANGXU": 0,
+        "SHEN-YANGXU": 0.1,
         "SHEN-YINXU": 0
       },
       "keySymptoms": [
@@ -11413,6 +12785,36 @@ window.X4KbData = {
           "id": "S-ABDOMINAL-TENDERNESS",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "皮膚甲錯（腹部皮膚呈魚鱗狀）",
+          "id": "S-SKIN-SCALY",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "顏面蒼白",
+          "id": "S-PALE-COMPLEXION",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "無熱體力已衰、表現疲勞狀",
+          "id": "S-FATIGUE",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "稀薄之白帶下延久（醫典帶下門，2026-10-06）",
+          "id": "S-LEUCORRHEA",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "腰及足冷（醫典帶下門，2026-10-06）",
+          "id": "S-COLD",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -11426,7 +12828,12 @@ window.X4KbData = {
       ],
       "indications": [
         "S-ABDOMINAL-TENDERNESS",
-        "S-LOWER-ABDOMINAL-PAIN"
+        "S-LOWER-ABDOMINAL-PAIN",
+        "S-SKIN-SCALY",
+        "S-PALE-COMPLEXION",
+        "S-FATIGUE",
+        "S-LEUCORRHEA",
+        "S-COLD"
       ],
       "formulaPattern": [
         "虛證"
@@ -11565,7 +12972,7 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1429,
+        "GAN-QIYU": 0.2857,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0.25,
         "XIN-XUEXU": 0.4,
@@ -11588,6 +12995,33 @@ window.X4KbData = {
           "id": "S-PALPITATION",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "胸中堵塞不暢感",
+          "id": "S-CHEST-OPPRESSION",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "發作時亦會有劇烈之腹痛（醫典藥方解說）",
+          "id": "S-ABDOMINAL-PAIN",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        },
+        {
+          "raw": "奔豚：臍邊動悸向胸衝上（醫典嘔吐門）",
+          "id": "S-BENTUN",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        },
+        {
+          "raw": "動悸衝上而發作嘔吐（醫典嘔吐門）",
+          "id": "S-VOMITING",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [
@@ -11602,7 +13036,11 @@ window.X4KbData = {
       ],
       "indications": [
         "S-ANXIETY",
-        "S-PALPITATION"
+        "S-PALPITATION",
+        "S-CHEST-OPPRESSION",
+        "S-ABDOMINAL-PAIN",
+        "S-BENTUN",
+        "S-VOMITING"
       ],
       "formulaPattern": [
         "桂枝和甘草配伍"
@@ -11683,6 +13121,25 @@ window.X4KbData = {
           "id": "S-OLIGURIA",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "滲出性中耳炎、耳堵塞感（大塚敬節《漢方診療三十年》案323：右耳堵塞疼痛伴頭面轟熱、頭上蓋物感、兩下肢冷，服一天即諸症減輕；同案記載另一例滲出性中耳炎術後滲出液反覆瀦留，作者並稱至少三例以本方治愈，2026-10-04）",
+          "id": "S-OTITIS-MEDIA",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "頭冒、頭上如有物覆蓋之感（金匱要略痰飲咳嗽病篇本方條文「時復冒者」；大塚敬節《漢方診療三十年》案322：面部皮疹潮紅瘙癢灼熱，作者以「下肢發冷、頭上蓋物感、小便少」三問確認本方證，三天面部潮紅減輕瘙癢去大半，2026-10-04）",
+          "id": "S-HEAVY-HEAD",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "動悸（醫典藥方解說）",
+          "id": "S-PALPITATION",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [
@@ -11699,7 +13156,10 @@ window.X4KbData = {
         "S-COLD",
         "S-COUGH",
         "S-FACIAL-FLUSH",
-        "S-OLIGURIA"
+        "S-OLIGURIA",
+        "S-OTITIS-MEDIA",
+        "S-HEAVY-HEAD",
+        "S-PALPITATION"
       ],
       "formulaPattern": [
         "桂枝和甘草配伍"
@@ -11784,7 +13244,7 @@ window.X4KbData = {
       },
       "zangFuVector": {
         "GAN-QIYU": 0.1429,
-        "GAN-YINXU": 0,
+        "GAN-YINXU": 0.2,
         "XIN-YANGXU": 0.25,
         "XIN-XUEXU": 0.6,
         "PI-QIXU": 0,
@@ -11792,7 +13252,7 @@ window.X4KbData = {
         "FEI-QIXU": 0,
         "FEI-YINXU": 0,
         "SHEN-YANGXU": 0,
-        "SHEN-YINXU": 0
+        "SHEN-YINXU": 0.2222
       },
       "keySymptoms": [
         {
@@ -11812,6 +13272,31 @@ window.X4KbData = {
           "id": "S-PALPITATION",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "遺精（金匱要略血痺虛勞病篇「男子失精，女子夢交」本方最經典定義，2026-09-16）",
+          "id": "S-SPERMATORRHEA",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "眼睛疲勞（心靈地圖[眼睛障害→眼睛疲勞]分支鑑別徵象，2026-09-16）",
+          "id": "S-EYE-FATIGUE",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "脫髮（毛髮脫落多、上逆、頭皮多、疲勞者，大塚心靈地圖鑑別徵象，2026-09-16）",
+          "id": "S-HAIR-LOSS",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "易疲勞之虛弱患者（醫典藥方解說）",
+          "id": "S-FATIGUE",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [
@@ -11830,7 +13315,11 @@ window.X4KbData = {
       "indications": [
         "S-ANXIETY",
         "S-INSOMNIA",
-        "S-PALPITATION"
+        "S-PALPITATION",
+        "S-SPERMATORRHEA",
+        "S-EYE-FATIGUE",
+        "S-HAIR-LOSS",
+        "S-FATIGUE"
       ],
       "formulaPattern": [
         "桂枝和甘草配伍"
@@ -11967,6 +13456,12 @@ window.X4KbData = {
           "id": "S-ANXIETY",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "奔豚氣上沖",
+          "id": "S-BENTUN",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -11983,7 +13478,8 @@ window.X4KbData = {
       ],
       "indications": [
         "S-ANXIETY",
-        "S-PALPITATION"
+        "S-PALPITATION",
+        "S-BENTUN"
       ],
       "formulaPattern": [
         "其他類"
@@ -12089,6 +13585,13 @@ window.X4KbData = {
           "id": "S-EPIGASTRIC-PAIN",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "悸動（三十年案194/195）",
+          "id": "S-PALPITATION",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         },
         {
           "raw": "食慾不振",
@@ -12207,6 +13710,7 @@ window.X4KbData = {
         "S-DIARRHEA",
         "S-EPIGASTRIC-PAIN",
         "S-HEADACHE",
+        "S-PALPITATION",
         "S-APPETITE-LOW",
         "S-FATIGUE",
         "S-GASTRIC-SPLASH",
@@ -12300,6 +13804,13 @@ window.X4KbData = {
           "matchType": "exact"
         },
         {
+          "raw": "口臭（醫典藥方解說）",
+          "id": "S-HALITOSIS",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        },
+        {
           "raw": "食慾不振",
           "id": "S-APPETITE-LOW",
           "negated": false,
@@ -12389,6 +13900,7 @@ window.X4KbData = {
         "S-HOT-FLUSH",
         "S-NAUSEA",
         "S-VOMITING",
+        "S-HALITOSIS",
         "S-APPETITE-LOW",
         "S-EPIGASTRIC-RESISTANCE",
         "S-ABDOMINAL-PAIN",
@@ -12492,6 +14004,12 @@ window.X4KbData = {
           "matchType": "exact"
         },
         {
+          "raw": "食魚後引起之蕁麻疹（紫蘇葉解魚毒；醫典蕁麻疹門，2026-10-06）",
+          "id": "S-URTICARIA",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
           "raw": "惡寒",
           "id": "S-COLD",
           "negated": false,
@@ -12570,6 +14088,7 @@ window.X4KbData = {
         "S-FATIGUE",
         "S-HEADACHE",
         "S-NASAL-CONGESTION",
+        "S-URTICARIA",
         "S-COLD",
         "S-DEPRESSION",
         "S-FEVER",
@@ -12717,16 +14236,16 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.2857,
-        "GAN-YINXU": 0,
+        "GAN-QIYU": 0.4286,
+        "GAN-YINXU": 0.4,
         "XIN-YANGXU": 0.5,
-        "XIN-XUEXU": 0.4,
+        "XIN-XUEXU": 0.6,
         "PI-QIXU": 0,
         "PI-YANGXU": 0.1667,
         "FEI-QIXU": 0,
-        "FEI-YINXU": 0,
+        "FEI-YINXU": 0.2,
         "SHEN-YANGXU": 0.2,
-        "SHEN-YINXU": 0
+        "SHEN-YINXU": 0.3333
       },
       "keySymptoms": [
         {
@@ -12764,6 +14283,36 @@ window.X4KbData = {
           "id": "S-ABDOMINAL-TENDERNESS",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "血脈症／更年期障礙（大塚敬節書首選：頭昏眼花重、耳鳴迷昏、脊背如火烤盜汗）",
+          "id": "S-MENOPAUSE",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "頭昏眼花重（血脈症定義三聯之一）",
+          "id": "S-DIZZINESS",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "耳鳴迷昏（血脈症定義三聯之一）",
+          "id": "S-TINNITUS",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "脊背如火烤感、盜汗（血脈症定義三聯之一）",
+          "id": "S-NIGHT-SWEAT",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "上衝烘熱兼下肢冷（血脈症上熱下寒古典核心）",
+          "id": "S-UPPER-HOT-LOWER-COLD",
+          "negated": false,
+          "matchType": "physician-patch"
         },
         {
           "raw": "月經異常",
@@ -12832,6 +14381,11 @@ window.X4KbData = {
         "S-HOT-FLUSH",
         "S-INSOMNIA",
         "S-LOW-BACK-PAIN",
+        "S-MENOPAUSE",
+        "S-DIZZINESS",
+        "S-TINNITUS",
+        "S-NIGHT-SWEAT",
+        "S-UPPER-HOT-LOWER-COLD",
         "S-MENSTRUAL-IRREGULAR",
         "S-HEADACHE",
         "S-PALPITATION",
@@ -12905,16 +14459,16 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.2857,
-        "GAN-YINXU": 0,
-        "XIN-YANGXU": 0.25,
-        "XIN-XUEXU": 0.2,
+        "GAN-QIYU": 0.4286,
+        "GAN-YINXU": 0.2,
+        "XIN-YANGXU": 0.5,
+        "XIN-XUEXU": 0.4,
         "PI-QIXU": 0.4,
         "PI-YANGXU": 0,
         "FEI-QIXU": 0.6,
         "FEI-YINXU": 0.2,
         "SHEN-YANGXU": 0,
-        "SHEN-YINXU": 0
+        "SHEN-YINXU": 0.1111
       },
       "keySymptoms": [
         {
@@ -12934,6 +14488,24 @@ window.X4KbData = {
           "id": "S-ABDOMINAL-DISTENSION",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "心悸亢進（神經性，不伴不安感）",
+          "id": "S-PALPITATION",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "更年期障礙（咽喉異物感、胸悶不安型，大塚敬節書第21章）",
+          "id": "S-MENOPAUSE",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "眩暈（大塚鑑別battery[目眩→半夏厚朴湯]鑑別徵象，2026-09-16）",
+          "id": "S-DIZZINESS",
+          "negated": false,
+          "matchType": "physician-patch"
         },
         {
           "raw": "精神不安",
@@ -13032,6 +14604,9 @@ window.X4KbData = {
         "S-ABDOMINAL-DISTENSION",
         "S-FATIGUE",
         "S-THROAT-BLOCK",
+        "S-PALPITATION",
+        "S-MENOPAUSE",
+        "S-DIZZINESS",
         "S-ANXIETY",
         "S-ASTHMA-WHEEZE",
         "S-PALE-COMPLEXION",
@@ -13094,8 +14669,8 @@ window.X4KbData = {
         "XIN-XUEXU": 0,
         "PI-QIXU": 0,
         "PI-YANGXU": 0,
-        "FEI-QIXU": 0,
-        "FEI-YINXU": 0.2,
+        "FEI-QIXU": 0.4,
+        "FEI-YINXU": 0.4,
         "SHEN-YANGXU": 0,
         "SHEN-YINXU": 0
       },
@@ -13123,6 +14698,18 @@ window.X4KbData = {
           "id": "S-CHEST-OPPRESSION",
           "negated": false,
           "fromIndications": true
+        },
+        {
+          "raw": "喘息、呼吸困難（醫典氣管支喘息門，2026-10-06）",
+          "id": "S-ASTHMA-WHEEZE",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "喘息發作兼咳嗽（醫典氣管支喘息門病例，2026-10-06）",
+          "id": "S-COUGH",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [],
@@ -13136,7 +14723,9 @@ window.X4KbData = {
       "indications": [
         "S-BITTER-TASTE",
         "S-CHEST-OPPRESSION",
-        "S-FEVER"
+        "S-FEVER",
+        "S-ASTHMA-WHEEZE",
+        "S-COUGH"
       ],
       "formulaPattern": [
         "半夏厚朴湯類"
@@ -13274,8 +14863,8 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.4286,
-        "GAN-YINXU": 0,
+        "GAN-QIYU": 0.5714,
+        "GAN-YINXU": 0.2,
         "XIN-YANGXU": 0.25,
         "XIN-XUEXU": 0.6,
         "PI-QIXU": 0,
@@ -13283,7 +14872,7 @@ window.X4KbData = {
         "FEI-QIXU": 0,
         "FEI-YINXU": 0,
         "SHEN-YANGXU": 0,
-        "SHEN-YINXU": 0
+        "SHEN-YINXU": 0.1111
       },
       "keySymptoms": [
         {
@@ -13321,6 +14910,30 @@ window.X4KbData = {
           "id": "S-CHEST-OPPRESSION",
           "negated": false,
           "fromIndications": true
+        },
+        {
+          "raw": "更年期障礙（體胖便秘、神經症狀明顯者，大塚敬節書第21章）",
+          "id": "S-MENOPAUSE",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "眩暈（矢數問診篇鑑別徵象，本方治神經症常見伴隨症狀，2026-09-16）",
+          "id": "S-DIZZINESS",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "脫髮（圓形脫毛症神經質病患，大塚心靈地圖鑑別徵象，2026-09-16）",
+          "id": "S-HAIR-LOSS",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "帶下（大塚敬節《漢方診療三十年》案100：肥胖婦人胃脘沉重胸部痞悶燒心肩凝眩暈便秘，因大柴胡湯與本方難以取捨改投本方，患者主動回報「帶下止住了」，此前未曾告知帶下病情，後續又驗證2-3例，2026-09-28）",
+          "id": "S-LEUCORRHEA",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -13345,7 +14958,11 @@ window.X4KbData = {
         "S-CHEST-OPPRESSION",
         "S-DEPRESSION",
         "S-INSOMNIA",
-        "S-PALPITATION"
+        "S-PALPITATION",
+        "S-MENOPAUSE",
+        "S-DIZZINESS",
+        "S-HAIR-LOSS",
+        "S-LEUCORRHEA"
       ],
       "formulaPattern": [
         "其他"
@@ -13389,8 +15006,8 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.2857,
-        "GAN-YINXU": 0.2,
+        "GAN-QIYU": 0.4286,
+        "GAN-YINXU": 0.4,
         "XIN-YANGXU": 0,
         "XIN-XUEXU": 0.6,
         "PI-QIXU": 0,
@@ -13398,7 +15015,7 @@ window.X4KbData = {
         "FEI-QIXU": 0,
         "FEI-YINXU": 0,
         "SHEN-YANGXU": 0,
-        "SHEN-YINXU": 0.1111
+        "SHEN-YINXU": 0.2222
       },
       "keySymptoms": [
         {
@@ -13436,6 +15053,48 @@ window.X4KbData = {
           "id": "S-HEAT-SENSATION",
           "negated": false,
           "fromIndications": true
+        },
+        {
+          "raw": "更年期障礙（頭部充血、失眠煩躁、無明顯胸脅苦滿者）",
+          "id": "S-MENOPAUSE",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "眩暈（頭部充血型熱証伴隨症狀，2026-09-16）",
+          "id": "S-DIZZINESS",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "唾液粘稠、常覺得口臭（心靈地圖[唾液流涎異常→熱]分支，或由口內炎引起、臉色紅而有脈浮傾向，2026-09-16）",
+          "id": "S-EXCESS-SALIVA",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "結膜充血、出血（心靈地圖[眼睛障害→結膜充血、出血]分支，急性熱證基本方，2026-09-16）",
+          "id": "S-CONJUNCTIVAL-CONGESTION",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "病理性發笑、情緒失禁（大塚敬節《漢方診療三十年》案147「俗稱的笑中風」，作者原文明言以此為治療指征，2026-09-28）",
+          "id": "S-PATHOLOGICAL-LAUGHTER",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "口腔潰瘍、習慣性口腔炎反覆發作（大塚敬節《漢方診療三十年》案149，作者並提及眼口生殖器三聯綜合征之口腔潰瘍，2026-09-28）",
+          "id": "S-HEAT-TOXIN",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "口臭（心靈地圖[唾液流涎異常→熱]分支，2026-10-06）",
+          "id": "S-HALITOSIS",
+          "negated": false,
+          "matchType": "physician-patch"
         },
         {
           "raw": "心窩部膨滿感",
@@ -13517,6 +15176,13 @@ window.X4KbData = {
         "S-FACIAL-FLUSH",
         "S-HEAT-SENSATION",
         "S-HOT-FLUSH",
+        "S-MENOPAUSE",
+        "S-DIZZINESS",
+        "S-EXCESS-SALIVA",
+        "S-CONJUNCTIVAL-CONGESTION",
+        "S-PATHOLOGICAL-LAUGHTER",
+        "S-HEAT-TOXIN",
+        "S-HALITOSIS",
         "S-EPIGASTRIC-RESISTANCE",
         "S-BLEEDING",
         "S-DERMATITIS",
@@ -13636,6 +15302,30 @@ window.X4KbData = {
           "matchType": "physician-patch"
         },
         {
+          "raw": "鼻塞（現代臨床通識，感冒兼鼻炎常用方，2026-09-16）",
+          "id": "S-NASAL-CONGESTION",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "麥粒腫（心靈地圖[眼睛障害→麥粒腫]分支：炎症有熱時／化膿時，葛根湯為基本方，2026-09-16）",
+          "id": "S-STYE",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "耳流膿、中耳炎急性期（大塚敬節《漢方診療三十年》案55：感冒轉中耳炎急性期，葛根湯為常用方，2026-09-28）",
+          "id": "S-EAR-DISCHARGE",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "顏面神經麻痺（大塚敬節《漢方診療三十年》案58：左眼不能閉合、口角歪斜，脈浮大頸部強硬，5天好轉九成、續服5天痊癒，2026-09-28）",
+          "id": "S-FACIAL-PALSY",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
           "raw": "無自然汗出",
           "id": "S-SPONTANEOUS-SWEAT",
           "negated": true,
@@ -13701,6 +15391,10 @@ window.X4KbData = {
         "S-HEAVY-HEAD",
         "S-SHOULDER-STIFF",
         "S-NO-SWEAT",
+        "S-NASAL-CONGESTION",
+        "S-STYE",
+        "S-EAR-DISCHARGE",
+        "S-FACIAL-PALSY",
         "S-COLD",
         "S-FEVER",
         "S-HEADACHE",
@@ -13799,6 +15493,19 @@ window.X4KbData = {
           "id": "S-PALPITATION",
           "negated": false,
           "matchType": "contains"
+        },
+        {
+          "raw": "皮膚枯燥（書載目標主症，2026-09-28）",
+          "id": "S-SKIN-DRY",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "貧血（醫典藥方解說）",
+          "id": "S-BLOOD-DEF",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [
@@ -13813,7 +15520,9 @@ window.X4KbData = {
       ],
       "indications": [
         "S-FATIGUE",
-        "S-PALPITATION"
+        "S-PALPITATION",
+        "S-SKIN-DRY",
+        "S-BLOOD-DEF"
       ],
       "formulaPattern": [
         "補血"
@@ -14058,6 +15767,24 @@ window.X4KbData = {
           "matchType": "contains"
         },
         {
+          "raw": "上熱下寒（黃連解毒湯合四物湯清上溫下，矢數問診篇鑑別徵象，2026-09-16）",
+          "id": "S-UPPER-HOT-LOWER-COLD",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "眼底出血（心靈地圖[眼睛障害→眼底出血]分支：主要是動脈硬化，2026-09-16）",
+          "id": "S-FUNDUS-HEMORRHAGE",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "結膜充血、出血（心靈地圖[眼睛障害→結膜充血、出血]分支：長期服用時，較黃連解毒湯緩和養血，2026-09-16）",
+          "id": "S-CONJUNCTIVAL-CONGESTION",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
           "raw": "神經過敏",
           "id": "S-ANXIETY",
           "negated": false,
@@ -14177,6 +15904,9 @@ window.X4KbData = {
         "S-DERMATITIS",
         "S-ECZEMA",
         "S-MENSTRUAL-IRREGULAR",
+        "S-UPPER-HOT-LOWER-COLD",
+        "S-FUNDUS-HEMORRHAGE",
+        "S-CONJUNCTIVAL-CONGESTION",
         "S-ANXIETY",
         "S-BLEEDING",
         "S-HEAT-SENSATION",
@@ -14285,7 +16015,7 @@ window.X4KbData = {
       },
       "zangFuVector": {
         "GAN-QIYU": 0.1429,
-        "GAN-YINXU": 0.2,
+        "GAN-YINXU": 0.4,
         "XIN-YANGXU": 0,
         "XIN-XUEXU": 0,
         "PI-QIXU": 0,
@@ -14293,7 +16023,7 @@ window.X4KbData = {
         "FEI-QIXU": 0,
         "FEI-YINXU": 0,
         "SHEN-YANGXU": 0,
-        "SHEN-YINXU": 0.1111
+        "SHEN-YINXU": 0.2222
       },
       "keySymptoms": [
         {
@@ -14319,6 +16049,12 @@ window.X4KbData = {
           "id": "S-DIZZINESS",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "眼睛疲勞（無明顯胃腸虛弱者，鑑別於鉤藤散，《漢方臨床診療學》p.281）",
+          "id": "S-EYE-FATIGUE",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -14336,7 +16072,8 @@ window.X4KbData = {
         "S-DIZZINESS",
         "S-HEAVY-HEAD",
         "S-HYPERTENSION",
-        "S-SHOULDER-STIFF"
+        "S-SHOULDER-STIFF",
+        "S-EYE-FATIGUE"
       ],
       "formulaPattern": [
         "補血理氣"
@@ -14493,6 +16230,20 @@ window.X4KbData = {
           "matchType": "physician-patch"
         },
         {
+          "raw": "急性慢性中耳炎（醫典藥方解說）",
+          "id": "S-OTITIS-MEDIA",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        },
+        {
+          "raw": "蓄膿症、上顎洞化膿（醫典藥方解說）",
+          "id": "S-PURULENT-NASAL",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        },
+        {
           "raw": "發熱",
           "id": "S-FEVER",
           "negated": false,
@@ -14531,6 +16282,8 @@ window.X4KbData = {
         "S-HAND-FOOT-SWEAT",
         "S-HEAT-TOXIN",
         "S-ACNE",
+        "S-OTITIS-MEDIA",
+        "S-PURULENT-NASAL",
         "S-FEVER"
       ],
       "formulaPattern": [
@@ -14601,6 +16354,12 @@ window.X4KbData = {
           "matchType": "exact"
         },
         {
+          "raw": "觸之有糞塊",
+          "id": "S-ABDOMINAL-MASS",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
           "raw": "皮膚乾燥",
           "id": "S-SKIN-DRY",
           "negated": false,
@@ -14630,6 +16389,7 @@ window.X4KbData = {
       "indications": [
         "S-CONSTIPATION",
         "S-DEHYDRATION",
+        "S-ABDOMINAL-MASS",
         "S-SKIN-DRY"
       ],
       "formulaPattern": [
@@ -14669,15 +16429,15 @@ window.X4KbData = {
       },
       "zangFuVector": {
         "GAN-QIYU": 0,
-        "GAN-YINXU": 0,
+        "GAN-YINXU": 0.2,
         "XIN-YANGXU": 0.5,
         "XIN-XUEXU": 0.2,
         "PI-QIXU": 0.4,
         "PI-YANGXU": 0.1667,
         "FEI-QIXU": 0.2,
-        "FEI-YINXU": 0.2,
+        "FEI-YINXU": 0.4,
         "SHEN-YANGXU": 0.1,
-        "SHEN-YINXU": 0.1111
+        "SHEN-YINXU": 0.2222
       },
       "keySymptoms": [
         {
@@ -14721,6 +16481,18 @@ window.X4KbData = {
           "id": "S-APPETITE-LOW",
           "negated": false,
           "matchType": "physician-patch"
+        },
+        {
+          "raw": "口乾（矢數問診篇[口渴→十全大補湯]鑑別徵象，氣血兩虛津虧，2026-09-16）",
+          "id": "S-DRY-MOUTH",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "化膿（心靈地圖[化膿症→骨疽瘍等續發性膿瘍]氣血兩虛型化膿，2026-09-16）",
+          "id": "S-PUS",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -14747,7 +16519,9 @@ window.X4KbData = {
         "S-NIGHT-SWEAT",
         "S-SKIN-DRY",
         "S-PALE-TONGUE",
-        "S-APPETITE-LOW"
+        "S-APPETITE-LOW",
+        "S-DRY-MOUTH",
+        "S-PUS"
       ],
       "formulaPattern": [
         "氣血雙補",
@@ -14902,6 +16676,19 @@ window.X4KbData = {
           "fromIndications": true
         },
         {
+          "raw": "脾臟腫大、肝臟腫大（大塚敬節《漢方診療三十年》案315：六歲男孩嚴重貧血伴脾於臍下可觸及、肝至肋弓下二橫指，服歸脾湯兩個月後脾臟縮小一半、肝臟不再觸及，2026-10-03）",
+          "id": "S-SPLENOMEGALY",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "心悸亢進（醫典藥方解說）",
+          "id": "S-PALPITATION",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        },
+        {
           "raw": "食慾不振",
           "id": "S-APPETITE-LOW",
           "negated": false,
@@ -14983,6 +16770,8 @@ window.X4KbData = {
         "S-INSOMNIA",
         "S-PALE-COMPLEXION",
         "S-SUBCUTANEOUS-BLEEDING",
+        "S-SPLENOMEGALY",
+        "S-PALPITATION",
         "S-APPETITE-LOW",
         "S-FATIGUE",
         "S-FEVER",
@@ -15279,6 +17068,20 @@ window.X4KbData = {
           "id": "S-FATIGUE",
           "negated": false,
           "fromIndications": true
+        },
+        {
+          "raw": "日常手足易冷（醫典藥方解說）",
+          "id": "S-COLD",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        },
+        {
+          "raw": "呈貧血（醫典藥方解說）",
+          "id": "S-PALE-COMPLEXION",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [
@@ -15302,7 +17105,9 @@ window.X4KbData = {
         "S-FATIGUE",
         "S-GASTRIC-SPLASH",
         "S-NAUSEA",
-        "S-VOMITING"
+        "S-VOMITING",
+        "S-COLD",
+        "S-PALE-COMPLEXION"
       ],
       "formulaPattern": [
         "人參湯類",
@@ -15441,6 +17246,20 @@ window.X4KbData = {
           "id": "S-CHEST-OPPRESSION",
           "negated": false,
           "fromIndications": true
+        },
+        {
+          "raw": "易汗出兼盜汗（三十年案275）",
+          "id": "S-NIGHT-SWEAT",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        },
+        {
+          "raw": "脫肛（矢數正篇135 中氣下陷）",
+          "id": "S-RECTAL-PROLAPSE",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [
@@ -15463,7 +17282,9 @@ window.X4KbData = {
         "S-APPETITE-LOW",
         "S-CHEST-OPPRESSION",
         "S-FATIGUE",
-        "S-FEVER"
+        "S-FEVER",
+        "S-NIGHT-SWEAT",
+        "S-RECTAL-PROLAPSE"
       ],
       "formulaPattern": [
         "人參湯類"
@@ -15634,6 +17455,13 @@ window.X4KbData = {
           "id": "S-FEVER",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "自然汗出（暑傷氣津）",
+          "id": "S-SPONTANEOUS-SWEAT",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [
@@ -15661,7 +17489,8 @@ window.X4KbData = {
         "S-APPETITE-LOW",
         "S-DIARRHEA",
         "S-FEVER",
-        "S-SUMMER-HEAT"
+        "S-SUMMER-HEAT",
+        "S-SPONTANEOUS-SWEAT"
       ],
       "formulaPattern": [
         "人參湯類"
@@ -15980,6 +17809,24 @@ window.X4KbData = {
           "matchType": "exact"
         },
         {
+          "raw": "夜尿症、日間亦遺尿（醫典夜尿症門）",
+          "id": "S-ENURESIS",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "黃疸（金匱要略黃疸病篇「男子黃，小便自利者，當與虛勞小建中湯」，2026-09-16）",
+          "id": "S-JAUNDICE",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "多尿（大塚敬節《漢方診療三十年》案15：少女遺尿症，小便次數多且每次尿量亦多、口渴多飲、冬天手足發涼之虛勞體質，2026-09-28）",
+          "id": "S-POLYURIA",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
           "raw": "神經過敏",
           "id": "S-ANXIETY",
           "negated": false,
@@ -16079,6 +17926,9 @@ window.X4KbData = {
         "S-MUSCLE-SPASM",
         "S-PALE-COMPLEXION",
         "S-PERIUMBILICAL-PAIN",
+        "S-ENURESIS",
+        "S-JAUNDICE",
+        "S-POLYURIA",
         "S-ANXIETY",
         "S-ABDOMINAL-PAIN",
         "S-BLEEDING",
@@ -16218,6 +18068,12 @@ window.X4KbData = {
           "fromIndications": true
         },
         {
+          "raw": "頸部淋巴結腫大、瘰癧（大塚敬節《漢方診療三十年》案23，2026-09-28）",
+          "id": "S-NECK-MASS",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
           "raw": "氣短",
           "id": "S-ASTHMA-WHEEZE",
           "negated": false,
@@ -16259,6 +18115,7 @@ window.X4KbData = {
         "S-MUSCLE-SPASM",
         "S-NIGHT-SWEAT",
         "S-PERIUMBILICAL-PAIN",
+        "S-NECK-MASS",
         "S-ASTHMA-WHEEZE",
         "S-PUS"
       ],
@@ -16324,7 +18181,7 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0.5,
         "XIN-XUEXU": 0,
@@ -16353,6 +18210,24 @@ window.X4KbData = {
           "id": "S-BLEEDING",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "痛經（大塚敬節《漢方診療三十年》案26：產後痛經，桂枝茯苓丸無效後改本方見效；案27：週期性大腸炎瘀血為病因，2026-09-28）",
+          "id": "S-DYSMENORRHEA",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "帶下（大塚敬節《漢方診療三十年》案28：人工流產後盆腔腹膜炎，血塊帶下，加味逍遙散/當歸芍藥散/腎氣丸皆無效，改本方4週痊癒，作者自註「對於盆腔腹膜炎，使用當歸建中湯的時候為多」，2026-09-28）",
+          "id": "S-LEUCORRHEA",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "脫肛疼痛激烈（虛證貧血；醫典肛門脫出門／痔核門，2026-10-06）",
+          "id": "S-RECTAL-PROLAPSE",
+          "negated": false,
+          "matchType": "physician-patch"
         },
         {
           "raw": "兩側腹直肌緊張",
@@ -16413,6 +18288,9 @@ window.X4KbData = {
         "S-ABDOMINAL-PAIN",
         "S-BLEEDING",
         "S-COLD",
+        "S-DYSMENORRHEA",
+        "S-LEUCORRHEA",
+        "S-RECTAL-PROLAPSE",
         "S-MUSCLE-SPASM",
         "S-FATIGUE",
         "S-PALE-COMPLEXION",
@@ -16486,7 +18364,7 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.2857,
+        "GAN-QIYU": 0.4286,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0.25,
         "XIN-XUEXU": 0.4,
@@ -16521,6 +18399,19 @@ window.X4KbData = {
           "id": "S-PALPITATION",
           "negated": false,
           "matchType": "physician-patch"
+        },
+        {
+          "raw": "頭痛（易怒/神經過敏合併頭痛兼證，大塚/矢數決策樹鑑別徵象，2026-09-16）",
+          "id": "S-HEADACHE",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "興奮而不眠（醫典藥方解說）",
+          "id": "S-INSOMNIA",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [
@@ -16540,7 +18431,9 @@ window.X4KbData = {
         "S-ANXIETY",
         "S-IRRITABILITY",
         "S-MUSCLE-SPASM",
-        "S-PALPITATION"
+        "S-PALPITATION",
+        "S-HEADACHE",
+        "S-INSOMNIA"
       ],
       "formulaPattern": [
         "肝陽病態性亢進狀態"
@@ -16565,8 +18458,8 @@ window.X4KbData = {
       "zangFuVector": {
         "GAN-QIYU": 0,
         "GAN-YINXU": 0,
-        "XIN-YANGXU": 0.25,
-        "XIN-XUEXU": 0,
+        "XIN-YANGXU": 0.5,
+        "XIN-XUEXU": 0.2,
         "PI-QIXU": 0.2,
         "PI-YANGXU": 0,
         "FEI-QIXU": 0.2,
@@ -16586,6 +18479,12 @@ window.X4KbData = {
           "id": "S-GASTRIC-SPLASH",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "臍左側至心窩黃瓜狀悸動（大塚敬節《漢方診療三十年》案125，書上明言為本方典型腹證，2026-09-28）",
+          "id": "S-PALPITATION",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -16605,7 +18504,8 @@ window.X4KbData = {
       ],
       "indications": [
         "S-FATIGUE",
-        "S-GASTRIC-SPLASH"
+        "S-GASTRIC-SPLASH",
+        "S-PALPITATION"
       ],
       "formulaPattern": [
         "(陽氣 ↑↑ / 陰液 )"
@@ -16755,6 +18655,18 @@ window.X4KbData = {
           "matchType": "exact"
         },
         {
+          "raw": "肩凝（高血壓證候）",
+          "id": "S-SHOULDER-STIFF",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "綠內障（心靈地圖[眼睛障害→綠內障]分支：頭痛，眼壓不正常，原書作「鉤藤飲」，2026-09-16）",
+          "id": "S-GLAUCOMA",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
           "raw": "頭重感",
           "id": "S-HEAVY-HEAD",
           "negated": false,
@@ -16830,6 +18742,8 @@ window.X4KbData = {
         "S-FORGETFULNESS",
         "S-HEADACHE",
         "S-HYPERTENSION",
+        "S-SHOULDER-STIFF",
+        "S-GLAUCOMA",
         "S-HEAVY-HEAD",
         "S-HOT-FLUSH",
         "S-INSOMNIA",
@@ -16924,6 +18838,13 @@ window.X4KbData = {
           "id": "S-CHEST-OPPRESSION",
           "negated": false,
           "fromIndications": true
+        },
+        {
+          "raw": "頸部淋巴腺腫（醫典藥方解說）",
+          "id": "S-NECK-MASS",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [],
@@ -16936,7 +18857,8 @@ window.X4KbData = {
         "S-FACIAL-FLUSH",
         "S-HEADACHE",
         "S-HEAT-TOXIN",
-        "S-SORE-THROAT"
+        "S-SORE-THROAT",
+        "S-NECK-MASS"
       ],
       "formulaPattern": [
         "(陽氣 ↑↑ / 陰液 )"
@@ -17157,6 +19079,13 @@ window.X4KbData = {
           "id": "S-NIGHT-CRYING",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "急迫性之筋肉攣急、腎石膽石之疝痛（醫典藥方解說）",
+          "id": "S-ABDOMINAL-PAIN",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [
@@ -17169,7 +19098,8 @@ window.X4KbData = {
       ],
       "indications": [
         "S-MUSCLE-SPASM",
-        "S-NIGHT-CRYING"
+        "S-NIGHT-CRYING",
+        "S-ABDOMINAL-PAIN"
       ],
       "formulaPattern": [
         "陽氣  / 陰液 ↓"
@@ -17241,8 +19171,8 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.2857,
-        "GAN-YINXU": 0.4,
+        "GAN-QIYU": 0.4286,
+        "GAN-YINXU": 0.6,
         "XIN-YANGXU": 0,
         "XIN-XUEXU": 0.6,
         "PI-QIXU": 0,
@@ -17250,7 +19180,7 @@ window.X4KbData = {
         "FEI-QIXU": 0,
         "FEI-YINXU": 0,
         "SHEN-YANGXU": 0,
-        "SHEN-YINXU": 0.2222
+        "SHEN-YINXU": 0.3333
       },
       "keySymptoms": [
         {
@@ -17288,6 +19218,24 @@ window.X4KbData = {
           "id": "S-HEAT-SENSATION",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "更年期障礙（頭部充血、便秘傾向、心情焦躁失眠）",
+          "id": "S-MENOPAUSE",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "眩暈（頭部充血型熱証伴隨症狀，2026-09-16）",
+          "id": "S-DIZZINESS",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "結膜充血、出血（心靈地圖[眼睛障害→結膜充血、出血]分支，急性熱證基本方，2026-09-16）",
+          "id": "S-CONJUNCTIVAL-CONGESTION",
+          "negated": false,
+          "matchType": "physician-patch"
         },
         {
           "raw": "頭痛",
@@ -17357,6 +19305,9 @@ window.X4KbData = {
         "S-EPIGASTRIC-RESISTANCE",
         "S-FACIAL-FLUSH",
         "S-HEAT-SENSATION",
+        "S-MENOPAUSE",
+        "S-DIZZINESS",
+        "S-CONJUNCTIVAL-CONGESTION",
         "S-HEADACHE",
         "S-HOT-FLUSH",
         "S-INSOMNIA",
@@ -17577,8 +19528,8 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1429,
-        "GAN-YINXU": 0,
+        "GAN-QIYU": 0.2857,
+        "GAN-YINXU": 0.2,
         "XIN-YANGXU": 0,
         "XIN-XUEXU": 0.2,
         "PI-QIXU": 0.2,
@@ -17586,7 +19537,7 @@ window.X4KbData = {
         "FEI-QIXU": 0,
         "FEI-YINXU": 0,
         "SHEN-YANGXU": 0,
-        "SHEN-YINXU": 0
+        "SHEN-YINXU": 0.1111
       },
       "keySymptoms": [
         {
@@ -17624,6 +19575,18 @@ window.X4KbData = {
           "id": "S-EPIGASTRIC-RESISTANCE",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "噯氣（現代臨床通識，萩野醫院#61病案佐證）",
+          "id": "S-BELCHING",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "眩暈（矢數問診篇[眩暈→半夏瀉心湯]鑑別徵象，2026-09-16）",
+          "id": "S-DIZZINESS",
+          "negated": false,
+          "matchType": "physician-patch"
         },
         {
           "raw": "食慾不振",
@@ -17677,6 +19640,8 @@ window.X4KbData = {
         "S-EPIGASTRIC-RESISTANCE",
         "S-NAUSEA",
         "S-VOMITING",
+        "S-BELCHING",
+        "S-DIZZINESS",
         "S-APPETITE-LOW",
         "S-EPIGASTRIC-PAIN",
         "S-ABDOMINAL-PAIN"
@@ -17812,6 +19777,13 @@ window.X4KbData = {
           "id": "S-EPIGASTRIC-RESISTANCE",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "腹中雷鳴（傷寒論158條，與心下痞硬、下利同條）",
+          "id": "S-BORBORIGMUS",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [
@@ -17833,7 +19805,8 @@ window.X4KbData = {
         "S-DIARRHEA",
         "S-EPIGASTRIC-RESISTANCE",
         "S-NAUSEA",
-        "S-VOMITING"
+        "S-VOMITING",
+        "S-BORBORIGMUS"
       ],
       "formulaPattern": [
         "陽氣實 / 陰液實"
@@ -17956,6 +19929,12 @@ window.X4KbData = {
           "matchType": "exact"
         },
         {
+          "raw": "慢性白帶下如米泔、胃腸虛弱體質虛寒（醫典帶下門，2026-10-06）",
+          "id": "S-LEUCORRHEA",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
           "raw": "尿不盡",
           "id": "S-URINARY-INCOMPLETE",
           "negated": false,
@@ -18037,6 +20016,7 @@ window.X4KbData = {
         "S-DEPRESSION",
         "S-FATIGUE",
         "S-LOWER-URINARY-NEUROSIS",
+        "S-LEUCORRHEA",
         "S-URINARY-INCOMPLETE",
         "S-URINARY-PAIN",
         "S-URINARY-FREQUENCY",
@@ -18084,8 +20064,8 @@ window.X4KbData = {
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0.1429,
-        "GAN-YINXU": 0.2,
+        "GAN-QIYU": 0.2857,
+        "GAN-YINXU": 0.4,
         "XIN-YANGXU": 0.25,
         "XIN-XUEXU": 0.4,
         "PI-QIXU": 0.4,
@@ -18093,7 +20073,7 @@ window.X4KbData = {
         "FEI-QIXU": 0.4,
         "FEI-YINXU": 0.6,
         "SHEN-YANGXU": 0,
-        "SHEN-YINXU": 0.1111
+        "SHEN-YINXU": 0.2222
       },
       "keySymptoms": [
         {
@@ -18131,6 +20111,12 @@ window.X4KbData = {
           "id": "S-SLEEPINESS",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "眩暈（身心疲勞不能入睡的伴隨徵象，《漢方臨床診療學》p.321）",
+          "id": "S-DIZZINESS",
+          "negated": false,
+          "matchType": "physician-patch"
         },
         {
           "raw": "精神不安",
@@ -18192,6 +20178,7 @@ window.X4KbData = {
         "S-FEVER",
         "S-INSOMNIA",
         "S-SLEEPINESS",
+        "S-DIZZINESS",
         "S-ANXIETY",
         "S-ABDOMINAL-WEAKNESS",
         "S-SKIN-DRY",
@@ -18340,6 +20327,12 @@ window.X4KbData = {
           "fromIndications": true
         },
         {
+          "raw": "顏面皮疹小、隆起不明顯、色帶紅、乾燥（大塚敬節《漢方診療三十年》案349：作者妻顏面頑固皮膚病，大柴胡湯加石膏/大黃牡丹湯加薏苡仁/桂枝茯苓丸/黃連解毒湯百日無效，改投本方一次發紅即淡、一月痊癒，作者後以本方治愈多例婦人顏面皮膚病，並明言上述為本方指征，2026-10-04）",
+          "id": "S-DERMATITIS",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
           "raw": "瘙癢",
           "id": "S-PRURITUS",
           "negated": false,
@@ -18368,6 +20361,7 @@ window.X4KbData = {
         "S-INSOMNIA",
         "S-PALPITATION",
         "S-SKIN-DRY",
+        "S-DERMATITIS",
         "S-PRURITUS"
       ],
       "formulaPattern": [
@@ -18463,7 +20457,7 @@ window.X4KbData = {
         "FEI-QIXU": 0.4,
         "FEI-YINXU": 0.2,
         "SHEN-YANGXU": 0,
-        "SHEN-YINXU": 0.1111
+        "SHEN-YINXU": 0.2222
       },
       "keySymptoms": [
         {
@@ -18501,6 +20495,19 @@ window.X4KbData = {
           "id": "S-FATIGUE",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "口渴（大塚鑑別battery[口渴→炙甘草湯]鑑別徵象，2026-09-16）",
+          "id": "S-THIRST",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "手足煩熱（醫典藥方解說）",
+          "id": "S-HEAT-SENSATION",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [
@@ -18524,7 +20531,9 @@ window.X4KbData = {
         "S-FATIGUE",
         "S-PALPITATION",
         "S-PULSE-IRREGULAR",
-        "S-SKIN-DRY"
+        "S-SKIN-DRY",
+        "S-THIRST",
+        "S-HEAT-SENSATION"
       ],
       "formulaPattern": [
         "陽氣虛 / 陰液虛"
@@ -18681,6 +20690,13 @@ window.X4KbData = {
           "id": "S-TONGUE-PAIN",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "口內炎、鵝口瘡、舌爛（醫典藥方解說）",
+          "id": "S-ORAL-MUCOSA-EROSION",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [
@@ -18703,7 +20719,8 @@ window.X4KbData = {
         "S-ABDOMINAL-DISTENSION",
         "S-HEAT-TOXIN",
         "S-THIRST",
-        "S-TONGUE-PAIN"
+        "S-TONGUE-PAIN",
+        "S-ORAL-MUCOSA-EROSION"
       ],
       "formulaPattern": [
         "陽氣實 / 陰液虛(主要是血虛/津虧)"
@@ -18742,8 +20759,8 @@ window.X4KbData = {
       "zangFuVector": {
         "GAN-QIYU": 0,
         "GAN-YINXU": 0,
-        "XIN-YANGXU": 0.5,
-        "XIN-XUEXU": 0.2,
+        "XIN-YANGXU": 0.75,
+        "XIN-XUEXU": 0.6,
         "PI-QIXU": 0.2,
         "PI-YANGXU": 0.3333,
         "FEI-QIXU": 0.2,
@@ -18781,6 +20798,30 @@ window.X4KbData = {
           "id": "S-SKIN-DRY",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "毛髮脫落",
+          "id": "S-HAIR-LOSS",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "心悸亢進",
+          "id": "S-PALPITATION",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "不眠",
+          "id": "S-INSOMNIA",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "健忘症",
+          "id": "S-FORGETFULNESS",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -18806,7 +20847,11 @@ window.X4KbData = {
         "S-FATIGUE",
         "S-NIGHT-SWEAT",
         "S-PERIUMBILICAL-PAIN",
-        "S-SKIN-DRY"
+        "S-SKIN-DRY",
+        "S-HAIR-LOSS",
+        "S-PALPITATION",
+        "S-INSOMNIA",
+        "S-FORGETFULNESS"
       ],
       "formulaPattern": [
         "陽氣虛 / 陰液虛(氣血兩虛)"
@@ -19130,6 +21175,12 @@ window.X4KbData = {
           "id": "S-COLD",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "多涎唾（金匱要略肺痿肺癰病篇「此為肺中冷，必眩，多涎唾，甘草乾薑湯以溫之」；心靈地圖[唾液流涎異常→寒]分支：夜間睡眠時水從胃中流出而不得安眠，2026-09-16）",
+          "id": "S-EXCESS-SALIVA",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -19145,7 +21196,8 @@ window.X4KbData = {
         "S-CHEST-OPPRESSION",
         "S-COLD",
         "S-POLYURIA",
-        "S-WATERY-SPUTUM"
+        "S-WATERY-SPUTUM",
+        "S-EXCESS-SALIVA"
       ],
       "formulaPattern": [
         "陽氣虛 / 陰液實(肺氣虛)"
@@ -19252,6 +21304,12 @@ window.X4KbData = {
           "matchType": "exact"
         },
         {
+          "raw": "聲音嘶啞、失聲（大塚敬節《漢方診療三十年》案232：兩名獨立患者（喉頭炎/結核疑似、化學藥品實驗後聲嘶），皆以本方十天內恢復正常發聲，2026-09-28）",
+          "id": "S-HOARSE-VOICE",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
           "raw": "顏面潮紅",
           "id": "S-FACIAL-FLUSH",
           "negated": false,
@@ -19299,6 +21357,7 @@ window.X4KbData = {
         "S-COUGH",
         "S-COUGH-CHOKING",
         "S-SORE-THROAT",
+        "S-HOARSE-VOICE",
         "S-FACIAL-FLUSH",
         "S-SKIN-DRY",
         "S-THIRST"
@@ -19369,8 +21428,8 @@ window.X4KbData = {
         "XIN-XUEXU": 0,
         "PI-QIXU": 0,
         "PI-YANGXU": 0,
-        "FEI-QIXU": 0,
-        "FEI-YINXU": 0.4,
+        "FEI-QIXU": 0.2,
+        "FEI-YINXU": 0.6,
         "SHEN-YANGXU": 0,
         "SHEN-YINXU": 0.2222
       },
@@ -19398,6 +21457,18 @@ window.X4KbData = {
           "id": "S-EPIGASTRIC-RESISTANCE",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "熱病遷延，咳嗽不止（醫典肺炎門，2026-10-06）",
+          "id": "S-COUGH",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "皮膚不潤、缺失潤澤而枯燥（醫典肺炎門／猩紅熱門，2026-10-06）",
+          "id": "S-SKIN-DRY",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -19417,7 +21488,9 @@ window.X4KbData = {
         "S-DRY-MOUTH",
         "S-EPIGASTRIC-RESISTANCE",
         "S-FEVER",
-        "S-THIRST"
+        "S-THIRST",
+        "S-COUGH",
+        "S-SKIN-DRY"
       ],
       "formulaPattern": [
         "陽氣實 / 陰液虛(肺陰液虛)"
@@ -19449,7 +21522,7 @@ window.X4KbData = {
         "FEI-QIXU": 0.2,
         "FEI-YINXU": 0.2,
         "SHEN-YANGXU": 0,
-        "SHEN-YINXU": 0
+        "SHEN-YINXU": 0.1111
       },
       "keySymptoms": [
         {
@@ -19463,6 +21536,18 @@ window.X4KbData = {
           "id": "S-UPPER-AIRWAY-DRY",
           "negated": false,
           "matchType": "exact"
+        },
+        {
+          "raw": "口渴（陰虛津虧基本伴隨表現，大塚鑑別battery鑑別徵象，2026-09-16）",
+          "id": "S-THIRST",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "皮膚乾燥（陰虛津虧基本伴隨表現，大塚鑑別battery鑑別徵象，2026-09-16）",
+          "id": "S-SKIN-DRY",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -19483,7 +21568,9 @@ window.X4KbData = {
       ],
       "indications": [
         "S-COUGH",
-        "S-UPPER-AIRWAY-DRY"
+        "S-UPPER-AIRWAY-DRY",
+        "S-THIRST",
+        "S-SKIN-DRY"
       ],
       "formulaPattern": [
         "陽氣實 / 陰液虛(肺陰液虛)"
@@ -19889,6 +21976,12 @@ window.X4KbData = {
           "matchType": "exact"
         },
         {
+          "raw": "遺尿（大塚敬節《漢方診療三十年》案295：四歲幼女自出生起日夜持續漏尿致外陰部糜爛，因幼兒附子用量複雜改投本方（腎氣丸去桂枝附子而成），服藥25天漏尿一下子停止，2026-09-28）",
+          "id": "S-ENURESIS",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
           "raw": "尿量減少",
           "id": "S-OLIGURIA",
           "negated": false,
@@ -19980,6 +22073,7 @@ window.X4KbData = {
         "S-THIRST",
         "S-TINNITUS",
         "S-WEAK-LOWER-LIMB",
+        "S-ENURESIS",
         "S-OLIGURIA",
         "S-URINARY-INCOMPLETE",
         "S-ASTHMA-WHEEZE",
@@ -20506,6 +22600,13 @@ window.X4KbData = {
           "id": "S-ABDOMINAL-DISTENSION",
           "negated": false,
           "fromIndications": true
+        },
+        {
+          "raw": "貧血衰弱婦人之白帶下（醫典藥方解說）",
+          "id": "S-LEUCORRHEA",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [
@@ -20528,7 +22629,8 @@ window.X4KbData = {
         "S-DIARRHEA-LOOSE",
         "S-APPETITE-LOW",
         "S-FATIGUE",
-        "S-ABDOMINAL-DISTENSION"
+        "S-ABDOMINAL-DISTENSION",
+        "S-LEUCORRHEA"
       ],
       "formulaPattern": [
         "脾氣虛",
@@ -20555,13 +22657,13 @@ window.X4KbData = {
       "zangFuVector": {
         "GAN-QIYU": 0.4286,
         "GAN-YINXU": 0,
-        "XIN-YANGXU": 0.25,
+        "XIN-YANGXU": 0,
         "XIN-XUEXU": 0.4,
         "PI-QIXU": 0.2,
-        "PI-YANGXU": 0.3333,
+        "PI-YANGXU": 0.1667,
         "FEI-QIXU": 0.2,
         "FEI-YINXU": 0,
-        "SHEN-YANGXU": 0.1,
+        "SHEN-YANGXU": 0,
         "SHEN-YINXU": 0
       },
       "keySymptoms": [
@@ -20588,6 +22690,13 @@ window.X4KbData = {
           "id": "S-ABDOMINAL-DISTENSION",
           "negated": false,
           "fromIndications": true
+        },
+        {
+          "raw": "柴胡劑之證而手足厥冷（醫典藥方解說）",
+          "id": "S-COLD",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         },
         {
           "raw": "腹直肌拘攣",
@@ -20640,16 +22749,6 @@ window.X4KbData = {
           "page": 319
         },
         {
-          "raw": "發冷",
-          "id": "S-COLD",
-          "negated": false,
-          "matchType": "book-physician",
-          "primary": false,
-          "mild": false,
-          "cardinal": false,
-          "page": 319
-        },
-        {
           "raw": "汗出",
           "id": "S-SPONTANEOUS-SWEAT",
           "negated": false,
@@ -20676,12 +22775,12 @@ window.X4KbData = {
         "S-ABDOMINAL-PAIN",
         "S-ANXIETY",
         "S-ABDOMINAL-DISTENSION",
+        "S-COLD",
         "S-MUSCLE-SPASM",
         "S-MENTAL-SYMPTOMS",
         "S-CHEST-RIB-FULLNESS",
         "S-DEPRESSION",
         "S-INSOMNIA",
-        "S-COLD",
         "S-SPONTANEOUS-SWEAT"
       ],
       "formulaPattern": [
@@ -20763,6 +22862,19 @@ window.X4KbData = {
           "id": "S-BLOOD-DEF",
           "negated": false,
           "fromIndications": true
+        },
+        {
+          "raw": "手掌皮膚乾燥粗糙、皮厚脫皮（大塚敬節《漢方診療三十年》案334：伴手心煩熱、唇口乾燥、月經不調，服本方十四天手掌皮膚基本正常，2026-10-04）",
+          "id": "S-SKIN-DRY",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "下腹有膨滿及抽搐感（醫典藥方解說）",
+          "id": "S-ABDOMINAL-DISTENSION",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         },
         {
           "raw": "上熱下寒烘熱感",
@@ -20870,6 +22982,8 @@ window.X4KbData = {
         "S-COLD",
         "S-DRY-MOUTH",
         "S-BLOOD-DEF",
+        "S-SKIN-DRY",
+        "S-ABDOMINAL-DISTENSION",
         "S-HOT-FLUSH",
         "S-BLEEDING",
         "S-HEAT-SENSATION",
@@ -20986,6 +23100,13 @@ window.X4KbData = {
           "primary": true,
           "mild": false,
           "cardinal": false
+        },
+        {
+          "raw": "脫肛之初期輕症（醫典藥方解說）",
+          "id": "S-RECTAL-PROLAPSE",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [
@@ -21004,7 +23125,8 @@ window.X4KbData = {
         "S-BLEEDING",
         "S-CONSTIPATION",
         "S-PRURITUS",
-        "S-HEMORRHOIDS"
+        "S-HEMORRHOIDS",
+        "S-RECTAL-PROLAPSE"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：乙字湯（OCR 標題，已人工校名）",
@@ -21177,6 +23299,30 @@ window.X4KbData = {
           "id": "S-ACNE",
           "negated": false,
           "matchType": "physician-patch"
+        },
+        {
+          "raw": "瘙癢（大塚鑑別battery[皮膚病→十味敗毒湯]鑑別徵象，2026-09-16）",
+          "id": "S-PRURITUS",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "痂皮（大塚鑑別battery[皮膚病→十味敗毒湯]鑑別徵象，2026-09-16）",
+          "id": "S-CRUST",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "麥粒腫反覆發作（心靈地圖[眼睛障害→麥粒腫→反覆發作]分支，2026-09-16）",
+          "id": "S-STYE",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "帶狀疱疹水疱延延、疼痛持續（醫典帶狀疱疹門，2026-10-06）",
+          "id": "S-HERPES-ZOSTER",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -21200,7 +23346,11 @@ window.X4KbData = {
         "S-DERMATITIS",
         "S-PUS",
         "S-CHEST-RIB-FULLNESS",
-        "S-ACNE"
+        "S-ACNE",
+        "S-PRURITUS",
+        "S-CRUST",
+        "S-STYE",
+        "S-HERPES-ZOSTER"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：十味敗毒湯（OCR 標題，已人工校名）",
@@ -21395,6 +23545,12 @@ window.X4KbData = {
           "primary": false,
           "mild": false,
           "cardinal": false
+        },
+        {
+          "raw": "皮膚乾燥皸裂、癢痛（醫典汗疱狀白癬門／指掌角皮症門，附22歲婦人病例，2026-10-06）",
+          "id": "S-SKIN-CRACK",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -21414,7 +23570,8 @@ window.X4KbData = {
         "S-THIRST",
         "S-MENOPAUSE",
         "S-DERMATITIS",
-        "S-FEVER"
+        "S-FEVER",
+        "S-SKIN-CRACK"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：三物黃聳湯（OCR 標題，已人工校名）",
@@ -21491,6 +23648,26 @@ window.X4KbData = {
           "primary": true,
           "mild": false,
           "cardinal": false
+        },
+        {
+          "raw": "腹部壓痛（陽明腑實証經典腹證）",
+          "id": "S-ABDOMINAL-TENDERNESS",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "潮熱（陽明病，醫典藥方解說）",
+          "id": "S-FEVER",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        },
+        {
+          "raw": "譫語（陽明病，醫典藥方解說）",
+          "id": "S-DELIRIUM",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [
@@ -21507,7 +23684,10 @@ window.X4KbData = {
         "S-ABDOMINAL-DISTENSION",
         "S-CONSTIPATION",
         "S-INSOMNIA",
-        "S-THIRST"
+        "S-THIRST",
+        "S-ABDOMINAL-TENDERNESS",
+        "S-FEVER",
+        "S-DELIRIUM"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：大承氣湯（OCR 標題，已人工校名）",
@@ -21593,6 +23773,27 @@ window.X4KbData = {
           "primary": true,
           "mild": false,
           "cardinal": false
+        },
+        {
+          "raw": "不汗出（醫典藥方解說）",
+          "id": "S-NO-SWEAT",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        },
+        {
+          "raw": "發熱（醫典藥方解說）",
+          "id": "S-FEVER",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        },
+        {
+          "raw": "惡寒（醫典藥方解說）",
+          "id": "S-COLD",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [
@@ -21613,7 +23814,10 @@ window.X4KbData = {
         "S-JOINT-PAIN",
         "S-MUSCLE-PAIN",
         "S-COUGH",
-        "S-THIRST"
+        "S-THIRST",
+        "S-NO-SWEAT",
+        "S-FEVER",
+        "S-COLD"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：大青龍湯（OCR 標題，已人工校名）",
@@ -21634,7 +23838,7 @@ window.X4KbData = {
       "xushiClass": "虛證",
       "patternVector": {
         "QI_XU": 1,
-        "QI_NI": 0,
+        "QI_NI": 1,
         "QI_YU": 0,
         "XUE_XU": 0,
         "YU_XUE": 0,
@@ -21750,7 +23954,7 @@ window.X4KbData = {
         "PI-QIXU": 0,
         "PI-YANGXU": 0,
         "FEI-QIXU": 0,
-        "FEI-YINXU": 0,
+        "FEI-YINXU": 0.2,
         "SHEN-YANGXU": 0,
         "SHEN-YINXU": 0.3333
       },
@@ -21863,6 +24067,24 @@ window.X4KbData = {
           "primary": false,
           "mild": false,
           "cardinal": false
+        },
+        {
+          "raw": "実証・上腹部緊張型肥胖（胸脇苦滿明顯者）",
+          "id": "S-OBESITY",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "心下急、心下痞硬（傷寒論103條，按之石硬）",
+          "id": "S-EPIGASTRIC-RESISTANCE",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "發熱（大塚鑑別battery[寒熱→大柴胡湯]鑑別徵象，2026-09-16）",
+          "id": "S-FEVER",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -21891,7 +24113,10 @@ window.X4KbData = {
         "S-VOMITING",
         "S-ANXIETY",
         "S-HOT-FLUSH",
-        "S-HEAT-SENSATION"
+        "S-HEAT-SENSATION",
+        "S-OBESITY",
+        "S-EPIGASTRIC-RESISTANCE",
+        "S-FEVER"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：大柴胡湯（OCR 標題，已人工校名）",
@@ -22028,6 +24253,19 @@ window.X4KbData = {
           "primary": false,
           "mild": false,
           "cardinal": false
+        },
+        {
+          "raw": "便秘（大塚敬節《漢方診療三十年》案241坐骨神經痛、案243右上腹陣發疼痛：金匱要略原文「脅下偏痛，發熱，其脈弦緊，此寒也，以溫藥下之」，兩獨立案例皆以嚴重便秘為主訴之一，2026-09-28）",
+          "id": "S-CONSTIPATION",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "脅下偏痛（金匱；醫典膽石症門）",
+          "id": "S-HYPOCHONDRIAC-PAIN",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [
@@ -22044,7 +24282,9 @@ window.X4KbData = {
         "S-COLD",
         "S-LOW-BACK-PAIN",
         "S-NEURALGIA",
-        "S-VOMITING"
+        "S-VOMITING",
+        "S-CONSTIPATION",
+        "S-HYPOCHONDRIAC-PAIN"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：大黃附子湯（OCR 標題，已人工校名）",
@@ -22245,6 +24485,26 @@ window.X4KbData = {
           "id": "S-NAUSEA",
           "negated": false,
           "matchType": "physician-patch"
+        },
+        {
+          "raw": "嘔吐（傷寒論96條「嘿嘿不欲飲食，心煩喜嘔」，大塚鑑別battery[寒熱→小柴胡湯]鑑別徵象，2026-09-16）",
+          "id": "S-VOMITING",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "少陽病往來寒熱（醫典藥方解說）",
+          "id": "S-ALTERNATING-CHILL-FEVER",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        },
+        {
+          "raw": "咽喉乾燥（醫典藥方解說）",
+          "id": "S-DRY-MOUTH",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [
@@ -22267,7 +24527,10 @@ window.X4KbData = {
         "S-FEVER",
         "S-EPIGASTRIC-RESISTANCE",
         "S-BITTER-TASTE",
-        "S-NAUSEA"
+        "S-NAUSEA",
+        "S-VOMITING",
+        "S-ALTERNATING-CHILL-FEVER",
+        "S-DRY-MOUTH"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：小柴胡湯（OCR 標題，已人工校名）",
@@ -22573,6 +24836,12 @@ window.X4KbData = {
           "primary": false,
           "mild": false,
           "cardinal": false
+        },
+        {
+          "raw": "排尿困難（方名「淋」即以此為古典定義核心）",
+          "id": "S-DYSURIA",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -22597,7 +24866,8 @@ window.X4KbData = {
         "S-URINARY-PAIN",
         "S-COLD",
         "S-URINARY-FREQUENCY",
-        "S-HEAT-TOXIN"
+        "S-HEAT-TOXIN",
+        "S-DYSURIA"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：五淋散（OCR 標題，已人工校名）",
@@ -22737,6 +25007,13 @@ window.X4KbData = {
           "primary": false,
           "mild": false,
           "cardinal": false
+        },
+        {
+          "raw": "腰、股、下腹等處冷痛（醫典藥方解說）",
+          "id": "S-LOW-BACK-PAIN",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [
@@ -22772,7 +25049,8 @@ window.X4KbData = {
         "S-HOT-FLUSH",
         "S-NAUSEA",
         "S-VOMITING",
-        "S-UPPER-HOT-LOWER-COLD"
+        "S-UPPER-HOT-LOWER-COLD",
+        "S-LOW-BACK-PAIN"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：五積散（OCR 標題，已人工校名）",
@@ -22967,6 +25245,20 @@ window.X4KbData = {
           "primary": true,
           "mild": false,
           "cardinal": false
+        },
+        {
+          "raw": "心下痞硬（醫典藥方解說）",
+          "id": "S-EPIGASTRIC-RESISTANCE",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        },
+        {
+          "raw": "噯氣吞酸（醫典藥方解說）",
+          "id": "S-BELCHING",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [
@@ -22993,7 +25285,9 @@ window.X4KbData = {
         "S-OLIGURIA",
         "S-ASCITES-PLEURAL-EFFUSION",
         "S-CONSTIPATION",
-        "S-EDEMA"
+        "S-EDEMA",
+        "S-EPIGASTRIC-RESISTANCE",
+        "S-BELCHING"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：分消湯（OCR 標題，已人工校名）",
@@ -23149,6 +25443,41 @@ window.X4KbData = {
           "primary": false,
           "mild": false,
           "cardinal": true
+        },
+        {
+          "raw": "頑固嘔吐（三十年案316）",
+          "id": "S-VOMITING",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        },
+        {
+          "raw": "面色蒼白（血虛）",
+          "id": "S-PALE-COMPLEXION",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        },
+        {
+          "raw": "出血傾向（醫典白血病門）",
+          "id": "S-BLEEDING",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        },
+        {
+          "raw": "脾腫、肝肥大（醫典白血病門）",
+          "id": "S-SPLENOMEGALY",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        },
+        {
+          "raw": "疲勞倦怠（醫典白血病門）",
+          "id": "S-FATIGUE",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [
@@ -23175,7 +25504,12 @@ window.X4KbData = {
         "S-ANXIETY",
         "S-BLOOD-DEF",
         "S-INSOMNIA",
-        "S-EPIGASTRIC-RESISTANCE"
+        "S-EPIGASTRIC-RESISTANCE",
+        "S-VOMITING",
+        "S-PALE-COMPLEXION",
+        "S-BLEEDING",
+        "S-SPLENOMEGALY",
+        "S-FATIGUE"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：加味歸妥湯（OCR 標題，已人工校名）",
@@ -23324,6 +25658,19 @@ window.X4KbData = {
           "primary": false,
           "mild": false,
           "cardinal": false
+        },
+        {
+          "raw": "胃痙攣（本方原書列為代表性適應症之一，腹肌緊張如板、疼痛劇烈連鎮靜劑注射都無法緩解者，2026-09-28）",
+          "id": "S-EPIGASTRIC-PAIN",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "少陰病咽痛（傷寒論；醫典藥方解說）",
+          "id": "S-SORE-THROAT",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [
@@ -23335,7 +25682,9 @@ window.X4KbData = {
       ],
       "indications": [
         "S-COUGH",
-        "S-HEAT-TOXIN"
+        "S-HEAT-TOXIN",
+        "S-EPIGASTRIC-PAIN",
+        "S-SORE-THROAT"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：甘草湯（OCR 標題，已人工校名）",
@@ -23410,6 +25759,18 @@ window.X4KbData = {
           "id": "S-MUSCLE-SPASM",
           "negated": false,
           "matchType": "physician-patch"
+        },
+        {
+          "raw": "數欠伸（金匱要略；醫典歇斯底里門病例以欠伸為着眼，2026-10-06）",
+          "id": "S-YAWNING",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "婦人藏躁，喜悲傷欲哭（金匱要略；醫典歇斯底里門，2026-10-06）",
+          "id": "S-SORROW-CRYING",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -23425,7 +25786,9 @@ window.X4KbData = {
         "S-ANXIETY",
         "S-INSOMNIA",
         "S-NIGHT-CRYING",
-        "S-MUSCLE-SPASM"
+        "S-MUSCLE-SPASM",
+        "S-YAWNING",
+        "S-SORROW-CRYING"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：甘去大囊湯（OCR 標題，已人工校名）",
@@ -23459,7 +25822,7 @@ window.X4KbData = {
         "XIN-XUEXU": 0.2,
         "PI-QIXU": 0,
         "PI-YANGXU": 0,
-        "FEI-QIXU": 0,
+        "FEI-QIXU": 0.2,
         "FEI-YINXU": 0,
         "SHEN-YANGXU": 0,
         "SHEN-YINXU": 0.2222
@@ -23492,6 +25855,26 @@ window.X4KbData = {
           "primary": false,
           "mild": false,
           "cardinal": false
+        },
+        {
+          "raw": "自然汗出（延續母方白虎湯的大汗表現）",
+          "id": "S-SPONTANEOUS-SWEAT",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "高熱",
+          "id": "S-FEVER",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        },
+        {
+          "raw": "口渴與多尿為主訴（醫典糖尿病門）",
+          "id": "S-POLYURIA",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [
@@ -23508,7 +25891,10 @@ window.X4KbData = {
       "indications": [
         "S-HOT-FLUSH",
         "S-HEAT-SENSATION",
-        "S-THIRST"
+        "S-THIRST",
+        "S-SPONTANEOUS-SWEAT",
+        "S-FEVER",
+        "S-POLYURIA"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：和白虎加人參湯（OCR 標題，已人工校名）",
@@ -24037,9 +26423,35 @@ window.X4KbData = {
           "primary": true,
           "mild": false,
           "cardinal": false
+        },
+        {
+          "raw": "產後調理、惡露未盡（醫典乳汁缺乏症門／胎盤殘留門，2026-10-06）",
+          "id": "S-POSTPARTUM",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "產後乳汁分泌不足（醫典乳汁缺乏症門，2026-10-06）",
+          "id": "S-LACTATION-LOW",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "當歸",
+        "川芎",
+        "地黃",
+        "白朮",
+        "茯苓",
+        "陳皮",
+        "香附子",
+        "牡丹皮",
+        "大棗",
+        "生薑",
+        "甘草",
+        "烏藥",
+        "益母草"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.338"
@@ -24051,7 +26463,9 @@ window.X4KbData = {
         "S-FATIGUE",
         "S-HEADACHE",
         "S-INSOMNIA",
-        "S-TINNITUS"
+        "S-TINNITUS",
+        "S-POSTPARTUM",
+        "S-LACTATION-LOW"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：若歸調血飲（OCR 標題，已人工校名）",
@@ -24129,7 +26543,17 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "石膏",
+        "麥門冬",
+        "黃芩",
+        "細辛",
+        "知母",
+        "升麻",
+        "百合",
+        "辛夷",
+        "枇杷葉"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.337"
@@ -24215,6 +26639,13 @@ window.X4KbData = {
           "primary": true,
           "mild": false,
           "cardinal": false
+        },
+        {
+          "raw": "季肋下部或左乳房下部之疼痛（醫典藥方解說）",
+          "id": "S-LEFT-HYPOCHONDRIAC-PAIN",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [
@@ -24236,7 +26667,8 @@ window.X4KbData = {
         "S-EPIGASTRIC-PAIN",
         "S-COLD",
         "S-EPIGASTRIC-RESISTANCE",
-        "S-SHOULDER-STIFF"
+        "S-SHOULDER-STIFF",
+        "S-LEFT-HYPOCHONDRIAC-PAIN"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：延年半夏湯（OCR 標題，已人工校名）",
@@ -24321,9 +26753,25 @@ window.X4KbData = {
           "primary": false,
           "mild": false,
           "cardinal": false
+        },
+        {
+          "raw": "特異反應性皮膚炎、小兒濕疹（醫典過敏性皮膚炎門，2026-10-06）",
+          "id": "S-ATOPIC",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "川芎",
+        "蒼朮",
+        "連翹",
+        "防風",
+        "甘草",
+        "荊芥",
+        "紅花",
+        "忍冬",
+        "大黃"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.346"
@@ -24333,7 +26781,8 @@ window.X4KbData = {
         "S-PUS",
         "S-CRUST",
         "S-DERMATITIS",
-        "S-HEAT-TOXIN"
+        "S-HEAT-TOXIN",
+        "S-ATOPIC"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：治頭郊一方（OCR 標題，已人工校名）",
@@ -24668,8 +27117,8 @@ window.X4KbData = {
       "xushiClass": "虛實夾雜",
       "patternVector": {
         "QI_XU": 0,
-        "QI_NI": 0,
-        "QI_YU": 1,
+        "QI_NI": 1,
+        "QI_YU": 0,
         "XUE_XU": 0,
         "YU_XUE": 0,
         "SUI_ZHI": 0
@@ -24705,6 +27154,19 @@ window.X4KbData = {
           "primary": true,
           "mild": false,
           "cardinal": false
+        },
+        {
+          "raw": "嘔吐",
+          "id": "S-VOMITING",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "腹中雷鳴而切痛",
+          "id": "S-ABDOMINAL-PAIN",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [
@@ -24720,7 +27182,9 @@ window.X4KbData = {
       ],
       "indications": [
         "S-BORBORIGMUS",
-        "S-COLD"
+        "S-COLD",
+        "S-VOMITING",
+        "S-ABDOMINAL-PAIN"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：附子粳米湯（OCR 標題，已人工校名）",
@@ -25084,7 +27548,13 @@ window.X4KbData = {
           "cardinal": false
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "枳實",
+        "厚朴",
+        "薤白",
+        "桂枝",
+        "瓜蔞實"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.291"
@@ -25292,13 +27762,13 @@ window.X4KbData = {
         "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0.5,
-        "XIN-XUEXU": 0.2,
+        "XIN-XUEXU": 0.4,
         "PI-QIXU": 0,
         "PI-YANGXU": 0.1667,
         "FEI-QIXU": 0,
-        "FEI-YINXU": 0.2,
+        "FEI-YINXU": 0.4,
         "SHEN-YANGXU": 0.1,
-        "SHEN-YINXU": 0
+        "SHEN-YINXU": 0.1111
       },
       "vectorSource": "book-derived",
       "keySymptoms": [
@@ -25370,6 +27840,26 @@ window.X4KbData = {
           "id": "S-PALPITATION",
           "negated": false,
           "matchType": "physician-patch"
+        },
+        {
+          "raw": "盜汗（大塚鑑別battery[寒熱→柴胡桂枝乾薑湯]鑑別徵象，2026-09-16）",
+          "id": "S-NIGHT-SWEAT",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "心下有振水音（醫典藥方解說）",
+          "id": "S-GASTRIC-SPLASH",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        },
+        {
+          "raw": "口乾（醫典藥方解說）",
+          "id": "S-DRY-MOUTH",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [
@@ -25393,7 +27883,10 @@ window.X4KbData = {
         "S-DROOLING",
         "S-FACIAL-FLUSH",
         "S-TONGUE-RED",
-        "S-PALPITATION"
+        "S-PALPITATION",
+        "S-NIGHT-SWEAT",
+        "S-GASTRIC-SPLASH",
+        "S-DRY-MOUTH"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：緊胡桂枝幹羨湯（OCR 標題，已人工校名）",
@@ -25425,11 +27918,11 @@ window.X4KbData = {
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0.25,
         "XIN-XUEXU": 0.4,
-        "PI-QIXU": 0.2,
-        "PI-YANGXU": 0.3333,
+        "PI-QIXU": 0.4,
+        "PI-YANGXU": 0.5,
         "FEI-QIXU": 0,
         "FEI-YINXU": 0.2,
-        "SHEN-YANGXU": 0.1,
+        "SHEN-YANGXU": 0.2,
         "SHEN-YINXU": 0
       },
       "vectorSource": "book-derived",
@@ -25550,6 +28043,12 @@ window.X4KbData = {
           "primary": false,
           "mild": false,
           "cardinal": false
+        },
+        {
+          "raw": "腹瀉（太陽少陽合病兼證，大塚鑑別battery鑑別徵象，2026-09-16）",
+          "id": "S-DIARRHEA",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -25580,7 +28079,8 @@ window.X4KbData = {
         "S-HEADACHE",
         "S-INSOMNIA",
         "S-BITTER-TASTE",
-        "S-NAUSEA"
+        "S-NAUSEA",
+        "S-DIARRHEA"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：柴胡桂枝湯（OCR 標題，已人工校名）",
@@ -25675,6 +28175,12 @@ window.X4KbData = {
           "primary": false,
           "mild": false,
           "cardinal": true
+        },
+        {
+          "raw": "黏液血便（大塚敬節《漢方診療三十年》案10：疑似直腸癌患者，小量大黃即見效，2026-09-28）",
+          "id": "S-BLOODY-STOOL",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -25695,7 +28201,8 @@ window.X4KbData = {
         "S-ABDOMINAL-PAIN",
         "S-CONSTIPATION",
         "S-DIARRHEA",
-        "S-MUSCLE-SPASM"
+        "S-MUSCLE-SPASM",
+        "S-BLOODY-STOOL"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：桂枝加大黃湯（OCR 標題，已人工校名）",
@@ -25876,13 +28383,13 @@ window.X4KbData = {
         "GAN-QIYU": 0,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0.25,
-        "XIN-XUEXU": 0,
-        "PI-QIXU": 0,
-        "PI-YANGXU": 0.3333,
+        "XIN-XUEXU": 0.2,
+        "PI-QIXU": 0.2,
+        "PI-YANGXU": 0.6667,
         "FEI-QIXU": 0,
-        "FEI-YINXU": 0,
-        "SHEN-YANGXU": 0.2,
-        "SHEN-YINXU": 0
+        "FEI-YINXU": 0.2,
+        "SHEN-YANGXU": 0.3,
+        "SHEN-YINXU": 0.1111
       },
       "vectorSource": "book-derived",
       "keySymptoms": [
@@ -25912,6 +28419,30 @@ window.X4KbData = {
           "primary": true,
           "mild": false,
           "cardinal": false
+        },
+        {
+          "raw": "下腹部痙攣樣疼痛（大塚敬節《漢方診療三十年》案40：冬天加重、夜間劇痛，2026-09-28）",
+          "id": "S-ABDOMINAL-PAIN",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "腹瀉（同案40，2026-09-28）",
+          "id": "S-DIARRHEA",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "臍上振水音（同案40，2026-09-28）",
+          "id": "S-GASTRIC-SPLASH",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "盜汗（大塚敬節《漢方診療三十年》案41：43歲男性膽結石症發作性上腹痛、精神不振、易患感冒，一服藥精神即好轉、盜汗隨之止住，2026-09-28）",
+          "id": "S-NIGHT-SWEAT",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -25929,7 +28460,11 @@ window.X4KbData = {
       "indications": [
         "S-MUSCLE-SPASM",
         "S-OLIGURIA",
-        "S-COLD"
+        "S-COLD",
+        "S-ABDOMINAL-PAIN",
+        "S-DIARRHEA",
+        "S-GASTRIC-SPLASH",
+        "S-NIGHT-SWEAT"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：桂枝加附子湯（OCR 標題，已人工校名）",
@@ -26094,8 +28629,8 @@ window.X4KbData = {
       "category": "書籍補充（漢方臨床診療學）",
       "xushiClass": "虛證",
       "patternVector": {
-        "QI_XU": 1,
-        "QI_NI": 0,
+        "QI_XU": 0,
+        "QI_NI": 1,
         "QI_YU": 0,
         "XUE_XU": 0,
         "YU_XUE": 0,
@@ -26104,8 +28639,8 @@ window.X4KbData = {
       "zangFuVector": {
         "GAN-QIYU": 0,
         "GAN-YINXU": 0,
-        "XIN-YANGXU": 0.5,
-        "XIN-XUEXU": 0,
+        "XIN-YANGXU": 0.75,
+        "XIN-XUEXU": 0.2,
         "PI-QIXU": 0.2,
         "PI-YANGXU": 0.1667,
         "FEI-QIXU": 0.2,
@@ -26141,6 +28676,18 @@ window.X4KbData = {
           "primary": true,
           "mild": false,
           "cardinal": false
+        },
+        {
+          "raw": "半身不遂（大塚敬節《漢方診療三十年》案44：腦出血後右半身不遂七個月，服本方半年後大幅好轉，2026-09-28）",
+          "id": "S-HEMIPLEGIA",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "臍上動悸明顯（同案44，2026-09-28）",
+          "id": "S-PALPITATION",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -26160,7 +28707,9 @@ window.X4KbData = {
       "indications": [
         "S-JOINT-PAIN",
         "S-COLD",
-        "S-FATIGUE"
+        "S-FATIGUE",
+        "S-HEMIPLEGIA",
+        "S-PALPITATION"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：桂枝加苓術附湯（OCR 標題，已人工校名）",
@@ -26292,23 +28841,23 @@ window.X4KbData = {
       "xushiClass": "虛證",
       "patternVector": {
         "QI_XU": 0,
-        "QI_NI": 1,
+        "QI_NI": 0,
         "QI_YU": 0,
         "XUE_XU": 0,
         "YU_XUE": 0,
-        "SUI_ZHI": 0
+        "SUI_ZHI": 1
       },
       "zangFuVector": {
-        "GAN-QIYU": 0,
-        "GAN-YINXU": 0,
-        "XIN-YANGXU": 0.25,
+        "GAN-QIYU": 0.1429,
+        "GAN-YINXU": 0.2,
+        "XIN-YANGXU": 0.75,
         "XIN-XUEXU": 0,
-        "PI-QIXU": 0,
-        "PI-YANGXU": 0.1667,
-        "FEI-QIXU": 0,
+        "PI-QIXU": 0.2,
+        "PI-YANGXU": 0.3333,
+        "FEI-QIXU": 0.2,
         "FEI-YINXU": 0,
-        "SHEN-YANGXU": 0.1,
-        "SHEN-YINXU": 0
+        "SHEN-YANGXU": 0.2,
+        "SHEN-YINXU": 0.1111
       },
       "vectorSource": "book-derived",
       "keySymptoms": [
@@ -26338,6 +28887,44 @@ window.X4KbData = {
           "primary": false,
           "mild": false,
           "cardinal": false
+        },
+        {
+          "raw": "腳腫如脫（金匱要略歷節病門原文，矢數書批次考據：本症搭配羸瘦/頭眩/溫溫欲吐讓本方向量反映歷節病兼氣血兩虛體質，避免膝關節水腫查詢誤判為防己黃芪湯，2026-09-23／2026-09-28合併）",
+          "id": "S-EDEMA",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "身體羸瘦（同上，2026-09-28合併）",
+          "id": "S-FATIGUE",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "頭眩（同上，2026-09-28合併）",
+          "id": "S-DIZZINESS",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "溫溫欲吐（同上，2026-09-28合併）",
+          "id": "S-NAUSEA",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "關節腫脹，周圍之肉削落（醫典關節風濕門）",
+          "id": "S-JOINT-SWELLING",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        },
+        {
+          "raw": "皮膚枯燥而無光澤（醫典關節風濕門）",
+          "id": "S-SKIN-DRY",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [
@@ -26358,7 +28945,13 @@ window.X4KbData = {
       "indications": [
         "S-JOINT-PAIN",
         "S-NEURALGIA",
-        "S-COLD"
+        "S-COLD",
+        "S-EDEMA",
+        "S-FATIGUE",
+        "S-DIZZINESS",
+        "S-NAUSEA",
+        "S-JOINT-SWELLING",
+        "S-SKIN-DRY"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：桂枝芍藥知母湯（OCR 標題，已人工校名）",
@@ -26800,6 +29393,13 @@ window.X4KbData = {
           "primary": false,
           "mild": false,
           "cardinal": false
+        },
+        {
+          "raw": "脈浮弱",
+          "id": "S-PULSE-FLOATING",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [
@@ -26821,7 +29421,8 @@ window.X4KbData = {
         "S-SPONTANEOUS-SWEAT",
         "S-HEAVY-HEAD",
         "S-HOT-FLUSH",
-        "S-HEAT-SENSATION"
+        "S-HEAT-SENSATION",
+        "S-PULSE-FLOATING"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：桂枝湯（OCR 標題，已人工校名）",
@@ -26853,7 +29454,7 @@ window.X4KbData = {
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0,
         "XIN-XUEXU": 0,
-        "PI-QIXU": 0.2,
+        "PI-QIXU": 0.4,
         "PI-YANGXU": 0.5,
         "FEI-QIXU": 0,
         "FEI-YINXU": 0,
@@ -26888,6 +29489,18 @@ window.X4KbData = {
           "primary": true,
           "mild": false,
           "cardinal": false
+        },
+        {
+          "raw": "頻頻下利，下膿血（無裡急後重）",
+          "id": "S-BLOODY-STOOL",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "腹部軟弱虛滿而痛",
+          "id": "S-ABDOMINAL-WEAKNESS",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -26902,7 +29515,9 @@ window.X4KbData = {
       "indications": [
         "S-OLIGURIA",
         "S-ABDOMINAL-PAIN",
-        "S-DIARRHEA"
+        "S-DIARRHEA",
+        "S-BLOODY-STOOL",
+        "S-ABDOMINAL-WEAKNESS"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：桃花湯（OCR 標題，已人工校名）",
@@ -27188,6 +29803,18 @@ window.X4KbData = {
           "primary": true,
           "mild": false,
           "cardinal": false
+        },
+        {
+          "raw": "濕疹（消風散治慢性濕疹/蕁麻疹經典方，大塚鑑別battery鑑別徵象，2026-09-16）",
+          "id": "S-ECZEMA",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "尋常性乾癬（醫典乾癬門，附37歲婦人病例，2026-10-06）",
+          "id": "S-PSORIASIS",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -27214,7 +29841,9 @@ window.X4KbData = {
         "S-HEAT-SENSATION",
         "S-PRURITUS",
         "S-THIRST",
-        "S-CRUST"
+        "S-CRUST",
+        "S-ECZEMA",
+        "S-PSORIASIS"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：消風散（OCR 標題，已人工校名）",
@@ -27479,6 +30108,12 @@ window.X4KbData = {
           "primary": false,
           "mild": false,
           "cardinal": false
+        },
+        {
+          "raw": "腦溢血後手足疼痛麻木、運動障礙、步行困難",
+          "id": "S-HEMIPLEGIA",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -27502,7 +30137,8 @@ window.X4KbData = {
       "indications": [
         "S-HEADACHE",
         "S-DEPRESSION",
-        "S-NUMBNESS"
+        "S-NUMBNESS",
+        "S-HEMIPLEGIA"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：烏藥順氣散（OCR 標題，已人工校名）",
@@ -27533,13 +30169,13 @@ window.X4KbData = {
       "zangFuVector": {
         "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0,
-        "XIN-YANGXU": 0.25,
+        "XIN-YANGXU": 0.5,
         "XIN-XUEXU": 0.2,
         "PI-QIXU": 0,
-        "PI-YANGXU": 0.3333,
-        "FEI-QIXU": 0,
+        "PI-YANGXU": 0.5,
+        "FEI-QIXU": 0.2,
         "FEI-YINXU": 0,
-        "SHEN-YANGXU": 0.2,
+        "SHEN-YANGXU": 0.3,
         "SHEN-YINXU": 0
       },
       "vectorSource": "book-derived",
@@ -27579,6 +30215,18 @@ window.X4KbData = {
           "primary": true,
           "mild": false,
           "cardinal": false
+        },
+        {
+          "raw": "全身浮腫（大塚敬節《漢方診療三十年》案14：重症服小建中湯後轉浮腫，2026-09-28）",
+          "id": "S-EDEMA",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "自汗如流出狀（同案14，與煩躁並列為本方使用指征，2026-09-28）",
+          "id": "S-SPONTANEOUS-SWEAT",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -27596,7 +30244,9 @@ window.X4KbData = {
         "S-EPIGASTRIC-RESISTANCE",
         "S-ANXIETY",
         "S-COLD",
-        "S-OLIGURIA"
+        "S-OLIGURIA",
+        "S-EDEMA",
+        "S-SPONTANEOUS-SWEAT"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：茯苓四逆湯（OCR 標題，已人工校名）",
@@ -27766,13 +30416,13 @@ window.X4KbData = {
       "zangFuVector": {
         "GAN-QIYU": 0,
         "GAN-YINXU": 0,
-        "XIN-YANGXU": 0,
+        "XIN-YANGXU": 0.25,
         "XIN-XUEXU": 0,
         "PI-QIXU": 0,
-        "PI-YANGXU": 0,
+        "PI-YANGXU": 0.3333,
         "FEI-QIXU": 0,
         "FEI-YINXU": 0,
-        "SHEN-YANGXU": 0,
+        "SHEN-YANGXU": 0.2,
         "SHEN-YINXU": 0.1111
       },
       "vectorSource": "book-derived",
@@ -27812,6 +30462,44 @@ window.X4KbData = {
           "primary": true,
           "mild": false,
           "cardinal": false
+        },
+        {
+          "raw": "黃疸（傷寒論236條「身必發黃，茵陳蒿湯主之」，本方最經典定義，2026-09-16）",
+          "id": "S-JAUNDICE",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "蕁麻疹（大塚敬節《漢方診療三十年》案238：作者診斷「肝功能障礙」，以蕁麻疹合併惡心欲吐、咽喉異物感、心窩脹滿、便秘尿赤為指征，服藥二三天蕁麻疹即消失，與案168真武湯之陽虛水停型蕁麻疹機轉不同（肝鬱化熱型），2026-09-28）",
+          "id": "S-URTICARIA",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "全身浮腫（大塚敬節《漢方診療三十年》案240：腎病綜合征少年，全身浮腫眼腫腹部膨滿口渴無尿便秘，作者明言本方是治「瘀熱在裡」之方、以口渴小便不利尿赤便秘胸內苦悶腹部膨滿為指征、並不以黃疸為必須，2026-09-28）",
+          "id": "S-EDEMA",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "無尿（同案240，2026-09-28）",
+          "id": "S-OLIGURIA",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "從心窩至胸中難以形容之不快感、胸悶閉塞（醫典藥方解說）",
+          "id": "S-CHEST-OPPRESSION",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        },
+        {
+          "raw": "上腹部膨滿（醫典藥方解說）",
+          "id": "S-ABDOMINAL-DISTENSION",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [
@@ -27827,7 +30515,13 @@ window.X4KbData = {
         "S-CONSTIPATION",
         "S-NAUSEA",
         "S-PRURITUS",
-        "S-THIRST"
+        "S-THIRST",
+        "S-JAUNDICE",
+        "S-URTICARIA",
+        "S-EDEMA",
+        "S-OLIGURIA",
+        "S-CHEST-OPPRESSION",
+        "S-ABDOMINAL-DISTENSION"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：英陳蘿湯（OCR 標題，已人工校名）",
@@ -28034,6 +30728,12 @@ window.X4KbData = {
           "primary": false,
           "mild": false,
           "cardinal": false
+        },
+        {
+          "raw": "黃疸（傷寒論261條「傷寒身黃發熱，梔子柏皮湯主之」，2026-09-16）",
+          "id": "S-JAUNDICE",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -28049,7 +30749,8 @@ window.X4KbData = {
         "S-HEAT-TOXIN",
         "S-PRURITUS",
         "S-ANXIETY",
-        "S-DERMATITIS"
+        "S-DERMATITIS",
+        "S-JAUNDICE"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：板子柏皮湯（OCR 標題，已人工校名）",
@@ -28150,9 +30851,26 @@ window.X4KbData = {
           "id": "S-ACNE",
           "negated": false,
           "matchType": "physician-patch"
+        },
+        {
+          "raw": "蕁麻疹（大塚敬節《漢方診療三十年》案333：面部粉刺常感染化膿兼常發蕁麻疹，服本方二週蕁麻疹全部消退、粉刺亦減，2026-10-04）",
+          "id": "S-URTICARIA",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
-      "herbs": [],
+      "herbs": [
+        "黃芩",
+        "桔梗",
+        "山梔子",
+        "川芎",
+        "防風",
+        "白芷",
+        "黃連",
+        "甘草",
+        "枳實",
+        "荊芥"
+      ],
       "composedOfFormulas": [],
       "sourceSheets": [
         "《漢方臨床診療學》p.308"
@@ -28164,7 +30882,8 @@ window.X4KbData = {
         "S-PUS",
         "S-FACIAL-FLUSH",
         "S-HEAT-TOXIN",
-        "S-ACNE"
+        "S-ACNE",
+        "S-URTICARIA"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：清上防風湯（OCR 標題，已人工校名）",
@@ -28223,6 +30942,25 @@ window.X4KbData = {
           "primary": false,
           "mild": false,
           "cardinal": false
+        },
+        {
+          "raw": "痰多而粘稠，咯不爽、難咯出",
+          "id": "S-STICKY-SPUTUM",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "聲嗄",
+          "id": "S-HOARSE-VOICE",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "久則咽痛（醫典藥方解說）",
+          "id": "S-SORE-THROAT",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [
@@ -28249,7 +30987,10 @@ window.X4KbData = {
       ],
       "indications": [
         "S-COUGH",
-        "S-ASTHMA-WHEEZE"
+        "S-ASTHMA-WHEEZE",
+        "S-STICKY-SPUTUM",
+        "S-HOARSE-VOICE",
+        "S-SORE-THROAT"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：清肺湯（OCR 標題，已人工校名）",
@@ -28404,6 +31145,20 @@ window.X4KbData = {
           "primary": false,
           "mild": false,
           "cardinal": false
+        },
+        {
+          "raw": "尿量多而大便硬（脾約；醫典藥方解說）",
+          "id": "S-POLYURIA",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        },
+        {
+          "raw": "皮膚及粘膜滋潤不足（醫典藥方解說）",
+          "id": "S-SKIN-DRY",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [
@@ -28421,7 +31176,9 @@ window.X4KbData = {
       "indications": [
         "S-CONSTIPATION",
         "S-FATIGUE",
-        "S-ABDOMINAL-DISTENSION"
+        "S-ABDOMINAL-DISTENSION",
+        "S-POLYURIA",
+        "S-SKIN-DRY"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：麻子仁丸（OCR 標題，已人工校名）",
@@ -28515,6 +31272,13 @@ window.X4KbData = {
           "primary": true,
           "mild": false,
           "cardinal": false
+        },
+        {
+          "raw": "痔核之疼痛（醫典藥方解說）",
+          "id": "S-HEMORRHOIDS",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [
@@ -28533,7 +31297,8 @@ window.X4KbData = {
         "S-COUGH",
         "S-FEVER",
         "S-HEAT-SENSATION",
-        "S-THIRST"
+        "S-THIRST",
+        "S-HEMORRHOIDS"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：麻查石甘湯（OCR 標題，已人工校名）",
@@ -28636,6 +31401,12 @@ window.X4KbData = {
           "primary": false,
           "mild": false,
           "cardinal": false
+        },
+        {
+          "raw": "尋常性疣贅、青年性扁平疣（醫典疣贅門，2026-10-06）",
+          "id": "S-WART",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -28655,7 +31426,8 @@ window.X4KbData = {
         "S-EDEMA",
         "S-SPONTANEOUS-SWEAT",
         "S-OLIGURIA",
-        "S-HEAT-SENSATION"
+        "S-HEAT-SENSATION",
+        "S-WART"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：麻查芒甘湯（OCR 標題，已人工校名）",
@@ -28782,7 +31554,7 @@ window.X4KbData = {
         "XIN-XUEXU": 0,
         "PI-QIXU": 0,
         "PI-YANGXU": 0.1667,
-        "FEI-QIXU": 0.6,
+        "FEI-QIXU": 0.4,
         "FEI-YINXU": 0.4,
         "SHEN-YANGXU": 0.2,
         "SHEN-YINXU": 0
@@ -28792,7 +31564,7 @@ window.X4KbData = {
         {
           "raw": "無自然汗出",
           "id": "S-SPONTANEOUS-SWEAT",
-          "negated": false,
+          "negated": true,
           "matchType": "book",
           "primary": true,
           "mild": false,
@@ -28918,7 +31690,6 @@ window.X4KbData = {
         "《漢方臨床診療學》p.298"
       ],
       "indications": [
-        "S-SPONTANEOUS-SWEAT",
         "S-JOINT-PAIN",
         "S-ASTHMA-WHEEZE",
         "S-COLD",
@@ -28989,6 +31760,12 @@ window.X4KbData = {
           "primary": false,
           "mild": false,
           "cardinal": false
+        },
+        {
+          "raw": "瘙癢（外用，本方目標明列瘙癢療效良好，2026-09-28）",
+          "id": "S-PRURITUS",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -29004,7 +31781,8 @@ window.X4KbData = {
       ],
       "indications": [
         "S-SKIN-DRY",
-        "S-HEMORRHOIDS"
+        "S-HEMORRHOIDS",
+        "S-PRURITUS"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：紫雲膏（OCR 標題，已人工校名）",
@@ -29212,6 +31990,18 @@ window.X4KbData = {
           "primary": true,
           "mild": false,
           "cardinal": false
+        },
+        {
+          "raw": "顏面神經麻痺（醫典顏面神經麻痺門）",
+          "id": "S-FACIAL-PALSY",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "瘙癢難耐但無皮疹（大塚敬節《漢方診療三十年》案45，2026-09-28）",
+          "id": "S-PRURITUS",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -29227,7 +32017,9 @@ window.X4KbData = {
       ],
       "indications": [
         "S-NUMBNESS",
-        "S-FORMICATION"
+        "S-FORMICATION",
+        "S-FACIAL-PALSY",
+        "S-PRURITUS"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：黃莽桂枝五物湯（OCR 標題，已人工校名）",
@@ -29339,6 +32131,13 @@ window.X4KbData = {
           "primary": false,
           "mild": false,
           "cardinal": true
+        },
+        {
+          "raw": "由腰至下肢激烈疼痛（醫典椎間板疝脫門）",
+          "id": "S-LOWER-LIMB-PAIN",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [
@@ -29364,7 +32163,8 @@ window.X4KbData = {
         "S-LOW-BACK-PAIN",
         "S-NAUSEA",
         "S-VOMITING",
-        "S-MUSCLE-SPASM"
+        "S-MUSCLE-SPASM",
+        "S-LOWER-LIMB-PAIN"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：當歸四逆加吳菜英生美湯（OCR 標題，已人工校名）",
@@ -29537,14 +32337,14 @@ window.X4KbData = {
       "xushiClass": "虛證",
       "patternVector": {
         "QI_XU": 0,
-        "QI_NI": 1,
+        "QI_NI": 0,
         "QI_YU": 1,
         "XUE_XU": 0,
         "YU_XUE": 0,
         "SUI_ZHI": 0
       },
       "zangFuVector": {
-        "GAN-QIYU": 0,
+        "GAN-QIYU": 0.1429,
         "GAN-YINXU": 0,
         "XIN-YANGXU": 0.25,
         "XIN-XUEXU": 0,
@@ -29583,6 +32383,18 @@ window.X4KbData = {
           "primary": true,
           "mild": false,
           "cardinal": false
+        },
+        {
+          "raw": "胸部似被勒緊、痛徹於背（醫典狹心症門，2026-10-06）",
+          "id": "S-CHEST-OPPRESSION",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "胸、背等處覺有冷氣（醫典狹心症門，2026-10-06）",
+          "id": "S-BACK-COLD",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -29604,7 +32416,9 @@ window.X4KbData = {
       "indications": [
         "S-ABDOMINAL-DISTENSION",
         "S-ABDOMINAL-PAIN",
-        "S-COLD"
+        "S-COLD",
+        "S-CHEST-OPPRESSION",
+        "S-BACK-COLD"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：當歸湯（OCR 標題，已人工校名）",
@@ -29638,7 +32452,7 @@ window.X4KbData = {
         "XIN-XUEXU": 0.2,
         "PI-QIXU": 0,
         "PI-YANGXU": 0.1667,
-        "FEI-QIXU": 0.2,
+        "FEI-QIXU": 0,
         "FEI-YINXU": 0.2,
         "SHEN-YANGXU": 0.1,
         "SHEN-YINXU": 0.1111
@@ -29711,7 +32525,7 @@ window.X4KbData = {
         {
           "raw": "無自然汗出",
           "id": "S-SPONTANEOUS-SWEAT",
-          "negated": false,
+          "negated": true,
           "matchType": "book",
           "primary": false,
           "mild": false,
@@ -29756,7 +32570,6 @@ window.X4KbData = {
         "S-FEVER",
         "S-HEADACHE",
         "S-HEAT-SENSATION",
-        "S-SPONTANEOUS-SWEAT",
         "S-JOINT-SWELLING",
         "S-SHOULDER-STIFF"
       ],
@@ -29793,7 +32606,7 @@ window.X4KbData = {
         "XIN-XUEXU": 0,
         "PI-QIXU": 0,
         "PI-YANGXU": 0,
-        "FEI-QIXU": 0.2,
+        "FEI-QIXU": 0,
         "FEI-YINXU": 0,
         "SHEN-YANGXU": 0,
         "SHEN-YINXU": 0
@@ -29830,11 +32643,17 @@ window.X4KbData = {
         {
           "raw": "無自然汗出",
           "id": "S-SPONTANEOUS-SWEAT",
-          "negated": false,
+          "negated": true,
           "matchType": "book",
           "primary": false,
           "mild": false,
           "cardinal": false
+        },
+        {
+          "raw": "蓄膿症、黃色膿性鼻汁（醫典副鼻腔炎門，2026-10-06）",
+          "id": "S-PURULENT-NASAL",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -29856,7 +32675,7 @@ window.X4KbData = {
         "S-HEADACHE",
         "S-HEAVY-HEAD",
         "S-NASAL-CONGESTION",
-        "S-SPONTANEOUS-SWEAT"
+        "S-PURULENT-NASAL"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：葛根湯加川藻辛夷（OCR 標題，已人工校名）",
@@ -29923,6 +32742,13 @@ window.X4KbData = {
           "primary": true,
           "mild": false,
           "cardinal": false
+        },
+        {
+          "raw": "下利而喘（矢數p.52目標）",
+          "id": "S-ASTHMA-WHEEZE",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [
@@ -29938,7 +32764,8 @@ window.X4KbData = {
       "indications": [
         "S-SHOULDER-STIFF",
         "S-DIARRHEA",
-        "S-FEVER"
+        "S-FEVER",
+        "S-ASTHMA-WHEEZE"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：葛根黃連黃芩湯（OCR 標題，已人工校名）",
@@ -30093,6 +32920,13 @@ window.X4KbData = {
           "primary": false,
           "mild": false,
           "cardinal": false
+        },
+        {
+          "raw": "不惡寒而發熱（醫典藥方解說）",
+          "id": "S-FEVER",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
         }
       ],
       "herbs": [
@@ -30108,7 +32942,8 @@ window.X4KbData = {
         "S-ABDOMINAL-DISTENSION",
         "S-ABDOMINAL-PAIN",
         "S-CONSTIPATION",
-        "S-DRY-MOUTH"
+        "S-DRY-MOUTH",
+        "S-FEVER"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：調胃承氣湯（OCR 標題，已人工校名）",
@@ -30432,6 +33267,18 @@ window.X4KbData = {
           "primary": true,
           "mild": false,
           "cardinal": false
+        },
+        {
+          "raw": "化膿（心靈地圖[化膿症]氣血兩虛型收口不良，2026-09-16）",
+          "id": "S-PUS",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "血便（大塚敬節《漢方診療三十年》案30：4歲男孩持續一年血便、面色白血色不良，服藥兩週後血便漸減，一個月後完全不帶血，2026-09-28）",
+          "id": "S-BLOODY-STOOL",
+          "negated": false,
+          "matchType": "physician-patch"
         }
       ],
       "herbs": [
@@ -30452,7 +33299,9 @@ window.X4KbData = {
         "S-MUSCLE-SPASM",
         "S-SKIN-DRY",
         "S-ABDOMINAL-PAIN",
-        "S-BLOOD-DEF"
+        "S-BLOOD-DEF",
+        "S-PUS",
+        "S-BLOODY-STOOL"
       ],
       "formulaPattern": "",
       "notes": "書籍補充：歸英建中湯（OCR 標題，已人工校名）",
@@ -30681,6 +33530,8225 @@ window.X4KbData = {
       ],
       "formulaPattern": "",
       "notes": "《傷寒論》溫陽活血通便方。桂枝湯加大量芍藥、大黃，治虛實夾雜便秘腹痛。2026-07-20 萩野醫院 case #78（虛證便秘伴腹痛）。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-004",
+      "name": "芍藥甘草附子湯",
+      "category": "醫師補充",
+      "xushiClass": "虛證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 1,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0.25,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0.1667,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0.1,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "惡寒（汗後陽虛）",
+          "id": "S-COLD",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "腳攣急",
+          "id": "S-LEG-CRAMP",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "肌肉拘攣（陰血不足失於濡養）",
+          "id": "S-MUSCLE-SPASM",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "芍藥",
+        "甘草",
+        "附子"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《傷寒論》68條「發汗，病不解，反惡寒者，虛故也，芍藥甘草附子湯主之」。矢數道明列為常用方，工具原缺。2026-09-06 醫師指示查證後新增。"
+      ],
+      "indications": [
+        "S-COLD",
+        "S-LEG-CRAMP",
+        "S-MUSCLE-SPASM"
+      ],
+      "formulaPattern": "",
+      "notes": "《傷寒論》68條「發汗，病不解，反惡寒者，虛故也，芍藥甘草附子湯主之」。矢數道明列為常用方，工具原缺。2026-09-06 醫師指示查證後新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-005",
+      "name": "華蓋散",
+      "category": "醫師補充",
+      "xushiClass": "實證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 1,
+        "QI_YU": 1,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0.1429,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0.4,
+        "FEI-YINXU": 0.2,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "咳嗽上氣",
+          "id": "S-COUGH",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "喘鳴、痰氣不利",
+          "id": "S-ASTHMA-WHEEZE",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "胸膈煩滿",
+          "id": "S-CHEST-OPPRESSION",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "麻黃",
+        "杏仁",
+        "蘇子",
+        "桑白皮",
+        "茯苓",
+        "陳皮",
+        "甘草"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《太平惠民和劑局方》「治肺感寒邪，咳嗽上氣，胸膈煩滿，頭昏目眩」。矢數道明列為常用方，工具原缺。2026-09-06 醫師指示查證後新增。"
+      ],
+      "indications": [
+        "S-COUGH",
+        "S-ASTHMA-WHEEZE",
+        "S-CHEST-OPPRESSION"
+      ],
+      "formulaPattern": "",
+      "notes": "《太平惠民和劑局方》「治肺感寒邪，咳嗽上氣，胸膈煩滿，頭昏目眩」。矢數道明列為常用方，工具原缺。2026-09-06 醫師指示查證後新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-006",
+      "name": "胃風湯",
+      "category": "醫師補充",
+      "xushiClass": "虛證",
+      "patternVector": {
+        "QI_XU": 1,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0.4,
+        "PI-YANGXU": 0.3333,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0.1,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "久瀉、腸鳴（腸胃虛弱兼風冷）",
+          "id": "S-DIARRHEA",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "腹脅虛滿疼痛",
+          "id": "S-ABDOMINAL-PAIN",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "腹力弱",
+          "id": "S-ABDOMINAL-WEAKNESS",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "出粘血便、下血便（醫典慢性腸炎門／潰瘍性大腸炎門，2026-10-06）",
+          "id": "S-BLOODY-STOOL",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "裏急後重（醫典慢性腸炎門／直腸癌門，2026-10-06）",
+          "id": "S-TENESMUS",
+          "negated": false,
+          "matchType": "physician-patch"
+        }
+      ],
+      "herbs": [
+        "當歸",
+        "芍藥",
+        "川芎",
+        "人參",
+        "白朮",
+        "茯苓",
+        "桂枝",
+        "粟米"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《太平惠民和劑局方》「治大人小兒久患腸胃虛弱，風冷乘之，泄瀉注下，腹脅虛滿，腸鳴」。矢數道明列為常用方，工具原缺。2026-09-06 醫師指示查證後新增。"
+      ],
+      "indications": [
+        "S-DIARRHEA",
+        "S-ABDOMINAL-PAIN",
+        "S-ABDOMINAL-WEAKNESS",
+        "S-BLOODY-STOOL",
+        "S-TENESMUS"
+      ],
+      "formulaPattern": "",
+      "notes": "《太平惠民和劑局方》「治大人小兒久患腸胃虛弱，風冷乘之，泄瀉注下，腹脅虛滿，腸鳴」。矢數道明列為常用方，工具原缺。2026-09-06 醫師指示查證後新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-007",
+      "name": "柴芍六君子湯",
+      "category": "醫師補充",
+      "xushiClass": "虛實夾雜",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 1,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 1
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0.1429,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0.2,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "食慾不振（脾虛）",
+          "id": "S-APPETITE-LOW",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "胸脇苦滿（肝鬱）",
+          "id": "S-CHEST-RIB-FULLNESS",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "噁心",
+          "id": "S-NAUSEA",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "易疲勞（脾氣虛）",
+          "id": "S-FATIGUE",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        }
+      ],
+      "herbs": [
+        "人參",
+        "白朮",
+        "茯苓",
+        "半夏",
+        "大棗",
+        "甘草",
+        "生薑",
+        "柴胡",
+        "芍藥",
+        "陳皮"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "六君子湯加柴胡、芍藥（見小太郎漢方一般用醫藥品添付文書）：脾虛痰飲之六君子湯基礎上，柴胡疏肝解鬱、芍藥柔肝止痛，用於壓力等因素引起、伴疼痛之消化器官疾患。矢數道明列為常用方，工具原缺。2026-09-06 醫師指示查證後新增。"
+      ],
+      "indications": [
+        "S-APPETITE-LOW",
+        "S-CHEST-RIB-FULLNESS",
+        "S-NAUSEA",
+        "S-FATIGUE"
+      ],
+      "formulaPattern": "",
+      "notes": "六君子湯加柴胡、芍藥（見小太郎漢方一般用醫藥品添付文書）：脾虛痰飲之六君子湯基礎上，柴胡疏肝解鬱、芍藥柔肝止痛，用於壓力等因素引起、伴疼痛之消化器官疾患。矢數道明列為常用方，工具原缺。2026-09-06 醫師指示查證後新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-008",
+      "name": "桂枝二越婢一加朮附湯",
+      "category": "醫師補充",
+      "xushiClass": "虛實夾雜",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 1,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0.25,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0.1667,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0.1,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "關節痛",
+          "id": "S-JOINT-PAIN",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "關節腫脹（熱象）",
+          "id": "S-JOINT-SWELLING",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "下肢冷感",
+          "id": "S-COLD",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "桂枝",
+        "芍藥",
+        "甘草",
+        "大棗",
+        "生薑",
+        "麻黃",
+        "石膏",
+        "蒼朮",
+        "附子"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "桂枝二越婢一湯加蒼朮、附子，大塚敬節等治慢性關節リウマチ經驗方：下肢冷感伴關節腫脹疼痛，較桂枝加朮附湯多石膏清熱，適用於腫脹（熱象）較顯著者。矢數道明列為常用方，工具原缺。2026-09-06 醫師指示查證後新增；2026-09-06 於矢數道明《日本漢方醫學及臨證經驗》案226/227（風濕症、類風濕性關節炎）覆核，應用目標為「四肢關節腫脹、疼痛，患部熱感及口渴」，與本條一致。"
+      ],
+      "indications": [
+        "S-JOINT-PAIN",
+        "S-JOINT-SWELLING",
+        "S-COLD"
+      ],
+      "formulaPattern": "",
+      "notes": "桂枝二越婢一湯加蒼朮、附子，大塚敬節等治慢性關節リウマチ經驗方：下肢冷感伴關節腫脹疼痛，較桂枝加朮附湯多石膏清熱，適用於腫脹（熱象）較顯著者。矢數道明列為常用方，工具原缺。2026-09-06 醫師指示查證後新增；2026-09-06 於矢數道明《日本漢方醫學及臨證經驗》案226/227（風濕症、類風濕性關節炎）覆核，應用目標為「四肢關節腫脹、疼痛，患部熱感及口渴」，與本條一致。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-009",
+      "name": "疏肝湯",
+      "category": "醫師補充",
+      "xushiClass": "虛實夾雜",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 1,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "左季肋下／脅下疼痛（肝經處上沖拘攣）",
+          "id": "S-SIDE-ABDOMINAL-PAIN",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "左季肋下部抵抗壓痛（肝積之證）",
+          "id": "S-ABDOMINAL-TENDERNESS",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "柴胡",
+        "當歸",
+        "桃仁",
+        "芍藥",
+        "川芎",
+        "枳殼",
+        "青皮",
+        "黃連",
+        "紅花"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "矢數道明《日本漢方醫學及臨證經驗》處方索引：柴胡、當歸、桃仁、芍藥、川芎、枳殼、青皮、黃連、紅花（或加吳茱萸）。書中「一貫堂醫學」疏肝湯證（案93、238）：脾彎曲症（季肋下/左背/左上腹鈍痛，或肋間神經痛樣、心絞痛樣、肩凝樣痛），診察法「左脅下相當於肝經處可觸知上沖拘攣，此乃肝積之證，壓之則痛且自訴脅下痛」。與 KB 既有柴胡疏肝湯（《醫學統旨》：柴胡/芍藥/香附/川芎/枳殼/甘草/陳皮，純理氣無活血藥）非同方——本方多桃仁/紅花活血、青皮/黃連，為肝鬱兼瘀熱方，書中原文已明確兩方並列非異名。2026-09-06 醫師提供原書全文後查證新增。"
+      ],
+      "indications": [
+        "S-SIDE-ABDOMINAL-PAIN",
+        "S-ABDOMINAL-TENDERNESS"
+      ],
+      "formulaPattern": "",
+      "notes": "矢數道明《日本漢方醫學及臨證經驗》處方索引：柴胡、當歸、桃仁、芍藥、川芎、枳殼、青皮、黃連、紅花（或加吳茱萸）。書中「一貫堂醫學」疏肝湯證（案93、238）：脾彎曲症（季肋下/左背/左上腹鈍痛，或肋間神經痛樣、心絞痛樣、肩凝樣痛），診察法「左脅下相當於肝經處可觸知上沖拘攣，此乃肝積之證，壓之則痛且自訴脅下痛」。與 KB 既有柴胡疏肝湯（《醫學統旨》：柴胡/芍藥/香附/川芎/枳殼/甘草/陳皮，純理氣無活血藥）非同方——本方多桃仁/紅花活血、青皮/黃連，為肝鬱兼瘀熱方，書中原文已明確兩方並列非異名。2026-09-06 醫師提供原書全文後查證新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-010",
+      "name": "提肩散",
+      "category": "醫師補充",
+      "xushiClass": "實證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "肩背強直作痛（風熱乘肺）",
+          "id": "S-SHOULDER-STIFF",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "防風",
+        "羌活",
+        "藁本",
+        "芍藥",
+        "川芎",
+        "黃連",
+        "黃芩",
+        "甘草",
+        "生薑"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "矢數道明《日本漢方醫學及臨證經驗》引《壽世保元》肩背痛門：「治風熱乘肺，肩背強直作痛」。書載處方：防風、羌活、藁本、芍藥、川芎各3克，黃連、黃芩、甘草、生薑各1克（案208、209）。2026-09-06 醫師提供原書全文後查證新增。"
+      ],
+      "indications": [
+        "S-SHOULDER-STIFF"
+      ],
+      "formulaPattern": "",
+      "notes": "矢數道明《日本漢方醫學及臨證經驗》引《壽世保元》肩背痛門：「治風熱乘肺，肩背強直作痛」。書載處方：防風、羌活、藁本、芍藥、川芎各3克，黃連、黃芩、甘草、生薑各1克（案208、209）。2026-09-06 醫師提供原書全文後查證新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-011",
+      "name": "利膈湯",
+      "category": "醫師補充",
+      "xushiClass": "虛實夾雜",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 1,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0.1429,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0.1111
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "心下部／劍突上方壓痛",
+          "id": "S-EPIGASTRIC-RESISTANCE",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "胸中痞塞",
+          "id": "S-CHEST-OPPRESSION",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "咽喉痞塞、咽下困難、通過障礙（書載目標核心，食道癌/食道狹窄代表方，2026-09-28）",
+          "id": "S-THROAT-BLOCK",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "嘔吐（食道狹窄堵塞引起，書載目標，2026-09-28）",
+          "id": "S-VOMITING",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "口渴（書載目標，2026-09-28）",
+          "id": "S-THIRST",
+          "negated": false,
+          "matchType": "physician-patch"
+        }
+      ],
+      "herbs": [
+        "半夏",
+        "梔子",
+        "附子"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "矢數道明《日本漢方醫學及臨證經驗》案22/23：「利膈湯為本朝經驗方，名古屋玄醫所創，是梔子附子湯加半夏所構成」，用於食管癌／食管狹窄／食管炎／食管息肉／食管痙攣／食管憩室及咽頭痞塞、咽下困難（半夏厚朴湯無效時試用）。書載處方：半夏6～8克、梔子3克、附子1克（常與茯苓杏仁甘草湯合方）。2026-09-06 醫師提供原書全文後查證新增。"
+      ],
+      "indications": [
+        "S-EPIGASTRIC-RESISTANCE",
+        "S-CHEST-OPPRESSION",
+        "S-THROAT-BLOCK",
+        "S-VOMITING",
+        "S-THIRST"
+      ],
+      "formulaPattern": "",
+      "notes": "矢數道明《日本漢方醫學及臨證經驗》案22/23：「利膈湯為本朝經驗方，名古屋玄醫所創，是梔子附子湯加半夏所構成」，用於食管癌／食管狹窄／食管炎／食管息肉／食管痙攣／食管憩室及咽頭痞塞、咽下困難（半夏厚朴湯無效時試用）。書載處方：半夏6～8克、梔子3克、附子1克（常與茯苓杏仁甘草湯合方）。2026-09-06 醫師提供原書全文後查證新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-012",
+      "name": "當歸四逆湯",
+      "category": "醫師補充",
+      "xushiClass": "虛證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 1,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0.25,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0.1667,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0.1,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "手足厥寒（血虛受寒）",
+          "id": "S-COLD",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "肢端麻木、凍瘡傾向",
+          "id": "S-NUMBNESS",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "當歸",
+        "桂枝",
+        "芍藥",
+        "細辛",
+        "甘草",
+        "通草",
+        "大棗"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《傷寒論》351條：「手足厥寒，脈細欲絕者，當歸四逆湯主之」。矢數道明書案164（長期習慣性凍傷）用之。KB 原僅有加減方「當歸四逆加吳茱萸生薑湯」，母方本身工具原缺，2026-09-07 醫師提供原書全文後查證公開出典補齊。"
+      ],
+      "indications": [
+        "S-COLD",
+        "S-NUMBNESS"
+      ],
+      "formulaPattern": "",
+      "notes": "《傷寒論》351條：「手足厥寒，脈細欲絕者，當歸四逆湯主之」。矢數道明書案164（長期習慣性凍傷）用之。KB 原僅有加減方「當歸四逆加吳茱萸生薑湯」，母方本身工具原缺，2026-09-07 醫師提供原書全文後查證公開出典補齊。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-013",
+      "name": "折衝飲",
+      "category": "醫師補充",
+      "xushiClass": "虛實夾雜",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "月經痛",
+          "id": "S-DYSMENORRHEA",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "下腹痛",
+          "id": "S-LOWER-ABDOMINAL-PAIN",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "子宮肌瘤、瘀血腫塊",
+          "id": "S-ABDOMINAL-MASS",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "當歸",
+        "芍藥",
+        "桂皮",
+        "川芎",
+        "牛膝",
+        "桃仁",
+        "紅花",
+        "延胡索",
+        "牡丹皮"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "矢數道明《日本漢方醫學及臨證經驗》案109（月經痛、塊狀出血、子宮肌瘤）用「折衝飲加大黃」。查證為現行漢方經驗方（活血養血、袪瘀止痛），用於下腹痛、月經不順、月經痛、月經困難、神經痛、腰痛、肩凝。工具原缺，2026-09-07 醫師提供原書全文後、查證公開出典補齊。"
+      ],
+      "indications": [
+        "S-DYSMENORRHEA",
+        "S-LOWER-ABDOMINAL-PAIN",
+        "S-ABDOMINAL-MASS"
+      ],
+      "formulaPattern": "",
+      "notes": "矢數道明《日本漢方醫學及臨證經驗》案109（月經痛、塊狀出血、子宮肌瘤）用「折衝飲加大黃」。查證為現行漢方經驗方（活血養血、袪瘀止痛），用於下腹痛、月經不順、月經痛、月經困難、神經痛、腰痛、肩凝。工具原缺，2026-09-07 醫師提供原書全文後、查證公開出典補齊。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-014",
+      "name": "喘四君子湯",
+      "category": "醫師補充",
+      "xushiClass": "虛證",
+      "patternVector": {
+        "QI_XU": 1,
+        "QI_NI": 1,
+        "QI_YU": 0,
+        "XUE_XU": 1,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0.25,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0.2,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0.4,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "虛喘、體動即氣短",
+          "id": "S-ASTHMA-WHEEZE",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "氣力體力極度衰弱",
+          "id": "S-FATIGUE",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "面色蒼白",
+          "id": "S-PALE-COMPLEXION",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "人參",
+        "厚朴",
+        "蘇子",
+        "陳皮",
+        "茯苓",
+        "白朮",
+        "當歸",
+        "砂仁",
+        "木香",
+        "沉香",
+        "甘草",
+        "桑白皮"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《萬病回春》治喘四君子湯（矢數道明《日本漢方醫學及臨證經驗》書末方劑檢索；書中亦作「喘四君子湯」）。案44（哮喘及糖尿病：極度衰弱、面色蒼白、脾胃弱而虛喘）、案57（肺氣腫類似症：心跳憋氣、稍動即氣短、體瘦面色蒼白、腹部無力）。書載目標：肺氣腫病情遷延、氣力體力極度衰弱、脈細數或澀、因體動而喘咳呼吸困難加重者。2026-09-07 查書末組成後新增。"
+      ],
+      "indications": [
+        "S-ASTHMA-WHEEZE",
+        "S-FATIGUE",
+        "S-PALE-COMPLEXION"
+      ],
+      "formulaPattern": "",
+      "notes": "《萬病回春》治喘四君子湯（矢數道明《日本漢方醫學及臨證經驗》書末方劑檢索；書中亦作「喘四君子湯」）。案44（哮喘及糖尿病：極度衰弱、面色蒼白、脾胃弱而虛喘）、案57（肺氣腫類似症：心跳憋氣、稍動即氣短、體瘦面色蒼白、腹部無力）。書載目標：肺氣腫病情遷延、氣力體力極度衰弱、脈細數或澀、因體動而喘咳呼吸困難加重者。2026-09-07 查書末組成後新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-015",
+      "name": "治喘一方",
+      "category": "醫師補充",
+      "xushiClass": "虛證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 1,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0.25,
+        "XIN-XUEXU": 0.2,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0.4,
+        "FEI-YINXU": 0.2,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "勞動時呼吸困難、喘鳴",
+          "id": "S-ASTHMA-WHEEZE",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "咳嗽咯痰",
+          "id": "S-COUGH",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "心悸憋氣",
+          "id": "S-PALPITATION",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "茯苓",
+        "杏仁",
+        "桂枝",
+        "厚朴",
+        "蘇子",
+        "甘草"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "和田東郭經驗方＝茯苓杏仁甘草湯加桂枝、厚朴、蘇子（矢數道明書末方劑檢索）。案53/54/55（支氣管擴張症、呼吸困難、喘鳴）。書載投給目標：快走或上樓梯時發生呼吸困難，有咳嗽、咯痰、哮喘傾向並且虛證者；心悸憋氣亦有效。2026-09-07 查書末組成後新增。"
+      ],
+      "indications": [
+        "S-ASTHMA-WHEEZE",
+        "S-COUGH",
+        "S-PALPITATION"
+      ],
+      "formulaPattern": "",
+      "notes": "和田東郭經驗方＝茯苓杏仁甘草湯加桂枝、厚朴、蘇子（矢數道明書末方劑檢索）。案53/54/55（支氣管擴張症、呼吸困難、喘鳴）。書載投給目標：快走或上樓梯時發生呼吸困難，有咳嗽、咯痰、哮喘傾向並且虛證者；心悸憋氣亦有效。2026-09-07 查書末組成後新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-016",
+      "name": "通氣防風湯",
+      "category": "醫師補充",
+      "xushiClass": "虛實夾雜",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "肩背痛、拘攣（風濕）",
+          "id": "S-SHOULDER-STIFF",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "肩項強、不能回顧",
+          "id": "S-NECK-STIFF",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "藁本",
+        "防風",
+        "川芎",
+        "羌活",
+        "獨活",
+        "甘草",
+        "蔓荊子"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《辨惑論》（《古今方彙》肩背痛門）：「治肩背痛而不能回顧者」，風濕所致太陽經循行不暢、肩項強。矢數道明書案206（關節痛及肩背痛：肩背發硬拘攣疼痛、夜間不能翻身，薏苡仁湯／治肩背拘急方均無效，本方一週緩解）。書末組成：藁本、防風、川芎各3、羌活、獨活各4、甘草、蔓荊子各1。2026-09-07 新增。"
+      ],
+      "indications": [
+        "S-SHOULDER-STIFF",
+        "S-NECK-STIFF"
+      ],
+      "formulaPattern": "",
+      "notes": "《辨惑論》（《古今方彙》肩背痛門）：「治肩背痛而不能回顧者」，風濕所致太陽經循行不暢、肩項強。矢數道明書案206（關節痛及肩背痛：肩背發硬拘攣疼痛、夜間不能翻身，薏苡仁湯／治肩背拘急方均無效，本方一週緩解）。書末組成：藁本、防風、川芎各3、羌活、獨活各4、甘草、蔓荊子各1。2026-09-07 新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-017",
+      "name": "選奇湯",
+      "category": "醫師補充",
+      "xushiClass": "虛實夾雜",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 1,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0.1429,
+        "GAN-YINXU": 0.2,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0.1111
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "眉稜骨痛、眼窩痛",
+          "id": "S-HEADACHE",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "視力減弱、眼痛",
+          "id": "S-EYE-FATIGUE",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "黃芩",
+        "羌活",
+        "防風",
+        "甘草",
+        "半夏"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "李東垣《蘭室秘藏》「治眉骨痛不能忍者」；《方彙口訣》「治眉稜骨痛」。矢數道明書案13（五年多的眉間痛：兩眉上方及眉間疼痛、視力減弱、頸肩酸痛，數日即效）。書用《萬病回春》版（有半夏）：黃芩3、羌活、防風各5、甘草1.5、半夏5；《蘭室秘藏》原方無半夏。2026-09-07 新增。"
+      ],
+      "indications": [
+        "S-HEADACHE",
+        "S-EYE-FATIGUE"
+      ],
+      "formulaPattern": "",
+      "notes": "李東垣《蘭室秘藏》「治眉骨痛不能忍者」；《方彙口訣》「治眉稜骨痛」。矢數道明書案13（五年多的眉間痛：兩眉上方及眉間疼痛、視力減弱、頸肩酸痛，數日即效）。書用《萬病回春》版（有半夏）：黃芩3、羌活、防風各5、甘草1.5、半夏5；《蘭室秘藏》原方無半夏。2026-09-07 新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-018",
+      "name": "秦艽羌活湯",
+      "category": "醫師補充",
+      "xushiClass": "虛實夾雜",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 1,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "痔漏、痔核、脫肛有分泌物",
+          "id": "S-HEMORRHOIDS",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "肛門部奇癢難耐",
+          "id": "S-PRURITUS",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "羌活",
+        "秦艽",
+        "黃耆",
+        "防風",
+        "升麻",
+        "甘草",
+        "麻黃",
+        "柴胡",
+        "藁本",
+        "細辛",
+        "紅花"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "李東垣《蘭室秘藏》痔漏門：「治痔漏成塊下垂，奇癢難耐者」。矢數道明書案162（手掌皸裂及肛門部瘙癢）、163（痔漏的瘙癢：肛門周圍發癢有分泌物）。書載組成（依《漢方診療醫典》）：羌活5、秦艽、黃耆各3、防風2、升麻、甘草、麻黃、柴胡各1.5、藁本、細辛、紅花各0.5。2026-09-07 新增。"
+      ],
+      "indications": [
+        "S-HEMORRHOIDS",
+        "S-PRURITUS"
+      ],
+      "formulaPattern": "",
+      "notes": "李東垣《蘭室秘藏》痔漏門：「治痔漏成塊下垂，奇癢難耐者」。矢數道明書案162（手掌皸裂及肛門部瘙癢）、163（痔漏的瘙癢：肛門周圍發癢有分泌物）。書載組成（依《漢方診療醫典》）：羌活5、秦艽、黃耆各3、防風2、升麻、甘草、麻黃、柴胡各1.5、藁本、細辛、紅花各0.5。2026-09-07 新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-019",
+      "name": "助陽和血湯",
+      "category": "醫師補充",
+      "xushiClass": "虛證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 1,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0.2,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0.1111
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "眼疲勞、乾澀難開、白睛赤",
+          "id": "S-EYE-FATIGUE",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "黃耆",
+        "當歸",
+        "甘草",
+        "防風",
+        "柴胡",
+        "白芷",
+        "蔓荊子",
+        "升麻"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "李東垣《蘭室秘藏》，一名活血湯：「治眼發後猶有上熱，白睛赤，隱澀難開而多淚」。矢數道明書案37（乾燥綜合徵：眼易疲勞、發澀而乾燥）。書末組成：黃耆、當歸、甘草、防風、柴胡各3、白芷2、蔓荊子2、升麻0.5。2026-09-07 新增。"
+      ],
+      "indications": [
+        "S-EYE-FATIGUE"
+      ],
+      "formulaPattern": "",
+      "notes": "李東垣《蘭室秘藏》，一名活血湯：「治眼發後猶有上熱，白睛赤，隱澀難開而多淚」。矢數道明書案37（乾燥綜合徵：眼易疲勞、發澀而乾燥）。書末組成：黃耆、當歸、甘草、防風、柴胡各3、白芷2、蔓荊子2、升麻0.5。2026-09-07 新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-020",
+      "name": "桂枝五物湯",
+      "category": "醫師補充",
+      "xushiClass": "實證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 1,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "牙痛、牙齦炎、齒槽膿漏",
+          "id": "S-TOOTHACHE",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "口舌糜爛、口內潰瘍",
+          "id": "S-HEAT-TOXIN",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "口唇發麻過敏",
+          "id": "S-NUMBNESS",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "口內炎、齒根炎、齒槽膿漏而有口臭（醫典口臭門，2026-10-06）",
+          "id": "S-HALITOSIS",
+          "negated": false,
+          "matchType": "physician-patch"
+        }
+      ],
+      "herbs": [
+        "桂枝",
+        "黃芩",
+        "桔梗",
+        "地黃",
+        "茯苓"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "吉益東洞經驗方（≠黃耆桂枝五物湯）：對牙痛、口舌糜爛、牙齦炎有效，適用於偏實證之牙痛、牙齦炎、口舌糜爛、齒槽膿漏、口內潰瘍。矢數道明書案19（牙痛及唇頰過敏症：下門齒齒根劇痛、上下口唇發麻過敏）。書末組成：桂枝、黃芩、桔梗、地黃各4、茯苓8。2026-09-07 新增。"
+      ],
+      "indications": [
+        "S-TOOTHACHE",
+        "S-HEAT-TOXIN",
+        "S-NUMBNESS",
+        "S-HALITOSIS"
+      ],
+      "formulaPattern": "",
+      "notes": "吉益東洞經驗方（≠黃耆桂枝五物湯）：對牙痛、口舌糜爛、牙齦炎有效，適用於偏實證之牙痛、牙齦炎、口舌糜爛、齒槽膿漏、口內潰瘍。矢數道明書案19（牙痛及唇頰過敏症：下門齒齒根劇痛、上下口唇發麻過敏）。書末組成：桂枝、黃芩、桔梗、地黃各4、茯苓8。2026-09-07 新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-021",
+      "name": "溫膽湯",
+      "category": "醫師補充",
+      "xushiClass": "虛實夾雜",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 1
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0.5,
+        "XIN-XUEXU": 0.4,
+        "PI-QIXU": 0.2,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0.2,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "失眠（痰飲、膽寒）",
+          "id": "S-INSOMNIA",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "驚悸",
+          "id": "S-PALPITATION",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "痰飲、胃內停水",
+          "id": "S-GASTRIC-SPLASH",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "體質較虛、病後神疲尚未恢復",
+          "id": "S-FATIGUE",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "訴有心下痞",
+          "id": "S-EPIGASTRIC-RESISTANCE",
+          "negated": false,
+          "matchType": "physician-patch"
+        }
+      ],
+      "herbs": [
+        "半夏",
+        "茯苓",
+        "生薑",
+        "陳皮",
+        "竹茹",
+        "枳實",
+        "甘草"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《千金方》。矢數道明書：溫膽湯主治痰飲及膽寒所致失眠（案67 鑑別語；案24 失眠時併用溫膽湯加黃連酸棗仁；案68 頑固性失眠先用本方加柴胡黃連酸棗仁）。KB 既有竹茹溫膽湯為本方加味（胸中鬱熱），本方為母方。書末組成：半夏、茯苓、生薑、陳皮、竹茹、枳實、甘草。2026-09-07 新增。"
+      ],
+      "indications": [
+        "S-INSOMNIA",
+        "S-PALPITATION",
+        "S-GASTRIC-SPLASH",
+        "S-FATIGUE",
+        "S-EPIGASTRIC-RESISTANCE"
+      ],
+      "formulaPattern": "",
+      "notes": "《千金方》。矢數道明書：溫膽湯主治痰飲及膽寒所致失眠（案67 鑑別語；案24 失眠時併用溫膽湯加黃連酸棗仁；案68 頑固性失眠先用本方加柴胡黃連酸棗仁）。KB 既有竹茹溫膽湯為本方加味（胸中鬱熱），本方為母方。書末組成：半夏、茯苓、生薑、陳皮、竹茹、枳實、甘草。2026-09-07 新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-022",
+      "name": "通明利氣湯",
+      "category": "醫師補充",
+      "xushiClass": "實證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 1,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0.1429,
+        "GAN-YINXU": 0.2,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0.2,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0.1111
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "耳鳴、耳閉（痰火）",
+          "id": "S-TINNITUS",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "面赤上火",
+          "id": "S-FACIAL-FLUSH",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "煩躁不寧、神經質",
+          "id": "S-ANXIETY",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "蒼朮",
+        "白朮",
+        "香附",
+        "地黃",
+        "梔子",
+        "黃連",
+        "黃芩",
+        "黃柏",
+        "玄參",
+        "川芎",
+        "木香",
+        "甘草",
+        "陳皮",
+        "貝母",
+        "生薑"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《萬病回春》：「治虛火上升、痰氣鬱耳中，或閉或鳴；痰火熾盛，憂鬱痞滿，咽喉不利，煩躁不寧」。矢數道明書案35（搏動性耳鳴：耳中堵塞感、肥胖面赤上火、心跳過速、神經質；一貫堂常用）。書末組成：蒼朮、白朮、香附、生地、梔子、黃連、黃芩、黃柏、玄參、川芎、木香、甘草、陳皮、貝母、生薑。2026-09-07 新增。"
+      ],
+      "indications": [
+        "S-TINNITUS",
+        "S-FACIAL-FLUSH",
+        "S-ANXIETY"
+      ],
+      "formulaPattern": "",
+      "notes": "《萬病回春》：「治虛火上升、痰氣鬱耳中，或閉或鳴；痰火熾盛，憂鬱痞滿，咽喉不利，煩躁不寧」。矢數道明書案35（搏動性耳鳴：耳中堵塞感、肥胖面赤上火、心跳過速、神經質；一貫堂常用）。書末組成：蒼朮、白朮、香附、生地、梔子、黃連、黃芩、黃柏、玄參、川芎、木香、甘草、陳皮、貝母、生薑。2026-09-07 新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-023",
+      "name": "痿證方",
+      "category": "醫師補充",
+      "xushiClass": "虛證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 1,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0.1,
+        "SHEN-YINXU": 0.1111
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "下肢脫力、腰以下痿弱",
+          "id": "S-WEAK-LOWER-LIMB",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "兩足麻木",
+          "id": "S-NUMBNESS",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "當歸",
+        "地黃",
+        "芍藥",
+        "蒼朮",
+        "牛膝",
+        "知母",
+        "黃耆",
+        "杜仲",
+        "黃柏"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "福井楓亭經驗方：「腰以下痿而不能起者，初期用之有效」，用於大病後下肢無力、產後腳膝痿弱、腳氣病下肢麻痹、脊髓癆等；以地黃為主補腎、強腰腳筋骨。矢數道明書案70（帕金森樣症候：下肢無力，七物降下湯後改本方）、114（子宮卵巢全摘除後下肢脫力：兩足冰冷麻木、顫抖、不能連續站立）。書末組成：當歸、地黃、芍藥、蒼朮、牛膝、知母、黃耆、杜仲、黃柏。2026-09-07 新增。"
+      ],
+      "indications": [
+        "S-WEAK-LOWER-LIMB",
+        "S-NUMBNESS"
+      ],
+      "formulaPattern": "",
+      "notes": "福井楓亭經驗方：「腰以下痿而不能起者，初期用之有效」，用於大病後下肢無力、產後腳膝痿弱、腳氣病下肢麻痹、脊髓癆等；以地黃為主補腎、強腰腳筋骨。矢數道明書案70（帕金森樣症候：下肢無力，七物降下湯後改本方）、114（子宮卵巢全摘除後下肢脫力：兩足冰冷麻木、顫抖、不能連續站立）。書末組成：當歸、地黃、芍藥、蒼朮、牛膝、知母、黃耆、杜仲、黃柏。2026-09-07 新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-024",
+      "name": "堅中湯",
+      "category": "醫師補充",
+      "xushiClass": "虛證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 1
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0.3333,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "心下部疼痛（脾胃虛寒）",
+          "id": "S-ABDOMINAL-PAIN",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "心下痞",
+          "id": "S-EPIGASTRIC-RESISTANCE",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "便軟",
+          "id": "S-DIARRHEA-LOOSE",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "心下部振水音（醫典胃潰瘍門，2026-10-06）",
+          "id": "S-GASTRIC-SPLASH",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "胃痛（醫典胃潰瘍門，2026-10-06）",
+          "id": "S-EPIGASTRIC-PAIN",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "嘔吐（醫典胃潰瘍門，2026-10-06）",
+          "id": "S-VOMITING",
+          "negated": false,
+          "matchType": "physician-patch"
+        }
+      ],
+      "herbs": [
+        "半夏",
+        "茯苓",
+        "桂枝",
+        "大棗",
+        "芍藥",
+        "乾薑",
+        "甘草"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《千金方》。矢數道明書案123（子宮癌術後幽門息肉：心下痞、時常疼痛，本方加雲芝後胃腸症狀好轉）、案238（脾彎曲症：心下部疼痛飯後更重、便軟時有腹瀉、脈腹無力臍周壓痛＝脾胃虛，本方二週疼痛減半）。書末組成：半夏、茯苓、桂枝、大棗、芍藥、乾薑、甘草。2026-09-07 新增。"
+      ],
+      "indications": [
+        "S-ABDOMINAL-PAIN",
+        "S-EPIGASTRIC-RESISTANCE",
+        "S-DIARRHEA-LOOSE",
+        "S-GASTRIC-SPLASH",
+        "S-EPIGASTRIC-PAIN",
+        "S-VOMITING"
+      ],
+      "formulaPattern": "",
+      "notes": "《千金方》。矢數道明書案123（子宮癌術後幽門息肉：心下痞、時常疼痛，本方加雲芝後胃腸症狀好轉）、案238（脾彎曲症：心下部疼痛飯後更重、便軟時有腹瀉、脈腹無力臍周壓痛＝脾胃虛，本方二週疼痛減半）。書末組成：半夏、茯苓、桂枝、大棗、芍藥、乾薑、甘草。2026-09-07 新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-025",
+      "name": "補氣建中湯",
+      "category": "醫師補充",
+      "xushiClass": "虛證",
+      "patternVector": {
+        "QI_XU": 1,
+        "QI_NI": 0,
+        "QI_YU": 1,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0.5,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0.4,
+        "PI-YANGXU": 0.1667,
+        "FEI-QIXU": 0.2,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0.1,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "浮腫（虛證、腎炎／肝硬化）",
+          "id": "S-EDEMA",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "全身倦怠",
+          "id": "S-FATIGUE",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "中滿腹脹",
+          "id": "S-ABDOMINAL-DISTENSION",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "腹水、鼓腸（醫典藥方解說）",
+          "id": "S-ASCITES-PLEURAL-EFFUSION",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        }
+      ],
+      "herbs": [
+        "白朮",
+        "茯苓",
+        "陳皮",
+        "人參",
+        "黃芩",
+        "厚朴",
+        "澤瀉",
+        "麥門冬"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《濟生方》，補氣利水消滿。矢數道明書案154（紅斑狼瘡併發腎炎：尿蛋白、眼瞼浮腫）、176（肝硬化：全身倦怠、下肢浮腫，合柴芍六君子湯）、185（慢性腎炎：尿蛋白十年、兩足浮腫、體格瘦弱屬虛證，合五苓散長期服）。書末組成：朮、茯苓、陳皮、人參、黃芩、厚朴、澤瀉、麥門冬。2026-09-07 新增。"
+      ],
+      "indications": [
+        "S-EDEMA",
+        "S-FATIGUE",
+        "S-ABDOMINAL-DISTENSION",
+        "S-ASCITES-PLEURAL-EFFUSION"
+      ],
+      "formulaPattern": "",
+      "notes": "《濟生方》，補氣利水消滿。矢數道明書案154（紅斑狼瘡併發腎炎：尿蛋白、眼瞼浮腫）、176（肝硬化：全身倦怠、下肢浮腫，合柴芍六君子湯）、185（慢性腎炎：尿蛋白十年、兩足浮腫、體格瘦弱屬虛證，合五苓散長期服）。書末組成：朮、茯苓、陳皮、人參、黃芩、厚朴、澤瀉、麥門冬。2026-09-07 新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-026",
+      "name": "麥門冬飲子",
+      "category": "醫師補充",
+      "xushiClass": "虛證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0.2,
+        "FEI-YINXU": 0.2,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0.1111
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "口渴（消渴／糖尿病）",
+          "id": "S-THIRST",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "咳嗽（糖尿病並發肺結核）",
+          "id": "S-COUGH",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "消渴多尿（醫典藥方解說）",
+          "id": "S-POLYURIA",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        },
+        {
+          "raw": "皮膚枯燥（醫典藥方解說）",
+          "id": "S-SKIN-DRY",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        }
+      ],
+      "herbs": [
+        "麥門冬",
+        "人參",
+        "天花粉",
+        "知母",
+        "葛根",
+        "生地黃",
+        "茯苓",
+        "五味子",
+        "甘草",
+        "竹葉"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "大塚敬節《中醫治療方法：三十一種常見疑難病的治療經驗》第16章糖尿病篇（書中簡稱「麥門冬飲」，常加蘭草、連錢草）：適用於糖尿病伴咳嗽、聲音嘶啞、並發肺結核者。書末方劑檢索組成：麥門冬7.0，人參、天花粉各2.0，知母、葛根各3.0，生地黃4.0，茯苓6.0，五味子、甘草、竹葉各1.0——組成以生津清熱藥為主，與消渴（糖尿病）古典治法相符。2026-09-09 新增，量測（4方合併與逐方隔離）全部逐位元不變後落地。"
+      ],
+      "indications": [
+        "S-THIRST",
+        "S-COUGH",
+        "S-POLYURIA",
+        "S-SKIN-DRY"
+      ],
+      "formulaPattern": "",
+      "notes": "大塚敬節《中醫治療方法：三十一種常見疑難病的治療經驗》第16章糖尿病篇（書中簡稱「麥門冬飲」，常加蘭草、連錢草）：適用於糖尿病伴咳嗽、聲音嘶啞、並發肺結核者。書末方劑檢索組成：麥門冬7.0，人參、天花粉各2.0，知母、葛根各3.0，生地黃4.0，茯苓6.0，五味子、甘草、竹葉各1.0——組成以生津清熱藥為主，與消渴（糖尿病）古典治法相符。2026-09-09 新增，量測（4方合併與逐方隔離）全部逐位元不變後落地。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-027",
+      "name": "錢氏白朮散",
+      "category": "醫師補充",
+      "xushiClass": "虛證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 1
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0.2,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "水樣便（兒童慢性腹瀉）",
+          "id": "S-DIARRHEA-WATERY",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "消化不良",
+          "id": "S-APPETITE-LOW",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "人參",
+        "白朮",
+        "茯苓",
+        "葛根",
+        "藿香",
+        "木香",
+        "甘草"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "大塚敬節《中醫治療方法：三十一種常見疑難病的治療經驗》第28章虛弱兒童篇案B：不需煎煮做散劑用，為兒童消化不良／慢性腹瀉常用方；驗案1歲6月女孩5個月餘每日水樣便2-3次，服本方2月痊癒。書末方劑檢索組成：人參3.0，白朮、茯苓、葛根各4.0，藿香、木香、甘草各1.0（與KB既有參苓白朮散不同方，不含山藥／扁豆／蓮肉／薏苡仁）。2026-09-09 新增，量測（4方合併與逐方隔離）全部逐位元不變後落地。"
+      ],
+      "indications": [
+        "S-DIARRHEA-WATERY",
+        "S-APPETITE-LOW"
+      ],
+      "formulaPattern": "",
+      "notes": "大塚敬節《中醫治療方法：三十一種常見疑難病的治療經驗》第28章虛弱兒童篇案B：不需煎煮做散劑用，為兒童消化不良／慢性腹瀉常用方；驗案1歲6月女孩5個月餘每日水樣便2-3次，服本方2月痊癒。書末方劑檢索組成：人參3.0，白朮、茯苓、葛根各4.0，藿香、木香、甘草各1.0（與KB既有參苓白朮散不同方，不含山藥／扁豆／蓮肉／薏苡仁）。2026-09-09 新增，量測（4方合併與逐方隔離）全部逐位元不變後落地。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-028",
+      "name": "散腫潰堅湯",
+      "category": "醫師補充",
+      "xushiClass": "虛實夾雜",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "馬刀結核、瘰癧，硬如石，或在耳下、缺盆、肩上、腋下，堅而不潰",
+          "id": "S-NECK-MASS",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "昆布",
+        "海藻",
+        "黃柏",
+        "知母",
+        "天花粉",
+        "桔梗",
+        "三稜",
+        "莪朮",
+        "連翹",
+        "黃連",
+        "黃芩",
+        "芍藥",
+        "葛根",
+        "柴胡",
+        "當歸",
+        "龍膽草",
+        "甘草",
+        "升麻",
+        "生薑"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《萬病回春·瘰癧門》。矢數道明《日本漢方醫學及臨證經驗》p.463 收錄：「治馬刀結核，硬如石。或在耳下，或缺盆中，或至肩上，或在腋下。及瘰癧遍於頰下，堅而不潰。或瘡已破出水」，用於瘰癧、頸淋巴結炎（書中亦與甲狀腺腫大等頸部腫塊並論）。書末方劑索引原印作「散中潰堅湯」（掃描字跡不清、疑「腫」被排成「中」），已對照正文標題（p.463）核實為「散腫潰堅湯」，若醫師手邊有原書可再覆核。2026-09-09 醫師提供書之 Google Drive 連結、查證組成後新增。"
+      ],
+      "indications": [
+        "S-NECK-MASS"
+      ],
+      "formulaPattern": "",
+      "notes": "《萬病回春·瘰癧門》。矢數道明《日本漢方醫學及臨證經驗》p.463 收錄：「治馬刀結核，硬如石。或在耳下，或缺盆中，或至肩上，或在腋下。及瘰癧遍於頰下，堅而不潰。或瘡已破出水」，用於瘰癧、頸淋巴結炎（書中亦與甲狀腺腫大等頸部腫塊並論）。書末方劑索引原印作「散中潰堅湯」（掃描字跡不清、疑「腫」被排成「中」），已對照正文標題（p.463）核實為「散腫潰堅湯」，若醫師手邊有原書可再覆核。2026-09-09 醫師提供書之 Google Drive 連結、查證組成後新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-029",
+      "name": "十六味流氣飲",
+      "category": "醫師補充",
+      "xushiClass": "虛證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 1,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "甲狀腺腫、頸部淋巴結腫、瘰癧纏繞頸項",
+          "id": "S-NECK-MASS",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "因氣鬱引起之腫塊",
+          "id": "S-DEPRESSION",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "乳房腫塊（大塚敬節《漢方診療三十年》案276：右側乳房梅子大小之乳腺增生病，投藥五次共75天完全消失，《萬病回春》原文即載本方主治乳腺症，2026-09-28）",
+          "id": "S-BREAST-MASS",
+          "negated": false,
+          "matchType": "physician-patch"
+        }
+      ],
+      "herbs": [
+        "當歸",
+        "川芎",
+        "芍藥",
+        "桂枝",
+        "人參",
+        "蘇葉",
+        "桔梗",
+        "白芷",
+        "黃芩",
+        "木香",
+        "烏藥",
+        "厚朴",
+        "枳殼",
+        "檳榔",
+        "防風",
+        "甘草"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《萬病回春》，別名二八流氣飲。矢數道明《日本漢方醫學及臨證經驗》p.186-187：「治療因氣鬱引起之腫塊」，主要用於乳腺症、乳癌及其類似症、甲狀腺腫、頸部淋巴結腫、頑固性皮膚病、痞疽等；書載目標「以氣鬱滯而生腫塊、生瘡瘍，偏虛證為目標」，瘰癧纏繞頸項、大小如大豆至栗實、多相連、延至耳根及缺盆，病因憂鬱積忿；並明載「用於瘀血所致之甲狀腺腫與乳腺症之驅瘀血劑」。2026-09-09 醫師提供書之 Google Drive 連結、查證組成後新增。"
+      ],
+      "indications": [
+        "S-NECK-MASS",
+        "S-DEPRESSION",
+        "S-BREAST-MASS"
+      ],
+      "formulaPattern": "",
+      "notes": "《萬病回春》，別名二八流氣飲。矢數道明《日本漢方醫學及臨證經驗》p.186-187：「治療因氣鬱引起之腫塊」，主要用於乳腺症、乳癌及其類似症、甲狀腺腫、頸部淋巴結腫、頑固性皮膚病、痞疽等；書載目標「以氣鬱滯而生腫塊、生瘡瘍，偏虛證為目標」，瘰癧纏繞頸項、大小如大豆至栗實、多相連、延至耳根及缺盆，病因憂鬱積忿；並明載「用於瘀血所致之甲狀腺腫與乳腺症之驅瘀血劑」。2026-09-09 醫師提供書之 Google Drive 連結、查證組成後新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-030",
+      "name": "響聲破笛丸",
+      "category": "醫師補充",
+      "xushiClass": "虛實夾雜",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "聲音嘶啞（發聲過度、聲嗄）",
+          "id": "S-HOARSE-VOICE",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "連翹",
+        "桔梗",
+        "甘草",
+        "大黃",
+        "砂仁",
+        "川芎",
+        "訶子",
+        "阿仙藥",
+        "薄荷"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《萬病回春·咽喉門》。矢數道明《日本漢方醫學及臨證經驗》p.457-458 收錄：「聲音不出者，腎虛也」，「用於唱歌、連續演說，因發聲過度引起之聲音嘶啞等」，「應用於聲嗄之特效藥」。矢數書第五批（reports/yakazu-fukusho-case-bridge-2026-09-06.md）原查有出典但本體無「聲音嘶啞」概念而跳過，本輪新開概念後補齊。組成：連翹、桔梗、甘草各2.5克，大黃、縮砂仁、川芎、訶子各1克，阿仙藥2克，薄荷4克（書註：原方用百藥煎，此處以阿仙藥代之；一般去大黃）。2026-09-09 新增。"
+      ],
+      "indications": [
+        "S-HOARSE-VOICE"
+      ],
+      "formulaPattern": "",
+      "notes": "《萬病回春·咽喉門》。矢數道明《日本漢方醫學及臨證經驗》p.457-458 收錄：「聲音不出者，腎虛也」，「用於唱歌、連續演說，因發聲過度引起之聲音嘶啞等」，「應用於聲嗄之特效藥」。矢數書第五批（reports/yakazu-fukusho-case-bridge-2026-09-06.md）原查有出典但本體無「聲音嘶啞」概念而跳過，本輪新開概念後補齊。組成：連翹、桔梗、甘草各2.5克，大黃、縮砂仁、川芎、訶子各1克，阿仙藥2克，薄荷4克（書註：原方用百藥煎，此處以阿仙藥代之；一般去大黃）。2026-09-09 新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-031",
+      "name": "奔豚湯（金匱要略）",
+      "category": "醫師補充",
+      "xushiClass": "虛實夾雜",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 1,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0.25,
+        "XIN-XUEXU": 0.2,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0.1667,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "奔豚氣上沖胸",
+          "id": "S-PALPITATION",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "腹痛",
+          "id": "S-ABDOMINAL-PAIN",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "往來寒熱",
+          "id": "S-ALTERNATING-CHILL-FEVER",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "奔豚，氣上衝胸",
+          "id": "S-BENTUN",
+          "negated": false,
+          "matchType": "physician-patch"
+        }
+      ],
+      "herbs": [
+        "葛根",
+        "李根皮",
+        "生薑",
+        "半夏",
+        "當歸",
+        "川芎",
+        "芍藥",
+        "黃芩",
+        "甘草"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《金匱要略》。矢數道明《日本漢方醫學及臨證經驗》p.484 收錄：「主奔豚，氣上沖胸，腹痛，往來寒熱」；書引《諸病源候論》「其奔豚氣，由腎之積氣，生驚恐憂思所起……氣上下遊走，如豚之奔，故謂奔豚」。與 KB 既有「奔豚湯（肘後方）」（吳茱萸/桂皮/半夏/生薑/人參/甘草）組成完全不同——本方無吳茱萸/桂皮/人參，另有葛根/李根皮/當歸/川芎/芍藥/黃芩，是同名異方，比照既有「奔豚湯（肘後方）」的括號出典命名方式並存建檔。2026-09-09 查證組成後新增。"
+      ],
+      "indications": [
+        "S-PALPITATION",
+        "S-ABDOMINAL-PAIN",
+        "S-ALTERNATING-CHILL-FEVER",
+        "S-BENTUN"
+      ],
+      "formulaPattern": "",
+      "notes": "《金匱要略》。矢數道明《日本漢方醫學及臨證經驗》p.484 收錄：「主奔豚，氣上沖胸，腹痛，往來寒熱」；書引《諸病源候論》「其奔豚氣，由腎之積氣，生驚恐憂思所起……氣上下遊走，如豚之奔，故謂奔豚」。與 KB 既有「奔豚湯（肘後方）」（吳茱萸/桂皮/半夏/生薑/人參/甘草）組成完全不同——本方無吳茱萸/桂皮/人參，另有葛根/李根皮/當歸/川芎/芍藥/黃芩，是同名異方，比照既有「奔豚湯（肘後方）」的括號出典命名方式並存建檔。2026-09-09 查證組成後新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-032",
+      "name": "芎歸補中湯",
+      "category": "醫師補充",
+      "xushiClass": "虛證",
+      "patternVector": {
+        "QI_XU": 1,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0.25,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0.2,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0.2,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "妊娠（虛弱者，預防流產）",
+          "id": "S-PREGNANCY",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "全身嚴重倦怠無力",
+          "id": "S-FATIGUE",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "黃芪",
+        "人參",
+        "白朮",
+        "當歸",
+        "芍藥",
+        "川芎",
+        "阿膠",
+        "杜仲",
+        "木香",
+        "甘草",
+        "乾薑",
+        "五味子"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "矢數道明《日本漢方醫學及臨證經驗》p.397：「虛弱者之妊娠，持續服藥，用補中益氣湯和芎歸補中湯……能增強體力，並預防流產」（治驗1：27歲婦女，兩年前妊娠6個月自然流產，目前妊娠3個月，惡阻嘔吐、食慾不振、全身嚴重倦怠無力、夜間盜汗不止、精神不安、脈弱、腹弛緩、面色蒼白呈貧血貌，與補中益氣湯服1週元氣恢復，虛弱者續行妊娠則加芎歸補中湯增強體力並預防流產）。組成：黃芪、人參、白朮、當歸、芍藥、川芎各3克，阿膠1.5克，杜仲、木香、甘草、乾薑各1克，五味子0.5克——即補中益氣湯類方向加當歸、芍藥、阿膠養血，杜仲安胎，是妊娠期專用的加減方。第五批（reports/yakazu-fukusho-case-bridge-2026-09-06.md）原因本體無「妊娠」概念而跳過，本輪新開 S-PREGNANCY 概念後補齊；**僅供查詢用，未連動安胎禁忌／破血藥對孕婦的排除邏輯**，那是範圍更大的安全性功能，待醫師另外決定方向。2026-09-09 新增。"
+      ],
+      "indications": [
+        "S-PREGNANCY",
+        "S-FATIGUE"
+      ],
+      "formulaPattern": "",
+      "notes": "矢數道明《日本漢方醫學及臨證經驗》p.397：「虛弱者之妊娠，持續服藥，用補中益氣湯和芎歸補中湯……能增強體力，並預防流產」（治驗1：27歲婦女，兩年前妊娠6個月自然流產，目前妊娠3個月，惡阻嘔吐、食慾不振、全身嚴重倦怠無力、夜間盜汗不止、精神不安、脈弱、腹弛緩、面色蒼白呈貧血貌，與補中益氣湯服1週元氣恢復，虛弱者續行妊娠則加芎歸補中湯增強體力並預防流產）。組成：黃芪、人參、白朮、當歸、芍藥、川芎各3克，阿膠1.5克，杜仲、木香、甘草、乾薑各1克，五味子0.5克——即補中益氣湯類方向加當歸、芍藥、阿膠養血，杜仲安胎，是妊娠期專用的加減方。第五批（reports/yakazu-fukusho-case-bridge-2026-09-06.md）原因本體無「妊娠」概念而跳過，本輪新開 S-PREGNANCY 概念後補齊；**僅供查詢用，未連動安胎禁忌／破血藥對孕婦的排除邏輯**，那是範圍更大的安全性功能，待醫師另外決定方向。2026-09-09 新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-033",
+      "name": "藿香正氣散",
+      "category": "醫師補充",
+      "xushiClass": "虛實夾雜",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 1,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0.1429,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0.2,
+        "PI-YANGXU": 0.3333,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0.2,
+        "SHEN-YANGXU": 0.1,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "中暑、夏季胃腸炎",
+          "id": "S-SUMMER-HEAT",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "頭痛",
+          "id": "S-HEADACHE",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "發熱",
+          "id": "S-FEVER",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "心下痞",
+          "id": "S-EPIGASTRIC-RESISTANCE",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "下利、夏季下利",
+          "id": "S-DIARRHEA",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "心腹疼痛",
+          "id": "S-ABDOMINAL-PAIN",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "無汗",
+          "id": "S-NO-SWEAT",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "嘔吐（醫典藥方解說）",
+          "id": "S-VOMITING",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        }
+      ],
+      "herbs": [
+        "白朮",
+        "半夏",
+        "茯苓",
+        "厚朴",
+        "陳皮",
+        "桔梗",
+        "白芷",
+        "蘇葉",
+        "藿香",
+        "大腹皮",
+        "大棗",
+        "生薑",
+        "甘草"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《太平惠民和劑局方》。矢數道明《日本漢方醫學及臨證經驗》p.50：中暑、夏季胃腸炎、暑濕。組成：白朮、半夏、茯苓各3克，厚朴、陳皮各2克，桔梗、白芷各1.5克，蘇葉、藿香、大腹皮、大棗、干生薑、甘草各1克。2026-09-09 新增。"
+      ],
+      "indications": [
+        "S-SUMMER-HEAT",
+        "S-HEADACHE",
+        "S-FEVER",
+        "S-EPIGASTRIC-RESISTANCE",
+        "S-DIARRHEA",
+        "S-ABDOMINAL-PAIN",
+        "S-NO-SWEAT",
+        "S-VOMITING"
+      ],
+      "formulaPattern": "",
+      "notes": "《太平惠民和劑局方》。矢數道明《日本漢方醫學及臨證經驗》p.50：中暑、夏季胃腸炎、暑濕。組成：白朮、半夏、茯苓各3克，厚朴、陳皮各2克，桔梗、白芷各1.5克，蘇葉、藿香、大腹皮、大棗、干生薑、甘草各1克。2026-09-09 新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-034",
+      "name": "瓜蔞薤白半夏湯",
+      "category": "醫師補充",
+      "xushiClass": "虛實夾雜",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 1,
+        "QI_YU": 1,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0.1429,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0.4,
+        "FEI-YINXU": 0.2,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "胸痹、胸痛徹背",
+          "id": "S-CHEST-OPPRESSION",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "有喘息、呼吸困難",
+          "id": "S-ASTHMA-WHEEZE",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "咳嗽、咯痰",
+          "id": "S-COUGH",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "腹診多見心下痞硬",
+          "id": "S-EPIGASTRIC-RESISTANCE",
+          "negated": false,
+          "matchType": "physician-patch"
+        }
+      ],
+      "herbs": [
+        "瓜蔞",
+        "薤白",
+        "半夏"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《金匱要略》。矢數道明《日本漢方醫學及臨證經驗》p.58：胸痹病（冠心病、心律不整、胸痛徹背、喘息）。組成：瓜蔞3克，薤白4.5克，半夏6克。2026-09-09 新增。"
+      ],
+      "indications": [
+        "S-CHEST-OPPRESSION",
+        "S-ASTHMA-WHEEZE",
+        "S-COUGH",
+        "S-EPIGASTRIC-RESISTANCE"
+      ],
+      "formulaPattern": "",
+      "notes": "《金匱要略》。矢數道明《日本漢方醫學及臨證經驗》p.58：胸痹病（冠心病、心律不整、胸痛徹背、喘息）。組成：瓜蔞3克，薤白4.5克，半夏6克。2026-09-09 新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-035",
+      "name": "柴葛解肌湯",
+      "category": "醫師補充",
+      "xushiClass": "虛實夾雜",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 1,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 1
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0.1429,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0.2,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0.2,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0.1111
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "太陽少陽合病之發熱",
+          "id": "S-FEVER",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "口渴四肢煩疼",
+          "id": "S-THIRST",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "無汗（鑑別於白虎湯證之汗出，本方仍兼太陽表證未解，2026-09-28）",
+          "id": "S-NO-SWEAT",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "不眠（三陽合病熱擾心神，2026-09-28）",
+          "id": "S-INSOMNIA",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "頭痛（書載目標主症，2026-09-28）",
+          "id": "S-HEADACHE",
+          "negated": false,
+          "matchType": "physician-patch"
+        }
+      ],
+      "herbs": [
+        "柴胡",
+        "黃芩",
+        "桂枝",
+        "半夏",
+        "葛根",
+        "芍藥",
+        "麻黃",
+        "石膏",
+        "生薑",
+        "甘草"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《傷寒六書》（常用淺田氏方）。矢數道明《日本漢方醫學及臨證經驗》p.125：麻黃湯葛根湯二方證未解入少陽，口渴四肢煩疼。組成：柴胡4克，黃芩、桂枝、半夏、葛根、芍藥各3克，麻黃2克，石膏5克，生薑、甘草各1克。2026-09-09 新增。"
+      ],
+      "indications": [
+        "S-FEVER",
+        "S-THIRST",
+        "S-NO-SWEAT",
+        "S-INSOMNIA",
+        "S-HEADACHE"
+      ],
+      "formulaPattern": "",
+      "notes": "《傷寒六書》（常用淺田氏方）。矢數道明《日本漢方醫學及臨證經驗》p.125：麻黃湯葛根湯二方證未解入少陽，口渴四肢煩疼。組成：柴胡4克，黃芩、桂枝、半夏、葛根、芍藥各3克，麻黃2克，石膏5克，生薑、甘草各1克。2026-09-09 新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-036",
+      "name": "小陷胸湯",
+      "category": "醫師補充",
+      "xushiClass": "實證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 1,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0.1429,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "心下硬痛按之脹滿（熱邪水邪互結）",
+          "id": "S-EPIGASTRIC-RESISTANCE",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "胸中悶",
+          "id": "S-CHEST-OPPRESSION",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "咳嗽時感胸痛（醫典藥方解說）",
+          "id": "S-COUGH",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        },
+        {
+          "raw": "咯痰難吐（醫典藥方解說）",
+          "id": "S-STICKY-SPUTUM",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        }
+      ],
+      "herbs": [
+        "黃連",
+        "瓜蔞仁",
+        "半夏"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《傷寒論》。矢數道明《日本漢方醫學及臨證經驗》p.198：熱邪與水邪心胸痞塞，心下部痞塞感按之硬而脹滿且痛。組成：黃連1.5克，瓜蔞仁3克，半夏6克。2026-09-09 新增。"
+      ],
+      "indications": [
+        "S-EPIGASTRIC-RESISTANCE",
+        "S-CHEST-OPPRESSION",
+        "S-COUGH",
+        "S-STICKY-SPUTUM"
+      ],
+      "formulaPattern": "",
+      "notes": "《傷寒論》。矢數道明《日本漢方醫學及臨證經驗》p.198：熱邪與水邪心胸痞塞，心下部痞塞感按之硬而脹滿且痛。組成：黃連1.5克，瓜蔞仁3克，半夏6克。2026-09-09 新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-037",
+      "name": "千金內托散",
+      "category": "醫師補充",
+      "xushiClass": "虛證",
+      "patternVector": {
+        "QI_XU": 1,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0.25,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0.2,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0.2,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "痛疽化膿，體虛不能發散病毒",
+          "id": "S-PUS",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "體質虛弱",
+          "id": "S-FATIGUE",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "化膿性中耳炎耳痛流膿（大塚敬節《漢方診療三十年》案347：極度消瘦面色蒼白婦人，青黴素無效、醫師建議手術，服內托散二週流膿減少、一個月流膿全停；作者明言內托散「具有排膿、促進肉芽生發和傷口愈合的功效」；案346闌尾炎術後創口流膿不愈亦以本方一個月封口，2026-10-04）",
+          "id": "S-EAR-DISCHARGE",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "人參",
+        "當歸",
+        "黃芪",
+        "川芎",
+        "防風",
+        "桔梗",
+        "厚朴",
+        "桂枝",
+        "白芷",
+        "甘草"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《萬病回春》。矢數道明《日本漢方醫學及臨證經驗》p.251：治痛疽化膿極重要方，體質虛弱不能發散病毒者，促進排膿機能。組成：人參、當歸各3克，黃芪、川芎、防風、桔梗、厚朴、桂枝各2克，白芷、甘草各1克。2026-09-09 新增。"
+      ],
+      "indications": [
+        "S-PUS",
+        "S-FATIGUE",
+        "S-EAR-DISCHARGE"
+      ],
+      "formulaPattern": "",
+      "notes": "《萬病回春》。矢數道明《日本漢方醫學及臨證經驗》p.251：治痛疽化膿極重要方，體質虛弱不能發散病毒者，促進排膿機能。組成：人參、當歸各3克，黃芪、川芎、防風、桔梗、厚朴、桂枝各2克，白芷、甘草各1克。2026-09-09 新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-038",
+      "name": "秦艽鱉甲湯",
+      "category": "醫師補充",
+      "xushiClass": "虛證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 1,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0.2,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0.2,
+        "FEI-YINXU": 0.4,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0.1111
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "肺結核骨蒸勞熱兼咳嗽",
+          "id": "S-COUGH",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "持續蒸蒸發熱，盜汗",
+          "id": "S-NIGHT-SWEAT",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "兩頰潮紅",
+          "id": "S-FACIAL-FLUSH",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "微熱長久持續（醫典藥方解說）",
+          "id": "S-FEVER",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        }
+      ],
+      "herbs": [
+        "鱉甲",
+        "柴胡",
+        "地骨皮",
+        "秦艽",
+        "知母",
+        "當歸",
+        "青蒿",
+        "烏梅",
+        "生薑"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《衛生寶鑑》。矢數道明《日本漢方醫學及臨證經驗》p.224（獨立正式條目）：肺結核增殖型持續微熱，兩頰潮紅，盜汗。組成：鱉甲、柴胡、地骨皮各3克，秦艽、知母、當歸各2.5克，青蒿、烏梅各1.5克，生薑0.5克。書中同類骨蒸勞熱方另有黃芪鱉甲散、秦艽扶羸湯，症狀高度重疊，本輪只挑出典最權威、有獨立正式條目的本方，其餘不建以免稀釋。2026-09-09 新增。"
+      ],
+      "indications": [
+        "S-COUGH",
+        "S-NIGHT-SWEAT",
+        "S-FACIAL-FLUSH",
+        "S-FEVER"
+      ],
+      "formulaPattern": "",
+      "notes": "《衛生寶鑑》。矢數道明《日本漢方醫學及臨證經驗》p.224（獨立正式條目）：肺結核增殖型持續微熱，兩頰潮紅，盜汗。組成：鱉甲、柴胡、地骨皮各3克，秦艽、知母、當歸各2.5克，青蒿、烏梅各1.5克，生薑0.5克。書中同類骨蒸勞熱方另有黃芪鱉甲散、秦艽扶羸湯，症狀高度重疊，本輪只挑出典最權威、有獨立正式條目的本方，其餘不建以免稀釋。2026-09-09 新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-039",
+      "name": "旋覆花代赭石湯",
+      "category": "醫師補充",
+      "xushiClass": "虛證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 1,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "心下停飲痞滿",
+          "id": "S-EPIGASTRIC-RESISTANCE",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "噫氣吞酸嘔吐",
+          "id": "S-VOMITING",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "吞酸",
+          "id": "S-ACID-REFLUX",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "噯氣特別多（醫典藥方解說）",
+          "id": "S-BELCHING",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        }
+      ],
+      "herbs": [
+        "旋覆花",
+        "代赭石",
+        "大棗",
+        "甘草",
+        "人參",
+        "半夏",
+        "生薑"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《傷寒論》。矢數道明《日本漢方醫學及臨證經驗》p.256：慢性虛證，胃氣虛，心下停飲痞滿感，噫氣吞酸嘈雜嘔吐。組成：旋覆花、代赭石、大棗各3克，甘草、人參各2克，半夏5克，生薑4克。2026-09-09 新增。"
+      ],
+      "indications": [
+        "S-EPIGASTRIC-RESISTANCE",
+        "S-VOMITING",
+        "S-ACID-REFLUX",
+        "S-BELCHING"
+      ],
+      "formulaPattern": "",
+      "notes": "《傷寒論》。矢數道明《日本漢方醫學及臨證經驗》p.256：慢性虛證，胃氣虛，心下停飲痞滿感，噫氣吞酸嘈雜嘔吐。組成：旋覆花、代赭石、大棗各3克，甘草、人參各2克，半夏5克，生薑4克。2026-09-09 新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-040",
+      "name": "續命湯",
+      "category": "醫師補充",
+      "xushiClass": "虛實夾雜",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 1,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "腦溢血所致半身不遂、語言障礙初期",
+          "id": "S-HEMIPLEGIA",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "有血虛證、血液枯燥者",
+          "id": "S-BLOOD-DEF",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "顏面神經麻痺（大塚敬節《漢方診療三十年》案71：35歲健壯男性突發面部左半邊歪斜言語蹇澀，脈浮大，5天明顯好轉、續服7天痊癒；出典金匱要略中風歷節病篇附方，2026-09-28）",
+          "id": "S-FACIAL-PALSY",
+          "negated": false,
+          "matchType": "physician-patch"
+        }
+      ],
+      "herbs": [
+        "杏仁",
+        "麻黃",
+        "桂枝",
+        "人參",
+        "當歸",
+        "川芎",
+        "干薑",
+        "甘草",
+        "石膏"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《金匱要略》。矢數道明《日本漢方醫學及臨證經驗》p.266：用於類似大青龍湯證有血虛證者，既有表證又有裡熱，且血液枯燥者；更常用於腦溢血所致半身不遂和語言障礙初期。組成：杏仁4克，麻黃、桂枝、人參、當歸各3克，川芎、干薑、甘草各2克，石膏6克。與補陽還五湯共用新開的 S-HEMIPLEGIA 概念，本方偏表證兼裡熱之急性期。2026-09-09 新增。"
+      ],
+      "indications": [
+        "S-HEMIPLEGIA",
+        "S-BLOOD-DEF",
+        "S-FACIAL-PALSY"
+      ],
+      "formulaPattern": "",
+      "notes": "《金匱要略》。矢數道明《日本漢方醫學及臨證經驗》p.266：用於類似大青龍湯證有血虛證者，既有表證又有裡熱，且血液枯燥者；更常用於腦溢血所致半身不遂和語言障礙初期。組成：杏仁4克，麻黃、桂枝、人參、當歸各3克，川芎、干薑、甘草各2克，石膏6克。與補陽還五湯共用新開的 S-HEMIPLEGIA 概念，本方偏表證兼裡熱之急性期。2026-09-09 新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-041",
+      "name": "補陽還五湯",
+      "category": "醫師補充",
+      "xushiClass": "虛證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "半身不遂（氣虛血瘀，腦血栓恢復期）",
+          "id": "S-HEMIPLEGIA",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "黃芪",
+        "當歸",
+        "芍藥",
+        "川芎",
+        "桃仁",
+        "紅花",
+        "地龍"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "王清任《醫林改錯》。矢數道明《日本漢方醫學及臨證經驗》p.484：治半身不遂，本方對腦血栓有特效，用於腦軟化症、腦血栓。組成：黃芪5克，當歸、芍藥各3克，川芎、桃仁、紅花、地龍各2克。與續命湯共用 S-HEMIPLEGIA 概念，本方偏氣虛血瘀之恢復期。2026-09-09 新增。"
+      ],
+      "indications": [
+        "S-HEMIPLEGIA"
+      ],
+      "formulaPattern": "",
+      "notes": "王清任《醫林改錯》。矢數道明《日本漢方醫學及臨證經驗》p.484：治半身不遂，本方對腦血栓有特效，用於腦軟化症、腦血栓。組成：黃芪5克，當歸、芍藥各3克，川芎、桃仁、紅花、地龍各2克。與續命湯共用 S-HEMIPLEGIA 概念，本方偏氣虛血瘀之恢復期。2026-09-09 新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-042",
+      "name": "排膿散",
+      "category": "醫師補充",
+      "xushiClass": "實證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "化膿性腫物堅硬未潰，排膿困難",
+          "id": "S-PUS",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "枳實",
+        "芍藥",
+        "桔梗"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《金匱要略》。矢數道明《日本漢方醫學及臨證經驗》p.334-335：化膿性腫物伴疼痛，氣血凝滯，患部緊張，炎性浸潤嚴重、堅硬之諸疾患，排膿困難者。組成：枳實、芍藥各5克，桔梗2克。2026-09-09 新增。"
+      ],
+      "indications": [
+        "S-PUS"
+      ],
+      "formulaPattern": "",
+      "notes": "《金匱要略》。矢數道明《日本漢方醫學及臨證經驗》p.334-335：化膿性腫物伴疼痛，氣血凝滯，患部緊張，炎性浸潤嚴重、堅硬之諸疾患，排膿困難者。組成：枳實、芍藥各5克，桔梗2克。2026-09-09 新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-043",
+      "name": "排膿湯",
+      "category": "醫師補充",
+      "xushiClass": "虛證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 1,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0.2,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "虛證化膿症初起或慢性化膿",
+          "id": "S-PUS",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "因形成虛證而發熱",
+          "id": "S-FEVER",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "腹部痙攣",
+          "id": "S-MUSCLE-SPASM",
+          "negated": false,
+          "matchType": "physician-patch"
+        }
+      ],
+      "herbs": [
+        "甘草",
+        "桔梗",
+        "大棗",
+        "干薑"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《金匱要略》。矢數道明《日本漢方醫學及臨證經驗》p.336-337：虛證，熱性化膿症初起或慢性症。組成：甘草3克，桔梗5克，大棗6克，干薑1克。書中治驗案（指尖化膿症1日痛除腫消、癰疽術後2-3日創口癒合）皆為正面療效，與矢數書第五批「書中只出現在無效合方裡」的舊評估依據不同（該評估未查到本方獨立條目），本輪以本方自身條目的療效證據為準。2026-09-09 新增。"
+      ],
+      "indications": [
+        "S-PUS",
+        "S-FEVER",
+        "S-MUSCLE-SPASM"
+      ],
+      "formulaPattern": "",
+      "notes": "《金匱要略》。矢數道明《日本漢方醫學及臨證經驗》p.336-337：虛證，熱性化膿症初起或慢性症。組成：甘草3克，桔梗5克，大棗6克，干薑1克。書中治驗案（指尖化膿症1日痛除腫消、癰疽術後2-3日創口癒合）皆為正面療效，與矢數書第五批「書中只出現在無效合方裡」的舊評估依據不同（該評估未查到本方獨立條目），本輪以本方自身條目的療效證據為準。2026-09-09 新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-044",
+      "name": "八味帶下方",
+      "category": "醫師補充",
+      "xushiClass": "虛實夾雜",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 1,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "帶下（淋毒性/滴蟲性），微貧血",
+          "id": "S-LEUCORRHEA",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "微貧血",
+          "id": "S-BLOOD-DEF",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "腹部亦略緊張",
+          "id": "S-MUSCLE-SPASM",
+          "negated": false,
+          "matchType": "physician-patch"
+        }
+      ],
+      "herbs": [
+        "當歸",
+        "山歸來",
+        "川芎",
+        "茯苓",
+        "木通",
+        "陳皮",
+        "金銀花",
+        "大黃"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《名家方選》。矢數道明《日本漢方醫學及臨證經驗》p.348：微貧血，腹部略緊張，主訴帶下者（淋毒性、滴蟲性帶下）。組成：當歸5克，山歸來4克，川芎、茯苓、木通各3克，陳皮、金銀花各2克，大黃0.5-1克。2026-09-09 新增。"
+      ],
+      "indications": [
+        "S-LEUCORRHEA",
+        "S-BLOOD-DEF",
+        "S-MUSCLE-SPASM"
+      ],
+      "formulaPattern": "",
+      "notes": "《名家方選》。矢數道明《日本漢方醫學及臨證經驗》p.348：微貧血，腹部略緊張，主訴帶下者（淋毒性、滴蟲性帶下）。組成：當歸5克，山歸來4克，川芎、茯苓、木通各3克，陳皮、金銀花各2克，大黃0.5-1克。2026-09-09 新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-045",
+      "name": "麻黃加朮湯",
+      "category": "醫師補充",
+      "xushiClass": "實證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 1
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0.25,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0.3333,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0.2,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "身體煩疼（風濕）",
+          "id": "S-MUSCLE-PAIN",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "浮腫小便不利",
+          "id": "S-EDEMA",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "小便不利（麻黃湯證兼濕）",
+          "id": "S-OLIGURIA",
+          "negated": false,
+          "matchType": "physician-patch"
+        }
+      ],
+      "herbs": [
+        "麻黃",
+        "杏仁",
+        "桂枝",
+        "甘草",
+        "白朮"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《金匱要略》。矢數道明《日本漢方醫學及臨證經驗》p.400：麻黃湯證基礎上增加身體煩疼、浮腫、小便不利，發散風濕（風濕病、關節炎、急性腎炎）。組成：麻黃、杏仁各5克，桂枝4克，甘草1.5克，白朮5克。2026-09-09 新增。"
+      ],
+      "indications": [
+        "S-MUSCLE-PAIN",
+        "S-EDEMA",
+        "S-OLIGURIA"
+      ],
+      "formulaPattern": "",
+      "notes": "《金匱要略》。矢數道明《日本漢方醫學及臨證經驗》p.400：麻黃湯證基礎上增加身體煩疼、浮腫、小便不利，發散風濕（風濕病、關節炎、急性腎炎）。組成：麻黃、杏仁各5克，桂枝4克，甘草1.5克，白朮5克。2026-09-09 新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-046",
+      "name": "龜板湯",
+      "category": "醫師補充",
+      "xushiClass": "虛證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0.1,
+        "SHEN-YINXU": 0.1111
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "痿躄，產後血鬱下肢麻痺",
+          "id": "S-WEAK-LOWER-LIMB",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "當歸",
+        "地黃",
+        "芍藥",
+        "川芎",
+        "龜板",
+        "石決明"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "日本經驗方，別名痿躄湯。矢數道明《日本漢方醫學及臨證經驗》p.457：治痿躄（下肢運動麻痺），對產後血鬱所致之下肢麻痺有特效。組成：當歸、地黃各5克，芍藥、川芎、龜板、石決明各4克。2026-09-09 新增。"
+      ],
+      "indications": [
+        "S-WEAK-LOWER-LIMB"
+      ],
+      "formulaPattern": "",
+      "notes": "日本經驗方，別名痿躄湯。矢數道明《日本漢方醫學及臨證經驗》p.457：治痿躄（下肢運動麻痺），對產後血鬱所致之下肢麻痺有特效。組成：當歸、地黃各5克，芍藥、川芎、龜板、石決明各4克。2026-09-09 新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-047",
+      "name": "強神湯",
+      "category": "醫師補充",
+      "xushiClass": "虛實夾雜",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "中風口眼喎斜、半身不遂、喜欠流涎",
+          "id": "S-HEMIPLEGIA",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "紅花",
+        "僵蠶",
+        "棕櫚",
+        "甘草"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "日本經驗方（俗稱播州長野之中風藥）。矢數道明《日本漢方醫學及臨證經驗》p.457：「治中風，口眼喎斜，半身不遂，喜欠流涎者」。書中目標索引「腦溢血」條目亦收錄本方（「卒中風之藥」）。書載：「此方系民間之家傳藥方，稱為卒中風之妙藥」「常用於腦溢血」，可視證之變化合用四逆散、附子瀉心湯、桂枝加朮附湯等提高療效。組成：紅花1.5克，僵蠶3克，棕櫚2克，甘草1克。與續命湯（急性期表證兼裡熱）、補陽還五湯（恢復期氣虛血瘀）、烏藥順氣散（肢體疼痛麻木運動障礙）互補，是 S-HEMIPLEGIA 第四個擁有者，對應口眼喎斜流涎這一側面。2026-09-10 新增（醫師問「中風資料就只有這些？」後回書目標索引查證）。"
+      ],
+      "indications": [
+        "S-HEMIPLEGIA"
+      ],
+      "formulaPattern": "",
+      "notes": "日本經驗方（俗稱播州長野之中風藥）。矢數道明《日本漢方醫學及臨證經驗》p.457：「治中風，口眼喎斜，半身不遂，喜欠流涎者」。書中目標索引「腦溢血」條目亦收錄本方（「卒中風之藥」）。書載：「此方系民間之家傳藥方，稱為卒中風之妙藥」「常用於腦溢血」，可視證之變化合用四逆散、附子瀉心湯、桂枝加朮附湯等提高療效。組成：紅花1.5克，僵蠶3克，棕櫚2克，甘草1克。與續命湯（急性期表證兼裡熱）、補陽還五湯（恢復期氣虛血瘀）、烏藥順氣散（肢體疼痛麻木運動障礙）互補，是 S-HEMIPLEGIA 第四個擁有者，對應口眼喎斜流涎這一側面。2026-09-10 新增（醫師問「中風資料就只有這些？」後回書目標索引查證）。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-048",
+      "name": "安中散",
+      "category": "醫師補充",
+      "xushiClass": "虛證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 1
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0.25,
+        "XIN-XUEXU": 0.2,
+        "PI-QIXU": 0.2,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "慢性過程的胃痛、燒心",
+          "id": "S-EPIGASTRIC-PAIN",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "心窩部振水音",
+          "id": "S-GASTRIC-SPLASH",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "腹部軟弱",
+          "id": "S-ABDOMINAL-WEAKNESS",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "動悸（起於臍旁）",
+          "id": "S-PALPITATION",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "心下痞滿",
+          "id": "S-EPIGASTRIC-RESISTANCE",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "屬於冷症（醫典藥方解說）",
+          "id": "S-COLD",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        },
+        {
+          "raw": "嘈雜、吐酸水（醫典藥方解說）",
+          "id": "S-ACID-REFLUX",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        }
+      ],
+      "herbs": [
+        "桂皮",
+        "延胡索",
+        "牡蠣",
+        "茴香",
+        "甘草",
+        "縮砂",
+        "良薑"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《漢方臨床診療學》p.234（附錄二方劑一覽），出典《和劑局方》卷三「治一切氣」。書載：「用於身體消瘦型體力較低下者具有慢性過程的胃痛、燒心的場合：訴說消化不良、心窩部膨滿感、惡心、嘔吐等症狀。腹診觸得腹部軟弱，心窩部振水音」。少陽病期，心下痞硬型，半表半裡之虛證。2026-09-16 新增（回頭核對07-18批次留下的24個OCR未對應書中標題，本方原OCR誤讀為「安中貢」）。2026-09-23 補：矢數道明《臨床應用漢方處方解說》第1方（p.3-4），出典同為《和劑局方》，組成一致。〔目標〕原文：「以脾胃（主要是胃）虛寒和氣鬱血滯所致之胃痛、腹痛為主要目標」，其次「動悸（起於臍旁）」「心下痛、心下痞滿、輕度腹滿」「多酸（或低酸）症、食欲不振、輕度嘔吐」。落地時僅收「動悸」「心下痞滿」兩個較具鑑別力的伴隨徵象；其餘四症書上原文即標為次要（「其次…可參考」），且皆為高度非特異之症，量測後確認全收會使本方自我檢索退出前5（被良枳湯/茯苓飲/吳茱萸湯超車），故比照本書「腹力弱」濾除先例不收。"
+      ],
+      "indications": [
+        "S-EPIGASTRIC-PAIN",
+        "S-GASTRIC-SPLASH",
+        "S-ABDOMINAL-WEAKNESS",
+        "S-PALPITATION",
+        "S-EPIGASTRIC-RESISTANCE",
+        "S-COLD",
+        "S-ACID-REFLUX"
+      ],
+      "formulaPattern": "",
+      "notes": "《漢方臨床診療學》p.234（附錄二方劑一覽），出典《和劑局方》卷三「治一切氣」。書載：「用於身體消瘦型體力較低下者具有慢性過程的胃痛、燒心的場合：訴說消化不良、心窩部膨滿感、惡心、嘔吐等症狀。腹診觸得腹部軟弱，心窩部振水音」。少陽病期，心下痞硬型，半表半裡之虛證。2026-09-16 新增（回頭核對07-18批次留下的24個OCR未對應書中標題，本方原OCR誤讀為「安中貢」）。2026-09-23 補：矢數道明《臨床應用漢方處方解說》第1方（p.3-4），出典同為《和劑局方》，組成一致。〔目標〕原文：「以脾胃（主要是胃）虛寒和氣鬱血滯所致之胃痛、腹痛為主要目標」，其次「動悸（起於臍旁）」「心下痛、心下痞滿、輕度腹滿」「多酸（或低酸）症、食欲不振、輕度嘔吐」。落地時僅收「動悸」「心下痞滿」兩個較具鑑別力的伴隨徵象；其餘四症書上原文即標為次要（「其次…可參考」），且皆為高度非特異之症，量測後確認全收會使本方自我檢索退出前5（被良枳湯/茯苓飲/吳茱萸湯超車），故比照本書「腹力弱」濾除先例不收。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-049",
+      "name": "柴胡加芒硝湯",
+      "category": "醫師補充",
+      "xushiClass": "實證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 1,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0.1429,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0.2,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "胸脅苦滿",
+          "id": "S-CHEST-RIB-FULLNESS",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "感染引起的高體溫",
+          "id": "S-FEVER",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "表現為便秘者",
+          "id": "S-CONSTIPATION",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "柴胡",
+        "半夏",
+        "生薑",
+        "黃芩",
+        "大棗",
+        "人參",
+        "甘草",
+        "芒硝"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《漢方臨床診療學》p.243，出典《傷寒論》104條。書載：「少陽病期，胸脅苦滿型，實證。感染引起的高體溫，表現為便秘者」。適應病症：感染症亞急性期，慢性肝炎，氣管炎，腸炎。2026-09-16 新增（原OCR誤讀為「業胡加芒硝湯」）。"
+      ],
+      "indications": [
+        "S-CHEST-RIB-FULLNESS",
+        "S-FEVER",
+        "S-CONSTIPATION"
+      ],
+      "formulaPattern": "",
+      "notes": "《漢方臨床診療學》p.243，出典《傷寒論》104條。書載：「少陽病期，胸脅苦滿型，實證。感染引起的高體溫，表現為便秘者」。適應病症：感染症亞急性期，慢性肝炎，氣管炎，腸炎。2026-09-16 新增（原OCR誤讀為「業胡加芒硝湯」）。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-050",
+      "name": "柴陷湯",
+      "category": "醫師補充",
+      "xushiClass": "實證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 1,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0.2857,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0.2,
+        "FEI-YINXU": 0.2,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "咳嗽嚴重，痰黏不易咳出",
+          "id": "S-COUGH",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "咳嗽時深呼吸胸痛",
+          "id": "S-CHEST-OPPRESSION",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "兩側胸脅苦滿",
+          "id": "S-CHEST-RIB-FULLNESS",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "心下痞硬",
+          "id": "S-EPIGASTRIC-RESISTANCE",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "咳嗽時胸痛而痰難吐出（漢方診療醫典 流行性感冒門，2026-10-06）",
+          "id": "S-STICKY-SPUTUM",
+          "negated": false,
+          "matchType": "physician-patch"
+        }
+      ],
+      "herbs": [
+        "柴胡",
+        "半夏",
+        "黃芩",
+        "大棗",
+        "人參",
+        "黃連",
+        "甘草",
+        "生薑",
+        "瓜蔞仁"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《漢方臨床診療學》p.247，日本經驗方（小柴胡湯與小陷胸湯合方）。書載：「用於體力中等度、咳嗽嚴重、痰黏不易咳出、咳嗽時深呼吸胸痛者。多數腹診可觸及季肋部抵抗、壓痛（胸脅苦滿）」。病期病態：少陽病期，胸內型，實證，「腹診出現兩側胸脅苦滿、心下痞硬，以胸痛、發熱、咳嗽為主要證候」。2026-09-16 新增（原OCR誤讀為「此陷湯」）。"
+      ],
+      "indications": [
+        "S-COUGH",
+        "S-CHEST-OPPRESSION",
+        "S-CHEST-RIB-FULLNESS",
+        "S-EPIGASTRIC-RESISTANCE",
+        "S-STICKY-SPUTUM"
+      ],
+      "formulaPattern": "",
+      "notes": "《漢方臨床診療學》p.247，日本經驗方（小柴胡湯與小陷胸湯合方）。書載：「用於體力中等度、咳嗽嚴重、痰黏不易咳出、咳嗽時深呼吸胸痛者。多數腹診可觸及季肋部抵抗、壓痛（胸脅苦滿）」。病期病態：少陽病期，胸內型，實證，「腹診出現兩側胸脅苦滿、心下痞硬，以胸痛、發熱、咳嗽為主要證候」。2026-09-16 新增（原OCR誤讀為「此陷湯」）。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-051",
+      "name": "大柴胡湯去大黃",
+      "category": "醫師補充",
+      "xushiClass": "實證",
+      "patternVector": {
+        "QI_XU": 1,
+        "QI_NI": 0,
+        "QI_YU": 1,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0.1429,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0.25,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0.2,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0.2,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "顯著胸脅苦滿",
+          "id": "S-CHEST-RIB-FULLNESS",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "疲勳感",
+          "id": "S-FATIGUE",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "肩凝",
+          "id": "S-SHOULDER-STIFF",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "柴胡",
+        "半夏",
+        "生薑",
+        "黃芩",
+        "芍藥",
+        "大棗",
+        "枳實"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《漢方臨床診療學》p.252，日本經驗方。書載：「用於氣力、體力均充實者，具有腹診觸得顯著胸脅苦滿、疲勳感、肩凝、精力減退的場合」。適應病症：體力較好者，伴有上腹部脹滿而苦痛、耳鳴、肩凝等而無便秘，見於高血壓、動脈硬化、胃腸病、支氣管哮喘、黃疸、膽（原文未完）。2026-09-16 新增（大柴胡湯去掉大黃的日本經驗方變化方，與KB既有大柴胡湯為不同方，各自獨立）。"
+      ],
+      "indications": [
+        "S-CHEST-RIB-FULLNESS",
+        "S-FATIGUE",
+        "S-SHOULDER-STIFF"
+      ],
+      "formulaPattern": "",
+      "notes": "《漢方臨床診療學》p.252，日本經驗方。書載：「用於氣力、體力均充實者，具有腹診觸得顯著胸脅苦滿、疲勳感、肩凝、精力減退的場合」。適應病症：體力較好者，伴有上腹部脹滿而苦痛、耳鳴、肩凝等而無便秘，見於高血壓、動脈硬化、胃腸病、支氣管哮喘、黃疸、膽（原文未完）。2026-09-16 新增（大柴胡湯去掉大黃的日本經驗方變化方，與KB既有大柴胡湯為不同方，各自獨立）。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-052",
+      "name": "甘草附子湯",
+      "category": "醫師補充",
+      "xushiClass": "虛證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 1,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0.25,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0.1667,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0.1,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "惡寒（頭頸部周圍顯著）",
+          "id": "S-COLD",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "關節痛",
+          "id": "S-JOINT-PAIN",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "肌肉痛",
+          "id": "S-MUSCLE-PAIN",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "關節腫脹（急性風濕病劇烈疼痛）",
+          "id": "S-JOINT-SWELLING",
+          "negated": false,
+          "matchType": "physician-patch"
+        },
+        {
+          "raw": "尿利減少（醫典藥方解說）",
+          "id": "S-OLIGURIA",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        }
+      ],
+      "herbs": [
+        "甘草",
+        "白朮",
+        "桂皮",
+        "附子"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《漢方臨床診療學》p.266-267，出典《傷寒論》175條。書載：「少陰病期，表寒型，虛證。惡寒，特別是頭頸部周圍顯著，表現為關節痛、肌肉痛、精神狀態不安定、尿量減少者。多伴有輕度汗出傾向、浮腫傾向」。適應病症：感冒，類風濕關節炎，坐骨神經痛，肋間神經痛，多發性神經炎。2026-09-16 新增（與KB既有的附子湯/甘草瀉心湯/甘草乾姜湯皆為不同方，原OCR候選清單誤判為這三方之一，經回書核對確認是獨立的傷寒論方）。量測後主症只收書載三大主證（惡寒/關節痛/肌肉痛），「浮腫傾向」書上原文只是「多伴有」的次要伴隨徵象，且會讓本方在既有的十全大補湯加味建議端對端測試（貧血/發冷/關節痛/浮腫）擠掉十全大補湯，故不收，避免因新方稀釋既有測試。"
+      ],
+      "indications": [
+        "S-COLD",
+        "S-JOINT-PAIN",
+        "S-MUSCLE-PAIN",
+        "S-JOINT-SWELLING",
+        "S-OLIGURIA"
+      ],
+      "formulaPattern": "",
+      "notes": "《漢方臨床診療學》p.266-267，出典《傷寒論》175條。書載：「少陰病期，表寒型，虛證。惡寒，特別是頭頸部周圍顯著，表現為關節痛、肌肉痛、精神狀態不安定、尿量減少者。多伴有輕度汗出傾向、浮腫傾向」。適應病症：感冒，類風濕關節炎，坐骨神經痛，肋間神經痛，多發性神經炎。2026-09-16 新增（與KB既有的附子湯/甘草瀉心湯/甘草乾姜湯皆為不同方，原OCR候選清單誤判為這三方之一，經回書核對確認是獨立的傷寒論方）。量測後主症只收書載三大主證（惡寒/關節痛/肌肉痛），「浮腫傾向」書上原文只是「多伴有」的次要伴隨徵象，且會讓本方在既有的十全大補湯加味建議端對端測試（貧血/發冷/關節痛/浮腫）擠掉十全大補湯，故不收，避免因新方稀釋既有測試。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-053",
+      "name": "乾薑人參半夏丸",
+      "category": "醫師補充",
+      "xushiClass": "虛證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 1,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 1
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "劇烈惡心",
+          "id": "S-NAUSEA",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "嘔吐",
+          "id": "S-VOMITING",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "明顯心下痞硬",
+          "id": "S-EPIGASTRIC-RESISTANCE",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "乾薑",
+        "人參",
+        "半夏"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《漢方臨床診療學》p.268，出典《金匱要略》婦人妊娠病脈證并治。書載：「太陰病期，心下痞硬型，虛證。劇烈惡心、嘔吐，表現為腹診觸及明顯心下痞硬、衰弱傾向者」。適應病症：惡阻（妊娠嘔吐），抗癌藥引起的惡心、嘔吐，噴逆。2026-09-16 新增（原OCR誤讀為「幹差人參半夏丸」）。"
+      ],
+      "indications": [
+        "S-NAUSEA",
+        "S-VOMITING",
+        "S-EPIGASTRIC-RESISTANCE"
+      ],
+      "formulaPattern": "",
+      "notes": "《漢方臨床診療學》p.268，出典《金匱要略》婦人妊娠病脈證并治。書載：「太陰病期，心下痞硬型，虛證。劇烈惡心、嘔吐，表現為腹診觸及明顯心下痞硬、衰弱傾向者」。適應病症：惡阻（妊娠嘔吐），抗癌藥引起的惡心、嘔吐，噴逆。2026-09-16 新增（原OCR誤讀為「幹差人參半夏丸」）。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-054",
+      "name": "桂枝二越婢一湯加朮附",
+      "category": "醫師補充",
+      "xushiClass": "虛實夾雜",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 1,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 1
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0.5,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0.3333,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0.2,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "顏面潮紅",
+          "id": "S-FACIAL-FLUSH",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "下肢有冷感",
+          "id": "S-COLD",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "關節痛",
+          "id": "S-JOINT-PAIN",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "晨起關節僵硬",
+          "id": "S-MORNING-STIFFNESS",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "浮腫，關節液瀦留",
+          "id": "S-EDEMA",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "桂枝",
+        "芍藥",
+        "甘草",
+        "麻黃",
+        "生薑",
+        "大棗",
+        "石膏",
+        "蒼朮",
+        "附子"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《漢方臨床診療學》p.272，日本經驗方（桂枝二越婢一湯加蒼朮、附子）。書載：「體力略衰弱者，顏面潮紅，下肢有冷感，口渴，伴有發汗傾向的關節痛和肌肉痛。晨起關節僵硬，浮腫，關節液瀦留，尿量減少」。適應病症：類風濕關節炎，肩周炎，白塞病，濕疹。2026-09-16 新增（原OCR誤讀為「桂枝二越媳一湯加術附」；與KB既有的桂枝二越婢一湯為母子方關係，各自獨立）。"
+      ],
+      "indications": [
+        "S-FACIAL-FLUSH",
+        "S-COLD",
+        "S-JOINT-PAIN",
+        "S-MORNING-STIFFNESS",
+        "S-EDEMA"
+      ],
+      "formulaPattern": "",
+      "notes": "《漢方臨床診療學》p.272，日本經驗方（桂枝二越婢一湯加蒼朮、附子）。書載：「體力略衰弱者，顏面潮紅，下肢有冷感，口渴，伴有發汗傾向的關節痛和肌肉痛。晨起關節僵硬，浮腫，關節液瀦留，尿量減少」。適應病症：類風濕關節炎，肩周炎，白塞病，濕疹。2026-09-16 新增（原OCR誤讀為「桂枝二越媳一湯加術附」；與KB既有的桂枝二越婢一湯為母子方關係，各自獨立）。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-055",
+      "name": "厚朴三物湯",
+      "category": "醫師補充",
+      "xushiClass": "實證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 1,
+        "QI_YU": 1,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0.1429,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0.2,
+        "PI-QIXU": 0.2,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "明顯腹部膨滿感",
+          "id": "S-ABDOMINAL-DISTENSION",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "便秘",
+          "id": "S-CONSTIPATION",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "精神不安定",
+          "id": "S-ANXIETY",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "厚朴",
+        "枳實",
+        "大黃"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《漢方臨床診療學》p.282，出典《金匱要略》。書載：「陽明病期，腸型，實證。有發熱傾向，精神不安定等精神症狀，表現為明顯腹部膨滿感、便秘者」。2026-09-16 新增（原OCR誤讀為「厚梓三物湯」；與KB既有的厚朴七物湯為不同方，各自獨立）。"
+      ],
+      "indications": [
+        "S-ABDOMINAL-DISTENSION",
+        "S-CONSTIPATION",
+        "S-ANXIETY"
+      ],
+      "formulaPattern": "",
+      "notes": "《漢方臨床診療學》p.282，出典《金匱要略》。書載：「陽明病期，腸型，實證。有發熱傾向，精神不安定等精神症狀，表現為明顯腹部膨滿感、便秘者」。2026-09-16 新增（原OCR誤讀為「厚梓三物湯」；與KB既有的厚朴七物湯為不同方，各自獨立）。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-056",
+      "name": "四逆加人參湯",
+      "category": "醫師補充",
+      "xushiClass": "虛證",
+      "patternVector": {
+        "QI_XU": 1,
+        "QI_NI": 1,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0.25,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0.2,
+        "PI-YANGXU": 0.3333,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0.2,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "消化不良性腹瀉",
+          "id": "S-DIARRHEA",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "四肢發冷",
+          "id": "S-COLD",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "血壓低",
+          "id": "S-HYPOTENSION",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "內臟下垂無力性體質排尿異常（三十年案217）",
+          "id": "S-DYSURIA",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        }
+      ],
+      "herbs": [
+        "甘草",
+        "乾薑",
+        "附子",
+        "人參"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《漢方臨床診療學》p.320，出典《傷寒論》385條。書載：「少陰病期，裡寒型，虛證。表現為消化不良性腹瀉、尿量減少、血壓低、四肢發冷者，或主訴全身倦怠乏力者，較四逆湯之氣虛更重者」。適應病症：諸種腹瀉疾患陷入休克前狀態，耐寒能力衰弱者。2026-09-16 新增（原OCR誤讀為「四道加人參湯」；與KB既有的四逆湯為母子方關係，各自獨立）。"
+      ],
+      "indications": [
+        "S-DIARRHEA",
+        "S-COLD",
+        "S-HYPOTENSION",
+        "S-DYSURIA"
+      ],
+      "formulaPattern": "",
+      "notes": "《漢方臨床診療學》p.320，出典《傷寒論》385條。書載：「少陰病期，裡寒型，虛證。表現為消化不良性腹瀉、尿量減少、血壓低、四肢發冷者，或主訴全身倦怠乏力者，較四逆湯之氣虛更重者」。適應病症：諸種腹瀉疾患陷入休克前狀態，耐寒能力衰弱者。2026-09-16 新增（原OCR誤讀為「四道加人參湯」；與KB既有的四逆湯為母子方關係，各自獨立）。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-057",
+      "name": "小柴胡湯加桔梗石膏",
+      "category": "醫師補充",
+      "xushiClass": "實證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 1,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 1
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0.1429,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0.2,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0.2,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "季肋部苦滿感",
+          "id": "S-CHEST-RIB-FULLNESS",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "多有微熱",
+          "id": "S-FEVER",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "食欲不振",
+          "id": "S-APPETITE-LOW",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "惡心嘔吐",
+          "id": "S-NAUSEA",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "耳下腺腫脹（流行性耳下腺炎；醫典，2026-10-06）",
+          "id": "S-NECK-MASS",
+          "negated": false,
+          "matchType": "physician-patch"
+        }
+      ],
+      "herbs": [
+        "石膏",
+        "柴胡",
+        "半夏",
+        "黃芩",
+        "桔梗",
+        "大棗",
+        "人參",
+        "甘草",
+        "生薑"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《漢方臨床診療學》p.332，日本經驗方（小柴胡湯加桔梗、石膏）。書載：「用於體力中等度者之咽喉、鼻、耳亞急性或慢性炎症等疾患。一般訴說季肋部苦滿感，腹診可觸及肋弓下部位抵抗壓痛（胸脅苦滿），同時多有微熱。有時伴有食欲不振、惡心嘔吐、口中不適感」。適應病症：咽喉炎，扁桃體炎，扁桃體周圍炎，耳下腺炎，頷下腺炎，頷部淋巴結炎，中耳炎，外耳炎，鼻炎，副鼻竇炎，感冒，流感，支氣管炎，甲狀腺炎。2026-09-16 新增（原OCR誤讀為「小柴胡加桔梗石宮」；本方在書中被多處差異化鑑別列表反覆引用為咽喉/鼻/耳炎症的對照方，是書中相當常用的複方，原始07-18批次未能配對確實是缺漏）。"
+      ],
+      "indications": [
+        "S-CHEST-RIB-FULLNESS",
+        "S-FEVER",
+        "S-APPETITE-LOW",
+        "S-NAUSEA",
+        "S-NECK-MASS"
+      ],
+      "formulaPattern": "",
+      "notes": "《漢方臨床診療學》p.332，日本經驗方（小柴胡湯加桔梗、石膏）。書載：「用於體力中等度者之咽喉、鼻、耳亞急性或慢性炎症等疾患。一般訴說季肋部苦滿感，腹診可觸及肋弓下部位抵抗壓痛（胸脅苦滿），同時多有微熱。有時伴有食欲不振、惡心嘔吐、口中不適感」。適應病症：咽喉炎，扁桃體炎，扁桃體周圍炎，耳下腺炎，頷下腺炎，頷部淋巴結炎，中耳炎，外耳炎，鼻炎，副鼻竇炎，感冒，流感，支氣管炎，甲狀腺炎。2026-09-16 新增（原OCR誤讀為「小柴胡加桔梗石宮」；本方在書中被多處差異化鑑別列表反覆引用為咽喉/鼻/耳炎症的對照方，是書中相當常用的複方，原始07-18批次未能配對確實是缺漏）。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-058",
+      "name": "排膿散及湯",
+      "category": "醫師補充",
+      "xushiClass": "虛實夾雜",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "皮膚黏膜化膿性疾患，消炎排膿",
+          "id": "S-PUS",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "桔梗",
+        "甘草",
+        "枳實",
+        "芍藥",
+        "生薑",
+        "大棗"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《漢方臨床診療學》p.303，出典華岡青洲（排膿散＋排膿湯合方）。書載：「用於體力中等度者為主，出現皮膚、黏膜的化膿性疾患。發病的初期、中期，以及化膿的遷延或復發時，對以上的情況均有消炎、排膿效果」。適應病症：副鼻竇炎、鼻炎，中耳炎，牙槽膿瘻，牙齦炎，粉瘤。2026-09-16 新增（原OCR誤讀為「排膿獲及湯」；KB既有排膿散、排膿湯為個別單方，本方是華岡青洲的合方變化，各自獨立）。"
+      ],
+      "indications": [
+        "S-PUS"
+      ],
+      "formulaPattern": "",
+      "notes": "《漢方臨床診療學》p.303，出典華岡青洲（排膿散＋排膿湯合方）。書載：「用於體力中等度者為主，出現皮膚、黏膜的化膿性疾患。發病的初期、中期，以及化膿的遷延或復發時，對以上的情況均有消炎、排膿效果」。適應病症：副鼻竇炎、鼻炎，中耳炎，牙槽膿瘻，牙齦炎，粉瘤。2026-09-16 新增（原OCR誤讀為「排膿獲及湯」；KB既有排膿散、排膿湯為個別單方，本方是華岡青洲的合方變化，各自獨立）。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-059",
+      "name": "下瘀血湯",
+      "category": "醫師補充",
+      "xushiClass": "實證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 1,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0.1429,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "月經紊亂",
+          "id": "S-MENSTRUAL-IRREGULAR",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "顏面紅赤，頭面烘熱傾向",
+          "id": "S-FACIAL-FLUSH",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "大黃",
+        "桃仁",
+        "蟅蟲"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《漢方臨床診療學》p.330，出典《金匱要略》。書載：「陽明病期，瘀血型，實證。顏面紅赤，有頭面烘熱傾向，表現為月經紊亂、下腹部深部（腰椎前面附近）壓痛、精神狀態不安定、下腹部疼痛者」。適應病症：月經不調，血道證，妊娠腹痛，腰痛，坐骨神經痛，習慣性（原文未完）。2026-09-16 新增（本方書中方名OCR完全損毀誤讀為「六血湯」，經比對組成大黃、桃仁、蟅蟲三味與《金匱要略》下瘀血湯完全吻合，以組成確認身分）。「下腹部深部壓痛」書上原文也有，但量測後發現補上S-LOWER-ABDOMINAL-PAIN會讓這個概念的擁有者從5個變6個，越過CHIEF_SPECIFICITY_MAX_FORMULAS門檻，害既有的折衝飲在[出血→折衝飲]分支上失去主訴特異性加分、完全跌出前十——跟S-MENOPAUSE那次的全域稀釋效應同一種病灶。故不收這個症狀，只留月經紊亂與顏面紅赤兩筆。"
+      ],
+      "indications": [
+        "S-MENSTRUAL-IRREGULAR",
+        "S-FACIAL-FLUSH"
+      ],
+      "formulaPattern": "",
+      "notes": "《漢方臨床診療學》p.330，出典《金匱要略》。書載：「陽明病期，瘀血型，實證。顏面紅赤，有頭面烘熱傾向，表現為月經紊亂、下腹部深部（腰椎前面附近）壓痛、精神狀態不安定、下腹部疼痛者」。適應病症：月經不調，血道證，妊娠腹痛，腰痛，坐骨神經痛，習慣性（原文未完）。2026-09-16 新增（本方書中方名OCR完全損毀誤讀為「六血湯」，經比對組成大黃、桃仁、蟅蟲三味與《金匱要略》下瘀血湯完全吻合，以組成確認身分）。「下腹部深部壓痛」書上原文也有，但量測後發現補上S-LOWER-ABDOMINAL-PAIN會讓這個概念的擁有者從5個變6個，越過CHIEF_SPECIFICITY_MAX_FORMULAS門檻，害既有的折衝飲在[出血→折衝飲]分支上失去主訴特異性加分、完全跌出前十——跟S-MENOPAUSE那次的全域稀釋效應同一種病灶。故不收這個症狀，只留月經紊亂與顏面紅赤兩筆。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-060",
+      "name": "白通湯",
+      "category": "醫師補充",
+      "xushiClass": "虛證",
+      "patternVector": {
+        "QI_XU": 1,
+        "QI_NI": 1,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0.25,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0.2,
+        "PI-YANGXU": 0.3333,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0.2,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "腹瀉明顯",
+          "id": "S-DIARRHEA",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "四肢發冷較明顯",
+          "id": "S-COLD",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "蔥白",
+        "乾薑",
+        "附子"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《漢方臨床診療學》p.237，出典《傷寒論》314/315條（本頁OCR嚴重損毀，組成行完全遺失，以傷寒論原方組成補回）。書載殘存文字：「少陰病期，裡寒型，虛證。腹瀉明顯，脈微弱者。多數四肢發冷較明顯，未伴有肛門灼熱感。適應病症：急性腸炎，胰腺炎」。2026-09-16 新增（本頁組成因OCR損毀無法從本書取得，改引傷寒論原文組成：蔥白、乾薑、附子）。"
+      ],
+      "indications": [
+        "S-DIARRHEA",
+        "S-COLD"
+      ],
+      "formulaPattern": "",
+      "notes": "《漢方臨床診療學》p.237，出典《傷寒論》314/315條（本頁OCR嚴重損毀，組成行完全遺失，以傷寒論原方組成補回）。書載殘存文字：「少陰病期，裡寒型，虛證。腹瀉明顯，脈微弱者。多數四肢發冷較明顯，未伴有肛門灼熱感。適應病症：急性腸炎，胰腺炎」。2026-09-16 新增（本頁組成因OCR損毀無法從本書取得，改引傷寒論原文組成：蔥白、乾薑、附子）。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-061",
+      "name": "托裡消毒散",
+      "category": "醫師補充",
+      "xushiClass": "虛實夾雜",
+      "patternVector": {
+        "QI_XU": 1,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0.25,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0.2,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0.2,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "淋巴腺炎、炎症已較輕快而不疼痛，膿排出後尚有殘餘而未出淨",
+          "id": "S-PUS",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "體力已略衰",
+          "id": "S-FATIGUE",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "下頜淋巴結化膿腫大、頸部如戴膠皮套轉動困難（大塚敬節《漢方診療三十年》案345：局部壓痛但自覺無明顯疼痛、體溫正常，服托里消毒飲三天膿出、二週恢復；作者明言本方「對疼痛劇烈、有高熱者無效，對體力衰弱、難於治愈的病例有良效」，2026-10-04）",
+          "id": "S-NECK-MASS",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "人參",
+        "川芎",
+        "白芍藥",
+        "黃耆",
+        "當歸",
+        "白朮",
+        "茯苓",
+        "金銀花",
+        "白芷",
+        "甘草",
+        "皂角刺",
+        "桔梗"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《外科正宗》卷一。大塚敬節「心靈地圖」[化膿症]分支：「淋巴腺炎、炎症已較輕快而不疼痛者，或者膿排出後、尚有殘餘而未出淨」內服托裡消毒散。組成（外科正宗原方）：人參、川芎、白芍藥、黃耆、當歸、白朮、茯苓、金銀花、白芷、甘草、皂角刺、桔梗。「托裡」＝從內托毒外出，用於化膿性疾患體力已略衰、單純清熱解毒排膿方（如排膿散、十味敗毒湯）力有未逮時。2026-09-16 新增。"
+      ],
+      "indications": [
+        "S-PUS",
+        "S-FATIGUE",
+        "S-NECK-MASS"
+      ],
+      "formulaPattern": "",
+      "notes": "《外科正宗》卷一。大塚敬節「心靈地圖」[化膿症]分支：「淋巴腺炎、炎症已較輕快而不疼痛者，或者膿排出後、尚有殘餘而未出淨」內服托裡消毒散。組成（外科正宗原方）：人參、川芎、白芍藥、黃耆、當歸、白朮、茯苓、金銀花、白芷、甘草、皂角刺、桔梗。「托裡」＝從內托毒外出，用於化膿性疾患體力已略衰、單純清熱解毒排膿方（如排膿散、十味敗毒湯）力有未逮時。2026-09-16 新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-062",
+      "name": "百合固金湯",
+      "category": "醫師補充",
+      "xushiClass": "虛證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "咽喉痛與嗄聲",
+          "id": "S-HOARSE-VOICE",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "百合",
+        "當歸",
+        "地黃",
+        "芍藥",
+        "貝母",
+        "玄參",
+        "桔梗",
+        "甘草",
+        "麥門冬"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "矢數道明《臨床應用漢方處方解說》附篇第97方（p.482），出典《通雅》。原文主治：「治肺傷咽痛、喘咳痰血」，浅田栗園曰：「虛勞肺痿，咽痛甚者，宜之」。書載：用於喉頭結核、慢性咽喉炎、慢性支氣管炎等所致之咽喉痛與嗄聲，尤以喘咳與血痰時為佳。2026-09-23 新增（原書 PDF 逐方核對）。目前僅收「嗄聲」一症（對映既有 S-HOARSE-VOICE），「喘咳」「血痰」本體尚無對應概念，待未來評估是否新開。"
+      ],
+      "indications": [
+        "S-HOARSE-VOICE"
+      ],
+      "formulaPattern": "",
+      "notes": "矢數道明《臨床應用漢方處方解說》附篇第97方（p.482），出典《通雅》。原文主治：「治肺傷咽痛、喘咳痰血」，浅田栗園曰：「虛勞肺痿，咽痛甚者，宜之」。書載：用於喉頭結核、慢性咽喉炎、慢性支氣管炎等所致之咽喉痛與嗄聲，尤以喘咳與血痰時為佳。2026-09-23 新增（原書 PDF 逐方核對）。目前僅收「嗄聲」一症（對映既有 S-HOARSE-VOICE），「喘咳」「血痰」本體尚無對應概念，待未來評估是否新開。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-063",
+      "name": "葦莖湯",
+      "category": "醫師補充",
+      "xushiClass": "虛實夾雜",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 1,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "胸中甲錯（胸部皮膚甲錯枯燥）",
+          "id": "S-SKIN-SCALY",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "肺癰（肺壞疽輕症）咳吐腥臭膿痰（醫典肺壞疽門，2026-10-06）",
+          "id": "S-PURULENT-SPUTUM",
+          "negated": false,
+          "matchType": "physician-patch"
+        }
+      ],
+      "herbs": [
+        "葦莖",
+        "薏苡仁",
+        "桃仁",
+        "瓜子"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "矢數道明《臨床應用漢方處方解說》附篇第2方（p.449），出典《金匱要略·肺痿門》（譯者注：此方為《金匱》所附之《千金方》葦莖湯）。原文主治：「治欬有微熱、煩滿、胸中甲錯（胸之中央乾燥，有沙沙作響之感）。是為肺癰」。書載：本方被稱為肺癰之聖藥，用於肺壞疽、肺膿瘍、膿胸等。2026-09-23 新增（原書 PDF 逐方核對）。僅收「胸中甲錯」一症（對映既有 S-SKIN-SCALY，該概念原僅桂枝茯苓丸加薏苡仁／麻杏薏甘湯兩個皮膚科擁有者；本方是唯一對映到「胸壁皮膚甲錯」這個肺癰古典徵象的擁有者，語境不同，量測後確認零代價）。"
+      ],
+      "indications": [
+        "S-SKIN-SCALY",
+        "S-PURULENT-SPUTUM"
+      ],
+      "formulaPattern": "",
+      "notes": "矢數道明《臨床應用漢方處方解說》附篇第2方（p.449），出典《金匱要略·肺痿門》（譯者注：此方為《金匱》所附之《千金方》葦莖湯）。原文主治：「治欬有微熱、煩滿、胸中甲錯（胸之中央乾燥，有沙沙作響之感）。是為肺癰」。書載：本方被稱為肺癰之聖藥，用於肺壞疽、肺膿瘍、膿胸等。2026-09-23 新增（原書 PDF 逐方核對）。僅收「胸中甲錯」一症（對映既有 S-SKIN-SCALY，該概念原僅桂枝茯苓丸加薏苡仁／麻杏薏甘湯兩個皮膚科擁有者；本方是唯一對映到「胸壁皮膚甲錯」這個肺癰古典徵象的擁有者，語境不同，量測後確認零代價）。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-064",
+      "name": "甘露飲",
+      "category": "醫師補充",
+      "xushiClass": "虛實夾雜",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "齒齦腫爛，時出膿血，口舌生瘡",
+          "id": "S-ORAL-MUCOSA-EROSION",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "枇杷葉",
+        "熟地黃",
+        "乾地黃",
+        "天冬",
+        "麥冬",
+        "枳實",
+        "茵陳",
+        "石斛",
+        "甘草",
+        "黃芩"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "矢數道明《臨床應用漢方處方解說》附篇第20方（p.455），出典《和劑局方·積熱門》。原文主治：「胃中客熱、牙宣口氣、齒齦腫爛，時出膿血，口舌生瘡，咽喉腫痛者」。書載：「脾胃即消化系統有濕熱，裡有瘀熱，胃腸呈現虛衰證，口舌、咽喉、齒齦等腫脹糜爛出血者為宜」。2026-09-23 新增（第一輪把「齒齦腫爛」併入既有 S-TOOTHACHE，量測後發現會把大塚battery[齒痛→立效散]分支的立效散擠出第1，追查發現是語意本來就不精確——S-TOOTHACHE 核心是痛，這裡講的是黏膜腫爛出血，本不該共用同一概念。第二輪改新開獨立概念 S-ORAL-MUCOSA-EROSION，結構上不再與立效散的齒痛查詢重疊，量測後確認零代價）。"
+      ],
+      "indications": [
+        "S-ORAL-MUCOSA-EROSION"
+      ],
+      "formulaPattern": "",
+      "notes": "矢數道明《臨床應用漢方處方解說》附篇第20方（p.455），出典《和劑局方·積熱門》。原文主治：「胃中客熱、牙宣口氣、齒齦腫爛，時出膿血，口舌生瘡，咽喉腫痛者」。書載：「脾胃即消化系統有濕熱，裡有瘀熱，胃腸呈現虛衰證，口舌、咽喉、齒齦等腫脹糜爛出血者為宜」。2026-09-23 新增（第一輪把「齒齦腫爛」併入既有 S-TOOTHACHE，量測後發現會把大塚battery[齒痛→立效散]分支的立效散擠出第1，追查發現是語意本來就不精確——S-TOOTHACHE 核心是痛，這裡講的是黏膜腫爛出血，本不該共用同一概念。第二輪改新開獨立概念 S-ORAL-MUCOSA-EROSION，結構上不再與立效散的齒痛查詢重疊，量測後確認零代價）。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-065",
+      "name": "烏梅丸",
+      "category": "醫師補充",
+      "xushiClass": "虛實夾雜",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 1,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0.1429,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0.25,
+        "XIN-XUEXU": 0.2,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0.3333,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0.1,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "蛔蟲引起之腹痛、厥陰病腹痛",
+          "id": "S-ABDOMINAL-PAIN",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "煩躁",
+          "id": "S-ANXIETY",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "手足厥冷",
+          "id": "S-COLD",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "上熱下寒之病",
+          "id": "S-UPPER-HOT-LOWER-COLD",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "嘔吐（醫典藥方解說）",
+          "id": "S-VOMITING",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        },
+        {
+          "raw": "下痢（醫典藥方解說）",
+          "id": "S-DIARRHEA",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        }
+      ],
+      "herbs": [
+        "烏梅",
+        "細辛",
+        "炮附子",
+        "桂枝",
+        "黃柏",
+        "人參",
+        "當歸",
+        "蜀椒",
+        "乾薑",
+        "黃連"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "矢數道明《臨床應用漢方處方解說》附篇第4方（p.450），出典《金匱要略·蛔蟲病門》《傷寒論·厥陰篇》。書載：「治蛔蟲引起之腹痛、煩躁、手足厥冷。又用於厥陰病之腹痛、嘔吐、下利。亦可用於神經官能症、不眠症、胃酸過多症、胃潰瘍、腸疝痛、慢性下利、上熱下寒之病」。2026-09-23 新增（原書 PDF 逐方核對）。收書上第一句的三個主症（腹痛／煩躁／手足厥冷）＋「上熱下寒」這個厥陰定義性證型標記。第一次連第二句的「嘔吐」「下利」一併收（共六症），量測後萩野battery[#90 腹瀉、嘔吐、蕁麻疹→五苓散]從第5掉出前5——本方靠嘔吐+下利兩個泛用症去搶一個典型水滯的急性病案，臨床上並不合理。依主證／客證原則只留第一句主症，重測後零代價。"
+      ],
+      "indications": [
+        "S-ABDOMINAL-PAIN",
+        "S-ANXIETY",
+        "S-COLD",
+        "S-UPPER-HOT-LOWER-COLD",
+        "S-VOMITING",
+        "S-DIARRHEA"
+      ],
+      "formulaPattern": "",
+      "notes": "矢數道明《臨床應用漢方處方解說》附篇第4方（p.450），出典《金匱要略·蛔蟲病門》《傷寒論·厥陰篇》。書載：「治蛔蟲引起之腹痛、煩躁、手足厥冷。又用於厥陰病之腹痛、嘔吐、下利。亦可用於神經官能症、不眠症、胃酸過多症、胃潰瘍、腸疝痛、慢性下利、上熱下寒之病」。2026-09-23 新增（原書 PDF 逐方核對）。收書上第一句的三個主症（腹痛／煩躁／手足厥冷）＋「上熱下寒」這個厥陰定義性證型標記。第一次連第二句的「嘔吐」「下利」一併收（共六症），量測後萩野battery[#90 腹瀉、嘔吐、蕁麻疹→五苓散]從第5掉出前5——本方靠嘔吐+下利兩個泛用症去搶一個典型水滯的急性病案，臨床上並不合理。依主證／客證原則只留第一句主症，重測後零代價。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-066",
+      "name": "柿蒂湯",
+      "category": "醫師補充",
+      "xushiClass": "虛證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 1,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0.25,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0.1667,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0.1,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "噦逆、呃逆",
+          "id": "S-HICCUP",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "胃寒（與橘皮竹茹湯之胃熱呃逆分流）",
+          "id": "S-COLD",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "丁香",
+        "柿蒂",
+        "生薑"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "矢數道明《臨床應用漢方處方解說》附篇第50方（p.465），出典《濟生方》。原文主治：「治噦逆」。書載：「本方治胃寒呃逆。橘皮竹茹湯治胃熱呃逆。《壽世保元》之丁香柿蒂湯亦為胃虛寒呃逆之治劑。……按半夏瀉心湯——橘皮竹茹湯——柿蒂湯——丁香柿蒂湯順序向虛寒移行」。2026-09-23 新增（原書 PDF 逐方核對）。同批新開 S-HICCUP 概念（本體原無呃逆這個症狀軸，跟既有噯氣 S-BELCHING 機轉不同）。本方收「呃逆」＋「胃寒」兩症：呃逆是主症，胃寒是書上明確用來跟橘皮竹茹湯（胃熱呃逆）分流的證型標記，寒熱一併收才能表達書自己給的鑑別。橘皮竹茹湯／丁香柿蒂湯本書無獨立條目，待日後找到組成再補。"
+      ],
+      "indications": [
+        "S-HICCUP",
+        "S-COLD"
+      ],
+      "formulaPattern": "",
+      "notes": "矢數道明《臨床應用漢方處方解說》附篇第50方（p.465），出典《濟生方》。原文主治：「治噦逆」。書載：「本方治胃寒呃逆。橘皮竹茹湯治胃熱呃逆。《壽世保元》之丁香柿蒂湯亦為胃虛寒呃逆之治劑。……按半夏瀉心湯——橘皮竹茹湯——柿蒂湯——丁香柿蒂湯順序向虛寒移行」。2026-09-23 新增（原書 PDF 逐方核對）。同批新開 S-HICCUP 概念（本體原無呃逆這個症狀軸，跟既有噯氣 S-BELCHING 機轉不同）。本方收「呃逆」＋「胃寒」兩症：呃逆是主症，胃寒是書上明確用來跟橘皮竹茹湯（胃熱呃逆）分流的證型標記，寒熱一併收才能表達書自己給的鑑別。橘皮竹茹湯／丁香柿蒂湯本書無獨立條目，待日後找到組成再補。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-067",
+      "name": "蔓荊子散",
+      "category": "醫師補充",
+      "xushiClass": "虛實夾雜",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0.2,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0.1111
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "耳內生膿、耳漏（流稀膿液）",
+          "id": "S-EAR-DISCHARGE",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "耳鳴而聾",
+          "id": "S-TINNITUS",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "蔓荊子",
+        "木通",
+        "桑白皮",
+        "甘草",
+        "菊花",
+        "升麻",
+        "芍藥",
+        "柴胡",
+        "麥門冬",
+        "茯苓",
+        "地黃",
+        "大棗",
+        "生薑"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "矢數道明《臨床應用漢方處方解說》附篇第106方（p.485），出典《直方指》《萬病回春》。原文主治：「治上焦熱，耳內生膿，或耳鳴而聾者」。書載：多用於老年婦女血燥引起之上焦生熱，耳鳴，耳聾，或耳內長期流膿者；應用於慢性中耳炎、耳鳴、難聽、耳漏（流稀膿液）等。2026-09-23 新增（原書 PDF 逐方核對）。同批新開 S-EAR-DISCHARGE 概念（本體原有耳鳴但無耳漏／耳內流膿，兩者是主觀聽覺症狀 vs 客觀分泌物徵象的不同軸）。本方收「耳漏」＋「耳鳴」兩症：耳漏是本方跟既有10個耳鳴方最具鑑別力的專屬徵象（那些方治耳鳴但不治化膿性耳漏），耳鳴則是書上並列的主症。"
+      ],
+      "indications": [
+        "S-EAR-DISCHARGE",
+        "S-TINNITUS"
+      ],
+      "formulaPattern": "",
+      "notes": "矢數道明《臨床應用漢方處方解說》附篇第106方（p.485），出典《直方指》《萬病回春》。原文主治：「治上焦熱，耳內生膿，或耳鳴而聾者」。書載：多用於老年婦女血燥引起之上焦生熱，耳鳴，耳聾，或耳內長期流膿者；應用於慢性中耳炎、耳鳴、難聽、耳漏（流稀膿液）等。2026-09-23 新增（原書 PDF 逐方核對）。同批新開 S-EAR-DISCHARGE 概念（本體原有耳鳴但無耳漏／耳內流膿，兩者是主觀聽覺症狀 vs 客觀分泌物徵象的不同軸）。本方收「耳漏」＋「耳鳴」兩症：耳漏是本方跟既有10個耳鳴方最具鑑別力的專屬徵象（那些方治耳鳴但不治化膿性耳漏），耳鳴則是書上並列的主症。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-068",
+      "name": "導水茯苓湯",
+      "category": "醫師補充",
+      "xushiClass": "虛證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 1
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0.25,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0.3333,
+        "FEI-QIXU": 0.2,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0.2,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "遍身水腫（諸藥不效之虛腫）",
+          "id": "S-EDEMA",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "喘滿、水腫作喘",
+          "id": "S-ASTHMA-WHEEZE",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "小便秘澀",
+          "id": "S-OLIGURIA",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "茯苓",
+        "澤瀉",
+        "白朮",
+        "麥門冬",
+        "桑白皮",
+        "蘇葉",
+        "大腹皮",
+        "縮砂仁",
+        "木香",
+        "燈心",
+        "檳榔",
+        "木瓜",
+        "陳皮"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "矢數道明《臨床應用漢方處方解說》附篇第89方（p.479），出典《奇效良方》。原文主治：「治遍身水腫喘滿，小便秘澀，諸藥不效者，用此即愈」。書載：用於水腫作喘者；以腎病等諸藥不效之虛腫者可試用之；應用於腎病、浮腫、腹水、心源性喘息而有浮腫者。2026-09-23 新增（原書 PDF 逐方核對）。收原文三個主症（遍身水腫／喘滿／小便秘澀）——本方的臨床定位是「其他利水方無效之頑固虛腫兼喘」，三症必須並見才是本方證，單一水腫或單一喘皆非本方所主，故三症一併收，避免只收一症變成跟既有28個水腫方機械競爭。落地後自我檢索稽核顯示本方以自身三症查詢時排第3（被變制心氣飲、九味檳榔湯壓過）——**這是預期且臨床正確的行為，不是缺陷**：書自己寫明本方是「諸藥不效者用此」的二線方，本來就不該在單純水腫喘滿查詢上壓過一線利水方。四個battery皆逐位元不變。"
+      ],
+      "indications": [
+        "S-EDEMA",
+        "S-ASTHMA-WHEEZE",
+        "S-OLIGURIA"
+      ],
+      "formulaPattern": "",
+      "notes": "矢數道明《臨床應用漢方處方解說》附篇第89方（p.479），出典《奇效良方》。原文主治：「治遍身水腫喘滿，小便秘澀，諸藥不效者，用此即愈」。書載：用於水腫作喘者；以腎病等諸藥不效之虛腫者可試用之；應用於腎病、浮腫、腹水、心源性喘息而有浮腫者。2026-09-23 新增（原書 PDF 逐方核對）。收原文三個主症（遍身水腫／喘滿／小便秘澀）——本方的臨床定位是「其他利水方無效之頑固虛腫兼喘」，三症必須並見才是本方證，單一水腫或單一喘皆非本方所主，故三症一併收，避免只收一症變成跟既有28個水腫方機械競爭。落地後自我檢索稽核顯示本方以自身三症查詢時排第3（被變制心氣飲、九味檳榔湯壓過）——**這是預期且臨床正確的行為，不是缺陷**：書自己寫明本方是「諸藥不效者用此」的二線方，本來就不該在單純水腫喘滿查詢上壓過一線利水方。四個battery皆逐位元不變。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-069",
+      "name": "清濕化痰湯",
+      "category": "醫師補充",
+      "xushiClass": "實證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 1,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "背心一點如冰冷",
+          "id": "S-BACK-COLD",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "關節不利、遍身四肢骨節走注疼痛",
+          "id": "S-JOINT-PAIN",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "四肢麻痺不仁",
+          "id": "S-NUMBNESS",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "肋間神經痛樣胸痛（矢數書「應用於肋間神經痛」；大塚敬節《漢方診療三十年》案341作者自述「該方用於肋間神經痛樣的胸痛也多有良好的效果」，2026-10-04）",
+          "id": "S-HYPOCHONDRIAC-PAIN",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "半夏",
+        "茯苓",
+        "蒼朮",
+        "天南星",
+        "黃芩",
+        "陳皮",
+        "羌活",
+        "白芷",
+        "白芥子",
+        "甘草",
+        "生薑"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "矢數道明《臨床應用漢方處方解說》附篇第61方（p.469），出典《壽世保元·痰飲門》。原文主治：「治濕痰流注經絡，關節不利，遍身四肢骨節走注疼痛，牽引胸背，四肢麻痺不仁，背心一點如冰冷，脈沉滑者」。書載：治痰結所致之胸膈痛、諸肌痛、背冷；應用於肋間神經痛、肌肉風濕病、淋巴結腫、肩痠痛等。2026-09-23 新增（原書 PDF 逐方核對）。收三症：背心一點如冰冷（S-BACK-COLD，本概念原僅附子湯一個擁有者，是本方最具鑑別力的古典特異徵象，與附子湯之全身陽虛背惡寒不同——本方是局限於背心一點的冷感兼濕痰）、四肢骨節走注疼痛（S-JOINT-PAIN）、四肢麻痺不仁（S-NUMBNESS）。三症並收才能表達「濕痰流注經絡」這個證型。"
+      ],
+      "indications": [
+        "S-BACK-COLD",
+        "S-JOINT-PAIN",
+        "S-NUMBNESS",
+        "S-HYPOCHONDRIAC-PAIN"
+      ],
+      "formulaPattern": "",
+      "notes": "矢數道明《臨床應用漢方處方解說》附篇第61方（p.469），出典《壽世保元·痰飲門》。原文主治：「治濕痰流注經絡，關節不利，遍身四肢骨節走注疼痛，牽引胸背，四肢麻痺不仁，背心一點如冰冷，脈沉滑者」。書載：治痰結所致之胸膈痛、諸肌痛、背冷；應用於肋間神經痛、肌肉風濕病、淋巴結腫、肩痠痛等。2026-09-23 新增（原書 PDF 逐方核對）。收三症：背心一點如冰冷（S-BACK-COLD，本概念原僅附子湯一個擁有者，是本方最具鑑別力的古典特異徵象，與附子湯之全身陽虛背惡寒不同——本方是局限於背心一點的冷感兼濕痰）、四肢骨節走注疼痛（S-JOINT-PAIN）、四肢麻痺不仁（S-NUMBNESS）。三症並收才能表達「濕痰流注經絡」這個證型。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-070",
+      "name": "當歸拈痛湯",
+      "category": "醫師補充",
+      "xushiClass": "實證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 1
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0.2,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0.2,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0.1111
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "四肢骨關節煩疼、遍身疼痛",
+          "id": "S-JOINT-PAIN",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "四肢關節紅腫、足脛腫痛",
+          "id": "S-JOINT-SWELLING",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "關節紅腫熱痛（濕熱之證）",
+          "id": "S-HEAT-SENSATION",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "肩背沉重",
+          "id": "S-BODY-HEAVY",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "生瘡赤腫，膿水不絕、流膿汁",
+          "id": "S-PUS",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "當歸",
+        "知母",
+        "羌活",
+        "茵陳",
+        "黃芩",
+        "白朮",
+        "豬苓",
+        "澤瀉",
+        "蒼朮",
+        "防風",
+        "葛根",
+        "人參",
+        "苦參",
+        "升麻",
+        "甘草"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "矢數道明《臨床應用漢方處方解說》附篇第86方（p.478），出典《蘭室秘藏·腰痛門》。原文主治：「治濕熱腳氣，四肢骨關節煩疼，肩背沉重，胸脅不利，遍身（全身）疼痛，下注足脛腫痛，生瘡赤腫，膿水不絕者」。書載：治濕熱引起之關節紅腫疼痛；用於四肢關節腫痛，下肢皮膚病，流膿汁者；皮膚黑光者，乃有濕熱之證據；應用於四肢關節紅腫熱痛、身體紅腫熱痛、關節風濕病、痛風、下肢皮膚病、腳氣、疥癬內攻等。2026-09-23 新增（原書 PDF 逐方核對）。收五症構成完整的濕熱痹證指紋：關節疼痛＋關節紅腫＋熱痛＋肩背沉重＋膿水不絕。與同批新增的桂芍知母湯（歷節病兼氣血兩虛，寒熱夾雜）、既有的防己黃芪湯（表虛水濕，汗出身重肥胖）形成「同樣關節痛、三種證型、三個方」的鑑別組——這正是本工具要表達的辨證分野，故不能只收「關節痛」一個無證型信息的啞症狀，必須連紅腫熱與化膿這些濕熱標記一併收。"
+      ],
+      "indications": [
+        "S-JOINT-PAIN",
+        "S-JOINT-SWELLING",
+        "S-HEAT-SENSATION",
+        "S-BODY-HEAVY",
+        "S-PUS"
+      ],
+      "formulaPattern": "",
+      "notes": "矢數道明《臨床應用漢方處方解說》附篇第86方（p.478），出典《蘭室秘藏·腰痛門》。原文主治：「治濕熱腳氣，四肢骨關節煩疼，肩背沉重，胸脅不利，遍身（全身）疼痛，下注足脛腫痛，生瘡赤腫，膿水不絕者」。書載：治濕熱引起之關節紅腫疼痛；用於四肢關節腫痛，下肢皮膚病，流膿汁者；皮膚黑光者，乃有濕熱之證據；應用於四肢關節紅腫熱痛、身體紅腫熱痛、關節風濕病、痛風、下肢皮膚病、腳氣、疥癬內攻等。2026-09-23 新增（原書 PDF 逐方核對）。收五症構成完整的濕熱痹證指紋：關節疼痛＋關節紅腫＋熱痛＋肩背沉重＋膿水不絕。與同批新增的桂芍知母湯（歷節病兼氣血兩虛，寒熱夾雜）、既有的防己黃芪湯（表虛水濕，汗出身重肥胖）形成「同樣關節痛、三種證型、三個方」的鑑別組——這正是本工具要表達的辨證分野，故不能只收「關節痛」一個無證型信息的啞症狀，必須連紅腫熱與化膿這些濕熱標記一併收。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-071",
+      "name": "提肛散",
+      "category": "醫師補充",
+      "xushiClass": "虛證",
+      "patternVector": {
+        "QI_XU": 1,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0.25,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0.2,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0.2,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "氣虛肛門下墜、脫肛",
+          "id": "S-RECTAL-PROLAPSE",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "脾胃虛弱、胃腸虛弱之弛緩性體質",
+          "id": "S-FATIGUE",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "當歸",
+        "川芎",
+        "白朮",
+        "人參",
+        "陳皮",
+        "黃耆",
+        "甘草",
+        "柴胡",
+        "黃芩",
+        "升麻",
+        "黃連",
+        "白芷",
+        "赤石脂"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "矢數道明《臨床應用漢方處方解說》附篇第84方（p.477），出典《外科正宗》。原文主治：「治氣虛肛門下墜，及脫肛便血，脾胃虛弱等症」。書載：用於虛證、胃腸虛弱、弛緩性體質之脫肛。2026-09-23 新增（原書 PDF 逐方核對）。同批新開 S-RECTAL-PROLAPSE 概念（本體原無脫肛這個臟器脫垂徵象，跟既有腹力弱 S-ABDOMINAL-WEAKNESS 是不同層次）。收「脫肛」＋「胃腸虛弱」兩症：脫肛是本方專治的主症，虛弱體質是書上明確用來跟實證脫肛分流的證型標記。同批亦把脫肛掛給補中益氣湯（書自己在目錄行列為其適應症），兩方以專科定位分流。"
+      ],
+      "indications": [
+        "S-RECTAL-PROLAPSE",
+        "S-FATIGUE"
+      ],
+      "formulaPattern": "",
+      "notes": "矢數道明《臨床應用漢方處方解說》附篇第84方（p.477），出典《外科正宗》。原文主治：「治氣虛肛門下墜，及脫肛便血，脾胃虛弱等症」。書載：用於虛證、胃腸虛弱、弛緩性體質之脫肛。2026-09-23 新增（原書 PDF 逐方核對）。同批新開 S-RECTAL-PROLAPSE 概念（本體原無脫肛這個臟器脫垂徵象，跟既有腹力弱 S-ABDOMINAL-WEAKNESS 是不同層次）。收「脫肛」＋「胃腸虛弱」兩症：脫肛是本方專治的主症，虛弱體質是書上明確用來跟實證脫肛分流的證型標記。同批亦把脫肛掛給補中益氣湯（書自己在目錄行列為其適應症），兩方以專科定位分流。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-072",
+      "name": "正心湯",
+      "category": "醫師補充",
+      "xushiClass": "虛證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 1,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "妄言妄笑、口語不休、無故笑語之精神異常",
+          "id": "S-MENTAL-SYMPTOMS",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "心志憂鬱（七情五志久逆）",
+          "id": "S-DEPRESSION",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "當歸",
+        "茯苓",
+        "地黃",
+        "羚羊角",
+        "人參",
+        "酸棗仁",
+        "遠志",
+        "甘草"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "矢數道明《臨床應用漢方處方解說》附篇第52方（p.466），出典《古今醫統》。原文主治：「治七情五志久逆，心風，妄言妄笑，不知所苦」。書載：七情五志異常，精神狀態長期異常者，或出現心風，即心志憂鬱，神呆，口語不休，無故笑語，精神異常；用於精神分裂症、鬱病、癇病、神經衰弱、腦溢血、腦軟化症、糖尿病昏迷等。2026-09-23 新增（原書 PDF 逐方核對）。收「精神異常」＋「心志憂鬱」兩症（對映既有 S-MENTAL-SYMPTOMS／S-DEPRESSION）。本方組成含羚羊角、酸棗仁、遠志等鎮驚安神藥，配當歸地黃養血，是「久病血虛兼精神異常」的體質方，與既有精神症狀擁有者（抵當湯＝瘀血發狂、四逆散＝肝鬱、小承氣湯＝陽明譫語）的證型不同。「妄言妄笑」「神呆」本體無對應概念，不強收。"
+      ],
+      "indications": [
+        "S-MENTAL-SYMPTOMS",
+        "S-DEPRESSION"
+      ],
+      "formulaPattern": "",
+      "notes": "矢數道明《臨床應用漢方處方解說》附篇第52方（p.466），出典《古今醫統》。原文主治：「治七情五志久逆，心風，妄言妄笑，不知所苦」。書載：七情五志異常，精神狀態長期異常者，或出現心風，即心志憂鬱，神呆，口語不休，無故笑語，精神異常；用於精神分裂症、鬱病、癇病、神經衰弱、腦溢血、腦軟化症、糖尿病昏迷等。2026-09-23 新增（原書 PDF 逐方核對）。收「精神異常」＋「心志憂鬱」兩症（對映既有 S-MENTAL-SYMPTOMS／S-DEPRESSION）。本方組成含羚羊角、酸棗仁、遠志等鎮驚安神藥，配當歸地黃養血，是「久病血虛兼精神異常」的體質方，與既有精神症狀擁有者（抵當湯＝瘀血發狂、四逆散＝肝鬱、小承氣湯＝陽明譫語）的證型不同。「妄言妄笑」「神呆」本體無對應概念，不強收。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-073",
+      "name": "行濕補氣養血湯",
+      "category": "醫師補充",
+      "xushiClass": "虛證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 1
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0.5,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0.2,
+        "PI-YANGXU": 0.1667,
+        "FEI-QIXU": 0.2,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0.1,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "單腹鼓脹、腹水",
+          "id": "S-ASCITES-PLEURAL-EFFUSION",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "浮腫",
+          "id": "S-EDEMA",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "氣血俱虛，日漸衰弱（病症已晚期）",
+          "id": "S-FATIGUE",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "人參",
+        "白朮",
+        "茯苓",
+        "當歸",
+        "芍藥",
+        "川芎",
+        "木通",
+        "厚朴",
+        "陳皮",
+        "蘿蔔子",
+        "海金沙",
+        "木香",
+        "甘草",
+        "大腹皮",
+        "蘇葉"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "矢數道明《臨床應用漢方處方解說》附篇第38方（p.461），出典《萬病回春·鼓脹門》。原文主治：「治氣血虛弱，單腹鼓脹浮腫」。書載：本方用於鼓脹水腫病，出現氣血俱虛，日漸衰弱，病症已晚期者為宜；應用於腹水、鼓脹、慢性腎炎、腎病、肝硬化、慢性腹膜炎等。2026-09-23 新增（原書 PDF 逐方核對）。收三症（腹水鼓脹／浮腫／氣血俱虛衰弱）構成本方的定位指紋：S-ASCITES-PLEURAL-EFFUSION 原僅茵陳五苓散（濕熱黃疸型）、分消湯（實證水停型）兩個擁有者，本方補上「氣血兩虛、病已晚期」這第三種證型，是同樣腹水的三方鑑別。虛實標記（S-FATIGUE 帶 QI_XU=10）是與前兩方分流的關鍵，不可只收腹水一症。"
+      ],
+      "indications": [
+        "S-ASCITES-PLEURAL-EFFUSION",
+        "S-EDEMA",
+        "S-FATIGUE"
+      ],
+      "formulaPattern": "",
+      "notes": "矢數道明《臨床應用漢方處方解說》附篇第38方（p.461），出典《萬病回春·鼓脹門》。原文主治：「治氣血虛弱，單腹鼓脹浮腫」。書載：本方用於鼓脹水腫病，出現氣血俱虛，日漸衰弱，病症已晚期者為宜；應用於腹水、鼓脹、慢性腎炎、腎病、肝硬化、慢性腹膜炎等。2026-09-23 新增（原書 PDF 逐方核對）。收三症（腹水鼓脹／浮腫／氣血俱虛衰弱）構成本方的定位指紋：S-ASCITES-PLEURAL-EFFUSION 原僅茵陳五苓散（濕熱黃疸型）、分消湯（實證水停型）兩個擁有者，本方補上「氣血兩虛、病已晚期」這第三種證型，是同樣腹水的三方鑑別。虛實標記（S-FATIGUE 帶 QI_XU=10）是與前兩方分流的關鍵，不可只收腹水一症。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-074",
+      "name": "八味疝氣方",
+      "category": "醫師補充",
+      "xushiClass": "實證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 1,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0.25,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0.1667,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0.1,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "寒疝繞臍痛",
+          "id": "S-PERIUMBILICAL-PAIN",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "腿攣急",
+          "id": "S-MUSCLE-SPASM",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "寒疝（屬水閉瘀血之寒證）",
+          "id": "S-COLD",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "桂枝",
+        "桃仁",
+        "延胡索",
+        "木通",
+        "烏藥",
+        "牡丹皮",
+        "牽牛子",
+        "大黃"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "矢數道明《臨床應用漢方處方解說》附篇第96方（p.481），出典福井楓亭經驗方。原文主治：「主治寒疝繞臍痛，及腿攣急。或陰丸腫痛，或婦人瘀血血塊作痛，或陰戶突出（子宮脫出），腸癰等並皆治之，凡屬小腹以下諸疾，屬水閉瘀血者」。書載：應用於疝氣、腸疝痛、急腹痛、腿攣急、下肢血栓性靜脈炎、睪丸痛、精索痛、腎結石絞痛、子宮脫垂等。2026-09-23 新增（原書 PDF 逐方核對）。收三症（寒疝繞臍痛／腿攣急／寒證）——本方主治句自己就以「寒疝」定性，寒與繞臍痛、腿攣急三者並見才是本方證；「陰丸腫痛」「陰戶突出（子宮脫垂）」本體無對應概念（既有 S-RECTAL-PROLAPSE 是直腸，臟器不同），不強收。"
+      ],
+      "indications": [
+        "S-PERIUMBILICAL-PAIN",
+        "S-MUSCLE-SPASM",
+        "S-COLD"
+      ],
+      "formulaPattern": "",
+      "notes": "矢數道明《臨床應用漢方處方解說》附篇第96方（p.481），出典福井楓亭經驗方。原文主治：「主治寒疝繞臍痛，及腿攣急。或陰丸腫痛，或婦人瘀血血塊作痛，或陰戶突出（子宮脫出），腸癰等並皆治之，凡屬小腹以下諸疾，屬水閉瘀血者」。書載：應用於疝氣、腸疝痛、急腹痛、腿攣急、下肢血栓性靜脈炎、睪丸痛、精索痛、腎結石絞痛、子宮脫垂等。2026-09-23 新增（原書 PDF 逐方核對）。收三症（寒疝繞臍痛／腿攣急／寒證）——本方主治句自己就以「寒疝」定性，寒與繞臍痛、腿攣急三者並見才是本方證；「陰丸腫痛」「陰戶突出（子宮脫垂）」本體無對應概念（既有 S-RECTAL-PROLAPSE 是直腸，臟器不同），不強收。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-075",
+      "name": "斷痢湯",
+      "category": "醫師補充",
+      "xushiClass": "虛證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 1
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0.25,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0.2,
+        "PI-YANGXU": 0.3333,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0.2,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "陰證之慢性下利不止",
+          "id": "S-DIARRHEA",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "屬陰證、屬寒者",
+          "id": "S-COLD",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "心下有水飲",
+          "id": "S-GASTRIC-SPLASH",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "半夏",
+        "茯苓",
+        "大棗",
+        "人參",
+        "乾薑",
+        "黃連",
+        "甘草",
+        "附子"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "矢數道明《臨床應用漢方處方解說》附篇第74方（p.474），出典《外台秘要方》。書載：半夏瀉心湯之變方，用於心下有水飲，屬陰證之慢性下利不止者；痢疾以諸藥方不奏效者佳；用於慢性胃腸炎、慢性痢疾症屬寒者為宜。2026-09-23 新增（原書 PDF 逐方核對）。收三症（慢性下利／陰證寒／心下水飲）——本方與母方半夏瀉心湯（熱痞）的分野正在於「屬陰證屬寒」這個證型標記，只收下利會變成跟既有數十個下利方機械競爭，寒證與胃內停水兩個標記必須並收才能表達本方的定位。落地後自我檢索稽核顯示本方以自身三症查詢時排第2（被真武湯壓過）——**這是預期且臨床正確的行為**：真武湯是陰證下利的代表方，本來就該在泛用的寒性下利查詢上排第一；本方書上自己定位為「痢疾以諸藥方不奏效者佳」的二線方。四個battery逐位元不變。"
+      ],
+      "indications": [
+        "S-DIARRHEA",
+        "S-COLD",
+        "S-GASTRIC-SPLASH"
+      ],
+      "formulaPattern": "",
+      "notes": "矢數道明《臨床應用漢方處方解說》附篇第74方（p.474），出典《外台秘要方》。書載：半夏瀉心湯之變方，用於心下有水飲，屬陰證之慢性下利不止者；痢疾以諸藥方不奏效者佳；用於慢性胃腸炎、慢性痢疾症屬寒者為宜。2026-09-23 新增（原書 PDF 逐方核對）。收三症（慢性下利／陰證寒／心下水飲）——本方與母方半夏瀉心湯（熱痞）的分野正在於「屬陰證屬寒」這個證型標記，只收下利會變成跟既有數十個下利方機械競爭，寒證與胃內停水兩個標記必須並收才能表達本方的定位。落地後自我檢索稽核顯示本方以自身三症查詢時排第2（被真武湯壓過）——**這是預期且臨床正確的行為**：真武湯是陰證下利的代表方，本來就該在泛用的寒性下利查詢上排第一；本方書上自己定位為「痢疾以諸藥方不奏效者佳」的二線方。四個battery逐位元不變。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-076",
+      "name": "治肩背拘急方",
+      "category": "醫師補充",
+      "xushiClass": "虛實夾雜",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 1,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0.25,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0.2,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0.2,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "肩背拘急、肩背兩側緊張疼痛",
+          "id": "S-SHOULDER-STIFF",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "氣鬱（本方限用於氣鬱型肩背拘急）",
+          "id": "S-DEPRESSION",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "常疲勞",
+          "id": "S-FATIGUE",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "青皮",
+        "茯苓",
+        "烏藥",
+        "香附",
+        "莪朮",
+        "甘草"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "矢數道明《臨床應用漢方處方解說》附篇第76方（p.474），出典中山攝州經驗方。原文主治：「氣鬱之肩背拘急者，即效」。書載：此方對氣鬱之肩背拘急有效；神經衰弱、癔症、神經症等用其它方藥無效者，主訴有肩背兩側緊張、疼痛、常疲勞有效；用於肩痠痛症（神經症）、鞭打綜合症。2026-09-23 新增（原書 PDF 逐方核對）。收三症（肩背拘急／氣鬱／常疲勞）——書自己就以「氣鬱之」限定本方適用的肩背拘急，S-DEPRESSION（帶 QI_YU 氣鬱權重）正是本方跟既有肩凝方（葛根湯之表證型、二朮湯之痰飲型、桂枝茯苓丸之瘀血型）分流的證型標記，缺了它就只是又一個無差別的肩凝方。"
+      ],
+      "indications": [
+        "S-SHOULDER-STIFF",
+        "S-DEPRESSION",
+        "S-FATIGUE"
+      ],
+      "formulaPattern": "",
+      "notes": "矢數道明《臨床應用漢方處方解說》附篇第76方（p.474），出典中山攝州經驗方。原文主治：「氣鬱之肩背拘急者，即效」。書載：此方對氣鬱之肩背拘急有效；神經衰弱、癔症、神經症等用其它方藥無效者，主訴有肩背兩側緊張、疼痛、常疲勞有效；用於肩痠痛症（神經症）、鞭打綜合症。2026-09-23 新增（原書 PDF 逐方核對）。收三症（肩背拘急／氣鬱／常疲勞）——書自己就以「氣鬱之」限定本方適用的肩背拘急，S-DEPRESSION（帶 QI_YU 氣鬱權重）正是本方跟既有肩凝方（葛根湯之表證型、二朮湯之痰飲型、桂枝茯苓丸之瘀血型）分流的證型標記，缺了它就只是又一個無差別的肩凝方。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-077",
+      "name": "平肝流氣飲",
+      "category": "醫師補充",
+      "xushiClass": "虛實夾雜",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "脅痛",
+          "id": "S-HYPOCHONDRIAC-PAIN",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "小腹至繞臍疼痛",
+          "id": "S-PERIUMBILICAL-PAIN",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "當歸",
+        "半夏",
+        "茯苓",
+        "陳皮",
+        "梔子",
+        "香附",
+        "芍藥",
+        "川芎",
+        "柴胡",
+        "厚朴",
+        "黃連",
+        "青皮",
+        "吳茱萸",
+        "甘草",
+        "生薑"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "矢數道明《臨床應用漢方處方解說》附篇第100方（p.483），出典《萬病回春·脅痛門》。原文主治：「治脅痛，及小腹至繞臍，並疝氣內外疼者」。書載：用於所謂肝硬變已遷延日久，趨於虛證，但尚未出現腹水，若有量亦少，主訴胸痛者；應用於肝硬變某時期未積腹水之時、胰腺炎某時期、膽囊炎、慢性肝炎、疝氣腹痛等。2026-09-23 新增（原書 PDF 逐方核對）。同批新開 S-HYPOCHONDRIAC-PAIN 概念（本體有胸脅苦滿這個腹診他覺徵象，但沒有病人自訴的脅肋部疼痛）。收脅痛＋繞臍痛兩症，是本方主治句自己並列的兩個部位。"
+      ],
+      "indications": [
+        "S-HYPOCHONDRIAC-PAIN",
+        "S-PERIUMBILICAL-PAIN"
+      ],
+      "formulaPattern": "",
+      "notes": "矢數道明《臨床應用漢方處方解說》附篇第100方（p.483），出典《萬病回春·脅痛門》。原文主治：「治脅痛，及小腹至繞臍，並疝氣內外疼者」。書載：用於所謂肝硬變已遷延日久，趨於虛證，但尚未出現腹水，若有量亦少，主訴胸痛者；應用於肝硬變某時期未積腹水之時、胰腺炎某時期、膽囊炎、慢性肝炎、疝氣腹痛等。2026-09-23 新增（原書 PDF 逐方核對）。同批新開 S-HYPOCHONDRIAC-PAIN 概念（本體有胸脅苦滿這個腹診他覺徵象，但沒有病人自訴的脅肋部疼痛）。收脅痛＋繞臍痛兩症，是本方主治句自己並列的兩個部位。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-078",
+      "name": "補陰湯",
+      "category": "醫師補充",
+      "xushiClass": "虛證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 1,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0.2,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0.1,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "腎虛腰痛（晨起即痛，起床後不痛）",
+          "id": "S-LOW-BACK-PAIN",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "腹軟、脈弱、臍下虛",
+          "id": "S-ABDOMINAL-WEAKNESS",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "皮膚枯燥",
+          "id": "S-SKIN-DRY",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "腰痛伴左大腿至膝部麻木（大塚敬節《漢方診療三十年》案358：腰椎錯位石膏固定無效，改投補陰湯十天腰部輕快麻木減輕，七個多月痊癒可打高爾夫；矢數書本方亦載應用於坐骨神經痛，2026-10-04）",
+          "id": "S-NUMBNESS",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "人參",
+        "芍藥",
+        "熟地黃",
+        "陳皮",
+        "牛膝",
+        "破故紙",
+        "杜仲",
+        "當歸",
+        "茯苓",
+        "茴香",
+        "知母",
+        "黃柏",
+        "甘草"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "矢數道明《臨床應用漢方處方解說》附篇第101方（p.483），出典《萬病回春·腰痛門》。原文主治：「治腎虛腰痛」。書載：用於晨起即腰痛，起床之後又不痛者，腹軟，脈弱，臍下虛，皮膚枯燥者；應用於腰痛、坐骨神經痛、慢性腎炎、游走腎等。2026-09-23 新增（原書 PDF 逐方核對）。收三症（腎虛腰痛／腹軟臍下虛／皮膚枯燥）——腰痛本身不帶證型信息（既有數十個腰痛方），本方的鑑別點在「腹軟、脈弱、臍下虛」這組腎虛腹證與「皮膚枯燥」的陰血不足外候，三者並收才能與八味腎氣丸（腎陽虛）、疏經活血湯（瘀血）等其他腰痛方分流。書上另載一個很特異的時間型徵象「晨起即腰痛，起床之後又不痛」，本體無對應概念，僅記錄備查。"
+      ],
+      "indications": [
+        "S-LOW-BACK-PAIN",
+        "S-ABDOMINAL-WEAKNESS",
+        "S-SKIN-DRY",
+        "S-NUMBNESS"
+      ],
+      "formulaPattern": "",
+      "notes": "矢數道明《臨床應用漢方處方解說》附篇第101方（p.483），出典《萬病回春·腰痛門》。原文主治：「治腎虛腰痛」。書載：用於晨起即腰痛，起床之後又不痛者，腹軟，脈弱，臍下虛，皮膚枯燥者；應用於腰痛、坐骨神經痛、慢性腎炎、游走腎等。2026-09-23 新增（原書 PDF 逐方核對）。收三症（腎虛腰痛／腹軟臍下虛／皮膚枯燥）——腰痛本身不帶證型信息（既有數十個腰痛方），本方的鑑別點在「腹軟、脈弱、臍下虛」這組腎虛腹證與「皮膚枯燥」的陰血不足外候，三者並收才能與八味腎氣丸（腎陽虛）、疏經活血湯（瘀血）等其他腰痛方分流。書上另載一個很特異的時間型徵象「晨起即腰痛，起床之後又不痛」，本體無對應概念，僅記錄備查。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-080",
+      "name": "雞鳴散加茯苓",
+      "category": "醫師補充",
+      "xushiClass": "實證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 1,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 1
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0.1429,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0.5,
+        "XIN-XUEXU": 0.2,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0.1667,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0.1,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "氣上衝（腳氣沖心）",
+          "id": "S-BENTUN",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "心動悸",
+          "id": "S-PALPITATION",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "浮腫（浮腫性腳氣）",
+          "id": "S-EDEMA",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "胸部不適、呼吸困難",
+          "id": "S-CHEST-OPPRESSION",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "檳榔",
+        "木瓜",
+        "橘皮",
+        "桔梗",
+        "茯苓",
+        "吳茱萸",
+        "蘇葉",
+        "生薑"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "矢數道明《臨床應用漢方處方解說》附篇第34方（p.460），出典《時方歌括》（《外台秘要·腳氣門》中唐侍中加入桔梗，為治療腳氣之第一處方）。書載：用於腳氣之實證者，以胸部不適，呼吸困難，心動悸，氣上衝，浮腫，腓腸肌握痛等為目標；應用於腳氣初期、浮腫性腳氣、沖心性腳氣、神經性腳氣、腎炎及浮腫等。2026-09-23 新增（原書 PDF 逐方核對）。收四症（氣上衝／心動悸／浮腫／胸部不適）——「氣上衝」對映同批新開的 S-BENTUN，本方因此成為該概念第三個擁有者，且是唯一的「腳氣沖心」語境（與兩個奔豚湯的情志／腎氣上逆語境不同）；四症並收才能表達「腳氣實證兼沖心」這個完整證候。"
+      ],
+      "indications": [
+        "S-BENTUN",
+        "S-PALPITATION",
+        "S-EDEMA",
+        "S-CHEST-OPPRESSION"
+      ],
+      "formulaPattern": "",
+      "notes": "矢數道明《臨床應用漢方處方解說》附篇第34方（p.460），出典《時方歌括》（《外台秘要·腳氣門》中唐侍中加入桔梗，為治療腳氣之第一處方）。書載：用於腳氣之實證者，以胸部不適，呼吸困難，心動悸，氣上衝，浮腫，腓腸肌握痛等為目標；應用於腳氣初期、浮腫性腳氣、沖心性腳氣、神經性腳氣、腎炎及浮腫等。2026-09-23 新增（原書 PDF 逐方核對）。收四症（氣上衝／心動悸／浮腫／胸部不適）——「氣上衝」對映同批新開的 S-BENTUN，本方因此成為該概念第三個擁有者，且是唯一的「腳氣沖心」語境（與兩個奔豚湯的情志／腎氣上逆語境不同）；四症並收才能表達「腳氣實證兼沖心」這個完整證候。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-081",
+      "name": "針砂湯",
+      "category": "醫師補充",
+      "xushiClass": "虛證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 1
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0.1429,
+        "GAN-YINXU": 0.2,
+        "XIN-YANGXU": 0.5,
+        "XIN-XUEXU": 0.2,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0.1667,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0.1,
+        "SHEN-YINXU": 0.1111
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "心悸亢進、虛悸氣短",
+          "id": "S-PALPITATION",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "眩暈虛煩",
+          "id": "S-DIZZINESS",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "顏面蒼白（黃胖病、萎黃病）",
+          "id": "S-PALE-COMPLEXION",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "浮腫",
+          "id": "S-EDEMA",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "白朮",
+        "桂枝",
+        "牡蠣",
+        "茯苓",
+        "人參",
+        "針砂",
+        "甘草"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "矢數道明《臨床應用漢方處方解說》附篇第59方（p.468），出典原南陽經驗方。原文：「為調理虛悸氣短，眩暈虛煩以及黃胖之方。此方運用多端，專以鎮墜鎮靜為主」。書載：因本方為苓桂朮甘湯加針砂、牡蠣、人參，故用於黃胖病（各種貧血、心臟瓣膜病、萎黃病）等有效；以心悸亢進、眩暈、呼吸急促、顏面蒼白、浮腫等為目標；應用於心臟瓣膜病、貧血、出血後心悸、高血壓、眩暈、心悸亢進等。2026-09-23 新增（原書 PDF 逐方核對）。收書上〔目標〕列的四症（心悸亢進／眩暈／顏面蒼白／浮腫）——本方是苓桂朮甘湯的加味方，與母方的分野在於「黃胖」（貧血性萎黃）這條線，顏面蒼白正是此處的關鍵鑑別徵象，四症並收才能表達「貧血性心悸眩暈兼浮腫」這個完整證候。"
+      ],
+      "indications": [
+        "S-PALPITATION",
+        "S-DIZZINESS",
+        "S-PALE-COMPLEXION",
+        "S-EDEMA"
+      ],
+      "formulaPattern": "",
+      "notes": "矢數道明《臨床應用漢方處方解說》附篇第59方（p.468），出典原南陽經驗方。原文：「為調理虛悸氣短，眩暈虛煩以及黃胖之方。此方運用多端，專以鎮墜鎮靜為主」。書載：因本方為苓桂朮甘湯加針砂、牡蠣、人參，故用於黃胖病（各種貧血、心臟瓣膜病、萎黃病）等有效；以心悸亢進、眩暈、呼吸急促、顏面蒼白、浮腫等為目標；應用於心臟瓣膜病、貧血、出血後心悸、高血壓、眩暈、心悸亢進等。2026-09-23 新增（原書 PDF 逐方核對）。收書上〔目標〕列的四症（心悸亢進／眩暈／顏面蒼白／浮腫）——本方是苓桂朮甘湯的加味方，與母方的分野在於「黃胖」（貧血性萎黃）這條線，顏面蒼白正是此處的關鍵鑑別徵象，四症並收才能表達「貧血性心悸眩暈兼浮腫」這個完整證候。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-082",
+      "name": "三和散",
+      "category": "醫師補充",
+      "xushiClass": "實證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 1
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0.2,
+        "PI-YANGXU": 0.1667,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0.1,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "心腹痞滿",
+          "id": "S-EPIGASTRIC-RESISTANCE",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "大便不通",
+          "id": "S-CONSTIPATION",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "肌攣急、陰囊攣痛",
+          "id": "S-MUSCLE-SPASM",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "腹滿",
+          "id": "S-ABDOMINAL-DISTENSION",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "小便不利、小便閉",
+          "id": "S-OLIGURIA",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "沉香",
+        "蘇葉",
+        "大腹皮",
+        "羌活",
+        "白朮",
+        "川芎",
+        "木香",
+        "陳皮",
+        "檳榔",
+        "木瓜",
+        "甘草",
+        "生薑"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "矢數道明《臨床應用漢方處方解說》附篇第46方（p.464），出典《和劑局方·諸氣門》。原文主治：「治五臟不調，三焦不和，心腹痞滿，腳氣上攻胸，大便不通」。書載：此方對氣血留滯，經脈不通利，肌攣急，腹滿，浮腫，大小便不利，腳氣等均佳；用於腸疝痛、腳氣、便秘、小便閉、肌痙攣、腰痛、疝氣、陰囊攣痛等。2026-09-23 新增（原書 PDF 逐方核對）。收五症（心腹痞滿／大便不通／肌攣急／腹滿／小便不利）構成「氣血留滯、經脈不通利」這個氣滯證的完整指紋——本方的臨床特徵是二便俱不利兼肌肉攣急，單收便秘或單收腹滿都會變成跟大量既有方機械競爭。"
+      ],
+      "indications": [
+        "S-EPIGASTRIC-RESISTANCE",
+        "S-CONSTIPATION",
+        "S-MUSCLE-SPASM",
+        "S-ABDOMINAL-DISTENSION",
+        "S-OLIGURIA"
+      ],
+      "formulaPattern": "",
+      "notes": "矢數道明《臨床應用漢方處方解說》附篇第46方（p.464），出典《和劑局方·諸氣門》。原文主治：「治五臟不調，三焦不和，心腹痞滿，腳氣上攻胸，大便不通」。書載：此方對氣血留滯，經脈不通利，肌攣急，腹滿，浮腫，大小便不利，腳氣等均佳；用於腸疝痛、腳氣、便秘、小便閉、肌痙攣、腰痛、疝氣、陰囊攣痛等。2026-09-23 新增（原書 PDF 逐方核對）。收五症（心腹痞滿／大便不通／肌攣急／腹滿／小便不利）構成「氣血留滯、經脈不通利」這個氣滯證的完整指紋——本方的臨床特徵是二便俱不利兼肌肉攣急，單收便秘或單收腹滿都會變成跟大量既有方機械競爭。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-083",
+      "name": "當歸須散",
+      "category": "醫師補充",
+      "xushiClass": "實證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 1,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "打撲、氣凝血結",
+          "id": "S-INJURY-SWELL-PAIN",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "胸腹脅痛",
+          "id": "S-HYPOCHONDRIAC-PAIN",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "下腹部有瘀血，有抵抗壓痛",
+          "id": "S-ABDOMINAL-TENDERNESS",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "當歸",
+        "芍藥",
+        "烏藥",
+        "香附",
+        "桃仁",
+        "蘇木",
+        "紅花",
+        "桂枝",
+        "甘草"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "矢數道明《臨床應用漢方處方解說》附篇第85方（p.477），出典《醫學入門》。原文主治：「治打撲，氣凝血結，胸腹脅痛，或寒熱」。書載：打撲之後，下腹部有瘀血，有抵抗壓痛，主訴胸部、脅部、腹部、腰部等處疼痛者，效佳。2026-09-24 新增（原書 PDF 逐方核對）。收三症（跌打損傷／胸腹脅痛／下腹瘀血抵抗壓痛）——S-INJURY-SWELL-PAIN 原僅治打撲一方一個擁有者，兩方的分野在於部位與腹證：治打撲一方偏局部腫脹，本方偏「胸腹脅痛＋下腹瘀血壓痛」這個軀幹瘀血證。"
+      ],
+      "indications": [
+        "S-INJURY-SWELL-PAIN",
+        "S-HYPOCHONDRIAC-PAIN",
+        "S-ABDOMINAL-TENDERNESS"
+      ],
+      "formulaPattern": "",
+      "notes": "矢數道明《臨床應用漢方處方解說》附篇第85方（p.477），出典《醫學入門》。原文主治：「治打撲，氣凝血結，胸腹脅痛，或寒熱」。書載：打撲之後，下腹部有瘀血，有抵抗壓痛，主訴胸部、脅部、腹部、腰部等處疼痛者，效佳。2026-09-24 新增（原書 PDF 逐方核對）。收三症（跌打損傷／胸腹脅痛／下腹瘀血抵抗壓痛）——S-INJURY-SWELL-PAIN 原僅治打撲一方一個擁有者，兩方的分野在於部位與腹證：治打撲一方偏局部腫脹，本方偏「胸腹脅痛＋下腹瘀血壓痛」這個軀幹瘀血證。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-084",
+      "name": "當歸白朮湯",
+      "category": "醫師補充",
+      "xushiClass": "虛證",
+      "patternVector": {
+        "QI_XU": 1,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0.25,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0.4,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0.2,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "酒疸發黃、慢性黃疸呈虛狀者",
+          "id": "S-JAUNDICE",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "心下有痞癖、堅滿",
+          "id": "S-EPIGASTRIC-RESISTANCE",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "身體沉重、身倦怠",
+          "id": "S-BODY-HEAVY",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "妨礙飲食、無食欲",
+          "id": "S-APPETITE-LOW",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "小便赤澀",
+          "id": "S-DYSURIA",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "疲勞（肝硬變而無食欲、疲勞者）",
+          "id": "S-FATIGUE",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "白朮",
+        "茯苓",
+        "當歸",
+        "杏仁",
+        "半夏",
+        "黃芩",
+        "茵陳",
+        "枳實",
+        "前胡",
+        "甘草"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "矢數道明《臨床應用漢方處方解說》附篇第87方（p.478），出典《三因方》《醫學正傳》。原文主治：「治酒疸發黃，心下有痞癖，堅滿，身體沉重，妨礙飲食，小便赤澀者」。書載：用於黃疸病日久之虛證者；亦可用於黃疸經諸治無效，心下部觸之堅硬，身倦怠，小便赤澀者；應用於慢性黃疸而呈現虛狀者、慢性肝炎、因肝硬變而無食欲、疲勞、小便赤澀者。2026-09-24 新增（原書 PDF 逐方核對）。收書上原文與應用段列出的全部六症——S-JAUNDICE 原有四個擁有者（茵陳蒿湯實熱、梔子柏皮湯、茵陳五苓散濕熱、小建中湯虛勞），本方補上「日久趨虛、諸治無效」這一型。第一次只收前四症，量測後大塚battery [黃疸→梔子柏皮湯]（signs=[\"黃疸\"] 裸單症狀查詢）第1→第2——本方4症覆蓋率(1/4)高過梔子柏皮湯5症(1/5)，純分母問題；書上應用段本來就另列「小便赤澀」「疲勞」，補齊成6症後覆蓋率(1/6)低於對手，量測恢復基準。**這是裸單症狀canary的正解：不是放棄收方，而是把書上本來就有的症狀收完整。**"
+      ],
+      "indications": [
+        "S-JAUNDICE",
+        "S-EPIGASTRIC-RESISTANCE",
+        "S-BODY-HEAVY",
+        "S-APPETITE-LOW",
+        "S-DYSURIA",
+        "S-FATIGUE"
+      ],
+      "formulaPattern": "",
+      "notes": "矢數道明《臨床應用漢方處方解說》附篇第87方（p.478），出典《三因方》《醫學正傳》。原文主治：「治酒疸發黃，心下有痞癖，堅滿，身體沉重，妨礙飲食，小便赤澀者」。書載：用於黃疸病日久之虛證者；亦可用於黃疸經諸治無效，心下部觸之堅硬，身倦怠，小便赤澀者；應用於慢性黃疸而呈現虛狀者、慢性肝炎、因肝硬變而無食欲、疲勞、小便赤澀者。2026-09-24 新增（原書 PDF 逐方核對）。收書上原文與應用段列出的全部六症——S-JAUNDICE 原有四個擁有者（茵陳蒿湯實熱、梔子柏皮湯、茵陳五苓散濕熱、小建中湯虛勞），本方補上「日久趨虛、諸治無效」這一型。第一次只收前四症，量測後大塚battery [黃疸→梔子柏皮湯]（signs=[\"黃疸\"] 裸單症狀查詢）第1→第2——本方4症覆蓋率(1/4)高過梔子柏皮湯5症(1/5)，純分母問題；書上應用段本來就另列「小便赤澀」「疲勞」，補齊成6症後覆蓋率(1/6)低於對手，量測恢復基準。**這是裸單症狀canary的正解：不是放棄收方，而是把書上本來就有的症狀收完整。**",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-085",
+      "name": "牡丹皮湯",
+      "category": "醫師補充",
+      "xushiClass": "虛實夾雜",
+      "patternVector": {
+        "QI_XU": 1,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0.2,
+        "PI-YANGXU": 0.1667,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "腸癰腹痛（以手重按則止）",
+          "id": "S-ABDOMINAL-PAIN",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "時時下膿、直腸窩膿腫",
+          "id": "S-PUS",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "腹濡（喜按，與大黃牡丹皮湯之拒按相反）",
+          "id": "S-ABDOMINAL-WEAKNESS",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "人參",
+        "牡丹皮",
+        "芍藥",
+        "黃耆",
+        "桃仁",
+        "白芷",
+        "當歸",
+        "川芎",
+        "桂枝",
+        "木香",
+        "甘草",
+        "薏苡仁"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "矢數道明《臨床應用漢方處方解說》附篇第103方（p.484），出典《外科正宗·腸癰門》。原文主治：「治腸癰，腹濡而痛，以手重按則止，或時時下膿」。書載：用於闌尾炎穿孔引起之局限性腹膜炎，或直腸窩膿腫，病狀復原，觸之有腫塊，無熱而症狀輕者佳；應用於慢性腸癰及闌尾炎。2026-09-24 新增（原書 PDF 逐方核對）。收三症（腹痛／時時下膿／腹濡按之痛止）——本方與既有大黃牡丹皮湯（急性實證腸癰，拒按）是同病不同期的鑑別：原文「腹濡而痛，以手重按則止」正是**喜按**的虛象，與拒按恰好相反，故 S-ABDOMINAL-WEAKNESS（腹濡）是不可省的證型標記。"
+      ],
+      "indications": [
+        "S-ABDOMINAL-PAIN",
+        "S-PUS",
+        "S-ABDOMINAL-WEAKNESS"
+      ],
+      "formulaPattern": "",
+      "notes": "矢數道明《臨床應用漢方處方解說》附篇第103方（p.484），出典《外科正宗·腸癰門》。原文主治：「治腸癰，腹濡而痛，以手重按則止，或時時下膿」。書載：用於闌尾炎穿孔引起之局限性腹膜炎，或直腸窩膿腫，病狀復原，觸之有腫塊，無熱而症狀輕者佳；應用於慢性腸癰及闌尾炎。2026-09-24 新增（原書 PDF 逐方核對）。收三症（腹痛／時時下膿／腹濡按之痛止）——本方與既有大黃牡丹皮湯（急性實證腸癰，拒按）是同病不同期的鑑別：原文「腹濡而痛，以手重按則止」正是**喜按**的虛象，與拒按恰好相反，故 S-ABDOMINAL-WEAKNESS（腹濡）是不可省的證型標記。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-086",
+      "name": "獨活葛根湯",
+      "category": "醫師補充",
+      "xushiClass": "虛實夾雜",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 1,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "肩背強急、肩背拘急",
+          "id": "S-SHOULDER-STIFF",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "身體疼痛、四肢疼痛",
+          "id": "S-JOINT-PAIN",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "血虛兼外感",
+          "id": "S-BLOOD-DEF",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "葛根",
+        "地黃",
+        "桂枝",
+        "芍藥",
+        "麻黃",
+        "獨活",
+        "大棗",
+        "甘草",
+        "生薑"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "矢數道明《臨床應用漢方處方解說》附篇第90方（p.479），出典《外台秘要方》。原文主治：「療中柔風（謂卒中風之輕症），身體疼痛，四肢緩弱，欲不遂。產後中柔風亦用此方」。書載：血虛兼外感，肩背強急，身體疼痛，四肢不遂者用之；應用於四十腕、五十肩、腦溢血後肩背拘急、四肢疼痛兼外感者。2026-09-24 新增（原書 PDF 逐方核對）。收三症（肩背強急／身體四肢疼痛／血虛）——書自己限定本方為「血虛兼外感」型，S-BLOOD-DEF 正是它跟葛根湯（單純表證）、二朮湯（痰飲）、治肩背拘急方（氣鬱）、桂枝茯苓丸（瘀血）分流的關鍵。「四肢緩弱、欲不遂」屬中風輕症範疇，但 S-HEMIPLEGIA 群已是量測敏感區，本輪不掛，僅記錄。"
+      ],
+      "indications": [
+        "S-SHOULDER-STIFF",
+        "S-JOINT-PAIN",
+        "S-BLOOD-DEF"
+      ],
+      "formulaPattern": "",
+      "notes": "矢數道明《臨床應用漢方處方解說》附篇第90方（p.479），出典《外台秘要方》。原文主治：「療中柔風（謂卒中風之輕症），身體疼痛，四肢緩弱，欲不遂。產後中柔風亦用此方」。書載：血虛兼外感，肩背強急，身體疼痛，四肢不遂者用之；應用於四十腕、五十肩、腦溢血後肩背拘急、四肢疼痛兼外感者。2026-09-24 新增（原書 PDF 逐方核對）。收三症（肩背強急／身體四肢疼痛／血虛）——書自己限定本方為「血虛兼外感」型，S-BLOOD-DEF 正是它跟葛根湯（單純表證）、二朮湯（痰飲）、治肩背拘急方（氣鬱）、桂枝茯苓丸（瘀血）分流的關鍵。「四肢緩弱、欲不遂」屬中風輕症範疇，但 S-HEMIPLEGIA 群已是量測敏感區，本輪不掛，僅記錄。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-087",
+      "name": "肺癰湯",
+      "category": "醫師補充",
+      "xushiClass": "實證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "咳吐腥臭、口吐膿（或如米粒）",
+          "id": "S-PURULENT-SPUTUM",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "胸肋間隱痛，或徹背",
+          "id": "S-HYPOCHONDRIAC-PAIN",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "聲枯氣急，不能臥",
+          "id": "S-HOARSE-VOICE",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "桔梗",
+        "黃芩",
+        "杏仁",
+        "貝母",
+        "瓜蔞根",
+        "白芥子",
+        "甘草"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "矢數道明《臨床應用漢方處方解說》附篇第94方（p.481），出典原南陽經驗方。原文主治：「治咳吐腥臭，口吐膿，或如米粒，胸肋間隱痛，或徹背，或聲枯氣急，不能臥者」。書載：根據原南陽創方之意，用於肺癰初期有特效。2026-09-24 新增（原書 PDF 逐方核對）。同批新開 S-PURULENT-SPUTUM 概念（本體既有 S-PUS 是體表癰疽化膿灶，沒有「咳出膿痰」這個呼吸道症狀軸）。收三症（咳吐腥臭膿痰／胸肋間隱痛／聲枯氣急）——與同批稍早新增的葦莖湯（肺癰聖藥，以胸中甲錯為目標）是肺癰不同著眼點的鑑別。"
+      ],
+      "indications": [
+        "S-PURULENT-SPUTUM",
+        "S-HYPOCHONDRIAC-PAIN",
+        "S-HOARSE-VOICE"
+      ],
+      "formulaPattern": "",
+      "notes": "矢數道明《臨床應用漢方處方解說》附篇第94方（p.481），出典原南陽經驗方。原文主治：「治咳吐腥臭，口吐膿，或如米粒，胸肋間隱痛，或徹背，或聲枯氣急，不能臥者」。書載：根據原南陽創方之意，用於肺癰初期有特效。2026-09-24 新增（原書 PDF 逐方核對）。同批新開 S-PURULENT-SPUTUM 概念（本體既有 S-PUS 是體表癰疽化膿灶，沒有「咳出膿痰」這個呼吸道症狀軸）。收三症（咳吐腥臭膿痰／胸肋間隱痛／聲枯氣急）——與同批稍早新增的葦莖湯（肺癰聖藥，以胸中甲錯為目標）是肺癰不同著眼點的鑑別。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-088",
+      "name": "解勞散",
+      "category": "醫師補充",
+      "xushiClass": "實證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 1,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0.1429,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "胸脅噎塞、胸脅硬滿且緊張",
+          "id": "S-CHEST-RIB-FULLNESS",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "積氣堅硬、觸有硬結",
+          "id": "S-ABDOMINAL-MASS",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "徹痛引背、疼痛徹背",
+          "id": "S-HYPOCHONDRIAC-PAIN",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "柴胡",
+        "芍藥",
+        "鱉甲",
+        "茯苓",
+        "大棗",
+        "枳實",
+        "甘草",
+        "生薑"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "矢數道明《臨床應用漢方處方解說》附篇第10方（p.452），出典《楊氏家藏方》。原文主治：「治勞、積氣堅硬、胸脅噎塞、徹痛引背」。書載：此方為四逆散加鱉甲、茯苓；用於心下及胸脅硬滿且緊張、實證之腹證，觸有硬結，疼痛徹背者；即用於慢性腹膜炎之硬結、膽石症、膽囊炎、胰腺炎、胃潰瘍等。2026-09-24 新增（原書 PDF 逐方核對）。收三症（胸脅硬滿／腹內硬結／脅痛徹背）——本方是四逆散的加味方，與母方（單純肝鬱氣滯）的分野在於「積氣堅硬、觸有硬結」這個實質性腫塊徵象（鱉甲軟堅之所主）。"
+      ],
+      "indications": [
+        "S-CHEST-RIB-FULLNESS",
+        "S-ABDOMINAL-MASS",
+        "S-HYPOCHONDRIAC-PAIN"
+      ],
+      "formulaPattern": "",
+      "notes": "矢數道明《臨床應用漢方處方解說》附篇第10方（p.452），出典《楊氏家藏方》。原文主治：「治勞、積氣堅硬、胸脅噎塞、徹痛引背」。書載：此方為四逆散加鱉甲、茯苓；用於心下及胸脅硬滿且緊張、實證之腹證，觸有硬結，疼痛徹背者；即用於慢性腹膜炎之硬結、膽石症、膽囊炎、胰腺炎、胃潰瘍等。2026-09-24 新增（原書 PDF 逐方核對）。收三症（胸脅硬滿／腹內硬結／脅痛徹背）——本方是四逆散的加味方，與母方（單純肝鬱氣滯）的分野在於「積氣堅硬、觸有硬結」這個實質性腫塊徵象（鱉甲軟堅之所主）。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-089",
+      "name": "清熱解鬱湯",
+      "category": "醫師補充",
+      "xushiClass": "實證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "心下、上腹部疼痛（心痛少久者）",
+          "id": "S-EPIGASTRIC-PAIN",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "燒心、胃酸過多",
+          "id": "S-ACID-REFLUX",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "胃中有鬱熱",
+          "id": "S-HEAT-TOXIN",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "梔子",
+        "蒼朮",
+        "香附子",
+        "川芎",
+        "陳皮",
+        "枳實",
+        "黃連",
+        "甘草",
+        "生薑"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "矢數道明《臨床應用漢方處方解說》附篇第63方（p.470），出典《萬病回春·心痛門》。原文主治：「心痛少久者，胃中有鬱熱也」。書載：心下、上腹部疼痛，日久而致鬱熱者，胃痛，燒心，諸藥不應者佳；應用於慢性胃炎、胃潰瘍、十二指腸潰瘍、胰腺炎、膽石症、膽囊炎、胃酸過多症等。2026-09-24 新增（原書 PDF 逐方核對）。收三症（胃痛／燒心泛酸／鬱熱）——胃痛本身不帶證型信息，本方的鑑別點正是書名所揭的「鬱熱」：與安中散（虛寒胃痛）、堅中湯（水飲胃痛）恰成寒熱對照。"
+      ],
+      "indications": [
+        "S-EPIGASTRIC-PAIN",
+        "S-ACID-REFLUX",
+        "S-HEAT-TOXIN"
+      ],
+      "formulaPattern": "",
+      "notes": "矢數道明《臨床應用漢方處方解說》附篇第63方（p.470），出典《萬病回春·心痛門》。原文主治：「心痛少久者，胃中有鬱熱也」。書載：心下、上腹部疼痛，日久而致鬱熱者，胃痛，燒心，諸藥不應者佳；應用於慢性胃炎、胃潰瘍、十二指腸潰瘍、胰腺炎、膽石症、膽囊炎、胃酸過多症等。2026-09-24 新增（原書 PDF 逐方核對）。收三症（胃痛／燒心泛酸／鬱熱）——胃痛本身不帶證型信息，本方的鑑別點正是書名所揭的「鬱熱」：與安中散（虛寒胃痛）、堅中湯（水飲胃痛）恰成寒熱對照。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-090",
+      "name": "清臟湯",
+      "category": "醫師補充",
+      "xushiClass": "實證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 1,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "痔出血（痔出血之專劑、腸風下血）",
+          "id": "S-HEMORRHOIDS",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "非虛證，偏於實熱",
+          "id": "S-HEAT-TOXIN",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "大便下血、腸風下血",
+          "id": "S-BLOODY-STOOL",
+          "negated": false,
+          "matchType": "physician-patch"
+        }
+      ],
+      "herbs": [
+        "地黃",
+        "當歸",
+        "川芎",
+        "芍藥",
+        "地榆",
+        "黃芩",
+        "梔子",
+        "黃柏",
+        "黃連",
+        "側柏葉",
+        "槐花",
+        "阿膠"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "矢數道明《臨床應用漢方處方解說》附篇第64方（p.470），出典《萬病回春·失血門》。原文主治：「治大便下血，不問糞前糞後，並腸風下血」。書載：用於非虛證，偏於實熱之痔出血，為痔出血之專劑。2026-09-24 新增（原書 PDF 逐方核對）。收兩症（痔出血／實熱）。**第一次另收了泛用的 S-BLEEDING（大便下血），量測後萩野battery [#84 痔出血→芎歸膠艾湯]（signs=[\"出血\"] 裸單症狀查詢）第1→第2**——本方3症覆蓋率(1/3)高過芎歸膠艾湯4症(1/4)。追查後發現語意本來就該更精確：本方是書自己標明的「痔出血之專劑」，不是泛用止血方，掛上泛用出血概念會讓它去搶所有出血查詢，臨床上並不合理。改為只留痔出血＋實熱兩症（實熱是它跟芎歸膠艾湯虛寒型出血分流的關鍵），結構上不再與泛用出血查詢交集。"
+      ],
+      "indications": [
+        "S-HEMORRHOIDS",
+        "S-HEAT-TOXIN",
+        "S-BLOODY-STOOL"
+      ],
+      "formulaPattern": "",
+      "notes": "矢數道明《臨床應用漢方處方解說》附篇第64方（p.470），出典《萬病回春·失血門》。原文主治：「治大便下血，不問糞前糞後，並腸風下血」。書載：用於非虛證，偏於實熱之痔出血，為痔出血之專劑。2026-09-24 新增（原書 PDF 逐方核對）。收兩症（痔出血／實熱）。**第一次另收了泛用的 S-BLEEDING（大便下血），量測後萩野battery [#84 痔出血→芎歸膠艾湯]（signs=[\"出血\"] 裸單症狀查詢）第1→第2**——本方3症覆蓋率(1/3)高過芎歸膠艾湯4症(1/4)。追查後發現語意本來就該更精確：本方是書自己標明的「痔出血之專劑」，不是泛用止血方，掛上泛用出血概念會讓它去搶所有出血查詢，臨床上並不合理。改為只留痔出血＋實熱兩症（實熱是它跟芎歸膠艾湯虛寒型出血分流的關鍵），結構上不再與泛用出血查詢交集。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-091",
+      "name": "疏風活血湯",
+      "category": "醫師補充",
+      "xushiClass": "實證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 1,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "四肢百節流注刺痛",
+          "id": "S-JOINT-PAIN",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "其痛處或腫",
+          "id": "S-JOINT-SWELLING",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "風濕性紫斑、非血小板減少性紫斑",
+          "id": "S-SUBCUTANEOUS-BLEEDING",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "當歸",
+        "川芎",
+        "威靈仙",
+        "白芷",
+        "防己",
+        "黃柏",
+        "南星",
+        "蒼朮",
+        "羌活",
+        "桂枝",
+        "紅花",
+        "生薑"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "矢數道明《臨床應用漢方處方解說》附篇第73方（p.473），出典《東醫寶鑑·歷節風》。原文主治：「治四肢百節流注刺痛，皆是風、濕、痰、死血所致，其痛處，或腫，或紅」。書載：應用於風濕性紫斑病、非血小板減少性紫斑病、風濕病等初期。2026-09-24 新增（原書 PDF 逐方核對）。收三症（四肢關節刺痛／關節腫／皮下出血紫斑）——本方是關節痛群的第四型：當歸拈痛湯＝濕熱紅腫、桂芍知母湯＝氣血兩虛歷節、清濕化痰湯＝濕痰流注，本方＝風濕痰瘀夾雜而見**紫斑**。S-SUBCUTANEOUS-BLEEDING（原僅歸脾湯一個擁有者）正是本方在關節痛群中唯一的專屬鑑別徵象。"
+      ],
+      "indications": [
+        "S-JOINT-PAIN",
+        "S-JOINT-SWELLING",
+        "S-SUBCUTANEOUS-BLEEDING"
+      ],
+      "formulaPattern": "",
+      "notes": "矢數道明《臨床應用漢方處方解說》附篇第73方（p.473），出典《東醫寶鑑·歷節風》。原文主治：「治四肢百節流注刺痛，皆是風、濕、痰、死血所致，其痛處，或腫，或紅」。書載：應用於風濕性紫斑病、非血小板減少性紫斑病、風濕病等初期。2026-09-24 新增（原書 PDF 逐方核對）。收三症（四肢關節刺痛／關節腫／皮下出血紫斑）——本方是關節痛群的第四型：當歸拈痛湯＝濕熱紅腫、桂芍知母湯＝氣血兩虛歷節、清濕化痰湯＝濕痰流注，本方＝風濕痰瘀夾雜而見**紫斑**。S-SUBCUTANEOUS-BLEEDING（原僅歸脾湯一個擁有者）正是本方在關節痛群中唯一的專屬鑑別徵象。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-092",
+      "name": "壯原湯",
+      "category": "醫師補充",
+      "xushiClass": "虛證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 1,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 1
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0.5,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0.2,
+        "PI-YANGXU": 0.5,
+        "FEI-QIXU": 0.2,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0.3,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "陰囊兩腿皆腫、面有浮氣",
+          "id": "S-EDEMA",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "小水不利",
+          "id": "S-OLIGURIA",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "中滿腫脹、腹部膨滿",
+          "id": "S-ABDOMINAL-DISTENSION",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "上氣喘息、呼吸困難",
+          "id": "S-ASTHMA-WHEEZE",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "下焦虛寒（陽虛證）",
+          "id": "S-COLD",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "人參",
+        "白朮",
+        "茯苓",
+        "破故紙",
+        "桂枝",
+        "縮砂仁",
+        "陳皮",
+        "生薑",
+        "附子"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "矢數道明《臨床應用漢方處方解說》附篇第71方（p.472），出典《赤水玄珠》。原文主治：「治下焦虛寒，中滿腫脹，小水不利，上氣喘息，陰囊兩腿皆腫，或面有浮氣」。書載：用於陽虛證之浮腫，小便不利，腹部膨滿，呼吸困難，陰部亦腫者；應用於浮腫、腹水、心功能不全、腎炎、腳氣等。2026-09-24 新增（原書 PDF 逐方核對）。收五症（浮腫／小便不利／腹部膨滿／喘息呼吸困難／下焦虛寒）——水腫方在 KB 已有近三十個，本方的定位是「下焦虛寒之陽虛浮腫兼喘」，寒證標記是它跟導水茯苓湯（諸藥不效之虛腫）、木防己湯（心下痞堅實證）等分流的關鍵。"
+      ],
+      "indications": [
+        "S-EDEMA",
+        "S-OLIGURIA",
+        "S-ABDOMINAL-DISTENSION",
+        "S-ASTHMA-WHEEZE",
+        "S-COLD"
+      ],
+      "formulaPattern": "",
+      "notes": "矢數道明《臨床應用漢方處方解說》附篇第71方（p.472），出典《赤水玄珠》。原文主治：「治下焦虛寒，中滿腫脹，小水不利，上氣喘息，陰囊兩腿皆腫，或面有浮氣」。書載：用於陽虛證之浮腫，小便不利，腹部膨滿，呼吸困難，陰部亦腫者；應用於浮腫、腹水、心功能不全、腎炎、腳氣等。2026-09-24 新增（原書 PDF 逐方核對）。收五症（浮腫／小便不利／腹部膨滿／喘息呼吸困難／下焦虛寒）——水腫方在 KB 已有近三十個，本方的定位是「下焦虛寒之陽虛浮腫兼喘」，寒證標記是它跟導水茯苓湯（諸藥不效之虛腫）、木防己湯（心下痞堅實證）等分流的關鍵。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-093",
+      "name": "瓜蔞湯",
+      "category": "醫師補充",
+      "xushiClass": "實證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 1,
+        "QI_YU": 1,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0.1429,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0.2,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "胸痛徹背",
+          "id": "S-CHEST-OPPRESSION",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "呼吸急促嚴重者",
+          "id": "S-ASTHMA-WHEEZE",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "瓜蔞實",
+        "桂枝",
+        "半夏",
+        "橘皮",
+        "厚朴",
+        "薤白",
+        "桔梗",
+        "枳實",
+        "生薑"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "矢數道明《臨床應用漢方處方解說》附篇第17方（p.454），出典《千金方》。書載：用於冠心病及其類似症，栝蔞薤白白酒湯無效或厭酒者佳；用於胸痛徹背、呼吸急促嚴重者。2026-09-24 新增（原書 PDF 逐方核對）。收兩症（胸痛徹背／呼吸急促）——本方與既有瓜蔞薤白半夏湯（KB 僅有胸痹一症）同屬胸痹群，書自己給的分工是「栝蔞薤白白酒湯無效或厭酒者」及「呼吸急促嚴重者」，故呼吸急促（S-ASTHMA-WHEEZE）是本方的鑑別加項，也讓本方覆蓋率(1/2)低於瓜蔞薤白半夏湯(1/1)，不會在單純胸痹查詢上搶走母系方。"
+      ],
+      "indications": [
+        "S-CHEST-OPPRESSION",
+        "S-ASTHMA-WHEEZE"
+      ],
+      "formulaPattern": "",
+      "notes": "矢數道明《臨床應用漢方處方解說》附篇第17方（p.454），出典《千金方》。書載：用於冠心病及其類似症，栝蔞薤白白酒湯無效或厭酒者佳；用於胸痛徹背、呼吸急促嚴重者。2026-09-24 新增（原書 PDF 逐方核對）。收兩症（胸痛徹背／呼吸急促）——本方與既有瓜蔞薤白半夏湯（KB 僅有胸痹一症）同屬胸痹群，書自己給的分工是「栝蔞薤白白酒湯無效或厭酒者」及「呼吸急促嚴重者」，故呼吸急促（S-ASTHMA-WHEEZE）是本方的鑑別加項，也讓本方覆蓋率(1/2)低於瓜蔞薤白半夏湯(1/1)，不會在單純胸痹查詢上搶走母系方。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-094",
+      "name": "甘草麻黃湯",
+      "category": "醫師補充",
+      "xushiClass": "實證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 1,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0.25,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0.1667,
+        "FEI-QIXU": 0.2,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0.1,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "喘息發作（頓服立刻輕快）",
+          "id": "S-ASTHMA-WHEEZE",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "全身特別是上半身浮腫",
+          "id": "S-EDEMA",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "甘草",
+        "麻黃"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "矢數道明《臨床應用漢方處方解說》附篇第18方（p.454），出典《金匱要略·水氣病門》。書載：本方雖能調節裡水，但常用於喘息發作，頓服之立刻輕快；喘息而伴有全身特別是上半身浮腫、呼吸困難者用之效佳。2026-09-24 新增（原書 PDF 逐方核對）。僅二味藥（甘草／麻黃）之頓服方，收兩症（喘息發作／上半身浮腫）——本方在近三十個喘息方與水腫方中的定位是「喘息急性發作時的頓服急救」，喘與腫必須並見才是本方證，單一症皆非所主。"
+      ],
+      "indications": [
+        "S-ASTHMA-WHEEZE",
+        "S-EDEMA"
+      ],
+      "formulaPattern": "",
+      "notes": "矢數道明《臨床應用漢方處方解說》附篇第18方（p.454），出典《金匱要略·水氣病門》。書載：本方雖能調節裡水，但常用於喘息發作，頓服之立刻輕快；喘息而伴有全身特別是上半身浮腫、呼吸困難者用之效佳。2026-09-24 新增（原書 PDF 逐方核對）。僅二味藥（甘草／麻黃）之頓服方，收兩症（喘息發作／上半身浮腫）——本方在近三十個喘息方與水腫方中的定位是「喘息急性發作時的頓服急救」，喘與腫必須並見才是本方證，單一症皆非所主。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-095",
+      "name": "驅風解毒湯",
+      "category": "醫師補充",
+      "xushiClass": "實證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "痄腮（腮腺炎）腫痛、扁桃體周圍炎",
+          "id": "S-NECK-MASS",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "急性扁桃炎咽喉腫痛（醫典急性扁桃炎門）",
+          "id": "S-SORE-THROAT",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        }
+      ],
+      "herbs": [
+        "防風",
+        "牛蒡子",
+        "連翹",
+        "荊芥",
+        "羌活",
+        "甘草",
+        "桔梗",
+        "石膏"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "矢數道明《臨床應用漢方處方解說》附篇第29方（p.458），出典《萬病回春·咽喉門》。原文主治：「治痄腮（扁桃體炎、咽峽炎、腮腺炎）腫痛」。書載：咽喉腫痛以半量飲用，半量含漱為佳；加桔梗、石膏可增強療效；用於咽峽炎（卡他性、腺窩性、濾泡性）、扁桃體周圍炎、腮腺炎等。2026-09-24 新增（原書 PDF 逐方核對）。最終只收一症（痄腮腮腺腫痛）。本方落地過程連踩兩個不同的坑，兩個都跟「概念已被金絲雀保護」有關：⑴ **刻意不掛 S-SORE-THROAT**——同批清涼飲的教訓顯示，S-SORE-THROAT 擁有者一增加就會稀釋咽痛的主訴特異度，連帶打掉矢數問診 battery [咳嗽→麥門冬湯]；改對映 S-NECK-MASS（同批為此補上痄腮/腮腺炎別名），本方核心本來就是「痄腮」＝腮腺／頸面部腫痛，語意更精確。⑵ 改掛 S-NECK-MASS＋S-HEAT-TOXIN 後仍被 `tests/kampo2-x4-matcher.test.mjs` 的斷言「舌痛症＋口內炎 應接到齒科第一方立效散」打紅——本方2症時在熱毒查詢上覆蓋率(1/2)壓過立效散(1/3)，把它擠出前三。S-HEAT-TOXIN 已有20個擁有者且多條金絲雀經過，新進的窄方很容易誤傷；本方的熱毒屬泛泛之證非鑑別點，捨去，只留痄腮這個專屬徵象。"
+      ],
+      "indications": [
+        "S-NECK-MASS",
+        "S-SORE-THROAT"
+      ],
+      "formulaPattern": "",
+      "notes": "矢數道明《臨床應用漢方處方解說》附篇第29方（p.458），出典《萬病回春·咽喉門》。原文主治：「治痄腮（扁桃體炎、咽峽炎、腮腺炎）腫痛」。書載：咽喉腫痛以半量飲用，半量含漱為佳；加桔梗、石膏可增強療效；用於咽峽炎（卡他性、腺窩性、濾泡性）、扁桃體周圍炎、腮腺炎等。2026-09-24 新增（原書 PDF 逐方核對）。最終只收一症（痄腮腮腺腫痛）。本方落地過程連踩兩個不同的坑，兩個都跟「概念已被金絲雀保護」有關：⑴ **刻意不掛 S-SORE-THROAT**——同批清涼飲的教訓顯示，S-SORE-THROAT 擁有者一增加就會稀釋咽痛的主訴特異度，連帶打掉矢數問診 battery [咳嗽→麥門冬湯]；改對映 S-NECK-MASS（同批為此補上痄腮/腮腺炎別名），本方核心本來就是「痄腮」＝腮腺／頸面部腫痛，語意更精確。⑵ 改掛 S-NECK-MASS＋S-HEAT-TOXIN 後仍被 `tests/kampo2-x4-matcher.test.mjs` 的斷言「舌痛症＋口內炎 應接到齒科第一方立效散」打紅——本方2症時在熱毒查詢上覆蓋率(1/2)壓過立效散(1/3)，把它擠出前三。S-HEAT-TOXIN 已有20個擁有者且多條金絲雀經過，新進的窄方很容易誤傷；本方的熱毒屬泛泛之證非鑑別點，捨去，只留痄腮這個專屬徵象。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-096",
+      "name": "九味半夏湯",
+      "category": "醫師補充",
+      "xushiClass": "虛實夾雜",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 1,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0.2,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "留飲所致之肥胖體質",
+          "id": "S-OBESITY",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "手足不能自由運動、麻木",
+          "id": "S-NUMBNESS",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "身體沉重",
+          "id": "S-BODY-HEAVY",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "呼吸困難",
+          "id": "S-ASTHMA-WHEEZE",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "半夏",
+        "橘皮",
+        "甘草",
+        "柴胡",
+        "豬苓",
+        "澤瀉",
+        "茯苓",
+        "生薑",
+        "升麻"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "矢數道明《臨床應用漢方處方解說》附篇第30方（p.458-459），出典《石崎朴庵飲病論》。書載：此方治一切留飲；留飲者，由於水分代謝障礙，水氣滯留，發生肥胖者居多；留飲之症，手足不能自由運動，麻木、肩和腰疼痛、身體沉重、呼吸困難、惡胖者用之佳；如中風之身體不能隨意活動者，若確認為留飲症方可用之；用於肥胖體質者。2026-09-24 新增（原書 PDF 逐方核對）。收四症（肥胖／手足麻木／身體沉重／呼吸困難）——S-OBESITY 原有五個擁有者（防風通聖散実証便秘型、大柴胡湯上腹緊張型、防己黃芪湯表虛汗出型、桂枝茯苓丸、加味逍遙散），本方補上「留飲（水分代謝障礙）型肥胖」這一型，其專屬鑑別點是肥胖同時伴手足麻木與身重——這組合在既有五方皆無。"
+      ],
+      "indications": [
+        "S-OBESITY",
+        "S-NUMBNESS",
+        "S-BODY-HEAVY",
+        "S-ASTHMA-WHEEZE"
+      ],
+      "formulaPattern": "",
+      "notes": "矢數道明《臨床應用漢方處方解說》附篇第30方（p.458-459），出典《石崎朴庵飲病論》。書載：此方治一切留飲；留飲者，由於水分代謝障礙，水氣滯留，發生肥胖者居多；留飲之症，手足不能自由運動，麻木、肩和腰疼痛、身體沉重、呼吸困難、惡胖者用之佳；如中風之身體不能隨意活動者，若確認為留飲症方可用之；用於肥胖體質者。2026-09-24 新增（原書 PDF 逐方核對）。收四症（肥胖／手足麻木／身體沉重／呼吸困難）——S-OBESITY 原有五個擁有者（防風通聖散実証便秘型、大柴胡湯上腹緊張型、防己黃芪湯表虛汗出型、桂枝茯苓丸、加味逍遙散），本方補上「留飲（水分代謝障礙）型肥胖」這一型，其專屬鑑別點是肥胖同時伴手足麻木與身重——這組合在既有五方皆無。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-097",
+      "name": "巫神湯",
+      "category": "醫師補充",
+      "xushiClass": "虛實夾雜",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 1
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0.1429,
+        "GAN-YINXU": 0.2,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0.1667,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0.2,
+        "SHEN-YANGXU": 0.1,
+        "SHEN-YINXU": 0.1111
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "血暈、上沖頭眩",
+          "id": "S-DIZZINESS",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "上沖",
+          "id": "S-BENTUN",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "發熱或振寒",
+          "id": "S-FEVER",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "小便不利",
+          "id": "S-OLIGURIA",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "惡心，或嘔或吐",
+          "id": "S-NAUSEA",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "茯苓",
+        "白朮",
+        "豬苓",
+        "澤瀉",
+        "桂枝",
+        "乾薑",
+        "黃連",
+        "木香"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "矢數道明《臨床應用漢方處方解說》附篇第98方（p.482），出典原南陽經驗方。原文主治：「理婦人血暈，發熱或振寒，小便不利，上沖頭眩，惡心，或嘔或吐，產後諸症，婦人百病。運用多端」。書載：因治瘀血與水毒發為神經症狀之諸種婦女病，故以血熱之證用桃仁劑無效者為其目標；用於血脈症、植物神經失調症、慢性膀胱炎等。2026-09-24 新增（原書 PDF 逐方核對）。收五症（頭眩／氣上沖／發熱惡寒／小便不利／惡心嘔吐）——本方是瘀血兼水毒的婦科神經症方，書自己標明的鑑別入口是「血熱之證用桃仁劑無效者」，五症整組收才能表達「瘀血＋水毒＋氣上沖」這個複合證候，單收頭眩或嘔吐都會落入既有數十方的機械競爭。"
+      ],
+      "indications": [
+        "S-DIZZINESS",
+        "S-BENTUN",
+        "S-FEVER",
+        "S-OLIGURIA",
+        "S-NAUSEA"
+      ],
+      "formulaPattern": "",
+      "notes": "矢數道明《臨床應用漢方處方解說》附篇第98方（p.482），出典原南陽經驗方。原文主治：「理婦人血暈，發熱或振寒，小便不利，上沖頭眩，惡心，或嘔或吐，產後諸症，婦人百病。運用多端」。書載：因治瘀血與水毒發為神經症狀之諸種婦女病，故以血熱之證用桃仁劑無效者為其目標；用於血脈症、植物神經失調症、慢性膀胱炎等。2026-09-24 新增（原書 PDF 逐方核對）。收五症（頭眩／氣上沖／發熱惡寒／小便不利／惡心嘔吐）——本方是瘀血兼水毒的婦科神經症方，書自己標明的鑑別入口是「血熱之證用桃仁劑無效者」，五症整組收才能表達「瘀血＋水毒＋氣上沖」這個複合證候，單收頭眩或嘔吐都會落入既有數十方的機械競爭。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-098",
+      "name": "積縮二陳湯",
+      "category": "醫師補充",
+      "xushiClass": "實證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 1,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0.1,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "痰涎在心膈上、心下兩乳間疼痛",
+          "id": "S-EPIGASTRIC-PAIN",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "攻走腰背",
+          "id": "S-LOW-BACK-PAIN",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "嘔噦大痛、及於腰背而嘔吐",
+          "id": "S-VOMITING",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "半夏",
+        "茯苓",
+        "陳皮",
+        "香附",
+        "厚朴",
+        "延胡索",
+        "枳實",
+        "縮砂仁",
+        "茴香",
+        "木香",
+        "草豆蔻",
+        "生薑"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "矢數道明《臨床應用漢方處方解說》附篇第23方（p.456），出典《萬病回春·心痛門》。原文主治：「治痰涎在心膈上，攻走腰背，嘔噦大痛」。書載：治胸中胃內之痰飲，攻走心下兩乳間疼痛，及於腰背而嘔吐者；用於疝與痰飲相兼，胃痛、冠心病、心臟神經症、溜飲症等。2026-09-24 新增（原書 PDF 逐方核對）。收三症（心下兩乳間疼痛／腰背牽引痛／嘔噦）——本方是二陳湯的加味方，其鑑別特徵是痰飲之痛具有「攻走」性：從心膈往腰背放射，這個部位組合（心下＋腰背＋嘔吐）在既有胃痛方中獨一無二。"
+      ],
+      "indications": [
+        "S-EPIGASTRIC-PAIN",
+        "S-LOW-BACK-PAIN",
+        "S-VOMITING"
+      ],
+      "formulaPattern": "",
+      "notes": "矢數道明《臨床應用漢方處方解說》附篇第23方（p.456），出典《萬病回春·心痛門》。原文主治：「治痰涎在心膈上，攻走腰背，嘔噦大痛」。書載：治胸中胃內之痰飲，攻走心下兩乳間疼痛，及於腰背而嘔吐者；用於疝與痰飲相兼，胃痛、冠心病、心臟神經症、溜飲症等。2026-09-24 新增（原書 PDF 逐方核對）。收三症（心下兩乳間疼痛／腰背牽引痛／嘔噦）——本方是二陳湯的加味方，其鑑別特徵是痰飲之痛具有「攻走」性：從心膈往腰背放射，這個部位組合（心下＋腰背＋嘔吐）在既有胃痛方中獨一無二。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-099",
+      "name": "橘皮半夏湯",
+      "category": "醫師補充",
+      "xushiClass": "虛實夾雜",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0.2,
+        "FEI-YINXU": 0.4,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "感冒解後，咳獨不止",
+          "id": "S-COUGH",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "殘留微熱",
+          "id": "S-FEVER",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "橘皮",
+        "柴胡",
+        "杏仁",
+        "桔梗",
+        "香附",
+        "半夏",
+        "茯苓",
+        "桑白皮",
+        "蘇子",
+        "生薑"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "矢數道明《臨床應用漢方處方解說》附篇第24方（p.456），出典《張氏醫通》。原文主治：「治感冒解後，咳獨不止者」。書載：感冒後支氣管炎拖延為亞急性或慢性者，無其它特殊症狀，殘留咳嗽微熱時用之佳；用於亞急性或慢性支氣管炎、咽喉炎等。2026-09-24 新增（原書 PDF 逐方核對）。收兩症（感冒後殘留咳嗽／微熱）——書自己對本方的定位就是「無其它特殊症狀」的感冒後遺咳，這個「症狀單純」本身即是它的鑑別特徵（與痰飲、陰虛、表證等各型咳嗽方相對），故不強加其他症狀。"
+      ],
+      "indications": [
+        "S-COUGH",
+        "S-FEVER"
+      ],
+      "formulaPattern": "",
+      "notes": "矢數道明《臨床應用漢方處方解說》附篇第24方（p.456），出典《張氏醫通》。原文主治：「治感冒解後，咳獨不止者」。書載：感冒後支氣管炎拖延為亞急性或慢性者，無其它特殊症狀，殘留咳嗽微熱時用之佳；用於亞急性或慢性支氣管炎、咽喉炎等。2026-09-24 新增（原書 PDF 逐方核對）。收兩症（感冒後殘留咳嗽／微熱）——書自己對本方的定位就是「無其它特殊症狀」的感冒後遺咳，這個「症狀單純」本身即是它的鑑別特徵（與痰飲、陰虛、表證等各型咳嗽方相對），故不強加其他症狀。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-100",
+      "name": "定悸飲",
+      "category": "醫師補充",
+      "xushiClass": "虛實夾雜",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 1,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0.25,
+        "XIN-XUEXU": 0.2,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0.2,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "奔豚，氣自下腹上沖至心下",
+          "id": "S-BENTUN",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "陣發性心悸亢進、動悸",
+          "id": "S-PALPITATION",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "呼吸欲絕",
+          "id": "S-ASTHMA-WHEEZE",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "茯苓",
+        "白朮",
+        "桂枝",
+        "牡蠣",
+        "李根皮",
+        "甘草",
+        "吳茱萸"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "矢數道明《臨床應用漢方處方解說》附篇第83方（p.477），出典多紀桼窗經驗方。原文主治：「治奔豚」。書載：所謂奔豚，乃氣自下腹上沖至心下，動悸而呼吸欲絕，痛苦難忍；即有自臍下豚奔走之發作感；常伴有陣發性心悸亢進，亦有癇症發作者；最常用於神經性心悸亢進、癇病。2026-09-24 新增（原書 PDF 逐方核對）。收三症（奔豚氣上沖／陣發性心悸亢進／呼吸欲絕）——本方是 S-BENTUN 的第四個擁有者，與既有三方的分工：奔豚湯（金匱）＝實熱兼往來寒熱、奔豚湯（肘後方）＝虛寒兼焦躁、雞鳴散加茯苓＝腳氣沖心、本方＝苓桂朮甘湯加牡蠣李根皮之鎮墜定悸型（書名「定悸」即其功能定位）。"
+      ],
+      "indications": [
+        "S-BENTUN",
+        "S-PALPITATION",
+        "S-ASTHMA-WHEEZE"
+      ],
+      "formulaPattern": "",
+      "notes": "矢數道明《臨床應用漢方處方解說》附篇第83方（p.477），出典多紀桼窗經驗方。原文主治：「治奔豚」。書載：所謂奔豚，乃氣自下腹上沖至心下，動悸而呼吸欲絕，痛苦難忍；即有自臍下豚奔走之發作感；常伴有陣發性心悸亢進，亦有癇症發作者；最常用於神經性心悸亢進、癇病。2026-09-24 新增（原書 PDF 逐方核對）。收三症（奔豚氣上沖／陣發性心悸亢進／呼吸欲絕）——本方是 S-BENTUN 的第四個擁有者，與既有三方的分工：奔豚湯（金匱）＝實熱兼往來寒熱、奔豚湯（肘後方）＝虛寒兼焦躁、雞鳴散加茯苓＝腳氣沖心、本方＝苓桂朮甘湯加牡蠣李根皮之鎮墜定悸型（書名「定悸」即其功能定位）。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-101",
+      "name": "小青龍加石膏湯",
+      "category": "醫師補充",
+      "xushiClass": "虛實夾雜",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 1,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0.4,
+        "FEI-YINXU": 0.4,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "哮喘、感冒輒引發哮喘難治（金匱要略肺脹病本方定義證，案68）",
+          "id": "S-ASTHMA-WHEEZE",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "咳而上氣（案68）",
+          "id": "S-COUGH",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "煩躁而喘、發熱徘徊（案68）",
+          "id": "S-FEVER",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "關節腫脹、關節積液（金匱要略「溢飲」概念延伸，類風濕性關節炎，案67）",
+          "id": "S-JOINT-SWELLING",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "麻黃",
+        "芍藥",
+        "乾薑",
+        "甘草",
+        "桂枝",
+        "細辛",
+        "五味子",
+        "半夏",
+        "石膏"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "出典《金匱要略》肺痿肺癰咳嗽上氣病篇「肺脹，咳而上氣，煩躁而喘，脈浮者，心下有水，小青龍加石膏湯主之」（小青龍湯加石膏）。大塚敬節《漢方診療三十年》案68：5歲男孩，平時一感冒輒引發哮喘難治，這次咳嗽哮喘七天、體溫38°C上下徘徊、納差舌白苔，投本方6天完全治愈。案67：作者自解金匱要略「溢飲」（飲水流行歸於四肢，當汗出而不汗出，身體疼重）概念延伸至類風濕性關節炎關節腔積液者——50多歲婦人左膝關節腫、時有積液、疼痛漸重起居受限，服本方1個月積液未再出現，能坐下；其他手腕/肘/膝關節腫脹（無明顯積液）病例亦於1個月左右消腫止痛。作者自註：若服用此方1個月以上全無好轉跡象，則應考慮是否為其他方證。2026-09-28 新增。"
+      ],
+      "indications": [
+        "S-ASTHMA-WHEEZE",
+        "S-COUGH",
+        "S-FEVER",
+        "S-JOINT-SWELLING"
+      ],
+      "formulaPattern": "",
+      "notes": "出典《金匱要略》肺痿肺癰咳嗽上氣病篇「肺脹，咳而上氣，煩躁而喘，脈浮者，心下有水，小青龍加石膏湯主之」（小青龍湯加石膏）。大塚敬節《漢方診療三十年》案68：5歲男孩，平時一感冒輒引發哮喘難治，這次咳嗽哮喘七天、體溫38°C上下徘徊、納差舌白苔，投本方6天完全治愈。案67：作者自解金匱要略「溢飲」（飲水流行歸於四肢，當汗出而不汗出，身體疼重）概念延伸至類風濕性關節炎關節腔積液者——50多歲婦人左膝關節腫、時有積液、疼痛漸重起居受限，服本方1個月積液未再出現，能坐下；其他手腕/肘/膝關節腫脹（無明顯積液）病例亦於1個月左右消腫止痛。作者自註：若服用此方1個月以上全無好轉跡象，則應考慮是否為其他方證。2026-09-28 新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-102",
+      "name": "生薑瀉心湯",
+      "category": "醫師補充",
+      "xushiClass": "虛實夾雜",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 1,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "心下痞硬、心窩部堵塞感（傷寒論157條主證，案131）",
+          "id": "S-EPIGASTRIC-RESISTANCE",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "乾噫食臭（傷寒論157條，噯氣有食臭味）",
+          "id": "S-BELCHING",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "半夏",
+        "黃芩",
+        "乾薑",
+        "人參",
+        "黃連",
+        "大棗",
+        "甘草",
+        "生薑"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "出典《傷寒論》157條「傷寒汗出解之後，胃中不和，心下痞硬，乾噫食臭，脅下有水氣，腹中雷鳴下利者，生薑瀉心湯主之」（半夏瀉心湯乾薑減量加生薑而成）。大塚敬節《漢方診療三十年》案131：胃部堵悶而便秘之保姆案例，服本方後大便變得通暢，胃部症狀消失。作者引《瘡庭家百方口訣》主客證理論：本方（與半夏瀉心湯同）主證為心下痞硬（乾噫食臭），腹瀉與便秘皆屬客證、時有時無，不應收為keySymptom，故僅收書本自己界定的主證。2026-09-28 新增。量測：本方僅2症，把萩野[#61 打嗝→半夏瀉心湯]（signs=裸「噯氣」）從第1擠到第2（半夏瀉心湯11症，1/11覆蓋率遠低於本方1/2）——試過補「脅下有水氣」（S-GASTRIC-SPLASH）欲增大分母，未能挽回且該症語意對應鬆散（脅下水氣≠胃部振水音），故撤回，接受此代價：本方是仲景明確定義的獨立方證，核心定義本就該比半夏瀉心湯精簡，該canary仍在前3內，淨值為正。"
+      ],
+      "indications": [
+        "S-EPIGASTRIC-RESISTANCE",
+        "S-BELCHING"
+      ],
+      "formulaPattern": "",
+      "notes": "出典《傷寒論》157條「傷寒汗出解之後，胃中不和，心下痞硬，乾噫食臭，脅下有水氣，腹中雷鳴下利者，生薑瀉心湯主之」（半夏瀉心湯乾薑減量加生薑而成）。大塚敬節《漢方診療三十年》案131：胃部堵悶而便秘之保姆案例，服本方後大便變得通暢，胃部症狀消失。作者引《瘡庭家百方口訣》主客證理論：本方（與半夏瀉心湯同）主證為心下痞硬（乾噫食臭），腹瀉與便秘皆屬客證、時有時無，不應收為keySymptom，故僅收書本自己界定的主證。2026-09-28 新增。量測：本方僅2症，把萩野[#61 打嗝→半夏瀉心湯]（signs=裸「噯氣」）從第1擠到第2（半夏瀉心湯11症，1/11覆蓋率遠低於本方1/2）——試過補「脅下有水氣」（S-GASTRIC-SPLASH）欲增大分母，未能挽回且該症語意對應鬆散（脅下水氣≠胃部振水音），故撤回，接受此代價：本方是仲景明確定義的獨立方證，核心定義本就該比半夏瀉心湯精簡，該canary仍在前3內，淨值為正。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-103",
+      "name": "茯苓甘草湯",
+      "category": "醫師補充",
+      "xushiClass": "虛證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 1
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0.25,
+        "XIN-XUEXU": 0.2,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0.1667,
+        "FEI-QIXU": 0.2,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0.1,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "心下悸、心悸明顯（傷寒論356條，案318指征）",
+          "id": "S-PALPITATION",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "汗出、多汗如珠（傷寒論73條，案318指征）",
+          "id": "S-SPONTANEOUS-SWEAT",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "尿少、整日無小便（案318指征，宜先治水）",
+          "id": "S-OLIGURIA",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "小便不利與浮腫（醫典心臟弁膜症門）",
+          "id": "S-EDEMA",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        },
+        {
+          "raw": "手足厥冷（醫典心臟弁膜症門）",
+          "id": "S-COLD",
+          "negated": false,
+          "matchType": "physician-patch",
+          "secondary": true
+        }
+      ],
+      "herbs": [
+        "茯苓",
+        "桂枝",
+        "生薑",
+        "甘草"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "出典《傷寒論》73條「傷寒，汗出而渴者，五苓散主之；不渴者，茯苓甘草湯主之」及356條「傷寒厥而心下悸者，宜先治水，當服茯苓甘草湯」。大塚敬節《漢方診療三十年》案318：腸傷寒重症，汗出如珠、心悸明顯、脈120次/分、整日無小便、體溫39度但無口渴，作者判斷非附子劑/四逆湯證，「以心悸明顯、多汗、尿少為指征」投本方，服藥約三十分鐘汗止、傍晚至夜間大量排尿。與五苓散的鑑別點為「不渴」（五苓散汗出而渴）。2026-10-04 新增。"
+      ],
+      "indications": [
+        "S-PALPITATION",
+        "S-SPONTANEOUS-SWEAT",
+        "S-OLIGURIA",
+        "S-EDEMA",
+        "S-COLD"
+      ],
+      "formulaPattern": "",
+      "notes": "出典《傷寒論》73條「傷寒，汗出而渴者，五苓散主之；不渴者，茯苓甘草湯主之」及356條「傷寒厥而心下悸者，宜先治水，當服茯苓甘草湯」。大塚敬節《漢方診療三十年》案318：腸傷寒重症，汗出如珠、心悸明顯、脈120次/分、整日無小便、體溫39度但無口渴，作者判斷非附子劑/四逆湯證，「以心悸明顯、多汗、尿少為指征」投本方，服藥約三十分鐘汗止、傍晚至夜間大量排尿。與五苓散的鑑別點為「不渴」（五苓散汗出而渴）。2026-10-04 新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-104",
+      "name": "神效湯",
+      "category": "醫師補充",
+      "xushiClass": "虛實夾雜",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 1,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0.2,
+        "PI-YANGXU": 0.1667,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "粘連所致便秘（案335/336）",
+          "id": "S-CONSTIPATION",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "腹脹難忍、臍以下膨滿（案335/336）",
+          "id": "S-ABDOMINAL-DISTENSION",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "突脹樣疼痛（案336，疝）",
+          "id": "S-ABDOMINAL-PAIN",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "臍兩側以下壓痛、多處壓痛（案335/336）",
+          "id": "S-ABDOMINAL-TENDERNESS",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "仔細觀察可看到腸蠕動（案336）",
+          "id": "S-VISIBLE-PERISTALSIS",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "頭面轟熱如火燒（案335，眾方規矩「熱鬱於中」）",
+          "id": "S-HOT-FLUSH",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "肩胛部強凝（案335，服本方後消失）",
+          "id": "S-SHOULDER-STIFF",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "木香",
+        "吳茱萸",
+        "小茴香",
+        "延胡索",
+        "益智仁",
+        "蒼朮",
+        "香附",
+        "當歸",
+        "烏藥",
+        "梔子",
+        "砂仁",
+        "甘草",
+        "生薑",
+        "燈心草"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "出典曲直瀨道三《眾方規矩》疝氣門：「治一切疝氣。多為熱鬱於中，寒束於外。」大塚敬節《漢方診療三十年》案335：腹膜炎粘連致便秘腹脹、頭面轟熱、肩胛強凝、臍兩側以下壓痛，歷經三黃瀉心湯/大柴胡湯/桂枝加芍藥大黃湯/加味逍遙散/三和散/麻子仁丸/大建中湯皆無效，改投本方大便通暢、腹不脹、肩背無強凝，十個月痊癒；案336：闌尾炎術後粘連便秘腹脹、突脹樣疼痛，臍以下膨滿多處壓痛、可見腸蠕動，作者明言「即古人稱為疝的疾病」，投本方大便通暢、虛恭多出、腹滿減輕。組成依大塚《漢方診療三十年》第4章（2026-09-09報告記錄）。2026-09-09 曾以僅3症（便秘/腹脹/裡急後重）試收，因在純便秘查詢搶排名而撤回；2026-10-04 依案335/336補入粘連疝證的鑑別徵象重測。"
+      ],
+      "indications": [
+        "S-CONSTIPATION",
+        "S-ABDOMINAL-DISTENSION",
+        "S-ABDOMINAL-PAIN",
+        "S-ABDOMINAL-TENDERNESS",
+        "S-VISIBLE-PERISTALSIS",
+        "S-HOT-FLUSH",
+        "S-SHOULDER-STIFF"
+      ],
+      "formulaPattern": "",
+      "notes": "出典曲直瀨道三《眾方規矩》疝氣門：「治一切疝氣。多為熱鬱於中，寒束於外。」大塚敬節《漢方診療三十年》案335：腹膜炎粘連致便秘腹脹、頭面轟熱、肩胛強凝、臍兩側以下壓痛，歷經三黃瀉心湯/大柴胡湯/桂枝加芍藥大黃湯/加味逍遙散/三和散/麻子仁丸/大建中湯皆無效，改投本方大便通暢、腹不脹、肩背無強凝，十個月痊癒；案336：闌尾炎術後粘連便秘腹脹、突脹樣疼痛，臍以下膨滿多處壓痛、可見腸蠕動，作者明言「即古人稱為疝的疾病」，投本方大便通暢、虛恭多出、腹滿減輕。組成依大塚《漢方診療三十年》第4章（2026-09-09報告記錄）。2026-09-09 曾以僅3症（便秘/腹脹/裡急後重）試收，因在純便秘查詢搶排名而撤回；2026-10-04 依案335/336補入粘連疝證的鑑別徵象重測。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-105",
+      "name": "烏頭赤石脂丸",
+      "category": "醫師補充",
+      "xushiClass": "虛證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 1,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0.1429,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0.25,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0.1667,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0.1,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "心痛徹背、背痛徹心，從心窩延及胸背劇痛（金匱要略本條；案364）",
+          "id": "S-CHEST-OPPRESSION",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "背部終年寒冷需放懷爐（案364）",
+          "id": "S-BACK-COLD",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "天氣稍涼即發作、睡時流汗仍需蓋被（案364）",
+          "id": "S-COLD",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "蜀椒",
+        "烏頭",
+        "附子",
+        "乾薑",
+        "赤石脂"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "出典《金匱要略》胸痺心痛短氣病篇：「心痛徹背，背痛徹心，烏頭赤石脂丸主之。」組成依該條（書中引用）：蜀椒、烏頭（炮）、附子（炮）、乾薑、赤石脂，蜜丸如梧桐子大。大塚敬節《漢方診療三十年》案364：41歲婦人七年來背部終年放懷爐、冬天腹部再加一個，天氣稍涼則從心窩延及胸背疼痛難忍；夏天反全身乏力、睡時流汗仍需蓋被；桂枝加附子湯、附子粳米湯、附子理中湯、安中散皆無效，改投本方一丸約二十分鐘胸背局限灼熱感後劇痛消失，共服五十粒痊癒，二十餘年未復發。作者註明本方日常少用、前人經驗少載。含烏頭、附子，為溫裡峻劑。2026-10-04 新增。"
+      ],
+      "indications": [
+        "S-CHEST-OPPRESSION",
+        "S-BACK-COLD",
+        "S-COLD"
+      ],
+      "formulaPattern": "",
+      "notes": "出典《金匱要略》胸痺心痛短氣病篇：「心痛徹背，背痛徹心，烏頭赤石脂丸主之。」組成依該條（書中引用）：蜀椒、烏頭（炮）、附子（炮）、乾薑、赤石脂，蜜丸如梧桐子大。大塚敬節《漢方診療三十年》案364：41歲婦人七年來背部終年放懷爐、冬天腹部再加一個，天氣稍涼則從心窩延及胸背疼痛難忍；夏天反全身乏力、睡時流汗仍需蓋被；桂枝加附子湯、附子粳米湯、附子理中湯、安中散皆無效，改投本方一丸約二十分鐘胸背局限灼熱感後劇痛消失，共服五十粒痊癒，二十餘年未復發。作者註明本方日常少用、前人經驗少載。含烏頭、附子，為溫裡峻劑。2026-10-04 新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-106",
+      "name": "反鼻交感丹料",
+      "category": "醫師補充",
+      "xushiClass": "虛證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 1,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0.25,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0.2,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0.2,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "健忘甚、記憶力減退（方函口訣主治；案369）",
+          "id": "S-FORGETFULNESS",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "精神恍惚癡鈍、痴鬱心氣怏怏不舒、神態呆滯（方函口訣主治；案369）",
+          "id": "S-DEPRESSION",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "疲勞倦怠、身心易疲勞（案369）",
+          "id": "S-FATIGUE",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "茯苓",
+        "香附",
+        "反鼻",
+        "乾薑"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《勿誤藥室方函口訣》（淺田宗伯）載本方「治健忘甚者，或發狂後精神恍惚癡鈍者，或痴鬱心氣怏怏不舒者」。大塚敬節《漢方診療三十年》案369：38歲男性腦梅毒，面色蒼白、神態呆滯不能回答問題，一年來記憶力減退、疲勞倦怠、耳鳴，住院三月無效；投本方二週有氣力，約三月神情快活判若兩人，後復職。書中載一日量組成：茯苓5.0克、香附3.0克、反鼻（蝮蛇乾燥品）6.0克、乾薑2.0克，水煎（以丸料作煎劑）。2026-10-04 新增。"
+      ],
+      "indications": [
+        "S-FORGETFULNESS",
+        "S-DEPRESSION",
+        "S-FATIGUE"
+      ],
+      "formulaPattern": "",
+      "notes": "《勿誤藥室方函口訣》（淺田宗伯）載本方「治健忘甚者，或發狂後精神恍惚癡鈍者，或痴鬱心氣怏怏不舒者」。大塚敬節《漢方診療三十年》案369：38歲男性腦梅毒，面色蒼白、神態呆滯不能回答問題，一年來記憶力減退、疲勞倦怠、耳鳴，住院三月無效；投本方二週有氣力，約三月神情快活判若兩人，後復職。書中載一日量組成：茯苓5.0克、香附3.0克、反鼻（蝮蛇乾燥品）6.0克、乾薑2.0克，水煎（以丸料作煎劑）。2026-10-04 新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-107",
+      "name": "甘連梔子湯",
+      "category": "醫師補充",
+      "xushiClass": "虛實夾雜",
+      "patternVector": {
+        "QI_XU": 1,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0.25,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0.2,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0.2,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "胃/十二指腸潰瘍之食後上腹痛（案372/373）",
+          "id": "S-EPIGASTRIC-PAIN",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "上腹部正中線偏右壓痛、幽門部周邊壓痛（案372/373）",
+          "id": "S-ABDOMINAL-TENDERNESS",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "身體極感疲憊（案373），服藥後工作亦無疲勞感（案372）",
+          "id": "S-FATIGUE",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "甘草",
+        "梔子",
+        "黃連"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "大塚敬節《漢方診療三十年》書中又稱「甘草梔子黃連湯」。組成依案372：甘草4.0克、梔子2.0克、黃連2.0克（便秘傾向時去甘草、改梔子3.0黃連1.0）。案372：十二指腸潰瘍食後三十分鐘上腹痛、眩暈肩凝背痛、潛血陽性、上腹正中偏右壓痛，服藥二週疼痛消失、潛血轉陰；案373：胃潰瘍胃痛兼後背痛、極度疲乏、心窩略膨滿、幽門部壓痛，一服胃痛即止、三週後X線未見潰瘍；案359作者註明「對於胃潰瘍，甘草梔子黃連湯多有效，但對有燒心症狀者使用時胃痛消失而燒心加重，再轉投清熱解鬱湯可治愈」。2026-10-04 新增。"
+      ],
+      "indications": [
+        "S-EPIGASTRIC-PAIN",
+        "S-ABDOMINAL-TENDERNESS",
+        "S-FATIGUE"
+      ],
+      "formulaPattern": "",
+      "notes": "大塚敬節《漢方診療三十年》書中又稱「甘草梔子黃連湯」。組成依案372：甘草4.0克、梔子2.0克、黃連2.0克（便秘傾向時去甘草、改梔子3.0黃連1.0）。案372：十二指腸潰瘍食後三十分鐘上腹痛、眩暈肩凝背痛、潛血陽性、上腹正中偏右壓痛，服藥二週疼痛消失、潛血轉陰；案373：胃潰瘍胃痛兼後背痛、極度疲乏、心窩略膨滿、幽門部壓痛，一服胃痛即止、三週後X線未見潰瘍；案359作者註明「對於胃潰瘍，甘草梔子黃連湯多有效，但對有燒心症狀者使用時胃痛消失而燒心加重，再轉投清熱解鬱湯可治愈」。2026-10-04 新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-108",
+      "name": "瓜蔞枳實湯",
+      "category": "醫師補充",
+      "xushiClass": "實證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 1
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0.1429,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0.4,
+        "FEI-YINXU": 0.2,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "乾之濃粘痰（膠痰）甚難吐出（醫典目標；案351痰不易咯出）",
+          "id": "S-STICKY-SPUTUM",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "咳嗽，從朝至午強烈、晨起咳嗽（醫典目標；眾方規矩鑑別；案344）",
+          "id": "S-COUGH",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "呼吸困難、呼吸似欲停止、伴哮喘（醫典目標；案351）",
+          "id": "S-ASTHMA-WHEEZE",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "胸痛，臥下便覺胸苦，一咳嗽即胸中刺痛（醫典目標）",
+          "id": "S-CHEST-OPPRESSION",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "胃部振水音（案351；眾方規矩鑑別點）",
+          "id": "S-GASTRIC-SPLASH",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "當歸",
+        "茯苓",
+        "貝母",
+        "瓜蔞實",
+        "桔梗",
+        "陳皮",
+        "黃芩",
+        "生薑",
+        "縮砂",
+        "木香",
+        "甘草",
+        "梔子",
+        "枳實",
+        "竹茹"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《萬病回春》方（書中亦作栝蔞枳實湯、瓜呂枳實湯）。組成依大塚敬節・矢數道明・清水藤太郎《漢方診療醫典》處方集：當歸、茯苓、貝母各3，瓜呂實、桔梗、陳皮、黃芩、生姜各2，縮砂、木香、甘草、梔子、枳實、竹茹各1。《漢方診療醫典》藥方解說：「因胃中有熱與飲食停滯，而二次性所生之燥痰，使其變潤除去之方劑。即以胃熱與有燥痰，膠痰（粘性濃痰）為目標。本方患者，呼吸困難，並有咳嗽與胸痛，乾之濃粘痰，甚難吐出。臥下便覺胸苦，一咳嗽即胸中刺痛，呼吸似欲停止。因內熱之故，小便變赤。其脈滑而有力。若從朝至午咳嗽強烈者，本方尤為有效」；由小陷胸湯演變而來。大塚敬節《漢方診療三十年》案344（血痰晨咳，二週止）、案351（夜間咳嗽哮喘呼吸困難、痰不易咯出、胃部振水音，八週治愈）；作者引《眾方規矩》與滋陰降火湯鑑別：夜間咳嗽用滋陰降火湯、晨起咳嗽用本方；伴哮喘、呼吸困難、胃部振水音者宜本方。2026-10-06 新增。"
+      ],
+      "indications": [
+        "S-STICKY-SPUTUM",
+        "S-COUGH",
+        "S-ASTHMA-WHEEZE",
+        "S-CHEST-OPPRESSION",
+        "S-GASTRIC-SPLASH"
+      ],
+      "formulaPattern": "",
+      "notes": "《萬病回春》方（書中亦作栝蔞枳實湯、瓜呂枳實湯）。組成依大塚敬節・矢數道明・清水藤太郎《漢方診療醫典》處方集：當歸、茯苓、貝母各3，瓜呂實、桔梗、陳皮、黃芩、生姜各2，縮砂、木香、甘草、梔子、枳實、竹茹各1。《漢方診療醫典》藥方解說：「因胃中有熱與飲食停滯，而二次性所生之燥痰，使其變潤除去之方劑。即以胃熱與有燥痰，膠痰（粘性濃痰）為目標。本方患者，呼吸困難，並有咳嗽與胸痛，乾之濃粘痰，甚難吐出。臥下便覺胸苦，一咳嗽即胸中刺痛，呼吸似欲停止。因內熱之故，小便變赤。其脈滑而有力。若從朝至午咳嗽強烈者，本方尤為有效」；由小陷胸湯演變而來。大塚敬節《漢方診療三十年》案344（血痰晨咳，二週止）、案351（夜間咳嗽哮喘呼吸困難、痰不易咯出、胃部振水音，八週治愈）；作者引《眾方規矩》與滋陰降火湯鑑別：夜間咳嗽用滋陰降火湯、晨起咳嗽用本方；伴哮喘、呼吸困難、胃部振水音者宜本方。2026-10-06 新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-109",
+      "name": "十味剉散",
+      "category": "醫師補充",
+      "xushiClass": "虛證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 1,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0.25,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0.1667,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0.1,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "五十肩、肩臂疼痛上舉不能（案355）",
+          "id": "S-SHOULDER-STIFF",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "肩關節周圍疼痛（案355）",
+          "id": "S-JOINT-PAIN",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "肢冷證（案355指征）",
+          "id": "S-COLD",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "血色欠佳（案355指征）",
+          "id": "S-PALE-COMPLEXION",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "當歸",
+        "芍藥",
+        "川芎",
+        "地黃",
+        "茯苓",
+        "白朮",
+        "黃耆",
+        "桂枝",
+        "防風",
+        "附子"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "出典未經本輪書源查證（處方集作十味挫散）。組成依大塚敬節・矢數道明・清水藤太郎《漢方診療醫典》處方集：當歸、芍藥、川芎、地黃、茯苓、白朮、黃耆、桂枝、防風各3，附子0.5～1（四物湯合四君子湯去人參甘草，加黃耆桂枝防風附子，氣血兩虛兼寒）。大塚敬節《漢方診療三十年》案355：五十肩（肩關節周圍炎）手臂上舉後轉不能，以肢冷證、血色欠佳為指征投本方，一週即能自行繫腰帶。2026-10-06 新增。"
+      ],
+      "indications": [
+        "S-SHOULDER-STIFF",
+        "S-JOINT-PAIN",
+        "S-COLD",
+        "S-PALE-COMPLEXION"
+      ],
+      "formulaPattern": "",
+      "notes": "出典未經本輪書源查證（處方集作十味挫散）。組成依大塚敬節・矢數道明・清水藤太郎《漢方診療醫典》處方集：當歸、芍藥、川芎、地黃、茯苓、白朮、黃耆、桂枝、防風各3，附子0.5～1（四物湯合四君子湯去人參甘草，加黃耆桂枝防風附子，氣血兩虛兼寒）。大塚敬節《漢方診療三十年》案355：五十肩（肩關節周圍炎）手臂上舉後轉不能，以肢冷證、血色欠佳為指征投本方，一週即能自行繫腰帶。2026-10-06 新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-110",
+      "name": "涼膈散",
+      "category": "醫師補充",
+      "xushiClass": "實證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "口內炎，口內之熱氣盛、粘膜腫脹發赤（醫典口內炎門）",
+          "id": "S-HEAT-TOXIN",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "實熱所生口中之瘡、潰瘍性口腔炎（醫典口內炎門；案365）",
+          "id": "S-ORAL-MUCOSA-EROSION",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "實熱之證，常會便秘（醫典口內炎門）",
+          "id": "S-CONSTIPATION",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "口內之熱氣盛，而有口臭（醫典口內炎門）",
+          "id": "S-HALITOSIS",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "薄荷",
+        "大黃",
+        "甘草",
+        "連翹",
+        "芒硝",
+        "桔梗",
+        "黃芩",
+        "梔子"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《和劑局方》方。組成依大塚敬節・矢數道明・清水藤太郎《漢方診療醫典》處方集：薄荷、大黃各1，甘草1.5，連翹5，芒硝、桔梗、黃芩各3，梔子2。《漢方診療醫典》口內炎門：「涼膈散、加減涼膈散：實熱之證，常會便秘，體力未衰，口內之熱氣盛，而有口臭，及粘膜之腫脹發赤者適宜。此對實熱所生口中之瘡類，廣泛可用。若無便秘，則去大黃芒硝，或用加減涼膈散」。大塚敬節《漢方診療三十年》案365：潰瘍性口腔炎併蕁麻疹，投涼膈散加荊芥石膏，三天口腔潰瘍愈。2026-10-06 新增。"
+      ],
+      "indications": [
+        "S-HEAT-TOXIN",
+        "S-ORAL-MUCOSA-EROSION",
+        "S-CONSTIPATION",
+        "S-HALITOSIS"
+      ],
+      "formulaPattern": "",
+      "notes": "《和劑局方》方。組成依大塚敬節・矢數道明・清水藤太郎《漢方診療醫典》處方集：薄荷、大黃各1，甘草1.5，連翹5，芒硝、桔梗、黃芩各3，梔子2。《漢方診療醫典》口內炎門：「涼膈散、加減涼膈散：實熱之證，常會便秘，體力未衰，口內之熱氣盛，而有口臭，及粘膜之腫脹發赤者適宜。此對實熱所生口中之瘡類，廣泛可用。若無便秘，則去大黃芒硝，或用加減涼膈散」。大塚敬節《漢方診療三十年》案365：潰瘍性口腔炎併蕁麻疹，投涼膈散加荊芥石膏，三天口腔潰瘍愈。2026-10-06 新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-111",
+      "name": "抑肝扶脾散",
+      "category": "醫師補充",
+      "xushiClass": "虛實夾雜",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 1
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0.25,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0.4,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0.2,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "飲食不進、神經性無食欲（方函口訣；醫典不食症門；案113）",
+          "id": "S-APPETITE-LOW",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "日久羸瘦、消瘦（方函口訣；醫典病例；案113）",
+          "id": "S-FATIGUE",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "其人氣宇鬱塞（方函口訣）",
+          "id": "S-DEPRESSION",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "心下振水音（醫典不食症病例）",
+          "id": "S-GASTRIC-SPLASH",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "人參",
+        "白朮",
+        "茯苓",
+        "龍膽",
+        "白芥子",
+        "山楂子",
+        "陳皮",
+        "青皮",
+        "神麴",
+        "胡黃連",
+        "黃連",
+        "柴胡",
+        "甘草"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "組成依大塚敬節・矢數道明・清水藤太郎《漢方診療醫典》處方集：人參、白朮、茯苓各2，龍膽、白芥子各1，山查子、陳皮、青皮、神麴各2，胡黃連、黃連、柴胡、甘草各1。《勿誤藥室方函口訣》：「此方以肝實脾虛為目的，其人氣宇鬱塞，飲食不進，日久羸瘦，為俗云疳勞狀者有效」。《漢方診療醫典》不食症（胃神經症）門：「本處方係以因肝之活動過強，致使脾受抑壓者為目標」；病例：15歲少女減重後食欲漸退、消瘦至30kg、13個月無月經、便秘、脈沉小、心下振水音，半夏厚朴湯不見效，改投本方而食欲大增，約二個月體重達48kg。大塚敬節《漢方診療三十年》案113：15歲少女精神性厭食症，半夏厚朴湯無效後改投本方，食欲迅速改善、兩個月內增重13公斤；作者稱此為江戶時代名醫推崇治厭食症之經典應用。2026-10-06 新增。"
+      ],
+      "indications": [
+        "S-APPETITE-LOW",
+        "S-FATIGUE",
+        "S-DEPRESSION",
+        "S-GASTRIC-SPLASH"
+      ],
+      "formulaPattern": "",
+      "notes": "組成依大塚敬節・矢數道明・清水藤太郎《漢方診療醫典》處方集：人參、白朮、茯苓各2，龍膽、白芥子各1，山查子、陳皮、青皮、神麴各2，胡黃連、黃連、柴胡、甘草各1。《勿誤藥室方函口訣》：「此方以肝實脾虛為目的，其人氣宇鬱塞，飲食不進，日久羸瘦，為俗云疳勞狀者有效」。《漢方診療醫典》不食症（胃神經症）門：「本處方係以因肝之活動過強，致使脾受抑壓者為目標」；病例：15歲少女減重後食欲漸退、消瘦至30kg、13個月無月經、便秘、脈沉小、心下振水音，半夏厚朴湯不見效，改投本方而食欲大增，約二個月體重達48kg。大塚敬節《漢方診療三十年》案113：15歲少女精神性厭食症，半夏厚朴湯無效後改投本方，食欲迅速改善、兩個月內增重13公斤；作者稱此為江戶時代名醫推崇治厭食症之經典應用。2026-10-06 新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-112",
+      "name": "行和芍藥湯",
+      "category": "醫師補充",
+      "xushiClass": "實證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0.2,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0.1111
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "裏急後重甚強（醫典赤痢門）",
+          "id": "S-TENESMUS",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "出粘血便（醫典赤痢門）",
+          "id": "S-BLOODY-STOOL",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "有熱狀、脈數（醫典赤痢門）",
+          "id": "S-FEVER",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "口渴、舌乾而生黃苔（醫典赤痢門）",
+          "id": "S-THIRST",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "芍藥",
+        "當歸",
+        "黃連",
+        "黃芩",
+        "大黃",
+        "檳榔",
+        "木香",
+        "桂枝",
+        "甘草"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "組成依大塚敬節・矢數道明・清水藤太郎《漢方診療醫典》處方集：芍藥6，當歸、黃連、黃芩各3，大黃2，檳榔、木香、桂枝、甘草各1（芍藥湯類，清熱燥濕、調氣行血）。《漢方診療醫典》赤痢門：「發病後，經二三日，裏急後重甚強，出粘血便，而有熱狀者使用。此際，舌乾而生黃苔，脈數，口渴」；鑑別：似本方證而舌生乾燥之黃褐色苔、胸脅苦滿、心下痞硬、惡心嘔吐者用大柴胡湯；無甚熱狀之輕症用桂枝加芍藥湯／桂枝加芍藥大黃湯。2026-10-06 新增。"
+      ],
+      "indications": [
+        "S-TENESMUS",
+        "S-BLOODY-STOOL",
+        "S-FEVER",
+        "S-THIRST"
+      ],
+      "formulaPattern": "",
+      "notes": "組成依大塚敬節・矢數道明・清水藤太郎《漢方診療醫典》處方集：芍藥6，當歸、黃連、黃芩各3，大黃2，檳榔、木香、桂枝、甘草各1（芍藥湯類，清熱燥濕、調氣行血）。《漢方診療醫典》赤痢門：「發病後，經二三日，裏急後重甚強，出粘血便，而有熱狀者使用。此際，舌乾而生黃苔，脈數，口渴」；鑑別：似本方證而舌生乾燥之黃褐色苔、胸脅苦滿、心下痞硬、惡心嘔吐者用大柴胡湯；無甚熱狀之輕症用桂枝加芍藥湯／桂枝加芍藥大黃湯。2026-10-06 新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-113",
+      "name": "柴胡枳桔湯",
+      "category": "醫師補充",
+      "xushiClass": "實證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 1,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0.1429,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0.2,
+        "FEI-YINXU": 0.2,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "惡臭之痰（醫典肺壞疽門）",
+          "id": "S-PURULENT-SPUTUM",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "胸痛（醫典肺壞疽門）",
+          "id": "S-CHEST-OPPRESSION",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "咳嗽（醫典肺壞疽門）",
+          "id": "S-COUGH",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "往來寒熱（醫典肺壞疽門）",
+          "id": "S-ALTERNATING-CHILL-FEVER",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "柴胡",
+        "半夏",
+        "生薑",
+        "黃芩",
+        "瓜蔞仁",
+        "桔梗",
+        "甘草",
+        "枳實"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "組成依大塚敬節・矢數道明・清水藤太郎《漢方診療醫典》處方集：柴胡、半夏各5，生姜、黃芩、瓜呂仁、桔梗各3，甘草1，枳實1.5（小柴胡湯去人參大棗，合小陷胸湯意加桔梗枳實）。《漢方診療醫典》肺壞疽門：「柴胡枳桔湯加葶藶：肺壞疽之症狀具備，有胸痛，咳嗽，惡臭之痰，及往來寒熱者，可長期連用」；同門病例：25歲婦人肺壞疽，桔梗白散吐出膿塊後，再服柴胡枳桔湯約一個月全癒。大塚敬節《漢方診療三十年》案353：肺膿腫桔梗白散後以本方善後一至兩月。2026-10-06 新增。"
+      ],
+      "indications": [
+        "S-PURULENT-SPUTUM",
+        "S-CHEST-OPPRESSION",
+        "S-COUGH",
+        "S-ALTERNATING-CHILL-FEVER"
+      ],
+      "formulaPattern": "",
+      "notes": "組成依大塚敬節・矢數道明・清水藤太郎《漢方診療醫典》處方集：柴胡、半夏各5，生姜、黃芩、瓜呂仁、桔梗各3，甘草1，枳實1.5（小柴胡湯去人參大棗，合小陷胸湯意加桔梗枳實）。《漢方診療醫典》肺壞疽門：「柴胡枳桔湯加葶藶：肺壞疽之症狀具備，有胸痛，咳嗽，惡臭之痰，及往來寒熱者，可長期連用」；同門病例：25歲婦人肺壞疽，桔梗白散吐出膿塊後，再服柴胡枳桔湯約一個月全癒。大塚敬節《漢方診療三十年》案353：肺膿腫桔梗白散後以本方善後一至兩月。2026-10-06 新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-114",
+      "name": "橘皮竹茹湯",
+      "category": "醫師補充",
+      "xushiClass": "虛實夾雜",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "噦逆、吃逆（金匱要略；醫典吃逆門）",
+          "id": "S-HICCUP",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "橘皮",
+        "竹茹",
+        "大棗",
+        "生薑",
+        "甘草",
+        "人參"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《金匱要略》嘔吐噦下利病篇：「噦逆者，橘皮竹茹湯主之」。組成依大塚敬節・矢數道明・清水藤太郎《漢方診療醫典》處方集：橘皮4、竹茹2、大棗6、生姜6、甘草3、人參1.5。《漢方診療醫典》吃逆門：「橘皮竹茹湯・橘皮湯：此兩方，均出自金匱要略，為用於吃逆之處方…有持桂里氏，推獎本方為：凡係吃逆，不問原因如何，及脈與腹之狀況如何，用之均有效」；手足厥冷者則以柿蒂湯／吳茱萸湯類為宜。2026-10-06 新增。"
+      ],
+      "indications": [
+        "S-HICCUP"
+      ],
+      "formulaPattern": "",
+      "notes": "《金匱要略》嘔吐噦下利病篇：「噦逆者，橘皮竹茹湯主之」。組成依大塚敬節・矢數道明・清水藤太郎《漢方診療醫典》處方集：橘皮4、竹茹2、大棗6、生姜6、甘草3、人參1.5。《漢方診療醫典》吃逆門：「橘皮竹茹湯・橘皮湯：此兩方，均出自金匱要略，為用於吃逆之處方…有持桂里氏，推獎本方為：凡係吃逆，不問原因如何，及脈與腹之狀況如何，用之均有效」；手足厥冷者則以柿蒂湯／吳茱萸湯類為宜。2026-10-06 新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-115",
+      "name": "龍骨湯",
+      "category": "醫師補充",
+      "xushiClass": "虛證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 1,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0.2,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "其人健忘（淺田宗伯口訣，醫典精神分裂症門）",
+          "id": "S-FORGETFULNESS",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "心氣鬱鬱不樂；鬱之狀態（醫典精神分裂症門／躁鬱病門）",
+          "id": "S-DEPRESSION",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "驚播不眠（淺田宗伯口訣）",
+          "id": "S-INSOMNIA",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "龍骨",
+        "茯苓",
+        "桂枝",
+        "遠志",
+        "麥門冬",
+        "牡蠣",
+        "甘草",
+        "生薑"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "出《外臺秘要》（醫典稱見於外臺秘要）。組成依大塚敬節・矢數道明・清水藤太郎《漢方診療醫典》處方集：龍骨3、茯苓4、桂枝、遠志、麥門冬、牡蠣各3、甘草1.5、生姜1。《漢方診療醫典》精神分裂症門引淺田宗伯：「此方以失心風為主，治其人健忘，心氣鬱鬱不樂，或驚播不眠，時獨語，或如痴如狂者」；躁鬱病門「用於鬱之狀態者，作者曾用此方治癒數人」。「如痴如狂」不收 S-DELIRIUM：會搶走桃核承氣湯「其人如狂」金絲雀。2026-10-06 新增。"
+      ],
+      "indications": [
+        "S-FORGETFULNESS",
+        "S-DEPRESSION",
+        "S-INSOMNIA"
+      ],
+      "formulaPattern": "",
+      "notes": "出《外臺秘要》（醫典稱見於外臺秘要）。組成依大塚敬節・矢數道明・清水藤太郎《漢方診療醫典》處方集：龍骨3、茯苓4、桂枝、遠志、麥門冬、牡蠣各3、甘草1.5、生姜1。《漢方診療醫典》精神分裂症門引淺田宗伯：「此方以失心風為主，治其人健忘，心氣鬱鬱不樂，或驚播不眠，時獨語，或如痴如狂者」；躁鬱病門「用於鬱之狀態者，作者曾用此方治癒數人」。「如痴如狂」不收 S-DELIRIUM：會搶走桃核承氣湯「其人如狂」金絲雀。2026-10-06 新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-116",
+      "name": "滋腎明目湯",
+      "category": "醫師補充",
+      "xushiClass": "虛證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 1,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0.2,
+        "XIN-YANGXU": 0.25,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0.2,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0.2,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0.1111
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "眼痛昏暗、視力陡然衰退（醫典白內障門；三十年案354）",
+          "id": "S-EYE-FATIGUE",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "糖尿性、老人性之白內障（醫典白內障門）",
+          "id": "S-CATARACT",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "身心極度疲勞、久病衰弱、腎氣精力衰乏（醫典白內障門）",
+          "id": "S-FATIGUE",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "血少、貧血之結果（醫典白內障門）",
+          "id": "S-BLOOD-DEF",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "當歸",
+        "川芎",
+        "乾地黃",
+        "熟地黃",
+        "芍藥",
+        "桔梗",
+        "人參",
+        "山梔子",
+        "黃連",
+        "白芷",
+        "蔓荊子",
+        "菊花",
+        "甘草",
+        "燈心草",
+        "細茶"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "出《萬病回春》眼目門（醫典稱素問云「眼得血能視」）。組成依大塚敬節・矢數道明・清水藤太郎《漢方診療醫典》處方集：當歸、川芎、乾地黃、熟地黃、芍藥各3，桔梗、人參、山梔子、黃連、白芷、蔓荊子、菊花、甘草、燈心草、細茶各1.5。《漢方診療醫典》白內障門：「滋腎明目湯：本方治勞神腎虛血少引起之眼痛昏暗。對於因身心極度疲勞，或久病衰弱，腎氣精力衰乏，及貧血之結果，視力陡然衰退者，用之有效。糖尿性、老人性之白內障，亦常使用。本方以四物湯增血，以人參養氣」。大塚敬節《漢方診療三十年》案354：梅毒性內障失明，兩年視力恢復至0.3（引《眾方規矩》）。2026-10-06 新增。"
+      ],
+      "indications": [
+        "S-EYE-FATIGUE",
+        "S-CATARACT",
+        "S-FATIGUE",
+        "S-BLOOD-DEF"
+      ],
+      "formulaPattern": "",
+      "notes": "出《萬病回春》眼目門（醫典稱素問云「眼得血能視」）。組成依大塚敬節・矢數道明・清水藤太郎《漢方診療醫典》處方集：當歸、川芎、乾地黃、熟地黃、芍藥各3，桔梗、人參、山梔子、黃連、白芷、蔓荊子、菊花、甘草、燈心草、細茶各1.5。《漢方診療醫典》白內障門：「滋腎明目湯：本方治勞神腎虛血少引起之眼痛昏暗。對於因身心極度疲勞，或久病衰弱，腎氣精力衰乏，及貧血之結果，視力陡然衰退者，用之有效。糖尿性、老人性之白內障，亦常使用。本方以四物湯增血，以人參養氣」。大塚敬節《漢方診療三十年》案354：梅毒性內障失明，兩年視力恢復至0.3（引《眾方規矩》）。2026-10-06 新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-117",
+      "name": "當歸散",
+      "category": "醫師補充",
+      "xushiClass": "虛證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 0,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "有流產癖者，一至七個月不間斷服用，當能正期分娩（有持桂里；醫典習慣性流產門）",
+          "id": "S-HABITUAL-ABORTION",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "婦人妊娠，宜常服（金匱要略；醫典）",
+          "id": "S-PREGNANCY",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "當歸",
+        "芍藥",
+        "川芎",
+        "黃芩",
+        "白朮"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "《金匱要略》婦人妊娠病篇：「婦人妊娠，宜常服當歸散主之」。組成依大塚敬節・矢數道明・清水藤太郎《漢方診療醫典》處方集：當歸、芍藥、川芎、黃芩各3，朮1.5。《漢方診療醫典》習慣性流產門：「當歸散：妊娠中常服之，則胎兒發育良好，出產輕易，及能預防各病。此為金匱之方，有持桂里云：有流產癖者，一至七個月不間斷服用，當能正期分娩」。2026-10-06 新增。"
+      ],
+      "indications": [
+        "S-HABITUAL-ABORTION",
+        "S-PREGNANCY"
+      ],
+      "formulaPattern": "",
+      "notes": "《金匱要略》婦人妊娠病篇：「婦人妊娠，宜常服當歸散主之」。組成依大塚敬節・矢數道明・清水藤太郎《漢方診療醫典》處方集：當歸、芍藥、川芎、黃芩各3，朮1.5。《漢方診療醫典》習慣性流產門：「當歸散：妊娠中常服之，則胎兒發育良好，出產輕易，及能預防各病。此為金匱之方，有持桂里云：有流產癖者，一至七個月不間斷服用，當能正期分娩」。2026-10-06 新增。",
+      "confidence": "physician_addition",
+      "draft": true
+    },
+    {
+      "id": "F-PHYS-118",
+      "name": "葛根紅花湯",
+      "category": "醫師補充",
+      "xushiClass": "實證",
+      "patternVector": {
+        "QI_XU": 0,
+        "QI_NI": 1,
+        "QI_YU": 0,
+        "XUE_XU": 0,
+        "YU_XUE": 0,
+        "SUI_ZHI": 0
+      },
+      "zangFuVector": {
+        "GAN-QIYU": 0,
+        "GAN-YINXU": 0,
+        "XIN-YANGXU": 0,
+        "XIN-XUEXU": 0,
+        "PI-QIXU": 0,
+        "PI-YANGXU": 0,
+        "FEI-QIXU": 0,
+        "FEI-YINXU": 0,
+        "SHEN-YANGXU": 0,
+        "SHEN-YINXU": 0
+      },
+      "vectorSource": "physician-addition-derived",
+      "keySymptoms": [
+        {
+          "raw": "酒皶：鼻端及兩頰、額、顎等處發紅、丘疹膿疱（醫典酒皶門）",
+          "id": "S-ROSACEA",
+          "negated": false,
+          "matchType": "physician"
+        },
+        {
+          "raw": "頭部及顏面之充血（醫典酒皶門）",
+          "id": "S-FACIAL-FLUSH",
+          "negated": false,
+          "matchType": "physician"
+        }
+      ],
+      "herbs": [
+        "葛根",
+        "芍藥",
+        "地黃",
+        "黃連",
+        "梔子",
+        "紅花",
+        "大黃",
+        "甘草"
+      ],
+      "composedOfFormulas": [],
+      "sourceSheets": [
+        "組成依大塚敬節・矢數道明・清水藤太郎《漢方診療醫典》處方集：葛根、芍藥、地黃各3，黃連、梔子、紅花各1.5，大黃、甘草各1。《漢方診療醫典》酒皶門：「葛根紅花湯：頭部及顏面之充血、血管神經異常等原因而發生者，一般採用本方。但非短時日所能全癒，有持久服用之必要」；鑑別：僅有發赤充血輕症者用黃連解毒湯，頭部顏面常充血、酒精攝取過度者用葛根黃連黃芩湯，肥滿嗜酒嗜肉者用防風通聖散。2026-10-06 新增。"
+      ],
+      "indications": [
+        "S-ROSACEA",
+        "S-FACIAL-FLUSH"
+      ],
+      "formulaPattern": "",
+      "notes": "組成依大塚敬節・矢數道明・清水藤太郎《漢方診療醫典》處方集：葛根、芍藥、地黃各3，黃連、梔子、紅花各1.5，大黃、甘草各1。《漢方診療醫典》酒皶門：「葛根紅花湯：頭部及顏面之充血、血管神經異常等原因而發生者，一般採用本方。但非短時日所能全癒，有持久服用之必要」；鑑別：僅有發赤充血輕症者用黃連解毒湯，頭部顏面常充血、酒精攝取過度者用葛根黃連黃芩湯，肥滿嗜酒嗜肉者用防風通聖散。2026-10-06 新增。",
       "confidence": "physician_addition",
       "draft": true
     }

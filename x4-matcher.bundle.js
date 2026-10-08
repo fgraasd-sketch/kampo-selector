@@ -473,6 +473,26 @@ const MISS_WEIGHT = 0.5;
 // γ≥3 起第1 又回到 40。取 2。
 const SOFTCAP_GAMMA = 2;
 
+// ── 待辦#2 第九個嘗試（2026-10-07）：**次要主症（secondary）**──────────────────────
+// 前八次都在「計分公式」層找解，全部是 trade-off：coverage 比值同時承載兩件事——
+//   (1) 特異度：小方全中＝很像（大黃甘草湯 之於 便秘、橘皮竹茹湯 之於 打嗝），
+//   (2) 被稀釋：方被寫得更完整，自己的教科書案反而掉。
+// 這兩件事在公式層分不開（2026-10-07 量測：把 softcap 延伸到小方，F≥3 起三個 battery
+// 與金絲雀同時退步——小方的比值優勢是特異度訊號，被很多正確排名承重）。
+// 真正的區別在**資料**：書上「目標」第一句的定義徵象，與各論裡「亦可用於…」的附帶應用，
+// 不是同一種證據。把後者標成 secondary：
+//   - 命中只給 SECONDARY_NUM 的分子權重（附帶應用的命中＝較弱的支持證據）
+//   - 分母只算 SECONDARY_DEN（補了附帶應用不該稀釋方在自己定義證型上的分數）
+//   - 不計入主訴特異度的擁有者數（不讓附帶應用把一個概念推過 5 個擁有者門檻）
+//   - 證據因子（向量解鎖）也按 SECONDARY_NUM 計（一個附帶命中不該把向量權重從半開變全開）
+// 既有主症**一個都不標**，所以現況 KB 下本機制逐位元惰性；只作用於之後以
+// SECONDARY_KEY_SYMPTOM_PATCHES 收錄的附帶應用。驗收集見 xlsx_to_kb.py SUSPENDED_KEY_SYMPTOM_PATCHES。
+const SECONDARY_NUM = 0.5;
+// 掃 SECONDARY_DEN ∈ {0.25, 0.1, 0}（2026-10-07，驗收集 21 方逐筆＋合併）：0.25 時三個 3 主症小方
+// （茯苓甘草湯／苓桂甘棗湯／麻子仁丸）仍被稀釋掉自己的窄查詢；0.1 與 0 結果相同、全數修復。取 0.1——
+// 附帶應用仍讓分母「略」增，保留「方被寫得更廣」的一點點資訊，不完全歸零。
+const SECONDARY_DEN = 0.1;
+
 // 舌象優先級機制（2026-07-25）：
 // 舌象是診斷中最高優先的證據（formula-decision-logic.md#153）。
 // 在與症狀清單可能衝突時，舌象決定方向。
@@ -1132,6 +1152,7 @@ function normalizeFormulaKeySymptoms(rawSymptoms, normalizer) {
         negated: symptomRefNegated(ref),
         centrality: keyCentrality(ref),
         cardinal: Boolean(typeof ref === "object" && ref && ref.cardinal),
+        secondary: Boolean(typeof ref === "object" && ref && ref.secondary),
       }];
     }
 
@@ -1297,7 +1318,7 @@ function scoreKeySymptoms(formula, patientMatches, normalizer, reportedSymptomCo
   for (const keySymptom of keySymptoms) {
     const direct = patientById.get(keySymptom.id);
     if (direct?.matchType === "direct") {
-      const weight = keySymptom.negated ? -0.5 : 1;
+      const weight = (keySymptom.negated ? -0.5 : 1) * (keySymptom.secondary ? SECONDARY_NUM : 1);
       matchedSymptoms.push({
         id: keySymptom.id,
         canonical: keySymptom.canonical,
@@ -1306,6 +1327,7 @@ function scoreKeySymptoms(formula, patientMatches, normalizer, reportedSymptomCo
         weight,
         centrality: keySymptom.centrality ?? 1,
         negated: keySymptom.negated,
+        secondary: keySymptom.secondary || undefined,
       });
       continue;
     }
@@ -1315,7 +1337,8 @@ function scoreKeySymptoms(formula, patientMatches, normalizer, reportedSymptomCo
       (match.matchType === "parent" && match.id === keySymptom.id)
     );
     if (childMatch) {
-      const weight = keySymptom.negated ? -0.5 * PARENT_FALLBACK_WEIGHT : PARENT_FALLBACK_WEIGHT;
+      const weight = (keySymptom.negated ? -0.5 * PARENT_FALLBACK_WEIGHT : PARENT_FALLBACK_WEIGHT)
+        * (keySymptom.secondary ? SECONDARY_NUM : 1);
       matchedSymptoms.push({
         id: keySymptom.id,
         canonical: keySymptom.canonical,
@@ -1326,6 +1349,7 @@ function scoreKeySymptoms(formula, patientMatches, normalizer, reportedSymptomCo
         weight,
         centrality: keySymptom.centrality ?? 1,
         negated: keySymptom.negated,
+        secondary: keySymptom.secondary || undefined,
       });
       continue;
     }
@@ -1348,6 +1372,7 @@ function scoreKeySymptoms(formula, patientMatches, normalizer, reportedSymptomCo
       canonical: keySymptom.canonical,
       raw: keySymptom.raw,
       negated: keySymptom.negated,
+      secondary: keySymptom.secondary || undefined,
     });
   }
 
@@ -1360,7 +1385,8 @@ function scoreKeySymptoms(formula, patientMatches, normalizer, reportedSymptomCo
   // 這一項為 0，所有既有路徑逐位元不變。
   const matchedWeight = matchedSymptoms.reduce((sum, item) => sum + item.weight * (item.centrality ?? 1), 0)
     + contradictedKeySymptoms.reduce((sum, item) => sum + item.weight * (item.centrality ?? 1), 0);
-  const totalCentrality = keySymptoms.reduce((sum, item) => sum + (item.centrality ?? 1), 0);
+  const totalCentrality = keySymptoms.reduce(
+    (sum, item) => sum + (item.centrality ?? 1) * (item.secondary ? SECONDARY_DEN : 1), 0);
   // Finding D (2026-07-12): a patient reporting N symptoms can confirm at most
   // N of a formula's keys, so an uncapped denominator punishes large formulas
   // for evidence the patient never had a chance to give (黃連解毒湯 explains
@@ -1534,7 +1560,8 @@ function scoreFormula(formula, patientContext, normalizer) {
   const vectorPart = hasZangFu
     ? (W_PATTERN * patternScore) + (W_ZANGFU * zangFuScore)
     : (W_PATTERN + W_ZANGFU) * patternScore;
-  const positiveKeyHits = key.matchedSymptoms.filter((item) => item.weight > 0).length;
+  const positiveKeyHits = key.matchedSymptoms.filter((item) => item.weight > 0)
+    .reduce((sum, item) => sum + (item.secondary ? SECONDARY_NUM : 1), 0);
   const evidenceFactor = Math.min(1, positiveKeyHits / EVIDENCE_DAMPING_K);
   const matchedBookSymptoms = matchBookSymptoms(formula, patientContext.matches, key.matchedSymptoms);
   const bookBonus = W_BOOK_SECONDARY * Math.min(1, matchedBookSymptoms.length / BOOK_SECONDARY_K);
@@ -1649,7 +1676,9 @@ function scoreFormula(formula, patientContext, normalizer) {
       patientXuShi: patientContext.xuShi,
       xushiMismatch: xushiMismatchFactor(formula, patientContext.xuShi) !== 1,
     },
-    _keySymptomCount: key.keySymptoms.length,
+    // 平手時主症少者優先（較特異）。只數**定義主症**：secondary 附帶應用不該讓方在平手裁決上變得「較不特異」
+    // （2026-10-07：桂枝湯 補「脈浮弱」為 secondary 後 8→9，與 桂枝加厚朴杏仁湯 同數而失去六經平手裁決）。
+    _keySymptomCount: key.keySymptoms.filter((item) => !item.secondary).length,
   };
 }
 
@@ -1669,7 +1698,7 @@ function createX4Matcher(kb) {
   // scoreFormula and tests).
   const keyFormulaCount = new Map();
   for (const formula of formulas) {
-    for (const id of new Set(toArray(formula.keySymptoms).map((item) => item.id))) {
+    for (const id of new Set(toArray(formula.keySymptoms).filter((item) => !item?.secondary).map((item) => item.id))) {
       keyFormulaCount.set(id, (keyFormulaCount.get(id) || 0) + 1);
     }
   }
@@ -1785,10 +1814,20 @@ function createX4Matcher(kb) {
   // 但書證裁決給了附子末 11 個主症後就破功（2026-07-18 大塚鑑別 battery 抓到：發冷案
   // 附子末 排到第1-2）。主推薦排名排除它們；加味建議照舊（它讀的是這些方的 keySymptoms）。
   const isSingleHerbPrep = (formula) => String(formula.category || "").startsWith("單味藥製劑");
+  // 2026-09-16（查大塚/矢數決策樹[頭痛→抑肝散]分支時發現）：「柴胡桂枝湯等
+  // 柴胡劑」不是一個真方，是原始 xlsx 留下的類別佔位列——方名本身的「等」字
+  // 就是「柴胡桂枝湯及其他同類柴胡劑」的意思，herbs 是空的，notes 寫著
+  // 「Excel 有此方名，但本次草稿未補足可靠標準組成；請人工補方」。它靠幾個
+  // 通用症狀（頭痛/肩凝/易怒/胸脇苦滿等）意外搶走真方（如抑肝散）的第1，
+  // 跟單味藥製劑「不該當主推薦方跟真方搶排名」是同一種問題。用「方名含
+  // 『等』」這個信號辨識，比用 confidence/herbs 空更精準——其他confidence低
+  // 或herbs空的方（良枳湯/變制心氣飲/柴胡清肝湯等）都是真實、具體命名的方，
+  // 只是這批草稿還沒補組成，不該一併排除。
+  const isPlaceholderCategory = (formula) => String(formula.name || "").includes("等");
   function recommend(patient, { limit = 5 } = {}) {
     const patientContext = buildPatientContext(patient || {});
     const scored = formulas
-      .filter((formula) => !isSingleHerbPrep(formula))
+      .filter((formula) => !isSingleHerbPrep(formula) && !isPlaceholderCategory(formula))
       .map((formula) => scoreFormulaWithContext(formula, patientContext));
     applyCombinationRule(scored);
 
@@ -1865,5 +1904,5 @@ function createX4Matcher(kb) {
 
 
 
-  return { isExamFinding, buildHeatEvidence, buildChannelEvidence, normalizeXushiClass, inferXuShi, createX4Matcher, W_KEY, W_PATTERN, W_ZANGFU, PARENT_FALLBACK_WEIGHT, EVIDENCE_DAMPING_K, W_BOOK_SECONDARY, BOOK_SECONDARY_K, DERIVED_VECTOR_K, KEY_EVIDENCE_K, COVERAGE_WEIGHT, KEY_SCORE_MODEL, MISS_WEIGHT, SOFTCAP_GAMMA, PATIENT_NEGATION_WEIGHT, PATIENT_NEGATION_DEMOTION, PATTERN_RECALL_BETA, CHANNEL_W_KEY, CHANNEL_W_STAGE, CHIEF_SPECIFICITY_MAX_FORMULAS, W_CHIEF, W_CARDINAL, CHIEF_WINDOW, XUSHI_MARGIN, XUSHI_MISMATCH_DEMOTION, KEY_CENTRALITY_SECONDARY, KEY_CENTRALITY_MILD };
+  return { isExamFinding, buildHeatEvidence, buildChannelEvidence, normalizeXushiClass, inferXuShi, createX4Matcher, W_KEY, W_PATTERN, W_ZANGFU, PARENT_FALLBACK_WEIGHT, EVIDENCE_DAMPING_K, W_BOOK_SECONDARY, BOOK_SECONDARY_K, DERIVED_VECTOR_K, KEY_EVIDENCE_K, COVERAGE_WEIGHT, KEY_SCORE_MODEL, MISS_WEIGHT, SOFTCAP_GAMMA, SECONDARY_NUM, SECONDARY_DEN, PATIENT_NEGATION_WEIGHT, PATIENT_NEGATION_DEMOTION, PATTERN_RECALL_BETA, CHANNEL_W_KEY, CHANNEL_W_STAGE, CHIEF_SPECIFICITY_MAX_FORMULAS, W_CHIEF, W_CARDINAL, CHIEF_WINDOW, XUSHI_MARGIN, XUSHI_MISMATCH_DEMOTION, KEY_CENTRALITY_SECONDARY, KEY_CENTRALITY_MILD };
 })();
