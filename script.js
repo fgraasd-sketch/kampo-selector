@@ -1338,6 +1338,7 @@ const RADAR_AXES = [
     { id: 'XUE_XU', label: '血虛' },
     { id: 'YU_XUE', label: '瘀血' },
     { id: 'SUI_ZHI', label: '水滯' },
+    { id: 'YIN_XU', label: '陰虛' },
 ];
 
 // Six-axis 六證 radar comparing the patient's pattern vector against a formula's,
